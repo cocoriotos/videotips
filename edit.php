@@ -1,5 +1,7 @@
 <?php include "header.php";
-include "db_connection1.php"; 
+include "db_connection1.php";
+include "sessions.php";
+$_SESSION['counter']=$_SESSION['counter']+1; 
 //$videolink = $_GET['videolink'];
 $id = $_GET['id'];
 //print_r($videolink);

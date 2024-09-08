@@ -3,10 +3,17 @@
 <?php /*Developed by julián González Bucheli*/
 
 //Defining local procedure variables and assigning POST form values into
-GLOBAL $username;	
+
+GLOBAL $username;
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}	
 $username=$_POST['username'];
 $password=$_POST['password'];
-
+$_SESSION['usernamer']=$username;
+$count=0;
+$_SESSION['counter']=$count;
+$counter=$_SESSION['counter'];
 
 	
 	if($_POST)
