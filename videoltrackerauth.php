@@ -2,9 +2,9 @@
 <html lang="us"> <!-- Page language-->
 	<head>	
 		  <meta charset="iso-8559-1"/>
-		  <meta name="Description" content="Daily Task Tracker Tool"/> 
-		  <meta name="keywords" content="Daily Task Tracker Tool"/>
-		  <title>Daily Task Tracker Tool - Julian Gonzalez Bucheli</title>  <!-- page tab title-->
+		  <meta name="Description" content="Video links Tool"/> 
+		  <meta name="keywords" content="Video links Tool"/>
+		  <title>Video links Tool - Julian Gonzalez Bucheli</title>  <!-- page tab title-->
 		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->
 		  <?php 
 
@@ -12,7 +12,7 @@
 	</head>
 	<header>
 		<HR id="HR"/>	<!-- Header title  --> <!-- -->
-			<center><h1><font id="form_title" color="#E1EAF7">Daily Task Tracker Tool - Personal Follow up</font></h1></center>
+			<center><h1><font id="form_title" color="#E1EAF7">Video links Tool</font></h1></center>
 		<HR/>
 	</header>	
 	  <body>
@@ -34,7 +34,7 @@
 				<br>
 				<br>	
 		</form>	
-        <form id="login1" action="//localhost" method="POST" autocomplete="off"> 
+        <form id="login1" action="/default1.php" method="POST" autocomplete="off"> 
 			    <center><input id="loginbutton" type="submit" value="Salir de la página"></center>
 				<br>
 				<br>
@@ -47,7 +47,7 @@
 					<h6 align="center"><address><strong>Email:</strong>cocoriotos@hotmail.com</address></h6>
 					<h6 align="center"><address><strong>Phone:</strong>(+57) 305 429 31 85 </address></h6>
 					<h6 align="center"><address><strong>Pereira - Colombia </strong></address></h6>
-					<h6 time align="center" datetime="2023/8/30" pubdate>Published on Date: 30/08/2023 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
+					<h6 time align="center" datetime="2024/8/30" pubdate>Published on Date: 30/08/2024 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
 				</hgroup>
 		</footer>
 	</body>
