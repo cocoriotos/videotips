@@ -8,7 +8,7 @@ $description=$_POST["description"];
 
 
 
-$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active) values ('$videolink','$maincategory','$category','$description','Yes')";
+$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$username')";
 $resultado= $conn ->query($query);
 
 if ($resultado){

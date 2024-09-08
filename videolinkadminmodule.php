@@ -2,7 +2,7 @@
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
 <?php include "header.php";
 include "db_connection1.php";
-print_r($username); 
+ 
 ?>
 
 <div class="container p-4">
