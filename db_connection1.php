@@ -1,10 +1,10 @@
 <!--Developed by julian Gonzalez-->
 <?php
   session_start();
-  $db_host="localhost:3307";
-  $db_user="root";
-  $db_pass="P@ssw0rd123456789";
-  $db_name="appsdb";
+  $db_host="127.0.0.1";
+  $db_user="u927778197_adm";
+  $db_pass="C0mp13t3501ut10n5*";
+  $db_name="u927778197_appsdb";
   $conn=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
   if(mysqli_connect_errno()) /*if mysql connection is not success then will generate error message*/
 			{
