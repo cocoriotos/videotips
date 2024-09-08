@@ -5,6 +5,5 @@
 		  </script>
 	<?php
 	include("closetaskscon.php");
-	/*include("utilizationtracker.php");*/
 	?>
 </html>

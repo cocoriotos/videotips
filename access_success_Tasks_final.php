@@ -21,7 +21,7 @@ $password=$_POST['password'];
 			{	
 			/*alert("ALERT: DB not connected");*/
 			include("No_DB_Connectionfinal.php");
-			include ("dailytaskstracker.php");
+			include ("videotrackerauth.php");
 			exit();/*Break php file and next lines*/
 			}
   mysqli_select_db($conn,$db_name) or die ("<center>There is not Database available</center>");/*database is not available*/			
@@ -34,7 +34,7 @@ $password=$_POST['password'];
 		//$insert="update accesslist SET visits=visits+1 where (username='$username' and password='$password')"; /*username Vistit counter increas in 1*/
         //$result=mysqli_query($conn, $insert);
 		//$query1="select * from livraria_accesslist where username='$username' and active='1' and password='$password'"; /*if username is user role*/
-		$query1="select * from app_access_list where username='$username' and active='1' and password='$password'"; /*if username is user role*/
+		$query1="select * from videotips_app_access_list where username='$username' and active='1' and password='$password'"; /*if username is user role*/
 		$result1=mysqli_query($conn, $query1);
 		//$query1="select * from livraria_accesslist where username='$username' and active='1' and role='user' and password='$password'"; /*if username is user role*/
 		//$result1=mysqli_query($conn, $query1);
@@ -47,7 +47,7 @@ $password=$_POST['password'];
 		
 		if(mysqli_num_rows($result1)==true)
 			{	
-			include("dailytaskadminmodule.php");
+			include("videolinkadminmodule.php");
 			exit();	
 			}
 		else 
