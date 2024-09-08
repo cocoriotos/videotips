@@ -5,7 +5,7 @@ $videolink = $_POST['videolink'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 $description=$_POST["description"];
-
+$username=$_GET["username"];
 
 
 $query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$username')";
