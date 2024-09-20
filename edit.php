@@ -31,13 +31,12 @@ $id = $_GET['id'];
 						<input type="text" name="videolink" class="form-control" placeholder="link" autofocus value ="<?php echo $link['videolink'];?>"></input><br>
 					</div>
 					<div class="form-group">
-						
 						<select name="maincategory" class="form-control" style="color:black; font-size: 150%; text-align: center;" required><?php $query_options = "SELECT * FROM videotips_maincategory"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
-
 						<!--<select name= "maincategory" required>  <?php //echo $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>-->
 					</div>
 					<div class="form-group">
-						<select name= "category" required> <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
+						<select name="category" class="form-control" style="color:black; font-size: 150%; text-align: center;" required><?php $query_options = "SELECT * FROM videotips_viodetipscategory"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
+						<!--<select name= "category" required> <?php //$SQLSELECT = "SELECT * FROM videotips_viodetipscategory"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>-->
 					</div>
 					<div class="form-group">
 						<textarea name="description" rows="5" class="form-control" placeholder="Link Description"><?php echo $link['description']?></textarea><br>
