@@ -61,7 +61,8 @@ $id = $_GET['id'];
 					  <th>Category</th>
 					  <th>Sub Category</th>
 					  <th>Description</th>
-					  <th>Active</th>
+					  <th>useful</th>
+					  <th>Creation Date</th>
 				   </tr>
 			    </thead>
 				<tbody>
@@ -76,6 +77,7 @@ $id = $_GET['id'];
 						<td><?php echo $link['category'] ?></td>
 						<td><?php echo $link['description'] ?></td>
 						<td><?php echo $link['active'] ?></td>
+						<td><?php echo $link['creationdate'] ?></td>
 						</td>
 					  </tr>
 					<?php }?>
