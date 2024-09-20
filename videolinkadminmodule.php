@@ -4,7 +4,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 include "db_connection1.php";
 include "sessions.php";
 $_SESSION['counter']=$_SESSION['counter']+1;
-print_r($username); 
+//print_r($username); 
 ?>
 
 <div class="container p-4">
@@ -66,8 +66,8 @@ print_r($username);
 						<td align="center"><?php echo $links['description'] ?></td>
 						<td align="center"><?php echo $links['active'] ?></td>
 						<td align="center"><?php echo $links['creationdate'] ?></td>
-						<!--<td align="center"><a href="edit.php?videolink=<?php echo $links['videolink']?>></a>
-						    <a href="delete.php?videolink=<?php echo $links['videolink']?>></a>
+						<!--<td align="center"><a href="edit.php?videolink=<?php //echo $links['videolink']?>></a>
+						    <a href="delete.php?videolink=<?php //echo $links['videolink']?>></a>
 						<td align="center"><a href="edit.php?videolink=<?php //echo $links['videolink']?>"class="btn btn-secondary"><i class="fas fa-marker"></i></a>
 						    <a href="delete.php?videolink=<?php //echo $links['videolink']?>"class="btn btn-danger"><i class="far fa-trash-alt"></i></a>-->
 						</td>
