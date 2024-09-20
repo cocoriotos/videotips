@@ -50,6 +50,7 @@ print_r($username);
 					  <th>Sub Category</th>
 					  <th>Description</th>
 					  <th>Active</th>
+					  <th>Date</th>
 				   </tr>
 			    </thead>
 				<tbody>
@@ -64,6 +65,7 @@ print_r($username);
 						<td align="center"><?php echo $links['category'] ?></td>
 						<td align="center"><?php echo $links['description'] ?></td>
 						<td align="center"><?php echo $links['active'] ?></td>
+						<td align="center"><?php echo $links['creationdate'] ?></td>
 						<!--<td align="center"><a href="edit.php?videolink=<?php echo $links['videolink']?>></a>
 						    <a href="delete.php?videolink=<?php echo $links['videolink']?>></a>
 						<td align="center"><a href="edit.php?videolink=<?php //echo $links['videolink']?>"class="btn btn-secondary"><i class="fas fa-marker"></i></a>
