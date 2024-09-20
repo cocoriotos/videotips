@@ -50,7 +50,7 @@ print_r($username);
 					  <th>Sub Category</th>
 					  <th>Description</th>
 					  <th>Active</th>
-					  <th>Date</th>
+					  <th>Creation Date</th>
 				   </tr>
 			    </thead>
 				<tbody>
