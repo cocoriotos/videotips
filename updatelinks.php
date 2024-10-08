@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $id = $_POST['id'];
 $videolink = $_POST['videolink'];
 $maincategory=$_POST["maincategory"];
-$category=$_POST["category"];
+$category=$_POST["secondcategory"];
 $description=$_POST["description"];
 $active=$_POST["active"];
 $usernamer=$_SESSION['usernamer'];
