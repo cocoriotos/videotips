@@ -4,7 +4,7 @@
 
 //Defining local procedure variables and assigning POST form values into
 
-GLOBAL $username;
+/*GLOBAL $username;10072024*/
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }	

@@ -1,13 +1,18 @@
 <?php 
 include "db_connection1.php";
 
+if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+}
+
 $id = $_POST['id'];
 $videolink = $_POST['videolink'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 $description=$_POST["description"];
 $active=$_POST["active"];
-
+$usernamer=$_SESSION['usernamer'];
+$_SESSION['counter']=$_SESSION['counter']+1;
 
 
 $query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', maincategory = '$maincategory', category = '$category', description = '$description', active = '$active' where id = '$id'";

@@ -1,9 +1,10 @@
 <?php include "header.php";
 include "db_connection1.php";
 include "sessions.php";
-$_SESSION['counter']=$_SESSION['counter']+1; 
+/*$_SESSION['counter']=$_SESSION['counter']+1; $usernamer=$_POST['usernamer1'];*/
 //$videolink = $_GET['videolink'];
 $id = $_GET['id'];
+$usernamer=$_POST['usernamer1'];/*$usernamer=$_POST['usernamer1'];*/
 //print_r($videolink);
 ?>
 
