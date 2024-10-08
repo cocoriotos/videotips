@@ -51,16 +51,19 @@ include "sessions.php"
 				<form action="savelinks.php" method="POST"> 
 				
 					<div class="form-group">
-						<label for="videolink" style="color: black" id="form_title"><strong>Video URL full link</strong></label><br>	
+						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
 						<textarea name="videolink" rows="5" class="form-control" placeholder="Video URL full link"></textarea> <br>
 					</div>
 					<div class="form-group">
+					<label for="videolink" style="color: black;"><strong>Main Category</strong></label><br>	
 						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
 					</div>
 					<div class="form-group">
+					<label for="videolink" style="color: black;"><strong>Secondary Category </strong></label><br>	
 						<select name= "category" required> <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
 					</div>
 	                 <div class="form-group">
+					 	<label for="videolink" style="color: black;"><strong>Description</strong></label><br>	
 						<textarea name="description" rows="5" class="form-control" placeholder="Video tip Description"></textarea> <br>
 					</div>  	
 					<input type="submit" class="btn btn-success btn-block" name="save_linkk" value="Save Link"></input>
