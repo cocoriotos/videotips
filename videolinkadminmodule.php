@@ -56,7 +56,7 @@ print_r($username);
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes' order by maincategory, category asc";
+					$query1 = "select * from videotips_videotips where active = 'Yes' and username = '$username'order by maincategory, category asc";
 					$result_links = mysqli_query($conn,$query1);
 					while($links = mysqli_fetch_array($result_links)) { ?>
 					  <tr>
