@@ -5,8 +5,8 @@ include "db_connection1.php";
 include "sessions.php";
 $_SESSION['counter']=$_SESSION['counter']+1;
 $usernamer=$_SESSION['usernamer'];
-print_r($usernamer);
-print_r($_SESSION['counter']); 
+print_r($usernamer);/*10072024*/
+print_r($_SESSION['counter']);/*10072024*/
 ?>
 
 <div class="container p-4">
