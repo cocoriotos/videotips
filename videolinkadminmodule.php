@@ -33,7 +33,7 @@ print_r($_SESSION['counter']);/*10072024*/
 	                 <div class="form-group">
 						<textarea name="description" rows="5" class="form-control" placeholder="Video tip Description"></textarea> <br>
 					</div>  	
-					<input type="submit" class="btn btn-success btn-block" name="save_linkk" value="Save Link"></input>
+					<input type="submit" class="btn btn-success btn-block" name="save_link" value="Save Link"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="/default.php"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Refresh" formaction="videolinkadminmodule.php"></input>
 				</form>
@@ -57,7 +57,7 @@ print_r($_SESSION['counter']);/*10072024*/
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes' and username = '$usernamer'order by maincategory, category asc";
+					$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$usernamer' order by maincategory, category asc";
 					$result_links = mysqli_query($conn,$query1);
 					while($links = mysqli_fetch_array($result_links)) { ?>
 					  <tr>

@@ -12,7 +12,7 @@ $description=$_POST["description"];
 $usernamer=$_SESSION['usernamer'];/*10072024*/
 
 
-$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$username')";
+$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$usernamer')";
 $resultado= $conn ->query($query);
 
 if ($resultado){
