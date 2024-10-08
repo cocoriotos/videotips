@@ -4,8 +4,10 @@ include "sessions.php";
 /*$_SESSION['counter']=$_SESSION['counter']+1; $usernamer=$_POST['usernamer1'];*/
 //$videolink = $_GET['videolink'];
 $id = $_GET['id'];
-$usernamer=$_POST['usernamer1'];/*$usernamer=$_POST['usernamer1'];*/
-//print_r($videolink);
+/*$usernamer=$_POST['usernamer1'];/*$usernamer=$_POST['usernamer1'];*/
+$usernamer=$_SESSION['usernamer'];
+print_r($usernamer);
+
 ?>
 
 
@@ -68,7 +70,7 @@ $usernamer=$_POST['usernamer1'];/*$usernamer=$_POST['usernamer1'];*/
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes'  and id ='$id'";
+					$query1 = "select * from videotips_videotips where active = 'Yes'  and id ='$id' and username = '$usernamer'";
 					$result_link1 = mysqli_query($conn,$query1);
 					while($link = mysqli_fetch_array($result_link1)) { ?>
 					  <tr>
