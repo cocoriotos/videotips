@@ -51,6 +51,7 @@ include "sessions.php"
 				<form action="savelinks.php" method="POST"> 
 				
 					<div class="form-group">
+					<font color=lightblue id="form_title"><strong>Video URL full link</strong></font></center><br>	
 						<textarea name="videolink" rows="5" class="form-control" placeholder="Video URL full link"></textarea> <br>
 					</div>
 					<div class="form-group">
