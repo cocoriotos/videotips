@@ -5,9 +5,10 @@ include "sessions.php";
 //$videolink = $_GET['videolink'];
 $id = $_GET['id'];
 /*$usernamer=$_POST['usernamer1'];/*$usernamer=$_POST['usernamer1'];*/
-$usernamer=$_SESSION['usernamer'];
-print_r($usernamer);
-
+$_SESSION['counter']=$_SESSION['counter']+1;/*10072024*/
+$usernamer=$_SESSION['usernamer'];/*10072024*/
+print_r($usernamer);/*10072024*/
+print_r($_SESSION['counter']);/*10072024*/
 ?>
 
 
