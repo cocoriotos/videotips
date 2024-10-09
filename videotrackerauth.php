@@ -7,7 +7,7 @@
 		  <title>Video links Tool - Julian Gonzalez Bucheli</title>  <!-- page tab title-->
 		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->
 		  <?php 
-
+           include "closetaskscon.php";
 		?>
 	</head>
 	<header>
