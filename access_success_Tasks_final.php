@@ -10,7 +10,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }	
 $username=$_POST['username'];
 $password=$_POST['password'];
-$_SESSION['username']=$usernamer;
+$_SESSION['usernamer']=$username;
 $count=0;
 $_SESSION['counter']=$count;
 $counter=$_SESSION['counter'];
@@ -41,7 +41,7 @@ $counter=$_SESSION['counter'];
 		//$insert="update accesslist SET visits=visits+1 where (username='$username' and password='$password')"; /*username Vistit counter increas in 1*/
         //$result=mysqli_query($conn, $insert);
 		//$query1="select * from livraria_accesslist where username='$username' and active='1' and password='$password'"; /*if username is user role*/
-		$query1="select * from videotips_app_access_list where username='$username' and active='1' and password='$password'"; /*if username is user role*/
+		$query1="select * from videotips_app_access_list where username='$usernamer' and active='1' and password='$password'"; /*if username is user role*/
 		$result1=mysqli_query($conn, $query1);
 		//$query1="select * from livraria_accesslist where username='$username' and active='1' and role='user' and password='$password'"; /*if username is user role*/
 		//$result1=mysqli_query($conn, $query1);
