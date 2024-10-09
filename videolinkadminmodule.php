@@ -30,8 +30,8 @@ print_r($_SESSION['counter']);/*10072024*/
 						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
 					</div>
 					<div class="form-group">
-						<label for="secondcategory" style="color: black;"><strong>Second Category</strong></label><br>	
-						<select name= "secondcategory" required> <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
+						<label for="category" style="color: black;"><strong>Second Category</strong></label><br>	
+						<select name= "category" required> <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
 					</div>
 	                 <div class="form-group">
 					 	<label for="description" style="color: black;"><strong>Description</strong></label><br>	
