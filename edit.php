@@ -1,6 +1,7 @@
 <?php include "header.php";
 include "db_connection1.php";
-include "sessions.php";/*10082014*/
+session_start();
+//include "sessions.php";/*10082014*/
 /*$_SESSION['counter']=$_SESSION['counter']+1; $usernamer=$_POST['usernamer1'];*/
 //$videolink = $_GET['videolink'];
 $id = $_GET['id'];
