@@ -10,7 +10,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }	
 $username=$_POST['username'];
 $password=$_POST['password'];
-$_SESSION['usernamer']=$usernamer;
+$_SESSION['username']=$usernamer;
 $count=0;
 $_SESSION['counter']=$count;
 $counter=$_SESSION['counter'];
