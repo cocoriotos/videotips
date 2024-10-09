@@ -1,6 +1,7 @@
 <?php 
+session_start();
 include "db_connection1.php";
-include "sessions.php";
+/**include "sessions.php";*/
 $_SESSION['counter']=$_SESSION['counter']+1;
 
 $videolink = $_POST['videolink'];
