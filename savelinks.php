@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "db_connection1.php";
+/*include "db_connection1.php";10082024*/
 /**include "sessions.php";*/
 $_SESSION['counter']=$_SESSION['counter']+1;
 

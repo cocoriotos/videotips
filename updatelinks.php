@@ -1,5 +1,5 @@
 <?php 
-include "db_connection1.php";
+/*include "db_connection1.php"; 10082024*/
 
 //if (session_status() === PHP_SESSION_NONE) {
   session_start();

@@ -1,5 +1,5 @@
 <?php include "header.php";
-include "db_connection1.php";
+/*include "db_connection1.php";10082024*/
 session_start();
 //include "sessions.php";/*10082014*/
 /*$_SESSION['counter']=$_SESSION['counter']+1; $usernamer=$_POST['usernamer1'];*/
