@@ -3,5 +3,5 @@
 		session_destroy(); // Destruye la sesión 10082024
 		mysqli_close($conn);
 		echo 	"Link Not Saved";
-        header("refresh:1; url=videotrackerauth.php");
+        header("refresh:7; url=videotrackerauth.php");
 		?>
