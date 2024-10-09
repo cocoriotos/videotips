@@ -10,7 +10,7 @@ $category=$_POST["category"];
 $description=$_POST["description"];
 /*$username=$_GET['username'];10072024*/
 /*$usernamer=$_POST['usernamer1'];10072024*/
-$usernamer=$_SESSION['usernamer'];/*10072024*/
+//$usernamer=$_SESSION['usernamer'];/*10072024*/
 
 
 $query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$usernamer')";
