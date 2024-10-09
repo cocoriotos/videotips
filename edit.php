@@ -9,6 +9,7 @@ $_SESSION['counter']=$_SESSION['counter']+1;/*10072024*/
 $usernamer=$_SESSION['usernamer'];/*10072024*/
 print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
+print_r($category);/*10072024*/
 ?>
 
 
@@ -41,7 +42,7 @@ print_r($_SESSION['counter']);/*10072024*/
 						<select name="maincategory" required><?php $query_options = "SELECT * FROM videotips_maincategory"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
 					</div>
 					<div class="form-group">
-						<label for="secondcategory" style="color: black;"><strong>Second Category</strong></label><br>
+						<label for="category" style="color: black;"><strong>Second Category</strong></label><br>
 						<select name="category" required><?php $query_options = "SELECT * FROM videotips_viodetipscategory"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
 						<!--<select name= "category" required> <?php //$SQLSELECT = "SELECT * FROM videotips_viodetipscategory"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>-->
 					</div>
