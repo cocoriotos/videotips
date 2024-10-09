@@ -3,11 +3,11 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 <?php include "header.php";
 include "db_connection1.php";
 session_start();
-/**include "sessions.php";
+/**include "sessions.php";*/
 $_SESSION['counter']=$_SESSION['counter']+1;
 $usernamer=$_SESSION['usernamer'];
 print_r($usernamer);/*10072024*/
-//print_r($_SESSION['counter']);/*10072024*/
+print_r($_SESSION['counter']);/*10072024*/
 ?>
 
 <div class="container p-4">
