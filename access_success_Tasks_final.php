@@ -8,7 +8,7 @@ GLOBAL $usernamer;/*10072024*/
 /*}*/	
 $username=$_POST['username'];
 $password=$_POST['password'];
-$_SESSION['usernamer']=$username;
+/*$_SESSION['usernamer']=$username;10112024*/
 $count=0;
 $_SESSION['counter']=$count;
 $counter=$_SESSION['counter'];
