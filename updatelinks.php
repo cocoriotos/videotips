@@ -1,9 +1,7 @@
 <?php 
 include "db_connection1.php"; 
+session_start();
 
-//if (session_status() === PHP_SESSION_NONE) {
-  session_start();
-//} 10082024
 
 $id = $_POST['id'];
 $videolink = $_POST['videolink'];

@@ -1,11 +1,11 @@
 <!--  Developed by julián González Bucheli
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
-<?php include "header.php";
-include "db_connection1.php";
+<?php 
 session_start();
-/**include "sessions.php";*/
-$_SESSION['counter']=$_SESSION['counter']+1;
-$usernamer=$_SESSION['usernamer'];
+include "header.php";
+include "db_connection1.php";
+/*$_SESSION['counter']=$_SESSION['counter']+1;
+$usernamer=$_SESSION['usernamer'];10112024*/
 print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
 ?>
@@ -13,12 +13,12 @@ print_r($_SESSION['counter']);/*10072024*/
 <div class="container p-4">
 	<div class="row">
 		<div class="col-md-4">
-		     <?php if (isset($_SESSION['message'])) { ?>
+		     <!--<?php /*if (isset($_SESSION['message'])) { ?>
               <div class="alert alert-<?= $_SESSION['message_type']; ?> alert-dismissible fade show" role="alert">
                 <?= $_SESSION['message'] ?>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
-            <?php session_unset(); } ?>	  
+            <?php session_unset(); }*/ ?>	-->  
 			<div class="card card-body">
 				<form class="" action="savelinks.php" method="POST"> 
 				
@@ -77,10 +77,6 @@ print_r($_SESSION['counter']);/*10072024*/
 						<td align="center"><?php echo $links['description'] ?></td>
 						<td align="center"><?php echo $links['active'] ?></td>
 						<td align="center"><?php echo $links['creationdate'] ?></td>
-						<!--<td align="center"><a href="edit.php?videolink=<?php //echo $links['videolink']?>></a>
-						    <a href="delete.php?videolink=<?php //echo $links['videolink']?>></a>
-						<td align="center"><a href="edit.php?videolink=<?php //echo $links['videolink']?>"class="btn btn-secondary"><i class="fas fa-marker"></i></a>
-						    <a href="delete.php?videolink=<?php //echo $links['videolink']?>"class="btn btn-danger"><i class="far fa-trash-alt"></i></a>-->
 						</td>
 					  </tr>
 					<?php }?>

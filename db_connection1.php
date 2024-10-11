@@ -6,7 +6,7 @@
   $db_pass="C0mp13t3501ut10n5*";
   $db_name="u927778197_appsdb";
   $conn=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
-  if(mysqli_connect_errno()) /*if mysql connection is not success then will generate error message*/
+  if(mysqli_connect_errno()) 
 			{
 			echo "Not Database connection success";
 			echo "<br>";
@@ -15,11 +15,9 @@
 			exit();/*Break php file and next lines*/
 			}
   mysqli_select_db($conn,$db_name) or die ("There is not Database available");/*database is not available*/			
-  /*mysqli_set_charset($conexion,"utf8");/*to display  correct latin america characters */
   if ($conn==true)
 			  {
 			  echo "<center>Congratulations! You are already connected to Main Database</center>";
-			  echo "<br>";	
-			 
+			  echo "<br>";
 			  }
 ?>
