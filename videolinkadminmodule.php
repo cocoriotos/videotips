@@ -1,5 +1,6 @@
 <!--  Developed by julián González Bucheli
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
+<html>
 <?php 
 session_start();
 include "header.php";
@@ -9,6 +10,7 @@ $usernamer=$_SESSION['usernamer'];10112024*/
 print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
 print_r($_SESSION['usernamer']);
+print_r(session_status());
 ?>
 
 <div class="container p-4">
@@ -88,5 +90,5 @@ print_r($_SESSION['usernamer']);
     </div>
 </div>
 <?php include ("footer.php")?>
-
+</html>
  
