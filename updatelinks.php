@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "db_connection1.php"; 
+/*include "db_connection1.php"; 10112024*/
 
 
 
