@@ -8,6 +8,7 @@ include "db_connection1.php";
 $usernamer=$_SESSION['usernamer'];10112024*/
 print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
+print_r($_SESSION['usernamer']);
 ?>
 
 <div class="container p-4">
