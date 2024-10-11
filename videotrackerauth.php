@@ -20,7 +20,7 @@
                 <center><img id="img_login" center SRC="login.gif"></img></center></br> <!-- Login Icon  -->
 				<div class="inputdata1">
 					<center><font id= "form_title" color="white"><strong>Username</strong></font></center><br>
-					<center><input id="username1" type="text" name="username"  placeholder="lastname, name" required ></center><br> <!-- Login PAM username  -->
+					<center><input id="username" type="text" name="username"  placeholder="lastname, name" required ></center><br> <!-- Login PAM username  -->
 				<br>
 				</div >
 				<div class="inputdata1">
