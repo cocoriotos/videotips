@@ -12,7 +12,7 @@ $_SESSION['usernamer']=$username;
 $count=0;
 $_SESSION['counter']=$count;
 $counter=$_SESSION['counter'];
-$usernamer=$_SESSION['usernamer'];/*10082024*/
+$usernamer=$_SESSION['username'];/*10082024*/
 
 	
 	if($_POST)
