@@ -4,7 +4,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 <?php 
 session_start();
 include "header.php";
-include "db_connection1.php";
+/*include "db_connection1.php";*/
 /*$_SESSION['counter']=$_SESSION['counter']+1;10112024*/
 $usernamer=$_SESSION['usernamer'];
 print_r($usernamer);/*10072024*/
