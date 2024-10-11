@@ -9,11 +9,11 @@ $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 $description=$_POST["description"];
 $active=$_POST["active"];
-/*$usernamer=$_SESSION['usernamer'];*/
+$usernamer=$_SESSION['usernamer'];
 $_SESSION['counter']=$_SESSION['counter']+1;
 
 
-$query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', maincategory = '$maincategory', category = '$category', description = '$description', active = '$active', username = '$username' where id = '$id'";
+$query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', maincategory = '$maincategory', category = '$category', description = '$description', active = '$active', username = '$usernamer' where id = '$id'";
 $resultado=$conn ->query($query);
 
 if ($resultado){
