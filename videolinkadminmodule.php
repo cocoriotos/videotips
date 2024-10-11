@@ -8,7 +8,7 @@ include "header.php";
 /*$_SESSION['counter']=$_SESSION['counter']+1;10112024*/
 
 /*$_SESSION['username']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
-/*$local_username=$_SESSION['username'];/*10082024*/
+$local_username=$_SESSION['username'];/*10082024*/
 
 print_r($local_username);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
