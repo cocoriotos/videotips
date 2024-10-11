@@ -73,7 +73,7 @@ print_r($username);
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$usernamer' order by maincategory, category asc";/*10112024*/
+					$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
 					$result_links = mysqli_query($conn,$query1);
 					while($links = mysqli_fetch_array($result_links)) { ?>
 					  <tr>
