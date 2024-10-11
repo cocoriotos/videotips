@@ -3,6 +3,7 @@ session_start();
 include "db_connection1.php";
 
 
+$local_username=$_SESSION['username'];
 /**include "sessions.php";*/
 $_SESSION['counter']=$_SESSION['counter']+1;
 
@@ -12,7 +13,7 @@ $category=$_POST["category"];
 $description=$_POST["description"];
 
 
-$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$usernamer')";
+$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$local_username')";
 $resultado= $conn ->query($query);
 
 if ($resultado){
