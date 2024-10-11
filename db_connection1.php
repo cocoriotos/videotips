@@ -1,6 +1,6 @@
 <!--Developed by julian Gonzalez-->
 <?php
-  session_start();/*10072024*/
+  /*session_start();/*10072024 10112024*/
   $db_host="127.0.0.1";
   $db_user="u927778197_adm";
   $db_pass="C0mp13t3501ut10n5*";
