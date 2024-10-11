@@ -1,6 +1,6 @@
 <?php 
 include "db_connection1.php"; 
-session_start();
+/*session_start();10112024*/
 
 
 $id = $_POST['id'];
