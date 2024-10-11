@@ -6,13 +6,13 @@ GLOBAL $usernamer;/*10072024*/
 /*if (session_status() === PHP_SESSION_NONE) {*/
     session_start();
 /*}*/	
-$username=$_POST['username'];
+$usernamer=$_POST['username'];
 $password=$_POST['password'];
 /*$_SESSION['usernamer']=$username;10112024*/
 $count=0;
 $_SESSION['counter']=$count;
 $counter=$_SESSION['counter'];
-$usernamer=$_SESSION['username'];/*10082024*/
+/*$usernamer=$_SESSION['username'];/*10082024*/
 
 	
 	if($_POST)
