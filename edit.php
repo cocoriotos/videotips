@@ -3,7 +3,7 @@ include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
 $_SESSION['counter']=$_SESSION['counter']+1;/*10072024*/
-$usernamer=$_SESSION['usernamer'];/*10072024*/
+$local_username=$_SESSION['username'];
 print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
 ?>
@@ -16,7 +16,7 @@ print_r($_SESSION['counter']);/*10072024*/
 		<div class="col-md-4">
 		     		 
 			 <?php 
-					$query = "select * from videotips_videotips where id = '$id' and username='$usernamer'";
+					$query = "select * from videotips_videotips where id = '$id' and username='$local_username'";
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
@@ -74,7 +74,7 @@ print_r($_SESSION['counter']);/*10072024*/
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes'  and id ='$id' and username = '$usernamer'";
+					$query1 = "select * from videotips_videotips where active = 'Yes'  and id ='$id' and username = '$local_username'";
 					$result_link1 = mysqli_query($conn,$query1);
 					while($link = mysqli_fetch_array($result_link1)) { ?>
 					  <tr>
