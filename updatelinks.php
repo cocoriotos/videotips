@@ -9,7 +9,7 @@ $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 $description=$_POST["description"];
 $active=$_POST["active"];
-$usernamer=$_SESSION['usernamer'];
+/*$usernamer=$_SESSION['usernamer'];*/
 $_SESSION['counter']=$_SESSION['counter']+1;
 
 
