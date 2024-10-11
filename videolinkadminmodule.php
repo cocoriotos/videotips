@@ -11,7 +11,7 @@ print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
 print_r($_SESSION['usernamer']);
 print_r(session_status());
-print_r($usernamer1);
+print_r($usernamer);
 ?>
 
 <div class="container p-4">
@@ -70,7 +70,7 @@ print_r($usernamer1);
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$username' order by maincategory, category asc";/*10112024*/
+					$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$usernamer' order by maincategory, category asc";/*10112024*/
 					$result_links = mysqli_query($conn,$query1);
 					while($links = mysqli_fetch_array($result_links)) { ?>
 					  <tr>
