@@ -11,6 +11,7 @@ print_r($usernamer);/*10072024*/
 print_r($_SESSION['counter']);/*10072024*/
 print_r($_SESSION['usernamer']);
 print_r(session_status());
+print_r($usernamer1);
 ?>
 
 <div class="container p-4">
