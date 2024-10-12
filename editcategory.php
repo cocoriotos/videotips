@@ -14,7 +14,7 @@ print_r($id);
 		<div class="col-md-4">
 		     		 
 			 <?php 
-					$query = "select * from videotips_videotips where id = '$id' and username='$local_username'";
+					$query = "select * from videotips_viodetipscategory where id = '$id' and username='$local_username'";
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
