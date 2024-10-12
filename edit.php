@@ -48,10 +48,6 @@ print_r($_SESSION['counter']);/*10072024*/
 						<label for="useful" style="color: black;"><strong>Useful</strong></label><br>
 						<select name="active" required><?php $query_options = "SELECT * FROM videotips_active"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['active'] == $link['active']) ? "selected" : ""; echo "<option value=\"{$option['active']}\" $selected>{$option['active']}</option>"; } ?></select><br><br>
 					</div>
-					<div class="form-group">
-						<label for="username" style="color: black;"><strong>Username</strong></label><br>
-						<select name="username" readonly><?php $query_options = "SELECT * FROM videotips_videotips"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['username'] == $link['username']) ? "selected" : ""; echo "<option value=\"{$option['username']}\" $selected>{$option['username']}</option>"; } ?></select><br><br>
-					</div>
 					<input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input>
