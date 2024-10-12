@@ -49,7 +49,7 @@ $local_username=$_SESSION['username'];
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by maincategory asc";
+					$query1 = "select distinct(maincategory) from videotips_viodetipscategory where username ='$local_username' order by maincategory asc";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
@@ -74,7 +74,7 @@ $local_username=$_SESSION['username'];
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by category asc";
+					$query1 = "select distinct(category) from videotips_viodetipscategory where username ='$local_username' order by category asc";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
