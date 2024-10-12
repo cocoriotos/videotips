@@ -16,17 +16,14 @@ $local_username=$_SESSION['username'];
 					</div><br>
 				<form class="" action="savecategory.php" method="POST"> 
 					<div class="form-group">
-						<label for="maincategory" style="color: black;"><strong>Categories</strong></label><br>	
-						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br> 
-						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="add Category"></input></center><br>
-					</div><br><br>
+						<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
+						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>
+					</div><br>
 					<div class="form-group">
-						<label for="subcategory" style="color: black;"><strong>Subcategories</strong></label><br>	
+						<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
 						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br> 
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Sub Category"></input></center><br><br>	
 					</div>
-				</form>
-				<form>	
 						<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
 						<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input>
 						<input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input>
@@ -42,6 +39,7 @@ $local_username=$_SESSION['username'];
 				<thead>
 				   <tr>
 				      <center><th>Category</th></center>
+					  <center><th>Category</th></center>
 				   </tr>
 			    </thead>
 				<tbody>
@@ -51,6 +49,7 @@ $local_username=$_SESSION['username'];
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
 					     <td align="center" onclick="Display"><?php echo"<a href='categiries.php?id={$categories['maincategory']}'>{$categories['maincategory']}"?></td>
+						 <td align="center" onclick="Display"><?php echo"<a href='categiries.php?id={$categories['category']}'>{$categories['category']}"?></td>
 					 	 </td>
 					  </tr>
 					<?php }?>
