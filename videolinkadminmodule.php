@@ -19,11 +19,11 @@ $local_username=$_SESSION['username'];
 						<textarea name="videolink" rows="5" class="form-control" placeholder="Video URL full link"></textarea> <br>
 					</div>
 					<div class="form-group">
-						<label for="maincategory" style="color: black;"><strong>Main Category</strong></label><br>	
+						<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
 						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
 					</div>
 					<div class="form-group">
-						<label for="secondcategory" style="color: black;"><strong>Second Category</strong></label><br>	
+						<label for="category" style="color: black;"><strong>Subcategory</strong></label><br>	
 						<select name= "category" required> <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
 					</div>
 	                 <div class="form-group">
