@@ -32,7 +32,7 @@
 			</div>
 			<center><input id="requestaccess" type="submit" value="Submit"></center>
 		</form>
-		<form id="login" action="TopChannelTrackerFinal.php" method="POST"> <!-- Form to send access email request login  application admin-->
+		<form id="login" action="videotrackerauth.php" method="POST"> <!-- Form to send access email request login  application admin-->
 			<center>
 				<input id="cancelbutton" action="videotrackerauth.php" type="submit" value="Cancel">
 			</center>
