@@ -7,7 +7,7 @@ $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 
 
-$query="UPDATE videotips_videotips SET id = '$id', maincategory = '$maincategory', category = '$category' where id = '$id'";
+$query="UPDATE videotips_viodetipscategory SET id = '$id', maincategory = '$maincategory', category = '$category' where id = '$id'";
 $resultado=$conn ->query($query);
 
 if ($resultado){
