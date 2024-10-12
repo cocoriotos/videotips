@@ -22,8 +22,11 @@ $local_username=$_SESSION['username'];
 					<div class="form-group">
 						<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
 						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br> 
-						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Sub Category"></input></center><br><br>	
+						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center><br><br>	
 					</div>
+						
+				</form>
+				<form>
 						<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
 						<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input>
 						<input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input>
@@ -34,17 +37,17 @@ $local_username=$_SESSION['username'];
 		<div class="col-md-8">
 		 <?php include("search.php") ?>
 		 <div class="card card-body">
-		 <label for="maincategory" style="color: black;"><strong>Current Main Categories</strong></label><br>	
+		 <label for="maincategory" style="color: black;"><strong>Current Categories</strong></label><br>	
 		  <table id="autosearch" class="display" font color="back">
 				<thead>
 				   <tr>
 				      <center><th>Category</th></center>
-					  <center><th>Category</th></center>
+					  <center><th>Sub Category</th></center>
 				   </tr>
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select distinct(maincategory) from videotips_viodetipscategory where username ='$local_username' order by maincategory asc";
+					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by maincategory, category asc";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
