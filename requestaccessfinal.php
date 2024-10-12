@@ -4,8 +4,8 @@
 	<head>	
 		  <meta charset="iso-8559-1"/>
 		  <meta name="Description" content="links Tool"/> 
-		  <meta name="keywords" content="links Tool"/(>
-		  <title>Links Tool /title>  <!-- page tab title-->
+		  <meta name="keywords" content="links Tool"/>
+		  <title>Links Tool </title>  <!-- page tab title-->
 		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->		  
 	</head>
 	<header>
