@@ -1,6 +1,6 @@
 <?php 
 session_start();
-/*include "db_connection1.php"; 10112024*/
+include "db_connection1.php"; /*10112024*/
 
 $id = $_POST['id'];
 $videolink = $_POST['videolink'];
