@@ -23,6 +23,11 @@
 				<input id="username" type="text" name="LastName" placeholder="Type Your last name" required><br>
 				<font color="white" id="form_title1"><strong>Your Email</strong></font>
 				<input id="username" type="text" name="Email" placeholder="Type Your email" required><br>
+				<script>
+function resetField() {
+    document.getElementById('username').value = '';
+}
+</script>
 				<font color="white" id="form_title1"><strong>Country where you live</strong></font>
 				<input id="username" type="text" name="Country" placeholder="Type Your Country" required><br>
 				<font color="white" id="form_title1"><strong>City where you live</strong></font>
