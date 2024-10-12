@@ -1,7 +1,7 @@
 <?php include "header.php";
 include "db_connection1.php";
 session_start();
-$maincategory = $_GET['maincategory'];
+$id = $_GET['id'];
 $local_username=$_SESSION['username'];
 ?>
 
@@ -13,7 +13,7 @@ $local_username=$_SESSION['username'];
 		<div class="col-md-4">
 		     		 
 			 <?php 
-					$query = "select * from videotips_videotips where maincategory = '$maincategory' and username='$local_username'";
+					$query = "select * from videotips_videotips where id = '$id' and username='$local_username'";
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
@@ -40,16 +40,18 @@ $local_username=$_SESSION['username'];
 			<table class="table table-bordered">
 				<thead>
 				   <tr>
-					  <th>Category</th>
+				       <th>ID</th>
+				  	   <th>Category</th>
 					  <th>Sub Category</th>
 				   </tr>
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where maincategory ='$maincategory' and username = '$local_username'";
+					$query1 = "select * from videotips_viodetipscategory where id = '$id' and maincategory ='$maincategory' and username = '$local_username'";
 					$result_link1 = mysqli_query($conn,$query1);
 					while($link = mysqli_fetch_array($result_link1)) { ?>
 					  <tr>
+					    <td><?php echo $link['id'] ?></td>
 					    <td><?php echo $link['maincategory'] ?></td>
 						<td><?php echo $link['category'] ?></td>
 						</td>
