@@ -3,7 +3,6 @@
 
 $name = $_POST['Name'];
 $lastname = $_POST['LastName'];
-$reportsto = $_POST['ReportsTo'];
 $email = $_POST['email'];
 $country = $_POST['Country'];
 $city = $_POST['City'];
