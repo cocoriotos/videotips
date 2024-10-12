@@ -30,7 +30,7 @@ $local_username=$_SESSION['username'];
 					</form>
 				<form class="" action="savesubcategory.php" method="POST">
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
-					<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addfilters.php"></input>
+					<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategories.php"></input>
 				</form>
 			</div>
 		</div>
