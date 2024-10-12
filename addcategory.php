@@ -41,13 +41,14 @@ $local_username=$_SESSION['username'];
 		  <table id="autosearch" class="display" font color="back">
 				<thead>
 				   <tr>
+				      <center><th>ID</th></center>
 				      <center><th>Category</th></center>
 					  <center><th>Sub Category</th></center>
 				   </tr>
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by maincategory, category asc";
+					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by id, maincategory, category asc";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
