@@ -1,29 +1,34 @@
 <?php 
 // defining and loading  data fields
+session_start();
+include ("db_connection1.php");
 
 $name = $_POST['Name'];
 $lastname = $_POST['LastName'];
-$email = $_POST['email'];
+$email = $_POST['Email'];
 $country = $_POST['Country'];
 $city = $_POST['City'];
 $password = $_POST['password1'];
 
+$query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
+include ("db_connection1.php");
+$result=$conn->query($query);
+
 
 //Destination email information
-$to ="$email";
-$to.= "cocoriotos@hotmail.com";
+$to = "$email";
+/*$to.= "cocoriotos@hotmail.com";*/
 $subject = "Urgent Links tool access request";
 $message = "Good day Admin Team:  \n\n";
-$message .= "This user is requesting tool access, please response ASAP \n\n";//. to concatenate lines in the same variable
-$message .= "Member name            : $name \n";
-$message .= "Member Last name       : $lastname \n";
-$message .= "Member email           : $email \n\n";
-$message .= "Member Password        : $password \n\n";
-$message .= "Thank you for your support \n\n";
-$message .= "Email Application sender";
+$message.= "This user is requesting tool access, please response ASAP \n\n";//. to concatenate lines in the same variable
+$message.= "Member name            : $name \n";
+$message.= "Member Last name       : $lastname \n";
+$message.= "Member email           : $email \n\n";
+$message.= "Thank you for your support \n\n";
+$message.= "Email Application sender";
 $message.= "Dear Customer, you will be receiving Tool admin message advising if was granted or denied your request \n\n";
 $message.= "Email Application sender";
-$header = "From: adm@solicionespro.com" . "\r\n";
+$header= "From: adm@solicionespro.com" . "\r\n";
 $header.= "Reply-To: noreply@solicionespro.com" . "\r\n";
 $header.= "X-Mailer: PHP/". phpversion();
 
@@ -36,9 +41,6 @@ if ($mail) {
 		include("requestaccessfinal.php");
 		exit();		
 	}
-$query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
-include ("db_connection1.php");
-$result=$conn->query($query);
 
 if ($result){
         echo "Your request was sent, please wait for Administrators message with agree or not response";
