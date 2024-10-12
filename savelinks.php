@@ -13,6 +13,12 @@ $description=$_POST["description"];
 $query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$local_username')";
 $resultado= $conn ->query($query);
 
+if ($conn->errno == 1062){
+  echo "Error: La dirección que está tratando de ingresar ya existe";
+  header("refresh:3; url=videolinkadminmodule.php");
+}
+
+
 if ($resultado){
   $_SESSION['message']='Link Saved Successfully';
   $_SESSION['message_type']='Success';
