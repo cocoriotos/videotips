@@ -37,7 +37,7 @@ $local_username=$_SESSION['username'];
 					<input type="submit" class="btn btn-success btn-block" name="save_link" value="Save Link"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Refresh" formaction="videolinkadminmodule.php"></input>
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="filters" formaction="addfilters.php"></input>
+					<input type="submit" class="btn btn-success btn-block" name="logout" value="Filters" formaction="addfilters.php"></input>
 				</form>
 			</div>
 		</div>
