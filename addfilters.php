@@ -11,20 +11,24 @@ $local_username=$_SESSION['username'];
 	<div class="row">
 		<div class="col-md-4"> 
 			<div class="card card-body">
-				<form class="" action="savenewfilters.php" method="POST"> 
-				
-					<div class="form-group">
-						<label for="videolink" style="color: black;"><strong>Add new Category to filter your Favorite links</strong></label><br>
+			<div class="form-group">
+				<label for="videolink" style="color: black;"><strong>Add new Category to filter your Favorite links</strong></label><br>
 					</div><br>
+				<form class="" action="savenewcategory.php" method="POST"> 
 					<div class="form-group">
-						<label for="maincategory" style="color: black;"><strong>Current Main Categories</strong></label><br>	
+						<label for="maincategory" style="color: black;"><strong>Main Categories</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br> 
-					</div><br>
+					</div><br>  	
+					<input type="submit" class="btn btn-success btn-block" name="add filter" value="add Category"></input>
+					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
+					<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addfilters.php"></input>
+				</form>
+				<form class="" action="savenewsubcategory.php" method="POST">
 					<div class="form-group">
-						<label for="secondcategory" style="color: black;"><strong>Second Category</strong></label><br>	
+						<label for="secondcategory" style="color: black;"><strong>Sub Category</strong></label><br>	
 						<center><input id="secondcategory" type="text" name="secondcategory"  placeholder="Type Sub Category" required ></center><br>
 					</div>  	
-					<input type="submit" class="btn btn-success btn-block" name="add filter" value="add filter"></input>
+					<input type="submit" class="btn btn-success btn-block" name="addsubcategory" value="Add Subcategory"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
 					<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addfilters.php"></input>
 				</form>
