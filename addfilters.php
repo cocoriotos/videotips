@@ -1,5 +1,4 @@
-<!--  Developed by julián González Bucheli
-bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
+<!--  Developed by julián González Bucheli -->
 <html>
 <?php 
 session_start();
@@ -12,15 +11,15 @@ $local_username=$_SESSION['username'];
 	<div class="row">
 		<div class="col-md-4"> 
 			<div class="card card-body">
-				<form class="" action="savelinks.php" method="POST"> 
+				<form class="" action="savenewfilters.php" method="POST"> 
 				
 					<div class="form-group">
-						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
-						<textarea name="videolink" rows="5" class="form-control" placeholder="Video URL full link"></textarea> <br>
+						<label for="videolink" style="color: black;"><strong>Add new Category to filter your Favorite links</strong></label><br>
 					</div>
 					<div class="form-group">
-						<label for="maincategory" style="color: black;"><strong>Main Category</strong></label><br>	
+						<label for="maincategory" style="color: black;"><strong>Current Main Categories</strong></label><br>	
 						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
+
 					</div>
 					<div class="form-group">
 						<label for="secondcategory" style="color: black;"><strong>Second Category</strong></label><br>	
@@ -45,31 +44,22 @@ $local_username=$_SESSION['username'];
 		<div class="col-md-8">
 		 <?php include("search.php") ?>
 		 <div class="card card-body">
+		 <label for="maincategory" style="color: black;"><strong>Current Main Categories</strong></label><br>	
 		  <table id="autosearch" class="display" font color="back">
 				<thead>
 				   <tr>
-				      <th>ID</th>
-					  <th>Video Link</th>
-					  <th>Category</th>
+				      <th>Category</th>
 					  <th>Sub Category</th>
-					  <th>Description</th>
-					  <th>Active</th>
-					  <th>Creation Date</th>
 				   </tr>
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
-					$result_links = mysqli_query($conn,$query1);
-					while($links = mysqli_fetch_array($result_links)) { ?>
+					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by maincategory, category asc";
+					$result_categories = mysqli_query($conn,$query1);
+					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
-						<td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-						<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
-						<td align="center"><?php echo $links['maincategory'] ?></td>
-						<td align="center"><?php echo $links['category'] ?></td>
-						<td align="center"><?php echo $links['description'] ?></td>
-						<td align="center"><?php echo $links['active'] ?></td>
-						<td align="center"><?php echo $links['creationdate'] ?></td>
+						<td align="center" onclick="Display"><?php echo"<a href='subcategiries.php?id={$categories['category']}'>{$categories['category']}"?></td>
+						<td align="center" onclick="Display"><?php echo"<a href='categiries.php?id={$categories['maincategory']}'>{$categories['maincategory']}"?></td>
 						</td>
 					  </tr>
 					<?php }?>
