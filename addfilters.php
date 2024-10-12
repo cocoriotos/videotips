@@ -14,7 +14,7 @@ $local_username=$_SESSION['username'];
 			<div class="form-group">
 				<label for="videolink" style="color: black;"><strong>Add new Category to filter your Favorite links</strong></label><br>
 					</div><br>
-				<form class="" action="savenewcategory.php" method="POST"> 
+				<form class="" action="savecategory.php" method="POST"> 
 					<div class="form-group">
 						<label for="maincategory" style="color: black;"><strong>Main Categories</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br> 
@@ -23,7 +23,7 @@ $local_username=$_SESSION['username'];
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
 					<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addfilters.php"></input>
 				</form>
-				<form class="" action="savenewsubcategory.php" method="POST">
+				<form class="" action="savesubcategory.php" method="POST">
 					<div class="form-group">
 						<label for="secondcategory" style="color: black;"><strong>Sub Category</strong></label><br>	
 						<center><input id="secondcategory" type="text" name="secondcategory"  placeholder="Type Sub Category" required ></center><br>
