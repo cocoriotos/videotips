@@ -19,12 +19,12 @@ $local_username=$_SESSION['username'];
 						<label for="maincategory" style="color: black;"><strong>Main Categories</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br> 
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="add Category"></input></center><br>
-					<form>	
+					</div>
+				</form>
+				<form>	
 						<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
 						<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input>
 						<input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input>
-					</form>
-					</div>
 				</form>
 			</div>
 		</div>
