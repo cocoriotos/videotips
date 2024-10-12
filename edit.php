@@ -23,7 +23,7 @@ print_r($_SESSION['counter']);/*10072024*/
 			 			 
 		  
 			<div class="card card-body">
-				<form action="updatelinks1.php" method="POST"> 
+				<form action="updatelinks.php" method="POST"> 
 					<div class="form-group">
 					<label for="id" style="color: black;"><strong>Id</strong></label><br>	
 						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"></input><br>
