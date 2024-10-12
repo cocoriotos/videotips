@@ -23,7 +23,7 @@ $local_username=$_SESSION['username'];
 				<form action="updatelinks.php" method="POST"> 
 					<div class="form-group">
 					<label for="id" style="color: black;"><strong>Id</strong></label><br>	
-						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"></input><br>
+						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>" readonly></input><br>
 					</div>
 					<div class="form-group">
 						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
