@@ -2,10 +2,7 @@
 include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
-$_SESSION['counter']=$_SESSION['counter']+1;/*10072024*/
 $local_username=$_SESSION['username'];
-print_r($usernamer);/*10072024*/
-print_r($_SESSION['counter']);/*10072024*/
 ?>
 
 

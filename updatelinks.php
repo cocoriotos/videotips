@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "db_connection1.php"; /*10112024*/
+include "db_connection1.php"; 
 
 $id = $_POST['id'];
 $videolink = $_POST['videolink'];
@@ -15,9 +15,7 @@ $resultado=$conn ->query($query);
 
 if ($resultado){
   echo 	"link Updated";
-  /*$_SESSION['message']='Updated Successfully';
-  $_SESSION['message_type']='Success'; 10112024*/
-  header("refresh:0; url=videolinkadminmodule.php");
+  header("refresh:3; url=videolinkadminmodule.php");
     }
   else{
       echo 	"link Not Updated";

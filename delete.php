@@ -1,6 +1,5 @@
 <?php 
 include "db_connection1.php";
-/**include "sessions.php";10082024*/
 $id=$_POST['id'];
 $local_username=$_SESSION['username'];
 
@@ -9,5 +8,6 @@ $result = mysqli_query($conn,$query);
 if (!$result) {
     die("Link not found");
   }
-header("refresh:2; url=videolinkadminmodule.php");  
+echo 	"Register deleted";
+header("refresh:3; url=videolinkadminmodule.php");  
 ?>
