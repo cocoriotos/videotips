@@ -25,7 +25,7 @@
 				<input id="username" type="text" name="Email" placeholder="Type Your email" required><br>
 				<script>
 function resetField() {
-    document.getElementById('username').value = '';
+    document.getElementById('Email').value = '';
 }
 </script>
 				<font color="white" id="form_title1"><strong>Country where you live</strong></font>
