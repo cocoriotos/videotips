@@ -52,8 +52,9 @@ $local_username=$_SESSION['username'];
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
-						<td align="center" onclick="Display"><?php echo"<a href='subcategiries.php?id={$categories['category']}'>{$categories['category']}"?></td>
-						<td align="center" onclick="Display"><?php echo"<a href='categiries.php?id={$categories['maincategory']}'>{$categories['maincategory']}"?></td>
+					     <td align="center" onclick="Display"><?php echo"<a href='categiries.php?id={$categories['maincategory']}'>{$categories['maincategory']}"?></td>
+					 	 <td align="center" onclick="Display"><?php echo"<a href='subcategiries.php?id={$categories['category']}'>{$categories['category']}"?></td>
+						
 						</td>
 					  </tr>
 					<?php }?>
