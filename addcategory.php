@@ -12,13 +12,18 @@ $local_username=$_SESSION['username'];
 		<div class="col-md-4"> 
 			<div class="card card-body">
 			<div class="form-group">
-				<label for="videolink" style="color: black;"><strong>Category to filter your Favorite links</strong></label><br>
+				<label for="videolink" style="color: black;"><strong>Categories to filter your Favorite links</strong></label><br>
 					</div><br>
 				<form class="" action="savecategory.php" method="POST"> 
 					<div class="form-group">
-						<label for="maincategory" style="color: black;"><strong>Main Categories</strong></label><br>	
+						<label for="maincategory" style="color: black;"><strong>Categories</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br> 
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="add Category"></input></center><br>
+					</div><br><br>
+					<div class="form-group">
+						<label for="subcategory" style="color: black;"><strong>Subcategories</strong></label><br>	
+						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br> 
+						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Sub Category"></input></center><br><br>	
 					</div>
 				</form>
 				<form>	
