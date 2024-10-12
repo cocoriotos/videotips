@@ -29,7 +29,7 @@ $header.= "Reply-To: noreply@solicionespro.com" . "\r\n";
 $header.= "X-Mailer: PHP/". phpversion();
 
 //Sending Email 
-mail($to, $subject, $message);
+mail($to, $subject, $message,$header);
 if ($mail) {
 	echo "<h4> ¡Enviado exitosamente!</h4>";
 	} else{
