@@ -22,7 +22,11 @@ print_r($id);
 		  
 			<div class="card card-body">
 				<form action="updatecategory.php" method="POST"> 
-					<div class="form-group">
+				<div class="form-group">
+					<label for="id" style="color: black;"><strong>Id</strong></label><br>	
+						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['$id'];?>"></input><br>
+					</div>
+				    <div class="form-group">
 					<label for="id" style="color: black;"><strong>Category</strong></label><br>	
 						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['$maincategory'];?>"></input><br>
 					</div>
@@ -48,7 +52,7 @@ print_r($id);
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where id = '$id' and maincategory ='$maincategory' and username = '$local_username'";
+					$query1 = "select * from videotips_viodetipscategory where id = '$id' and username = '$local_username'";
 					$result_link1 = mysqli_query($conn,$query1);
 					while($link = mysqli_fetch_array($result_link1)) { ?>
 					  <tr>
