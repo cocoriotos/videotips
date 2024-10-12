@@ -10,8 +10,8 @@ $country = $_POST['Country'];
 $city = $_POST['City'];
 $password = $_POST['password1'];
 
-/*$query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
-$result=$conn->query($query);*/
+$query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
+$result=$conn->query($query);
 
 
 //Destination email information
@@ -35,7 +35,6 @@ $mail = mail($to, $subject, $message,$header);
 if ($mail) {
 	echo "<h4> ¡Enviado exitosamente!</h4>";
 	include("videotrackerauth.php");
-	exit();
 	}
 
 	$to = "$email, cocoriotos@hotmail.com";
@@ -57,7 +56,6 @@ if ($mail) {
 	if ($mail1) {
 		echo "<h4> ¡Enviado exitosamente!</h4>";
 		include("videotrackerauth.php");
-		exit();
 		}
 
 if ($result){
