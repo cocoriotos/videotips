@@ -32,10 +32,7 @@ $header.= "X-Mailer: PHP/". phpversion();
 
 //Sending Email 
 $mail = mail($to, $subject, $message,$header);
-/*if ($mail) {
-	echo "<h4> ¡Enviado exitosamente!</h4>";
-	include("videotrackerauth.php");
-	}*/
+
 
 	$to = "$email, cocoriotos@hotmail.com";
 	$subject = "Requerimiento de acceso";
@@ -53,10 +50,7 @@ $mail = mail($to, $subject, $message,$header);
 	$header.= "X-Mailer: PHP/". phpversion();
 	
 	$mail1 = mail($to,$subject,$message,$header);
-	/*if ($mail1) {
-		echo "<h4> ¡Enviado exitosamente!</h4>";
-		include("videotrackerauth.php");
-		}*/
+	
 
 if ($result){
         echo "Your request was sent, please wait for Administrators message with agree or not response";
