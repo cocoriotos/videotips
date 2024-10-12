@@ -26,11 +26,11 @@ $local_username=$_SESSION['username'];
 						<label for="secondcategory" style="color: black;"><strong>Sub Category</strong></label><br>	
 						<center><input id="secondcategory" type="text" name="secondcategory"  placeholder="Type Sub Category" required ></center><br>
 					</div>  	
-					<input type="submit" class="btn btn-success btn-block" name="addsubcategory" value="Add Subcategory"></input>
+					<center><input type="submit" class="btn btn-success btn-block" name="addsubcategory" value="Add Subcategory"></input></center>
 					</form>
 				<form class="" action="savesubcategory.php" method="POST">
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
-					<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addfilters.php"></input>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center>
+					<center><input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addfilters.php"></input></center>
 				</form>
 			</div>
 		</div>
