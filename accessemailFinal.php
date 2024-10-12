@@ -4,7 +4,7 @@
 $name = $_POST['Name'];
 $lastname = $_POST['LastName'];
 $reportsto = $_POST['ReportsTo'];
-$email = $_POST['Email'];
+$email = $_POST['email'];
 $country = $_POST['Country'];
 $city = $_POST['City'];
 $password = $_POST['password1'];
@@ -30,6 +30,13 @@ $header.= "X-Mailer: PHP/". phpversion();
 
 //Sending Email 
 mail($to, $subject, $message);
+if ($mail) {
+	echo "<h4> ¡Enviado exitosamente!</h4>";
+	} else{
+		echo "<h4> ¡Correo no enviado exitosamente!</h4>";
+		include("requestaccessfinal.php");
+		exit();		
+	}
 $query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
 include ("db_connection1.php");
 $result=$conn->query($query);
