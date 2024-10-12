@@ -24,15 +24,15 @@ print_r($id);
 				<form action="updatecategory.php" method="POST"> 
 				<div class="form-group">
 					<label for="id" style="color: black;"><strong>Id</strong></label><br>	
-						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['$id'];?>"></input><br>
+						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"></input><br>
 					</div>
 				    <div class="form-group">
 					<label for="id" style="color: black;"><strong>Category</strong></label><br>	
-						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['$maincategory'];?>"></input><br>
+						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
 					</div>
 					<div class="form-group">
 						<label for="videolink" style="color: black;"><strong>Sub Category</strong></label><br>	
-						<input type="text" name="videolink" class="form-control" placeholder="link" autofocus value ="<?php echo $link['$category'];?>"></input><br>
+						<input type="text" name="videolink" class="form-control" placeholder="link" autofocus value ="<?php echo $link['category'];?>"></input><br>
 					</div>
 					<input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="deletecategory.php"></input>
