@@ -33,6 +33,12 @@
 				<br>
 				<br>	
 		</form>	
+		<form id="login" action="requestaccessfinal.php" method="POST" autocomplete="off"> <!-- Form to request access-->
+			<center>
+				<h6 id="access" align="center"><address><strong>No access?, Please request it here</strong> </address></h6><br>
+				<input id="requestaccess" type="submit" value="Request Access"><br>
+			</center>
+		</form>
         <form id="login1" action="/default1.php" method="POST" autocomplete="off"> 
 			    <center><input id="loginbutton" type="submit" value="Salir de la página"></center>
 				<br>
