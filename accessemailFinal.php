@@ -15,7 +15,7 @@ $result=$conn->query($query);*/
 
 
 //Destination email information
-$to = "$email, cocoriotos1@gmail.com, cocoriotos@hotmail.com";
+$to = "$email, cocoriotos@hotmail.com";
 $subject = "Urgent Links tool access request";
 $message = "Good day Admin Team:  \n\n";
 $message.= "This user is requesting tool access, please response ASAP \n\n";//. to concatenate lines in the same variable
@@ -36,10 +36,6 @@ if ($mail) {
 	echo "<h4> ¡Enviado exitosamente!</h4>";
 	include("requestaccessfinal.php");
 	exit();
-	} else{
-		echo "<h4> ¡Correo no enviado exitosamente!</h4>";
-		include("requestaccessfinal.php");
-		exit();		
 	}
 
 if ($result){
