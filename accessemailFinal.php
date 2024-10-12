@@ -10,14 +10,12 @@ $country = $_POST['Country'];
 $city = $_POST['City'];
 $password = $_POST['password1'];
 
-$query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
-include ("db_connection1.php");
-$result=$conn->query($query);
+/*$query="INSERT INTO accessrequests(name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
+$result=$conn->query($query);*/
 
 
 //Destination email information
-$to = "$email";
-/*$to.= "cocoriotos@hotmail.com";*/
+$to = "$email, cocoriotos1@gmail.com, cocoriotos@hotmail.com";
 $subject = "Urgent Links tool access request";
 $message = "Good day Admin Team:  \n\n";
 $message.= "This user is requesting tool access, please response ASAP \n\n";//. to concatenate lines in the same variable
@@ -36,6 +34,8 @@ $header.= "X-Mailer: PHP/". phpversion();
 mail($to, $subject, $message,$header);
 if ($mail) {
 	echo "<h4> ¡Enviado exitosamente!</h4>";
+	include("requestaccessfinal.php");
+	exit();
 	} else{
 		echo "<h4> ¡Correo no enviado exitosamente!</h4>";
 		include("requestaccessfinal.php");
@@ -46,6 +46,7 @@ if ($result){
         echo "Your request was sent, please wait for Administrators message with agree or not response";
 } else {
 	echo "Request not send please try again";
+	include("requestaccessfinal.php");
        }
 header("refresh:7;url=videotrackauth.php");
 ?>
