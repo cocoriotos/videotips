@@ -31,11 +31,11 @@ $local_username=$_SESSION['username'];
 					</div>
 					<div class="form-group">
 						<label for="maincategory" style="color: black;"><strong>Main Category</strong></label><br>
-						<select name="maincategory" required><?php $query_options = "SELECT * FROM videotips_maincategory"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
+						<select name="maincategory" required><?php $query_options = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
 					</div>
 					<div class="form-group">
 						<label for="category" style="color: black;"><strong>Second Category</strong></label><br>
-						<select name="category" required><?php $query_options = "SELECT * FROM videotips_viodetipscategory"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
+						<select name="category" required><?php $query_options = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
 					</div>
 					<div class="form-group">
 						<label for="description" style="color: black;"><strong>Description</strong></label><br>	
