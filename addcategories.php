@@ -45,7 +45,6 @@ $local_username=$_SESSION['username'];
 				<thead>
 				   <tr>
 				      <center><th>Category</th></center>
-					  <center><th>Sub Category</th></center>
 				   </tr>
 			    </thead>
 				<tbody>
