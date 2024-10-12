@@ -12,10 +12,19 @@ $category=$_POST["category"];
 $query="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
 $resultado= $conn ->query($query);
 
+$query1="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
+$resultado1= $conn ->query($query1);
+
 
 if ($resultado){
     $_SESSION['message']='Category Saved Successfully';
   $_SESSION['message_type']='Success';
-  header("refresh:3; url=videolinkadminmodule.php");
+  header("refresh:3; url=addcategory.php");
+  }
+
+  if ($resultado1){
+    $_SESSION['message']='Category Saved Successfully';
+  $_SESSION['message_type']='Success';
+  header("refresh:3; url=addcategory.php");
   }
 ?>
