@@ -11,11 +11,11 @@ $query="UPDATE videotips_viodetipscategory SET id = '$id', maincategory = '$main
 $resultado=$conn ->query($query);
 
 if ($resultado){
-  echo 	"link Updated";
+  echo 	"Category Updated";
   header("refresh:3; url=addcategory.php");
     }
   else{
-      echo 	"link Not Updated";
+      echo 	"Category Not Updated";
       header("refresh:5; url=addcategory.php");
       }
 ?>

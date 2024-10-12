@@ -6,8 +6,8 @@ $local_username=$_SESSION['username'];
 $query = "delete from videotips_viodetipscategory where id='$id'";
 $result = mysqli_query($conn,$query);
 if (!$result) {
-    die("Link not found");
+    die("Category not found");
   }
-echo 	"Register deleted";
+echo 	"Category deleted";
 header("refresh:3; url=addcategory.php");  
 ?>
