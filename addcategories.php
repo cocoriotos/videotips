@@ -50,13 +50,36 @@ $local_username=$_SESSION['username'];
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by maincategory, category asc";
+					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by maincategory asc";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
 					     <td align="center" onclick="Display"><?php echo"<a href='categiries.php?id={$categories['maincategory']}'>{$categories['maincategory']}"?></td>
+					 	 </td>
+					  </tr>
+					<?php }?>
+				<tbody>
+			</table>
+		   </div>
+	   </div>
+
+	   <div class="col-md-8">
+		 <?php include("search.php") ?>
+		 <div class="card card-body">
+		 <label for="maincategory" style="color: black;"><strong>Current sub Categories</strong></label><br>	
+		  <table id="autosearch" class="display" font color="back">
+				<thead>
+				   <tr>
+					  <center><th>Sub Category</th></center>
+				   </tr>
+			    </thead>
+				<tbody>
+					<?php 
+					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by category asc";
+					$result_categories = mysqli_query($conn,$query1);
+					while($categories = mysqli_fetch_array($result_categories)) { ?>
+					  <tr>
 					 	 <td align="center" onclick="Display"><?php echo"<a href='subcategiries.php?id={$categories['category']}'>{$categories['category']}"?></td>
-						
 						</td>
 					  </tr>
 					<?php }?>
@@ -64,6 +87,11 @@ $local_username=$_SESSION['username'];
 			</table>
 		   </div>
 	   </div>
+
+
+
+
+
     </div>
 </div>
 <?php include ("footer.php")?>
