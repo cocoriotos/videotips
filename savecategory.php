@@ -28,6 +28,7 @@ if ($resultado){
     echo ("Category Saved");
     $_SESSION['message']='Category Saved Successfully';
     $_SESSION['message_type']='Success';
+    print_r($categorycounter);
   header("refresh:7; url=addcategory.php");
   }
 }else{
