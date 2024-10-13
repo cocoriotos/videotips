@@ -34,5 +34,6 @@ if ($resultado){
 
 }else{
   echo ("Suscription issued, please renue to continue enjoy your favorite links");
+  header("refresh:3; url=addcategory.php");
 }
 ?>
