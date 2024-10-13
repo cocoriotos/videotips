@@ -46,7 +46,7 @@ if (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeatur
     exit(); // Importante para detener la ejecución después de redirigir
 }
 
-if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 1) || $role === "Admin")  {
+if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 1))  {
     // Inserta la nueva categoría y maincategory
     $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)";
     $stmt1 = $conn->prepare($query1);
