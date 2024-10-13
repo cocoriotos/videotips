@@ -11,7 +11,7 @@ $query="SELECT suscriptionactive from  videotips_app_access_list where username 
 $activesuscription= $conn ->query($query);
 
 
-if($activesuscription){
+if($activesuscription == 0){
 
 $query="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
 $resultado= $conn ->query($query);
