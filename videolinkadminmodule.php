@@ -9,7 +9,7 @@ $local_username=$_SESSION['username'];
 ?>
 
 
-<div class="container p-4">
+<div class="row">
 						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
 						<textarea name="videolink" rows="5" class="form-control" placeholder="Video URL full link"></textarea> <br>
 						<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
