@@ -5,7 +5,7 @@ session_start();
 include "header.php";
 include "db_connection1.php";
 $local_username=$_SESSION['username'];
-print_r($local_username);
+
 ?>
 
 <div class="container p-4">
