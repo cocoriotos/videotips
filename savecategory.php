@@ -22,8 +22,8 @@ $resultado1= $conn ->query($query1);
 
 if ($resultado){
     
-    $query="UPDATE videotips_app_access_list SET categorycounter = ($categorycounter + 1)  where username = '$local_username'";
-    $categorycounter1= $conn ->query($query);
+    $query2="UPDATE videotips_app_access_list SET categorycounter = ($categorycounter + 1)  where username = '$local_username'";
+    $categorycounter1= $conn ->query($query2);
     
     echo ("Category Saved");
     $_SESSION['message']='Category Saved Successfully';
