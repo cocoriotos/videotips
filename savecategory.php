@@ -10,8 +10,9 @@ $category=$_POST["category"];
 $query="SELECT categorycounter from  videotips_app_access_list where username = '$local_username'";
 $categorycounter= $conn ->query($query);
 
+$categorycounter = 11;
 
-if($categorycounter >= 6){
+if($categorycounter > 5){
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
   $_SESSION['message']='Subcategories not saved Successfully';
   $_SESSION['message_type']='No Success';
