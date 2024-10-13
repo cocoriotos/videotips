@@ -27,7 +27,7 @@ if(is_numeric($categorycounter) && $categorycounter < 4) {
   $resultado1= $conn ->query($query1);
   $query2="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
   $resultado2= $conn ->query($query2);
-  if ($resultado){
+  if ($resultado1){
       $query3="UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1  where username = '$local_username'";
       $categorycounter3= $conn ->query($query3);
       echo ("Category Saved");
