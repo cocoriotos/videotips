@@ -15,7 +15,6 @@ if ($categorycounter > 5){
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
   $_SESSION['message']='Subcategories not saved Successfully';
   $_SESSION['message_type']='No Success';
-  echo ($categorycounter);
   header("refresh:7; url=addcategory.php");
 }
 
@@ -30,7 +29,6 @@ if ($categorycounter < 6){
       echo ("Category Saved");
       $_SESSION['message']='Category Saved Successfully';
       $_SESSION['message_type']='Success';
-      echo ($categorycounter);
       header("refresh:7; url=addcategory.php");
       } 
     }
