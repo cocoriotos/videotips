@@ -21,12 +21,14 @@ $resultado1= $conn ->query($query1);
 
 
 if ($resultado){
+    echo ("Category Saved");
     $_SESSION['message']='Category Saved Successfully';
     $_SESSION['message_type']='Success';
   header("refresh:0; url=addcategory.php");
   }
 
   if ($resultado1){
+    echo ("Category Saved");  
     $_SESSION['message']='Category Saved Successfully';
     $_SESSION['message_type']='Success';
   header("refresh:0; url=addcategory.php");
