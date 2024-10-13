@@ -6,19 +6,15 @@ session_start();
 include "header.php";
 include "db_connection1.php";
 $local_username=$_SESSION['username'];
+ 
+					$query = "SELECT * FROM videotips_app_access_list where username = '$local_username'";
+					$result_name = mysqli_query($conn,$query);
+					$name = mysqli_fetch_array($result_name);
 ?>
 
-
-
-<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label>
-<textarea name="videolink" rows="1" class="form-control" placeholder="Video URL full link"></textarea>
-<label for="maincategory" style="color: black;"><strong>Category</strong></label>
-<select name= "maincategory" > <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select>
-<label for="category" style="color: black;"><strong>Subcategory</strong></label>	
-<select name= "category" > <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select>
-<label for="useful" style="color: black;"><strong>Useful</strong></label>
-<label name= "active" readonly"" <?php $SQLSELECT = "SELECT * FROM videotips_active order by active desc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $active = $rows['active']; echo "<option value='$active'>$active</option>";} ?></label>
-
+<label for="id" style="color: black;"><strong>Id</strong></label><br>	
+<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $name['username'];?>"readonly></input><br>
+					
 
 
 
