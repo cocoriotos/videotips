@@ -42,6 +42,8 @@ if ($resultado){
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
   $_SESSION['message']='Subcategories not saved Successfully';
   $_SESSION['message_type']='No Success';
+  print_r("$categorycounter");
+  print_r("$local_username");
   header("refresh:7; url=addcategory.php");
 }
 ?>
