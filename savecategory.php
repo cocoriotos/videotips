@@ -28,20 +28,20 @@ if ($resultado){
     echo ("Category Saved");
     $_SESSION['message']='Category Saved Successfully';
     $_SESSION['message_type']='Success';
-  header("refresh:0; url=addcategory.php");
+  header("refresh:7; url=addcategory.php");
   }
 
   if ($resultado1){
     echo ("Category Saved");  
     $_SESSION['message']='Category Saved Successfully';
     $_SESSION['message_type']='Success';
-  header("refresh:0; url=addcategory.php");
+  header("refresh:7; url=addcategory.php");
   }
 
 }else{
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
   $_SESSION['message']='Subcategories not saved Successfully';
   $_SESSION['message_type']='No Success';
-  header("refresh:0; url=addcategory.php");
+  header("refresh:7; url=addcategory.php");
 }
 ?>
