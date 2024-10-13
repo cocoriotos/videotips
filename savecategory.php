@@ -19,13 +19,13 @@ if($categorycounter > 5){
   header("refresh:7; url=addcategory.php");
 }
 if($categorycounter < 6){
-  $query="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
-  $resultado= $conn ->query($query);
-  $query1="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
+  $query1="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
   $resultado1= $conn ->query($query1);
+  $query2="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
+  $resultado2= $conn ->query($query2);
   if ($resultado){
-      $query2="UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1  where username = '$local_username'";
-      $categorycounter1= $conn ->query($query2);
+      $query3="UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1  where username = '$local_username'";
+      $categorycounter3= $conn ->query($query3);
       echo ("Category Saved");
       $_SESSION['message']='Category Saved Successfully';
       $_SESSION['message_type']='Success';
