@@ -12,15 +12,15 @@ $local_username=$_SESSION['username'];
 					$data = mysqli_fetch_array($result_name);
 ?>
 
-</center><label for="id" style="color: black;"><strong>User Information</strong></label></center>
-<label for="id" style="color: black;"><strong>Username</strong></label>
-<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['username'];?>"readonly></input>
-<label for="id" style="color: black;"><strong>Suscription Status</strong></label>
-<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['suscriptionactive'];?>"readonly></input>
-<label for="id" style="color: black;"><strong>Subcategory Counter</strong></label>
-<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['categorycounter'];?>"readonly></input>
-<label for="id" style="color: black;"><strong>More than 5 Subcategory feature Enabled?</strong></label>
-<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['extendcounterfeature'];?>"readonly></input>
+</center><label for="id" style="color: black;"><strong>User Information</strong></label></center><br>
+<label for="id" style="color: black;"><strong>Username</strong></label><br>	
+<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['username'];?>"readonly></input><br>
+<label for="id" style="color: black;"><strong>Suscription Status</strong></label><br>	
+<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['suscriptionactive'];?>"readonly></input><br>
+<label for="id" style="color: black;"><strong>Subcategory Counter</strong></label><br>	
+<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['categorycounter'];?>"readonly></input><br>
+<label for="id" style="color: black;"><strong>More than 5 Subcategory feature Enabled?</strong></label><br>	
+<input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['extendcounterfeature'];?>"readonly></input><br>					
 
 
 
