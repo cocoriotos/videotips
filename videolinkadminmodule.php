@@ -1,7 +1,7 @@
 <!--  Developed by julián González Bucheli
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
 <html>
-<center?php 
+<?php 
 session_start();
 include "header.php";
 include "db_connection1.php";
@@ -12,7 +12,7 @@ $local_username=$_SESSION['username'];
 					$data = mysqli_fetch_array($result_name);
 ?>
 
-</center><label for="id" style="color: black;"><strong>User Information</strong></label></center><br>
+<center><label for="id" style="color: black;"><strong>User Information</strong></label></center><br>
 <label for="id" style="color: black;"><strong>Username</strong></label><br>	
 <input type="text" name="name" class="form-control" placeholder="Name" autofocus value ="<?php echo $data['username'];?>"readonly></input><br>
 <label for="id" style="color: black;"><strong>Suscription Status</strong></label><br>	
