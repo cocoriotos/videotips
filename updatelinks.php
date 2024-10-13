@@ -15,10 +15,14 @@ $resultado=$conn ->query($query);
 
 if ($resultado){
   echo 	"link Updated";
-  header("refresh:3; url=videolinkadminmodule.php");
+  $_SESSION['message']='Link Updated Successfully';
+  $_SESSION['message_type']='Success';
+  header("refresh:0; url=videolinkadminmodule.php");
     }
   else{
       echo 	"link Not Updated";
+      $_SESSION['message']='Link Not Updated';
+      $_SESSION['message_type']='Not Success';
       header("refresh:5; url=videolinkadminmodule.php");
       }
 ?>
