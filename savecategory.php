@@ -9,9 +9,14 @@ $category=$_POST["category"];
 
 $query="SELECT categorycounter from  videotips_app_access_list where username = '$local_username'";
 $categorycounter= $conn ->query($query);
-
-print($categorycounter);
-time_nanosleep(5, 500000000); 
+ 
+if ($categorycounter === false) {
+  // Si la consulta falla, puedes mostrar el error
+  echo "Error en la consulta: " . $conn->error;
+} else {
+  echo "Consulta ejecutada correctamente.";
+}
+?>
 
 /*if ($categorycounter > 5){
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
@@ -33,5 +38,5 @@ if ($categorycounter < 6){
       $_SESSION['message_type']='Success';
       header("refresh:7; url=addcategory.php");
       } 
-    }*/
-?>
+    }
+?>*/
