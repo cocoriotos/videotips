@@ -25,6 +25,16 @@ $stmt->bind_result($extendcounterfeature);
 $stmt->fetch();
 $stmt->close();
 
+// Consulta para obtener el role
+$query5 = "SELECT role FROM videotips_app_access_list WHERE username = ?";
+$stmt = $conn->prepare($query5);
+$stmt->bind_param("s", $local_username);  // Evita la inyección SQL
+$stmt->execute();
+$stmt->bind_result($role);
+$stmt->fetch();
+$stmt->close();
+
+
 
 
 // Verificación y lógica basada en el valor de categorycounter
@@ -36,7 +46,7 @@ if (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeatur
     exit(); // Importante para detener la ejecución después de redirigir
 }
 
-if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 1))  {
+if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 1) || ((is_string($role) === 'Admin')))  {
     // Inserta la nueva categoría y maincategory
     $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)";
     $stmt1 = $conn->prepare($query1);
