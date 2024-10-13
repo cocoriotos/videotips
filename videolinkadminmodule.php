@@ -9,19 +9,15 @@ $local_username=$_SESSION['username'];
 ?>
 
 
-<div class="row">
-						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
-						<textarea name="videolink" rows="5" class="form-control" placeholder="Video URL full link"></textarea> <br>
-						<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
-						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>				
-						<label for="category" style="color: black;"><strong>Subcategory</strong></label><br>	
-						<select name= "category" required> <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
-	                 	<label for="description" style="color: black;"><strong>Description</strong></label><br>	
-						<textarea name="description" rows="5" class="form-control" placeholder="Video tip Description"></textarea> <br>
-					 	<label for="useful" style="color: black;"><strong>Useful</strong></label><br>	
-						 <select name= "active" required> <?php $SQLSELECT = "SELECT * FROM videotips_active order by active desc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $active = $rows['active']; echo "<option value='$active'>$active</option>";} ?></select> <br><br>
-</div>
 
+<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
+<textarea name="videolink" rows="1" class="form-control" placeholder="Video URL full link"></textarea> <br>
+<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
+<select name= "maincategory" > <?php $SQLSELECT = "SELECT * FROM videotips_maincategory order by maincategory asc"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>				
+<label for="category" style="color: black;"><strong>Subcategory</strong></label><br>	
+<select name= "category" > <?php $SQLSELECT = "SELECT * FROM videotips_viodetipscategory order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
+<label for="useful" style="color: black;"><strong>Useful</strong></label><br>	
+<select name= "active" readonly"" <?php $SQLSELECT = "SELECT * FROM videotips_active order by active desc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $active = $rows['active']; echo "<option value='$active'>$active</option>";} ?></select> <br><br>
 
 
 
