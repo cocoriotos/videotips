@@ -7,7 +7,11 @@ $local_username=$_SESSION['username'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 
+$query="SELECT suscriptionactive from  videotips_app_access_list where username = '$local_username'";
+$activesuscription= $conn ->query($query);
 
+
+if($activesuscription){
 
 $query="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
 $resultado= $conn ->query($query);
@@ -27,4 +31,8 @@ if ($resultado){
   $_SESSION['message_type']='Success';
   header("refresh:3; url=addcategory.php");
   }
+
+}else{
+  echo ("Suscription issued, please renue to continue enjoy your favorite links");
+}
 ?>

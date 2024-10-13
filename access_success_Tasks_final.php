@@ -8,7 +8,9 @@ $global_username=$_POST['username'];
 $_SESSION['username']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
 $local_username=$_SESSION['username'];/*10082024*/
 $password=$_POST['password'];
-	
+
+
+
 	if($_POST)
  {
   $db_host="127.0.0.1";
