@@ -11,7 +11,7 @@ $query="SELECT categorycounter from  videotips_app_access_list where username = 
 $categorycounter= $conn ->query($query);
 
 
-if($categorycounter > 6){
+if($categorycounter < 6){
 
 $query="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
 $resultado= $conn ->query($query);
