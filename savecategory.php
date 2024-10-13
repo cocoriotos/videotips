@@ -11,7 +11,7 @@ $query="SELECT categorycounter from  videotips_app_access_list where username = 
 $categorycounter= $conn ->query($query);
 
 
-if ($categorycounter > '5'){
+if ($categorycounter > 5){
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
   $_SESSION['message']='Subcategories not saved Successfully';
   $_SESSION['message_type']='No Success';
@@ -19,7 +19,7 @@ if ($categorycounter > '5'){
   header("refresh:7; url=addcategory.php");
 }
 
-if ($categorycounter < '6'){
+if ($categorycounter < 6){
   $query1="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
   $resultado1= $conn ->query($query1);
   $query2="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
