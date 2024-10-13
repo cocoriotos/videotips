@@ -7,11 +7,11 @@ $local_username=$_SESSION['username'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 
-$query="SELECT suscriptionactive from  videotips_app_access_list where username = '$local_username'";
-$activesuscription= $conn ->query($query);
+$query="SELECT categorycounter from  videotips_app_access_list where username = '$local_username'";
+$categorycounter= $conn ->query($query);
 
 
-if($activesuscription == 1){
+if($categorycounter > 3){
 
 $query="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
 $resultado= $conn ->query($query);
