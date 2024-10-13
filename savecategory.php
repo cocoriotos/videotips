@@ -15,14 +15,14 @@ $categorycounter= $conn ->query($query);
 }
 
 
-if(is_numeric($categorycounter) && $categorycounter > 5) {
+if(is_numeric($categorycounter) && $categorycounter > 3) {
   echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
   $_SESSION['message']='Subcategories not saved Successfully';
   $_SESSION['message_type']='No Success';
   header("refresh:7; url=addcategory.php");
 }
 
-if(is_numeric($categorycounter) && $categorycounter < 6) {
+if(is_numeric($categorycounter) && $categorycounter < 4) {
   $query1="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
   $resultado1= $conn ->query($query1);
   $query2="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
