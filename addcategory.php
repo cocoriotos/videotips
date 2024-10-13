@@ -23,13 +23,13 @@ $local_username=$_SESSION['username'];
 						<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
 						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br> 
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center><br><br>	
-					</div>
-						
+					</div>	
 				</form>
+				<br><br>
 				<form>
-						<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input><br>
-						<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input><br>
-						<input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input><br>
+						<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input><br><br><br>
+						<input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input><br><br><br>
+						<input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input><br><br>
 				</form>
 			</div>
 		</div>
