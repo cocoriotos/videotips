@@ -2,38 +2,55 @@
 session_start();
 include "db_connection1.php";
 
+$local_username = $_SESSION['username'];
+$maincategory = $_POST["maincategory"];
+$category = $_POST["category"];
 
-$local_username=$_SESSION['username'];
-$maincategory=$_POST["maincategory"];
-$category=$_POST["category"];
+// Consulta para obtener el categorycounter
+$query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("s", $local_username);  // Evita la inyección SQL
+$stmt->execute();
+$stmt->bind_result($categorycounter);
+$stmt->fetch();
+$stmt->close();
 
-$query="SELECT categorycounter from  videotips_app_access_list where username = '$local_username'";
-$categorycounter= $conn ->query($query);
- 
-{
-  // Acción a realizar si es numérico y mayor a 5
+// Verificación y lógica basada en el valor de categorycounter
+if (is_numeric($categorycounter) && $categorycounter > 3) {
+    echo "You have reached the 5 free subcategories registration limit. To continue adding more, please check our plans.";
+    $_SESSION['message'] = 'Subcategories not saved Successfully';
+    $_SESSION['message_type'] = 'No Success';
+    header("refresh:7; url=addcategory.php");
+    exit(); // Importante para detener la ejecución después de redirigir
 }
 
+if (is_numeric($categorycounter) && $categorycounter < 4) {
+    // Inserta la nueva categoría y maincategory
+    $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)";
+    $stmt1 = $conn->prepare($query1);
+    $stmt1->bind_param("sss", $maincategory, $category, $local_username);
+    $resultado1 = $stmt1->execute();
+    $stmt1->close();
 
-if(is_numeric($categorycounter) && $categorycounter > 3) {
-  echo ("You reach the 5 free subcategories registration, to continue adding more, please see our plans to");
-  $_SESSION['message']='Subcategories not saved Successfully';
-  $_SESSION['message_type']='No Success';
-  header("refresh:7; url=addcategory.php");
-}
+    $query2 = "INSERT INTO videotips_maincategory (maincategory, username) VALUES (?, ?)";
+    $stmt2 = $conn->prepare($query2);
+    $stmt2->bind_param("ss", $maincategory, $local_username);
+    $resultado2 = $stmt2->execute();
+    $stmt2->close();
 
-if(is_numeric($categorycounter) && $categorycounter < 4) {
-  $query1="INSERT INTO videotips_viodetipscategory (maincategory, category, username) values ('$maincategory','$category','$local_username')";
-  $resultado1= $conn ->query($query1);
-  $query2="INSERT INTO videotips_maincategory (maincategory, username) values ('$maincategory', '$local_username')";
-  $resultado2= $conn ->query($query2);
-  if ($resultado1){
-      $query3="UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1  where username = '$local_username'";
-      $categorycounter3= $conn ->query($query3);
-      echo ("Category Saved");
-      $_SESSION['message']='Category Saved Successfully';
-      $_SESSION['message_type']='Success';
-      header("refresh:7; url=addcategory.php");
-      } 
+    // Si la primera inserción fue exitosa, actualiza el categorycounter
+    if ($resultado1) {
+        $query3 = "UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = ?";
+        $stmt3 = $conn->prepare($query3);
+        $stmt3->bind_param("s", $local_username);
+        $stmt3->execute();
+        $stmt3->close();
+
+        echo "Category Saved";
+        $_SESSION['message'] = 'Category Saved Successfully';
+        $_SESSION['message_type'] = 'Success';
+        header("refresh:7; url=addcategory.php");
+        exit(); // Importante para detener la ejecución después de redirigir
     }
+}
 ?>
