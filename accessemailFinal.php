@@ -13,8 +13,8 @@ $password = $_POST['password1'];
 $query="INSERT INTO videotips_accessrequests SET (name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
 $result=$conn->query($query);
 
-$query1="INSERT INTO videotips_app_access_list SET (name, usename, email, password, role, active, adm_role, suscriptionactive, categorycounter, extendcounterfeature) VALUES ($name, concat($lastname,',',' ',$name), $email, $password, user, 1, 0, 1, 0, 0) where username='$local_username'"; 
-$result1=mysqli_query($conn, $query1);
+$query1="INSERT INTO videotips_app_access_list SET (name, usename, email, password, role, active, adm_role, suscriptionactive, categorycounter, extendcounterfeature) VALUES ($name, concat($lastname,',',' ',$name), $email, $password, 'user', 1, 0, 1, 0, 0) where username='$local_username'"; 
+$result1=$conn->query($query1);
 
 
 
