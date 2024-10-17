@@ -31,9 +31,11 @@ try {
   // Verificar si el código de error es 1062 (duplicidad)
   if ($e->getCode() == 1062) {
       echo "Error: Ya existe una página igual registrada. Por favor, usa otra.";
+      exit()
   } else {
       // Para cualquier otro error
-      echo "Error: " . $e->getMessage();
+      echo "Error: Ya existe una página igual registrada. Por favor, usa otra.";
+      exit()
   }
 }
 
