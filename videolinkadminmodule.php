@@ -36,11 +36,11 @@ $local_username=$_SESSION['username'];
 					</div>
 					<div class="form-group">
 						<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
-						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT distinct(*) FROM videotips_maincategory where username = '$local_username' order by maincategory asc "; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
+						<select name= "maincategory" required> <?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_maincategory where username = '$local_username' order by maincategory asc "; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
 					</div>
 					<div class="form-group">
 						<label for="category" style="color: black;"><strong>Subcategory</strong></label><br>	
-						<select name= "category" required> <?php $SQLSELECT = "SELECT distinct(*) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
+						<select name= "category" required> <?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
 					</div>
 	                 <div class="form-group">
 					 	<label for="description" style="color: black;"><strong>Description</strong></label><br>	
