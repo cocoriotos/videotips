@@ -43,8 +43,9 @@ $local_username=$_SESSION['username'];
 				<thead>
 				   <tr>
 				      <center><th>ID</th></center>
+					  <center><th>Category</th></center> 
 					  <center><th>Sub Category</th></center>
-					  <center><th>Category</th></center>
+					  
 				   </tr>
 			    </thead>
 				<tbody>
@@ -54,8 +55,8 @@ $local_username=$_SESSION['username'];
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
 					     <td align="center" onclick="Display"><?php echo"<a href='editcategory.php?id={$categories['id']}'>{$categories['id']}"?></td>
-						 <td align="center" onclick="Display"><?php echo $categories['category']?></td>
 						 <td align="center" onclick="Display"><?php echo $categories['maincategory']?></td>
+						 <td align="center" onclick="Display"><?php echo $categories['category']?></td>
 					 	 </td>
 					  </tr>
 					<?php }?>
