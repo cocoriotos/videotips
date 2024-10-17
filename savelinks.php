@@ -21,7 +21,7 @@ $resultado= $conn ->query($query);
 
 /*Avoid duplicated URLs*/
 
-try {
+/*try {
   if ($conn->query($query) === TRUE) {
       echo "Registro insertado exitosamente";
   } else {
@@ -37,7 +37,7 @@ try {
       echo "Error: Hay un error. Por favor, intentar nuevamente.";
       exit;
   }
-}
+}*/
 
 
 
