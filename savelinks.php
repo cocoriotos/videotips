@@ -19,6 +19,27 @@ if($activesuscription == 1){
 $query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$local_username')";
 $resultado= $conn ->query($query);
 
+/*Avoid duplicated URLs*/
+
+try {
+  if ($conn->query($resultado) === TRUE) {
+      echo "Registro insertado exitosamente";
+  } else {
+      throw new Exception($conn->error, $conn->errno);
+  }
+} catch (Exception $e) {
+  // Verificar si el código de error es 1062 (duplicidad)
+  if ($e->getCode() == 1062) {
+      echo "Error: Ya existe una página igual registrada. Por favor, usa otra.";
+  } else {
+      // Para cualquier otro error
+      echo "Error: " . $e->getMessage();
+  }
+}
+
+
+
+
 
 if ($resultado){
     $_SESSION['message']='Link Saved Successfully';
