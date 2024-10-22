@@ -18,9 +18,10 @@ $urlduplicated= $conn ->query($query1);
 
 
 
-if($urlduplicated === true){ 
+if($urlduplicated->num_rows > 0){ 
   echo ("Link duplicated, review and use another one");
   header("refresh:3; url=videolinkadminmodule.php");
+  exit();
 } else {
 if($activesuscription == 1){
 
