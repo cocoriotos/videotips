@@ -35,6 +35,21 @@ $stmt->fetch();
 $stmt->close();
 
 
+// Consulta para identificar si hay dupliidad de subcategiría
+$query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = $category and username = ?";
+$stmt = $conn->prepare($query6);
+$stmt->bind_param("s", $local_username);  // Evita la inyección SQL
+$stmt->execute();
+$stmt->bind_result($categoryresult);
+$stmt->fetch();
+$stmt->close();
+
+
+if($categoryresult->num_rows > 0){ 
+    echo ("Category duplicated, review and use another one");
+    header("refresh:3; url=addcategory.php");
+    exit();
+  } else {
 
 
 // Verificación y lógica basada en el valor de categorycounter
@@ -74,5 +89,6 @@ if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($cate
         header("refresh:7; url=addcategory.php");
         exit(); // Importante para detener la ejecución después de redirigir
     }
+}
 }
 ?>

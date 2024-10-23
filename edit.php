@@ -27,7 +27,7 @@ $local_username=$_SESSION['username'];
 					</div>
 					<div class="form-group">
 						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
-						<input type="text" name="videolink" class="form-control" placeholder="link" autofocus value ="<?php echo $link['videolink'];?>"></input><br>
+						<input type="text" name="videolink" class="form-control" placeholder="link" autofocus value ="<?php echo $link['videolink'];?>"readonly></input><br>
 					</div>
 					<div class="form-group">
 						<label for="maincategory" style="color: black;"><strong>Main Category</strong></label><br>
