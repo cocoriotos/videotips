@@ -23,10 +23,15 @@ if($urlduplicated->num_rows > 0){
   header("refresh:3; url=videolinkadminmodule.php");
   exit();
 } else {
-if($activesuscription == 1){
+if($activesuscription === 1){
 
-$query="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$local_username')";
-$resultado= $conn ->query($query);
+$query3="INSERT INTO videotips_videotips (videolink,maincategory,category,description,active,username) values ('$videolink','$maincategory','$category','$description','Yes','$local_username')";
+$resultado= $conn ->query($query3);
+
+$query4="INSERT INTO videotips_app_access_list (categorycounter) values ('categorycounter++')";
+$resultado= $conn ->query($query4);
+
+
 }
 
 if ($resultado){
