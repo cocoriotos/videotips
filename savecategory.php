@@ -45,11 +45,11 @@ $stmt->fetch();
 $stmt->close();
 
 
-if($categoryresult->num_rows > 0){ 
+/*if($categoryresult->num_rows > 0){ 
     echo ("Category duplicated, review and use another one");
     header("refresh:3; url=addcategory.php");
     exit();
-  } else {
+  } else {*/
 
 
 // Verificación y lógica basada en el valor de categorycounter
@@ -90,5 +90,5 @@ if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($cate
         exit(); // Importante para detener la ejecución después de redirigir
     }
 }
-}
+/*}*/
 ?>
