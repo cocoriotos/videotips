@@ -4,9 +4,9 @@
 
 GLOBAL $global_username;
     session_start();	
-$global_username=$_POST['username'];
-$_SESSION['username']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
-$local_username=$_SESSION['username'];/*10082024*/
+$global_username=$_POST['email'];
+$_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
+$local_username=$_SESSION['email'];/*10082024*/
 $password=$_POST['password'];
 
 
