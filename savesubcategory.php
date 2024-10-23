@@ -3,7 +3,7 @@ session_start();
 include "db_connection1.php";
 
 
-$local_username=$_SESSION['username'];
+$local_username=$_SESSION['email'];
 $secondcategory=$_POST["secondcategory"];
 
 

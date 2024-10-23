@@ -3,7 +3,7 @@ session_start();
 include "db_connection1.php";
 
 
-$local_username=$_SESSION['username'];
+$local_username=$_SESSION['email'];
 $videolink = $_POST['videolink'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
