@@ -34,7 +34,7 @@ $stmt->bind_result($role);
 $stmt->fetch();
 $stmt->close();
 
-
+/*
 // Consulta para identificar si hay dupliidad de subcategiría
 $query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = $category and username = ?";
 $stmt = $conn->prepare($query6);
@@ -45,7 +45,7 @@ $stmt->fetch();
 $stmt->close();
 
 
-/*if($categoryresult->num_rows > 0){ 
+if($categoryresult->num_rows > 0){ 
     echo ("Category duplicated, review and use another one");
     header("refresh:3; url=addcategory.php");
     exit();
