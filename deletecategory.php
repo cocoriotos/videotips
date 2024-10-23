@@ -1,7 +1,7 @@
 <?php 
 include "db_connection1.php";
 $id=$_POST['id'];
-$local_username=$_SESSION['username'];
+$local_username=$_SESSION['email'];
 
 $query = "delete from videotips_viodetipscategory where id='$id'";
 $result = mysqli_query($conn,$query);
