@@ -5,7 +5,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 session_start();
 include "header.php";
 include "db_connection1.php";
-$local_username=$_SESSION['username'];
+$local_username=$_SESSION['email'];
  
 /*					$query = "SELECT * FROM videotips_app_access_list where username = '$local_username'";
 					$result_name = mysqli_query($conn,$query);

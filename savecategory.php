@@ -53,7 +53,7 @@ if($categoryresult->num_rows > 0){
 
 
 // Verificación y lógica basada en el valor de categorycounter
-if (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 0) {
+if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
     echo "You have reached the 5 free subcategories registration limit. To continue adding more, please check our plans.";
     $_SESSION['message'] = 'Subcategories not saved Successfully';
     $_SESSION['message_type'] = 'No Success';
@@ -61,7 +61,7 @@ if (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeatur
     exit(); // Importante para detener la ejecución después de redirigir
 }
 
-if ((is_numeric($categorycounter) && $categorycounter <= 5) || (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 1))  {
+if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($categorycounter) && $categorycounter > 5 && $extendcounterfeature === 1))  {
     // Inserta la nueva categoría y maincategory
     $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)";
     $stmt1 = $conn->prepare($query1);
