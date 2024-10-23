@@ -30,7 +30,7 @@ $password=$_POST['password'];
 		{
 
 		}
-		$query1="select * from videotips_app_access_list where username='$local_username' and active='1' and password='$password'"; /*if username is user role 10082024*/
+		$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; /*if username is user role 10082024*/
 		$result1=mysqli_query($conn, $query1);
 	
 		if(mysqli_num_rows($result1)==true)
