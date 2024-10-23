@@ -20,7 +20,7 @@
                 <center><img id="img_login" center SRC="login.gif"></img></center></br> <!-- Login Icon  -->
 				<div class="inputdata1">
 					<center><font id= "form_title" color="white"><strong>Email</strong></font></center><br>
-					<center><input id="email" type="text" name="email"  placeholder="email" required ></center><br> <!-- Login  -->
+					<center><input id="username" type="text" name="email"  placeholder="email" required ></center><br> <!-- Login  -->
 				<br>
 				</div >
 				<div class="inputdata1">
