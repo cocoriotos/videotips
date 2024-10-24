@@ -3,6 +3,7 @@
 session_start();
 include ("db_connection1.php");
 
+
 $name = $_POST['Name'];
 $lastname = $_POST['LastName'];
 $email = $_POST['Email'];
@@ -10,12 +11,16 @@ $country = $_POST['Country'];
 $city = $_POST['City'];
 $password = $_POST['password1'];
 
+$query3="SELECT * from videotips_app_access_list where email = '$email'";
+$result3=$conn->query($query3);
+
+if($result3->num_rows > 0){ 
+
 $query="INSERT INTO videotips_accessrequests (name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
 $result=$conn->query($query);
 
 $query1="INSERT INTO videotips_app_access_list (name,lastname, username, email, password, role, active, adm_role, suscriptionactive, categorycounter, extendcounterfeature) VALUES ('$name', '$lastname', '$email', '$email', '$password', 'user', 1, 0, 1, 0, 0)"; 
 $result1=$conn->query($query1);
-
 
 
 /*Destination email information*/
@@ -62,5 +67,11 @@ if ($result){
 	echo "Request not send please try again";
 	include("videotrackerauth.php");
        }
+	} else {
+	echo ("Email duplicated, review and use another one");
+	header("refresh:3; url=videotrackerauth.php");
+	exit();
+  } 
+
 header("refresh:7;url=videotrackerauth.php");
 ?>
