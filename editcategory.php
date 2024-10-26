@@ -1,4 +1,4 @@
-<?php include "header.php";
+<form?php include "header.php";
 include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
@@ -20,7 +20,7 @@ $local_username=$_SESSION['email'];
 			 			 
 		  
 			<div class="card card-body">
-				<form action="updatecategory.php" method="POST"> 
+				<center action="updatecategory.php" method="POST"> 
 				<div class="form-group">
 					<label for="id" style="color: black;"><strong>Id</strong></label><br>	
 						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
@@ -33,7 +33,7 @@ $local_username=$_SESSION['email'];
 						<label for="videolink" style="color: black;"><strong>Sub Category</strong></label><br>	
 						<input type="text" name="category" class="form-control" placeholder="link" autofocus value ="<?php echo $link['category'];?>"></input><br>
 					</div>
-					<input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input></center><br><br><br>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="deletecategory.php"></input><br><br><br>
 					<input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="addcategory.php"></input>
 				</form>
