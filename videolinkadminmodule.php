@@ -51,10 +51,10 @@ $local_username=$_SESSION['email'];
 						 <select name= "active"> <?php $SQLSELECT = "SELECT * FROM videotips_active order by active desc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $active = $rows['active']; echo "<option value='$active'>$active</option>";} ?></select> <br><br>
 					</div>  	
 					<br>
-					<input type="submit" class="btn btn-success btn-block" name="save_link" value="Save Link"></input></center>
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input>
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="Refresh" formaction="videolinkadminmodule.php"></input>
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="Categories" formaction="addcategory.php"></input></center>
+					<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Save Link"></input></center>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Refresh" formaction="videolinkadminmodule.php"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Categories" formaction="addcategory.php"></input></center><br><br><br>
 				</form>
 			</div>
 		</div>

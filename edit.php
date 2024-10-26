@@ -45,9 +45,9 @@ $local_username=$_SESSION['email'];
 						<label for="useful" style="color: black;"><strong>Useful</strong></label><br>
 						<select name="active" required><?php $query_options = "SELECT * FROM videotips_active"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['active'] == $link['active']) ? "selected" : ""; echo "<option value=\"{$option['active']}\" $selected>{$option['active']}</option>"; } ?></select><br><br>
 					</div>
-					<input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input>
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input>
-					<input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
 				</form>
 			</div>
 		</div>
