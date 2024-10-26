@@ -38,6 +38,7 @@ $local_username=$_SESSION['email'];
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="addcategory.php"></input></center>
                  </center>
 		    </div>
+</div>	
 		
 		<div class="col-md-8">
 			<table class="table table-bordered">
