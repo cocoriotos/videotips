@@ -2,7 +2,7 @@
 include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
-$local_username=$_SESSION['username'];
+$local_username=$_SESSION['email'];
 ?>
 
 
