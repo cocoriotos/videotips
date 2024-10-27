@@ -36,8 +36,8 @@ $local_username=$_SESSION['email'];
 					<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>
 					<hr>
-					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input></center><br><br><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="deletecategory.php"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input></center><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="deletecategory.php"></input></center><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="addcategory.php"></input></center>
                  </form>
 		    </div>
