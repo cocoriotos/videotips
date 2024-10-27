@@ -30,9 +30,9 @@ $local_username=$_SESSION['email'];
 				<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 				<hr>
 				<form>
-						<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br>
 						<center><input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input></center><br>
 						<center><input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
+						<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br>
 				</form>
 			</div>
 		</div>
