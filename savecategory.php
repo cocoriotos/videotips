@@ -25,20 +25,11 @@ $stmt->bind_result($extendcounterfeature);
 $stmt->fetch();
 $stmt->close();
 
-/*// Consulta para obtener el role
-$query5 = "SELECT role FROM videotips_app_access_list WHERE username = ?";
-$stmt = $conn->prepare($query5);
-$stmt->bind_param("s", $local_username);  // Evita la inyección SQL
-$stmt->execute();
-$stmt->bind_result($role);
-$stmt->fetch();
-$stmt->close();*/
-
 
 // Consulta para identificar si hay dupliidad de subcategiría
 $query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = ? and username = ?";
 $stmt = $conn->prepare($query6);
-$stmt->bind_param("s", $local_username, $category);  // Evita la inyección SQL
+$stmt->bind_param("s", $category, $local_username);  // Evita la inyección SQL
 $stmt->execute();
 $stmt->store_result();
 
