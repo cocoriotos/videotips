@@ -53,8 +53,13 @@
                     echo "Category Saved";
                     $_SESSION['message'] = 'Category Saved Successfully';
                     $_SESSION['message_type'] = 'Success';
+                    header("refresh:7; url=addcategory.php");
+                    exit();
+
                 } else {
                     echo "Error en la inserción de la categoría: " . mysqli_error($conn);
+                    header("refresh:7; url=addcategory.php");
+                    exit();
                 }
             }
           }  
