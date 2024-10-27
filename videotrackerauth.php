@@ -52,7 +52,7 @@
 					<h6 align="center"><address><strong>Email:</strong>cocoriotos@hotmail.com</address></h6>
 					<h6 align="center"><address><strong>Phone:</strong>(+57) 305 429 31 85 </address></h6>
 					<h6 align="center"><address><strong>Pereira - Colombia </strong></address></h6>
-					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> at <?php echo date('H:i'); ?></h6>
+					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
 					<!--<h6 time align="center" datetime="2024/8/30" pubdate>Published on Date: 30/08/2024 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
 				</hgroup>
 		</footer>
