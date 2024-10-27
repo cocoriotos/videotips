@@ -11,14 +11,12 @@ $category = $_POST["category"];
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = $local_username";
 $categorycounter= $conn ->query($query);
 
-echo "$local_username";
-/*echo "$categorycounter";*/
 
 // Consulta para obtener el extendcounterfeature
 $query4 = "SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = $local_username";
 $extendcounterfeature= $conn ->query($query4);
 
-/*echo "$extendcounterfeature";*/
+
 
 // Consulta para identificar si hay dupliidad de subcategiría
 $query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = $category and username = $local_username";
@@ -37,26 +35,17 @@ if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeatur
 
 if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 1))  {
                 // Inserta la nueva categoría y maincategory
-                $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)";
-                $stmt = $conn->prepare($query1);
-                $stmt->bind_param("sss", $maincategory, $category, $local_username);
-                $resultado1 = $stmt1->execute();
-                $stmt->close();
+                $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES ($maincategory, $category, $local_username)";
+                $resultado1= $conn ->query($query1);
 
                 $query2 = "INSERT INTO videotips_maincategory (maincategory, username) VALUES (?, ?)";
-                $stmt = $conn->prepare($query2);
-                $stmt->bind_param("ss", $maincategory, $local_username);
-                $resultado = $stmt2->execute();
-                $stmt->close();
+                $resultado2= $conn ->query($query2);
 
                 // Si la primera inserción fue exitosa, actualiza el categorycounter
                if ($resultado1) {
                     $query3 = "UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = ?";
-                    $stmt = $conn->prepare($query3);
-                    $stmt->bind_param("s", $local_username);
-                    $stmt->execute();
-                    $stmt->close();
-
+                    $resultado20= $conn ->query($query3);
+                    
                     echo "Category Saved";
                     $_SESSION['message'] = 'Category Saved Successfully';
                     $_SESSION['message_type'] = 'Success';
