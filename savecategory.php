@@ -40,9 +40,11 @@ if($categoryresult){
     echo ("Category duplicated, review and use another one");
     header("refresh:3; url=addcategory.php");
     exit();
+  }else{
+    echo ("Category new");
   } 
   
-  
+/*  
 // Verificación y lógica basada en el valor de categorycounter
 if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
                 echo "You have reached the 5 free subcategories registration limit. To continue adding more, please check our plans.";
@@ -80,5 +82,5 @@ if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($cate
                     header("refresh:7; url=addcategory.php");
                     exit(); // Importante para detener la ejecución después de redirigir
                 }
-            }
+            }*/
 ?>
