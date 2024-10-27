@@ -6,6 +6,8 @@ $local_username = $_SESSION['email'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 
+print_r($categorycounter);
+
 // Consulta para obtener el categorycounter oldFine
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = $local_username";
 $categorycounter= $conn ->query($query);
