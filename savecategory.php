@@ -26,7 +26,7 @@
             $stmt->execute();
             $categoryresult = $stmt->get_result();
             
-          if ($categoryresult){
+          if ($categoryresult->num_rows > 0){
             echo "Subcategoy duplicated, please use another one.";
             header("refresh:7; url=addcategory.php");
             exit();
