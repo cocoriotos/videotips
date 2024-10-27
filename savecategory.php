@@ -38,6 +38,7 @@ $stmt->close();
 echo($categorycounter);
 echo($extendcounterfeature);
 echo($categoryresult);
+header("refresh:3; url=addcategory.php");
 
 /*
 if($categoryresult){ 
