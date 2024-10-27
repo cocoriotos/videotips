@@ -27,6 +27,7 @@ $local_username=$_SESSION['email'];
 					</div>	
 				</form>
 				<br><br>
+				<hr>
 				<form>
 						<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br><br>
 						<center><input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input></center><br><br>
