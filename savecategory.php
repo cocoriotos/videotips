@@ -26,6 +26,11 @@
             $stmt->execute();
             $categoryresult = $stmt->get_result();
             
+          if ($categoryresult){
+            echo "Subcategoy duplicated, please use another one.";
+            header("refresh:7; url=addcategory.php");
+            exit();
+          }else{
             // Verificación y lógica
             if ($categorycounter > 4 && $extendcounterfeature == 0) {
                 echo "You have reached the 5 free subcategories registration limit. To continue adding more, please check our plans.";
@@ -52,7 +57,5 @@
                     echo "Error en la inserción de la categoría: " . mysqli_error($conn);
                 }
             }
-            
-            header("refresh:7; url=addcategory.php");
-            exit();
+          }  
 ?>
