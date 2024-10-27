@@ -38,12 +38,12 @@ if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($cate
                 $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES ($maincategory, $category, $local_username)";
                 $resultado1= $conn ->query($query1);
 
-                $query2 = "INSERT INTO videotips_maincategory (maincategory, username) VALUES (?, ?)";
+                $query2 = "INSERT INTO videotips_maincategory (maincategory, username) VALUES ($maincategory, $local_username)";
                 $resultado2= $conn ->query($query2);
-
+                echo "";
                 // Si la primera inserción fue exitosa, actualiza el categorycounter
                if ($resultado1) {
-                    $query3 = "UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = ?";
+                    $query3 = "UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = $local_username";
                     $resultado20= $conn ->query($query3);
                     
                     echo "Category Saved";
