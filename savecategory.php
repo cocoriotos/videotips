@@ -52,4 +52,6 @@ if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($cate
                   header("refresh:7; url=addcategory.php");
                 }
             }
+            echo "Otro error";
+            header("refresh:7; url=addcategory.php");        
 ?>
