@@ -6,23 +6,19 @@ $local_username = $_SESSION['email'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 
-
 // Consulta para obtener el categorycounter oldFine
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = $local_username";
 $categorycounter= $conn ->query($query);
-
 
 // Consulta para obtener el extendcounterfeature
 $query4 = "SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = $local_username";
 $extendcounterfeature= $conn ->query($query4);
 
-
-
 // Consulta para identificar si hay dupliidad de subcategiría
 $query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = $category and username = $local_username";
 $categoryresult= $conn ->query($query6);
 
-/*echo "$categoryresult";*/
+
   
 // Verificación y lógica basada en el valor de categorycounter
 if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
@@ -51,6 +47,9 @@ if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($cate
                     $_SESSION['message_type'] = 'Success';
                     header("refresh:7; url=addcategory.php");
                     exit(); // Importante para detener la ejecución después de redirigir
+                }else{
+                  echo "Otro error";
+                  header("refresh:7; url=addcategory.php");
                 }
             }
 ?>
