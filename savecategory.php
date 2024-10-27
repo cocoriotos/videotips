@@ -35,6 +35,8 @@ $stmt->bind_result($categoryresult);
 $stmt->fetch();
 $stmt->close();
 
+echo("$categorycounter,$extendcounterfeature,$categoryresult");
+
 
 if($categoryresult){ 
     echo ("Category duplicated, review and use another one");
