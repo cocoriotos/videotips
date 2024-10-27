@@ -35,9 +35,9 @@ $stmt->bind_result($categoryresult);
 $stmt->fetch();
 $stmt->close();
 
-print_r("$categorycounter");
-print_r("$extendcounterfeature");
-print_r("$categoryresult");
+echo("$categorycounter");
+echo("$extendcounterfeature");
+echo("$categoryresult");
 
 /*
 if($categoryresult){ 
