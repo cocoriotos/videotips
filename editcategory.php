@@ -33,6 +33,7 @@ $local_username=$_SESSION['email'];
 						<label for="videolink" style="color: black;"><strong>Sub Category</strong></label><br>	
 						<input type="text" name="category" class="form-control" placeholder="link" autofocus value ="<?php echo $link['category'];?>"></input><br>
 					</div>
+					<hr>
 					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input></center><br><br><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="deletecategory.php"></input></center><br><br><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="addcategory.php"></input></center>
