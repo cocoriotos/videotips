@@ -3,7 +3,7 @@
   <header>
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
-		<center></center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>
+		<center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>
 	</div>
   </nav>
   <!-- BOOTSTRAP -->	
