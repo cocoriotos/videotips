@@ -5,7 +5,7 @@ include "db_connection1.php";
 $local_username = $_SESSION['email'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
-
+/*
 // Consulta para obtener el categorycounter
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = ?";
 $stmt = $conn->prepare($query);
@@ -34,7 +34,7 @@ $stmt->execute();
 $stmt->bind_result($categoryresult);
 $stmt->fetch();
 $stmt->close();
-
+*/
 
 header("refresh:3; url=videotrackerauth.php"); 
 
