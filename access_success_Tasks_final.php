@@ -24,7 +24,7 @@ $password=$_POST['password'];
 			include ("videotrackerauth.php");
 			exit();
 			}
-  mysqli_select_db($conn,$db_name) or die ("<center>There is not Database available</center>");		
+  mysqli_select_db($conn,$db_name) or die ("<center>No hay conexión disponible a la aplicación</center>");		
 
   if ($conn==true)
 		{

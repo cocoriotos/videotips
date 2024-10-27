@@ -19,7 +19,7 @@ $urlduplicated= $conn ->query($query1);
 
 
 if($urlduplicated->num_rows > 0){ 
-  echo ("Link duplicated, review and use another one");
+  echo ("Enlace duplicado, usar otro");
   header("refresh:3; url=videolinkadminmodule.php");
   exit();
 } else {
@@ -31,14 +31,14 @@ $resultado1= $conn ->query($query4);
 }
 
 if ($resultado){
-  echo ("Link Saved Successfully");
-  $_SESSION['message']='Link Saved Successfully';
+  echo ("Enlace Salvado Exitosamente");
+  $_SESSION['message']='Enlace Salvado Exitosamente';
   $_SESSION['message_type']='Success';
   
   header("refresh:3; url=videolinkadminmodule.php");
   }
 else{
-  echo ("Suscription issued, please renue to continue enjoy your favorite links");
+  echo ("Suscripción vencida, por favor renovarla para continuar disfrutando de su biblioteca de sus enlaces favoritos");
   header("refresh:3; url=videolinkadminmodule.php");
 }
 }

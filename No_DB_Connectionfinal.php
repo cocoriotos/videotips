@@ -3,7 +3,8 @@
 	<head>
 		  
 		  <script>
-			alert("ALERT: No Database connection success");
+			/*alert("ALERT: No Database connection success");*/
+			alert("ALERTA: No hay conexión disponible a la aplicación");
 		  </script>
 	</head>
 	

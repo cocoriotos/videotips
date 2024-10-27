@@ -16,7 +16,8 @@ $result3=$conn->query($query3);
 
 if($result3->num_rows > 0){ 
 
-	echo ("Email duplicated, review and use another one");
+	/*echo ("Email duplicated, review and use another one");*/
+	echo ("Email duplicado, por favor revisar o usar otro");
 	header("refresh:3; url=videotrackerauth.php");
 	exit();
 }else {
@@ -66,9 +67,11 @@ $mail = mail($to, $subject, $message,$header);
 	
 
 if ($result){
-        echo "Your request was sent, please wait for Administrators message with agree or not response";
+    /*echo "Your request was sent, you can join with user name $email and password you type";    */
+	echo "Su requerimiento fue enviado, puede ingresar con el usuario $email y password que digitó.";
     } else {
-	echo "Request not send please try again";
+	/*echo "Request not send please try again";	*/
+	echo "Requerimiento no enviado, por favor trate nuevamente o más tarde";
 	include("videotrackerauth.php");
     }
 } 

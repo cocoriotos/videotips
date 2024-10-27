@@ -26,19 +26,19 @@ $local_username=$_SESSION['email'];
 						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
 					</div>
 				    <div class="form-group">
-					<label for="id" style="color: black;"><strong>Category</strong></label><br>	
-						<input type="text" name="maincategory" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
+					<label for="id" style="color: black;"><strong>Categoría</strong></label><br>	
+						<input type="text" name="maincategory" class="form-control" placeholder="Categoría" autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
 					</div>
 					<div class="form-group">
-						<label for="videolink" style="color: black;"><strong>Sub Category</strong></label><br>	
-						<input type="text" name="category" class="form-control" placeholder="link" autofocus value ="<?php echo $link['category'];?>"></input><br>
+						<label for="videolink" style="color: black;"><strong>Subcategoría</strong></label><br>	
+						<input type="text" name="category" class="form-control" placeholder="Subcategoría" autofocus value ="<?php echo $link['category'];?>"></input><br>
 					</div>
 					<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>
 					<hr>
-					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Update"></input></center><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="deletecategory.php"></input></center><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="addcategory.php"></input></center>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Actualizar"></input></center><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="deletecategory.php"></input></center><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancelar" formaction="addcategory.php"></input></center>
                  </form>
 		    </div>
         </div>	
@@ -48,8 +48,8 @@ $local_username=$_SESSION['email'];
 				<thead>
 				   <tr>
 				       <th>ID</th>
-				  	   <th>Category</th>
-					  <th>Sub Category</th>
+				  	   <th>Categoría</th>
+					  <th>Subcategoría</th>
 				   </tr>
 			    </thead>
 				<tbody>

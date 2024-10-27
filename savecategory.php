@@ -27,16 +27,16 @@
             $categoryresult = $stmt->get_result();
             
           if ($categoryresult->num_rows > 0){
-            echo "Subcategoy duplicated, please use another one.";
-            header("refresh:7; url=addcategory.php");
+            echo "Subcategoría duplicada, por favor usar otra.";
+            header("refresh:3; url=addcategory.php");
             exit();
           }else{
             // Verificación y lógica
             if ($categorycounter > 4 && $extendcounterfeature == 0) {
-                echo "You have reached the 5 free subcategories registration limit. To continue adding more, please check our plans.";
-                $_SESSION['message'] = 'Subcategories not saved Successfully';
+                echo "Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando por favor contactar al administrador al número +573054293185 para adquirir la anualidad de USD 12.";
+                $_SESSION['message'] = 'Subcategoria no salvada Exitosamente';
                 $_SESSION['message_type'] = 'No Success';
-                header("refresh:7; url=addcategory.php");
+                header("refresh:3; url=addcategory.php");
                 exit();
             }
             
@@ -51,14 +51,14 @@
                     $stmt->execute();
                     
                     echo "Category Saved";
-                    $_SESSION['message'] = 'Category Saved Successfully';
+                    $_SESSION['message'] = 'Category Salvada Exitosamente';
                     $_SESSION['message_type'] = 'Success';
-                    header("refresh:7; url=addcategory.php");
+                    header("refresh:3; url=addcategory.php");
                     exit();
 
                 } else {
-                    echo "Error en la inserción de la categoría: " . mysqli_error($conn);
-                    header("refresh:7; url=addcategory.php");
+                    echo "Error en la inserción de la categoría" . mysqli_error($conn);
+                    header("refresh:3; url=addcategory.php");
                     exit();
                 }
             }

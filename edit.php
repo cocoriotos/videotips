@@ -26,31 +26,31 @@ $local_username=$_SESSION['email'];
 						<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>" readonly></input><br>
 					</div>
 					<div class="form-group">
-						<label for="videolink" style="color: black;"><strong>Video URL full link</strong></label><br>	
-						<input type="text" name="videolink" class="form-control" placeholder="link" autofocus value ="<?php echo $link['videolink'];?>"readonly></input><br>
+						<label for="videolink" style="color: black;"><strong>Enlace o URL</strong></label><br>	
+						<input type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value ="<?php echo $link['videolink'];?>"readonly></input><br>
 					</div>
 					<div class="form-group">
-						<label for="maincategory" style="color: black;"><strong>Main Category</strong></label><br>
+						<label for="maincategory" style="color: black;"><strong>Categoría</strong></label><br>
 						<select name="maincategory" required><?php $query_options = "SELECT distinct(maincategory) FROM videotips_maincategory where username = '$local_username' order by maincategory asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
 					</div>
 					<div class="form-group">
-						<label for="category" style="color: black;"><strong>Second Category</strong></label><br>
+						<label for="category" style="color: black;"><strong>Subcategoría</strong></label><br>
 						<select name="category" required><?php $query_options = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
 					</div>
 					<div class="form-group">
-						<label for="description" style="color: black;"><strong>Description</strong></label><br>	
-						<textarea name="description" rows="5" class="form-control" placeholder="Link Description"><?php echo $link['description']?></textarea><br>
+						<label for="description" style="color: black;"><strong>Descripción</strong></label><br>	
+						<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido"><?php echo $link['description']?></textarea><br>
 					</div>
 					<div class="form-group">
-						<label for="useful" style="color: black;"><strong>Useful</strong></label><br>
+						<label for="useful" style="color: black;"><strong>Útil</strong></label><br>
 						<select name="active" required><?php $query_options = "SELECT * FROM videotips_active"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['active'] == $link['active']) ? "selected" : ""; echo "<option value=\"{$option['active']}\" $selected>{$option['active']}</option>"; } ?></select><br><br>
 					</div>
-					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center><br><br><br>
 					<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 					<hr>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input></center><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancelar" formaction="videolinkadminmodule.php"></input></center>
 				</form>
 			</div>
 		</div>
@@ -60,12 +60,12 @@ $local_username=$_SESSION['email'];
 				<thead>
 				   <tr>
 	                  <th>ID</th>
-					  <th>Video Link</th>
-					  <th>Category</th>
-					  <th>Sub Category</th>
-					  <th>Description</th>
-					  <th>useful</th>
-					  <th>Creation Date</th>
+					  <th>Enlace o URL</th>
+					  <th>Categoría</th>
+					  <th>Subcategoría</th>
+					  <th>Descripción</th>
+					  <th>Útil</th>
+					  <th>Fecha de Creación</th>
 				   </tr>
 			    </thead>
 				<tbody>
