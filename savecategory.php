@@ -35,10 +35,8 @@ $stmt->bind_result($categoryresult);
 $stmt->fetch();
 $stmt->close();
 
-echo($categorycounter);
-echo($extendcounterfeature);
-echo($categoryresult);
-header("refresh:3; url=addcategory.php"); 
+
+header("refresh:3; url=videotrackerauth.php"); 
 
 /*
 if($categoryresult){ 
