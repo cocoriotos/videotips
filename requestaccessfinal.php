@@ -24,9 +24,9 @@
 				<font color="white" id="form_title1"><strong>Email</strong></font>
 				<input id="username" type="text" name="Email" placeholder="Digite su Correo" required><br>
 				<font color="white" id="form_title1"><strong>País</strong></font>
-				<input id="username" type="text" name="Country" placeholder="Digite su País de Residencia" required><br>
+				<input id="username" type="text" name="Country" placeholder="País de Residencia" required><br>
 				<font color="white" id="form_title1"><strong>Ciudad</strong></font>
-				<input id="username" type="text" name="City" placeholder="Digite su Ciudad de Residencia" required><br>	
+				<input id="username" type="text" name="City" placeholder="Ciudad de Residencia" required><br>	
 				<font id= "form_title1" color="white"><strong>Contraseña</strong></font>
 				<input id="username" type="password" name="password1" placeholder="Digite su Contraseña" required ><br>
 			</div>
