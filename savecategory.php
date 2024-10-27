@@ -49,17 +49,19 @@ if(is_numeric($categoryresult) && $categoryresult->num_rows > 0){
     echo ("Category duplicated, review and use another one");
     header("refresh:3; url=addcategory.php");
     exit();
-  } else {
-            // Verificación y lógica basada en el valor de categorycounter
-            if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
+  } 
+  
+  
+// Verificación y lógica basada en el valor de categorycounter
+if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
                 echo "You have reached the 5 free subcategories registration limit. To continue adding more, please check our plans.";
                 $_SESSION['message'] = 'Subcategories not saved Successfully';
                 $_SESSION['message_type'] = 'No Success';
                 header("refresh:7; url=addcategory.php");
                 exit(); // Importante para detener la ejecución después de redirigir
-            }
+}
 
-            if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 1))  {
+if ((is_numeric($categorycounter) && $categorycounter <= 4) || (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 1))  {
                 // Inserta la nueva categoría y maincategory
                 $query1 = "INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)";
                 $stmt1 = $conn->prepare($query1);
@@ -74,7 +76,7 @@ if(is_numeric($categoryresult) && $categoryresult->num_rows > 0){
                 $stmt2->close();
 
                 // Si la primera inserción fue exitosa, actualiza el categorycounter
-                if ($resultado1) {
+               if ($resultado1) {
                     $query3 = "UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = ?";
                     $stmt3 = $conn->prepare($query3);
                     $stmt3->bind_param("s", $local_username);
@@ -88,5 +90,4 @@ if(is_numeric($categoryresult) && $categoryresult->num_rows > 0){
                     exit(); // Importante para detener la ejecución después de redirigir
                 }
             }
-}
 ?>
