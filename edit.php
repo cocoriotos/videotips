@@ -10,9 +10,7 @@ $local_username=$_SESSION['email'];
 <div class="container p-4">
 
 	<div class="row">
-
-    <div class="card card-body">
-				
+    
 			<div class="col-md-4">
 		     		 
 			 <?php 
