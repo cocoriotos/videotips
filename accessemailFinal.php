@@ -14,7 +14,7 @@ $password = $_POST['password1'];
 $query3="SELECT * from videotips_app_access_list where email = '$email'";
 $result3=$conn->query($query3);
 
-if($result3->num_rows = 0){ 
+if($result3->num_rows === 0){ 
 
 	echo ("Email duplicated, review and use another one");
 	header("refresh:3; url=videotrackerauth.php");
