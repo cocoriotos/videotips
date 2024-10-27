@@ -29,12 +29,14 @@ $stmt->close();
 // Consulta para identificar si hay dupliidad de subcategiría
 $query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = ? and username = ?";
 $stmt = $conn->prepare($query6);
-$stmt->bind_param("s", $category, $local_username);  // Evita la inyección SQL
+$stmt->bind_param("s", $category,$local_username);  // Evita la inyección SQL
 $stmt->execute();
-$stmt->store_result();
+$stmt->bind_result($categoryresult);
+$stmt->fetch();
+$stmt->close();
 
 
-if($stmt->num_rows > 0){ 
+if($categoryresult){ 
     echo ("Category duplicated, review and use another one");
     header("refresh:3; url=addcategory.php");
     exit();
