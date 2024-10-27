@@ -6,7 +6,7 @@ $local_username = $_SESSION['email'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 
-echo($categorycounter);
+
 
 
 // Consulta para obtener el categorycounter oldFine
