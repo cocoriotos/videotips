@@ -6,7 +6,7 @@ $local_username = $_SESSION['email'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 
-// Consulta para obtener el categorycounter
+// Consulta para obtener el categorycounter oldFine
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = ?";
 $stmt = $conn->prepare($query);
 $stmt->bind_param("s", $local_username);  // Evita la inyección SQL
