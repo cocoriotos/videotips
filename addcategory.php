@@ -26,6 +26,7 @@ $local_username=$_SESSION['email'];
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>
 					</div>	
 				</form>
+				<hr>
 				<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 				<hr>
 				<form>
