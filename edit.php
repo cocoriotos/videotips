@@ -10,17 +10,10 @@ $local_username=$_SESSION['email'];
 <div class="container p-4">
 
 	<div class="row">
-		<div class="col-md-4">
-		     		 
-			 <?php 
-					$query = "select * from videotips_videotips where id = '$id' and username='$local_username'";
-					$result_link = mysqli_query($conn,$query);
-					$link = mysqli_fetch_array($result_link);
-			 ?>
-			
-			<div class="card card-body">
+
+    <div class="card card-body">
 				
-					<div class="form-group">
+			<div class="form-group">
 					<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 					<hr>
@@ -28,9 +21,17 @@ $local_username=$_SESSION['email'];
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
                     </div>
 			</div>
-            <!-- -->
-		  
-			<div class="card card-body">
+        <!-- -->
+
+		<div class="col-md-4">
+		     		 
+			 <?php 
+					$query = "select * from videotips_videotips where id = '$id' and username='$local_username'";
+					$result_link = mysqli_query($conn,$query);
+					$link = mysqli_fetch_array($result_link);
+			 ?>
+			          
+		  	<div class="card card-body">
 				<form action="updatelinks.php" method="POST"> 
 					<div class="form-group">
 					<label for="id" style="color: black;"><strong>Id</strong></label><br>	
@@ -57,11 +58,6 @@ $local_username=$_SESSION['email'];
 						<select name="active" required><?php $query_options = "SELECT * FROM videotips_active"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['active'] == $link['active']) ? "selected" : ""; echo "<option value=\"{$option['active']}\" $selected>{$option['active']}</option>"; } ?></select><br><br>
 					</div>
 					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input></center><br><br><br>
-					<hr>
-					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
-					<hr>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input></center><br><br><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
 				</form>
 			</div>
 		</div>
