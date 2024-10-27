@@ -14,7 +14,7 @@ $password = $_POST['password1'];
 $query3="SELECT * from videotips_app_access_list where email = '$email'";
 $result3=$conn->query($query3);
 
-if($result3->num_rows < 1){ 
+if($result3->num_rows > 0){ 
 
 	echo ("Email duplicated, review and use another one");
 	header("refresh:3; url=videotrackerauth.php");
@@ -67,10 +67,10 @@ $mail = mail($to, $subject, $message,$header);
 
 if ($result){
         echo "Your request was sent, please wait for Administrators message with agree or not response";
-} else {
+    } else {
 	echo "Request not send please try again";
 	include("videotrackerauth.php");
-       }
+    }
 } 
 header("refresh:7;url=videotrackerauth.php");
 ?>
