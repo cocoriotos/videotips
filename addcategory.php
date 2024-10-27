@@ -15,8 +15,7 @@ $local_username=$_SESSION['email'];
 			<div class="form-group">
 				<label for="videolink" style="color: black;"><strong>Categories to filter your Favorite links</strong></label><br>
 					</div><br>
-				<form class="" action="vodeotrackerauth.php" method="POST"> 	
-				<!--<form class="" action="savecategory.php" method="POST"> -->
+				<form class="" action="savecategory.php" method="POST">
 					<div class="form-group">
 						<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>
