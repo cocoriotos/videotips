@@ -56,7 +56,7 @@ $local_username=$_SESSION['email'];
 					<hr>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br><br><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Refresh" formaction="videolinkadminmodule.php"></input></center><br><br><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Categories" formaction="addcategory.php"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Categories" formaction="addcategory.php"></input></center><br>
 				</form>
 			</div>
 		</div>
