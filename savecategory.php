@@ -7,11 +7,11 @@ $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 
 
-echo "$local_username";
-
 // Consulta para obtener el categorycounter oldFine
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = $local_username";
 $categorycounter= $conn ->query($query);
+
+echo "$categorycounter";
 
 // Consulta para obtener el extendcounterfeature
 $query4 = "SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = $local_username";
