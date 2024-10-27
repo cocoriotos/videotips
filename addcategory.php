@@ -23,10 +23,10 @@ $local_username=$_SESSION['email'];
 					<div class="form-group">
 						<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
 						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br> 
-						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center><br>	
+						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>
 					</div>	
 				</form>
-				<br><br>
+				<br>
 				<hr>
 				<form>
 						<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br><br>
