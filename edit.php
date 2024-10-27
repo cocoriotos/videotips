@@ -17,7 +17,18 @@ $local_username=$_SESSION['email'];
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
-			 			 
+			
+			<div class="card card-body">
+				
+					<div class="form-group">
+					<hr>
+					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
+					<hr>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input></center><br><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
+                    </div>
+			</div>
+            <!-- -->
 		  
 			<div class="card card-body">
 				<form action="updatelinks.php" method="POST"> 
@@ -45,10 +56,10 @@ $local_username=$_SESSION['email'];
 						<label for="useful" style="color: black;"><strong>Useful</strong></label><br>
 						<select name="active" required><?php $query_options = "SELECT * FROM videotips_active"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['active'] == $link['active']) ? "selected" : ""; echo "<option value=\"{$option['active']}\" $selected>{$option['active']}</option>"; } ?></select><br><br>
 					</div>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input></center><br><br><br>
 					<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 					<hr>
-					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Update Link"></input></center><br><br><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Delete" formaction="delete.php"></input></center><br><br><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancel" formaction="videolinkadminmodule.php"></input></center>
 				</form>
