@@ -11,17 +11,20 @@ $category = $_POST["category"];
 $query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = $local_username";
 $categorycounter= $conn ->query($query);
 
+echo "$local_username";
 echo "$categorycounter";
 
 // Consulta para obtener el extendcounterfeature
 $query4 = "SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = $local_username";
 $extendcounterfeature= $conn ->query($query4);
 
+echo "$extendcounterfeature";
 
 // Consulta para identificar si hay dupliidad de subcategiría
 $query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = $category and username = $local_username";
 $categoryresult= $conn ->query($query6);
 
+echo "$categoryresult";
   
 // Verificación y lógica basada en el valor de categorycounter
 if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
