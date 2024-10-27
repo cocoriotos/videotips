@@ -7,35 +7,18 @@ $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 
 // Consulta para obtener el categorycounter oldFine
-$query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = ?";
-$stmt = $conn->prepare($query);
-$stmt->bind_param("s", $local_username);  // Evita la inyección SQL
-$stmt->execute();
-$stmt->bind_result($categorycounter);
-$stmt->fetch();
-$stmt->close();
-
+$query = "SELECT categorycounter FROM videotips_app_access_list WHERE username = $local_username";
+$categorycounter= $conn ->query($query);
 
 // Consulta para obtener el extendcounterfeature
-$query4 = "SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = ?";
-$stmt = $conn->prepare($query4);
-$stmt->bind_param("s", $local_username);  // Evita la inyección SQL
-$stmt->execute();
-$stmt->bind_result($extendcounterfeature);
-$stmt->fetch();
-$stmt->close();
+$query4 = "SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = $local_username";
+$extendcounterfeature= $conn ->query($query4);
 
 
-/*
 // Consulta para identificar si hay dupliidad de subcategiría
-$query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = ? and username = ?";
-$stmt = $conn->prepare($query6);
-$stmt->bind_param("s", $category,$local_username);  // Evita la inyección SQL
-$stmt->execute();
-$stmt->bind_result($categoryresult);
-$stmt->fetch();
-$stmt->close();
-*/
+$query6 = "SELECT category FROM videotips_viodetipscategory WHERE category = $category and username = $local_username";
+$categoryresult= $conn ->query($query6);
+
   
 // Verificación y lógica basada en el valor de categorycounter
 if (is_numeric($categorycounter) && $categorycounter > 4 && $extendcounterfeature === 0) {
