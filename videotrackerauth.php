@@ -25,7 +25,7 @@
 				</div >
 				<div class="inputdata">
 					<center><font id= "form_title" color="white"><strong>Contraseña</strong></font></center><br>
-					<center><input id="username1" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
+					<center><input id="username" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
 				<br>
 				</div >
 				<center><input id="loginbutton" type="submit" value="Ingresar"></center>
