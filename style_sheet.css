@@ -177,18 +177,18 @@ body {
 		font-family: arial;
 	}*/
 
-#username, #access
+#username, #username1, #access
 	{
 		font-size:200%;
 		font-family: arial;
 		
 	}	
-#username1 
+/*#username1 
 	{
 		font-size:200%;
 		margin-left: 2em;
 		font-family: arial;
-	}
+	}*/
 		
 	
 #img_login, #img_fix
