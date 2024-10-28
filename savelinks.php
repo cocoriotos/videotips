@@ -28,6 +28,10 @@ $query3="INSERT INTO videotips_videotips (videolink,maincategory,category,descri
 $resultado= $conn ->query($query3);
 $query4="INSERT INTO videotips_app_access_list (categorycounter) values ('categorycounter++')";
 $resultado1= $conn ->query($query4);
+  echo ("Enlace Salvado Exitosamente");
+  $_SESSION['message']='Enlace Salvado Exitosamente';
+  $_SESSION['message_type']='Success';
+  header("refresh:3; url=videolinkadminmodule.php");
 }
 
 if ($resultado){
