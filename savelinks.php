@@ -31,13 +31,12 @@ if ($is_active == 1) {
                 VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
     
     if ($conn->query($query3) === TRUE) {
-      echo "Valor de suscriptionactive: " . $is_active;  
       echo "Enlace Salvado Exitosamente";
     } else {
       echo "Valor de suscriptionactive: " . $is_active;
-        echo "Error al guardar el enlace: " . $conn->error; // Muestra el error
     }
 } else {
+    /*echo "Valor de suscriptionactive: " . $is_active;*/
     echo "Suscripción inactiva. Por favor, renueva tu suscripción.";
 }
 
