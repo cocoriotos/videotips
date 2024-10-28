@@ -149,9 +149,10 @@ body {
 
 	.inputdata 	input
 {
-		margin-left: 8em;
-		width:56%;
-		font-size:105%;
+		margin-left: 0.5em;
+		width:50%;
+		height:2em;
+		font-size:15%;		
 		font-family: arial;
 	}
 	
