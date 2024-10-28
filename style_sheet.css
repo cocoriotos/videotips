@@ -147,7 +147,7 @@ body {
 		font-family: arial;
 	}
 
-	.inputdata 	input
+	.inputdata,.inputdata1 	input
 {
 		margin-left: 0.5em;
 		width:50%;
@@ -156,13 +156,13 @@ body {
 		font-family: arial;
 	}
 	
-	.inputdata  label
+	.inputdata,.inputdata1  label
 {
 		position:absolute;	
 		font-family: arial;
 	}
 	
-	.inputdata1 	input
+	/*.inputdata1 	input
 {
 		margin-left: 0.5em;
 		width:50%;
@@ -175,7 +175,7 @@ body {
 {
 		position:absolute;	
 		font-family: arial;
-	}
+	}*/
 
 #username, #access
 	{
@@ -197,19 +197,19 @@ body {
 		font-family: arial;
 	}
 	
-#form_title1
+#form_title1, #form_title
 	{
 	 font-size:140%;
      position:absolute;	
 	 margin-left:0.5em;	 
 	 font-family: arial;
 	}
-#form_title
+/*#form_title
 	{
 	 font-size:32px;
 	 margin-left:0.05em;
      font-family: arial;	
-	}	
+	}	*/
 	
 #Register, #Signout
        {
