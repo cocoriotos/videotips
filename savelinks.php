@@ -32,6 +32,7 @@ $resultado1= $conn ->query($query4);
   $_SESSION['message']='Enlace Salvado Exitosamente';
   $_SESSION['message_type']='Success';
   header("refresh:3; url=videolinkadminmodule.php");
+  exit();
 }
 
 if ($resultado){
@@ -40,10 +41,12 @@ if ($resultado){
   $_SESSION['message_type']='Success';
   
   header("refresh:3; url=videolinkadminmodule.php");
+  exit();
   }
 else{
   echo ("Suscripción vencida, por favor renovarla para continuar disfrutando de su biblioteca de sus enlaces favoritos");
   header("refresh:3; url=videolinkadminmodule.php");
+  exit();
 }
 }
 ?>
