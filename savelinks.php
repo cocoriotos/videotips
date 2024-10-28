@@ -14,6 +14,7 @@ $activesuscription = $conn->query($query);
 $suscription_row = $activesuscription->fetch_assoc();
 $is_active = $suscription_row['suscriptionactive'] ?? 0; // Asegúrate de que sea un valor numérico
 
+// Verificar si el enlace ya existe
 $query1 = "SELECT * FROM videotips_videotips WHERE videolink = '$videolink' AND username = '$local_username'";
 $urlduplicated = $conn->query($query1);
 
@@ -21,21 +22,22 @@ if ($urlduplicated->num_rows > 0) {
     echo "Enlace duplicado, usar otro";
     header("refresh:3; url=videolinkadminmodule.php");
     exit();
+} 
+
+if ($is_active == 1) {
+    // Intentar insertar el enlace
+    $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, active, username) 
+                VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
+    
+    if ($conn->query($query3) === TRUE) {
+        echo "Enlace Salvado Exitosamente";
+    } else {
+        echo "Error al guardar el enlace: " . $conn->error; // Muestra el error
+    }
 } else {
-    if ($is_active === 1) {
-        // Intentar insertar el enlace
-        $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, active, username) 
-                    VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
-        $resultado = $conn->query($query3);
-        
-        // Solo insertar en la lista de acceso si la inserción anterior fue exitosa
-        if ($resultado) {
-                echo "Enlace Salvado Exitosamente";
-            }
-        } else {
-            echo "Error al guardar el enlace.";
-        }
-        header("refresh:3; url=videolinkadminmodule.php");
-        exit();
+    echo "Suscripción inactiva. Por favor, renueva tu suscripción.";
 }
+
+header("refresh:3; url=videolinkadminmodule.php");
+exit();
 ?>
