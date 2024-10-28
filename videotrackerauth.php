@@ -23,7 +23,7 @@
 					<center><input id="username" type="text" name="email"  placeholder="Digite el email" required ></center><br> <!-- Login  -->
 				<br>
 				</div >
-				<div class="inputdata">
+				<div class="inputdata1">
 					<center><font id= "form_title" color="white"><strong>Contraseña</strong></font></center><br>
 					<center><input id="username" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
 				<br>
