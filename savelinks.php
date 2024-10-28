@@ -22,7 +22,7 @@ if ($urlduplicated->num_rows > 0) {
     header("refresh:3; url=videolinkadminmodule.php");
     exit();
 } else {
-    if ($is_active == 1) {
+    if ($is_active === 1) {
         // Intentar insertar el enlace
         $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, active, username) 
                     VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
