@@ -1,6 +1,6 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us"> <!-- Page language-->
-	<?php include "nobackpage.php"; ?>
+	<?php include "nobackpage.php"; include "SessionTimeOut.php";?>
 	<head>	
 		  <meta charset="iso-8559-1"/>
 		  <meta name="Description" content="Herramienta de Enlaces Utiles"/> 
