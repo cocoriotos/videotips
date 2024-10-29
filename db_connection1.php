@@ -8,7 +8,7 @@
   if(mysqli_connect_errno()) 
 			{
 			/*echo "Not Database connection success";*/
-			echo "Conexión a la aplicación no exitosa";
+			echo "<ha>Conexión a la aplicación no exitosa</ha>";
 			echo "<br>";
 			echo "<br>";
 			echo "<br>";

@@ -68,10 +68,10 @@ $mail = mail($to, $subject, $message,$header);
 
 if ($result){
     /*echo "Your request was sent, you can join with user name $email and password you type";    */
-	echo "Su requerimiento fue enviado, puede ingresar con el usuario $email y password que digitó.";
+	echo "<ha>Su requerimiento fue enviado, puede ingresar con el usuario $email y password que digitó.</ha>";
     } else {
 	/*echo "Request not send please try again";	*/
-	echo "Requerimiento no enviado, por favor trate nuevamente o más tarde";
+	echo "<ha>Requerimiento no enviado, por favor trate nuevamente o más tarde</ha>";
 	include("videotrackerauth.php");
     }
 } 

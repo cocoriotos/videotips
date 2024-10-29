@@ -10,6 +10,6 @@ if (!$result) {
     die("Categoría no encontrada");
   }
 /*echo 	"Category deleted";*/
-echo 	"Categoría Borrada";
+echo 	"<ha>Categoría Borrada</ha>";
 header("refresh:3; url=addcategory.php");  
 ?>

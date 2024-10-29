@@ -16,13 +16,13 @@ $query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', mai
 $resultado=$conn ->query($query);
 
 if ($resultado){
-  echo 	"Enlace Actualizado";
+  echo 	"<ha>Enlace Actualizado</ha>";
   $_SESSION['message']='Enalce Actualizado Exitosamente';
   $_SESSION['message_type']='Success';
   header("refresh:0; url=videolinkadminmodule.php");
     }
   else{
-      echo 	"Enlace Actualizado Exitosamente";
+      echo 	"<ha>Enlace Actualizado Exitosamente</ha>";
       $_SESSION['message']='Enlace Actualizado Exitosamente';
       $_SESSION['message_type']='Not Success';
       header("refresh:5; url=videolinkadminmodule.php");

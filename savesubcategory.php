@@ -14,6 +14,7 @@ $resultado= $conn ->query($query);
 
 
 if ($resultado){
+  echo "<h4>Categoría Salvada Exitosamente</h4>";
   $_SESSION['message']='Categoría Salvada Exitosamente';
   $_SESSION['message_type']='Success';
   header("refresh:3; url=videolinkadminmodule.php");

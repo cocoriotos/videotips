@@ -21,7 +21,7 @@ $query1 = "SELECT * FROM videotips_videotips WHERE videolink = '$videolink' AND 
 $urlduplicated = $conn->query($query1);
 
 if ($urlduplicated->num_rows > 0) { 
-    echo "Enlace duplicado, usar otro";
+    echo "<h4>Enlace duplicado, usar otro</h4>";
     /*echo "Valor de suscriptionactive: " . $is_active;*/
     header("refresh:3; url=videolinkadminmodule.php");
     exit();
@@ -40,7 +40,7 @@ if ($is_active == 1) {
     }
 } else {
     /*echo "Valor de suscriptionactive: " . $is_active;*/
-    echo "Suscripción inactiva. Por favor, renueva tu suscripción.";
+    echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";
 }
 
 header("refresh:3; url=videolinkadminmodule.php");
