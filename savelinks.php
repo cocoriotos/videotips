@@ -35,8 +35,8 @@ if ($is_active == 1) {
     if ($conn->query($query3) === TRUE) {
         echo "Enlace Salvado Exitosamente";
         /*echo "Request sent";*/
-		    echo '<script language="javascript">alert("ALERT: Enlace Salvado Exitosamente);</script>';
-        $_SESSION['message']= 'Enlace Salvado Exitosamente';
+		    echo '<script language="javascript">alert("ALERT: Enlace Salvado Exitosamente2);</script>';
+        $_SESSION['message']= 'Enlace Salvado Exitosamente3';
         $_SESSION['message_type']='success';
     } else {
       echo "Valor de suscriptionactive: " . $is_active;
