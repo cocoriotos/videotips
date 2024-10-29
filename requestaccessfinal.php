@@ -1,5 +1,8 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us"> <!-- Page language-->
+<?php
+include "nobackpage.php";
+?>
 
 	<head>	
 		  <meta charset="iso-8559-1"/>

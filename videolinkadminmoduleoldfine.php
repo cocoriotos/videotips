@@ -2,7 +2,8 @@
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
 <?php include "header.php";
 include "db_connection1.php"; 
-include "sessions.php"
+include "sessions.php";
+include "nobackpage.php";
 ?>
 
 <script>

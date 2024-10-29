@@ -6,6 +6,7 @@ session_start();
 include "header.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
+include "nobackpage.php";
 
 ?>
 
