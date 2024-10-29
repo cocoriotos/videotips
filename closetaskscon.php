@@ -3,7 +3,6 @@
 		session_destroy(); // Destruye la sesión 10082024
 		mysqli_close($conn);
 		/*echo 	"Session Closed";*/
-		echo 	"Sesión Cerrada";
-		echo '<script language="javascript">alert("ALERT: Sesión Cerrada);</script>';	
+		echo 	"Sesión Cerrada";	
         header("refresh:2; url=videotrackerauth.php");
 ?>

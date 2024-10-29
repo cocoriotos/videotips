@@ -33,7 +33,8 @@ if ($is_active == 1) {
                 VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
     
     if ($conn->query($query3) === TRUE) {
-      echo "Enlace Salvado Exitosamente";
+      echo '<script language="javascript">alert("ALERT: Enlace Salvado Exitosamente);</script>';
+      /*echo "Enlace Salvado Exitosamente";*/
     } else {
       echo "Valor de suscriptionactive: " . $is_active;
     }
