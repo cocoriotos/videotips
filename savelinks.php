@@ -22,7 +22,7 @@ $urlduplicated = $conn->query($query1);
 
 if ($urlduplicated->num_rows > 0) { 
     echo "Enlace duplicado, usar otro";
-    echo "Valor de suscriptionactive: " . $is_active;
+    /*echo "Valor de suscriptionactive: " . $is_active;*/
     header("refresh:3; url=videolinkadminmodule.php");
     exit();
 } 
@@ -33,8 +33,11 @@ if ($is_active == 1) {
                 VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
     
     if ($conn->query($query3) === TRUE) {
-      echo '<script>alert("ALERT: Enlace Salvado Exitosamente);</script>';
-      /*echo "Enlace Salvado Exitosamente";*/
+        echo "Enlace Salvado Exitosamente";
+        /*echo "Request sent";*/
+		    echo '<script language="javascript">alert("ALERT: Enlace Salvado Exitosamente);</script>';
+        $_SESSION['message']= 'Enlace Salvado Exitosamente';
+        $_SESSION['message_type']='success';
     } else {
       echo "Valor de suscriptionactive: " . $is_active;
     }
