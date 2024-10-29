@@ -9,7 +9,8 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
 
     if ($elapsed_time > $timeout_duration) {
         // Si el tiempo de inactividad excede el límite, cerrar la sesión
-        session_unset(); // Elimina todas las variables de sesión
+        echo "No se ha detectado actividad desde hace 5 minutos por parte del usuario, será redirigido a la páginan de inicio.";
+		session_unset(); // Elimina todas las variables de sesión
         session_destroy(); // Destruye la sesión
         header("Location: videotrackerauth.php"); // Redirige a la página de autenticación
         exit();
