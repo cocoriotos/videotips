@@ -11,9 +11,9 @@ font-face /*Fonts*/
 HR /*head TOP*/
 	{
 	 width:1600px;
-	 border-radius: 10px;
+	 /*border-radius: 10px;*/
 	 font-family: arial;
-	 /*margin: 15px auto;*/
+	 margin: 15px auto;
 	}
 
 header /* where  title is*/
