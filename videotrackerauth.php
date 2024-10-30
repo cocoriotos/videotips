@@ -11,9 +11,9 @@
 		?>
 	</head>
 	<header>
-		<HR id="HR"/>	<!-- Header title  --> <!-- -->
+		<!--<HR id="HR"/>	<!-- Header title  --> <!-- -->
 			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center><br>
-		<HR/>
+		<!--<HR/>-->
 	</header>	
 	  <body>
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
