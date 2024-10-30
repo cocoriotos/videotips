@@ -197,14 +197,14 @@ body {
 		font-family: arial;
 	}
 	
-#form_title1, #form_title
+#form_title1
 	{
 	 font-size:140%;
      position:absolute;	
 	 margin-left:0.5em;	 
 	 font-family: arial;
 	}
-/*#form_title
+#form_title
 	{
 	 font-size:32px;
 	 margin-left:0.05em;
