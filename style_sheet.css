@@ -199,12 +199,12 @@ body {
 	 margin-left:0.5em;	 
 	 font-family: arial;
 	}
-#form_title
+/*#form_title
 	{
 	 font-size:32px;
-	 margin: left 0.5em;
+	 margin-left:0.05em;
      font-family: arial;	
-	}	
+	}	*/
 	
 #Register, #Signout
        {
