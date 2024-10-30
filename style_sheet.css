@@ -159,7 +159,7 @@ body {
 	
 	.inputdata1 	input
 {
-		margin-left: 0.5em;
+		/*margin-left: 0.5em;*/
 		width:50%;
 		height:2em;
 		font-size:15%;		
