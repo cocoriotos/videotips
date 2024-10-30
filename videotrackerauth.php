@@ -12,15 +12,15 @@
 	</head>
 	<header>
 		<HR id="HR"/>	<!-- Header title  --> <!-- -->
-			<center><h1><font id="form_title1" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
+			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
 		<HR/>
 	</header>	
 	  <body>
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
-			    <center><font color=lightblue id="form_title1"><strong>Formulario de Autenticación</strong></font></center><br>	
+			    <center><font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font></center><br>	
                 <center><img id="img_login" center SRC="login.gif"></img></center></br> <!-- Login Icon  -->
 				<div class="inputdata1">
-					<center><font id= "form_title1" color="white"><strong>Email</strong></font></center><br><br>
+					<center><font id= "form_title" color="white"><strong>Email</strong></font></center><br><br>
 					<center><input id="username1" type="text" name="email"  placeholder="Digite el email" required ></center><br> <!-- Login  -->
 				<br>
 				</div >
