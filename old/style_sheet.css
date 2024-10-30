@@ -10,6 +10,10 @@ font-face /*Fonts*/
 
 HR /*head TOP*/
 	{
+	 /*-moz-transform:scale(1);	
+	 -ms-transform:scale(1);	
+	 -o-transform:scale(1);
+	 -webkit-transform:scale(1);*/
 	 width:1600px;
 	 border-radius: 10px;
 	 font-family: arial;
@@ -143,21 +147,22 @@ body {
 		font-family: arial;
 	}
 
-	.inputdata 	input
+	.inputdata, .inputdata1 	input
 {
-		margin-left: 8em;
-		width:56%;
-		font-size:105%;
+		margin-left: 0.5em;
+		width:50%;
+		height:2em;
+		font-size:15%;		
 		font-family: arial;
 	}
 	
-	.inputdata  label
+	.inputdata,.inputdata1  label
 {
 		position:absolute;	
 		font-family: arial;
 	}
 	
-	.inputdata1 	input
+	/*.inputdata1 	input
 {
 		margin-left: 0.5em;
 		width:50%;
@@ -170,20 +175,20 @@ body {
 {
 		position:absolute;	
 		font-family: arial;
-	}
+	}*/
 
-#username, #access
+#username, #username1, #access
 	{
 		font-size:200%;
 		font-family: arial;
 		
 	}	
-#username1 
+/*#username1 
 	{
 		font-size:200%;
 		margin-left: 2em;
 		font-family: arial;
-	}
+	}*/
 		
 	
 #img_login, #img_fix
@@ -204,7 +209,7 @@ body {
 	 font-size:32px;
 	 margin-left:0.05em;
      font-family: arial;	
-	}	
+	}	*/
 	
 #Register, #Signout
        {
