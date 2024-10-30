@@ -17,22 +17,22 @@
 	</header>	
 	  <body>
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
-			    <center><font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font></center><br><br>
-                <center><img id="img_login" center SRC="login.gif"></img></center></br> <!-- Login Icon  -->
-				<div class="inputdata1">
-					<center><font id= "form_title" color="white"><strong>Email</strong></font></center><br><br>
-					<center><input id="username1" type="text" name="email"  placeholder="Digite el email" required ></center><br> <!-- Login  -->
-				<br>
-				</div >
-				<div class="inputdata1">
-					<center><font id= "form_title" color="white"><strong>Contraseña</strong></font></center><br><br>
-					<center><input id="username1" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
-				<br>
-				</div >
-				<center><input id="loginbutton" type="submit" value="Ingresar"></center>
-				<br>
-				<br>
-				<br>	
+			    <center>
+					<font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font><br><br>
+                	<img id="img_login" center SRC="login.gif"></img></br> <!-- Login Icon  -->
+					<div class="inputdata1">
+						<font id= "form_title" color="white"><strong>Email</strong></font><br><br>
+						<input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
+					</div >
+					<div class="inputdata1">
+						<font id= "form_title" color="white"><strong>Contraseña</strong></font><br><br>
+						<input id="username1" type="password" name="password" placeholder="Digite su Constraseña" required ><br> <!-- Login PAM username  --><br>
+					</div >
+					<input id="loginbutton" type="submit" value="Ingresar">
+					<br>
+					<br>
+					<br>
+				</center>
 		</form>	
 		<form id="login" action="requestaccessfinal.php" method="POST" autocomplete="off"> <!-- Form to request access-->
 			<center>
