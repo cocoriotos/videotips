@@ -20,12 +20,12 @@
 			    <center><font color=lightblue id="form_title1"><strong>Formulario de Autenticación</strong></font></center><br>	
                 <center><img id="img_login" center SRC="login.gif"></img></center></br> <!-- Login Icon  -->
 				<div class="inputdata1">
-					<center><font id= "form_title1" color="white"><strong>Email</strong></font></center><br>
+					<center><font id= "form_title1" color="white"><strong>Email</strong></font></center><br><br>
 					<center><input id="username1" type="text" name="email"  placeholder="Digite el email" required ></center><br> <!-- Login  -->
 				<br>
 				</div >
 				<div class="inputdata1">
-					<center><font id= "form_title" color="white"><strong>Contraseña</strong></font></center><br>
+					<center><font id= "form_title" color="white"><strong>Contraseña</strong></font></center><br><br>
 					<center><input id="username1" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
 				<br>
 				</div >
