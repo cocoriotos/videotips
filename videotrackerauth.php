@@ -21,12 +21,12 @@
                 <center><img id="img_login" center SRC="login.gif"></img></center></br> <!-- Login Icon  -->
 				<div class="inputdata1">
 					<center><font id= "form_title1" color="white"><strong>Email</strong></font></center><br>
-					<center><input id="username" type="text" name="email"  placeholder="Digite el email" required ></center><br> <!-- Login  -->
+					<center><input id="username1" type="text" name="email"  placeholder="Digite el email" required ></center><br> <!-- Login  -->
 				<br>
 				</div >
 				<div class="inputdata1">
 					<center><font id= "form_title" color="white"><strong>Contraseña</strong></font></center><br>
-					<center><input id="username" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
+					<center><input id="username1" type="password" name="password" placeholder="Digite su Constraseña" required ></center><br> <!-- Login PAM username  -->
 				<br>
 				</div >
 				<center><input id="loginbutton" type="submit" value="Ingresar"></center>
