@@ -36,14 +36,16 @@ if ($is_active == 1) {
     
     if ($conn->query($query3) === TRUE) {
         
-        echo "<h4>Enlace Salvado Exitosamente</h4>";
+        include ("link_saved_success.php");
+        /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/
         
     } else {
       /*echo "Valor de suscriptionactive: " . $is_active;*/
     }
 } else {
     /*echo "Valor de suscriptionactive: " . $is_active;*/
-    echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";
+    include ("No_Suscription.php");
+    /*echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";*/
 }
 
 header("refresh:0; url=videolinkadminmodule.php");
