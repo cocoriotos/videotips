@@ -30,14 +30,14 @@
             text-align: center;
         }
         .close {
-            color: #aaa;
+            color: red;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
         .close:hover,
         .close:focus {
-            color: white;
+            color: black;
             text-decoration: none;
             cursor: pointer;
         }
