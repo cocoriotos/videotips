@@ -41,6 +41,17 @@
             text-decoration: none;
             cursor: pointer;
         }
+		button {
+        background-color: #4CAF50; /* Color verde */
+        color: white; /* Texto blanco */
+        border: none; /* Sin borde */
+        padding: 10px 20px; /* Espaciado */
+        cursor: pointer; /* Cursor tipo puntero */
+    	}
+    
+    	button:hover {
+        background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    	}
     </style>
 </head>
 <body>
@@ -62,22 +73,6 @@
         document.getElementById("myModal").style.display = "none";
     }
 </script>
-
-<style>
-    /* Estilo opcional para el botón */
-    button {
-        background-color: #4CAF50; /* Color verde */
-        color: white; /* Texto blanco */
-        border: none; /* Sin borde */
-        padding: 10px 20px; /* Espaciado */
-        cursor: pointer; /* Cursor tipo puntero */
-    }
-    
-    button:hover {
-        background-color: #45a049; /* Color más oscuro al pasar el mouse */
-    }
-
-</style>
 
 <?php
 include("closetaskscon.php");
