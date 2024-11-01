@@ -1,4 +1,3 @@
-<!--  Developed by julián González Bucheli -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -54,8 +53,6 @@
 </head>
 <body>
 
-<button onclick="openModal()">Abrir Alerta</button>
-
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -72,6 +69,9 @@
     function closeModal() {
         document.getElementById("myModal").style.display = "none";
     }
+
+    // Abre el modal cuando se carga la página
+    window.onload = openModal;
 </script>
 
 <?php
