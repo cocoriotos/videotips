@@ -41,6 +41,16 @@
             text-decoration: none;
             cursor: pointer;
         }
+		button {
+            background-color: #4CAF50; /* Color verde */
+            color: white; /* Texto blanco */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado */
+            cursor: pointer; /* Cursor tipo puntero */
+        }
+        button:hover {
+            background-color: #45a049; /* Color más oscuro al pasar el mouse */
+        }
     </style>
 </head>
 <body>
@@ -49,13 +59,13 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <p style= "color: white">ALERTA: Su Usuario es incorrecto, por favor trate nuevamente, si no está registrado entonces seleccione la opción de requerir acceso.</p>
-    </div>
+		<button onclick="closeModal()">OK</button>
+	</div>
 </div>
 
 <script>
     function openModal() {
         document.getElementById("myModal").style.display = "block";
-		setTimeout(closeModal,5000);
     }
 
     function closeModal() {
