@@ -25,7 +25,7 @@ if ($urlduplicated->num_rows > 0) {
     include ("link_duplicated.php");
     /*echo "<h4>Enlace duplicado, usar otro</h4>";*/
     
-    header("refresh:3; url=videolinkadminmodule.php");
+    header("refresh:0; url=videolinkadminmodule.php");
     exit();
 } 
 
@@ -46,6 +46,6 @@ if ($is_active == 1) {
     echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";
 }
 
-header("refresh:3; url=videolinkadminmodule.php");
+header("refresh:0; url=videolinkadminmodule.php");
 exit();
 ?>
