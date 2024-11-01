@@ -21,8 +21,10 @@ $query1 = "SELECT * FROM videotips_videotips WHERE videolink = '$videolink' AND 
 $urlduplicated = $conn->query($query1);
 
 if ($urlduplicated->num_rows > 0) { 
-    echo "<h4>Enlace duplicado, usar otro</h4>";
-    /*echo "Valor de suscriptionactive: " . $is_active;*/
+    
+    include "link_duplicated.php";
+    /*echo "<h4>Enlace duplicado, usar otro</h4>";*/
+    
     header("refresh:3; url=videolinkadminmodule.php");
     exit();
 } 
