@@ -7,6 +7,7 @@
 		  <meta name="keywords" content="Herramienta de Enlaces Utiles"/>
 		  <title>Herramienta de Enlaces Utiles</title>  <!-- page tab title-->
 		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->
+		  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		  <?php 
 		?>
 	</head>
