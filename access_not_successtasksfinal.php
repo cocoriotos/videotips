@@ -21,7 +21,8 @@
             background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
         }
         .modal-content {
-            background-color: #fefefe;
+            background-color: rgba(3, 38, 66);
+			/*#fefefe;*/
             margin: 15% auto; /* 15% desde la parte superior y centrado */
             padding: 20px;
             border: 1px solid #888;
