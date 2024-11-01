@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensaje Estilizado</title>
     <style>
         body {
@@ -18,7 +18,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            background-color: rgba(1, 1, 1, 1.5); /* Fondo semi-transparente */
         }
         .modal-content {
             background-color: #fefefe;
