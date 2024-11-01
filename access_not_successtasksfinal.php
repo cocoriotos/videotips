@@ -48,7 +48,7 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <p color="white">ALERTA: Su Usuario es incorrecto, por favor trate nuevamente, si no está registrado entonces seleccione la opción de requerir acceso.</p>
+        <p style= "color: white">ALERTA: Su Usuario es incorrecto, por favor trate nuevamente, si no está registrado entonces seleccione la opción de requerir acceso.</p>
     </div>
 </div>
 
