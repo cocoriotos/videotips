@@ -14,10 +14,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <!--<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensaje Estilizado</title>
-    <style>
+    <title>Mensaje Estilizado</title>-->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--<style>
         body {
             font-family: Arial, sans-serif;
         }
@@ -52,28 +53,25 @@
             text-decoration: none;
             cursor: pointer;
         }
-    </style>
+    </style>-->
 </head>
 <body>
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <p>ALERTA: Su Usuario es incorrecto, por favor trate nuevamente o seleccione la opción de requerir acceso.</p>
-    </div>
-</div>
+<!--<div id="myModal" class="modal">
+    <div class="modal-content">-->
+        <span onclick="openmessage"()"></span>
+        
+    <!--</div>
+</div>-->
+
+
 
 <script>
-    function openModal() {
-        document.getElementById("myModal").style.display = "block";
+    function openmessage() {
+         swal("Su Usuario es incorrecto, por favor trate nuevamente o seleccione la opción de requerir acceso"),
     }
 
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
-
-    // Abre el modal cuando se carga la página
-    window.onload = openModal;
+    
 </script>
 
 <?php
