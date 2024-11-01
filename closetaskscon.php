@@ -4,5 +4,5 @@
 		mysqli_close($conn);
 		/*echo 	"Session Closed";*/
 		/*echo 	"<ha>Sesión Cerrada</ha>";	*/
-        header("refresh:2; url=videotrackerauth.php");
+        header("refresh:0; url=videotrackerauth.php");
 ?>

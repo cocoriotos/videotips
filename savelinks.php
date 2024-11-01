@@ -22,7 +22,7 @@ $urlduplicated = $conn->query($query1);
 
 if ($urlduplicated->num_rows > 0) { 
     
-    include "link_duplicated.php";
+    include ("link_duplicated.php");
     /*echo "<h4>Enlace duplicado, usar otro</h4>";*/
     
     header("refresh:3; url=videolinkadminmodule.php");
