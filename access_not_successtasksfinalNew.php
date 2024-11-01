@@ -55,7 +55,7 @@
 
 <div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close" >&times;</span>
+        <span class="close" onclick="closeModal()">&times;</span>
         <p style="color: white">ALERTA: Su Usuario es incorrecto. Por favor, trate nuevamente. Si no está registrado, seleccione la opción de requerir acceso.</p>
         <button onclick="closeModal()">OK</button>
     </div>
