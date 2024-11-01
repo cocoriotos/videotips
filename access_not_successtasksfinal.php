@@ -48,23 +48,36 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <p style= "color: white">ALERTA: Su Usuario es incorrecto, por favor trate nuevamente, si no está registrado entonces seleccione la opción de requerir acceso.</p>
+        <p style="color: white">ALERTA: Su Usuario es incorrecto. Por favor, trate nuevamente. Si no está registrado, seleccione la opción de requerir acceso.</p>
+        <button onclick="closeModal()">OK</button>
     </div>
 </div>
 
 <script>
     function openModal() {
         document.getElementById("myModal").style.display = "block";
-		setTimeout(closeModal,5000);
     }
 
     function closeModal() {
         document.getElementById("myModal").style.display = "none";
     }
-
-    // Abre el modal cuando se carga la página
-    window.onload = openModal;
 </script>
+
+<style>
+    /* Estilo opcional para el botón */
+    button {
+        background-color: #4CAF50; /* Color verde */
+        color: white; /* Texto blanco */
+        border: none; /* Sin borde */
+        padding: 10px 20px; /* Espaciado */
+        cursor: pointer; /* Cursor tipo puntero */
+    }
+    
+    button:hover {
+        background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    }
+
+</style>
 
 <?php
 include("closetaskscon.php");
