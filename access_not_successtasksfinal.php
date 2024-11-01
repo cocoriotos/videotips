@@ -64,7 +64,7 @@
 <script>
     function openModal() {
         document.getElementById("myModal").style.display = "block";
-		setTimeout(closeModal, 500000);
+		setTimeout(closeModal, 60000);
     }
 
     function closeModal() {
