@@ -22,7 +22,6 @@
         }
         .modal-content {
             background-color: rgba(3, 38, 66);
-			/*#fefefe;*/
             margin: 15% auto; /* 15% desde la parte superior y centrado */
             padding: 20px;
             border: 1px solid #888;
@@ -41,7 +40,7 @@
             text-decoration: none;
             cursor: pointer;
         }
-		button {
+        button {
             background-color: #4CAF50; /* Color verde */
             color: white; /* Texto blanco */
             border: none; /* Sin borde */
@@ -55,12 +54,14 @@
 </head>
 <body>
 
+<button onclick="openModal()">Abrir Alerta</button>
+
 <div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
-        <p style= "color: white">ALERTA: Su Usuario es incorrecto, por favor trate nuevamente, si no está registrado entonces seleccione la opción de requerir acceso.</p>
-		<button onclick="closeModal()">OK</button>
-	</div>
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p style="color: white">ALERTA: Su Usuario es incorrecto. Por favor, trate nuevamente. Si no está registrado, seleccione la opción de requerir acceso.</p>
+        <button onclick="closeModal()">OK</button>
+    </div>
 </div>
 
 <script>
@@ -71,9 +72,6 @@
     function closeModal() {
         document.getElementById("myModal").style.display = "none";
     }
-
-    // Abre el modal cuando se carga la página
-    window.onload = openModal;
 </script>
 
 <?php
