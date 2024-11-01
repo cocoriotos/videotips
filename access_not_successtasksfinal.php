@@ -18,10 +18,10 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(1, 1, 1, 1.5); /* Fondo semi-transparente */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
         }
         .modal-content {
-            background-color: #fefefe;
+            background-color: rgb(128,128,128);
             margin: 15% auto; /* 15% desde la parte superior y centrado */
             padding: 20px;
             border: 1px solid #888;
