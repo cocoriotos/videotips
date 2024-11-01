@@ -66,7 +66,7 @@
 
 
 
-<script>
+<script type="text/javascript">
     function openmessage() {
          swal("Su Usuario es incorrecto, por favor trate nuevamente o seleccione la opción de requerir acceso"),
     }
