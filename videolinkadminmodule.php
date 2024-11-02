@@ -10,11 +10,14 @@ include "nobackpage.php";
 include "SessionTimeOut.php";
 ?>
 <head>	
-		  <meta charset="iso-8559-1"/>
-		  <meta name="Description" content="Herramienta de Enlaces Utiles"/> 
-		  <meta name="keywords" content="Herramienta de Enlaces Utiles"/>
-		  <title>Herramienta de Enlaces Utiles</title>  <!-- page tab title-->
-		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->		  
+	<script>
+        // Cargar el contenido de header.html en el <head> al cargar la página
+        fetch("head.html")
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            });
+    </script>	  
 </head>
 <body id="bodyadminmodule">
 		<div id="adminmodulecontainer" class="container p-4" >
