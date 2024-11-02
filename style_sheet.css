@@ -260,14 +260,14 @@ ul.tab li a:hover {
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {
-	background-color: red;
-	/*background-color: #ccc;*/
+	background-color: #ccc;
 	font-family: arial
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    background-color: red;
+	display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
