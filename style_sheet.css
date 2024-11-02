@@ -171,7 +171,6 @@ body {
 {
 		position:absolute;	
 		font-family: arial;
-		background-color: red;
 	}
 
 #username, #access
@@ -200,6 +199,7 @@ body {
      position:absolute;	
 	 margin-left:0.5em;	 
 	 font-family: arial;
+	 background-color: red;
 	}
 #form_title
 	{
