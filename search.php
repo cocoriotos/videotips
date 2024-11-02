@@ -22,7 +22,7 @@ function openList(evt, cityName) {
 </script>
 
 <meta charset="iso-8559-1">
-<link rel="stylesheet" style="font-family: arial" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<link rel="stylesheet" style="font-family: arial; background-color: white" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   <script> $(document).ready( function () {
