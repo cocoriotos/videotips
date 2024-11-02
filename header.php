@@ -4,7 +4,7 @@ include "nobackpage.php";
 ?>
 <html lang="us"> <!-- Page language-->
 <header>
-  <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
+  <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
     </div></center>
