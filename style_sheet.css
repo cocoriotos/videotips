@@ -250,11 +250,14 @@ ul.tab li a {
     transition: 0.3s;
     font-size: 30px;
 	font-family: arial;
-	background-color: red;
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd; font-family: arial}
+ul.tab li a:hover {
+	background-color: red;
+	/*background-color: #ddd; */
+	font-family: arial
+}
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {background-color: #ccc; font-family: arial}
