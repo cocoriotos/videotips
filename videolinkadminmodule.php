@@ -79,7 +79,20 @@ include "SessionTimeOut.php";
 							while($links = mysqli_fetch_array($result_links)) { ?>
 							<tr>
 								<td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-								<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
+								<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?><script>
+    function copyToClipboard(text) {
+        // Create a temporary textarea element to hold the text
+        const tempTextarea = document.createElement("textarea");
+        tempTextarea.value = text;
+        document.body.appendChild(tempTextarea);
+        // Select and copy the text
+        tempTextarea.select();
+        document.execCommand("copy");
+        // Remove the temporary element
+        document.body.removeChild(tempTextarea);
+        alert("Link copied to clipboard!");
+    }
+</script></a></td>
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="center"><?php echo $links['description'] ?></td>
