@@ -10,7 +10,6 @@ font-face /*Fonts*/
 
 HR /*head TOP*/
 	{
-	 background-color: red;
 	 width:1600px;
 	 /*border-radius: 10px;*/
 	 font-family: arial;
@@ -23,7 +22,8 @@ header /* where  title is*/
 		/*float:bottom;*/
 		height:100px;
         color:#0c316d;
-		background-color:#032642;
+		background-color: red;
+		/*background-color:#032642;*/
 		width:98%;
 		font-family: arial;
 		border-radius:15px;
