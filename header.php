@@ -4,9 +4,9 @@ include "nobackpage.php";
 ?>
 <html lang="us"> <!-- Page language-->
 <header>
-  <><nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+  <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
 	<div class="container">
-    <a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a>
+    <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
     </div></center>
   </nav>
 
