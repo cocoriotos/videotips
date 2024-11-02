@@ -17,7 +17,7 @@ include "SessionTimeOut.php";
 				});
 		</script>	  
 	</head>
-
+<body id="bodyadminmodule">
 
 <div class="container p-4" id="adminmodulecontainer">
 
@@ -81,5 +81,6 @@ include "SessionTimeOut.php";
 			</table>
 		</div>
 </div>
+</body>
 
 <?php include ("footer.php")?>
