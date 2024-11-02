@@ -44,7 +44,7 @@ include "SessionTimeOut.php";
 						<!--<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>-->
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center>
 					</div>	
-					<br><br><br><br><br>
+					<br><br><br><br>
 				</form>
 				<!--<hr>
 				<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
