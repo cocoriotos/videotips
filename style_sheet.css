@@ -238,7 +238,6 @@ ul.tab {
 /* Float the list items side by side */
 ul.tab li {float: left; 
 	font-family: arial;
-	background-color: red;
 }
 
 /* Style the links inside the list items */
@@ -251,6 +250,7 @@ ul.tab li a {
     transition: 0.3s;
     font-size: 30px;
 	font-family: arial;
+	background-color: red;
 }
 
 /* Change background color of links on hover */
