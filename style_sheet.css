@@ -296,3 +296,7 @@ ul.tab li a:focus, .active {
 body bodyadminmodule {
 	background-color: #EAEAEA;
 }
+
+div  adminmodulecontainer {
+	background-color: #EAEAEA;
+}
