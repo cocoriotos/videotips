@@ -22,8 +22,7 @@ header /* where  title is*/
 		/*float:bottom;*/
 		height:100px;
         color:#0c316d;
-		background-color: red;
-		/*background-color:#032642;*/
+		background-color:#032642;
 		width:98%;
 		font-family: arial;
 		border-radius:15px;
@@ -34,9 +33,10 @@ header /* where  title is*/
 head /*where  title is*/
 	{
 		/*float:bottom;*/
+		background-color: red;
 		height:100px;
         color:#0c316d;
-		background-color:#032642;
+		/*background-color:#032642;*/
 		width:1600px;
 		font-family: arial;
 }
