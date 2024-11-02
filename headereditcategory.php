@@ -4,7 +4,7 @@
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
-    <a href="editcategory.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
+    <a href="#" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
     <a href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Go to Category</a>
     <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
        
