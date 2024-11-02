@@ -9,6 +9,13 @@ $local_username=$_SESSION['email'];
 include "nobackpage.php";
 include "SessionTimeOut.php";
 ?>
+<head>	
+		  <meta charset="iso-8559-1"/>
+		  <meta name="Description" content="Herramienta de Enlaces Utiles"/> 
+		  <meta name="keywords" content="Herramienta de Enlaces Utiles"/>
+		  <title>Herramienta de Enlaces Utiles</title>  <!-- page tab title-->
+		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->		  
+</head>
 <body id="bodyadminmodule">
 		<div id="adminmodulecontainer" class="container p-4" >
 			<div class="row">
