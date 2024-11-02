@@ -74,6 +74,8 @@ include "SessionTimeOut.php";
 					  <center><th>ID</th></center>
 					  <center><th>Categoría</th></center> 
 					  <center><th>SubCategoría</th></center>
+					  <center><th>Copiar Categoría</th></center>
+					  <center><th>Copiar Subcategoría</th></center>
 				   </tr>
 			    </thead>
 				<tbody>
@@ -85,6 +87,8 @@ include "SessionTimeOut.php";
 					     <td align="center" onclick="Display"><?php echo"<a href='editcategory.php?id={$categories['id']}'>{$categories['id']}"?></td>
 						 <td align="center" onclick="Display"><?php echo $categories['maincategory']?></td>
 						 <td align="center" onclick="Display"><?php echo $categories['category']?></td>
+						 <td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $categories['maincategory']; ?>')"></button></td>
+						 <td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $categories['category']; ?>')"></button></td>
 					 	 </td>
 					  </tr>
 					<?php }?>
