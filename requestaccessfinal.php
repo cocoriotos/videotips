@@ -6,18 +6,21 @@ include "SessionTimeOut.php";
 ?>
 
 	<head>	
-		  <meta charset="iso-8559-1"/>
-		  <meta name="Description" content="Herramienta de Enlaces Utiles"/> 
-		  <meta name="keywords" content="Herramienta de Enlaces Utiles"/>
-		  <title>Herramienta de Enlaces Utiles</title>  <!-- page tab title-->
-		  <link rel="stylesheet" href="style_sheet.css"/> <!-- styles framework, template and Fonts-->		  
+		<script>
+			// Cargar el contenido de header.html en el <head> al cargar la página
+			fetch("head.html")
+				.then(response => response.text())
+				.then(data => {
+					document.head.innerHTML += data;
+				});
+		</script>	  
 	</head>
 	<header>
 		<HR id="HR"/>	<!-- Header title  --> <!-- -->
 			<center><h1><font color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
 		<HR/>
 	</header>
-	<body id="bodyadminmodule">		
+	<body>		
 	  		<form id="login" action="accessemailFinal.php" method="POST" autocomplete="off"> <!-- Form to send access email request login  application admin-->
 			<center><font color=lightblue id="form_title"><strong>Formulario de Solicitud de Acceso</strong></center></font><br>	
 			  <div class="inputdata">
