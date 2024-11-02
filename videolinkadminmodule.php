@@ -81,7 +81,7 @@ include "SessionTimeOut.php";
 							while($links = mysqli_fetch_array($result_links)) { ?>
 							<tr>
 								<td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-								<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a><button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copy</button></td>
+								<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="center"><?php echo $links['description'] ?></td>
