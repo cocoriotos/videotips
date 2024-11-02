@@ -231,13 +231,15 @@ ul.tab {
     padding: 0;
     overflow: hidden;
     border: 5px double #ccc;
-	background-color: red;
-    /*background-color: #f1f1f1;*/
+	background-color: #f1f1f1;
 	font-family: arial;
 }
 
 /* Float the list items side by side */
-ul.tab li {float: left; font-family: arial;}
+ul.tab li {float: left; 
+	font-family: arial;
+	background-color: red;
+}
 
 /* Style the links inside the list items */
 ul.tab li a {
