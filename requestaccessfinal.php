@@ -17,7 +17,7 @@ include "SessionTimeOut.php";
 			<center><h1><font color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
 		<HR/>
 	</header>
-	<body>		
+	<body id="bodyadminmodule">		
 	  		<form id="login" action="accessemailFinal.php" method="POST" autocomplete="off"> <!-- Form to send access email request login  application admin-->
 			<center><font color=lightblue id="form_title"><strong>Formulario de Solicitud de Acceso</strong></center></font><br>	
 			  <div class="inputdata">
