@@ -16,7 +16,9 @@ include "SessionTimeOut.php";
 				.then(data => {
 					document.head.innerHTML += data;
 				});
-		</script>	  
+		</script>	
+		</script>	
+		<script src="toclipboard.js" defer></script>  
 	</head>
 
 <body id="bodyadminmodule">
