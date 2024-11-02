@@ -76,7 +76,6 @@ body {
 	 }
 	 
 	 ul{
-		background-color: red;
 		font-size:115%; 
 		font-family: arial;
 	 }
@@ -93,7 +92,8 @@ body {
 	
    	#notes
 	{
-		background-color:#0085c3; /* background color for footer  only*/	
+		/*background-color:#0085c3; /* background color */
+		background-color: red;	
 		width:98%;
 		font-family: arial;
 		margin:40px auto;
