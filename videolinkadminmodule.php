@@ -59,7 +59,7 @@ include "SessionTimeOut.php";
 				
 				<div class="col-md-8" >
 				<?php include("search.php") ?>
-				<div class="card card-body">
+				<div class="card card-body" id="autosearch">
 				<table id="autosearch" class="display" font color="back">
 						<thead>
 						<tr>
