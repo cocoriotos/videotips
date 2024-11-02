@@ -10,7 +10,7 @@ include "nobackpage.php";
 include "SessionTimeOut.php";
 ?>
 <body id="bodyadminmodule">
-		<div id="adminmodulecontainer" class="container p-4" style="background-color:red">
+		<div id="adminmodulecontainer" class="container p-4" >
 			<div class="row">
 				<div class="col-md-4"> 
 					<div class="card card-body">
