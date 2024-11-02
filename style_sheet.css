@@ -254,13 +254,16 @@ ul.tab li a {
 
 /* Change background color of links on hover */
 ul.tab li a:hover {
-	background-color: red;
-	/*background-color: #ddd; */
+	background-color: #ddd; 
 	font-family: arial
 }
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #ccc; font-family: arial}
+ul.tab li a:focus, .active {
+	background-color: red;
+	/*background-color: #ccc;*/
+	font-family: arial
+}
 
 /* Style the tab content */
 .tabcontent {
