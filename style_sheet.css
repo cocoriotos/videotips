@@ -205,13 +205,13 @@ body {
 	 font-size:32px;
 	 margin-left:0.05em;
      font-family: arial;
-	 background-color: red;	
 	}	
 	
 #Register, #Signout
        {
 		font-size:100%;
-		background-color:#0085c3;
+		background-color: red;
+		/*background-color:#0085c3;*/
 		margin:40px auto;
 		padding:5px;
 		background:gray;
