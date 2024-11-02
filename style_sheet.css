@@ -156,7 +156,6 @@ body {
 {
 		position:absolute;	
 		font-family: arial;
-		background-color: red;
 	}
 	
 	.inputdata1 	input
@@ -166,6 +165,7 @@ body {
 		height:2em;
 		font-size:15%;		
 		font-family: arial;
+		background-color: red;
 	}
 	
 	.inputdata1 label
