@@ -15,8 +15,8 @@ include "SessionTimeOut.php";
 			<div class="card card-body">
 			<div class="form-group">
 			    <!--<label for="videolink" style="color: black;"><strong>Categories to filter your Favorite links</strong></label><br>-->
-				<label for="videolink" style="color: black;"><strong>Categorías para filtrar sus enlaces favoritos</strong></label><br>
-					</div><br>
+				<label for="videolink" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label><br>
+					</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
 				<form class="" action="savecategory.php" method="POST">
 					<div class="form-group">
 						<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
