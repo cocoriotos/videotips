@@ -288,7 +288,7 @@ ul.tab li a:focus, .active {
 	display: inline-block;
     margin-right: 10px;
 	}
-.autosearch
+table.autosearch
 {
 	background-color: white;
 }
