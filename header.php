@@ -4,6 +4,8 @@
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
+    <a href="videotrackerauth.php" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Salir</a>
+        
     <!--<center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>-->
 	</div>
   </nav>
