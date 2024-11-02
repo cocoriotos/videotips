@@ -35,12 +35,13 @@ include "SessionTimeOut.php";
 						<label for="videolink" style="color: black;"><strong>Subcategoría</strong></label><br>	
 						<input type="text" name="category" class="form-control" placeholder="Subcategoría" autofocus value ="<?php echo $link['category'];?>"></input><br>
 					</div>
-					<hr>
+					<br><br>
+					<!--<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>
-					<hr>
+					<hr>-->
 					<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Actualizar"></input></center><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="deletecategory.php"></input></center><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancelar" formaction="addcategory.php"></input></center>
+					<!--<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancelar" formaction="addcategory.php"></input></center>-->
                  </form>
 		    </div>
         </div>	
