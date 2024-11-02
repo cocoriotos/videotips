@@ -8,7 +8,6 @@ include "nobackpage.php";
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
     </div></center>
-    <br>
   </nav>
 
   <center><nav class="navbar navbar-dark bg-dark">
