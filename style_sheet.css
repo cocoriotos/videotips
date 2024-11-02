@@ -299,6 +299,6 @@ ul.tab li a:focus, .active {
 	background-color: white;
 }
 
-.welcome a {
+#welcome {
 	font-size: 48px;
 }
