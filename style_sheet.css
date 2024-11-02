@@ -258,7 +258,7 @@ ul.tab li a:hover {
 	font-family: arial
 }
 
-/* Create an active/current tablink class */
+/* Create an active/current ink class */
 ul.tab li a:focus, .active {
 	background-color: #ccc;
 	font-family: arial
@@ -293,3 +293,6 @@ ul.tab li a:focus, .active {
 	background-color: white;
 }
 
+body bodyadminmodule {
+	background-color: #EAEAEA;
+}

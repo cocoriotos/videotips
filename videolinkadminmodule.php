@@ -9,7 +9,7 @@ $local_username=$_SESSION['email'];
 include "nobackpage.php";
 include "SessionTimeOut.php";
 ?>
-<body style="background-color:red">
+<body id="bodyadminmodule">
 		<div class="container p-4" style="background-color:red">
 			<div class="row">
 				<div class="col-md-4"> 
