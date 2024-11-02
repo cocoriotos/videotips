@@ -43,7 +43,6 @@ head /*where  title is*/
 body {
 		/*background-color:#0c316d; /* background color in the entire page, body is the entire page*/
 		/*background-color:white;*/
-		background-color: red;
 		font-size:80%;
 		height:100px;
 		font-family: arial;
@@ -69,6 +68,7 @@ body {
 	  {
 	 font-size:100%;
 	 font-family: arial;
+	 background-color: red;
 	 }
 	 
 	 th, td
