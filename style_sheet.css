@@ -68,6 +68,7 @@ body {
 	  {
 	 font-size:100%;
 	 font-family: arial;
+	  }
 	 
 	 th, td
 	 {
@@ -92,8 +93,7 @@ body {
 	
    	#notes
 	{
-		/*background-color:#0085c3; /* background color */
-		background-color: red;	
+		background-color:#0085c3; /* background color */	
 		width:98%;
 		font-family: arial;
 		margin:40px auto;
@@ -103,7 +103,8 @@ body {
 
 	
 	#resume {
-		background-color:white;
+		/*background-color:white;*/
+		background-color: red;
 		/*text-color:black;*/
 		font-family:arial;
 	}
