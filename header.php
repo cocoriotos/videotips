@@ -8,11 +8,12 @@ include "nobackpage.php";
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
     <br>
-        <div class="text-center">
+        <center><div class="text-center">
             <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
             <a href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
             <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
         </div>
+        </center>
     <!--<center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>-->
 	</div>
   </nav>
