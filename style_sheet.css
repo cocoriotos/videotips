@@ -294,8 +294,8 @@ ul.tab li a:focus, .active {
 }
 
 #bodyadminmodule {
-	/*background-color: #EAEAEA;*/
-	background-color: red;
+	background-color: #EAEAEA;
+	/*background-color: red;*/
 }
 
 #adminmodulecontainer {
