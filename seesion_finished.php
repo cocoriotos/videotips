@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Detectada que Session no tiene actividad por más de 5 minutos, debe iniciar sesión nuevamente");
+			alert("ALERTA: Detectada que la sesion no tiene actividad por más de 5 minutos, debe iniciar sesión nuevamente");
 		  </script>
 	</head>
 	
