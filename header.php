@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="us"> <!-- Page language-->
-  <header>
+<header>
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
@@ -12,3 +12,4 @@
 <!-- FONT AWESOME https://fontawesome.com/start and donwload the icons -->
     <script src="https://kit.fontawesome.com/60f0db780e.js" crossorigin="anonymous"></script>
 	</header>
+    </html>
