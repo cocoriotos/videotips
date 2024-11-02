@@ -4,7 +4,8 @@
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
-    <a href="videolinkadminmodule.php" class="btn btn-danger"><i class="fas fa-redo"></i> Limpiar</a>
+    <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFC107; color: white;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
+
     <a href="videotrackerauth.php" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Salir</a>
     
     <!--<center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>-->
