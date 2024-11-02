@@ -9,7 +9,7 @@ $local_username=$_SESSION['email'];
 include "nobackpage.php";
 include "SessionTimeOut.php";
 ?>
-
+<body style="background-color: red;>
 <div class="container p-4" style="background-color: red;">
 	<div class="row">
 		<div class="col-md-4"> 
@@ -84,6 +84,7 @@ include "SessionTimeOut.php";
 	   </div>
     </div>
 </div>
+</body>
 <?php include ("footer.php")?>
 </html>
  
