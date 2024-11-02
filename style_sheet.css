@@ -199,13 +199,13 @@ body {
      position:absolute;	
 	 margin-left:0.5em;	 
 	 font-family: arial;
-	 background-color: red;
 	}
 #form_title
 	{
 	 font-size:32px;
 	 margin-left:0.05em;
-     font-family: arial;	
+     font-family: arial;
+	 background-color: red;	
 	}	
 	
 #Register, #Signout
