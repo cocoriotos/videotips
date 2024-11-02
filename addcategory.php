@@ -18,7 +18,7 @@ include "SessionTimeOut.php";
 				<label for="videolink" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label><br>
 					</div><br>
 				<form class="" action="savecategory.php" method="POST">
-				<br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br>
 					<div class="form-group">
 						<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>-->
