@@ -17,7 +17,9 @@ include "SessionTimeOut.php";
             .then(data => {
                 document.head.innerHTML += data;
             });
-    </script>	  
+    </script>	
+	<script src="clipboard.js" defer></script>
+
 </head>
 <body id="bodyadminmodule">
 		<div id="adminmodulecontainer" class="container p-4" >
@@ -96,20 +98,7 @@ include "SessionTimeOut.php";
 		</div>
 </body>
 
-<script>
-    function copyToClipboard(text) {
-        // Create a temporary textarea element to hold the text
-        const tempTextarea = document.createElement("textarea");
-        tempTextarea.value = text;
-        document.body.appendChild(tempTextarea);
-        // Select and copy the text
-        tempTextarea.select();
-        document.execCommand("copy");
-        // Remove the temporary element
-        document.body.removeChild(tempTextarea);
-        alert("Link copied to clipboard!");
-    }
-</script>
+
 
 <?php include ("footer.php")?>
 </html>
