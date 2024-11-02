@@ -10,7 +10,7 @@ include "nobackpage.php";
     </div></center>
   </nav>
 
-  <center><nav class="navbar navbar-dark bg-dark">
+  <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 	        <center><div class="text-center">
             <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
             <a href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
