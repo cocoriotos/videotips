@@ -4,6 +4,7 @@
 
 font-face /*Fonts*/
 			{	
+				background-color: red;
 				font-family:arial;/*To charge text fonts and ensuring fonts, TTF fonts loaded in apache folder*/ 
 				src:url(arial.ttf); /*Font file location, it must be in apache folder publication*/		  
 			}
@@ -283,7 +284,6 @@ ul.tab li a:focus, .active {
 	
 #main
 	{
-	background-color: red;
 	font-size:250%;
 	font-family: arial;
 	display: inline-block;
