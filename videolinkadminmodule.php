@@ -36,11 +36,11 @@ include "SessionTimeOut.php";
 					 	<label for="useful" style="color: black;"><strong>Útil</strong></label><br>	
 						 <select name= "active"> <?php $SQLSELECT = "SELECT * FROM videotips_active order by active desc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $active = $rows['active']; echo "<option value='$active'>$active</option>";} ?></select> <br><br>
 					</div>  	
-					<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Salvar"></input></center><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center><br><br>
 					<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 					<hr>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Refrescar" formaction="videolinkadminmodule.php"></input></center><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Limpiar" formaction="videolinkadminmodule.php"></input></center><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Categorías" formaction="addcategory.php"></input></center><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Salida" formaction="videotrackerauth.php"></input></center><br>
 				</form>
