@@ -7,6 +7,7 @@ include "nobackpage.php";
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
+    </div>
     <br>
         <center><div class="text-center">
             <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
@@ -15,7 +16,7 @@ include "nobackpage.php";
         </div>
         </center>
     <!--<center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>-->
-	</div>
+	
   </nav>
   <!-- BOOTSTRAP -->	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
