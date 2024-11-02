@@ -4,13 +4,13 @@
 
 font-face /*Fonts*/
 			{	
-				background-color: red;
 				font-family:arial;/*To charge text fonts and ensuring fonts, TTF fonts loaded in apache folder*/ 
 				src:url(arial.ttf); /*Font file location, it must be in apache folder publication*/		  
 			}
 
 HR /*head TOP*/
 	{
+	 background-color: red;
 	 width:1600px;
 	 /*border-radius: 10px;*/
 	 font-family: arial;
