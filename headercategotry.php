@@ -4,10 +4,10 @@
   <nav class="navbar navbar-dark bg-dark">
 	<div class="container">
     <center><a href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
-    <a href="videolinkadminmodule.php" class="btn" style="background-color: ligth-yellow; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
-    <a href="videolinkadminmodule.php" class="btn" style="background-color: ligth-blue; color: white; font-weight: bold;"><i class="fas fa-broom"></i> Categorías</a>
-    <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: ligth-red; color: white; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
-    
+    <a href="addcategory.php" class="btn" style="background-color: ligth-yellow; color: black;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
+    <a href="videolinkadminmodule.php" class="btn" style="background-color: ligth-blue; color: black;"><i class="fas fa-reply"></i> Go to add links</a>
+    <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: ligth-red; color: black;><i class="fas fa-sign-out-alt"></i> Salir</a>
+       
     <!--<center><a href="videolinkadminmodule.php" class="navbar-brand">Welcome To Your  Usefull Video Links</a></center>-->
 	</div>
   </nav>
