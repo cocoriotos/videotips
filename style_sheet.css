@@ -68,8 +68,6 @@ body {
 	  {
 	 font-size:100%;
 	 font-family: arial;
-	 background-color: red;
-	 }
 	 
 	 th, td
 	 {
@@ -78,6 +76,7 @@ body {
 	 }
 	 
 	 ul{
+		background-color: red;
 		font-size:115%; 
 		font-family: arial;
 	 }
