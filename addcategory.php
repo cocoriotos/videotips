@@ -19,6 +19,7 @@ include "SessionTimeOut.php";
 		</script>	  
 	</head>
 
+<body id="bodyadminmodule">
 <div class="container p-4">
 	<div class="row">
 		<div class="col-md-4"> 
@@ -65,7 +66,7 @@ include "SessionTimeOut.php";
 		 <!--<label for="maincategory" style="color: black;"><strong>Current Categories</strong></label><br>-->
 		 <label for="maincategory" style="color: black;"><strong>Categorías</strong></label><br>	
 		  <table id="autosearch" class="display" font color="back">
-				<thead>
+				<thead id="tableswhite">
 				   <tr>
 				      <!--<center><th>ID</th></center>
 					  <center><th>Category</th></center> 
@@ -93,6 +94,7 @@ include "SessionTimeOut.php";
 	   </div>
     </div>
 </div>
+</body>
 <?php include ("footer.php")?>
 </html>
  
