@@ -150,13 +150,13 @@ body {
 		width:56%;
 		font-size:105%;
 		font-family: arial;
-		background-color: red;
 	}
 	
 	.inputdata  label
 {
 		position:absolute;	
 		font-family: arial;
+		background-color: red;
 	}
 	
 	.inputdata1 	input
