@@ -42,7 +42,7 @@ include "SessionTimeOut.php";
 					<hr>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Limpiar" formaction="videolinkadminmodule.php"></input></center><br>
 					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Categorías" formaction="addcategory.php"></input></center><br>
-					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Salida" formaction="videotrackerauth.php"></input></center><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Salir" formaction="videotrackerauth.php"></input></center><br>
 				</form>
 			</div>
 		</div>
