@@ -295,6 +295,6 @@ ul.tab li a:focus, .active {
 }
 
 
-#autosearch{
+#autosearch, #tableswhite {
 	background-color: white;
 }

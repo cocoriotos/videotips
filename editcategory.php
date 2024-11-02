@@ -56,7 +56,7 @@ include "SessionTimeOut.php";
 		    </div>
         </div>	
 		
-		<div class="col-md-8">
+		<div class="col-md-8" id="tableswhite"></div>">
 			<table class="table table-bordered">
 				<thead>
 				   <tr>
