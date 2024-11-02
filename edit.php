@@ -1,4 +1,4 @@
-<?php include "header.php";
+<?php include "headeredit.php";
 include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
