@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include "nobackpage.php";
+?>
 <html lang="us"> <!-- Page language-->
 <header>
   <nav class="navbar navbar-dark bg-dark">
