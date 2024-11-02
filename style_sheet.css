@@ -266,7 +266,6 @@ ul.tab li a:focus, .active {
 
 /* Style the tab content */
 .tabcontent {
-    background-color: red;
 	display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
@@ -276,6 +275,7 @@ ul.tab li a:focus, .active {
 	
 #loginbutton, #requestaccess,  #registerbutton, #cancelbutton, #submitbutton
 	{
+	background-color: red;
 	font-size:250%;
 	font-family: arial;
 	display: inline-block;
