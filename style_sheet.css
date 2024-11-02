@@ -103,8 +103,7 @@ body {
 
 	
 	#resume {
-		/*background-color:white;*/
-		background-color: red;
+		background-color:white;
 		/*text-color:black;*/
 		font-family:arial;
 	}
@@ -151,6 +150,7 @@ body {
 		width:56%;
 		font-size:105%;
 		font-family: arial;
+		background-color: red;
 	}
 	
 	.inputdata  label
