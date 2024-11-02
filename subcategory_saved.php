@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Subcategoría Salvada Exitosamente");
+			alert("MENSAJE: Subcategoría Salvada Exitosamente");
 		  </script>
 	</head>
 	
