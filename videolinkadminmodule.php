@@ -61,7 +61,7 @@ include "SessionTimeOut.php";
 				<?php include("search.php") ?>
 				<div class="card card-body">
 				<table id="autosearch" class="display" font color="back">
-						<thead style="background-coor: white">
+						<thead style="background-color: white">
 						<tr>
 							<th>ID</th>
 							<th>Enlace</th>
