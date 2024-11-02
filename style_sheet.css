@@ -290,13 +290,10 @@ ul.tab li a:focus, .active {
 	}
 
 
-#bodyadminmodule {
+#bodyadminmodule, #adminmodulecontainer  {
 	background-color: #D9F2D0;
 }
 
-#adminmodulecontainer {
-	background-color: #D9F2D0;
-}
 
 #autosearch{
 	background-color: white;
