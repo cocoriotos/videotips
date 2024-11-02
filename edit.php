@@ -18,6 +18,7 @@ include "SessionTimeOut.php";
 		</script>	  
 	</head>
 
+<body id="bodyadminmodule">
 
 <div class="container p-4">
 
@@ -68,7 +69,7 @@ include "SessionTimeOut.php";
 		</div>
 		
 		<div class="col-md-8">
-			<table class="table table-bordered">
+			<table class="table table-bordered"id="tableswhite" >
 				<thead>
 				   <tr>
 	                  <th>ID</th>
@@ -101,5 +102,5 @@ include "SessionTimeOut.php";
 		</div>
 	</div>
 </div>
-
+</body>
 <?php include ("footer.php")?>
