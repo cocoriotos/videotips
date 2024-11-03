@@ -8,14 +8,7 @@ include "SessionTimeOut.php";
 ?>
 
 <head>	
-		<script>
-			// Cargar el contenido de header.html en el <head> al cargar la página
-			fetch("head.html")
-				.then(response => response.text())
-				.then(data => {
-					document.head.innerHTML += data;
-				});
-		</script>	  
+		<script src="head.js" defer></script>
 	</head>
 
 <body id="bodyadminmodule">

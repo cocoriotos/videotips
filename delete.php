@@ -10,6 +10,6 @@ if (!$result) {
     die("Enlace no encontrado");
   }
 /*echo 	"Register deleted";*/
-echo 	"<ha>Registro Borrado</ha>";
-header("refresh:3; url=videolinkadminmodule.php");  
+include("LinkDeletedMessage.php");
+header("refresh:0; url=videolinkadminmodule.php");  
 ?>

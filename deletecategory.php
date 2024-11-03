@@ -13,6 +13,6 @@ if (!$result && !$result1) {
     die("Subcategoría no encontrada");
   }
 /*echo 	"Category deleted";*/
-echo 	"<ha>Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis</ha>";
-header("refresh:3; url=addcategory.php");  
+include("categoryDeletedMessage.php");
+header("refresh:0; url=addcategory.php");  
 ?>
