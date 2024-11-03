@@ -10,8 +10,8 @@ include "SessionTimeOut.php";
 ?>
 <head>	
 		<script src="head.js" defer></script>		
-		<script src="toclipboard.js" defer></script>  
-	</head>
+		<script src="categorytoclipboard.js" defer></script>  
+</head>
 
 <body id="bodyadminmodule">
 <div class="container p-4">
