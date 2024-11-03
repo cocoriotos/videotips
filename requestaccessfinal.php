@@ -37,7 +37,7 @@ include "SessionTimeOut.php";
 				<font id= "form_title1" color="white"><strong>Contraseña</strong></font>
 				<input id="username" type="password" name="password1" placeholder="Digite su Contraseña" required ><br>
 			</div>
-			<center><input id="requestaccess" type="submit" value="Submit"></center>
+			<center><input id="requestaccess" type="submit" value="Enviar"></center>
 		</form>
 		<form id="login" action="videotrackerauth.php" method="POST"> <!-- Form to send access email request login  application admin-->
 			<center>

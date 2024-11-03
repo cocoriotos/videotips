@@ -36,11 +36,7 @@ include "SessionTimeOut.php";
 							<div class="form-group">
 								<label for="description" style="color: black;"><strong>Descripción</strong></label><br>	
 								<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea> <br>
-							</div>
-							<div class="form-group">
-								<label for="useful" style="color: black;"><strong>Útil</strong></label><br>	
-								<select name= "active"> <?php $SQLSELECT = "SELECT * FROM videotips_active order by active desc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $active = $rows['active']; echo "<option value='$active'>$active</option>";} ?></select> <br><br>
-							</div>  	
+							</div>	
 							<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center><br><br>
 							<!--<hr>
 							<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
@@ -63,7 +59,6 @@ include "SessionTimeOut.php";
 							<th>Categoría</th>
 							<th>Sub Categoría</th>
 							<th>Descripción</th>
-							<th>Útil</th>
 							<th>Fecha de Creación</th>
 							<th>Copiar Enlace</th>
 						</tr>
@@ -79,7 +74,6 @@ include "SessionTimeOut.php";
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="center"><?php echo $links['description'] ?></td>
-								<td align="center"><?php echo $links['active'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
 								<td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
 								</td>
