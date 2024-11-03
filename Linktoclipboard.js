@@ -8,5 +8,5 @@ function copyToClipboard(text) {
     document.execCommand("copy");
     // Eliminar el elemento temporal
     document.body.removeChild(tempTextarea);
-    alert("¡Copiado al portapapeles!");
+    alert("¡Enlace copiado al portapapeles!");
 }
