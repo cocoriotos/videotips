@@ -1,304 +1,231 @@
-@charset "utf-8"; /* characters to be used*/
-
-
-
-font-face /*Fonts*/
-			{	
-				font-family:arial;/*To charge text fonts and ensuring fonts, TTF fonts loaded in apache folder*/ 
-				src:url(arial.ttf); /*Font file location, it must be in apache folder publication*/		  
-			}
-
-HR /*head TOP*/
-	{
-	 width:1600px;
-	 /*border-radius: 10px;*/
-	 font-family: arial;
-	 margin: 15px auto;
-	 color: red;
-	}
-
-header /* where  title is*/
-	{
-		/*float:bottom;*/
-		height:100px;
-        color:#0c316d;
-		background-color:#032642;
-		width:98%;
-		font-family: arial;
-		border-radius:15px;
-		margin: 15px auto;
-		text-shadow: white 5px 5px 20px;
-}
-
-head /*where  title is*/
-	{
-		/*float:bottom;*/
-		height:100px;
-        color:#0c316d;
-		background-color:#032642;
-		width:1600px;
-		font-family: arial;
-}
-
-body {
-		/*background-color:#0c316d; /* background color in the entire page, body is the entire page*/
-		/*background-color:white;*/
-		font-size:80%;
-		height:100px;
-		font-family: arial;
-	}
-
-	h1
-	   {
-		text-align:center;
-		/*font:strong 5.4em Arial;*/
-		font-size:320%;
-		font-family: arial;
-	  }
-	
-	h6 
-	   {
-		color:white;
-		font-size:115%;
-		margin:auto;		
-		font-family: arial;
-	  }
-	  
-	tab li
-	  {
-	 font-size:100%;
-	 font-family: arial;
-	  }
-	 
-	 th, td
-	 {
-		 color:black;
-		 font-family: arial;
-	 }
-	 
-	 ul{
-		font-size:115%; 
-		font-family: arial;
-	 }
-	 
-	 footer
-	{
-		background-color:#0085c3; /* background color for footer  only*/	
-		width:98%;
-		font-family: arial;
-		margin:40px auto;
-		border-radius:15px;
-		text-shadow: white 5px 5px 20px;
-	}
-	
-   	#notes
-	{
-		background-color:#0085c3; /* background color */	
-		width:98%;
-		font-family: arial;
-		margin:40px auto;
-		border-radius:15px;
-		text-shadow: white 5px 5px 20px;
-	}
-
-	
-	#resume {
-		background-color:white;
-		/*text-color:black;*/
-		font-family:arial;
-	}
-	
-	
-	#contact
-	{
-	background-color:#032642;
-	width:98%;
-	margin:40px auto;
-	font-family: arial;
-	}
-	
-	
-	#cancel
-       {
-		font-size:150%;
-		/*background-color:#5F9EA0;*/
-		margin:40px auto;
-		padding:5px;
-		background:gray;
-		box-shadow:#999 5px 5px 10px;
-		width:600px;
-		font-family: arial;
-	}
-	
-
-#login, #accessrequestform, #accessrequestform, #AddUser
-       {
-		font-size:105%;
-		background-color:#5F9EA0;
-		margin:40px auto;
-		padding:5px;
-		background:gray;
-		box-shadow:#999 5px 5px 10px;
-		width:600px;
-		border-radius: 10px;
-		font-family: arial;
-	}
-
-	.inputdata 	input
-{
-		margin-left: 8em;
-		width:56%;
-		font-size:105%;
-		font-family: arial;
-	}
-	
-	.inputdata  label
-{
-		position:absolute;	
-		font-family: arial;
-	}
-	
-	.inputdata1 	input
-{
-		/*margin-left: 0.5em;*/
-		width:50%;
-		height:2em;
-		font-size:15%;		
-		font-family: arial;
-	}
-	
-	.inputdata1 label
-{
-		position:absolute;	
-		font-family: arial;
-	}
-
-#username, #access
-	{
-		font-size:200%;
-		font-family: arial;
-		
-	}	
-#username1 
-	{
-		font-size:200%;
-		margin-left: 2em;
-		font-family: arial;
-	}
-		
-	
-#img_login, #img_fix
-	{
-		size:1200%;
-		font-family: arial;
-	}
-	
-#form_title1
-	{
-	 font-size:140%;
-     position:absolute;	
-	 margin-left:0.5em;	 
-	 font-family: arial;
-	}
-#form_title
-	{
-	 font-size:32px;
-	 margin-left:0.05em;
-     font-family: arial;
-	}	
-	
-#Register, #Signout
-       {
-		font-size:100%;
-		background-color:#0085c3;
-		margin:40px auto;
-		padding:5px;
-		background:gray;
-		box-shadow:#999 5px 5px 10px;
-		width:600px;
-		font-family: arial;
-	}
-	
-#div Display{
-	background-color:red;
-	box-shadow:#999 5px 5px 10px;
-}	
-
- /* Style the list */
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 5px double #ccc;
-	background-color: #f1f1f1;
-	font-family: arial;
-}
-
-/* Float the list items side by side */
-ul.tab li {float: left; 
-	font-family: arial;
-}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 30px;
-	font-family: arial;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-	background-color: #ddd; 
-	font-family: arial
-}
-
-/* Create an active/current ink class */
-ul.tab li a:focus, .active {
-	background-color: #ccc;
-	font-family: arial
-}
-
-/* Style the tab content */
-.tabcontent {
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 100vh;
+	  background-image: url(img/2.jpg);
+	  background-size: cover;
+  }
+  
+  .container-form {
+	display: flex;
+	border-radius: 20px;
+	box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+	height: 500px;
+	max-width: 900px;
+	transition: all 1s ease;
+	margin: 10px;
+  }
+  
+  .information {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #c7eef3;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+  }
+  
+  .info-childs {
+	width: 100%;
+	padding: 0 30px;
+  }
+  
+  .info-childs h2 {
+	font-size: 2.5rem;
+	color: #333;
+  }
+  
+  .info-childs p {
+	margin: 15px 0 ;
+	color: #555;
+  }
+  
+  .info-childs input {
+	background-color: transparent;
+	outline: none;
+	border: solid 2px #9191bd;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: #9191bd;
+	cursor: pointer;
+	transition: background-color .3s ease;
+  }
+  
+  .info-childs input:hover {
+	background-color: #9191bd;
+	border: none;
+	color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  .form-information {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	text-align: center;
+	background-color: #f8f8f8;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+  }
+  
+  .form-information-childs {
+	padding: 0 30px;
+  }
+  
+  .form-information-childs h2 {
+	color: #333;
+	font-size: 2rem;
+  }
+  
+  .form-information-childs p {
+	color: #555;
+  }
+  
+  .icons {
+	margin: 15px 0;
+  }
+  
+  .icons i {
+	border-radius: 50%;
+	padding: 15px;
+	cursor: pointer;
+	margin: 0 10px;
+	color: #9191bd;
+	border: solid thin #9191bd;
+	transition: background-color 0.3s ease;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  .icons i:hover {
+	background-color: #c7c7f3;
+	color: #fff;
+  }
+  
+  .form {
+	margin: 30px 0 0 0;
+  }
+  
+  .form label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	border-radius: 20px;
+	padding: 0 10px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  .form label input {
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	color: #333;
+  }
+  
+  .form label i {
+	color: #a7a7a7;
+  }
+  
+  .form input[type="submit"] {
+	background-color: #9191bd;
+	color: #fff;
+	border-radius: 20px;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-top: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  .form input[type="submit"]:hover {
+	background-color: #7a7a9a;
+  }
+  
+  .hide {
+	position: absolute;
+	transform: translateY(-300%);
+  }
+  
+  /*PERSONALIZACION DE MIS ALERTAS Y MENSAJES */
+  .form div .alerta {
+	width: 290px;
+	text-align: left;
+	border-radius: 7px;
+	margin-bottom: 10px;
+	font-size: .8rem;
+  }
+  
+  .form > .alerta-error,
+  .form > .alerta-exito {
 	display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-	font-family: arial;
-}
-	
-#loginbutton, #requestaccess,  #registerbutton, #cancelbutton, #submitbutton
-	{
-	font-size:250%;
-	font-family: arial;
-	display: inline-block;
-    margin-left: 10px;
+  }
+  
+  .form .alertaError {
+	display: block;
+	background-color: #F66060;
+	padding: .5rem 1rem;
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: .8rem;
+  }
+  
+  .form .alertaExito {
+	display: block;
+	background-color: #0ca828;
+	padding: .5rem 1rem;
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: .8rem;
+  }
+  
+  .form .error {
+	outline: solid 2px #9d2222;
+  }
+  
+  /*RESPONSIVE FORM*/
+  
+  @media screen and (max-width:750px) {
+	html {
+	  font-size: 12px;
 	}
-	
-#main
-	{
-	font-size:250%;
-	font-family: arial;
-	display: inline-block;
-    margin-right: 10px;
+  }
+  
+  @media screen and (max-width:580px) {
+	html {
+	  font-size: 15px;
 	}
-
-
-#bodyadminmodule, #adminmodulecontainer  {
-	background-color: #D9F2D0;
-}
-
-
-#autosearch, #tableswhite {
-	background-color: white;
-}
-
-#welcome {
-	font-size: 35px;
-}
+  
+	.container-form {
+	  height: auto;
+	  flex-direction: column;
+	}
+  
+	.information {
+	  width: 100%;
+	  padding: 20px;
+	  border-top-left-radius: 20px;
+	  border-top-right-radius: 20px;
+	  border-bottom-left-radius: 0px;
+	  border-bottom-right-radius: 0;
+	}
+  
+	.form-information {
+	  width: 100%;
+	  padding: 20px;
+	  border-bottom-left-radius: 20px;
+	  border-top-right-radius: 0;
+	}
+  }
