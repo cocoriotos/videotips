@@ -9,15 +9,7 @@ include "nobackpage.php";
 include "SessionTimeOut.php";
 ?>
 <head>	
-		<script>
-			// Cargar el contenido de header.html en el <head> al cargar la página
-			fetch("head.html")
-				.then(response => response.text())
-				.then(data => {
-					document.head.innerHTML += data;
-				});
-		</script>	
-		</script>	
+		<script src="head.js" defer></script>		
 		<script src="toclipboard.js" defer></script>  
 	</head>
 
