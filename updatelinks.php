@@ -9,10 +9,9 @@ $videolink = $_POST['videolink'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];
 $description=$_POST["description"];
-$active=$_POST["active"];
 
 
-$query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', maincategory = '$maincategory', category = '$category', description = '$description', active = '$active' where id = '$id'";
+$query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', maincategory = '$maincategory', category = '$category', description = '$description', active = 'Yes' where id = '$id'";
 $resultado=$conn ->query($query);
 
 if ($resultado){
