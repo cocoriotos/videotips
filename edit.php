@@ -51,7 +51,7 @@ include "SessionTimeOut.php";
 						<label for="useful" style="color: black;"><strong>Útil</strong></label><br>
 						<select name="active" required><?php $query_options = "SELECT * FROM videotips_active"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['active'] == $link['active']) ? "selected" : ""; echo "<option value=\"{$option['active']}\" $selected>{$option['active']}</option>"; } ?></select><br><br>
 					</div>
-					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center><br><br>
+					<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center><br>
 					<!--<hr>
 					<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
 					<hr>-->
