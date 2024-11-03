@@ -8,8 +8,8 @@ include "SessionTimeOut.php";
 ?>
 
 <head>	
-		<script src="head.js" defer></script>
-	</head>
+	<script src="head.js" defer></script>
+</head>
 
 <body id="bodyadminmodule">
 
