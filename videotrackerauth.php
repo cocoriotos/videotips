@@ -18,7 +18,7 @@
 			<div class="information">
 				<div class="info-childs">
 					<h2>Bienvenido</h2>
-					<p>La intención de esta herramienta es que tengas organizados tus enlaces favoritos de calquier página en un solo sitio donde los deberá categorizar y etiquetar para que la busqueda sea muy rpaida y así evitar el buscarlos en los histíricos de las otras aplicaciones c</p>
+					<p>La intención de esta herramienta es que tengas organizados tus enlaces favoritos de calquier página en un solo sitio donde los deberá categorizar y etiquetar para que la busqueda sea muy rpaida y así evitar el buscarlos en los histíricos de las otras aplicaciones.</p>
 					<input type="button" value="Iniciar Sesión"></input>
 				</div>
 			</div>
