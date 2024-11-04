@@ -31,7 +31,7 @@ $password=$_POST['password'];
 
 				}
 				
-				$query2="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate) where email	='$local_username'"; 
+				$query2="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate) where username ='$local_username'"; 
 				$result2=mysqli_query($conn, $query2);
 
 				$stmt = $conn->prepare("SELECT suscriptiondaysleft FROM videotips_app_access_list WHERE username = ?");
@@ -49,7 +49,7 @@ $password=$_POST['password'];
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1); 
 
-				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 0 ) {
+				if ($suscriptiondaysleft->num_rows > 8    && $suscriptionpayed->num_rows < 1 ) {
 					include("FreeSuscriotionReached.php");
 					header("refresh:0; url=suscriptionpayment.php");
 					exit();
