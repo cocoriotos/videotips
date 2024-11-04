@@ -19,19 +19,23 @@ include "nobackpage.php";
           <div class="form-group">			
             <center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></center><br><br>
           </div>
+
+      <div class="column-wrap clearfix">
+            <div class="col-xs-12">
+                <hr>
+            </div>
           <div class="col-xs-12 col-sm-4 column-custom-wrap">
                 <div class="column-custom">
                     <h3 align="center" style="padding-bottom: 5px">LIVRARIA</h3>
                     <br>
                     <p>Librería virtual que busca mantener la tradición de la lectura física, apostando principalmente a las segundas oportunidades de libros leídos, además de buscar por ti los títulos que quieres. Encontrarás en el catálogo: literatura Colombiana, filosofía, poesía, literatura universal, ciencias sociales, psicología e historia.</p>                   
-				    <br>
-					<br>
-					<a href="/LIVRARIA/index.php" rel="nofollow">* Consulta los libros disponibles y llena el formulario para solicitarlo</a>			
-					<br>
-				</div>
-            </div>
-
-
+				            <br>
+					          <br>
+					          <a href="/LIVRARIA/index.php" rel="nofollow">* Consulta los libros disponibles y llena el formulario para solicitarlo</a>			
+					          <br>
+				        </div>
+          </div>
+      </div>    
 </body>
 
   <!-- BOOTSTRAP -->	
