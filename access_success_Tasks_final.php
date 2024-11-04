@@ -47,7 +47,7 @@ $password=$_POST['password'];
 				$suscriptionpayed = $result4->fetch_assoc()['suscriptionpayed'];
 
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
-				$result1=mysqli_query($conn, $query1);
+				$result1=mysqli_query($conn, $query1); 
 
 				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 1 ) {
 					include("FreeSuscriotionReached.php");
