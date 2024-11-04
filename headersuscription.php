@@ -27,8 +27,8 @@ include "SessionTimeOut.php";
           <br><br>
           <div class="form-group">			
             <center>
+              <input type="button" class="btn btn-success btn-block" value="Copiar Número de Teléfono 3054293185" onclick="copiarNumero();">  
               <input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
-              <input type="button" class="btn btn-success btn-block" value="Copiar Número de Teléfono 3054293185" onclick="copiarNumero();">
             </center><br><br>
           </div>
   <div class="container">
@@ -41,7 +41,7 @@ include "SessionTimeOut.php";
                     <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficioes de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
-                    <center><p style="color: blue; font-weight: bold;"> Ventajes </p></center>
+                    <center><p style="color: blue; font-weight: bold;"> Ventajas </p></center>
                     <p> Gracias por haber usado gratuitamente por 7 días la biblioteca de Enlaces útiles la cuál te ayuda a: </p><br>
                     <p> 1. Crear gratuitamente hasta 5 Subcategoorías para organizar tus enlaces</p>  
                     <p> 2. Etiquetar con una breve descripción del contenido para que puedas hacer las búsquedas más facilmente</p>
