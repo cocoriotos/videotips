@@ -35,12 +35,12 @@
 				<input id="requestaccess" type="submit" value="Solicitar Acceso"><br>
 			</center>
 		</form>
-        <form id="login1" action="/default1.php" method="POST" autocomplete="off"> 
+        <!--<form id="login1" action="/default1.php" method="POST" autocomplete="off"> 
 			    <center><input id="loginbutton" type="submit" value="Salir de la página"></center>
 				<br>
 				<br>
 				<br>	
-		</form>			
+		</form>-->	
 		
 				<footer id="contact">
 				<hgroup>
