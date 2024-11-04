@@ -7,7 +7,6 @@ include "header.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
 include "nobackpage.php";
-include "session_finished.php";
 include "SessionTimeOut.php";
 ?>
 <head>	
