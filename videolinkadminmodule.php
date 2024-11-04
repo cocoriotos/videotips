@@ -38,12 +38,6 @@ include "SessionTimeOut.php";
 								<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea> <br>
 							</div>	
 							<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center><br><br>
-							<!--<hr>
-							<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
-							<hr>-->
-							<!--<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Limpiar" formaction="videolinkadminmodule.php"></input></center><br>
-							<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Categorías" formaction="addcategory.php"></input></center><br>
-							<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Salir" formaction="videotrackerauth.php"></input></center><br>-->
 						</form>
 					</div>
 				</div>

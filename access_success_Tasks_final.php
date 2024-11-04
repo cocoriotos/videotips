@@ -40,16 +40,16 @@ $password=$_POST['password'];
 				$result3 = $stmt->get_result();
 				$suscriptiondaysleft = $result3->fetch_assoc()['suscriptiondaysleft'];
 
-				$stmt = $conn->prepare("SELECT suscriptionactive FROM videotips_app_access_list WHERE username = ?");
+				$stmt = $conn->prepare("SELECT suscriptionpayed FROM videotips_app_access_list WHERE username = ?");
 				$stmt->bind_param("s", $local_username);
 				$stmt->execute();
 				$result4 = $stmt->get_result();
-				$suscriptionactive = $result4->fetch_assoc()['suscriptionactive'];
+				$suscriptionpayed = $result4->fetch_assoc()['suscriptionpayed'];
 
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1);
 
-				if ($suscriptiondaysleft > 8 && $suscriptionactive == 1) {
+				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 1 ) {
 					include("FreeSuscriotionReached.php");
 					header("refresh:0; url=suscriptionpayment.php");
 					exit();
