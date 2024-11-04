@@ -24,7 +24,7 @@ include "nobackpage.php";
             <div class="col-xs-12">
                 <hr>
             </div>
-          <div class="col-xs-12 col-sm-4 column-custom-wrap">
+      <center><div class="col-xs-12 col-sm-4 column-custom-wrap">
                 <div class="column-custom">
                     <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficioes de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
@@ -54,6 +54,7 @@ include "nobackpage.php";
                     <p> 6. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com"o WhatsApp: +57 3054293185</p>
 				        </div>
           </div>
+          </center>
           <hr>
           <form id="login" action="suscriptionpaymentevidence.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
               <center>
