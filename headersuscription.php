@@ -15,6 +15,7 @@ include "nobackpage.php";
   </nav></center>
 
 <body id="bodyadminmodule">
+          <br><br>
           <div class="form-group">			
             <center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></center><br><br>
           </div>
