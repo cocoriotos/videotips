@@ -18,7 +18,7 @@ include "SessionTimeOut.php";
 <body id="bodyadminmodule">
           <br><br>
           <div class="form-group">			
-            <center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"><i class="fas fa-dollar-sign"></i> Pago por Nequi</input></center><br><br>
+            <center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"><i class="fas fa-dollar-sign"></i></input></center><br><br>
           </div>
   <div class="container">
       <div class="column-wrap clearfix">
