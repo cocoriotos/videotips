@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 include "nobackpage.php";
-include "session_finished.php";
 include "SessionTimeOut.php";
 ?>
 <html lang="us"> <!-- Page language-->

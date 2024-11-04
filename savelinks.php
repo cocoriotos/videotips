@@ -2,7 +2,6 @@
 session_start();
 include "db_connection1.php";
 include "nobackpage.php";
-include "session_finished.php";
 include "SessionTimeOut.php";
 
 $local_username = $_SESSION['email'];
