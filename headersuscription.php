@@ -15,10 +15,14 @@ include "SessionTimeOut.php";
             </div>	
   </nav></center>
 
+  <script src="copyNumber.js" defer></script>	
 <body id="bodyadminmodule">
           <br><br>
           <div class="form-group">			
-            <center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas?phone=3054293185', '_blank');"></input></center><br><br>
+            <center>
+              <input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas?phone=3054293185', '_blank');"></input>
+              <input type="button" class="btn btn-info btn-block" value="Copiar Número de Teléfono" onclick="copiarNumero();">
+            </center><br><br>
           </div>
   <div class="container">
       <div class="column-wrap clearfix">
