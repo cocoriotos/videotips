@@ -227,6 +227,7 @@ body {
 div .column-custom-wrap{
 	width: 60;
 	margin: auto;
+	text-align: justify;
 }
 
 
