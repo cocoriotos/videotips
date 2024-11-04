@@ -4,6 +4,7 @@ session_start();
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
 include "nobackpage.php"; 
+include "session_finished.php";
 include "SessionTimeOut.php";
 ?>
 
