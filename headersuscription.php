@@ -28,7 +28,7 @@ include "SessionTimeOut.php";
           <div class="form-group">			
             <center>
               <input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
-              <input type="button" class="btn btn-success btn-block value="Copiar Número de Teléfono" onclick="copiarNumero();">
+              <input type="button" class="btn btn-success btn-block" value="Copiar Número de Teléfono 3054293185" onclick="copiarNumero();">
             </center><br><br>
           </div>
   <div class="container">
