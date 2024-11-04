@@ -9,7 +9,6 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
 
     if ($elapsed_time > $timeout_duration) {
         // Si el tiempo de inactividad excede el límite, cerrar la sesión
-        include("session_finished.php");
 		include("closetaskscon.php");
         header("Location: videotrackerauth.php"); // Redirige a la página de autenticación
         exit();
