@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando por favor contactar al administrador al número +573054293185 para adquirir la anualidad de USD 12 o mensualidad de 1 USD");
+			alert("ALERTA: Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones");
 		  </script>
 	</head>
 	
