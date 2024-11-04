@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Enlace Borrado");
+			alert("Enlace Borrado");
 		  </script>
 	</head>
 	

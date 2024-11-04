@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Ha alcanzado el límite de 7 días de Suscripción gratis. Será redirigido a la opción de pago para la reactivación de la suscripción");
+			alert("Ha alcanzado el límite de 7 días de Suscripción gratis. Será redirigido a la opción de pago para la reactivación de la suscripción");
 		  </script>
 	</head>
 	

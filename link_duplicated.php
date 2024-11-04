@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Enlace duplicado, usar otro");
+			alert("Enlace duplicado, usar otro");
 		  </script>
 	</head>
 	

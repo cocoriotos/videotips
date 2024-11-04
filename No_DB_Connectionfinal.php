@@ -4,7 +4,7 @@
 		  
 		  <script>
 			/*alert("ALERT: No Database connection success");*/
-			alert("ALERTA: No hay conexión disponible a la aplicación");
+			alert("No hay conexión disponible a la aplicación");
 		  </script>
 	</head>
 	

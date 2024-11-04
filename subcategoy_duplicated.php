@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Subcategoría duplicada, usar otra");
+			alert("Subcategoría duplicada, usar otra");
 		  </script>
 	</head>
 	

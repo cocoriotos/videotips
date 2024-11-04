@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("MENSAJE: Enlace Actualizado Exitosamente");
+			alert("Enlace Actualizado Exitosamente");
 		  </script>
 	</head>
 	

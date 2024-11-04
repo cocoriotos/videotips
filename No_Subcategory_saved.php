@@ -4,7 +4,7 @@
 		  
 		  <script>
 			/*alert("ALERT: You have no Active Suscription, please renew it");*/
-			alert("ALERTA: Subcategoría no guardada. Intentar nuevamente");
+			alert("Subcategoría no guardada. Intentar nuevamente");
 		  </script>
 	</head>
 	

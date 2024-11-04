@@ -3,7 +3,7 @@
 	<head>
 		  
 		  <script>
-			alert("ALERTA: Enlace No ha podido ser actualizado. Intentar nuevamente");
+			alert("Enlace No ha podido ser actualizado. Intentar nuevamente");
 		  </script>
 	</head>
 	
