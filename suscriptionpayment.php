@@ -2,7 +2,7 @@
 <html lang="en">
 <?php 
 session_start();
-include "header.php";
+include "headersuscription.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
 include "nobackpage.php";
@@ -15,8 +15,6 @@ include "SessionTimeOut.php";
     <script src="head.js" defer></script>
 </head>
 <body>
-    <div class="form-group">
-        <center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></center><br><br>
-    </div>
+    
 </body>
 </html>
