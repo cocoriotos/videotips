@@ -70,7 +70,7 @@ include "nobackpage.php";
                   </div >
                   <div class="inputdata1">
                     <font id= "form_title" color="white"><strong>Cargar imagen en formato PDF</strong></font><br><br>
-                    <input id="username1" type="text" name="product" placeholder="Seleccione su producto" required ><br> <!-- Login PAM username  --><br>
+                    <input id="username1" type="text" name="product" placeholder="Cargar el documento de evidencia" required ><br> <!-- Login PAM username  --><br>
                   </div >
                   <input id="loginbutton" type="submit" value="Enviar">
                   <br>
