@@ -52,7 +52,7 @@ $password=$_POST['password'];
 				if ($suscriptiondaysleft > 8 && $suscriptionactive == 1) {
 					include("FreeSuscriotionReached.php");
 					header("refresh:0; url=suscriptionpayment.php");
-					  exit();
+					exit();
 				  }else{	
 						if(mysqli_num_rows($result1)==true)
 							{	
