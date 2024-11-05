@@ -11,7 +11,6 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
         // Si el tiempo de inactividad excede el límite, cerrar la sesión
 		include("closetaskscon.php");
         header("refresh:0; url=videotrackerauth.php"); // Redirige a la página de autenticación
-        exit();
     }
 }
 
