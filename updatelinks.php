@@ -14,7 +14,7 @@ $query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', mai
 $resultado=$conn ->query($query);
 
 if ($resultado){
-  include("link_updated_sucsess.php");
+  include("link_updated_success.php");
   header("refresh:0; url=videolinkadminmodule.php");
     }
   else{
