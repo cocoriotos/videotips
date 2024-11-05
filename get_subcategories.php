@@ -1,5 +1,5 @@
 <?php
-include 'db_connection1.php'; // DB connection
+include "db_connection1.php"; // DB connection
 $local_username=$_SESSION['email'];
 
 if (isset($_POST['maincategory'])) {
