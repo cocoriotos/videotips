@@ -4,7 +4,7 @@ $local_username=$_SESSION['email'];
 
 if (isset($_POST['maincategory'])) {
     $maincategory = $_POST['maincategory'];
-    $username = $local_username; // Asegúrate de definir $local_username correctamente
+    $username = $local_username; // $local_username is correct
 
     $SQLSELECT = "SELECT DISTINCT(category) FROM videotips_viodetipscategory WHERE maincategory = '$maincategory' AND username = '$username' ORDER BY category ASC";
     $result_set = mysqli_query($conn, $SQLSELECT);
