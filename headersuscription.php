@@ -2,6 +2,7 @@
 <?php
 include "nobackpage.php";
 /*include "SessionTimeOut.php";*/
+include "copynumber.js";
 ?>
 <html lang="us"> <!-- Page language-->
 <header>
@@ -15,14 +16,15 @@ include "nobackpage.php";
             </div>	
   </nav></center>
 
-  <script>function copiarNumero() {
+  
+  <!--<script>function copiarNumero() {
 	var telefono = "3054293185"; // Reemplaza con el número real
 	navigator.clipboard.writeText(telefono).then(function() {
 		alert("Número copiado: " + telefono);
 	}, function(err) {
 		console.error('Error al copiar el número: ', err);
 	});
-}</script>	
+}</script>-->	
 <body id="bodyadminmodule">
           <br><br>
           <div class="form-group">			
