@@ -6,7 +6,7 @@ include "headercategory.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
 include "nobackpage.php"; 
-include "SessionTimeOut.php";
+/*include "SessionTimeOut.php";*/
 ?>
 <head>	
 		<script src="head.js" defer></script>		
