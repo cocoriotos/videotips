@@ -2,7 +2,7 @@
 <?php
 include "nobackpage.php";
 /*include "SessionTimeOut.php";*/
-include "copynumber.js";
+
 ?>
 <html lang="us"> <!-- Page language-->
 <header>
@@ -15,7 +15,7 @@ include "copynumber.js";
                 <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>	
   </nav></center>
-
+  <script src="copynumber.js"></script>
   
   <!--<script>function copiarNumero() {
 	var telefono = "3054293185"; // Reemplaza con el número real
