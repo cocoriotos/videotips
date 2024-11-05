@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php'; // Incluye tu conexión a la base de datos
+include 'db_connection1.php'; // Incluye tu conexión a la base de datos
 
 if (isset($_POST['maincategory'])) {
     $maincategory = $_POST['maincategory'];
