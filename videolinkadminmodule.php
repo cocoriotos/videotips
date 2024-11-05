@@ -26,13 +26,42 @@ include "nobackpage.php";
 								<textarea name="videolink" rows="5" class="form-control" placeholder="Enlace Útil"></textarea> <br>
 							</div>
 							<div class="form-group">
-								<label for="maincategory" style="color: black;"><strong>Categoría</strong></label><br>	
-								<select name= "maincategory"> <?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory where username = '$local_username' order by maincategory asc "; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
+								<label for="maincategory" style="color: black;"><strong>Categoría</strong></label><br>    
+								<select id="maincategory" name="maincategory" onchange="updateSubcategories()">
+									<?php
+									$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC";
+									$result_set = mysqli_query($conn, $SQLSELECT);
+									while ($rows = $result_set->fetch_assoc()) {
+										$maincategory = $rows['maincategory'];
+										echo "<option value='$maincategory'>$maincategory</option>";
+									}
+									?>
+								</select> <br><br>
 							</div>
 							<div class="form-group">
-								<label for="category" style="color: black;"><strong>Subcategoría</strong></label><br>	
-								<select name= "category"> <?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
+								<label for="category" style="color: black;"><strong>Subcategoría</strong></label><br>    
+								<select id="category" name="category">
+									<!-- Las opciones de subcategoría se actualizarán mediante JavaScript -->
+								</select> <br><br>
 							</div>
+
+							<script>
+							function updateSubcategories() {
+								const mainCategory = document.getElementById('maincategory').value;
+
+								// Hacemos una solicitud AJAX
+								const xhr = new XMLHttpRequest();
+								xhr.open('POST', 'get_subcategories.php', true);
+								xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+								xhr.onreadystatechange = function() {
+									if (xhr.readyState === 4 && xhr.status === 200) {
+										// Actualiza el campo de subcategorías con los datos recibidos
+										document.getElementById('category').innerHTML = xhr.responseText;
+									}
+								};
+								xhr.send('maincategory=' + mainCategory);
+							}
+							</script>
 							<div class="form-group">
 								<label for="description" style="color: black;"><strong>Descripción</strong></label><br>	
 								<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea> <br>
