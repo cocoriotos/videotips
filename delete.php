@@ -9,8 +9,9 @@ $result = mysqli_query($conn,$query);
 if (!$result) {
     /*die("Link not found");*/
     die("Enlace no encontrado");
-  }
+  }else{
 /*echo 	"Register deleted";*/
 include("LinkDeletedMessage.php");
 header("refresh:0; url=videolinkadminmodule.php");  
+}
 ?>
