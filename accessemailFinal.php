@@ -18,7 +18,7 @@ if($result3->num_rows > 0){
 
 	/*echo ("Email duplicated, review and use another one");*/
 	include("emailduplicated.php");
-	header("refresh:3; url=videotrackerauth.php");
+	header("refresh:0; url=videotrackerauth.php");
 	exit();
 }else {
 $query="INSERT INTO videotips_accessrequests (name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
@@ -68,12 +68,10 @@ $mail = mail($to, $subject, $message,$header);
 
 if ($result){
     /*echo "Your request was sent, you can join with user name $email and password you type";    */
-	echo "<ha>Su requerimiento fue enviado, puede ingresar con el usuario $email y password que digitó.</ha>";
+	include("emailreqsuccess.php");
     } else {
 	/*echo "Request not send please try again";	*/
-	echo "<ha>Requerimiento no enviado, por favor trate nuevamente o más tarde</ha>";
-	include("videotrackerauth.php");
-    }
+	include("emailreqnosuccess.php");    }
 } 
 header("refresh:7;url=videotrackerauth.php");
 ?>
