@@ -17,7 +17,7 @@ $result3=$conn->query($query3);
 if($result3->num_rows > 0){ 
 
 	/*echo ("Email duplicated, review and use another one");*/
-	echo ("Email duplicado, por favor revisar o usar otro");
+	include("emailduplicated.php");
 	header("refresh:3; url=videotrackerauth.php");
 	exit();
 }else {
