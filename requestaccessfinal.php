@@ -37,13 +37,34 @@ include "nobackpage.php";
 				<font id= "form_title1" color="white"><strong>Contraseña</strong></font>
 				<input id="username" type="password" name="password1" placeholder="Digite su Contraseña" required ><br>
 			</div>
-			<center><input id="requestaccess" type="submit" value="Enviar"></center>
+
+			<div class="inputdata1">
+                <input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()"> Acepto los <a href="termsConditions.html" target="_blank">términos y condiciones</a><br><br>
+            </div>
+              <!-- Botón de enviar, inicialmente deshabilitado -->
+            <!--  <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>	-->
+			
+
+
+			<center><input  id="loginbutton" type="submit" value="Enviar"></center>
 		</form>
 		<form id="login" action="videotrackerauth.php" method="POST"> <!-- Form to send access email request login  application admin-->
 			<center>
 				<input id="cancelbutton" action="videotrackerauth.php" type="submit" value="Cancelar">
 			</center>
 		</form>
+
+		<script>
+		// Función para habilitar o deshabilitar el botón de enviar
+		function toggleSubmitButton() {
+			const submitButton = document.getElementById("loginbutton");
+			const termsCheckbox = document.getElementById("terms");
+
+			// Habilita el botón si el checkbox está marcado, de lo contrario lo deshabilita
+			submitButton.disabled = !termsCheckbox.checked;
+		}
+		</script>
+
 		<footer id="contact">
 				<hgroup>
 					<h6 align="center"><address><strong>Web Admin:</strong> Julian Gonzalez Bucheli</address></h6>

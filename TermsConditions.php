@@ -87,6 +87,7 @@ include "nobackpage.php";
               </div>
               <!-- Botón de enviar, inicialmente deshabilitado -->
               <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>
+              <input id="loginbutton" type="submit" value="Cancelar" formaction="videotrackerauth.php"><br><br><br>
             </center>
           </form>
 
