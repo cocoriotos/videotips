@@ -7,7 +7,7 @@ include "nobackpage.php";
 <html lang="us"> <!-- Page language-->
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones para el Pago por Nequi y cubrimientos de Servicios</a></center>
+	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
   </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
