@@ -73,5 +73,5 @@ if ($result){
 	/*echo "Request not send please try again";	*/
 	include("emailreqnosuccess.php");    }
 } 
-header("refresh:7;url=videotrackerauth.php");
+header("refresh:0;url=videotrackerauth.php");
 ?>
