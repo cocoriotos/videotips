@@ -19,12 +19,7 @@ include "nobackpage.php";
   	
 <body id="bodyadminmodule">
           <br><br>
-          <div class="form-group">			
-            <center>
-              <input type="button" class="btn btn-success btn-block" value="Número Nequi: 3054293185" onclick="copiarNumero();">  
-              <input type="button" class="btn btn-success btn-block" value="Pago con número Telefónico por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
-            </center><br><br>
-          </div>
+     
   <div class="container">
       <div class="column-wrap clearfix">
             <div class="col-xs-12">
