@@ -37,10 +37,10 @@ include "nobackpage.php";
 				<font id= "form_title1" color="white"><strong>Contraseña</strong></font>
 				<input id="username" type="password" name="password1" placeholder="Digite su Contraseña" required ><br>
 			</div>
-
+			<br>
 			<div class="inputdata1">
-				<label style="color: white; font-size: 8px;">
-					<input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(5);"> Acepto los <a href="termsConditions.php" target="_blank" >términos y condiciones</a><br><br>
+				<label style="color: white; font-size: 16px; display: inline-block">
+					<input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(5); display: inline-block"> Acepto los <a href="termsConditions.php" target="_blank" >términos y condiciones</a><br><br>
 				</label><br><br>
             </div>
               <!-- Botón de enviar, inicialmente deshabilitado -->
