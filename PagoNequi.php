@@ -107,11 +107,11 @@ include "nobackpage.php";
 
     <!-- Checkbox de términos y condiciones -->
     <div class="inputdata1">
-      <input type="checkbox" id="terms" onclick="toggleSubmitButton()"> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a><br><br>
+      <input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()"> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a><br><br>
     </div>
 
     <!-- Botón de enviar, inicialmente deshabilitado -->
-    <input id="loginbutton" type="submit" value="Enviar" disabled><br><br><br>
+    <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>
   </center>
 </form>
 
