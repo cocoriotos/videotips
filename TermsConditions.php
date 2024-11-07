@@ -15,7 +15,7 @@ include "nobackpage.php";
                 <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>	
   </nav></center>
-  <script src="copynumber.js"></script>
+  
   	
 <body id="bodyadminmodule">
           <br><br>
@@ -80,31 +80,7 @@ include "nobackpage.php";
 				      </center>
 		     </form>-->
 
-         <form id="login" action="suscriptionpaymentevidence.php" method="POST" autocomplete="off">
-            <center>
-              <div class="inputdata1">
-                <input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()"> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a><br><br>
-              </div>
-              <!-- Botón de enviar, inicialmente deshabilitado -->
-              <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>
-              <input id="loginbutton" type="submit" value="Cancelar" formaction="videotrackerauth.php"><br><br><br>
-            </center>
-          </form>
-
-<script>
-  // Función para habilitar o deshabilitar el botón de enviar
-  function toggleSubmitButton() {
-    const submitButton = document.getElementById("loginbutton");
-    const termsCheckbox = document.getElementById("terms");
-
-    // Habilita el botón si el checkbox está marcado, de lo contrario lo deshabilita
-    submitButton.disabled = !termsCheckbox.checked;
-  }
-</script>
-
-
-
-      </div>    
+    </div>    
   </div>
     </body>
 

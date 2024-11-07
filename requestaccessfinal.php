@@ -46,7 +46,7 @@ include "nobackpage.php";
 			
 
 
-			<center><input  id="loginbutton" type="submit" value="Enviar"></center>
+			<center><input  id="loginbutton" type="submit" value="Enviar" disabled></center>
 		</form>
 		<form id="login" action="videotrackerauth.php" method="POST"> <!-- Form to send access email request login  application admin-->
 			<center>
