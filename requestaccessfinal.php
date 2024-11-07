@@ -40,7 +40,7 @@ include "nobackpage.php";
 
 			<div class="inputdata1">
 				<label style="color: white; font-size: 16px;">
-					<input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(1.5);"> Acepto los <a href="termsConditions.php" target="_blank" style="color: white; text-decoration: none;">términos y condiciones</a><br><br>
+					<input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(5);"> Acepto los <a href="termsConditions.php" target="_blank" >términos y condiciones</a><br><br>
 				</label><br><br>
             </div>
               <!-- Botón de enviar, inicialmente deshabilitado -->
