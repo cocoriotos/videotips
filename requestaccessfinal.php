@@ -39,7 +39,7 @@ include "nobackpage.php";
 			</div>
 			<br>
 			
-				<center><input name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(2); display: inline-block; margin-right: 10px;font-size: 20px; color: white"> <a style="font-size: 20px; display: inline-block; text-decoration: none;"> Acepto los </a>  <a href="TermsConditions.php" target="_blank" style="font-size: 20px; display: inline-block; text-decoration: none;">términos y condiciones</a></center><br><br>
+				<center><input name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(2); display: inline-block; margin-right: 10px;font-size: 20px; color: white"> <a style="font-size: 20px; display: inline-block; text-decoration: none; color: white;"> Acepto los </a>  <a href="TermsConditions.php" target="_blank" style="font-size: 20px; color: blue; display: inline-block; text-decoration: none;">términos y condiciones</a></center><br><br>
             
               <!-- Botón de enviar, inicialmente deshabilitado -->
             <!--  <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>	-->
