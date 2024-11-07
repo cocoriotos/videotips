@@ -38,10 +38,9 @@ include "nobackpage.php";
 				<input id="username" type="password" name="password1" placeholder="Digite su Contraseña" required ><br>
 			</div>
 			<br>
-			<div class="inputdata">
+			
 				<input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()" style="transform: scale(2); display: inline-block"> Acepto los <a href="termsConditions.php" target="_blank" style="display: inline-block">términos y condiciones</a><br><br>
-				
-            </div>
+            
               <!-- Botón de enviar, inicialmente deshabilitado -->
             <!--  <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>	-->
 			
