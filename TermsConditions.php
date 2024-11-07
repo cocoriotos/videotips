@@ -10,11 +10,7 @@ include "nobackpage.php";
 	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
   </nav>
 
-  <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
-	        <div class="text-center">
-                <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
-            </div>	
-  </nav></center>
+  
   
   	
 <body id="bodyadminmodule">
