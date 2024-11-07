@@ -81,34 +81,14 @@ include "nobackpage.php";
 		     </form>-->
 
          <form id="login" action="suscriptionpaymentevidence.php" method="POST" autocomplete="off">
-  <center>
-    <font color="lightblue" id="form_title"><strong>Formulario de Evidencia de Pago de Productos</strong></font><br><br>
-    <img id="img_login" src="login.gif" alt="Login Icon"><br>
-
-    <div class="inputdata1">
-      <font id="form_title" color="white"><strong>Email</strong></font><br><br>
-      <input id="username1" type="text" name="email" placeholder="Digite el email" required><br><br>
-    </div>
-
-    <div class="inputdata1">
-      <font id="form_title" color="white"><strong>Producto adquirido</strong></font><br><br>
-      <input id="username1" type="text" name="product" placeholder="Seleccione su producto" required><br><br>
-    </div>
-
-    <div class="inputdata1">
-      <font id="form_title" color="white"><strong>Cargar imagen en formato PDF</strong></font><br><br>
-      <input id="username1" type="text" name="product" placeholder="Cargar el documento de evidencia" required><br><br>
-    </div>
-
-    <!-- Checkbox de términos y condiciones -->
-    <div class="inputdata1">
-      <input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()"> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a><br><br>
-    </div>
-
-    <!-- Botón de enviar, inicialmente deshabilitado -->
-    <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>
-  </center>
-</form>
+            <center>
+              <div class="inputdata1">
+                <input  name= "accept" type="checkbox" id="terms" onclick="toggleSubmitButton()"> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a><br><br>
+              </div>
+              <!-- Botón de enviar, inicialmente deshabilitado -->
+              <input id="loginbutton" type="submit" value="Seguir" disabled><br><br><br>
+            </center>
+          </form>
 
 <script>
   // Función para habilitar o deshabilitar el botón de enviar
