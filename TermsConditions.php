@@ -13,7 +13,7 @@ include "nobackpage.php";
   </nav>
 	</header>
   
-  
+  <hr>
   	
 <body id="bodyadminmodule">
           <br><br>
@@ -21,7 +21,7 @@ include "nobackpage.php";
   <div class="container">
       <div class="column-wrap clearfix">
             <div class="col-xs-12">
-                <hr>
+                
             </div>
       <center><div class="col-xs-12 col-sm-4 column-custom-wrap">
                 <div class="column-custom">
