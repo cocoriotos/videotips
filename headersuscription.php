@@ -5,16 +5,16 @@ include "db_connection1.php";
 /*include "SessionTimeOut.php";*/
 
 ?>
-<html lang="us"> <!-- Page language-->
+<htm lang="us"> <!-- Page language-->
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-  <div class="text-center">  
-      <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
-  </div>
-    </nav>
+      <div class="text-center">  
+          <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
+      </div>
+  </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 	        <div class="text-center">
@@ -22,7 +22,7 @@ include "db_connection1.php";
             </div>	
   </nav></center>
   <script src="copynumber.js"></script>
-  	
+</header>  	
 <body id="bodyadminmodule">
           <br><br>
           <div class="form-group">			
