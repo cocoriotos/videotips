@@ -13,7 +13,6 @@ $local_username=$_SESSION['email'];
     <title>Suscription Payment</title>
     <script src="head.js" defer></script>
 </head>
-<body>
-    
+<body id="bodyadminmodule">
 </body>
 </html>

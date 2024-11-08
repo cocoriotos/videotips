@@ -6,5 +6,6 @@
 			alert("Enlace No ha podido ser actualizado. Intentar nuevamente");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>

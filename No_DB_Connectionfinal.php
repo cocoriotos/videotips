@@ -7,5 +7,6 @@
 			alert("No hay conexión disponible a la aplicación");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>

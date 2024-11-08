@@ -6,5 +6,6 @@
 			alert("Detectada que la sesion no tiene actividad por más de 5 minutos, debe iniciar sesión nuevamente");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>

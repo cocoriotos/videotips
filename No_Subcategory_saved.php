@@ -7,5 +7,6 @@
 			alert("Subcategoría no guardada. Intentar nuevamente");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>

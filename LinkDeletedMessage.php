@@ -6,5 +6,6 @@
 			alert("Enlace Borrado");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>

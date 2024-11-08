@@ -1,6 +1,6 @@
 <html>
 <body id="bodyadminmodule">
-	</body>
+</body>
 <?php 
 
 GLOBAL $global_username;

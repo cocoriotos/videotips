@@ -7,5 +7,6 @@
 			alert("Suscripción inactiva. Se sugiere renovalrla ");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>

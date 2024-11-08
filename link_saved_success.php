@@ -6,5 +6,6 @@
 			alert("Enlace Salvado Exitosamente");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>	
 </html>
