@@ -6,5 +6,6 @@
 			alert("Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>
 </html>

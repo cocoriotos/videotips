@@ -1,10 +1,10 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us"> <!-- Page language-->
 	<head>
-		  
-		  <script>
+	<script>
 			alert("Correo duplicado, por favor usar otro");
 		  </script>
 	</head>
-	
+	<body id="bodyadminmodule">
+	</body>
 </html>

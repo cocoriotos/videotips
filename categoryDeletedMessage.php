@@ -1,5 +1,8 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us"> <!-- Page language-->
+<body id="bodyadminmodule">
+</body>
+	
 	<head>
 		  
 		  <script>
