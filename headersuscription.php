@@ -63,28 +63,28 @@ include "db_connection1.php";
           </div>
           </center>
           <hr>
-          <form id="login" action="suscriptionpaymentevidence.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
-              <center>
+          <!--<form id="login" action="suscriptionpaymentevidence.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
+              <!--<center>
                   <font color=lightblue id="form_title"><strong>Formulario de Evidencia de Pago de Productos</strong></font><br><br>
                           <img id="img_login" center SRC="login.gif"></img></br> <!-- Login Icon  -->
-                  <div class="inputdata1">
+                  <!--<div class="inputdata1">
                     <font id= "form_title" color="white"><strong>Email</strong></font><br><br>
                     <input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
-                  </div >
+                  <!--</div >
                   <div class="inputdata1">
                     <font id= "form_title" color="white"><strong>Producto adquirido</strong></font><br><br>
                     <input id="username1" type="text" name="product" placeholder="Seleccione su producto" required ><br> <!-- Login PAM username  --><br>
-                  </div >
+                  <!--</div >
                   <div class="inputdata1">
                     <font id= "form_title" color="white"><strong>Cargar imagen en formato PDF</strong></font><br><br>
                     <input id="username1" type="text" name="product" placeholder="Cargar el documento de evidencia" required ><br> <!-- Login PAM username  --><br>
-                  </div >
+                  <!--</div >
                   <input id="loginbutton" type="submit" value="Enviar">
                   <br>
                   <br>
                   <br>
 				      </center>
-		     </form>
+		      </form>-->
       </div>    
   </div>
 
