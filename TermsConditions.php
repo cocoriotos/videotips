@@ -13,7 +13,7 @@ include "nobackpage.php";
   </nav>
 	</header>
   
-  <hr>
+  
   	
 <body id="bodyadminmodule">
           <br><br>
@@ -21,9 +21,9 @@ include "nobackpage.php";
   <div class="container">
       <div class="column-wrap clearfix">
             <div class="col-xs-12">
-                
+                <hr>
             </div>
-      <center><div class="col-xs-12 col-sm-4 column-custom-wrap">
+      <center><div class="col-xs-12 col-sm-12 column-custom-wrap">
                 <div class="column-custom">
                     <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficioes de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
