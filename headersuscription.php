@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include "nobackpage.php";
+include "db_connection1.php";
 /*include "SessionTimeOut.php";*/
 
 ?>
@@ -86,7 +87,41 @@ include "nobackpage.php";
 		     </form>
       </div>    
   </div>
-    </body>
+
+  <table id="autosearch" class="display" font color="back">
+						<thead id="tableswhite">
+						<tr>
+							<th>Usuario</th>
+							<th>Total Sub Categorías</th>
+							<th>Fecha Actual</th>
+							<th>Fecha de último Pago</th>
+							<th>Fecha de Solicitud de acceso a la plataforma </th>
+							<th>Fecha de Creación</th>
+							<th>Servicio a Pagar</th>
+              <th>Descargar</th>
+						</tr>
+						</thead>
+						<tbody>
+							<?php 
+							/* voy aquí*/$query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
+							$result_links = mysqli_query($conn,$query1);
+							while($links = mysqli_fetch_array($result_links)) { ?>
+							<tr>
+								<td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
+								<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></td>
+								<td align="center"><?php echo $links['maincategory'] ?></td>
+								<td align="center"><?php echo $links['category'] ?></td>
+								<td align="center"><?php echo $links['description'] ?></td>
+								<td align="center"><?php echo $links['creationdate'] ?></td>
+								<td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+								</td>
+							</tr>
+							<?php }?>
+						<tbody>
+					</table>
+
+
+</body>
 
   <!-- BOOTSTRAP -->	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
