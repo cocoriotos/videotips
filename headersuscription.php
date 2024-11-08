@@ -11,8 +11,10 @@ include "db_connection1.php";
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
-  </nav>
+  <div class="text-center">  
+      <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
+  </div>
+    </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 	        <div class="text-center">
