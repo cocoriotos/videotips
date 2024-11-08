@@ -4,7 +4,7 @@ include "nobackpage.php";
 /*include "SessionTimeOut.php";*/
 ?>
 <head>
-<link rel="stylesheet" href="style_sheet.css"></link>
+<!--<link rel="stylesheet" href="style_sheet.css"></link>-->
 </head>
 <html lang="us"> <!-- Page language-->
 <header>
