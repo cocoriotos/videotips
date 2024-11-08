@@ -17,7 +17,7 @@
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
 			    <center>
 					<font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font><br><br>
-                	<i class="fas fa-user-circle fa-5x" style="color: white;"></i><br>
+                	<i class="fas fa-sign-in-alt fa-5x" style="color: white;"></i><br>
 					<!--<img id="img_login" center SRC="login.gif"></img></br> <!-- Login Icon  -->
 					<div class="inputdata1">
 						<font id= "form_title" color="white"><strong>Email</strong></font><br><br>
