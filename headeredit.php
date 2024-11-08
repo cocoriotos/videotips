@@ -11,8 +11,8 @@ include "nobackpage.php";
 
     <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
               <div class="text-center">
-                    <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Ir a adicionar enlaces</a>
-                    <a href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Ir a Categorías</a>
+                    <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Adicionar enlaces</a>
+                    <a href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Categorías</a>
                     <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
               </div>   
     </nav></center>
