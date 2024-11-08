@@ -4,7 +4,8 @@
 	/*include "SessionTimeOut.php";*/
 	?>
 	<head>	
-	<script src="head.js" defer></script>		  
+	<script src="head.js" defer></script>	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">	  
 	</head>
 	<header>
 		<!--<HR id="HR"/>	<!-- Header title  --> <!-- -->
@@ -16,7 +17,7 @@
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
 			    <center>
 					<font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font><br><br>
-                	<i class="fas fa-mobile-alt fa-15x" style="color: white;"></i><br>
+                	<i class="fas fa-mobile-alt fa-10x" style="color: white;"></i><br>
 					<!--<img id="img_login" center SRC="login.gif"></img></br> <!-- Login Icon  -->
 					<div class="inputdata1">
 						<font id= "form_title" color="white"><strong>Email</strong></font><br><br>
