@@ -10,10 +10,11 @@
 	<header>
 		<!--<HR id="HR"/>	<!-- Header title  --> <!-- -->
 		<br>
+		<HR id="HR"/>
 			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center><br><br>
-		<!--<HR/>-->
+		<HR/>
 	</header>	
-	  <body id="bodyadminmodule">
+	  <bR id="bodyadminmodule">
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
 			    <center>
 					<font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font><br><br>
@@ -40,22 +41,17 @@
 				<input id="requestaccess" type="submit" value="Solicitar Acceso"><br>
 			</center>
 		</form>
-        <!--<form id="login1" action="/default1.php" method="POST" autocomplete="off"> 
-			    <center><input id="loginbutton" type="submit" value="Salir de la página"></center>
-				<br>
-				<br>
-				<br>	
-		</form>-->	
-		
+		<HR id="HR"/>
 				<footer id="contact">
-				<hgroup>
-					<h6 align="center"><address><strong>Web Admin:</strong> Julian Gonzalez Bucheli</address></h6>
-					<h6 align="center"><address><strong>Email:</strong>cocoriotos@hotmail.com</address></h6>
-					<h6 align="center"><address><strong>Phone:</strong>(+57) 305 429 31 85 </address></h6>
-					<h6 align="center"><address><strong>Pereira - Colombia </strong></address></h6>
-					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
-					<!--<h6 time align="center" datetime="2024/8/30" pubdate>Published on Date: 30/08/2024 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
-				</hgroup>
-		</footer>
+					<hgroup>
+							<h6 align="center"><address><strong>Web Admin:</strong> Julian Gonzalez Bucheli</address></h6>
+							<h6 align="center"><address><strong>Email:</strong>cocoriotos@hotmail.com</address></h6>
+							<h6 align="center"><address><strong>Phone:</strong>(+57) 305 429 31 85 </address></h6>
+							<h6 align="center"><address><strong>Pereira - Colombia </strong></address></h6>
+							<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
+							<!--<h6 time align="center" datetime="2024/8/30" pubdate>Published on Date: 30/08/2024 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
+					</hgroup>
+		        </footer>
+		</HR>
 	</body>
 </html>
