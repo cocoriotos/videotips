@@ -12,7 +12,7 @@ include "nobackpage.php";
 <head>	
 	<script src="head.js" defer></script>	
 	<script src="toclipboard.js" defer></script>
-
+	<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <body id="bodyadminmodule">
 		<div  class="container p-4" >
