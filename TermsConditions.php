@@ -28,7 +28,7 @@ include "nobackpage.php";
                     <h3 align="center" style="padding-bottom: 5px">Beneficios y Condiciones de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
-                    <center><p style="color: blue; font-weight: bold; font-size: 28px;"> Ventajas </p></center>
+                    <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Ventajas </p></center>
                     <p> Gracias por haber usado gratuitamente por 7 días la biblioteca de Enlaces útiles la cuál te ayuda a: </p><br>
                     <p> 1. Crear gratuitamente hasta 5 Subcategoorías para organizar tus enlaces</p>  
                     <p> 2. Etiquetar con una breve descripción del contenido para que puedas hacer las búsquedas más facilmente</p>
