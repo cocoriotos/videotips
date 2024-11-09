@@ -8,9 +8,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>	  
 	</head>
 	<header>
-		<!--<HR id="HR"/>	<!-- Header title  --> <!-- -->
+		<HR id="HR"/>	<!-- Header title  --> <!-- -->
 		<br>
-		<HR id="HR"/>
 			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center><br><br>
 		<HR/>
 	</header>	
