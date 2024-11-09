@@ -41,7 +41,6 @@
 				<input id="requestaccess" type="submit" value="Solicitar Acceso"><br>
 			</center>
 		</form>
-		<HR id="HR"/>
 				<footer id="contact">
 					<hgroup>
 							<h6 align="center"><address><strong>Web Admin:</strong> Julian Gonzalez Bucheli</address></h6>
@@ -52,6 +51,5 @@
 							<!--<h6 time align="center" datetime="2024/8/30" pubdate>Published on Date: 30/08/2024 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
 					</hgroup>
 		        </footer>
-		</HR>
 	</body>
 </html>
