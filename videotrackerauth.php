@@ -11,9 +11,9 @@
 		<HR id="HR"/>	<!-- Header title  --> <!-- -->
 		<br>
 			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center><br><br>
-		<HR/>
+		</HR>
 	</header>	
-	  <bR id="bodyadminmodule">
+	  <body id="bodyadminmodule">
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
 			    <center>
 					<font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font><br><br>
