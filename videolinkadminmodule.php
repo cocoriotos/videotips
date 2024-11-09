@@ -92,7 +92,7 @@ include "nobackpage.php";
 						<thead id="tableswhite">
 						<tr>
 							<th>ID</th>
-							<th style="width: 20px;">Enlace</th>
+							<th>Enlace</th>
 							<th>Categoría</th>
 							<th>Sub Categoría</th>
 							<th>Descripción</th>
