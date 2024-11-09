@@ -3,10 +3,10 @@
 include "nobackpage.php";
 /*include "SessionTimeOut.php";*/
 ?>
-<head>
-<!--<link rel="stylesheet" href="style_sheet.css"></link>-->
-</head>
 <html lang="us"> <!-- Page language-->
+<head>
+<link rel="stylesheet" href="style_sheet.css"></link>
+</head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
 	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
