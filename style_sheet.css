@@ -319,11 +319,3 @@ form hr{
 	margin: 10px auto;
 	box-sizing: border-box;
 }
-
-#autosearch th:nth-child(1) { width: 10%; } /* ID */
-#autosearch th:nth-child(2) { width: 1%; } /* Enlace */
-#autosearch th:nth-child(3) { width: 1%; } /* Categoría */
-#autosearch th:nth-child(4) { width: 1%; } /* Sub Categoría */
-#autosearch th:nth-child(5) { width: 2%; } /* Descripción */
-#autosearch th:nth-child(6) { width: 1%; } /* Fecha de Creación */
-#autosearch th:nth-child(7) { width: 5%; }  /* Copiar Enlace */
