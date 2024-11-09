@@ -24,7 +24,7 @@ include "nobackpage.php";
                 <hr>
             </div>
       <center><div class="col-xs-12 col-sm-12 column-custom-wrap">
-                <div class="column-custom" style="width: 80%; margin: auto;">
+                <div class="column-custom">
                     <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficioes de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
