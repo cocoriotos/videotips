@@ -37,14 +37,14 @@ include "nobackpage.php";
                     <p> 5. Abrir el enlace directamente para ver los contenidos</p>
                     <p> 6. Copiar los Enlaces guardados para compartirlos</p>
 					          <br>
-                    <center><p style="color: blue; font-weight: bold;"> Condiciones </p></center>
+                    <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Condiciones </p></center>
                     <p> Para tener en cuenta: </p><br>
                     <p> 1. No incluir información sensitiva ni personales. No nos hacemos responsables del salvaguardar o uso de su información</p>
                     <p> 2. Tratamiento de los datos bajo la modalidad de Abeas Data</p>
                     <p> 3. El valor de la Suscripción es anual. 60.000 Pesos Colombianos COP</p>
                     <p> 4. El valor de la habilitación de Subcategorías más allá de 5 es vitalicia. 15.000 Pesos Colombianos COP</p>
                     <br>
-                    <center><p style="color: blue; font-weight: bold;"> Forma de Pago de Suscripción y de Subcategorías</p></center>
+                    <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y de Subcategorías</p></center>
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
                     <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
                     <p> 3. Al realizar el o los pagos llenar el formulario por casa tipo de producto adquirido incluyendo el nombre de usuario con el que se registró, recuerde que es su cuenta de correo.</p>
