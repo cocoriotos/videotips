@@ -44,7 +44,7 @@ include "nobackpage.php";
                     <p> 3. El valor de la Suscripción es anual. 60.000 Pesos Colombianos COP</p>
                     <p> 4. El valor de la habilitación de Subcategorías más allá de 5 es vitalicia. 15.000 Pesos Colombianos COP</p>
                     <br>
-                    <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y de Subcategorías</p></center>
+                    <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
                     <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
                     <p> 3. Al realizar el o los pagos llenar el formulario por casa tipo de producto adquirido incluyendo el nombre de usuario con el que se registró, recuerde que es su cuenta de correo.</p>
