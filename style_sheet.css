@@ -321,7 +321,7 @@ form hr{
 }
 
 #autosearch th:nth-child(1) { width: 10%; } /* ID */
-#autosearch th:nth-child(2) { width: 20%; } /* Enlace */
+#autosearch th:nth-child(2) { width: 10%; } /* Enlace */
 #autosearch th:nth-child(3) { width: 15%; } /* Categoría */
 #autosearch th:nth-child(4) { width: 15%; } /* Sub Categoría */
 #autosearch th:nth-child(5) { width: 25%; } /* Descripción */
