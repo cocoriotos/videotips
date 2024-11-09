@@ -6,11 +6,13 @@ include "nobackpage.php";
 <htm lang="us"> <!-- Page language-->
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-            <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles</a></center>
+            <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Enlaces Útiles lkjsdlfgkjlfjgs</a></center>
   </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 	        <div class="text-center">
+               <input type="button" class="btn btn-success btn-block" value="Número Nequi: 3054293185" onclick="copiarNumero();">  
+               <input type="button" class="btn btn-success btn-block" value="Pago con número Telefónico por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
                 <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>	
   </nav></center>
