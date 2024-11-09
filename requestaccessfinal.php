@@ -17,7 +17,7 @@ include "nobackpage.php";
 	</head>
 	<header>
 		<HR id="HR"/>	<!-- Header title  --> <!-- -->
-			<center><h1><font color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
+			<center><h1><font color="#E1EAF7">Biblioteca de Enlaces Útiles</font></h1></center>
 		<HR/>
 	</header>
 	<body id="bodyadminmodule">		
