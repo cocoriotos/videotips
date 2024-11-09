@@ -8,10 +8,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>	  
 	</head>
 	<header>
-		<HR id="HR">	<!-- Header title  --> <!-- -->
 		<br>
 			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
-		<HR id="HR">
 	</header>	
 	  <body id="bodyadminmodule">
 		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
