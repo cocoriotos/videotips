@@ -10,7 +10,7 @@
 	<header>
 		<HR id="HR">	<!-- Header title  --> <!-- -->
 		<br>
-			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center><br><br>
+			<center><h1><font id="form_title" color="#E1EAF7">Herramienta de Enlaces Útiles</font></h1></center>
 		<HR id="HR">
 	</header>	
 	  <body id="bodyadminmodule">
