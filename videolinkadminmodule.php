@@ -94,9 +94,9 @@ include "nobackpage.php";
 							<th>ID</th>
 							<th>Enlace</th>
 							<th>Categoría</th>
-							<th>Sub Categoría</th>
+							<th>Subcategoría</th>
 							<th>Descripción</th>
-							<th>Fecha de Creación</th>
+							<th>Fecha Creación</th>
 							<th>Copiar Enlace</th>
 						</tr>
 						</thead>
