@@ -27,11 +27,11 @@ include "nobackpage.php";
 							</div>
 							<div class="form-group">
 								<label for="maincategory" style="color: black;"><strong>Categoría</strong></label><br>	
-								<select name= "maincategory"> <?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory where username = '$local_username' order by maincategory asc "; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
+								<select class="form-control" name= "maincategory"> <?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory where username = '$local_username' order by maincategory asc "; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select> <br><br>
 							</div>
 							<div class="form-group">
 								<label for="category" style="color: black;"><strong>Subcategoría</strong></label><br>	
-								<select name= "category"> <?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
+								<select class="form-control" name= "category"> <?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select> <br><br>
 							</div>
 							
 							<!--<div class="form-group">
