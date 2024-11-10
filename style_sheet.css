@@ -349,7 +349,7 @@ form hr{
 }
 
 #autosearch td:nth-child(5), #autosearch th:nth-child(5){
-    width: 50px;
+    width: 30px;
 }
 #autosearch td:nth-child(6), #autosearch th:nth-child(6) {
     width: 10px;
