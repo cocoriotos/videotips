@@ -345,7 +345,7 @@ form hr{
 /* Otros anchos opcionales para las otras columnas */
 #autosearch td:nth-child(3), #autosearch th:nth-child(3),
 #autosearch td:nth-child(4), #autosearch th:nth-child(4) {
-    max-width: 150px;
+    max-width: 100px;
 }
 
 #autosearch {
