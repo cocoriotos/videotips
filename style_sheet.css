@@ -348,9 +348,11 @@ form hr{
     width: 100px;
 }
 
-#autosearch td:nth-child(5), #autosearch th:nth-child(5),
-#autosearch td:nth-child(6), #autosearch th:nth-child(6) {
+#autosearch td:nth-child(5), #autosearch th:nth-child(5){
     width: 50px;
+}
+#autosearch td:nth-child(6), #autosearch th:nth-child(6) {
+    width: 30px;
 }
 
 
