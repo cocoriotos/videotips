@@ -56,6 +56,13 @@ body {
 		overflow: hidden;
 	}
 
+	@media (max-width: 768px) {
+		body {
+			background-size: contain; /* Ajusta la imagen para que quepa completamente en la pantalla */
+			background-position: center center; /* Asegura que se mantenga centrada */
+		}
+	}
+
 	h1
 	   {
 		text-align:center;
