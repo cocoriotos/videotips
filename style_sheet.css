@@ -33,10 +33,10 @@ header /* where  title is*/
 head /*where  title is*/
 	{
 		/*float:bottom;*/
-		height:100px;
+		height:100%;
         color:#0c316d;
 		background-color:#032642;
-		width:1600px;
+		width:98%;
 		font-family: arial;
 }
 
