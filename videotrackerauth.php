@@ -41,6 +41,7 @@
 			</center>
 		</form>
 		<footer id="contact">
+				<HR id="HR"/>		
 					<hgroup>
 							<h6 align="center"><address><strong>Web Admin:</strong> Julian Gonzalez Bucheli</address></h6>
 							<h6 align="center"><address><strong>Email:</strong>cocoriotos@hotmail.com</address></h6>
@@ -49,6 +50,7 @@
 							<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
 							<!--<h6 time align="center" datetime="2024/8/30" pubdate>Published on Date: 30/08/2024 - WEB Page available: 7*24</time></h6> <!-- Publication format layout-->
 					</hgroup>
-		        </footer>
+					<HR/>
+		</footer>
 	</body>
 </html>
