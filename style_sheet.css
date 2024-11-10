@@ -356,7 +356,7 @@ form hr{
 }
 
 #autosearch td:nth-child(7), #autosearch th:nth-child(7) {
-    width: 10px;
+    max-width: 50px;
 }
 
 
