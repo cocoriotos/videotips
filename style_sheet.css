@@ -47,7 +47,7 @@ body {
 		/*height:100vh;*/
 		font-family: arial;
 		background-image: url('img/background.jpg');
-		background-size: cover;
+		background-size: contain;
 		background-position: center center ;
 		background-repeat: no-repeat;
 	}
