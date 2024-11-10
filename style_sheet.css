@@ -320,10 +320,38 @@ form hr{
 	box-sizing: border-box;
 }
 
-#autosearch th:nth-child(1) { width: 10%; } /* ID */
-#autosearch th:nth-child(2) { width: 1%; } /* Enlace */
-#autosearch th:nth-child(3) { width: 1%; } /* Categoría */
-#autosearch th:nth-child(4) { width: 1%; } /* Sub Categoría */
-#autosearch th:nth-child(5) { width: 2%; } /* Descripción */
-#autosearch th:nth-child(6) { width: 1%; } /* Fecha de Creación */
-#autosearch th:nth-child(7) { width: 5%; }  /* Copiar Enlace */
+#autosearch th, #autoserach td {
+	white-space: nowrap; /* Evita el salto de línea dentro de las celdas */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-overflow: ellipsis; /* Agrega '...' si el contenido es demasiado largo */
+}
+
+#autosearch td:nth-child(2), #autosearch th:nth-child(2) {
+    max-width: 300px; /* Ajusta el valor según el ancho deseado */
+    width: 200px; /* Ajusta el ancho fijo si es necesario */
+    word-wrap: break-word; /* Permite que los enlaces largos se ajusten al contenido */
+}
+
+/* Otros anchos opcionales para las otras columnas */
+#autosearch td:nth-child(3), #autosearch th:nth-child(3),
+#autosearch td:nth-child(4), #autosearch th:nth-child(4) {
+    max-width: 150px;
+}
+
+#autosearch {
+    width: 100%;
+    table-layout: auto; /* Asegura que la tabla se ajuste al contenido */
+}
+
+#autosearch td, #autosearch th {
+    word-wrap: break-word;
+    max-width: 200px; /* Ajustar el valor a tus necesidades */
+}
+
+/* Si deseas un efecto de ocultar el contenido largo con '...':
+   .table td, .table th {
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+   }
+*/
