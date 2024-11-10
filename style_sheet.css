@@ -355,6 +355,9 @@ form hr{
     width: 30px;
 }
 
+#autosearch td:nth-child(7), #autosearch th:nth-child(7) {
+    width: 10px;
+}
 
 
 #autosearch {
