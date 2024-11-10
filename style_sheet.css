@@ -337,8 +337,8 @@ form hr{
 }
 
 #autosearch td:nth-child(2), #autosearch th:nth-child(2) {
-    max-width: 300px; /* Ajusta el valor según el ancho deseado */
-    width: 200px; /* Ajusta el ancho fijo si es necesario */
+    max-width: 80px; /* Ajusta el valor según el ancho deseado */
+    width: 50px; /* Ajusta el ancho fijo si es necesario */
     word-wrap: break-word; /* Permite que los enlaces largos se ajusten al contenido */
 }
 
