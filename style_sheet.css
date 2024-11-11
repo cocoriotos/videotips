@@ -386,3 +386,15 @@ form hr{
        text-overflow: ellipsis;
    }
 */
+
+.btn-short {
+    width: 120px;  /* Adjust the width as necessary */
+    margin-right: 10px; /* Space between buttons */
+    display: inline-block;  /* Allow buttons to be next to each other */
+}
+
+.btn {
+    /* Optional: Style the buttons consistently */
+    padding: 10px;  /* Control padding */
+    text-align: center;
+}

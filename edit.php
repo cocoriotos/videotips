@@ -45,16 +45,15 @@ include "nobackpage.php";
 								<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
 								<textarea name="description" rows="2" class="form-control" placeholder="Descripción del Contenido"><?php echo $link['description']?></textarea><br>
 							</div>
-							<input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
-							<input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input><br>
+							<input type="submit" class="btn btn-success btn-short" name="update_link" value="Actualizar"></input>
+							<input type="submit" class="btn btn-success btn-short" name="logout" value="Borrar" formaction="delete.php"></input><br>
 					</div></center>				
 				</form>
 			</div>
 		</div>
 		
 		<div class="col-md-12">
-		
-			<table class="table table-bordered"id="tableswhite">
+			<table class="table table-bordered"id="tableswhite"><br><br>
 			<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<thead>
 				   <tr>
