@@ -15,7 +15,7 @@ include "nobackpage.php";
 	<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <body id="bodyadminmodule">
-    <div class="container p-4">
+    <div class="container-fluid p-0">
         <div class="row justify-content-start">
             <div class="col-md-12"> <!-- Cambié esto a col-md-12 para que ocupe el ancho completo -->
                 <div class="card card-body">
@@ -76,7 +76,7 @@ include "nobackpage.php";
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <?php include("search.php") ?>
                 <div class="card card-body">
                     <table id="autosearch" class="display" font color="back">
