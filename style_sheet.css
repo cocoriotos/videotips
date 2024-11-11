@@ -86,6 +86,10 @@ body {
 		 color:black;
 		 font-family: arial;
 	 }
+
+	 th{
+		text-align: center;
+	 }
 	 
 	 ul{
 		font-size:115%; 

@@ -78,7 +78,7 @@ include "nobackpage.php";
 				<table id="autosearch" class="display" font color="back">
 						<thead id="tableswhite">
 						<tr>
-							<th align="center">ID</th>
+							<th>ID</th>
 							<th>Enlace</th>
 							<th>Categoría</th>
 							<th>Subcategoría</th>
