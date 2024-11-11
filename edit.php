@@ -45,12 +45,8 @@ include "nobackpage.php";
 								<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
 								<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido"><?php echo $link['description']?></textarea><br>
 							</div>
-							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center><br>
-							<!--<hr>
-							<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
-							<hr>-->
+							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center>
 							<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
-							<!--<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Cancelar" formaction="videolinkadminmodule.php"></input></center>-->
 					</div>				
 				</form>
 			</div>
