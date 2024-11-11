@@ -24,7 +24,7 @@ include "nobackpage.php";
 		  	<div class="card card-body">
 				<form action="updatelinks.php" method="POST"> 
 				<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
-					<div class="row">
+					<center><div class="row">
 							<div class="form-group col-md-2">
 								<label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
 								<input type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>" readonly></input><br>
@@ -47,7 +47,7 @@ include "nobackpage.php";
 							</div>
 							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center>
 							<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
-					</div>				
+					</div></center>				
 				</form>
 			</div>
 		</div>
