@@ -340,6 +340,9 @@ form hr{
     max-width: 70px; /* Ajusta el valor según el ancho deseado
     width: 50px; /* Ajusta el ancho fijo si es necesario */
     word-wrap: break-word; /* Permite que los enlaces largos se ajusten al contenido */
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Otros anchos opcionales para las otras columnas */
