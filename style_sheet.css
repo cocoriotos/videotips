@@ -388,7 +388,7 @@ form hr{
 */
 
 .btn-short {
-    width: 120px;  /* Adjust the width as necessary */
+    width: 20px;  /* Adjust the width as necessary */
     margin-right: 10px; /* Space between buttons */
     display: inline-block;  /* Allow buttons to be next to each other */
 }
