@@ -10,7 +10,7 @@ include "nobackpage.php";
 <head>	
 	<script src="head.js" defer></script>	  
 </head>
-<body id="bodyadminmodule">
+<body >
 
 <div class="container-fluid p-0" >
 	<div class="row justify-content-start">
@@ -46,32 +46,32 @@ include "nobackpage.php";
 		<div class="col-md-12">
 			<br>
 			<div class="card card-body">
-			<table class="table table-bordered" id="tableswhite">
-			<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
-				<thead>
-				   <tr>
-				       <th>ID</th>
-				  	   <th>Categoría</th>
-					  <th>Subcategoría</th>
-				   </tr>
-			    </thead>
-				<tbody>
-					<?php 
-					$query1 = "select * from videotips_viodetipscategory where id = '$id' and username = '$local_username'";
-					$result_link1 = mysqli_query($conn,$query1);
-					while($link = mysqli_fetch_array($result_link1)) { ?>
-					  <tr>
-					    <td><?php echo $link['id'] ?></td>
-					    <td><?php echo $link['maincategory'] ?></td>
-						<td><?php echo $link['category'] ?></td>
-						</td>
-					  </tr>
-					<?php }?>
-				<tbody>
-			</table>
+					<table class="table table-bordered" id="tableswhite">
+					<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Categoría</th>
+								<th>Subcategoría</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php 
+							$query1 = "select * from videotips_viodetipscategory where id = '$id' and username = '$local_username'";
+							$result_link1 = mysqli_query($conn,$query1);
+							while($link = mysqli_fetch_array($result_link1)) { ?>
+							<tr>
+								<td><?php echo $link['id'] ?></td>
+								<td><?php echo $link['maincategory'] ?></td>
+								<td><?php echo $link['category'] ?></td>
+								</td>
+							</tr>
+							<?php }?>
+							</tbody>
+					</table>
 			</div>	
 		</div>
-</div>
+	</div>
 </div>
 </body>
 
