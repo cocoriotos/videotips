@@ -46,8 +46,8 @@ include "nobackpage.php";
 								<textarea name="description" rows="2" class="form-control" placeholder="Descripción del Contenido"><?php echo $link['description']?></textarea><br>
 							</div>						
 					</div></center>
-							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center>
-							<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>				
+							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
+							<input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
 				</form>
 			</div>
 		</div>
