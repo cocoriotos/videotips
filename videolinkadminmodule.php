@@ -96,7 +96,7 @@ include "nobackpage.php";
 							<th>Categoría</th>
 							<th>Subcategoría</th>
 							<th>Descripción</th>
-							<th>Fecha Creación</th>
+							<th>Creación</th>
 							<th>Copiar</th>
 						</tr>
 						</thead>
