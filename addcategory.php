@@ -34,7 +34,7 @@ include "nobackpage.php";
 						<!--<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
 						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br>-->
 						<label for="subcategory" style="color: black;"><strong>Subcategoría</strong></label><br>	
-						<center><input id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></center><br> 
+						<center><input  class="form-control" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></center><br> 
 						<!--<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>-->
 						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center>
 					</div>	
