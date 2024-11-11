@@ -54,37 +54,37 @@ include "nobackpage.php";
 		<br>
 		<div class="col-md-12">
 			<br>
-		<div class="card card-body">
-			<table class="table table-bordered"id="tableswhite">
-			<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
-				<thead>
-				   <tr>
-	                  <th>ID</th>
-					  <th>Enlace o URL</th>
-					  <th>Categoría</th>
-					  <th>Subcategoría</th>
-					  <th>Descripción</th>
-					  <th>Fecha de Creación</th>
-				   </tr>
-			    </thead>
-				<tbody>
-					<?php 
-					$query1 = "select * from videotips_videotips where active = 'Yes'  and id ='$id' and username = '$local_username'";
-					$result_link1 = mysqli_query($conn,$query1);
-					while($link = mysqli_fetch_array($result_link1)) { ?>
-					  <tr>
-					    <td align="center"><?php echo $link['id'] ?></td>
-						<td align="left"><?php echo $link['videolink'] ?></td>
-						<td align="center"><?php echo $link['maincategory'] ?></td>
-						<td align="center"><?php echo $link['category'] ?></td>
-						<td align="left"><?php echo $link['description'] ?></td>
-						<td align="center"><?php echo $link['creationdate'] ?></td>
-						</td>
-					  </tr>
-					<?php }?>
-				<tbody>
-			</table>
-		</div>	
+			<div class="card card-body">
+				<table class="table table-bordered"id="tableswhite">
+				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
+					<thead>
+					<tr>
+						<th>ID</th>
+						<th>Enlace o URL</th>
+						<th>Categoría</th>
+						<th>Subcategoría</th>
+						<th>Descripción</th>
+						<th>Fecha de Creación</th>
+					</tr>
+					</thead>
+					<tbody>
+						<?php 
+						$query1 = "select * from videotips_videotips where active = 'Yes'  and id ='$id' and username = '$local_username'";
+						$result_link1 = mysqli_query($conn,$query1);
+						while($link = mysqli_fetch_array($result_link1)) { ?>
+						<tr>
+							<td align="center"><?php echo $link['id'] ?></td>
+							<td align="left"><?php echo $link['videolink'] ?></td>
+							<td align="center"><?php echo $link['maincategory'] ?></td>
+							<td align="center"><?php echo $link['category'] ?></td>
+							<td align="left"><?php echo $link['description'] ?></td>
+							<td align="center"><?php echo $link['creationdate'] ?></td>
+							</td>
+						</tr>
+						<?php }?>
+						</tbody>
+				</table>
+			</div>	
 		</div>
 	</div>
 </div>
