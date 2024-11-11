@@ -57,8 +57,9 @@ include "nobackpage.php";
 		</div>
 		
 		<div class="col-md-12">
-		<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
-			<table class="table table-bordered"id="tableswhite" >
+		
+			<table class="table table-bordered"id="tableswhite">
+			<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<thead>
 				   <tr>
 	                  <th>ID</th>
@@ -66,7 +67,6 @@ include "nobackpage.php";
 					  <th>Categoría</th>
 					  <th>Subcategoría</th>
 					  <th>Descripción</th>
-					  <th>Útil</th>
 					  <th>Fecha de Creación</th>
 				   </tr>
 			    </thead>
@@ -81,7 +81,6 @@ include "nobackpage.php";
 						<td><?php echo $link['maincategory'] ?></td>
 						<td><?php echo $link['category'] ?></td>
 						<td><?php echo $link['description'] ?></td>
-						<td><?php echo $link['active'] ?></td>
 						<td><?php echo $link['creationdate'] ?></td>
 						</td>
 					  </tr>
