@@ -20,7 +20,7 @@ include "nobackpage.php";
 				<div class="col-md-12"> 
 					<div class="card card-body">
 							<form action="savelinks.php" method="POST">
-							<center><label for="description" class="col-form-label" style="color: white; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
+							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row">
 									<!-- Enlace Útil -->
 									<div class="form-group col-md-3">
