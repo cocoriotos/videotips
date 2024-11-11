@@ -37,7 +37,7 @@ include "nobackpage.php";
 								<input style="text-align: center;" type="text" name="category" class="form-control" placeholder="Subcategoría" autofocus value ="<?php echo $link['category'];?>"></input><br>
 							</div>
 							</div></center>					
-								<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Actualizar"></input><br>
+								<center><input type="submit" class="btn btn-success btn-block" name="update_category" value="Actualizar"></input>
 								<input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="deletecategory.php"></input></center><br>
                  </form>
 		    </div>
