@@ -24,7 +24,7 @@ include "nobackpage.php";
 				<form text-align="center" action="updatecategory.php" method="POST"> 
 					<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Categoría </strong></label></center>
 						<center><div class="row">	
-							<div class="form-group">
+							<div class="form-group col-md-2">
 								<label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
 								<input style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
 							</div>
