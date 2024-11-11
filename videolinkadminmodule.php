@@ -34,13 +34,13 @@ include "nobackpage.php";
 								</div>	
 							</div>
 								
-							<div class="form-group row">
+							<div class="form-group col">
 									<label for="category" class="col-md-2 col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
 								<div class="col-md-10">
 										<select class="form-control" name= "category"> <?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_set =  mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";} ?></select>
 								</div>
 							</div>
-							<div class="form-group row">
+							<div class="form-group col">
 									<label for="description" class="col-md-2 col-form-label" style="color: black;"><strong>Descripción</strong></label>
 								<div class="col-md-10">
 										<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea>
