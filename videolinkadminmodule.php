@@ -20,14 +20,14 @@ include "nobackpage.php";
 				<div class="col-md-12"> 
 					<div class="card card-body">
 						<form class="" action="savelinks.php" method="POST"> 
-							<div class="form-group row">
+							<div class="form-group col">
 									<label for="videolink" class="col-md-2 col-form-label" style="color: black;"><strong>Enlace Útil</strong></label>	
 								<div class="col-md-10">
 									<textarea name="videolink" rows="5" class="form-control" placeholder="Enlace Útil"></textarea>
 								</div>
 							</div>
 
-							<div class="form-group row">
+							<div class="form-group col">
 									<label for="maincategory" class="col-md-2 col-form-label" style="color: black;"><strong>Categoría</strong></label>
 								<div class="col-md-10">
 									<select class="form-control" name= "maincategory"> <?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory where username = '$local_username' order by maincategory asc "; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set ->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";} ?></select>
@@ -46,6 +46,7 @@ include "nobackpage.php";
 										<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea>
 								</div>
 							</div>
+							<br>
 								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
 						</form>
 					</div>
