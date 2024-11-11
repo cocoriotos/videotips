@@ -19,6 +19,7 @@ include "nobackpage.php";
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
 					<div class="card card-body">
+					<center><label for="description" class="col-form-label" style="color: white; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 							<form action="savelinks.php" method="POST">
 								<div class="row">
 									<!-- Enlace Útil -->
@@ -77,7 +78,7 @@ include "nobackpage.php";
 				<table id="autosearch" class="display" font color="back">
 						<thead id="tableswhite">
 						<tr>
-							<th>ID</th>
+							<center><th>ID</th></center>
 							<th>Enlace</th>
 							<th>Categoría</th>
 							<th>Subcategoría</th>
