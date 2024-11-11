@@ -71,8 +71,8 @@ include "nobackpage.php";
 					</div>
 				</div>
 				<br><br>
-				<center><label for="description" class="col-form-label" style="color: white; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<div class="col-md-12">
+				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<?php include("search.php") ?>
 				<div class="card card-body">
 				<table id="autosearch" class="display" font color="back">
