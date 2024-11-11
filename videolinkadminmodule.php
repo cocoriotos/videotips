@@ -24,7 +24,7 @@ include "nobackpage.php";
 							<!-- Enlace Útil -->
 							<div class="form-group col-md-3">
 								<label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace Útil</strong></label>
-								<textarea name="videolink" rows="5" class="form-control" placeholder="Enlace Útil"></textarea>
+								<textarea name="videolink" rows="2" class="form-control" placeholder="Enlace Útil"></textarea>
 							</div>
 
 							<!-- Categoría -->
@@ -60,7 +60,7 @@ include "nobackpage.php";
 							<!-- Descripción -->
 							<div class="form-group col-md-3">
 								<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label>
-								<textarea name="description" rows="5" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea>
+								<textarea name="description" rows="3" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea>
 							</div>
 						</div>
 
