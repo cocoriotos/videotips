@@ -44,11 +44,10 @@ include "nobackpage.php";
 							<div class="form-group col-md-2">
 								<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
 								<textarea name="description" rows="2" class="form-control" placeholder="Descripción del Contenido"><?php echo $link['description']?></textarea><br>
-							</div>
-							<br>
+							</div>						
+					</div></center>
 							<input type="submit" class="btn btn-success btn-short" name="update_link" value="Actualizar"></input>
-							<input type="submit" class="btn btn-success btn-short" name="logout" value="Borrar" formaction="delete.php"></input><br>
-					</div></center>				
+							<input type="submit" class="btn btn-success btn-short" name="logout" value="Borrar" formaction="delete.php"></input><br>				
 				</form>
 			</div>
 		</div>
