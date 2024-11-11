@@ -45,8 +45,8 @@ include "nobackpage.php";
 								<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
 								<textarea name="description" rows="2" class="form-control" placeholder="Descripción del Contenido"><?php echo $link['description']?></textarea><br>
 							</div>
-							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input></center>
-							<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
+							<input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
+							<input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input><br>
 					</div></center>				
 				</form>
 			</div>
@@ -72,12 +72,12 @@ include "nobackpage.php";
 					$result_link1 = mysqli_query($conn,$query1);
 					while($link = mysqli_fetch_array($result_link1)) { ?>
 					  <tr>
-					    <td><?php echo $link['id'] ?></td>
-						<td><?php echo $link['videolink'] ?></td>
-						<td><?php echo $link['maincategory'] ?></td>
-						<td><?php echo $link['category'] ?></td>
-						<td><?php echo $link['description'] ?></td>
-						<td><?php echo $link['creationdate'] ?></td>
+					    <td align="center"><?php echo $link['id'] ?></td>
+						<td align="left"><?php echo $link['videolink'] ?></td>
+						<td align="center"><?php echo $link['maincategory'] ?></td>
+						<td align="center"><?php echo $link['category'] ?></td>
+						<td align="left"><?php echo $link['description'] ?></td>
+						<td align="center"><?php echo $link['creationdate'] ?></td>
 						</td>
 					  </tr>
 					<?php }?>
