@@ -28,7 +28,7 @@ include "nobackpage.php";
 						<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
 						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>-->
 						<label for="maincategory" style="color: black;"><strong>Categoría</strong></label><br>	
-						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ></center><br>
+						<center><input class="form-control" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ></center><br>
 					</div><br>
 					<div class="form-group">
 						<!--<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
