@@ -34,7 +34,7 @@ include "nobackpage.php";
 						</form>
 					</div>
 				</div>
-				
+				<br><br>
 				<div class="col-md-12">
 				<?php include("search.php") ?>
 				<div class="card card-body">
