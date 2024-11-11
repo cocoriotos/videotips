@@ -70,8 +70,8 @@ include "nobackpage.php";
 							</form>
 					</div>
 				</div>
-				<br><br>
 				<div class="col-md-12">
+					<br>
 				<?php include("search.php") ?>
 				<div class="card card-body">
 				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
