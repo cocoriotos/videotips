@@ -51,7 +51,7 @@ include "nobackpage.php";
 				</form>
 			</div>
 		</div>
-		
+		<br><br>
 		<div class="col-md-12">
 		<div class="card card-body">
 			<table class="table table-bordered"id="tableswhite"><br><br>
