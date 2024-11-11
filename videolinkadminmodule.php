@@ -16,8 +16,8 @@ include "nobackpage.php";
 </head>
 <body id="bodyadminmodule">
 		<div  class="container p-4" >
-			<div class="col">
-				<div class="col-md-4"> 
+			<div class="row justify-content-start">
+				<div class="col-md-6"> 
 					<div class="card card-body">
 						<form class="" action="savelinks.php" method="POST"> 
 						
