@@ -53,6 +53,7 @@ include "nobackpage.php";
 		</div>
 		
 		<div class="col-md-12">
+		<div class="card card-body">
 			<table class="table table-bordered"id="tableswhite"><br><br>
 			<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<thead>
@@ -82,6 +83,7 @@ include "nobackpage.php";
 					<?php }?>
 				<tbody>
 			</table>
+		</div>	
 		</div>
 	</div>
 </div>
