@@ -16,13 +16,13 @@ include "nobackpage.php";
 <div class="container-fluid p-0">
 	<div class="row justify-content-start">
 			<div class="col-md-12">
+			<div class="card card-body">
 			 <?php 
 					$query = "select * from videotips_videotips where id = '$id' and username='$local_username'";
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
-		  	<div class="card card-body">
-				<form  text-align="center"  action="updatelinks.php" method="POST"> 
+		  	<form  text-align="center"  action="updatelinks.php" method="POST"> 
 				<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
 					<center><div class="row">
 							<div class="form-group col-md-2">
