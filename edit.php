@@ -22,7 +22,7 @@ include "nobackpage.php";
 					$link = mysqli_fetch_array($result_link);
 			 ?>
 		  	<div class="card card-body">
-				<form action="updatelinks.php" method="POST"> 
+				<center><form action="updatelinks.php" method="POST"> 
 				<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
 					<center><div class="row">
 							<div class="form-group col-md-2">
@@ -48,7 +48,7 @@ include "nobackpage.php";
 					</div></center>
 							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
 							<input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
-				</form>
+				</form></center>
 			</div>
 		</div>
 		
