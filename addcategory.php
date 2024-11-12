@@ -1,6 +1,6 @@
 <!--  Developed by julián González Bucheli -->
 <html>
-<?php 
+<input?php 
 session_start();
 include "headercategory.php";
 include "db_connection1.php";
@@ -20,20 +20,15 @@ include "nobackpage.php";
 			<div class="card card-body">
 				<form text-align="center" action="savecategory.php" method="POST">
 					<center><label for="videolink" class="col-form-label" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label></center><br>
-					<center><div class="row">
+						<center><div class="row">
 								<div class="form-group col-md-4">
-									<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
-									<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>-->
-									<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
+									<label for="id" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
 									<input class="form-control" style="text-align: center;" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ><br>
 								</div><br>
 								<div class="form-group col-md-4">
-									<!--<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
-									<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br>-->
-									<label for="subcategory" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
-									<input  class="form-control" style="text-align: center;" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ><br> 
+									<label for="id" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
+									<input  class="form-control" style="text-align: center;" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></input><br> 
 								</div>	
-									<!--<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>-->
 						</div></center>
 								<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center><br>
 				</form>
