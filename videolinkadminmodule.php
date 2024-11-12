@@ -31,31 +31,13 @@ include "SessionTimeOut.php";
 									<!-- Categoría -->
 									<div class="form-group col-md-3">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory">
-											<?php 
-												$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
-												$result_set = mysqli_query($conn, $SQLSELECT); 
-												while ($rows = $result_set->fetch_assoc()) { 
-													$maincategory = $rows['maincategory']; 
-													echo "<option value='$maincategory'>$maincategory</option>";
-												}
-											?>
-										</select>
+										<select class="form-control" name="maincategory"><?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 												$result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";}?></select>
 									</div>
 
 									<!-- Subcategoría -->
 									<div class="form-group col-md-3">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
-										<select class="form-control" name="category">
-											<?php 
-												$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
-												$result_set = mysqli_query($conn, $SQLSELECT); 
-												while ($rows = $result_set->fetch_assoc()) { 
-													$category = $rows['category']; 
-													echo "<option value='$category'>$category</option>";
-												}
-											?>
-										</select>
+										<select class="form-control" name="category"><?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";}?></select>
 									</div>
 
 									<!-- Descripción -->
@@ -110,9 +92,6 @@ include "SessionTimeOut.php";
 			</div>
 		</div>
 </body>
-
-
-
 <?php include ("footer.php")?>
 </html>
  

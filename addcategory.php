@@ -18,18 +18,18 @@ include "nobackpage.php";
 	<div class="row justify-content-start">
 		<div class="col-md-12"> 
 			<div class="card card-body">
-				<form text-align="center" action="savecategory.php" method="POST">
-					<center><label for="videolink" class="col-form-label" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label></center><br>
-						<center><div class="row">
-								<div class="form-group col-md-8">
-									<label for="id" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
+				<form action="savecategory.php" method="POST">
+					<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong>Adicionar Categoría y Subcategoría</strong></label></center><br>
+						<div class="row">
+								<div class="form-group col-md-1">
+									<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
 									<input class="form-control" style="text-align: center;" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ><br>
 								</div><br>
-								<div class="form-group col-md-8">
-									<label for="id" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
+								<div class="form-group col-md-1">
+									<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
 									<input  class="form-control" style="text-align: center;" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></input><br> 
 								</div>	
-						</div></center>
+						</div>
 								<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center><br>
 				</form>
 			</div>
@@ -41,7 +41,7 @@ include "nobackpage.php";
 		 <div class="card card-body">
 		 <!--<label for="maincategory" style="color: black;"><strong>Current Categories</strong></label><br>-->
 		  <table id="autosearch" class="display" font color="back">
-		  <center><label for="maincategory" style="color: black;"><strong>Tus Categorías</strong></label></center><br>
+		  <center><label for="maincategory" style="color: black; font-size: 28px;"><strong>Tus Categorías</strong></label></center><br>
 				<thead id="tableswhite">
 				   <tr>
 				      <!--<center><th>ID</th></center>
