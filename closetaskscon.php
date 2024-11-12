@@ -5,4 +5,5 @@
 		/*echo 	"Session Closed";*/
 		/*echo 	"<ha>Sesión Cerrada</ha>";	*/
         header("refresh:0; url=videotrackerauth.php");
+		exit();
 ?>

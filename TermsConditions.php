@@ -8,7 +8,8 @@ include "SessionTimeOut.php";*/
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
+    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">TERMINOS Y CONDICIONES</a></center>  
+    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
   </nav>
 	</header>
   
@@ -40,8 +41,9 @@ include "SessionTimeOut.php";*/
                     <p> Para tener en cuenta: </p><br>
                     <p> 1. No incluir información sensitiva ni personales. No nos hacemos responsables del salvaguardar o uso de su información</p>
                     <p> 2. Tratamiento de los datos bajo la modalidad de Abeas Data</p>
-                    <p> 3. El valor de la Suscripción es anual. 60.000 Pesos Colombianos COP</p>
-                    <p> 4. El valor de la habilitación de Subcategorías más allá de 5 es vitalicia. 15.000 Pesos Colombianos COP</p>
+                    <p> 3. No nos responsabilizamos por información que incite a la violencia física, psicológica, delitos informáticos o cualquier manifestación delictiva</p>
+                    <p> 4. El valor de la Suscripción es anual. 60.000 Pesos Colombianos COP</p>
+                    <p> 5. El valor de la habilitación de Subcategorías más allá de 5 es vitalicia. 15.000 Pesos Colombianos COP</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
@@ -54,29 +56,6 @@ include "SessionTimeOut.php";*/
           </div>
           </center>
           <hr>
-          <!--<form id="login" action="suscriptionpaymentevidence.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
-              <!--<center>
-                  <font color=lightblue id="form_title"><strong>Formulario de Evidencia de Pago de Productos</strong></font><br><br>
-                          <img id="img_login" center SRC="login.gif"></img></br> <!-- Login Icon  -->
-                  <!--<div class="inputdata1">
-                    <font id= "form_title" color="white"><strong>Email</strong></font><br><br>
-                    <input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
-                  <!--</div >
-                  <div class="inputdata1">
-                    <font id= "form_title" color="white"><strong>Producto adquirido</strong></font><br><br>
-                    <input id="username1" type="text" name="product" placeholder="Seleccione su producto" required ><br> <!-- Login PAM username  --><br>
-                  <!--</div >
-                  <div class="inputdata1">
-                    <font id= "form_title" color="white"><strong>Cargar imagen en formato PDF</strong></font><br><br>
-                    <input id="username1" type="text" name="product" placeholder="Cargar el documento de evidencia" required ><br> <!-- Login PAM username  --><br>
-                  <!--</div >
-                  <input id="loginbutton" type="submit" value="Enviar">
-                  <br>
-                  <br>
-                  <br>
-				      </center>
-		     </form>-->
-
     </div>    
   </div>
     </body>
