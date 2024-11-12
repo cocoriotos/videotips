@@ -1,12 +1,3 @@
-<html lang="us"> <!-- Page language-->
-	<head>
-		  
-		  <script>
-			alert("Detectada que la sesion no tiene actividad por más de 5 minutos, debe iniciar sesión nuevamente");
-		  </script>
-	</head>
-
-
 <?php
 // Establecer el tiempo de inactividad en segundos (15 minutos)
 $timeout_duration = 60;
