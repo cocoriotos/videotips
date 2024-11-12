@@ -6,6 +6,4 @@
 			alert("Enlace duplicado, usar otro");
 		  </script>
 	</head>
-<body id="bodyadminmodule">
-</body>
 </html>

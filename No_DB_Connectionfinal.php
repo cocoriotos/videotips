@@ -3,10 +3,7 @@
 	<head>
 		  
 		  <script>
-			/*alert("ALERT: No Database connection success");*/
 			alert("No hay conexión disponible a la aplicación");
 		  </script>
-	</head>
-	<body id="bodyadminmodule">
-	</body>	
+	</head>	
 </html>

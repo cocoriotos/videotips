@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-include "nobackpage.php";
-/*include "SessionTimeOut.php";*/
+/*include "nobackpage.php";
+include "SessionTimeOut.php";*/
 ?>
 <htm lang="us"> <!-- Page language-->
 <header>
