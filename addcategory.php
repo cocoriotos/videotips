@@ -21,11 +21,11 @@ include "nobackpage.php";
 			<center><form action="savecategory.php" method="POST">
 					<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong>Adicionar Categoría y Subcategoría</strong></label></center><br>
 						<div class="row">
-								<div class="form-group col-md-3">
+								<div class="form-group col-md-4">
 									<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
 									<input class="form-control" style="text-align: center;" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ><br>
 								</div><br>
-								<div class="form-group col-md-3">
+								<div class="form-group col-md-4">
 									<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
 									<input  class="form-control" style="text-align: center;" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></input><br> 
 								</div>	
