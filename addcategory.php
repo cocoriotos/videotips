@@ -20,7 +20,7 @@ include "nobackpage.php";
 			<div class="card card-body">
 				<form text-align="center" action="savecategory.php" method="POST">
 					<center><label for="videolink" class="col-form-label" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label></center><br>
-					<div class="row">
+					<center><div class="row">
 								<div class="form-group col-md-4">
 									<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
 									<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>-->
