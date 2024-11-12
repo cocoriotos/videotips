@@ -5,7 +5,6 @@ include "SessionTimeOut.php";*/
 ?>
 <html lang="us"> <!-- Page language-->
 <head>
-<link rel="stylesheet" href="style_sheet.css"></link>
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
