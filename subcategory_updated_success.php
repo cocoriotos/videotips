@@ -6,6 +6,4 @@
 			alert("Subcategoría Actualizada Exitosamente");
 		  </script>
 	</head>
-	<body id="bodyadminmodule">
-	</body>	
 </html>

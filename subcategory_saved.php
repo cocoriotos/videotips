@@ -5,7 +5,5 @@
 		  <script>
 			alert("Subcategoría Salvada Exitosamente");
 		  </script>
-	</head>
-	<body id="bodyadminmodule">
-	</body>	
+	</head>	
 </html>

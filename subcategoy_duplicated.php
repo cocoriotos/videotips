@@ -6,6 +6,4 @@
 			alert("Subcategoría duplicada, usar otra");
 		  </script>
 	</head>
-	<body id="bodyadminmodule">
-	</body>	
 </html>

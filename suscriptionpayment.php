@@ -2,13 +2,12 @@
 <html lang="en">
 <?php 
 session_start();
-include "nobackpage.php";
+/*include "nobackpage.php";*/
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
 /*include "SessionTimeOut.php";*/
 ?>
-<head>
 <header>
     <script src="copynumber.js"></script>
 </header>  	
