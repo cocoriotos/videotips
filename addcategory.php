@@ -1,6 +1,6 @@
 <!--  Developed by julián González Bucheli -->
 <html>
-<input?php 
+<?php 
 session_start();
 include "headercategory.php";
 include "db_connection1.php";

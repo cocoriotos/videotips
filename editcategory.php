@@ -11,7 +11,6 @@ include "nobackpage.php";
 	<script src="head.js" defer></script>	  
 </head>
 <body id="bodyadminmodule">
-
 <div class="container-fluid p-0" >
 	<div class="row justify-content-start">
 		<div class="col-md-12">
@@ -29,7 +28,7 @@ include "nobackpage.php";
 								<input class="form-control" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
 							</div>
 							<div class="form-group col-md-4">
-							<label for="id" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
+								<label for="id" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
 								<input class="form-control" style="text-align: center;" type="text" name="maincategory" class="form-control" placeholder="Categoría" autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
 							</div>
 							<div class="form-group col-md-4">
