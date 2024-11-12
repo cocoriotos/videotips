@@ -5,8 +5,8 @@ session_start();
 include "headercategory.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
-include "nobackpage.php"; 
-/*include "SessionTimeOut.php";*/
+/*include "nobackpage.php"; 
+include "SessionTimeOut.php";*/
 ?>
 <head>	
 		<script src="head.js" defer></script>		
@@ -44,9 +44,6 @@ include "nobackpage.php";
 		  <center><label for="maincategory" style="color: black; font-size: 28px;"><strong>Tus Categorías</strong></label></center><br>
 				<thead id="tableswhite">
 				   <tr>
-				      <!--<center><th>ID</th></center>
-					  <center><th>Category</th></center> 
-					  <center><th>Sub Category</th></center>-->
 					  <th>ID</th>
 					  <th>Categoría</th>
 					  <th>SubCategoría</th>

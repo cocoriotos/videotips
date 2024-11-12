@@ -1,14 +1,10 @@
 <!--  Developed by julián González Bucheli -->
-
-</body>
-	
-	<head>
-		  
+<html lang="us"> <!-- Page language-->
+	<head>  
 		  <script>
 			alert("Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis");
 		  </script>
 	</head>
-	<html lang="us"> <!-- Page language-->
 	<body id="bodyadminmodule">
 	</body>
 </html>
