@@ -5,6 +5,5 @@
 			alert("Correo duplicado, por favor usar otro");
 		  </script>
 	</head>
-	<body id="bodyadminmodule">
-	</body>
+
 </html>
