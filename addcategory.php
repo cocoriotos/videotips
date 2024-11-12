@@ -1,6 +1,6 @@
 <!--  Developed by julián González Bucheli -->
 <html>
-<div?php 
+<?php 
 session_start();
 include "headercategory.php";
 include "db_connection1.php";
@@ -13,7 +13,7 @@ include "nobackpage.php";
 		<script src="categorytoclipboard.js" defer></script>  
 </head>
 
-<body >
+<body id="bodyadminmodule">
 <div class="container-fluid p-0">
 	<div class="row justify-content-start">
 		<div class="col-md-12"> 
