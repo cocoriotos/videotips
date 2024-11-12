@@ -1,7 +1,5 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us"> <!-- Page language-->
-<body id="bodyadminmodule">
-</body>
 <script>
 			alert("Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opcióon de Solicitud de Acceso");
 		  </script>

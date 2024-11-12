@@ -6,6 +6,4 @@
 			alert("Su requerimiento fue enviado, puede ingresar con el usuario y contraseña que digitó. Un correo con esta información fué enviado");
 		  </script>
 	</head>
-	<body id="bodyadminmodule">
-	</body>
 </html>
