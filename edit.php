@@ -12,7 +12,7 @@ include "nobackpage.php";
 	<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 
-<body >
+<body id="bodyadminmodule">
 <div class="container-fluid p-0">
 	<div class="row justify-content-start">
 			<div class="col-md-12">

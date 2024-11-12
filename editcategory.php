@@ -10,7 +10,7 @@ include "nobackpage.php";
 <head>	
 	<script src="head.js" defer></script>	  
 </head>
-<body >
+<body id="bodyadminmodule">
 
 <div class="container-fluid p-0" >
 	<div class="row justify-content-start">

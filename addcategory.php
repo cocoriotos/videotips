@@ -1,6 +1,6 @@
 <!--  Developed by julián González Bucheli -->
 <html>
-<?php 
+<div?php 
 session_start();
 include "headercategory.php";
 include "db_connection1.php";
@@ -14,62 +14,49 @@ include "nobackpage.php";
 </head>
 
 <body id="bodyadminmodule">
-<div class="container p-4">
-	<div class="row">
-		<div class="col-md-4"> 
+<div class="container-fluid p-0">
+	<div class="row justify-content-start">
+		<div class="col-md-12"> 
 			<div class="card card-body">
-			<div class="form-group">
-			    <!--<label for="videolink" style="color: black;"><strong>Categories to filter your Favorite links</strong></label><br>-->
-				<label for="videolink" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label><br>
-					</div><br>
-				<form class="" action="savecategory.php" method="POST">
-				<br><br><br><br><br><br>
-					<div class="form-group">
-						<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
-						<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>-->
-						<label for="maincategory" style="color: black;"><strong>Categoría</strong></label><br>	
-						<center><input class="form-control" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ></center><br>
-					</div><br>
-					<div class="form-group">
-						<!--<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
-						<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br>-->
-						<label for="subcategory" style="color: black;"><strong>Subcategoría</strong></label><br>	
-						<center><input  class="form-control" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></center><br> 
-						<!--<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>-->
-						<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center>
-					</div>	
-					<br><br><br><br>
-				</form>
-				<!--<hr>
-				<center><label for="useful" style="color: black;"><strong>Menu de Opciones</strong></label></center><br>	
-				<hr>
-				<form>
-						<center><input type="submit" class="btn btn-success btn-block" name="Refresh" value="Refresh" formaction="addcategory.php"></input></center><br>
-						<center><input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancel" formaction="videolinkadminmodule.php"></input></center><br>
-						<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Logout" formaction="videotrackerauth.php"></input></center><br>
-						<center><input type="submit" class="btn btn-success btn-block" name="Refresh" value="limpiar" formaction="addcategory.php"></input></center><br>
-						<center><input type="submit" class="btn btn-success btn-block" name="cancel" value="Cancelar" formaction="videolinkadminmodule.php"></input></center><br>
-						<center><input type="submit" class="btn btn-success btn-block" name="logout" value="Salir" formaction="videotrackerauth.php"></input></center><br>-->
+				<form text-align="center" action="savecategory.php" method="POST">
+					<center><label for="videolink" class="col-form-label" style="color: black;"><strong>Adicionar Categorías y Subcategorías</strong></label></center><br>
+					<div class="row">
+								<div class="form-group col-md-4">
+									<!--<label for="maincategory" style="color: black;"><strong>Category</strong></label><br>	
+									<center><input id="maincategory" type="text" name="maincategory"  placeholder="Type Main Category" required ></center><br>-->
+									<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
+									<input class="form-control" style="text-align: center;" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ><br>
+								</div><br>
+								<div class="form-group col-md-4">
+									<!--<label for="subcategory" style="color: black;"><strong>Subcategory</strong></label><br>	
+									<center><input id="category" type="text" name="category"  placeholder="Type Sub Category" required ></center><br>-->
+									<label for="subcategory" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
+									<input  class="form-control" style="text-align: center;" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ><br> 
+								</div>	
+									<!--<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Add Categories"></input></center>-->
+						</div></center>
+								<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center><br>
 				</form>
 			</div>
 		</div>
 		
-		<div class="col-md-8">
+		<div class="col-md-12">
+		<br>
 		 <?php include("search.php") ?>
 		 <div class="card card-body">
 		 <!--<label for="maincategory" style="color: black;"><strong>Current Categories</strong></label><br>-->
-		 <label for="maincategory" style="color: black;"><strong>Categorías</strong></label><br>	
 		  <table id="autosearch" class="display" font color="back">
+		  <center><label for="maincategory" style="color: black;"><strong>Tus Categorías</strong></label></center><br>
 				<thead id="tableswhite">
 				   <tr>
 				      <!--<center><th>ID</th></center>
 					  <center><th>Category</th></center> 
 					  <center><th>Sub Category</th></center>-->
-					  <center><th>ID</th></center>
-					  <center><th>Categoría</th></center> 
-					  <center><th>SubCategoría</th></center>
-					  <center><th>Copiar Categoría</th></center>
-					  <center><th>Copiar Subcategoría</th></center>
+					  <th>ID</th>
+					  <th>Categoría</th>
+					  <th>SubCategoría</th>
+					  <th>Copiar Categoría</th>
+					  <th>Copiar Subcategoría</th>
 				   </tr>
 			    </thead>
 				<tbody>
