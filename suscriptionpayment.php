@@ -73,7 +73,7 @@ include "SessionTimeOut.php";
                   </thead>
                   <tbody>
                     <?php 
-                    $query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username'";/*10112024*/
+                    $query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username'";
                     $result_links = mysqli_query($conn,$query1);
                     while($links = mysqli_fetch_array($result_links)) { ?>
                     <tr>
@@ -83,7 +83,7 @@ include "SessionTimeOut.php";
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
                       <td align="center"><?php echo $links['suscriptiondate'] ?></td>
                       <td align="center"><?php echo $links['ServicePayed'] ?></td>
-                      <td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+                      <td align="center"><?php echo $links['filepath'] ?>)"></td>
                       </td>
                     </tr>
                     <?php }?>
