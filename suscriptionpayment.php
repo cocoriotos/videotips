@@ -73,7 +73,7 @@ include "SessionTimeOut.php";
                   </thead>
                   <tbody>
                     <?php 
-                    $query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username' order by lastpaymentdate asc";/*10112024*/
+                    $query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username'";/*10112024*/
                     $result_links = mysqli_query($conn,$query1);
                     while($links = mysqli_fetch_array($result_links)) { ?>
                     <tr>
