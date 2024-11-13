@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
+<div?php 
 session_start();
 /*include "nobackpage.php";*/
 include "db_connection1.php";
@@ -75,37 +75,44 @@ include "SessionTimeOut.php";
       </div>    
   </div>
 
-  <table id="autosearch" class="display" font color="back">
-						<thead id="tableswhite">
-						<tr>
-							<th>Usuario</th>
-							<th>Total Sub Categorías</th>
-							<th>Fecha Actual</th>
-							<th>Fecha de último Pago</th>
-							<th>Fecha de Solicitud de acceso a la plataforma </th>
-							<th>Fecha de Creación</th>
-							<th>Servicio a Pagar</th>
-              <th>Descargar</th>
-						</tr>
-						</thead>
-						<tbody>
-							<?php 
-							/* voy aquí*/$query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
-							$result_links = mysqli_query($conn,$query1);
-							while($links = mysqli_fetch_array($result_links)) { ?>
-							<tr>
-								<td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-								<td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></td>
-								<td align="center"><?php echo $links['maincategory'] ?></td>
-								<td align="center"><?php echo $links['category'] ?></td>
-								<td align="center"><?php echo $links['description'] ?></td>
-								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
-								</td>
-							</tr>
-							<?php }?>
-						<tbody>
-					</table>
+  <div class="col-md-12">
+					<br>
+				<?php include("search.php") ?>
+				<div class="card card-body">
+				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 
+              <table id="autosearch" class="display" font color="back">
+                  <thead id="tableswhite">
+                  <tr>
+                    <th>Usuario</th>
+                    <th>Total Sub Categorías</th>
+                    <th>Fecha Actual</th>
+                    <th>Fecha de último Pago</th>
+                    <th>Fecha de Solicitud de acceso a la plataforma </th>
+                    <th>Fecha de Creación</th>
+                    <th>Servicio a Pagar</th>
+                    <th>Descargar</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <?php 
+                    /* voy aquí*/$query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
+                    $result_links = mysqli_query($conn,$query1);
+                    while($links = mysqli_fetch_array($result_links)) { ?>
+                    <tr>
+                      <td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
+                      <td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></td>
+                      <td align="center"><?php echo $links['maincategory'] ?></td>
+                      <td align="center"><?php echo $links['category'] ?></td>
+                      <td align="center"><?php echo $links['description'] ?></td>
+                      <td align="center"><?php echo $links['creationdate'] ?></td>
+                      <td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+                      </td>
+                    </tr>
+                    <?php }?>
+                  <tbody>
+                </table>
+          </div>
+  </div>
 
 </body>
