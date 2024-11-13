@@ -89,30 +89,28 @@ include "SessionTimeOut.php";
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
-                    <th>Fecha de Creación</th>
                     <th>Servicio a Pagar</th>
-                    <th>Descargar</th>
+                    <th>Cargar Documento PDF</th>
                   </tr>
                   </thead>
                   <tbody>
                     <?php 
-                    /* voy aquí*/$query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
+                    $query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username' order by lastpaymentdate asc";/*10112024*/
                     $result_links = mysqli_query($conn,$query1);
                     while($links = mysqli_fetch_array($result_links)) { ?>
                     <tr>
-                      <td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-                      <td align="center"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></td>
-                      <td align="center"><?php echo $links['maincategory'] ?></td>
-                      <td align="center"><?php echo $links['category'] ?></td>
-                      <td align="center"><?php echo $links['description'] ?></td>
-                      <td align="center"><?php echo $links['creationdate'] ?></td>
+                      <td align="center"><?php echo $links['username']?></td>
+                      <td align="center"><?php echo $links['categoriescounts'] ?></td>
+                      <td align="center"><?php echo $links['currentpaid'] ?></td>
+                      <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
+                      <td align="center"><?php echo $links['suscriptiondate'] ?></td>
+                      <td align="center"><?php echo $links['ServicePayed'] ?></td>
                       <td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
                       </td>
                     </tr>
                     <?php }?>
                   <tbody>
                 </table>
-          </div>
+        </div>
   </div>
-
 </body>

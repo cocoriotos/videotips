@@ -48,6 +48,9 @@ $password=$_POST['password'];
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1); 
 
+				/*$query3="update videotips_suscription_payments SET categoriescounts = (select categorycount from videotips_app_access_list where username = '$local_username'), currentdate = CURDATE(), active = (select active from videotips_app_access_list where username = '$local_username'), suscriptiondate = (select registrationdate from videotips_app_access_list where username = '$local_username')   where username = '$local_username' and active='1'"; 
+				$result3=mysqli_query($conn, $query3);*/
+
 				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 0) {
 					include("FreeSuscriotionReached.php");
 					header("refresh:0; url=suscriptionpayment.php");
