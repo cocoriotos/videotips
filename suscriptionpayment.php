@@ -64,7 +64,7 @@ print_r("$local_username");
                   <thead id="tableswhite">
                   <tr>
                     <th>Usuario</th>
-                    <th>Total Sub Categorías</th>
+                    <th>Total SubCategorías</th>
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
@@ -74,13 +74,13 @@ print_r("$local_username");
                   </thead>
                   <tbody>
                     <?php 
-                    $query1 = "select * from videotips_suscription_payments where active = 'Yes' and username ='$local_username'";
+                    $query1 = "select * from videotips_suscription_payments where active = '1' and username ='$local_username'";
                     $result_links = mysqli_query($conn,$query1);
                     while($links = mysqli_fetch_array($result_links)) { ?>
                     <tr>
                       <td align="center"><?php echo $links['username']?></td>
                       <td align="center"><?php echo $links['categoriescounts'] ?></td>
-                      <td align="center"><?php echo $links['currentpaid'] ?></td>
+                      <td align="center"><?php echo $links['currentdate'] ?></td>
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
                       <td align="center"><?php echo $links['suscriptiondate'] ?></td>
                       <td align="center"><?php echo $links['ServicePayed'] ?></td>
