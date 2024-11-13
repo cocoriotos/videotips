@@ -7,6 +7,7 @@ include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
 include "SessionTimeOut.php";
+print_r("$local_username");
 ?>
 <header>
     <script src="copynumber.js"></script>
