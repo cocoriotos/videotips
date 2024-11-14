@@ -62,15 +62,15 @@ include "SessionTimeOut.php";
 
               <table id="autosearch" class="display" font color="back">
                   <thead id="tableswhite">
-                  <center><tr>
-                    <th>Usuario</th>
-                    <th>Total SubCategorías</th>
+                  <tr>
+                    <th >Usuario</th>
+                    <th align="center">Total SubCategorías</th>
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
                     <th>Servicio a Pagar</th>
                     <th>Descargar Documento</th>
-                  </tr></center>
+                  </tr>
                   </thead>
                   <tbody>
                     <?php 
