@@ -1,12 +1,12 @@
 function ToClipboard(text) {
-    // Crear un elemento textarea temporal para almacenar el texto
-    const tempTextarea = document.createElement("textarea");
-    tempTextarea.value = text;
-    document.body.appendChild(tempTextarea);
-    // Seleccionar y copiar el texto
-    tempTextarea.select();
-    document.execCommand("copy");
-    // Eliminar el elemento temporal
-    document.body.removeChild(tempTextarea);
-    alert("¡Enlace copiado al portapapeles!");
+    // Usar la nueva API de clipboard
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert("¡Enlace copiado al portapapeles!");
+        })
+        .catch(err => {
+            console.error("Error al copiar al portapapeles: ", err);
+            alert("Hubo un error al copiar el enlace.");
+        });
 }
+
