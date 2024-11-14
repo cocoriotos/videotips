@@ -88,8 +88,9 @@ include "SessionTimeOut.php";
                     </tr>
                     <?php }?>
                   <tbody>
-                  <center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>
                 </table>
+                <br>
+                <center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>
         </div>
   </div>
 </body>
