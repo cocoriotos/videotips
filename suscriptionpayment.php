@@ -68,7 +68,7 @@ include "SessionTimeOut.php";
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
                     <th>Servicio a Pagar</th>
-                    <th>Cargar Documento PDF</th>
+                    <th>Descargar Documento</th>
                   </tr>
                   </thead>
                   <tbody>
