@@ -19,7 +19,7 @@ if (isset($_SESSION['timeout_message'])) {
 ?>
 <head>	
 	<script src="head.js" defer></script>	
-	<script src="copytoclipboard.js" defer></script>
+	<script src="copyToclipboard.js" defer></script>
 	<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <body id="bodyadminmodule">
