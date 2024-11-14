@@ -89,7 +89,7 @@ if (isset($_SESSION['timeout_message'])) {
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+								<td align="center"></a><button class="fas fa-copy" onclick="copyToclipboard('<?php echo $links['videolink']; ?>')"></button></td>
 								</td>
 							</tr>
 							<?php }?>
