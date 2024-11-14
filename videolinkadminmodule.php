@@ -11,7 +11,7 @@ include "SessionTimeOut.php";
 ?>
 <head>	
 	<script src="head.js" defer></script>	
-	<script src="categorytoclipboard.js" defer></script>
+	<script src="Linktoclipboard.js" defer></script>
 	<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <body id="bodyadminmodule">
