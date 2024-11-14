@@ -62,7 +62,7 @@ include "SessionTimeOut.php";
 
               <table id="autosearch" class="display" font color="back">
                   <thead id="tableswhite">
-                  <tr>
+                  <center><tr>
                     <th>Usuario</th>
                     <th>Total SubCategorías</th>
                     <th>Fecha Actual</th>
@@ -70,7 +70,7 @@ include "SessionTimeOut.php";
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
                     <th>Servicio a Pagar</th>
                     <th>Descargar Documento</th>
-                  </tr>
+                  </tr></center>
                   </thead>
                   <tbody>
                     <?php 
