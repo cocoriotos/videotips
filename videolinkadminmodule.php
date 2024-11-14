@@ -8,18 +8,10 @@ include "db_connection1.php";
 $local_username=$_SESSION['email'];
 /*include "nobackpage.php";*/
 include "SessionTimeOut.php";
-if (isset($_SESSION['timeout_message'])) {
-    echo "<div style='color: red; font-size: 18px; text-align: center;'>";
-    echo $_SESSION['timeout_message']; // Mostrar el mensaje de inactividad
-    echo "</div>";
-
-    // Una vez mostrado el mensaje, eliminarlo de la sesión para no mostrarlo en futuras cargas
-    unset($_SESSION['timeout_message']);
-}
 ?>
 <head>	
 	<script src="head.js" defer></script>	
-	<script src="copyToclipboard.js" defer></script>
+	<script src="categorytoclipboard.js" defer></script>
 	<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <body id="bodyadminmodule">
@@ -89,7 +81,7 @@ if (isset($_SESSION['timeout_message'])) {
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<td align="center"></a><button class="fas fa-copy" onclick="ToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+								<td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
 								</td>
 							</tr>
 							<?php }?>
