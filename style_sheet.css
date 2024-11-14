@@ -377,6 +377,7 @@ form hr{
 #autosearch td, #autosearch th {
     word-wrap: break-word;
     max-width: 200px; /* Ajustar el valor a tus necesidades */
+	text-align: center;
 }
 
 /* Si deseas un efecto de ocultar el contenido largo con '...':
