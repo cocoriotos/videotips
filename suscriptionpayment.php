@@ -24,7 +24,7 @@ include "SessionTimeOut.php";
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Ventajas </p></center>
-                    <p> Gracias por haber usado gratuitamente por 7 días la biblioteca de Enlaces útiles la cuál te ayuda a: </p><br>
+                    <p> Gracias por haber usado la herramienta o la versión gratuita de 7 días la biblioteca de Enlaces útiles la cuál te ayuda a: </p><br>
                     <p> 1. Crear gratuitamente hasta 5 Subcategoorías para organizar tus enlaces</p>  
                     <p> 2. Etiquetar con una breve descripción del contenido para que puedas hacer las búsquedas más facilmente</p>
                     <p> 3. Tener todos tus enlaces importantes indistinto de cual plataforma sea y que la búsqueda la haces en un solo sitio</p>
@@ -57,7 +57,7 @@ include "SessionTimeOut.php";
 					<br>
 				<?php include("search.php") ?>
 				<div class="card card-body">
-				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
+				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Resúmen de tu estado de cuenta </strong></label></center>
 
               <table id="autosearch" class="display" font color="back">
                   <thead id="tableswhite">
@@ -88,6 +88,7 @@ include "SessionTimeOut.php";
                     </tr>
                     <?php }?>
                   <tbody>
+                  <center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>
                 </table>
         </div>
   </div>

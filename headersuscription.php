@@ -12,7 +12,7 @@ include "SessionTimeOut.php";*/
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 	        <div class="text-center">
                <input type="button" class="btn btn-success btn-block" value="Número Nequi: 3054293185" onclick="copiarNumero();">  
-               <input type="button" class="btn btn-success btn-block" value="Número Telefónico para Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
+               <input type="button" class="btn btn-success btn-block" value="Ir a Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
                 <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>	
   </nav></center>
