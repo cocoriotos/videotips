@@ -1,4 +1,4 @@
-function copyToClipboard(text) {
+function ToClipboard(text) {
     // Crear un elemento textarea temporal para almacenar el texto
     const tempTextarea = document.createElement("textarea");
     tempTextarea.value = text;
