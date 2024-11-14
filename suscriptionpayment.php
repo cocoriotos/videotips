@@ -7,7 +7,6 @@ include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
 include "SessionTimeOut.php";
-print_r("$local_username");
 ?>
 <header>
     <script src="copynumber.js"></script>
@@ -84,7 +83,7 @@ print_r("$local_username");
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
                       <td align="center"><?php echo $links['suscriptiondate'] ?></td>
                       <td align="center"><?php echo $links['ServicePayed'] ?></td>
-                      <td align="center"><?php echo $links['filepath'] ?>)"></td>
+                      <td align="center"><?php echo $links['filepath'] ?></td>
                       </td>
                     </tr>
                     <?php }?>
