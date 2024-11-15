@@ -15,10 +15,13 @@ include "SessionTimeOut.php";
 	<link rel="stylesheet" href="style_sheet.css"/>
 	<!--<script src="alertity.js" defer></script>
 	 JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+	<script src="Popper/popper.min.js"></script>
+	<script src="plugins/sweetalert/sweetalert.min.js"></script>
+	<script src="plugins/alertifyjs/alertify.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<!-- Default theme 
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 	<!-- Semantic UI theme -->
@@ -72,10 +75,10 @@ include "SessionTimeOut.php";
 								</div>
 
 								<br>
-								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
-								<!--<br>
-								<center><button type="button" class="btn btn-success" data-toggle="modal" data-target="#user">
-									<span class="glyphicon glyphicon-plus"></span>Adicionar  <i class="fa fa-user-plus"></button></center>-->
+								<!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
+								<br>-->
+								<center><button id="btnlinkadded" type="button" class="btn btn-success" data-toggle="modal" data-target="#user">
+									<span class="glyphicon glyphicon-plus"></span>Adicionar  <i class="fa fa-user-plus"></button></center>
 							</form>
 					</div>
 				</div>
