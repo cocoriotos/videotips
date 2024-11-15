@@ -4,6 +4,8 @@
 		  
 		  <script>
 			alert("Enlace Salvado Exitosamente");
+			alertify.success('Success message');
 		  </script>
 	</head>
 </html>
+
