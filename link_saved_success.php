@@ -16,7 +16,7 @@
 			alertify.success('Registro : ' + alertify.get('notifier','position'));*/
 
 			alertify.set('notifier','position', 'top-center');
-			alertify.success('Current position : ' + alertify.get('notifier','position'));
+			alertify.success('Elance Adicionado Satisfactoriamente'));
 		  </script>
 	</head>
 </html>
