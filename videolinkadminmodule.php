@@ -75,7 +75,7 @@ include "SessionTimeOut.php";
 								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
 								<br>
 								<center><button type="button" class="btn btn-success" data-toggle="modal" data-target="#user">
-									<span class="glyphicon glyphicon-plus"></span>Adicionar<i class="fa fa-user-plus"></button></center>
+									<span class="glyphicon glyphicon-plus"></span>Adicionar  <i class="fa fa-user-plus"></button></center>
 
 							</form>
 					</div>
