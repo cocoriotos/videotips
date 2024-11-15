@@ -13,7 +13,31 @@ include "SessionTimeOut.php";
 	<script src="head.js" defer></script>	
 	<script src="Linktoclipboard.js" defer></script>
 	<link rel="stylesheet" href="style_sheet.css"/>
+	<!--<script src="alertity.js" defer></script>
+	 JavaScript -->
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+	<!-- Default theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
+	<!-- Semantic UI theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.min.css"/>
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css"/>
+
+	<!-- 
+		RTL version
+	-->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.rtl.min.css"/>
+	<!-- Default theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.rtl.min.css"/>
+	<!-- Semantic UI theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.rtl.min.css"/>
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.rtl.min.css"/>
 </head>
+
 <body id="bodyadminmodule">
 		<div  class="container-fluid p-0" >
 			<div class="row justify-content-start">
@@ -49,6 +73,10 @@ include "SessionTimeOut.php";
 
 								<br>
 								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
+								<br>
+								<center><button type="button" class="btn btn-success" data-toggle="modal" data-target="#user">
+									<span class="glyphicon glyphicon-plus"></span>Adicionar<i class="fa fa-user-plus"></button></center>
+
 							</form>
 					</div>
 				</div>
@@ -92,6 +120,12 @@ include "SessionTimeOut.php";
 			</div>
 		</div>
 </body>
+	<script>
+		$(document).ready(function() {
+			$("#bodyadminmodule").load('bodyadminmodule.php');
+			
+		})
+	</script>
 <?php include ("footer.php")?>
 </html>
  
