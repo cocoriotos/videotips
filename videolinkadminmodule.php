@@ -103,7 +103,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			</div>
 			</div>
 		</div>
-		<?php	
+</body>
+<?php	
 		if ($savedlink == 1) {
 		?>
 		<html>
@@ -129,8 +130,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 		print_r($savedlink);
 		/*$savedlink=0;*/
 		?>
-</body>
-
 <?php include ("footer.php")?>
 </html>
  
