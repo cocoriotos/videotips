@@ -42,15 +42,13 @@
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 
   <script>
-    // Usamos jQuery para que funcione correctamente el click
-    $(document).ready(function() {
-      // Aseguramos que el botón esté listo para recibir el evento
-      $("#btnlinkadded").click(function() {
-        // Mostrar el mensaje de éxito en la parte superior central
-        alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
-      });
-    });
-  </script>
+  // Usamos jQuery para asegurarnos de que el documento esté listo
+  $(document).ready(function() {
+    // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+    alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
+  });
+</script>
+
 
   <!-- Estilos de alertify.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
