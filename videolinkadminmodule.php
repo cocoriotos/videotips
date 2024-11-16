@@ -75,9 +75,9 @@ include "SessionTimeOut.php";
 								</div>
 
 								<br>
-								<!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
-								<br>-->
-								<center><button id="btnlinkadded" type="button" type="submit" class="btn btn-success">Adicionar</button></center>
+								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
+								<!--<br>
+								<center><button id="btnlinkadded" type="button" type="submit" class="btn btn-success">Adicionar</button></center>-->
 							</form>
 					</div>
 				</div>
