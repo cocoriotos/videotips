@@ -21,24 +21,6 @@ include "SessionTimeOut.php";
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-	<!-- Default theme 
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
-	<!-- Semantic UI theme -->
-	<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.min.css"/>
-	<!-- Bootstrap theme -->
-	<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css"/>
-
-	<!-- 
-		RTL version
-	-->
-	<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.rtl.min.css"/>
-	<!-- Default theme -->
-	<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.rtl.min.css"/>
-	<!-- Semantic UI theme -->
-	<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.rtl.min.css"/>
-	<!-- Bootstrap theme -->
-	<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.rtl.min.css"/>-->
 </head>
 
 <body id="bodyadminmodule">
@@ -121,12 +103,35 @@ include "SessionTimeOut.php";
 			</div>
 		</div>
 </body>
-	<script>
-		$(document).ready(function() {
-			$("#bodyadminmodule").load('bodyadminmodule.php');
-			
-		})
-	</script>
+
+<?php 
+if ($savedlink == 1) {
+?>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Scripts de alertify.js -->
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+<script>
+  // Usamos jQuery para asegurarnos de que el documento esté listo
+  $(document).ready(function() {
+    // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+    alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
+  });
+</script>
+
+<!-- Estilos de alertify.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
+</head>
+</html>
+<?php 
+}
+$savedlink=0; 
+?>
+
 <?php include ("footer.php")?>
 </html>
  
