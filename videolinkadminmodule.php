@@ -30,9 +30,9 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 		</html>
 		<?php 
 		}
-		$savedlink=0; 
+		print_r($savedlink);
+		/*$savedlink=0;*/ 
 		?>
-?>
 
 <head>	
 	<script src="head.js" defer></script>	
