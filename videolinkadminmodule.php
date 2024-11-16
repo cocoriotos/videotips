@@ -2,36 +2,37 @@
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
 <html>
 <?php 
-session_start();
-include "header.php";
-include "db_connection1.php";
-$local_username=$_SESSION['email'];
-/*include "nobackpage.php";*/
-include "SessionTimeOut.php";
-if ($savedlink == 1) {
-	?>
-	<html>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	
-		<!-- Scripts de alertify.js -->
-		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+	session_start();
+	include "header.php";
+	include "db_connection1.php";
+	$local_username=$_SESSION['email'];
+	/*include "nobackpage.php";*/
+	include "SessionTimeOut.php";
+	if ($savedlink == 1) {
+		?>
+		<html>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		
-		<script>
-		// Usamos jQuery para asegurarnos de que el documento esté listo
-		$(document).ready(function() {
-			// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-			alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
-		});
-		</script>
-		
-		<!-- Estilos de alertify.js -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
-	</html>
-	<?php 
-	}
-	$savedlink=0; 
-    ?>
+			<!-- Scripts de alertify.js -->
+			<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+			
+			<script>
+			// Usamos jQuery para asegurarnos de que el documento esté listo
+			$(document).ready(function() {
+				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
+				alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
+			});
+			</script>
+			
+			<!-- Estilos de alertify.js -->
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
+		</html>
+		<?php 
+		}
+		$savedlink=0; 
+		?>
+?>
 
 <head>	
 	<script src="head.js" defer></script>	
@@ -44,11 +45,7 @@ if ($savedlink == 1) {
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-
-	
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
 </head>
 
 <body id="bodyadminmodule">
@@ -131,34 +128,6 @@ if ($savedlink == 1) {
 			</div>
 		</div>
 </body>
-
-<?php 
-if ($savedlink == 1) {
-?>
-<html>
-<head>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Scripts de alertify.js -->
-<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-
-<script>
-  // Usamos jQuery para asegurarnos de que el documento esté listo
-  $(document).ready(function() {
-    // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-    alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
-  });
-</script>
-
-<!-- Estilos de alertify.js -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
-</head>
-</html>
-<?php 
-}
-$savedlink=0; 
-?>
 
 <?php include ("footer.php")?>
 </html>
