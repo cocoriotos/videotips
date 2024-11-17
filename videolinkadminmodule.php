@@ -117,7 +117,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 </body>
 
 <?php
-if ($savedlink == 1) {
+/*if ($savedlink == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -139,7 +139,7 @@ if ($savedlink == 0){
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script style="font-size: 28X, text-color: white">
+    <script style="font-size: 28px, color: white">
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
             alertify.set("notifier", "position", "top-center");
@@ -147,8 +147,55 @@ if ($savedlink == 0){
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al adicionar el enlace, intente nuevamente", "error", 7);
         });
-    </script>';
+    </script>';*/
+
+
+if ($savedlink == 0){
+		echo '
+		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+	
+
+	<script>
+    $(document).ready(function() {
+        // Configurar la posición de las notificaciones a "top-center"
+        alertify.set("notifier", "position", "top-center");
+
+        // Mostrar el mensaje de éxito
+        alertify.notify("Hubo un problema al adicionar el enlace, intente nuevamente", "error", 7);
+
+        // Cambiar el estilo de las notificaciones después de mostrarlas
+        $(".ajs-message").css({
+            "font-size": "28px",  // Tamaño de fuente
+            "color": "white"      // Color de texto
+        });
+    });
+	</script>';
 	$_SESSION['savedlink'] = 0;
+}
+
+if ($savedlink == 1){
+	echo '
+	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+
+
+<script>
+$(document).ready(function() {
+	// Configurar la posición de las notificaciones a "top-center"
+	alertify.set("notifier", "position", "top-center");
+
+	// Mostrar el mensaje de éxito
+	alertify.notify("Enlace Adicionado Exitosamente", "error", 7);
+
+	// Cambiar el estilo de las notificaciones después de mostrarlas
+	$(".ajs-message").css({
+		"font-size": "28px",  // Tamaño de fuente
+		"color": "white"      // Color de texto
+	});
+});
+</script>';
+$_SESSION['savedlink'] = 0;
 }
 ?>
 
