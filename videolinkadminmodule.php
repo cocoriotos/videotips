@@ -196,7 +196,7 @@ $(document).ready(function() {
     	"overflow": "hidden",  // Asegura que el texto largo no haga scroll
     	"width": "100%",        // Ajusta el ancho si es necesario
 		"box-sizing": "border-box," // Incluye padding y border dentro del ancho total
-		"height": "40px",      // Altura ajustada para que no se vea muy grande
+		"height": "4000px",      // Altura ajustada para que no se vea muy grande
     	"resize": "none"       // Desactiva la capacidad de cambiar el tamaño del `textarea`
 	});
 });
