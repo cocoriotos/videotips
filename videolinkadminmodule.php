@@ -192,6 +192,9 @@ $(document).ready(function() {
 	$(".ajs-message").css({
 		"font-size": "28px",  // Tamaño de fuente
 		"color": "white"      // Color de texto
+		"white-space": "nowrap", // Evita el salto de línea
+    	"overflow": "hidden",  // Asegura que el texto largo no haga scroll
+    	"width": "100%"        // Ajusta el ancho si es necesario
 	});
 });
 </script>';
