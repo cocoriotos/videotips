@@ -8,7 +8,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$local_username=$_SESSION['email'];
 	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
-	print_r($savedlinks);
 ?>
 
 <head>	
@@ -27,6 +26,9 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 </head>
 
 <body id="bodyadminmodule">
+
+<?php print_r($savedlinks);?>
+
 		<div  class="container-fluid p-0" >
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
