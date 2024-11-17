@@ -4,10 +4,8 @@
 GLOBAL $global_username;
 GLOBAL $savedlink;
 GLOBAL $savedcatalog;
-$savedlink = 0; 
-$savedlinks =0;
-$savedcatalog = 0;
-    session_start();	
+session_start();
+$savedlink = $_SESSION[0]; 
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
 $local_username=$_SESSION['email'];/*10082024*/
