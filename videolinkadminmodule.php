@@ -110,12 +110,22 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 </body>
 <?php
 if ($savedlink > 0) {
-    echo "<script>
-        $(document).ready(function() {
-            alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
-        });
-    </script>";
-	/*$savedlink=0;*/
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Scripts de alertify.js -->
+  <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+  <script>
+    // Usamos jQuery para asegurarnos de que el documento esté listo
+    $(document).ready(function() {
+      // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+      alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
+    });
+  </script>
+
+  <!-- Estilos de alertify.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 }
 ?>
 
