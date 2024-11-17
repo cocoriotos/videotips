@@ -129,7 +129,7 @@ if ($savedlink > 0) {
             alertify.set("notifier", "position", "top-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace Adicionado Exitosamente", "success", 10);
+            alertify.notify("Enlace Adicionado Exitosamente", "success", 7);
         });
     </script>';
     $_SESSION['savedlink'] = 0;
