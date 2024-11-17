@@ -6,7 +6,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	include "header.php";
 	include "db_connection1.php";
 	$local_username=$_SESSION['email'];
-	$savedlink = $_SESSION['savedlinks'];
+	$savedlink = $_SESSION['savedlink'];
 	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
 ?>
@@ -32,6 +32,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 				<div class="col-md-12"> 
 					<div class="card card-body">
 					<?php echo '<div style="color: black;">'; print_r($savedlink); echo '</div>';?>
+					<?php echo '<div style="color: black;">'; print_r($local_username); echo '</div>';?>
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row">
