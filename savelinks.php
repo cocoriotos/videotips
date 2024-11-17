@@ -38,7 +38,7 @@ if ($is_active == 1) {
     
     if ($conn->query($query3) === TRUE) {
         
-        $savedlink++;
+        $_SESSION['savedlink']++;
         /* include ("link_saved_success.php");*/
         
         /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/
