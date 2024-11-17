@@ -77,7 +77,7 @@ $savedcatalog = $_SESSION['savedcatalog'];
 </body>
 
 <?php
-if ($savedcatalog > 0) {
+if ($savedcatalog == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -92,7 +92,9 @@ if ($savedcatalog > 0) {
         });
     </script>';
     $_SESSION['savedcatalog'] = 0;
-}else{
+}
+
+if ($savedcatalog == 2 ) {
 	echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -111,4 +113,3 @@ if ($savedcatalog > 0) {
 
 <?php include ("footer.php")?>
 </html>
- 
