@@ -139,7 +139,7 @@ if ($savedlink == 0){
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script>
+    <script style="font-size: 28X, text-color: white">
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
             alertify.set("notifier", "position", "top-center");
