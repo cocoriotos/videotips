@@ -48,13 +48,12 @@
                     $stmt = $conn->prepare("UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = ?");
                     $stmt->bind_param("s", $local_username);
                     $stmt->execute();
-                    $_SESSION['savedcatalog']++;
-                    include("subcategory_saved.php");
+                    $_SESSION['savedcatalog']=1;
                     header("refresh:0; url=addcategory.php");
                     exit();
 
                 } else {
-                    include("No_Subcategory_saved.php");
+                    $_SESSION['savedcatalog']=2;
                     header("refresh:0; url=addcategory.php");
                     exit();
                 }

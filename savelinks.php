@@ -38,17 +38,19 @@ if ($is_active == 1) {
     
     if ($conn->query($query3) === TRUE) {
         
-        $_SESSION['savedlink']++;
+        $_SESSION['savedlink']=1;
         /* include ("link_saved_success.php");*/
         
         /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/
         
     } else {
       /*echo "Valor de suscriptionactive: " . $is_active;*/
+      $_SESSION['savedlink']=2;
     }
 } else {
     /*echo "Valor de suscriptionactive: " . $is_active;*/
     include ("No_Suscription.php");
+    $_SESSION['savedlink']=0;
     /*echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";*/
 }
 

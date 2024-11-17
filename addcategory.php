@@ -108,6 +108,7 @@ if ($savedcatalog == 2 ) {
             alertify.notify("Hubo un problema al adicionar la subcategoría, intente nuevamente", "error", 7);
         });
     </script>';
+	$_SESSION['savedcatalog'] = 0;
 }
 ?>
 
