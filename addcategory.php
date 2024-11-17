@@ -91,7 +91,7 @@ if ($savedcatalog > 0) {
             alertify.notify("Subcategoría Adicionada Exitosamente", "success", 7);
         });
     </script>';
-    $_SESSION['savedlink'] = 0;
+    $_SESSION['savedcatalog'] = 0;
 }else{
 	echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
