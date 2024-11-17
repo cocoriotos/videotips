@@ -129,6 +129,7 @@ if ($savedlink > 0) {
         </script>
       </body>
     </html>';
+	$savedlink=0;
 }
 ?>
 
