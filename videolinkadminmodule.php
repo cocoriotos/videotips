@@ -27,7 +27,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 
 <body id="bodyadminmodule">
 
-<?php print_r($savedlink);?>
+<?php echo '<div style="color: white;">'; print_r($savedlink); echo '</div>';?>
 
 		<div  class="container-fluid p-0" >
 			<div class="row justify-content-start">
