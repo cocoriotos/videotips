@@ -9,7 +9,7 @@ $videolink = $_POST['videolink'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 $description = $_POST["description"];
-$savedlink = $_SESSION['savedlinks'];
+$savedlink = $_SESSION['savedlink'];
 
 
 // Verificar suscripción activa

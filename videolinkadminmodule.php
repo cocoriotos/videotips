@@ -31,7 +31,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
 					<div class="card card-body">
-					<?php echo '<div style="color: black;">'; print_r($savedlink); echo '</div>';?>
+					<?php echo '<div style="color: black;">'; print_r($savedlink); echo '</div>';?><br>
 					<?php echo '<div style="color: black;">'; print_r($local_username); echo '</div>';?>
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
