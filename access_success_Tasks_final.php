@@ -5,6 +5,7 @@ GLOBAL $global_username;
 GLOBAL $savedlink;
 GLOBAL $savedcatalog;
 $savedlink = 0; 
+$savedlinks =0;
 $savedcatalog = 0;
     session_start();	
 $global_username=$_POST['email'];
