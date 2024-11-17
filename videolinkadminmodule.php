@@ -8,6 +8,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$local_username=$_SESSION['email'];
 	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
+	print_r($savedlink);
 ?>
 
 <head>	
@@ -104,14 +105,9 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			</div>
 			</div>
 		</div>
-		<script>console.log("Antes de la pausa");setTimeout(function() {console.log("Después de 3 segundos");}, 3000); // Pausa de 3 segundos (3000 ms)</script>
 </body>
 
 <?php	
-
-
-
-	print_r($savedlink);
 	if ($savedlink == 1) {
 		?>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
