@@ -190,7 +190,7 @@ $(document).ready(function() {
 
 	// Cambiar el estilo de las notificaciones después de mostrarlas
 	$(".ajs-message").css({
-		"font-size": "28px",  // Tamaño de fuente
+		"font-size": "18px",  // Tamaño de fuente
 		"color": "white",      // Color de texto
 		"white-space": "nowrap", // Evita el salto de línea
     	"overflow": "hidden",  // Asegura que el texto largo no haga scroll
