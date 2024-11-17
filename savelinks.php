@@ -9,6 +9,7 @@ $videolink = $_POST['videolink'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 $description = $_POST["description"];
+$savedlink = $_SESSION['savedlinks'];
 
 
 // Verificar suscripción activa
@@ -37,7 +38,7 @@ if ($is_active == 1) {
     
     if ($conn->query($query3) === TRUE) {
         
-        $savedlink = 1;
+        $savedlink++;
         /* include ("link_saved_success.php");*/
         
         /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/

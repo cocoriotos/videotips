@@ -6,6 +6,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	include "header.php";
 	include "db_connection1.php";
 	$local_username=$_SESSION['email'];
+	$savedlink = $_SESSION['savedlinks'];
 	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
 ?>
@@ -106,6 +107,16 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			</div>
 		</div>
 </body>
+<?php
+if ($savedlink > 0) {
+    echo "<script>
+        $(document).ready(function() {
+            alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
+        });
+    </script>";
+}
+?>
+
 <?php include ("footer.php")?>
 </html>
 
