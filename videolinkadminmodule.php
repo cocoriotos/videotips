@@ -8,7 +8,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$local_username=$_SESSION['email'];
 	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
-	print_r($savedlink);
+	print_r("$savedlink");
 ?>
 
 <head>	
