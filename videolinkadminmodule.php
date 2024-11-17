@@ -133,6 +133,20 @@ if ($savedlink > 0) {
         });
     </script>';
     $_SESSION['savedlink'] = 0;
+}else{
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Hubo un problema al adicionar el enlace, intente nuevamente", "error", 7);
+        });
+    </script>';
 }
 ?>
 

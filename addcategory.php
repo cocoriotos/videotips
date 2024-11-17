@@ -5,7 +5,10 @@ session_start();
 include "headercategory.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
-include "nobackpage.php"; 
+$savedcatalog = $_SESSION['savedcatalog']; 
+/*include "nobackpage.php"; */
+
+
 /*include "SessionTimeOut.php";*/
 ?>
 <head>	
@@ -72,6 +75,40 @@ include "nobackpage.php";
     </div>
 </div>
 </body>
+
+<?php
+if ($savedcatalog > 0) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Subcategoría Adicionada Exitosamente", "success", 7);
+        });
+    </script>';
+    $_SESSION['savedlink'] = 0;
+}else{
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Hubo un problema al adicionar la subcategoría, intente nuevamente", "error", 7);
+        });
+    </script>';
+}
+?>
+
 <?php include ("footer.php")?>
 </html>
  

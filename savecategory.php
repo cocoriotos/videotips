@@ -5,6 +5,7 @@
             $local_username = $_SESSION['email'];
             $maincategory = $_POST["maincategory"];
             $category = $_POST["category"];
+            $savedcatalog = $_SESSION['savedcatalog'];
             
             // Uso de sentencias preparadas para obtener categorycounter
             $stmt = $conn->prepare("SELECT categorycounter FROM videotips_app_access_list WHERE username = ?");
@@ -47,6 +48,7 @@
                     $stmt = $conn->prepare("UPDATE videotips_app_access_list SET categorycounter = categorycounter + 1 WHERE username = ?");
                     $stmt->bind_param("s", $local_username);
                     $stmt->execute();
+                    $_SESSION['savedcatalog']++;
                     include("subcategory_saved.php");
                     header("refresh:0; url=addcategory.php");
                     exit();
