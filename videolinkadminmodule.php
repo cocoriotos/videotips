@@ -124,7 +124,7 @@ if ($savedlink > 0) {
           // Usamos jQuery para asegurarnos de que el documento esté listo
           $(document).ready(function() {
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace Adicionado Exitosamente", "success", 5);
+            alertify.notify("Enlace Adicionado Exitosamente", "success", 10);
           });
         </script>
       </body>
