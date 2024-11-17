@@ -30,8 +30,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
 					<div class="card card-body">
-					<?php echo '<div style="color: black;">'; print_r($savedlink); echo '</div>';?><br>
-					<?php echo '<div style="color: black;">'; print_r($local_username); echo '</div>';?>
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row">
@@ -122,8 +120,14 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 <?php
 if ($savedlink > 0) {
     echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
     <script>
         $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Enlace Adicionado Exitosamente", "success", 10);
         });
@@ -131,6 +135,7 @@ if ($savedlink > 0) {
     $_SESSION['savedlink'] = 0;
 }
 ?>
+
 
 <?php include ("footer.php")?>
 </html>
