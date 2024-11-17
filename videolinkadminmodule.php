@@ -5,9 +5,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	session_start();
 	include "header.php";
 	include "db_connection1.php";
-	$local_username=$_SESSION['email'];
+	$local_username = $_SESSION['email'];
 	$savedlink = $_SESSION['savedlink'];
-	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
 ?>
 
@@ -15,15 +14,15 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<script src="head.js" defer></script>	
 	<script src="Linktoclipboard.js" defer></script>
 	<link rel="stylesheet" href="style_sheet.css"/>
-	<!--<script src="alertity.js" defer></script>
-	 JavaScript -->
-
 	<script src="Popper/popper.min.js"></script>
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
 	<script src="link_saved_success.js"></script>
+	<!-- Agregar los estilos de Alertify correctamente -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
 
 <body id="bodyadminmodule">
@@ -45,13 +44,27 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									<!-- Categoría -->
 									<div class="form-group col-md-3">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory"><?php $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 												$result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set->fetch_assoc()) { $maincategory = $rows['maincategory']; echo "<option value='$maincategory'>$maincategory</option>";}?></select>
+										<select class="form-control" name="maincategory"><?php 
+											$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
+											$result_set = mysqli_query($conn, $SQLSELECT); 
+											while ($rows = $result_set->fetch_assoc()) { 
+												$maincategory = $rows['maincategory']; 
+												echo "<option value='$maincategory'>$maincategory</option>";
+											}
+										?></select>
 									</div>
 
 									<!-- Subcategoría -->
 									<div class="form-group col-md-3">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
-										<select class="form-control" name="category"><?php $SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; $result_set = mysqli_query($conn, $SQLSELECT); while ($rows = $result_set->fetch_assoc()) { $category = $rows['category']; echo "<option value='$category'>$category</option>";}?></select>
+										<select class="form-control" name="category"><?php 
+											$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
+											$result_set = mysqli_query($conn, $SQLSELECT); 
+											while ($rows = $result_set->fetch_assoc()) { 
+												$category = $rows['category']; 
+												echo "<option value='$category'>$category</option>";
+											}
+										?></select>
 									</div>
 
 									<!-- Descripción -->
@@ -63,8 +76,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 
 								<br>
 								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
-								<!--<br>
-								<center><button id="btnlinkadded" type="button" type="submit" class="btn btn-success">Adicionar</button></center>-->
 							</form>
 					</div>
 				</div>
@@ -73,7 +84,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 				<?php include("search.php") ?>
 				<div class="card card-body">
 				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
-				<table id="autosearch" class="display" font color="back">
+				<table id="autosearch" class="display">
 						<thead id="tableswhite">
 						<tr>
 							<th>ID</th>
@@ -87,18 +98,17 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 						</thead>
 						<tbody>
 							<?php 
-							$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";/*10112024*/
+							$query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
 							$result_links = mysqli_query($conn,$query1);
 							while($links = mysqli_fetch_array($result_links)) { ?>
 							<tr>
-								<td align="center" onclick="Display"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-								<td align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></td>
+								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
+								<td align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<td align="center"></a><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
-								</td>
+								<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
 							</tr>
 							<?php }?>
 						<tbody>
@@ -108,33 +118,22 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			</div>
 		</div>
 </body>
+
 <?php
 if ($savedlink > 0) {
-    // Mostrar HTML y scripts solo si la condición es verdadera
     echo '
-    <html>
-      <head>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
-      </head>
-      <body>
-        <script>
-          // Usamos jQuery para asegurarnos de que el documento esté listo
-          $(document).ready(function() {
+    <script>
+        $(document).ready(function() {
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Enlace Adicionado Exitosamente", "success", 10);
-          });
-        </script>
-      </body>
-    </html>';
-	$_SESSION['savedlink']=0;
+        });
+    </script>';
+    $_SESSION['savedlink'] = 0;
 }
 ?>
 
-
 <?php include ("footer.php")?>
 </html>
+
 
  
