@@ -22,6 +22,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
+
 </head>
 
 <body id="bodyadminmodule">
@@ -103,17 +104,12 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			</div>
 			</div>
 		</div>
+		<script>console.log("Antes de la pausa");setTimeout(function() {console.log("Después de 3 segundos");}, 3000); // Pausa de 3 segundos (3000 ms)</script>
 </body>
 
 <?php	
 
-<script>
-  console.log("Antes de la pausa");
-  
-  setTimeout(function() {
-    console.log("Después de 3 segundos");
-  }, 30000); // Pausa de 3 segundos (3000 ms)
-</script>
+
 
 	print_r($savedlink);
 	if ($savedlink == 1) {
