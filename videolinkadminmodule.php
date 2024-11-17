@@ -115,7 +115,7 @@ if ($savedlink > 0) {
             alertify.notify('Enlace Adicionado Exitosamente', 'success', 5);
         });
     </script>";
-	$savedlink=0;
+	/*$savedlink=0;*/
 }
 ?>
 
