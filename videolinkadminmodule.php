@@ -19,10 +19,9 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
-	<script src="link_saved_success.js"></script>
-	<!-- Agregar los estilos de Alertify correctamente -->
+	<!-- Agregar los estilos de Alertify correctamente 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>-->
 </head>
 
 <body id="bodyadminmodule">
@@ -118,7 +117,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 </body>
 
 <?php
-if ($savedlink == 1) {
+if ($savedlink == 0) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
