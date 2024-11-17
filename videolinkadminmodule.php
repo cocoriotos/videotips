@@ -129,7 +129,7 @@ if ($savedlink > 0) {
         </script>
       </body>
     </html>';
-	$savedlink=0;
+	$_SESSION['savedlink']=0;
 }
 ?>
 
