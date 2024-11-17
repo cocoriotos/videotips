@@ -170,10 +170,10 @@ if ($savedlink == 0){
             "color": "white"      // Color de texto
 			"white-space": "nowrap", // Evita el salto de línea
 			"overflow": "hidden",  // Asegura que el texto largo no haga scroll
-			"width": "1000px",        // Ajusta el ancho si es necesario
+			"width": "100%",        // Ajusta el ancho si es necesario
 			"box-sizing": "border-box," // Incluye padding y border dentro del ancho total
-			"height": "4000px",      // Altura ajustada para que no se vea muy grande
-			"resize": "none"       // Desactiva la capacidad de cambiar el tamaño del `textarea`
+			"height": "40px",      // Altura ajustada para que no se vea muy grande
+			"resize": "none",       // Desactiva la capacidad de cambiar el tamaño 
         });
     });
 	</script>';
