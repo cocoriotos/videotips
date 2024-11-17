@@ -9,7 +9,7 @@ $videolink = $_POST['videolink'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 $description = $_POST["description"];
-$savedlink = $_POST[0];
+
 
 // Verificar suscripción activa
 $query = "SELECT suscriptionactive FROM videotips_app_access_list WHERE username = '$local_username'";
@@ -37,7 +37,7 @@ if ($is_active == 1) {
     
     if ($conn->query($query3) === TRUE) {
         
-        $savedlink == 1;
+        $savedlink = 1;
         /* include ("link_saved_success.php");*/
         
         /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/

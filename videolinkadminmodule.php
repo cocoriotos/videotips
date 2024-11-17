@@ -6,7 +6,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	include "header.php";
 	include "db_connection1.php";
 	$local_username=$_SESSION['email'];
-	$savedlink = $_SESSION[0];
 	/*include "nobackpage.php";*/
 	include "SessionTimeOut.php";
 ?>
