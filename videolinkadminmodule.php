@@ -13,6 +13,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$deletedcategory = $_SESSION['deletedcategory'];
 	$updatedcategory = $_SESSION['updatedcategory'];
 	include "SessionTimeOut.php";
+	print_r($deletedlink);
 ?>
 
 <head>	
@@ -194,6 +195,8 @@ if ($updatedlink == 2){
 $_SESSION['updatedlink'] = 0;
 }
 
+
+
 if ($deletedlink  == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -225,7 +228,7 @@ if ($deletedlink == 2){
             alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);
         });
 	</script>';
-$_SESSION['deletedlink '] = 0;
+$_SESSION['deletedlink'] = 0;
 }
 ?>
 
