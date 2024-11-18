@@ -3,6 +3,8 @@ include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
+$deletedlink = $_SESSION['deletedlink'];
+$updatedlink = $_SESSION['updatedlink'];
 /*include "nobackpage.php";*/
 include "SessionTimeOut.php";
 ?>
@@ -31,7 +33,7 @@ include "SessionTimeOut.php";
 									</div>
 									<div class="form-group col-md-2">
 										<label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace o URL</strong></label><br>	
-										<input type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value ="<?php echo $link['videolink'];?>"readonly></input><br>
+										<input type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value ="<?php echo $link['videolink'];?>"></input><br>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>
@@ -89,4 +91,84 @@ include "SessionTimeOut.php";
 	</div>
 </div>
 </body>
+
+<?php
+if ($updatedlink == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Enlace Actualizado Exitosamente", "success", 7);
+        });
+    </script>';
+    $_SESSION['updatedlink'] = 0;
+}
+
+if ($updatedlink == 2){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Hubo un problema al actualizar el enlace, intente nuevamente", "error", 7);
+        });
+	</script>';
+
+    
+$_SESSION['updatedlink'] = 0;
+}
+?>
+
+
+<?php
+if ($deletedlink == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Enlace Borrado Exitosamente", "success", 7);
+        });
+    </script>';
+    $_SESSION['deletedlink'] = 0;
+}
+
+if ($deletedlink == 2){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);
+        });
+	</script>';
+
+    
+$_SESSION['deletedlink'] = 0;
+}
+?>
+
+
 <?php include ("footer.php")?>
+</html>

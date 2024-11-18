@@ -117,7 +117,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 </body>
 
 <?php
-if ($savedlink == 0) {
+if ($savedlink == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>

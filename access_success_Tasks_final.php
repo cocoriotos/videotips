@@ -3,21 +3,31 @@
 
 GLOBAL $global_username;
 GLOBAL $savedlink;
+GLOBAL $deletedlink;
+GLOBAL $updatedlink;
 GLOBAL $savedcategory;
+GLOBAL $deletedcategory;
+GLOBAL $updatedcategory;
 GLOBAL $suscriptiondue;
 session_start();
 $_SESSION['savedcategory']=0;
 $_SESSION['savedlink']=0;
+$_SESSION['deletedcategory']=0;
+$_SESSION['deletedlink']=0;
+$_SESSION['updatedcategory']=0;
+$_SESSION['updatedlink']=0;
 $_SESSION['suscriptiondue']=0;
 $savedlink = $_SESSION['savedlink'];
+$deletedlink = $_SESSION['deletedlink'];
+$updatedlink = $_SESSION['updatedlink'];
 $savedcategory = $_SESSION['savedcategory'];
+$deletedcategory = $_SESSION['deletedcategory'];
+$updatedcategory = $_SESSION['updatedcategory'];
 $suscriptiondue = $_SESSION['suscriptiondue'];
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
 $local_username=$_SESSION['email'];/*10082024*/
 $password=$_POST['password'];
-
-
 
 	if($_POST)
  {
