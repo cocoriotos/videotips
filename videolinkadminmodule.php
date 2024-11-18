@@ -154,9 +154,7 @@ if ($savedlink == 2){
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al adicionar el enlace, intente nuevamente", "error", 7);
         });
-	</script>';
-
-    
+	</script>';   
 $_SESSION['savedlink'] = 0;
 }
 
@@ -195,7 +193,6 @@ $_SESSION['updatedlink'] = 0;
 }
 
 
-
 if ($deletedlink  == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -210,9 +207,10 @@ if ($deletedlink  == 1) {
             alertify.notify("Enlace Borrado Exitosamente", "success", 7);
         });
     </script>';
+	$_SESSION['deletedlink'] = 0;
 }
 
-if ($deletedlink == 0){
+if ($deletedlink == 2){
 	echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -226,10 +224,9 @@ if ($deletedlink == 0){
             alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);
         });
 	</script>';
-
+	$_SESSION['deletedlink'] = 0;
 }
 ?>
-
 
 <?php include ("footer.php")?>
 </html>
