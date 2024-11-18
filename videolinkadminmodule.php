@@ -7,6 +7,11 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	include "db_connection1.php";
 	$local_username = $_SESSION['email'];
 	$savedlink = $_SESSION['savedlink'];
+	$deletedlink = $_SESSION['deletedlink'];
+	$updatedlink = $_SESSION['updatedlink'];
+	$savedcategory = $_SESSION['savedcategory'];
+	$deletedcategory = $_SESSION['deletedcategory'];
+	$updatedcategory = $_SESSION['updatedcategory'];
 	include "SessionTimeOut.php";
 ?>
 
@@ -189,7 +194,7 @@ if ($updatedlink == 2){
 $_SESSION['updatedlink'] = 0;
 }
 
-if ($deletedlink == 1) {
+if ($deletedlink  == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -222,7 +227,7 @@ if ($deletedlink == 2){
 	</script>';
 
     
-$_SESSION['deletedlink'] = 0;
+$_SESSION['deletedlink '] = 0;
 }
 ?>
 
