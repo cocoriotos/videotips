@@ -134,7 +134,7 @@ if ($savedlink == 1) {
     $_SESSION['savedlink'] = 0;
 }
 
-if ($savedlink == 0){
+if ($savedlink == 2){
 	echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
