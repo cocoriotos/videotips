@@ -8,11 +8,11 @@ $deletedlink = $_SESSION['deletedlink'];
 $query = "delete from videotips_videotips where id='$id'";
 $result = mysqli_query($conn,$query);
 if ($result) {
-    $_SESSION['deletedlink'] = 1;
+  $_SESSION['deletedlink'] = 1;
     header("refresh:0; url=videolinkadminmodule.php");  
     exit();
   }else{
-$_SESSION['deletedlink'] = 2;
+    $_SESSION['deletedlink'] = 2;
 header("refresh:0; url=videolinkadminmodule.php");  
 exit();
 }
