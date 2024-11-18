@@ -40,7 +40,7 @@ include "SessionTimeOut.php";
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Condiciones </p></center>
                     <p> Para tener en cuenta: </p><br>
                     <p> 1. No incluir información sensitiva ni personales. No nos hacemos responsables del salvaguardar o uso de su información</p>
-                    <p> 2. Tratamiento de los datos bajo la modalidad de Abeas Data</p>
+                    <p> 2. Tratamiento de los datos bajo la modalidad de Habeas Data</p>
                     <p> 3. No nos responsabilizamos por información que incite a la violencia física, psicológica, delitos informáticos o cualquier manifestación delictiva</p>
                     <p> 4. El valor de la Suscripción es anual. 60.000 Pesos Colombianos COP</p>
                     <p> 5. El valor de la habilitación de Subcategorías más allá de 5 es vitalicia. 15.000 Pesos Colombianos COP</p>
