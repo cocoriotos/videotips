@@ -16,10 +16,12 @@ $resultado=$conn ->query($query);
 
 if ($resultado){
   $_SESSION['updatedlink'] = 1;
-  header("refresh:0; url=edit.php");
+  header("refresh:0; url=videolinkadminmodule.php");
+  exit();
     }
   else{
       $_SESSION['updatedlink'] = 2;
-      header("refresh:0; url=edit.php");
-      }
+      header("refresh:0; url=videolinkadminmodule.php");
+     exit(); 
+     }
 ?>
