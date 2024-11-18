@@ -151,7 +151,7 @@ if ($savedlink == 0){
 
     <script>
         $(".ajs-message").css({
-            "font-size": "18px",  // Tamaño de fuente
+            "font-size": "8px",  // Tamaño de fuente
             "color": "white",      // Color de texto
 			"white-space": "nowrap", // Evita el salto de línea
 			"overflow": "hidden",  // Asegura que el texto largo no haga scroll
