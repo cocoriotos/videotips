@@ -210,7 +210,6 @@ if ($deletedlink  == 1) {
             alertify.notify("Enlace Borrado Exitosamente", "success", 7);
         });
     </script>';
-   
 }
 
 if ($deletedlink == 2){
