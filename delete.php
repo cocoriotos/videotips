@@ -9,12 +9,12 @@ $query = "delete from videotips_videotips where id='$id'";
 $result = mysqli_query($conn,$query);
 if (!$result) {
     $_SESSION['deletedlink']=1;
-    header("refresh:0; url=videolinkadminmodule.php");  
+    header("refresh:0; url=edit.php");  
     exit();
   }else{
 $_SESSION['deletedlink']=2;
 include("LinkDeletedMessage.php");
-header("refresh:0; url=videolinkadminmodule.php");  
+header("refresh:0; url=edit.php");  
 exit();
 }
 ?>
