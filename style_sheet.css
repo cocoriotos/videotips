@@ -409,7 +409,8 @@ form hr{
 
 /* Centrando las notificaciones */
 .ajs-container {
-    top: 50% !important;          /* Centrado vertical */
+    font-size: 10px !important;
+	top: 50% !important;          /* Centrado vertical */
     left: 50% !important;         /* Centrado horizontal */
     transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
     position: absolute;
