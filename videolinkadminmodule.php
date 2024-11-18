@@ -189,9 +189,7 @@ if ($updatedlink == 2){
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al actualizar el enlace, intente nuevamente", "error", 7);
         });
-	</script>';
-
-    
+	</script>';   
 $_SESSION['updatedlink'] = 0;
 }
 
