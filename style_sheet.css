@@ -431,7 +431,9 @@ form hr{
 	font-size: 18px !important;
 	background-color: #f44336 !important;  /* Rojo para error */
     color: white !important;
-
+	display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
 }
 
 /* Personalización para las notificaciones de advertencia */
