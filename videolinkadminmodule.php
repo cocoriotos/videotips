@@ -20,14 +20,14 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<script src="head.js" defer></script>	
 	<script src="Linktoclipboard.js" defer></script>
 	<link rel="stylesheet" href="style_sheet.css"/>
-	<!-- <script src="Popper/popper.min.js"></script>
+	<script src="Popper/popper.min.js"></script>
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
-	Agregar los estilos de Alertify correctamente 
+	<!--Agregar los estilos de Alertify correctamente--> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
 
 <body id="bodyadminmodule">
@@ -193,7 +193,7 @@ $_SESSION['updatedlink'] = 0;
 }
 
 
-if ($deletedlink  == 1) {
+if ($deletedlink == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -207,7 +207,7 @@ if ($deletedlink  == 1) {
             alertify.notify("Enlace Borrado Exitosamente", "success", 7);
         });
     </script>';
-	$_SESSION['deletedlink'] = 0;
+    $_SESSION['deletedlink'] = 0;
 }
 
 if ($deletedlink == 2){
@@ -223,13 +223,11 @@ if ($deletedlink == 2){
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);
         });
-	</script>';
-	$_SESSION['deletedlink'] = 0;
+	</script>';   
+$_SESSION['deletedlink'] = 0;
 }
 ?>
 
-<?php include ("footer.php")?>
-</html>
 
 
  
