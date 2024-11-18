@@ -426,7 +426,7 @@ form hr{
 /* Personalización para las notificaciones de error */
 .ajs-error {
     text-align: center !important;
-	width: 500px !important;
+	width: 600px !important;
 	height: 20px !important;
 	font-size: 18px !important;
 	background-color: #f44336 !important;  /* Rojo para error */
