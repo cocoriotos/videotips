@@ -226,7 +226,7 @@ if ($deletedlink == 2){
             alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);
         });
 	</script>';
-$_SESSION['deletedlink'] = 0;
+
 }
 ?>
 
