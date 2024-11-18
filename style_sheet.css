@@ -428,7 +428,7 @@ form hr{
     text-align: center !important;
 	width: 600px !important;
 	height: 20px !important;
-	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
+	padding: 15px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 22px !important;
 	background-color: #f44336 !important;  /* Rojo para error */
     color: white !important;
