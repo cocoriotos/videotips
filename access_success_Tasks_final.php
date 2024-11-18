@@ -61,7 +61,7 @@ $password=$_POST['password'];
 				$result3=mysqli_query($conn, $query3);*/
 
 				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 0) {
-					include("FreeSuscriotionReached.php");
+					$_SESSION['suscriptiondue']=1;
 					header("refresh:0; url=suscriptionpayment.php");
 					exit();
 				  }else{	
