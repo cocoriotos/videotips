@@ -424,8 +424,10 @@ form hr{
 
 /* Personalización para las notificaciones de error */
 .ajs-error {
-    background-color: #f44336 !important;  /* Rojo para error */
+    font-size: 10px !important;
+	background-color: #f44336 !important;  /* Rojo para error */
     color: white !important;
+
 }
 
 /* Personalización para las notificaciones de advertencia */
