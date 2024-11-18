@@ -429,8 +429,8 @@ form hr{
 	width: 600px !important;
 	height: 20px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
-	font-size: 18px !important;
-	background-color: #f44336 !important;  /* Rojo para error */
+	font-size: 22px !important;
+	background-color:#ff7b61 !important;  /* Rojo para error */
     color: white !important;
 	display: inline-flex; /* Usamos inline flexbox */
     justify-content: center; /* Centra el texto horizontalmente */
