@@ -6,6 +6,7 @@ session_start();
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
+$suscriptiondue = $_SESSION['suscriptiondue'];
 include "SessionTimeOut.php";
 ?>
 <header>
@@ -95,3 +96,23 @@ include "SessionTimeOut.php";
         </div>
   </div>
 </body>
+
+<?php
+if ($suscriptiondue == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Ha alcanzado el límite de 7 días de Suscripción gratis alcanzado. Usar Nequi para la reactivación de suscripción", "warning", 7);
+        });
+    </script>';
+    $_SESSION['suscriptiondue'] = 0;
+}
+?>
+</html>

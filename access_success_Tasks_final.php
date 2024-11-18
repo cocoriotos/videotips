@@ -3,12 +3,15 @@
 
 GLOBAL $global_username;
 GLOBAL $savedlink;
-GLOBAL $savedcatalog;
+GLOBAL $savedcategory;
+GLOBAL $suscriptiondue;
 session_start();
-$_SESSION['savedcatalog']=0;
+$_SESSION['savedcategory']=0;
 $_SESSION['savedlink']=0;
+$_SESSION['suscriptiondue']=0;
 $savedlink = $_SESSION['savedlink'];
-$savedcatalog = $_SESSION['savedcatalog']; 
+$savedcategory = $_SESSION['savedcategory'];
+$suscriptiondue = $_SESSION['suscriptiondue'];
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
 $local_username=$_SESSION['email'];/*10082024*/

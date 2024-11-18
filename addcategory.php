@@ -5,7 +5,7 @@ session_start();
 include "headercategory.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
-$savedcatalog = $_SESSION['savedcatalog']; 
+$savedcatalog = $_SESSION['savedcategory']; 
 /*include "nobackpage.php"; */
 
 
@@ -77,7 +77,7 @@ $savedcatalog = $_SESSION['savedcatalog'];
 </body>
 
 <?php
-if ($savedcatalog == 1) {
+if ($savedcategory == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -91,10 +91,10 @@ if ($savedcatalog == 1) {
             alertify.notify("Subcategoría Adicionada Exitosamente", "success", 7);
         });
     </script>';
-    $_SESSION['savedcatalog'] = 0;
+    $_SESSION['savedcategory'] = 0;
 }
 
-if ($savedcatalog == 2 ) {
+if ($savedcategory == 2 ) {
 	echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -108,7 +108,7 @@ if ($savedcatalog == 2 ) {
             alertify.notify("Hubo un problema al adicionar la subcategoría, intente nuevamente", "error", 7);
         });
     </script>';
-	$_SESSION['savedcatalog'] = 0;
+	$_SESSION['savedcategory'] = 0;
 }
 ?>
 
