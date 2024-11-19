@@ -34,7 +34,7 @@ include "SessionTimeOut.php";
 					$link = mysqli_fetch_array($result_link);
 			 ?>
 		  	<form  text-align="center"  action="updatelinks.php" method="POST"> 
-				<?php print_r($updatedcategory);?>
+				<?php print_r($updatedlink);?>
 				<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
 					<center><div class="row">
 									<div class="form-group col-md-2">
