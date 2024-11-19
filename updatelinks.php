@@ -12,14 +12,14 @@ $updatedlink = $_SESSION['updatedlink'];
 $query="UPDATE videotips_videotips SET id = '$id', videolink = '$videolink', maincategory = '$maincategory', category = '$category', description = '$description', active = 'Yes' where id = '$id'";
 $resultado=$conn ->query($query);
 
-if ($resultado ===TRUE){
+if ($resultado){
   $_SESSION['updatedlink'] = 1;
-  header("refresh:0; url=videolinkadminmodule.php");
+  header("refresh:0; url=edit.php");
   exit();
     }
   else{
       $_SESSION['updatedlink'] = 2;
-      header("refresh:0; url=videolinkadminmodule.php");
+      header("refresh:0; url=edit.php");
      exit(); 
      }
 ?>
