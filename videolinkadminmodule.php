@@ -206,6 +206,8 @@ if ($sessiontimeoutreached  == 1){
             alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
         });
 	</script>';   
+	include("closetaskscon.php");
+	include("videotrackerauth.php");
 }
 
 ?>
