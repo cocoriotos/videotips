@@ -1,5 +1,6 @@
 <?php
 // Establecer el tiempo de inactividad en segundos (15 minutos)
+session_start();
 $timeout_duration = 60;
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 
