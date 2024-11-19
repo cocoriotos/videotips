@@ -8,6 +8,7 @@ $category=$_POST["category"];
 $updatedcategory = $_SESSION['updatedcategory'];
 
 
+
 $query="UPDATE videotips_viodetipscategory SET id = '$id', maincategory = '$maincategory', category = '$category' where id = '$id'";
 $resultado=$conn ->query($query);
 
@@ -19,5 +20,6 @@ if ($resultado){
   else{
     $_SESSION['updatedcategory']=2;
       header("refresh:0; url=addcategory.php");
+      exit();
       }
 ?>

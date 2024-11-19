@@ -10,6 +10,7 @@
             $FreeSubcateryReached = $_SESSION['FreeSubcateryReached'];
             
             
+            
             // Uso de sentencias preparadas para obtener categorycounter
             $stmt = $conn->prepare("SELECT categorycounter FROM videotips_app_access_list WHERE username = ?");
             $stmt->bind_param("s", $local_username);

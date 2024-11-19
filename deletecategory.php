@@ -10,12 +10,12 @@ $result = mysqli_query($conn,$query);
 
 
 
-if (!$result && !$result1) {
-  $_SESSION['deletedcategory']=2;
+if ($result) {
+  $_SESSION['deletedcategory']=1;
   header("refresh:0; url=addcategory.php");
   exit();   
   }
-$_SESSION['deletedcategory']=1;
+  $_SESSION['deletedcategory']=2;
 header("refresh:0; url=addcategory.php");
 exit();  
 ?>
