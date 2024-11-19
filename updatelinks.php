@@ -1,6 +1,6 @@
 <?php 
-include "db_connection1.php"; 
 session_start();
+include "db_connection1.php"; 
 
 $id = $_POST['id'];
 $videolink = $_POST['videolink'];
