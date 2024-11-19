@@ -13,7 +13,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$deletedcategory = $_SESSION['deletedcategory'];
 	$updatedcategory = $_SESSION['updatedcategory'];
 	include "SessionTimeOut.php";
-	print_r($deletedlink);
 ?>
 
 <head>	
@@ -36,7 +35,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 				<div class="col-md-12"> 
 					<div class="card card-body">
 							<form action="savelinks.php" method="POST">
-							<?php print_r("$deletedlink")?>
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row">
 									<!-- Enlace Útil -->
