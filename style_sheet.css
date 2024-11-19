@@ -421,7 +421,7 @@ form hr{
 .ajs-success {
 	text-align: center !important;
 	width: 700px !important;
-	height: 20px !important;
+	height: 30px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 22px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
@@ -436,7 +436,7 @@ form hr{
 .ajs-error {
     text-align: center !important;
 	width: 700px !important;
-	height: 20px !important;
+	height: 30px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 22px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
@@ -450,8 +450,8 @@ form hr{
 /* Personalización para las notificaciones de advertencia */
 .ajs-warning {
 	text-align: center !important;
-	width: 1700px !important;
-	height: 20px !important;
+	width: 700px !important;
+	height: 30px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 22px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
