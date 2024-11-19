@@ -12,7 +12,7 @@ $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 /*include "nobackpage.php"; */
 
 
-/*include "SessionTimeOut.php";*/
+include "SessionTimeOut.php";
 ?>
 <head>	
 		<script src="head.js" defer></script>		
