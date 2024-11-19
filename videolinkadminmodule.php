@@ -34,7 +34,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
 					<div class="card card-body">
-						<?php print_r($elapsed_time);?> 
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row">
@@ -206,8 +205,7 @@ if ($sessiontimeoutreached  == 1){
             alertify.notify("La sesion no tiene actividad por 15 minutos, debe iniciar sesión nuevamente", "warning", 10);
         });
 	</script>';   
-	include("closetaskscon.php");
-	include("videotrackerauth.php");
+	
 }
 
 ?>
