@@ -203,7 +203,7 @@ if ($sessiontimeoutreached  == 1){
             alertify.set("notifier", "position", "top-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
+            alertify.notify("La sesion no tiene actividad por 15 minutos, debe iniciar sesión nuevamente", "warning", 10);
         });
 	</script>';   
 	include("closetaskscon.php");
