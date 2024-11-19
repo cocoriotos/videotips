@@ -12,7 +12,7 @@ if ($elapsed_time > $timeout_duration) {
     if (isset($_SERVER['HTTP_REFERER'])) {
         $previous_page = $_SERVER['HTTP_REFERER'];
         header("Location: $previous_page");  // Redirige a la página anterior
-        sleep(10);    
+        sleep(5);    
         include("closetaskscon.php");
     } else {
         // Si no hay URL de la página anterior, redirigimos a una página por defecto
