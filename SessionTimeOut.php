@@ -13,6 +13,7 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
         // Si el tiempo de inactividad excede el límite, cerrar la sesión
         $_SESSION['sessiontimeoutreached'] = 1;
         header("refresh:0; url=videolinkadminmodule.php"); // Redirige a la página de autenticación
+        sleep(5);
         include("closetaskscon.php");
 	    /*include("videotrackerauth.php");*/
     }
