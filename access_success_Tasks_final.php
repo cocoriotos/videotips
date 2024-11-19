@@ -9,6 +9,7 @@ GLOBAL $savedcategory;
 GLOBAL $deletedcategory;
 GLOBAL $updatedcategory;
 GLOBAL $suscriptiondue;
+GLOBAL $useraccesssucced;
 session_start();
 $_SESSION['savedcategory']=0;
 $_SESSION['savedlink']=0;
@@ -17,6 +18,7 @@ $_SESSION['deletedlink']=0;
 $_SESSION['updatedcategory']=0;
 $_SESSION['updatedlink']=0;
 $_SESSION['suscriptiondue']=0;
+$_SESSION['useraccesssucced']=0;
 $savedlink = $_SESSION['savedlink'];
 $deletedlink = $_SESSION['deletedlink'];
 $updatedlink = $_SESSION['updatedlink'];
@@ -24,6 +26,7 @@ $savedcategory = $_SESSION['savedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
 $updatedcategory = $_SESSION['updatedcategory'];
 $suscriptiondue = $_SESSION['suscriptiondue'];
+$useraccesssucced = $_SESSION['useraccesssucced'];
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
 $local_username=$_SESSION['email'];/*10082024*/
@@ -77,12 +80,15 @@ $password=$_POST['password'];
 				  }else{	
 						if(mysqli_num_rows($result1)==true)
 							{	
-							include("videolinkadminmodule.php");
-							exit();	
+								header("refresh:0; url=videolinkadminmodule.php");
+								exit();
 							}
 							else 
 							{
-							include ("access_not_successtasksfinal.php");
+								$_SESSION['useraccesssucced'] =2;	
+								header("refresh:0; url=videotrackerauth.php");
+								include("closetaskscon.php");
+								exit();
 							}
 						}		
  }

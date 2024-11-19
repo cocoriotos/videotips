@@ -226,6 +226,25 @@ if ($deletedlink == 2){
 	</script>';   
 $_SESSION['deletedlink'] = 0;
 }
+
+$useraccesssucced = $_SESSION['useraccesssucced'];
+
+if ($useraccesssucced == 2){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opcióon de Solicitud de Acceso", "error", 7);
+        });
+	</script>';   
+$_SESSION['useraccesssucced'] = 0;
+}
 ?>
 
 
