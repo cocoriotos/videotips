@@ -34,6 +34,7 @@ include "SessionTimeOut.php";
 					$link = mysqli_fetch_array($result_link);
 			 ?>
 		  	<form  text-align="center"  action="updatelinks.php" method="POST"> 
+				<?php print_r("$updatedcategory");?>
 				<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
 					<center><div class="row">
 									<div class="form-group col-md-2">
@@ -148,7 +149,7 @@ if ($updatedlink == 2){
             alertify.notify("Hubo un problema al actualizar el enlace, intente nuevamente", "error", 7);
         });
 	</script>';   
-$_SESSION['updatedlink'] = 0;
+	$_SESSION['updatedlink'] = 0;
 }
 
 
@@ -187,5 +188,3 @@ $_SESSION['deletedlink'] = 0;
 }
 
 ?>
-<?php include ("footer.php")?>
-</html>
