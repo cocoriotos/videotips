@@ -85,9 +85,9 @@ $password=$_POST['password'];
 							}
 							else 
 							{
-								$_SESSION['useraccesssucced'] =2;	
-								header("refresh:0; url=videotrackerauth.php");
+								$_SESSION['useraccesssucced'] = 2;	
 								include("closetaskscon.php");
+								header("refresh:0; url=videotrackerauth.php");
 								exit();
 							}
 						}		

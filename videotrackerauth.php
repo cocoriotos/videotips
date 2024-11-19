@@ -67,7 +67,7 @@
 				alertify.set("notifier", "position", "top-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opcióon de Solicitud de Acceso", "warning", 7);
+				alertify.notify("Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opcióon de Solicitud de Acceso", "error", 7);
 			});
 		</script>';   
 	$_SESSION['useraccesssucced'] = 0;
