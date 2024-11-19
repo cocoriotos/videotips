@@ -7,6 +7,7 @@ include "db_connection1.php";
 $local_username=$_SESSION['email'];
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
+$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 
 /*include "nobackpage.php"; */
 
@@ -130,24 +131,6 @@ if ($duplicatedcategory == 1) {
     $_SESSION['duplicatedcategory'] = 0;
 }
 
-if ($duplicatedcategory == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones", "warning", 7);
-        });
-    </script>';
-    $_SESSION['duplicatedcategory'] = 0;
-}
-
-
 if ($FreeSubcateryReached == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -165,7 +148,21 @@ if ($FreeSubcateryReached == 1) {
     $_SESSION['FreeSubcateryReached'] = 0;
 }
 
-?>
+if ($sessiontimeoutreached  == 1){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
 
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
+        });
+	</script>';   
+}
+?>
 <?php include ("footer.php")?>
 </html>

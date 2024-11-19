@@ -13,6 +13,8 @@ GLOBAL $deletedcategory;
 GLOBAL $suscriptiondue;
 GLOBAL $suscriptioninactive;
 GLOBAL $FreeSubcateryReached;
+GLOBAL $sessiontimeoutreached;
+
 session_start();
 
 $_SESSION['savedlink']=0;
@@ -27,6 +29,7 @@ $_SESSION['deletedcategory']=0;
 $_SESSION['suscriptiondue']=0;
 $_SESSION['suscriptioninactive']=0;
 $_SESSION['FreeSubcateryReached']=0;
+$_SESSION['sessiontimeoutreached']=0;
 
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
@@ -42,6 +45,7 @@ $FreeSubcateryReached = $_SESSION['FreeSubcateryReached'];
 
 $suscriptiondue = $_SESSION['suscriptiondue'];
 $suscriptioninactive = $_SESSION['suscriptioninactive'];
+$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
@@ -96,7 +100,6 @@ $password=$_POST['password'];
 				  }else{	
 						if(mysqli_num_rows($result1)==true)
 							{	
-								
 								header("refresh:0; url=videolinkadminmodule.php");
 								exit();
 							}

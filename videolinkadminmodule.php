@@ -10,6 +10,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$duplicatedlink = $_SESSION['duplicatedlink'];
 	$updatedlink = $_SESSION['updatedlink'];
 	$deletedlink = $_SESSION['deletedlink'];
+	$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 	
 	include "SessionTimeOut.php";
 ?>
@@ -257,6 +258,23 @@ if ($suscriptioninactive == 1){
 	</script>';   
 $_SESSION['suscriptioninactive'] = 0;
 }
+
+if ($sessiontimeoutreached  == 1){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
+        });
+	</script>';   
+}
+
 ?>
 
 

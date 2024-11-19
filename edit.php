@@ -5,6 +5,7 @@ $id = $_GET['id'];
 $local_username=$_SESSION['email'];
 $deletedlink = $_SESSION['deletedlink'];
 $updatedlink = $_SESSION['updatedlink'];
+$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 /*include "nobackpage.php";*/
 include "SessionTimeOut.php";
 ?>
@@ -91,5 +92,22 @@ include "SessionTimeOut.php";
 	</div>
 </div>
 </body>
+<?php 
+if ($sessiontimeoutreached  == 1){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
+        });
+	</script>';   
+}
+?>
 <?php include ("footer.php")?>
 </html>

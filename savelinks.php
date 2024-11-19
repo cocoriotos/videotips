@@ -36,23 +36,19 @@ if ($is_active == 1) {
                 VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
     
     if ($conn->query($query3) === TRUE) {
-        
         $_SESSION['savedlink']=1;
+        header("refresh:0; url=videolinkadminmodule.php");
         exit();
-        /* include ("link_saved_success.php");*/
-        
-        /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/
-        
     } else {
-      /*echo "Valor de suscriptionactive: " . $is_active;*/
       $_SESSION['savedlink']=2;
+      header("refresh:0; url=videolinkadminmodule.php");  
       exit();
     }
 } else {
     /*echo "Valor de suscriptionactive: " . $is_active;*/
     $_SESSION['suscriptioninactive']=1;
     $_SESSION['savedlink']=0;
+    header("refresh:0; url=videolinkadminmodule.php");
     exit();
-    /*echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";*/
 }
 ?>

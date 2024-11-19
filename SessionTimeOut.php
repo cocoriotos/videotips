@@ -1,19 +1,24 @@
 <?php
 // Establecer el tiempo de inactividad en segundos (15 minutos)
-$timeout_duration = 900;
+$timeout_duration = 60;
+$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 
 // Verificar si la sesión está activa
-if (isset($_SESSION['LAST_ACTIVITY'])) {
-    // Calcular el tiempo de inactividad
-    $elapsed_time = time() - $_SESSION['LAST_ACTIVITY'];
 
-    if ($elapsed_time > $timeout_duration) {
-        // Si el tiempo de inactividad excede el límite, cerrar la sesión
-		include("closetaskscon.php");
-        $_SESSION['timeout_message'] = "Tu sesión ha estado inactiva durante un tiempo. Serás redirigido a la página de inicio de sesión.";
-        exit();
-        /*header("refresh:0; url=videotrackerauth.php"); // Redirige a la página de autenticación*/
+if ($elapsed_time > $timeout_duration) {
+    // Si el tiempo de inactividad excede el límite, cerrar la sesión
+    $_SESSION['sessiontimeoutreached'] = 1;
+    // Verificamos si la URL de la página anterior está disponible
+    if (isset($_SERVER['HTTP_REFERER'])) {
+        $previous_page = $_SERVER['HTTP_REFERER'];
+        header("Location: $previous_page");  // Redirige a la página anterior
+        sleep(10);    
+        include("closetaskscon.php");
+    } else {
+        // Si no hay URL de la página anterior, redirigimos a una página por defecto
+        header("Location: videotrackerauth.php");
     }
+    exit();
 }
 
 // Actualizar el tiempo de la última actividad

@@ -3,6 +3,9 @@ include "db_connection1.php";
 session_start();
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
+$updatedcategory = $_SESSION['updatedcategory'];
+$deletedcategory = $_SESSION['deletedcategory'];
+$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 /*include "nobackpage.php";*/
 include "SessionTimeOut.php";
 ?>
@@ -73,5 +76,103 @@ include "SessionTimeOut.php";
 	</div>
 </div>
 </body>
+
+<?php
+
+if ($updatedcategory == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Subcategoría Actualizada Exitosamente", "success", 7);
+        });
+    </script>';
+    $_SESSION['updatedcategory'] = 0;
+}
+
+if ($updatedcategory == 2){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Hubo un problema al actualizar la subcategoría, intente nuevamente", "warning", 7);
+        });
+	</script>';   
+$_SESSION['updatedcategory'] = 0;
+}
+
+
+if ($deletedcategory == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis", "success", 7);
+        });
+    </script>';
+    $_SESSION['deletedcategory'] = 0;
+}
+
+if ($deletedcategory == 2){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Hubo un problema al borrar subcategoría, intente nuevamente", "warning", 7);
+        });
+	</script>';   
+$_SESSION['deletedcategory'] = 0;
+}
+
+if ($sessiontimeoutreached  == 1){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
+        });
+	</script>';   
+}
+?>
+ 
+
+
+
+
+
+
+
+
+
 
 <?php include ("footer.php")?>
