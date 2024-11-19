@@ -8,6 +8,8 @@ $local_username=$_SESSION['email'];
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
+$updatedcategory = $_SESSION['updatedcategory'];
+$deletedcategory = $_SESSION['deletedcategory'];
 
 /*include "nobackpage.php"; */
 
