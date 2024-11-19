@@ -51,7 +51,7 @@ include "SessionTimeOut.php";
                     <p> 3. Al realizar el o los pagos llenar el formulario por casa tipo de producto adquirido incluyendo el nombre de usuario con el que se registró, recuerde que es su cuenta de correo.</p>
                     <p> 4. En el formulario al registrar los pagos indicar por separado si es de suscripción o de subcategorías</p>
                     <p> 5. El pago de categorías solo debe hacerse si tiene una suscripción activa para que sea efectivo</p>
-                    <p> 6. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com" o WhatsApp: +57 3054293185</p>
+                    <p> 6. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
 				        </div>
           </div>
           </center>
