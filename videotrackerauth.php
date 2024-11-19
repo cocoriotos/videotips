@@ -65,7 +65,7 @@
 	</body>
 
 	<?php 
-	if ($useraccesssucced == 0){
+	
 		echo '
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -79,7 +79,6 @@
 				alertify.notify("Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opcióon de Solicitud de Acceso", "error", 7);
 			});
 		</script>';   
-	$_SESSION['useraccesssucced'] = 0;
-	}
+	
 	?>
 </html>
