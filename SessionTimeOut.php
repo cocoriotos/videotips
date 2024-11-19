@@ -14,7 +14,7 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
         $_SESSION['sessiontimeoutreached'] = 1;
         header("refresh:0; url=videolinkadminmodule.php"); // Redirige a la página de autenticación
         include("closetaskscon.php");
-	    include("videotrackerauth.php");
+	include("videotrackerauth.php");
     }
 }
 
