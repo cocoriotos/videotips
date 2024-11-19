@@ -7,11 +7,10 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	include "db_connection1.php";
 	$local_username = $_SESSION['email'];
 	$savedlink = $_SESSION['savedlink'];
-	$deletedlink = $_SESSION['deletedlink'];
+	$duplicatedlink = $_SESSION['duplicatedlink'];
 	$updatedlink = $_SESSION['updatedlink'];
-	$savedcategory = $_SESSION['savedcategory'];
-	$deletedcategory = $_SESSION['deletedcategory'];
-	$updatedcategory = $_SESSION['updatedcategory'];
+	$deletedlink = $_SESSION['deletedlink'];
+	
 	include "SessionTimeOut.php";
 ?>
 
@@ -223,6 +222,40 @@ if ($deletedlink == 2){
         });
 	</script>';   
 $_SESSION['deletedlink'] = 0;
+}
+
+if ($duplicatedlink == 1){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Enlace duplicado, usar otro", "error", 7);
+        });
+	</script>';   
+$_SESSION['duplicatedlink'] = 0;
+}
+
+if ($suscriptioninactive == 1){
+	echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Suscripción inactiva. Se sugiere renovalrla", "error", 7);
+        });
+	</script>';   
+$_SESSION['suscriptioninactive'] = 0;
 }
 ?>
 

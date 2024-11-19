@@ -10,6 +10,8 @@ $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
 $description = $_POST["description"];
 $savedlink = $_SESSION['savedlink'];
+$duplicatedlink = $_SESSION['duplicatedlink'];
+$suscriptioninactive = $_SESSION['suscriptioninactive'];
 
 
 // Verificar suscripción activa
@@ -23,10 +25,7 @@ $query1 = "SELECT * FROM videotips_videotips WHERE videolink = '$videolink' AND 
 $urlduplicated = $conn->query($query1);
 
 if ($urlduplicated->num_rows > 0) { 
-    
-    include ("link_duplicated.php");
-    /*echo "<h4>Enlace duplicado, usar otro</h4>";*/
-    
+    $_SESSION['duplicatedlink'] = 1;
     header("refresh:0; url=videolinkadminmodule.php");
     exit();
 } 
@@ -39,6 +38,7 @@ if ($is_active == 1) {
     if ($conn->query($query3) === TRUE) {
         
         $_SESSION['savedlink']=1;
+        exit();
         /* include ("link_saved_success.php");*/
         
         /*echo "<h4>Enlace Salvado Exitosamente</h4>";*/
@@ -46,14 +46,13 @@ if ($is_active == 1) {
     } else {
       /*echo "Valor de suscriptionactive: " . $is_active;*/
       $_SESSION['savedlink']=2;
+      exit();
     }
 } else {
     /*echo "Valor de suscriptionactive: " . $is_active;*/
-    include ("No_Suscription.php");
+    $_SESSION['suscriptioninactive']=1;
     $_SESSION['savedlink']=0;
+    exit();
     /*echo "<h4>Suscripción inactiva. Por favor, renueva tu suscripción.</h4>";*/
 }
-
-header("refresh:0; url=videolinkadminmodule.php");
-exit();
 ?>

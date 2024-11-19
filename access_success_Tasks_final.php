@@ -3,27 +3,46 @@
 
 GLOBAL $global_username;
 GLOBAL $savedlink;
-GLOBAL $deletedlink;
+GLOBAL $duplicatedlink;
 GLOBAL $updatedlink;
+GLOBAL $deletedlink;
 GLOBAL $savedcategory;
-GLOBAL $deletedcategory;
+GLOBAL $duplicatedcategory;
 GLOBAL $updatedcategory;
+GLOBAL $deletedcategory;
 GLOBAL $suscriptiondue;
+GLOBAL $suscriptioninactive;
+GLOBAL $FreeSubcateryReached;
 session_start();
-$_SESSION['savedcategory']=0;
+
 $_SESSION['savedlink']=0;
-$_SESSION['deletedcategory']=0;
-$_SESSION['deletedlink']=0;
-$_SESSION['updatedcategory']=0;
+$_SESSION['duplicatedlink']=0;
 $_SESSION['updatedlink']=0;
+$_SESSION['deletedlink']=0;
+
+$_SESSION['savedcategory']=0;
+$_SESSION['duplicatedcategory'];
+$_SESSION['updatedcategory']=0;
+$_SESSION['deletedcategory']=0;
 $_SESSION['suscriptiondue']=0;
+$_SESSION['suscriptioninactive']=0;
+$_SESSION['FreeSubcateryReached']=0;
+
 $savedlink = $_SESSION['savedlink'];
-$deletedlink = $_SESSION['deletedlink'];
+$duplicatedlink = $_SESSION['duplicatedlink'];
 $updatedlink = $_SESSION['updatedlink'];
+$deletedlink = $_SESSION['deletedlink'];
+
+
 $savedcategory = $_SESSION['savedcategory'];
-$deletedcategory = $_SESSION['deletedcategory'];
+$duplicatedcategory = $_SESSION['duplicatedcategory'];
 $updatedcategory = $_SESSION['updatedcategory'];
+$deletedcategory = $_SESSION['deletedcategory'];
+$FreeSubcateryReached = $_SESSION['FreeSubcateryReached'];
+
 $suscriptiondue = $_SESSION['suscriptiondue'];
+$suscriptioninactive = $_SESSION['suscriptioninactive'];
+
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
 $local_username=$_SESSION['email'];/*10082024*/

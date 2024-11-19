@@ -5,7 +5,9 @@ session_start();
 include "headercategory.php";
 include "db_connection1.php";
 $local_username=$_SESSION['email'];
-$savedcatalog = $_SESSION['savedcategory']; 
+$savedcategory = $_SESSION['savedcategory'];
+$duplicatedcategory = $_SESSION['duplicatedcategory'];
+
 /*include "nobackpage.php"; */
 
 
@@ -110,6 +112,59 @@ if ($savedcategory == 2 ) {
     </script>';
 	$_SESSION['savedcategory'] = 0;
 }
+
+if ($duplicatedcategory == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Subcategoría duplicada, usar otra", "error", 7);
+        });
+    </script>';
+    $_SESSION['duplicatedcategory'] = 0;
+}
+
+if ($duplicatedcategory == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones", "warning", 7);
+        });
+    </script>';
+    $_SESSION['duplicatedcategory'] = 0;
+}
+
+
+if ($FreeSubcateryReached == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones", "warning", 7);
+        });
+    </script>';
+    $_SESSION['FreeSubcateryReached'] = 0;
+}
+
 ?>
 
 <?php include ("footer.php")?>
