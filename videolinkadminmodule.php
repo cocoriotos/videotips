@@ -254,7 +254,7 @@ if ($deletedlink == 1) {
             alertify.set("notifier", "position", "top-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace Borrado Exitosamente", "warning", 7);
+            alertify.notify("Enlace Borrado Exitosamente", "success", 7);
         });
     </script>';
     $_SESSION['deletedlink'] = 0;
