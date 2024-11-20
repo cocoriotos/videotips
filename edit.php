@@ -24,7 +24,7 @@ include "SessionTimeOut.php";
 </head>
 
 <body id="bodyadminmodule">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br>
 <div class="container-fluid p-0">
 	<div class="row justify-content-start">
 			<div class="col-md-12">
@@ -100,6 +100,7 @@ include "SessionTimeOut.php";
 		</div>
 	</div>
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <?php 
 if ($sessiontimeoutreached  == 1){
