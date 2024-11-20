@@ -23,8 +23,7 @@ include "SessionTimeOut.php";
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
 
-<body id="bodyadminmodule">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<body id="bodyadminmodule">	
 <div class="container-fluid p-0">
 	<div class="row justify-content-start">
 			<div class="col-md-12">
@@ -100,6 +99,7 @@ include "SessionTimeOut.php";
 		</div>
 	</div>
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <?php 
 if ($sessiontimeoutreached  == 1){
