@@ -12,7 +12,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$deletedlink = $_SESSION['deletedlink'];
 	$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 	$copytoclipboard = $_SESSION['copytoclipboard'];
-	$clipboardlink;
+	
 	
 	include "SessionTimeOut.php";
 ?>
@@ -127,7 +127,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 <?php
 
 
-if ($clipboardlink == 1) {
+if ($copytoclipboard == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -141,7 +141,7 @@ if ($clipboardlink == 1) {
             alertify.notify("¡Enlace copiado al portapapeles!", "success", 7);
         });
     </script>';
-    $clipboardlink = 0;
+    $copytoclipboard = 0;
 }
 
 if ($savedlink == 1) {

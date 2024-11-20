@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$copytoclipboard = $_SESSION['copytoclipboard'];
+$linktoclipboard = $_SESSION['linktoclipboard'];
 ?>
 
 <script>
@@ -15,9 +15,17 @@ function copyToClipboard(text) {
     // Eliminar el elemento temporal
     document.body.removeChild(tempTextarea);
     /*alert("¡Enlace copiado al portapapeles!");*/
+    //fetch('videolinkadminmodule.php', {
+      //  method: 'GET', // o 'POST' si lo necesitas
+        // Opcionalmente, puedes configurar otras opciones si es necesario (headers, etc.)
+   // })
+    //.catch(error => {
+        // Si ocurre algún error, no se muestra nada, pero lo podrías manejar si lo necesitas
+      //  console.error('Hubo un error al llamar el archivo PHP', error);
+   // });
 }
 </script>
 <?php
-$_SESSION['copytoclipboard']=1;
-include("videolinkadminmodule.php");
+$_SESSION['linktoclipboard']=1;
+//include("videolinkadminmodule.php");
 ?>
