@@ -165,7 +165,7 @@ if ($sessiontimeoutreached  == 1){
         });
 	</script>';   
 
-	if ($updatedcategory == 1) {
+	if ($updatedcategory == 0) {
 		echo '
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
