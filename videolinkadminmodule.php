@@ -12,6 +12,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$deletedlink = $_SESSION['deletedlink'];
 	$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 	$copytoclipboard = $_SESSION['copytoclipboard'];
+	$clipboardlink = 0;
 	
 	include "SessionTimeOut.php";
 ?>
@@ -111,8 +112,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<!--<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>-->
-								<td align="center"><button class="fas fa-copy" onclick="window.location.href='copyToClipboard.php?videolink=<?php echo urlencode($links['videolink']); ?>';"></button></td>
+								<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; $clipboardlink=1 ?>')"></button></td>
+								<!--<td align="center"><button class="fas fa-copy" onclick="window.location.href='copyToClipboard.php?videolink=<?php /*echo urlencode($links['videolink']);*/ ?>';"></button></td>-->
 							</tr>
 							<?php }?>
 						<tbody>
@@ -126,7 +127,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 <?php
 
 
-if ($copytoclipboard == 1) {
+if ($clipboardlink == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -140,7 +141,7 @@ if ($copytoclipboard == 1) {
             alertify.notify("¡Enlace copiado al portapapeles!", "success", 7);
         });
     </script>';
-    $_SESSION['copytoclipboard'] = 0;
+    $clipboardlink = 0;
 }
 
 if ($savedlink == 1) {
