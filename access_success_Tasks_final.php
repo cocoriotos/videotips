@@ -15,6 +15,13 @@ GLOBAL $suscriptioninactive;
 GLOBAL $FreeSubcateryReached;
 GLOBAL $sessiontimeoutreached;
 
+GLOBAL $copytoclipboard;
+GLOBAL $categorytoclipboard;
+GLOBAL $subcategorytoclipboard;
+GLOBAL $copynumber;
+GLOBAL $linktoclipboard;
+
+
 session_start();
 
 $_SESSION['savedlink']=0;
@@ -31,6 +38,12 @@ $_SESSION['suscriptioninactive']=0;
 $_SESSION['FreeSubcateryReached']=0;
 $_SESSION['sessiontimeoutreached']=0;
 
+$_SESSION['copytoclipboard']=0;
+$_SESSION['categorytoclipboard']=0;
+$_SESSION['subcategorytoclipboard']=0;
+$_SESSION['copynumber']=0;
+$_SESSION['linktoclipboard']=0;
+
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
 $updatedlink = $_SESSION['updatedlink'];
@@ -46,6 +59,13 @@ $FreeSubcateryReached = $_SESSION['FreeSubcateryReached'];
 $suscriptiondue = $_SESSION['suscriptiondue'];
 $suscriptioninactive = $_SESSION['suscriptioninactive'];
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
+
+
+$copytoclipboard = $_SESSION['copytoclipboard'];
+$categorytoclipboard = $_SESSION['categorytoclipboard'];
+$subcategorytoclipboard = $_SESSION['subcategorytoclipboard'];
+$copynumber = $_SESSION['copynumber'];
+$linktoclipboard = $_SESSION['linktoclipboard'];
 
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/

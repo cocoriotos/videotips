@@ -11,6 +11,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$updatedlink = $_SESSION['updatedlink'];
 	$deletedlink = $_SESSION['deletedlink'];
 	$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
+	$copytoclipboard = $_SESSION['copytoclipboard'];
 	
 	include "SessionTimeOut.php";
 ?>
@@ -110,7 +111,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+								<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; $_SESSION['copytoclipboard'] = 1; ?>')"></button></td>
 							</tr>
 							<?php }?>
 						<tbody>
@@ -122,6 +123,25 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 </body>
 
 <?php
+
+
+if ($copytoclipboard == 1) {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    
+    <script>
+        $(document).ready(function() {
+            // Configurar la posición de las notificaciones a "top-center"
+            alertify.set("notifier", "position", "top-center");
+
+            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
+            alertify.notify("¡Enlace copiado al portapapeles!", "success", 7);
+        });
+    </script>';
+    $_SESSION['copytoclipboard'] = 0;
+}
+
 if ($savedlink == 1) {
     echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
