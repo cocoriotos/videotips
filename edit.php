@@ -25,7 +25,7 @@ include "SessionTimeOut.php";
 
 <body id="bodyadminmodule">
 	<br><br><br>
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" style="height: 20em">
 	<div class="row justify-content-start">
 			<div class="col-md-12">
 			<div class="card card-body">
@@ -100,7 +100,7 @@ include "SessionTimeOut.php";
 		</div>
 	</div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </body>
 <?php 
 if ($sessiontimeoutreached  == 1){
