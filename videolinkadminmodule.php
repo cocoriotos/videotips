@@ -86,6 +86,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 					<br>
 				<?php include("search.php") ?>
 				<div class="card card-body">
+					<?php print_r("$copytoclipboard")?>
 				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<table id="autosearch" class="display">
 						<thead id="tableswhite">
