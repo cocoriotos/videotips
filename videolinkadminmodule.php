@@ -12,7 +12,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$deletedlink = $_SESSION['deletedlink'];
 	$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 	$copytoclipboard = $_SESSION['copytoclipboard'];
-	$clipboardlink = 0;
+	$clipboardlink;
 	
 	include "SessionTimeOut.php";
 ?>
