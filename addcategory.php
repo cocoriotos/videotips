@@ -166,7 +166,7 @@ if ($sessiontimeoutreached  == 1){
 	</script>';   
     }
 	
-	if ($updatedcategory == 0) {
+	if ($updatedcategory == 1) {
 		echo '
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -183,7 +183,7 @@ if ($sessiontimeoutreached  == 1){
 		$_SESSION['updatedcategory'] = 0;
 	}
 	
-	if ($updatedcategory == 0){
+	if ($updatedcategory == 2){
 		echo '
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -212,7 +212,7 @@ if ($sessiontimeoutreached  == 1){
 				alertify.set("notifier", "position", "top-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis", "success", 7);
+				alertify.notify("Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis", "warning", 7);
 			});
 		</script>';
 		$_SESSION['deletedcategory'] = 0;
