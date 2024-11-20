@@ -164,7 +164,8 @@ if ($sessiontimeoutreached  == 1){
             alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
         });
 	</script>';   
-
+    }
+	
 	if ($updatedcategory == 0) {
 		echo '
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -182,7 +183,7 @@ if ($sessiontimeoutreached  == 1){
 		$_SESSION['updatedcategory'] = 0;
 	}
 	
-	if ($updatedcategory == 2){
+	if ($updatedcategory == 0){
 		echo '
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
@@ -233,8 +234,7 @@ if ($sessiontimeoutreached  == 1){
 		</script>';   
 	$_SESSION['deletedcategory'] = 0;
 	}
-	
-}
+
 ?>
 <?php include ("footer.php")?>
 </html>

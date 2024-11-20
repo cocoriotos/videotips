@@ -12,7 +12,7 @@ $updatedcategory = $_SESSION['updatedcategory'];
 $query="UPDATE videotips_viodetipscategory SET id = '$id', maincategory = '$maincategory', category = '$category' where id = '$id'";
 $resultado=$conn ->query($query);
 
-if ($resultado){
+if ($resultado==TRUE){
   $_SESSION['updatedcategory']=1;
   header("refresh:0; url=addcategory.php");
   exit();
