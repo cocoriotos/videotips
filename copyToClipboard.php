@@ -1,3 +1,9 @@
+<?php 
+session_start();
+$copytoclipboard = $_SESSION['copytoclipboard'];
+?>
+
+<script>
 function copyToClipboard(text) {
     // Crear un elemento textarea temporal para almacenar el texto
     const tempTextarea = document.createElement("textarea");
@@ -10,4 +16,8 @@ function copyToClipboard(text) {
     document.body.removeChild(tempTextarea);
     /*alert("¡Enlace copiado al portapapeles!");*/
 }
-
+</script>
+<?php
+$_SESSION['copytoclipboard']=1;
+include("videolinkadminmodule.php");
+?>
