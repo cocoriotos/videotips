@@ -108,9 +108,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 							while($links = mysqli_fetch_array($result_links)) { ?>
 							<tr>
 								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-								<td align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
-								<td style="position: relative; width: 100%; padding-bottom: 56.25%; /* 16:9 aspect ratio */"><iframe src="<?php echo $links['videolink']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></td>
-								<!--<td><iframe width="100%" height="auto" src="<?php /*echo $links['videolink'];*/ ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
+								<!--<td align="left"><a href="<?php /*echo $links['videolink'];*/ ?>" target="_blank"><?php /*echo $links['videolink'];*/ ?></a></td>-->
+								<td><iframe width="360" height="115" src="<?php echo $links['videolink']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
