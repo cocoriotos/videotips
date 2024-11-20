@@ -112,7 +112,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
-								<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; $_SESSION['copytoclipboard'] = 1; ?>')"></button></td>
+								<td align="center"><button class="fas fa-copy" onclick="copyToClipboard('<?php echo $links['videolink']; $_SESSION['copytoclipboard'] = 1; include ("videolinkadminmodule.php"); ?>')"></button></td>
 							</tr>
 							<?php }?>
 						<tbody>
