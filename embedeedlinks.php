@@ -14,9 +14,6 @@ function convert_to_embed($url) {
     } elseif (preg_match('/youtube\.com\/.*[?&]v=([a-zA-Z0-9_-]+)/', $url, $matches)) {
         // Si es un enlace estándar de YouTube (youtube.com/watch?v=...)
         $videoId = $matches[1];
-    } else {
-        // Si no es un enlace válido de YouTube, se devuelve false o la URL original
-        return false;
     }
 
     // Retornar el enlace embebido
