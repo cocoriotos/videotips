@@ -107,8 +107,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 							$result_links = mysqli_query($conn,$query1);
 							while($links = mysqli_fetch_array($result_links)) { ?>
 							<tr>
-								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
-								<td align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
+								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}>"?></td>
+								<td align="left">< href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?>"</td>
 								<td><iframe width="360" height="115" src="<?php echo $links['videolink']; $videoUrl = $links['videolink']; $embedUrl = str_replace("https://www.youtube.com/watch?v=", "https://www.youtube.com/embed/", $videoUrl); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
