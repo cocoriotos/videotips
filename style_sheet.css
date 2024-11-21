@@ -322,8 +322,9 @@ ul.tab li a:focus, .active {
 
 #bodyadminmodule, #adminmodulecontainer  {
 	/*background-color: #D9F2D0;
-	background-color: #F5F5DC;fine*/
-	background-color: #A7C7E7;
+	background-color: #F5F5DC;fine
+	background-color: #A7C7E7;*/
+	background-color: #D3D3D3;
 	margin: 10px;
 	padding: 0%;
 }
