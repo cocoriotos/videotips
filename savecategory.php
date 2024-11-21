@@ -37,14 +37,14 @@
             exit();
           }else{
             // Verificación y lógica
-            if ($categorycounter > 4 && $extendcounterfeature == 0) {
+            if ($categorycounter > 999 && $extendcounterfeature == 0) {
               $_SESSION['FreeSubcateryReached']=1;
               header("refresh:0; url=addcategory.php");
               exit();
             }
             
             // Inserta la nueva categoría y maincategory si es posible
-            if ($categorycounter <= 4 || ($categorycounter > 4 && $extendcounterfeature == 1)) {
+            if ($categorycounter <= 999 || ($categorycounter > 999 && $extendcounterfeature == 1)) {
                 $stmt = $conn->prepare("INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)");
                 $stmt->bind_param("sss", $maincategory, $category, $local_username);
                 
