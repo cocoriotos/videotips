@@ -59,7 +59,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									</div>
 
 									<!-- Subcategoría -->
-									<div class="form-group col-md-4">
+									<div class="form-group col-md-3">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
 										<select class="form-control" name="category"><?php 
 											$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
