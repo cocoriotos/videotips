@@ -45,8 +45,8 @@ $_SESSION['categorytoclipboard']=0;
 $_SESSION['subcategorytoclipboard']=0;
 $_SESSION['copynumber']=0;
 $_SESSION['linktoclipboard']=0;
-$_SESSION['$videoUrl']="No Link";
-$_SESSION['$embedUrl']="No Link";
+$_SESSION['$videoUrl']="";
+$_SESSION['$embedUrl']="";
 
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
