@@ -18,7 +18,7 @@
 	</head>
 	<header>
 			<HR id="HR"/>	<!-- Header title  --> <!-- -->
-				<center><h1><font color="#E1EAF7">Biblioteca de Enlaces Útiles</font></h1></center>
+				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
 			<HR/>	
 	</header>	
 	  <body id="bodyadminmodule">
