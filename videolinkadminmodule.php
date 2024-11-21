@@ -42,13 +42,13 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									<!-- Enlace Útil -->
 									<div class="form-group col-md-3">
 										<label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace Útil</strong></label>
-										<textarea name="videolink" rows="2" class="form-control" placeholder="Enlace Útil"></textarea>
+										<textarea name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
 									</div>
 
 									<!-- Categoría -->
 									<div class="form-group col-md-3">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory" style="height 200px;" ><?php 
+										<select class="form-control" name="maincategory" ><?php 
 											$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
@@ -74,7 +74,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									<!-- Descripción -->
 									<div class="form-group col-md-3">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label>
-										<textarea name="description" rows="2" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea>
+										<textarea name="description" rows="1" class="form-control" placeholder="Descripción del Contenido del Enlace"></textarea>
 									</div>
 								</div>
 
