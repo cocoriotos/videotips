@@ -45,8 +45,9 @@ body {
 		font-size:80%;
 		font-family: arial;
 		/*background-image: url('img/background.jpg');
-		background-color: #032642;*/
-		background-color: #F5F5DC;
+		background-color: #032642;
+		background-color: #F5F5DC;*/
+		background-color: #ff9800;
 		background-size: cover;
 		background-position: center center ;
 		background-repeat: no-repeat;
