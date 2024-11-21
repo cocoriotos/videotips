@@ -47,7 +47,6 @@ body {
 		font-size:80%;
 		/*height:100vh;*/
 		font-family: arial;
-
 		/*background-image: url('img/background.jpg');*/
 		background-color: #032642;
 		background-size: cover;
@@ -130,12 +129,13 @@ body {
 	
 	#contact
 	{
-	background-color:#032642;
-	width:98%;
+		background-color:#032642;
+		width:98%;
 		font-family: arial;
 		border-radius:15px;
 		margin: 5px auto;
 		text-shadow: white 5px 5px 20px;
+		font-size:320%;
 	}
 	
 		
