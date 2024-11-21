@@ -41,7 +41,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<div class="row">
 									<!-- Enlace Útil -->
 									<div class="form-group col-md-3">
-										<label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace Útil</strong></label>
+										<label for="videolink" class="col-form-label" style="color: black; text-align: center;"><strong>Enlace Útil</strong></label>
 										<textarea name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
 									</div>
 
