@@ -105,7 +105,7 @@ body {
 	 header /* where  title is*/
 	 {
 		 /*height:100%;*/
-		 color: red ;
+		 color:#0c316d;
 		 background-color:#032642;
 		 width:98%;
 		 font-family: arial;
@@ -118,7 +118,7 @@ body {
 	 {
 		 /*float:bottom;*/
 		 /*height:100%;*/
-		 color:#0c316d;
+		 color:red;
 		 background-color:#032642;
 		 width:98%;
 		 font-family: arial;
