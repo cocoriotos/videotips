@@ -29,29 +29,25 @@ include "SessionTimeOut.php";
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Ventajas </p></center>
-                    <p> Gracias por haber usado la herramienta o la versión gratuita de 7 días la biblioteca de Enlaces útiles la cuál te ayuda a: </p><br>
-                    <p> 1. Crear gratuitamente hasta 5 Subcategoorías para organizar tus enlaces</p>  
-                    <p> 2. Etiquetar con una breve descripción del contenido para que puedas hacer las búsquedas más facilmente</p>
-                    <p> 3. Tener todos tus enlaces importantes indistinto de cual plataforma sea y que la búsqueda la haces en un solo sitio</p>
-                    <p> 4. La búsqueda de un Enlaces que normalmente lleva mucho timepo encontrarla, cuando tienes muchos contenidos grabados en la plataforma origen en los favoritos o hisstoricos, la harás en segundos</p>
-                    <p> 5. Abrir el enlace directamente para ver los contenidos</p>
-                    <p> 6. Copiar los Enlaces guardados para compartirlos</p>
+                    <p> Gracias por haber usado la herramienta o la versión gratuita de 7 días de la biblioteca de Contenidos Útiles la cuál te ayuda a: </p><br>
+                    <p> 1. Etiquetar con una breve descripción del contenido para que puedas hacer las búsquedas más facilmente</p>
+                    <p> 2. Tener todos tus enlaces importantes, indistinto de cual plataforma sea, donde la búsqueda la haces en un solo sitio</p>
+                    <p> 3. La búsqueda de un enlace en cualquier histórico o favoritos en las aplicaciones, que normalmente toma mucho tiempo encontrarla, la harás en segundos en tu bliblioteca porque las tendrás en un solo lugar y con un motor de búsqueda efectivo</p>
+                    <p> 4. Abrir el enlace directamente para ver los contenidos</p>
+                    <p> 5. Copiar los Enlaces guardados para compartirlos</p>
 					          <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Condiciones </p></center>
                     <p> Para tener en cuenta: </p><br>
-                    <p> 1. No incluir información sensitiva ni personales. No nos hacemos responsables del salvaguardar o uso de su información</p>
+                    <p> 1. No incluir información sensitiva ni personal. No nos hacemos responsables del salvaguardar o uso de su información por terceros</p>
                     <p> 2. Tratamiento de los datos bajo la modalidad de Habeas Data</p>
                     <p> 3. No nos responsabilizamos por información que incite a la violencia física, psicológica, delitos informáticos o cualquier manifestación delictiva</p>
-                    <p> 4. El valor de la Suscripción es anual. 60.000 Pesos Colombianos COP</p>
-                    <p> 5. El valor de la habilitación de Subcategorías más allá de 5 es vitalicia. 15.000 Pesos Colombianos COP</p>
+                    <p> 4. El valor de la Suscripción es de $60.000 Pesos Colombianos COP Anuales</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
                     <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
-                    <p> 3. Al realizar el o los pagos llenar el formulario por casa tipo de producto adquirido incluyendo el nombre de usuario con el que se registró, recuerde que es su cuenta de correo.</p>
-                    <p> 4. En el formulario al registrar los pagos indicar por separado si es de suscripción o de subcategorías</p>
-                    <p> 5. El pago de categorías solo debe hacerse si tiene una suscripción activa para que sea efectivo</p>
-                    <p> 6. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
+                    <p> 3. Al realizar el pago debe llenar el formulario por cada tipo de producto adquirido incluyendo el nombre de usuario con el que se registró que es su cuenta de correo.</p>
+                    <p> 4. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
 				        </div>
           </div>
           </center>
