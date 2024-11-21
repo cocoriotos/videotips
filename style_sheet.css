@@ -472,3 +472,8 @@ form hr{
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
 }
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
