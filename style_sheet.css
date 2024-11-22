@@ -432,7 +432,7 @@ form hr{
     position: absolute;
     z-index: 9999;                /* Asegura que la notificación quede encima de otros elementos */
 	width: 1700px !important;
-	height: 30px !important;
+	height: 3000px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 }
 
