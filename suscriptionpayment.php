@@ -100,7 +100,7 @@ include "SessionTimeOut.php";
                   <tbody>
                 </table>
                 <br>
-                <center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>
+                <!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>-->
         </div>
   </div>
 </body>
