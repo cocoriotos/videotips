@@ -33,7 +33,7 @@ include "SessionTimeOut.php";
             </div>
       <center><div class="col-xs-12 col-sm-12 column-custom-wrap">
                 <div class="column-custom">
-                    <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficioes de Uso de la Aplicación</h3>
+                    <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficios de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Ventajas </p></center>
@@ -100,7 +100,7 @@ include "SessionTimeOut.php";
                   <tbody>
                 </table>
                 <br>
-                <!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>-->
+                <center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>
         </div>
   </div>
 </body>
