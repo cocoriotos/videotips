@@ -342,6 +342,7 @@ ul.tab li a:focus, .active {
 
 #welcome {
 	font-size: 35px;
+	margin: 0%;
 }
 
 form hr{
@@ -418,20 +419,20 @@ form hr{
 /* Personalización de las notificaciones de Alertify */
 
 /* Aumentar el tamaño de la fuente en las notificaciones */
-/*.ajs-message {
+.ajs-message {
     font-size: 24px !important; /* Cambia el tamaño de la fuente */
-    /*font-weight: bold !important; /* Cambiar a negrita si lo deseas */
-/*}*/
+    font-weight: bold !important; /* Cambiar a negrita si lo deseas */
+}
 
 /* Centrando las notificaciones*/ 
-/*.ajs-container {
+.ajs-container {
     font-size: 28px !important;
 	top: 50% !important;          /* Centrado vertical */
-    /*left: 50% !important;         /* Centrado horizontal */
-    /*transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
-    /*position: absolute;
+    left: 50% !important;         /* Centrado horizontal */
+    transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
+    position: absolute;
     z-index: 9999;                /* Asegura que la notificación quede encima de otros elementos */
-/*}*/
+}
 
 /* Personalización para las notificaciones de éxito */
 .ajs-success {
