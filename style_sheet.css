@@ -467,9 +467,9 @@ form hr{
 .ajs-warning {
 	/*text-align: center !important;*/
 	width: 700px !important;
-	/*height: 30px !important;
+	height: 1700px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
-	font-size: 28px !important;
+	font-size: 24px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
     background-color: #ff9800 !important;  /* Naranja para advertencia */
     color: white !important;
