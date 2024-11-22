@@ -45,8 +45,8 @@ include "SessionTimeOut.php";
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
-                    <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
-                    <p> 3. Al realizar el pago debe llenar el formulario por cada tipo de producto adquirido incluyendo el nombre de usuario con el que se registró que es su cuenta de correo.</p>
+                    <p> 2. Tomar una imagen del pago realizado y convertirla a formato PDF</p>
+                    <p> 3. Enviar correo el archivo PDF o una imágen del pago realizado desde la cuenta de correo con la que se registró.</p>
                     <p> 4. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
 				        </div>
           </div>
