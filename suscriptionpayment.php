@@ -10,7 +10,7 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
 include "SessionTimeOut.php";
 ?>
 <head>
-<link rel="stylesheet" href="style_sheet.css"/>
+  <link rel="stylesheet" href="style_sheet.css"/>
 	<script src="Popper/popper.min.js"></script>
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
