@@ -93,7 +93,7 @@ include "SessionTimeOut.php";
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
                       <td align="center"><?php echo $links['suscriptiondate'] ?></td>
                       <td align="center"><?php echo $links['ServicePayed'] ?></td>
-                      <!--<td align="center"><?php echo $links['filepath'] ?></td>-->
+                      <!--<td align="center"><?php /*echo $links['filepath']*/ ?></td>-->
                       </td>
                     </tr>
                     <?php }?>
