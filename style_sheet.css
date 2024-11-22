@@ -337,7 +337,7 @@ ul.tab li a:focus, .active {
 #autosearch, #tableswhite {
 	background-color: white;
 	text-align: center;
-	overflow-x: auto;
+	overflow-x: scroll;
 }
 
 #welcome {
