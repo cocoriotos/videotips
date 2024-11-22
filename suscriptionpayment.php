@@ -9,6 +9,18 @@ $local_username=$_SESSION['email'];
 $suscriptiondue = $_SESSION['suscriptiondue'];
 include "SessionTimeOut.php";
 ?>
+<head>
+<link rel="stylesheet" href="style_sheet.css"/>
+	<script src="Popper/popper.min.js"></script>
+	<script src="plugins/sweetalert/sweetalert.min.js"></script>
+	<script src="plugins/alertifyjs/alertify.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
+	<!--Agregar los estilos de Alertify correctamente--> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
+</head>
+
 <header>
     <script src="copynumber.js"></script>
 </header>  	
@@ -60,8 +72,8 @@ include "SessionTimeOut.php";
               <table id="autosearch" class="display" font color="back">
                   <thead id="tableswhite">
                   <tr>
-                    <th >Usuario</th>
-                    <th align="center">Total SubCategorías</th>
+                    <th>Usuario</th>
+                    <th>Total SubCategorías</th>
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
