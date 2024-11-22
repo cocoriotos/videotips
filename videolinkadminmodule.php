@@ -211,7 +211,7 @@ if ($suscriptioninactive == 1){
             alertify.set("notifier", "position", "top-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Suscripción inactiva. Se sugiere renovalrla", "error", 7);
+            alertify.notify("Suscripción inactiva. Se sugiere renovarla", "error", 7);
         });
 	</script>';   
 $_SESSION['suscriptioninactive'] = 0;
