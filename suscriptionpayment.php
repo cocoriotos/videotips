@@ -117,7 +117,7 @@ if ($suscriptiondue == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-right");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Ha alcanzado el límite de 7 días de Suscripción gratis. Será redirigido a la opción de pago para la reactivación de la suscripción", "warning", 10);
