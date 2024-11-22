@@ -434,48 +434,48 @@ form hr{
 /*}*/
 
 /* Personalización para las notificaciones de éxito */
-/*.ajs-success {
+.ajs-success {
 	text-align: center !important;
 	width: 700px !important;
 	height: 30px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
-	/*font-size: 22px !important;
+	font-size: 22px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
-    /*background-color: #4CAF50 !important;  /* Verde para éxito */
-    /*color: white !important;
+    background-color: #4CAF50 !important;  /* Verde para éxito */
+    color: white !important;
 	display: inline-flex; /* Usamos inline flexbox */
-    /*justify-content: center; /* Centra el texto horizontalmente */
-    /*align-items: center; /* Centra el texto verticalmente */
-/*}
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
 
 /* Personalización para las notificaciones de error */
-/*.ajs-error {
+.ajs-error {
     text-align: center !important;
 	width: 700px !important;
 	height: 30px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
-/*	font-size: 22px !important;
+	font-size: 22px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
-/*	background-color: #f44336 !important;  /* Rojo para error */
-/*  color: white !important;
+	background-color: #f44336 !important;  /* Rojo para error */
+    color: white !important;
 	display: inline-flex; /* Usamos inline flexbox */
-/*    justify-content: center; /* Centra el texto horizontalmente */
- /*   align-items: center; /* Centra el texto verticalmente */
-/*}
+    justify-content: center; /* Centra el texto horizontalmente */
+   align-items: center; /* Centra el texto verticalmente */
+}
 
 /* Personalización para las notificaciones de advertencia */
 .ajs-warning {
-	/*text-align: center !important;*/
-	/*width: 700px !important;
+	text-align: center !important;
+	width: 700px !important;
 	height: 300px !important;
-	/*padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
+	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 24px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
     background-color: #ff9800 !important;  /* Naranja para advertencia */
     color: white !important;
-	/*display: inline-flex; /* Usamos inline flexbox */
-    /*justify-content: center; /* Centra el texto horizontalmente */
-    /*align-items: center; /* Centra el texto verticalmente */
+	display: inline-flex; /* Usamos inline flexbox */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
 }
 
 iframe {
