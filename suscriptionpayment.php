@@ -101,7 +101,7 @@ include "SessionTimeOut.php";
                 </table>
                 <br>
                 <center><a href="mailto:cocoriotos@hotmail.com?subject=Asunto%20del%20Correo&body=Hola,%20adjunto%20evidencia%20del%20pago%20de%20la%20suscripción%20a%20nombre%20de%20<?php echo urlencode($local_username); ?>.">        
-                <input type="button" class="btn btn-success btn-block" value="Enviar Constancia de Pago por correo"></a></center>
+                <input type="button" class="btn btn-success btn-block" value="Enviar Constancia de Pago por Correo"></a></center>
 
                 <!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>-->
         </div>

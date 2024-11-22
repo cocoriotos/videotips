@@ -48,7 +48,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									<!-- Categoría -->
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory" ><?php 
+										<select class="form-control" name="maincategory" id="maincategory" ><?php 
 											$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
@@ -61,7 +61,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									<!-- Subcategoría -->
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
-										<select class="form-control" name="category"><?php 
+										<select class="form-control" name="category" id="category"><?php 
 											$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
@@ -93,7 +93,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 						<tr>
 							<th>ID</th>
 							<th>Enlace</th>
-							<!--<th>Previsualización</th>-->
+							<th>Previsualización</th>
 							<th>Categoría</th>
 							<th>Subcategoría</th>
 							<th>Descripción</th>
@@ -109,8 +109,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 							<tr>
 								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
 								<td align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
-								<!--<?php /*$videoUrl = $links['videolink'];*/ ?>
-								<td><iframe width="100%" height="0" src="<?php /*include("embedeedlinks.php");*/ ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
+								<?php $videoUrl = $links['videolink']; ?>
+								<td><iframe width="100%" height="0" src="<?php include("embedeedlinks.php"); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
 								<td align="center"><?php echo $links['maincategory'] ?></td>
 								<td align="center"><?php echo $links['category'] ?></td>
 								<td align="left"><?php echo $links['description'] ?></td>
