@@ -424,17 +424,14 @@ form hr{
 /*}*/
 
 /* Centrando las notificaciones*/ 
-.ajs-container {
+/*.ajs-container {
     font-size: 28px !important;
 	top: 50% !important;          /* Centrado vertical */
-    left: 50% !important;         /* Centrado horizontal */
-    transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
-    position: absolute;
+    /*left: 50% !important;         /* Centrado horizontal */
+    /*transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
+    /*position: absolute;
     z-index: 9999;                /* Asegura que la notificación quede encima de otros elementos */
-	width: 1700px !important;
-	height: 3000px !important;
-	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
-}
+/*}*/
 
 /* Personalización para las notificaciones de éxito */
 /*.ajs-success {
@@ -467,19 +464,19 @@ form hr{
 /*}
 
 /* Personalización para las notificaciones de advertencia */
-/*.ajs-warning {
+.ajs-warning {
 	text-align: center !important;
 	width: 700px !important;
 	height: 30px !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
-/*	font-size: 22px !important;
+	font-size: 22px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
-/*  background-color: #ff9800 !important;  /* Naranja para advertencia */
-/*    color: white !important;
+    background-color: #ff9800 !important;  /* Naranja para advertencia */
+    color: white !important;
 	display: inline-flex; /* Usamos inline flexbox */
-/*    justify-content: center; /* Centra el texto horizontalmente */
-/*    align-items: center; /* Centra el texto verticalmente */
-/*}*/
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
 
 iframe {
     max-width: 100%;
