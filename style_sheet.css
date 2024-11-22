@@ -418,10 +418,10 @@ form hr{
 /* Personalización de las notificaciones de Alertify */
 
 /* Aumentar el tamaño de la fuente en las notificaciones */
-/*.ajs-message {
+.ajs-message {
     font-size: 24px !important; /* Cambia el tamaño de la fuente */
-  /*  font-weight: bold !important; /* Cambiar a negrita si lo deseas */
-/*}
+    font-weight: bold !important; /* Cambiar a negrita si lo deseas */
+}
 
 /* Centrando las notificaciones 
 .ajs-container {
