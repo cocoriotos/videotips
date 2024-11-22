@@ -339,10 +339,61 @@ ul.tab li a:focus, .active {
 	text-align: center;
 	overflow-x: scroll;
 }
+/************************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
 
+  nav {
+	width: 100%; /* El nav ocupa todo el ancho */
+	background-color: #333; /* Fondo oscuro */
+  }
+  
+  nav ul {
+	display: flex; /* Usamos flexbox para los elementos de la lista */
+	justify-content: center; /* Centra los enlaces horizontalmente */
+	list-style: none; /* Quitamos los puntos de la lista */
+  }
+  
+  nav ul li {
+	margin: 0 20px; /* Espaciado entre los elementos del menú */
+  }
+  
+  nav ul li a {
+	color: white; /* Color blanco para los enlaces */
+	text-decoration: none; /* Quitamos el subrayado */
+	font-size: 16px;
+	padding: 15px 20px; /* Espaciado interno para los enlaces */
+	display: block;
+  }
+  
+  /* Efecto hover para los enlaces */
+  nav ul li a:hover {
+	background-color: #555; /* Fondo más claro al pasar el ratón */
+	border-radius: 5px;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+	nav ul {
+	  flex-direction: column; /* En pantallas pequeñas, los enlaces se apilan verticalmente */
+	  align-items: center; /* Alineación centrada */
+	}
+  
+	nav ul li {
+	  margin: 10px 0; /* Espaciado entre elementos en vista vertical */
+	}
+  
+	nav ul li a {
+	  font-size: 18px; /* Aumentamos el tamaño de la fuente en pantallas pequeñas */
+	  padding: 10px 15px;
+	}
+  }
+/***********************************************/
 #welcome {
 	font-size: 35px;
-	margin: 0%;
 }
 
 form hr{
