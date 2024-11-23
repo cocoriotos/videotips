@@ -58,6 +58,11 @@ body {
 		}
 	}
 
+a {
+	font-size: 24px;
+	text-align: center;
+}
+
 	h1
 	   {
 		text-align:center;
@@ -262,7 +267,7 @@ div .card-body{
 	text-align: center;
 }
 
-#maincategory, #videolink, #category, #description{
+#maincategory, #videolink, #category, #description, #save_link{
 	font-size: 24px;
 	text-align: center;
 }

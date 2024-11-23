@@ -79,7 +79,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								</div>
 
 								<br>
-								<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
+								<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
 							</form>
 					</div>
 				</div>
