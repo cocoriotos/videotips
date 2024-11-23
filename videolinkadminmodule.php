@@ -1,7 +1,7 @@
 <!--  Developed by julián González Bucheli
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
 <html>
-<?php 
+<button?php 
 	session_start();
 	include "header.php";
 	include "db_connection1.php";
@@ -129,7 +129,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
 								<!--<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
 								<?php $videoUrl = $links['videolink']; ?>
-								<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true" onclick="showIframe('<?php include("embedeedlinks.php"); ?>')"></i></td>
+								<td id="eye" align="center"><button class="fa fa-eye" aria-hidden="true" onclick="showIframe('<?php include("embedeedlinks.php"); ?>')"></button></td>
 								
 								
 								<!--<?php /*$videoUrl = $links['videolink'];*/ ?>
