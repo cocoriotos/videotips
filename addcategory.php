@@ -26,9 +26,9 @@ include "SessionTimeOut.php";
 	<div class="row justify-content-start">
 		<div class="col-md-12"> 
 			<div class="card card-body">
-			<center><form action="savecategory.php" method="POST">
+			<form action="savecategory.php" method="POST">
 					<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong>Adicionar Categoría y Subcategoría</strong></label></center><br>
-						<div class="row">
+						<div class="row justify-content-center">
 								<div class="form-group col-md-4">
 									<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
 									<input class="form-control" style="text-align: center;" id="maincategory" type="text" name="maincategory"  placeholder="Digite la Categoría Principal" required ><br>
@@ -39,7 +39,7 @@ include "SessionTimeOut.php";
 								</div>	
 						</div>
 								<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center><br>
-				</form></center>
+				</form>
 			</div>
 		</div>
 		
