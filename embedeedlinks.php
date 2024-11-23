@@ -4,8 +4,9 @@
 /*session_start();
 $videoUrl = $_SESSION['videoUrl'];
 $embedUrl = $_SESSION['embedUrl'];
-$click = $_SESSION['click'];*/
+$click = $_SESSION['click'];
 
+$click=1;*/
 if ($click===1){
 
 echo $embedUrl = str_replace("https://www.youtube.com/watch?v=", "https://www.youtube.com/embed/", $videoUrl);
