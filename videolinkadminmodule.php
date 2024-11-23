@@ -41,8 +41,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<div class="row">
 									<!-- Enlace Útil -->
 									<div class="form-group col-md-3">
-										<label for="videolink" class="col-form-label" style="color: black; text-align: center;"><strong>Enlace Útil</strong></label>
-										<textarea name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
+										<label  for="videolink" class="col-form-label" style="color: black; text-align: center;"><strong>Enlace Útil</strong></label>
+										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
 									</div>
 
 									<!-- Categoría -->
@@ -74,7 +74,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 									<!-- Descripción -->
 									<div class="form-group col-md-4">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label>
-										<textarea name="description" rows="1" class="form-control" placeholder="Descripción del Contenido del Enlace" required></textarea>
+										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido del Enlace" required></textarea>
 									</div>
 								</div>
 

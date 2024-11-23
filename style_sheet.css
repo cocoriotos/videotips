@@ -261,7 +261,7 @@ div .card-body{
 	font-size: 24px;
 }
 
-#maincategory{
+#maincategory, #videolink, #category, #description{
 	font-size: 24px;
 }
 
