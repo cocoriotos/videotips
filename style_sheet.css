@@ -472,6 +472,9 @@ form hr{
 .ajs-message {
     font-size: 24px !important; /* Cambia el tamaño de la fuente */
     font-weight: bold !important; /* Cambiar a negrita si lo deseas */
+	white-space: normal;  /* Permite el salto de línea */
+	word-wrap: break-word; /* Ajuste de palabras largas */
+	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Centrando las notificaciones*/ 
@@ -482,6 +485,9 @@ form hr{
     transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
     position: absolute;
     z-index: 9999;                /* Asegura que la notificación quede encima de otros elementos */
+	white-space: normal;  /* Permite el salto de línea */
+	word-wrap: break-word; /* Ajuste de palabras largas */
+	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Personalización para las notificaciones de éxito */
@@ -497,6 +503,9 @@ form hr{
 	display: inline-flex; /* Usamos inline flexbox */
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
+	white-space: normal;  /* Permite el salto de línea */
+	word-wrap: break-word; /* Ajuste de palabras largas */
+	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Personalización para las notificaciones de error */
@@ -511,7 +520,10 @@ form hr{
     color: white !important;
 	display: inline-flex; /* Usamos inline flexbox */
     justify-content: center; /* Centra el texto horizontalmente */
-   align-items: center; /* Centra el texto verticalmente */
+	align-items: center; /* Centra el texto verticalmente */
+	white-space: normal;  /* Permite el salto de línea */
+	word-wrap: break-word; /* Ajuste de palabras largas */
+	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Personalización para las notificaciones de advertencia */
@@ -527,6 +539,9 @@ form hr{
 	display: inline-flex; /* Usamos inline flexbox */
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
+	white-space: normal;  /* Permite el salto de línea */
+	word-wrap: break-word; /* Ajuste de palabras largas */
+	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
 }
 
 iframe {
