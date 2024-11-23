@@ -549,5 +549,6 @@ iframe {
 }
 
 .color-dark-icon {
-	color: orangered; /* Amarillo oscuro */
+	color: orangered; 
+	font-size: 30px;
   }
