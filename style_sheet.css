@@ -439,6 +439,7 @@ form hr{
 #autosearch {
     width: 100%;
     table-layout: auto; /* Asegura que la tabla se ajuste al contenido */
+	font-size: 16px;
 }
 
 #autosearch td, #autosearch th {
