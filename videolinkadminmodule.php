@@ -109,7 +109,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 							<tr>
 								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
 								<td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
-								<td id="eye" align="center"><button class="fa fa-eye" aria-hidden="true" onclick="<?php include ("embedeedlinks.php"); ?>"></button></td>
+								<td id="eye" align="center"><button class="fa fa-eye" aria-hidden="true"></button></td>
 								<!--<?php /*$videoUrl = $links['videolink'];*/ ?>
 								<td><iframe width="100%" height="0" src="<?php /*include("embedeedlinks.php");*/ ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
 								<td id="tdmaoncategory" align="center"><?php echo $links['maincategory'] ?></td>
