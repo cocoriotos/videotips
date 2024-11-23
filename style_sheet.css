@@ -534,7 +534,7 @@ form hr{
 	font-size: 24px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
     background-color: #ff9800 !important;  /* Naranja para advertencia */
-    color: white !important;
+    color: black !important;
 	display: inline-flex; /* Usamos inline flexbox */
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
