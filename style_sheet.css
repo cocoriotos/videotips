@@ -528,7 +528,7 @@ form hr{
 /* Personalización para las notificaciones de advertencia */
 .ajs-warning {
 	text-align: center !important;
-	width: 200% !important;
+	width: 2000% !important;
 	height: 200% !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 24px !important;
@@ -540,7 +540,6 @@ form hr{
     align-items: center; /* Centra el texto verticalmente */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 }
 
 iframe {
