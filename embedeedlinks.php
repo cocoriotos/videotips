@@ -1,10 +1,10 @@
 
 
 <?php
-session_start();
+/*session_start();
 $videoUrl = $_SESSION['videoUrl'];
 $embedUrl = $_SESSION['embedUrl'];
-$click = $_SESSION['click'];
+$click = $_SESSION['click'];*/
 
 if ($click===1){
 
