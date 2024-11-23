@@ -528,7 +528,7 @@ form hr{
 /* Personalización para las notificaciones de advertencia */
 .ajs-warning {
 	text-align: center !important;
-	width: 2000% !important;
+	width: 700% !important;
 	height: 2000% !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 24px !important;
