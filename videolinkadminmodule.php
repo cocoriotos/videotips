@@ -35,7 +35,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 		<div  class="container-fluid p-0" >
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
-					<div class="card card-body">
+					<div class="card card-body" id="card-body">
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row">
@@ -86,7 +86,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 				<div class="col-md-12">
 					<br>
 				<?php include("search.php") ?>
-				<div class="card card-body">
+				<div class="card card-body" div="card-body">
 				<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
 				<table id="autosearch" class="display">
 						<thead id="tableswhite">
