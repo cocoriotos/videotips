@@ -13,12 +13,12 @@ include "SessionTimeOut.php";*/
 	        <div class="text-center">
                 <!--<center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"><i class="fas fa-dollar-sign"></i></i></input></center><br><br>
                 <a href=window.open('https://clientes.nequi.com.co/recargas', '_blank'); class="btn" style="background-color: blue; color: white; font-weight: bold;"><i class="fas fa-dollar-sign"></i> Pago por Nequi</a>-->
-                <a href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>
+                <a id="headerfonts" href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>
                 <!--<a href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold;" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank'); return false;"><i class="fas fa-dollar-sign"></i> Pago por Nequi</a>-->
-                <a href="suscriptionpayment.php" class="btn" style="background-color: #28A745; color: white; font-weight: bold;"><i class="fas fa-file-text"></i> Tarifas y pago por Nequi</a>
-                <a href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
-                <a href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
-                <a href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
+                <a id="headerfonts" href="suscriptionpayment.php" class="btn" style="background-color: #28A745; color: white; font-weight: bold;"><i class="fas fa-file-text"></i> Tarifas y pago por Nequi</a>
+                <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
+                <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
+                <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>	
   </nav></center>
 

@@ -58,10 +58,9 @@ body {
 		}
 	}
 
-a {
-	font-size: 48px;
-	text-align: center;
-  }
+#headerfonts{
+	font-size: 24px;
+}
 
 	h1
 	   {
