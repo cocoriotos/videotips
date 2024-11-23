@@ -547,3 +547,7 @@ iframe {
     height: auto;
 	position: relative;
 }
+
+.color-dark-icon {
+	color: orangered; /* Amarillo oscuro */
+  }
