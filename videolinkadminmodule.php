@@ -1,7 +1,7 @@
 <!--  Developed by julián González Bucheli
 bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
 <html>
-<button?php 
+<?php 
 	session_start();
 	include "header.php";
 	include "db_connection1.php";
@@ -37,13 +37,13 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 						var iframe = document.createElement('iframe');
 						iframe.width = "100%";
 						iframe.height = "0"; // Aquí deberías modificar la altura según sea necesario.
-						iframe.src = link;
+						iframe.src = "link";
 						iframe.frameBorder = "0";
 						iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
 						iframe.allowFullscreen = true;
-						document.body.appendChild(iframe);
+						
 						// Agregar el iframe al DOM, por ejemplo a un contenedor con id "eye"
-						//document.getElementById('eye').appendChild(iframe);*/
+						document.getElementById('eye').appendChild(iframe);
 						}
 	</script>
 
@@ -129,7 +129,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
 								<!--<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
 								<?php $videoUrl = $links['videolink']; ?>
-								<td id="eye" align="center"><button class="fa fa-eye"  ></button></td>
+								<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true" onclick="showIframe('<?php include("embedeedlinks.php"); ?>')"></i></td>
 								
 								
 								<!--<?php /*$videoUrl = $links['videolink'];*/ ?>
