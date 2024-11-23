@@ -491,7 +491,7 @@ form hr{
 	word-wrap: break-word; /* Ajuste de palabras largas */
 	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 	width: auto;
-	height: auto;
+	height: 200%;
 }
 
 /* Personalización para las notificaciones de éxito */
