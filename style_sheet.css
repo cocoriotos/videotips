@@ -475,8 +475,6 @@ form hr{
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
 	/*max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
-	width: auto;
-	height: auto;
 }
 
 /* Centrando las notificaciones*/ 
@@ -489,9 +487,6 @@ form hr{
     z-index: 9999;                /* Asegura que la notificación quede encima de otros elementos */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
-	width: auto;
-	height: 200%;
 }
 
 /* Personalización para las notificaciones de éxito */
@@ -534,7 +529,7 @@ form hr{
 .ajs-warning {
 	text-align: center !important;
 	width: 700px !important;
-	height: 300px !important;
+	height: 200% !important;
 	padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
 	font-size: 24px !important;
 	font-weight: bold !important;  /* Pone el texto en negrita */
