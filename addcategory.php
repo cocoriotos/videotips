@@ -38,7 +38,7 @@ include "SessionTimeOut.php";
 									<input  class="form-control" style="text-align: center;" id="category" type="text" name="category"  placeholder="Digite la SubCategoría" required ></input><br> 
 								</div>	
 						</div>
-								<center><input type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center><br>
+								<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="add filter" value="Adicionar Categoría"></input></center><br>
 				</form></center>
 			</div>
 		</div>
