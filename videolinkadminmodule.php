@@ -41,9 +41,9 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 						iframe.frameBorder = "0";
 						iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
 						iframe.allowFullscreen = true;
-						
+						document.body.appendChild(iframe);
 						// Agregar el iframe al DOM, por ejemplo a un contenedor con id "eye"
-						document.getElementById('eye').appendChild(iframe);
+						//document.getElementById('eye').appendChild(iframe);*/
 						}
 	</script>
 
