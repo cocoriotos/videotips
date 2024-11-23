@@ -22,6 +22,7 @@ GLOBAL $copynumber;
 GLOBAL $linktoclipboard;
 GLOBAL $videoUrl;
 GLOBAL $embedUrl;
+GLOBAL $click;
 
 
 session_start();
@@ -45,8 +46,9 @@ $_SESSION['categorytoclipboard']=0;
 $_SESSION['subcategorytoclipboard']=0;
 $_SESSION['copynumber']=0;
 $_SESSION['linktoclipboard']=0;
-$_SESSION['$videoUrl']="";
-$_SESSION['$embedUrl']="";
+$_SESSION['videoUrl']="";
+$_SESSION['embedUrl']="";
+$_SESSION['click']=0;
 
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
@@ -72,6 +74,7 @@ $copynumber = $_SESSION['copynumber'];
 $linktoclipboard = $_SESSION['linktoclipboard'];
 $videoUrl = $_SESSION['videoUrl'];
 $embedUrl = $_SESSION['embedUrl'];
+$click = $_SESSION['click'];
 
 $global_username=$_POST['email'];
 $_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
