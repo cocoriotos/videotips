@@ -33,7 +33,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 
 <body id="bodyadminmodule">
 		<div  class="container-fluid p-0" >
-			<div class="row justify-content-start">
+			<div class="row justify-content-center">
 				<div class="col-md-12"> 
 					<div class="card card-body" id="card-body">
 							<form action="savelinks.php" method="POST">
