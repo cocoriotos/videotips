@@ -264,6 +264,11 @@ div .card-body{
 	overflow-x: scroll;
 	font-size: 24px;
 	text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  gap: 10px; /* Espacio entre las cajas */
+  justify-items: center;  /* Centra los elementos horizontalmente */
+  align-items: center;    /* Centra los elementos verticalmente */
 }
 
 #maincategory, #videolink, #category, #description, #save_link{
