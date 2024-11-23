@@ -33,11 +33,11 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 
 	<script>
-			function showIframe() {
+			function showIframe(link) {
 						var iframe = document.createElement('iframe');
 						iframe.width = "100%";
 						iframe.height = "0"; // Aquí deberías modificar la altura según sea necesario.
-						iframe.src = "<?php include('embedeedlinks.php'); ?>";
+						iframe.src = link;
 						iframe.frameBorder = "0";
 						iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
 						iframe.allowFullscreen = true;
@@ -129,7 +129,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
 								<!--<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
 								<?php $videoUrl = $links['videolink']; ?>
-								<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true" onclick="showIframe()"></i></td>
+								<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true" onclick="showIframe('<?php include("embedeedlinks.php"); ?>')"></i></td>
 								
 								
 								<!--<?php /*$videoUrl = $links['videolink'];*/ ?>
