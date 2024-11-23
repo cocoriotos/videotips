@@ -264,10 +264,6 @@ div .card-body{
 	overflow-x: scroll;
 	font-size: 24px;
 	text-align: center;
-  display: flex;
-  flex-direction: column;   /* Alinea los elementos de arriba hacia abajo */
-  justify-content: center;  /* Centra los elementos verticalmente */
-  align-items: center;      /* Centra los elementos horizontalmente */
 }
 
 #maincategory, #videolink, #category, #description, #save_link{
