@@ -33,12 +33,12 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 
 <body id="bodyadminmodule">
 		<div  class="container-fluid p-0" >
-			<div class="row justify-content-center">
+			<div class="row justify-content-start">
 				<div class="col-md-12"> 
 					<div class="card card-body" id="card-body">
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
-								<div class="row">
+								<div class="row justify-content-center">
 									<!-- Enlace Útil -->
 									<div class="form-group col-md-3">
 										<label  for="videolink" class="col-form-label" style="color: black; text-align: center;"><strong>Enlace Útil</strong></label>
