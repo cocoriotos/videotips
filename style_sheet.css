@@ -267,8 +267,12 @@ div .card-body{
 	text-align: center;
 }
 
-#tdlink{
+#tdlink, #tdmaincategory, #tdcategory{
 	text-align: left;
+}
+
+#tddescription{
+	text-align: justify;
 }
 
  /* Style the list */
