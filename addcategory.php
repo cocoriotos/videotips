@@ -91,7 +91,7 @@ if ($savedcategory == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Subcategoría Adicionada Exitosamente", "success", 7);
@@ -108,7 +108,7 @@ if ($savedcategory == 2 ) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al adicionar la subcategoría, intente nuevamente", "error", 7);
@@ -125,7 +125,7 @@ if ($duplicatedcategory == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Subcategoría duplicada, usar otra", "error", 7);
@@ -142,7 +142,7 @@ if ($FreeSubcateryReached == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones", "warning", 7);
@@ -159,7 +159,7 @@ if ($sessiontimeoutreached  == 1){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
@@ -175,7 +175,7 @@ if ($sessiontimeoutreached  == 1){
 		<script>
 			$(document).ready(function() {
 				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "top-center");
+				alertify.set("notifier", "position", "bottom-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
 				alertify.notify("Subcategoría Actualizada Exitosamente", "success", 7);
@@ -192,7 +192,7 @@ if ($sessiontimeoutreached  == 1){
 		<script>
 			$(document).ready(function() {
 				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "top-center");
+				alertify.set("notifier", "position", "bottom-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
 				alertify.notify("Hubo un problema al actualizar la subcategoría, intente nuevamente", "warning", 7);
@@ -210,7 +210,7 @@ if ($sessiontimeoutreached  == 1){
 		<script>
 			$(document).ready(function() {
 				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "top-center");
+				alertify.set("notifier", "position", "bottom-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
 				alertify.notify("Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis", "warning", 7);
@@ -227,7 +227,7 @@ if ($sessiontimeoutreached  == 1){
 		<script>
 			$(document).ready(function() {
 				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "top-center");
+				alertify.set("notifier", "position", "bottom-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
 				alertify.notify("Hubo un problema al borrar subcategoría, intente nuevamente", "warning", 7);

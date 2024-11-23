@@ -89,7 +89,7 @@ if ($sessiontimeoutreached  == 1){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "top-center");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);

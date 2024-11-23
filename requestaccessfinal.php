@@ -58,15 +58,13 @@ include "SessionTimeOut.php";
 		}
 		</script>
 
-		<footer id="contact">
-				<hgroup>
-					<h6 align="center"><address><strong>Web Admin:</strong> Julian Gonzalez Bucheli</address></h6>
-					<h6 align="center"><address><strong>Email:</strong>cocoriotos@hotmail.com</address></h6>
-					<h6 align="center"><address><strong>Teléfono:</strong>(+57) 305 429 31 85</address></h6>
-					<h6 align="center"><address><strong>Pereira - Colombia </strong></address></h6>
-					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
-					<!--<h6 time align="center" datetime="2021/4/1" pubdate>Published on Date: 10/27/2024</time></h6> <!-- Publication format layout-->-->
-				</hgroup>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<footer id="contact">	
+					<hgroup>
+					<HR id="HR"/>
+							<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
+					<HR/>
+					</hgroup>			
 		</footer>
 	</body>
 </html>
