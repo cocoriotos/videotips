@@ -12,6 +12,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	$deletedlink = $_SESSION['deletedlink'];
 	$sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 	$copytoclipboard = $_SESSION['copytoclipboard'];
+	$videoUrl = $_SESSION['videoUrl'];
+	$embedUrl = $_SESSION['embedUrl'];
 	
 	
 	include "SessionTimeOut.php";
@@ -126,6 +128,7 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
 								<td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
 								<!--<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
+								<?php $videoUrl = $links['videolink']; ?>
 								<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true" onclick="showIframe()"></i></td>
 								
 								
