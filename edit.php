@@ -38,27 +38,27 @@ include "SessionTimeOut.php";
 					<center><div class="row">
 									<div class="form-group col-md-2">
 										<label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
-										<input style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>" readonly></input><br>
+										<input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>" readonly></input><br>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace o URL</strong></label><br>	
-										<input type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value ="<?php echo $link['videolink'];?>"></input><br>
+										<input id="videolink" type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value ="<?php echo $link['videolink'];?>"></input><br>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>
-										<select class="form-control" name="maincategory" required><?php $query_options = "SELECT distinct(maincategory) FROM videotips_maincategory where username = '$local_username' order by maincategory asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
+										<select id="maincategory" class="form-control" name="maincategory" required><?php $query_options = "SELECT distinct(maincategory) FROM videotips_maincategory where username = '$local_username' order by maincategory asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>
-										<select class="form-control" name="category" required><?php $query_options = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
+										<select id="category" class="form-control" name="category" required><?php $query_options = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
-										<textarea name="description" rows="1" class="form-control" placeholder="Descripción del Contenido" required><?php echo $link['description']?></textarea><br>
+										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido" required><?php echo $link['description']?></textarea><br>
 									</div>						
 					</div></center>
-							<center><input type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
-							<input type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
+							<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
+							<input id="save_link" type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input></center><br>
 				</form>
 			</div>
 		</div>
