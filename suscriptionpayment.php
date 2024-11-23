@@ -120,7 +120,7 @@ if ($suscriptiondue == 1) {
             alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Ha alcanzado el límite de 7 días de Suscripción gratis.\nDar Click en Ir a Nequi para activarla", "warning", 10);
+            alertify.notify("Ha alcanzado el límite de 7 días de Suscripción gratis.Dar Click en Ir a Nequi para activarla", "warning", 10);
         });
     </script>';
     $_SESSION['suscriptiondue'] = 0;
