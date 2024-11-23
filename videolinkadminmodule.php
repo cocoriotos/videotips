@@ -139,7 +139,7 @@ if ($copytoclipboard == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("¡Enlace copiado al portapapeles!", "success", 7);
@@ -156,7 +156,7 @@ if ($savedlink == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Enlace Adicionado Exitosamente", "success", 7);
@@ -173,7 +173,7 @@ if ($savedlink == 2){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al adicionar el enlace, intente nuevamente", "error", 7);
@@ -191,7 +191,7 @@ if ($duplicatedlink == 1){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Enlace duplicado, usar otro", "error", 7);
@@ -208,7 +208,7 @@ if ($suscriptioninactive == 1){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Suscripción inactiva. Se sugiere renovarla", "error", 7);
@@ -225,7 +225,7 @@ if ($sessiontimeoutreached  == 1){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("La sesion no tiene actividad por 15 minutos, debe iniciar sesión nuevamente", "warning", 10);
@@ -242,7 +242,7 @@ if ($updatedlink == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Enlace Actualizado Exitosamente", "success", 7);
@@ -259,7 +259,7 @@ if ($updatedlink == 2){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al actualizar el enlace, intente nuevamente", "error", 7);
@@ -277,7 +277,7 @@ if ($deletedlink == 1) {
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Enlace Borrado Exitosamente", "success", 7);
@@ -294,7 +294,7 @@ if ($deletedlink == 2){
     <script>
         $(document).ready(function() {
             // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-right");
+            alertify.set("notifier", "position", "bottom-center");
 
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);

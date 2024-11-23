@@ -474,7 +474,7 @@ form hr{
     font-weight: bold !important; /* Cambiar a negrita si lo deseas */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
+	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Centrando las notificaciones*/ 
@@ -487,7 +487,7 @@ form hr{
     z-index: 9999;                /* Asegura que la notificación quede encima de otros elementos */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
+	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Personalización para las notificaciones de éxito */
@@ -505,7 +505,7 @@ form hr{
     align-items: center; /* Centra el texto verticalmente */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
+	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Personalización para las notificaciones de error */
@@ -523,7 +523,7 @@ form hr{
 	align-items: center; /* Centra el texto verticalmente */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
+	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 }
 
 /* Personalización para las notificaciones de advertencia */
@@ -541,7 +541,7 @@ form hr{
     align-items: center; /* Centra el texto verticalmente */
 	white-space: normal;  /* Permite el salto de línea */
 	word-wrap: break-word; /* Ajuste de palabras largas */
-	max-width: 400px; /* Ajusta el ancho máximo de la notificación */
+	max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
 }
 
 iframe {
