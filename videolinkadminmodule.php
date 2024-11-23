@@ -31,22 +31,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<!--Agregar los estilos de Alertify correctamente--> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
-
-	<script>
-			function showIframe(link) {
-						var iframe = document.createElement('iframe');
-						iframe.width = "100%";
-						iframe.height = "0"; // Aquí deberías modificar la altura según sea necesario.
-						iframe.src = "link";
-						iframe.frameBorder = "0";
-						iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-						iframe.allowFullscreen = true;
-						
-						// Agregar el iframe al DOM, por ejemplo a un contenedor con id "eye"
-						document.getElementById('eye').appendChild(iframe);
-						}
-	</script>
-
 </head>
 
 <body id="bodyadminmodule">
@@ -127,13 +111,8 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 							<tr>
 								<td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
 								<td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
-								<!--<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
 								<?php $videoUrl = $links['videolink']; ?>
-								<td id="eye" align="center"><i class="fa fa-eye" aria-hidden="true" onclick="showIframe('<?php include("embedeedlinks.php"); ?>')"></i></td>
-								
-								
-								<!--<?php /*$videoUrl = $links['videolink'];*/ ?>
-								<td><iframe width="100%" height="0" src="<?php /*include("embedeedlinks.php");*/ ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
+								<td><iframe width="100%" height="0" src="<?php include("embedeedlinks.php"); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
 								<td id="tdmaoncategory" align="center"><?php echo $links['maincategory'] ?></td>
 								<td id="tdcategory" align="center"><?php echo $links['category'] ?></td>
 								<td id="tddescription" align="left"><?php echo $links['description'] ?></td>
