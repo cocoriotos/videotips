@@ -267,6 +267,9 @@ div .card-body{
 	text-align: center;
 }
 
+#tdlink{
+	text-align: left;
+}
 
  /* Style the list */
 ul.tab {
