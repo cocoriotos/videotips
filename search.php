@@ -26,5 +26,30 @@ function openList(evt, cityName) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   <script> $(document).ready( function () {
-      $('#autosearch').DataTable();
+      $('#autosearch').DataTable(
+
+        {
+      language: {
+              processing: "Procesando...",
+              search: "Buscar:",
+              lengthMenu: "Mostrar _MENU_ registros",
+              info: "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+              infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+              infoFiltered: "(filtrado de un total de _MAX_ registros)",
+              loadingRecords: "Cargando...",
+              zeroRecords: "No se encontraron resultados",
+              emptyTable: "Ningún dato disponible en esta tabla",
+              paginate: {
+                first: "Primero",
+                previous: "Anterior",
+                next: "Siguiente",
+                last: "Último"
+              },
+        aria: {
+          sortAscending: ": Activar para ordenar la columna de manera ascendente",
+          sortDescending: ": Activar para ordenar la columna de manera descendente"
+              }
+      }
+    }); 
+
      } );</script>
