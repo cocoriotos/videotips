@@ -1,5 +1,4 @@
-<!--  Developed by julián González Bucheli
-bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver and copy links -->
+<!--  Developed by julián González Bucheli-->
 <html>
 <?php 
 	session_start();
@@ -28,7 +27,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 	<script src="plugins/alertifyjs/alertify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
-	<!--Agregar los estilos de Alertify correctamente--> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
@@ -38,17 +36,13 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
 					<div class="card card-body" id="card-body">
-						<!--<?php /*print_r($click);*/?>-->
 							<form action="savelinks.php" method="POST">
 							<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Adicionar Enlace </strong></label></center>
 								<div class="row justify-content-center">
-									<!-- Enlace Útil -->
 									<div class="form-group col-md-3">
 										<label  for="videolink" class="col-form-label" style="color: black; text-align: center;"><strong>Enlace Útil</strong></label>
 										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
 									</div>
-
-									<!-- Categoría -->
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
 										<select class="form-control" name="maincategory" id="maincategory" ><?php 
@@ -60,8 +54,6 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 											}
 										?></select>
 									</div>
-
-									<!-- Subcategoría -->
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
 										<select class="form-control" name="category" id="category"><?php 
@@ -73,14 +65,11 @@ bootstrapCDN https://getbootstrap.com and then download then CDN via jsDeliver a
 											}
 										?></select>
 									</div>
-
-									<!-- Descripción -->
 									<div class="form-group col-md-4">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label>
 										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido del Enlace" required></textarea>
 									</div>
 								</div>
-
 								<br>
 								<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar"></input></center>
 							</form>

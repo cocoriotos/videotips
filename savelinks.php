@@ -31,7 +31,7 @@ if ($urlduplicated->num_rows > 0) {
 } 
 
 if ($is_active == 1) {
-    // Intentar insertar el enlace
+    
     $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, active, username) 
                 VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
     
@@ -45,7 +45,7 @@ if ($is_active == 1) {
       exit();
     }
 } else {
-    /*echo "Valor de suscriptionactive: " . $is_active;*/
+    
     $_SESSION['suscriptioninactive']=1;
     $_SESSION['savedlink']=0;
     header("refresh:0; url=videolinkadminmodule.php");

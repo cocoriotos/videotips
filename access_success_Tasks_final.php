@@ -77,8 +77,8 @@ $embedUrl = $_SESSION['embedUrl'];
 $click = $_SESSION['click'];
 
 $global_username=$_POST['email'];
-$_SESSION['email']=$global_username;/*POST veriable assinged to global session usernamer global10112024*/
-$local_username=$_SESSION['email'];/*10082024*/
+$_SESSION['email']=$global_username;
+$local_username=$_SESSION['email'];
 $password=$_POST['password'];
 
 	if($_POST)
@@ -119,8 +119,6 @@ $password=$_POST['password'];
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1); 
 
-				/*$query3="update videotips_suscription_payments SET categoriescounts = (select categorycount from videotips_app_access_list where username = '$local_username'), currentdate = CURDATE(), active = (select active from videotips_app_access_list where username = '$local_username'), suscriptiondate = (select registrationdate from videotips_app_access_list where username = '$local_username')   where username = '$local_username' and active='1'"; 
-				$result3=mysqli_query($conn, $query3);*/
 
 				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 0) {
 					$_SESSION['suscriptiondue']=1;

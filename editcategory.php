@@ -97,15 +97,4 @@ if ($sessiontimeoutreached  == 1){
 	</script>';   
 }
 ?>
- 
-
-
-
-
-
-
-
-
-
-
 <?php include ("footer.php")?>

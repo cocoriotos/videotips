@@ -9,23 +9,18 @@
             $categoryduplicated = $_SESSION['categoryduplicated'];
             $FreeSubcateryReached = $_SESSION['FreeSubcateryReached'];
             
-            
-            
-            // Uso de sentencias preparadas para obtener categorycounter
             $stmt = $conn->prepare("SELECT categorycounter FROM videotips_app_access_list WHERE username = ?");
             $stmt->bind_param("s", $local_username);
             $stmt->execute();
             $result = $stmt->get_result();
             $categorycounter = $result->fetch_assoc()['categorycounter'];
             
-            // Similar para extendcounterfeature
             $stmt = $conn->prepare("SELECT extendcounterfeature FROM videotips_app_access_list WHERE username = ?");
             $stmt->bind_param("s", $local_username);
             $stmt->execute();
             $result = $stmt->get_result();
             $extendcounterfeature = $result->fetch_assoc()['extendcounterfeature'];
             
-            // Consulta para verificar duplicidad
             $stmt = $conn->prepare("SELECT category FROM videotips_viodetipscategory WHERE category = ? AND username = ?");
             $stmt->bind_param("ss", $category, $local_username);
             $stmt->execute();
@@ -36,14 +31,13 @@
             header("refresh:0; url=addcategory.php");
             exit();
           }else{
-            // Verificación y lógica
+
             if ($categorycounter > 999 && $extendcounterfeature == 0) {
               $_SESSION['FreeSubcateryReached']=1;
               header("refresh:0; url=addcategory.php");
               exit();
             }
             
-            // Inserta la nueva categoría y maincategory si es posible
             if ($categorycounter <= 999 || ($categorycounter > 999 && $extendcounterfeature == 1)) {
                 $stmt = $conn->prepare("INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)");
                 $stmt->bind_param("sss", $maincategory, $category, $local_username);

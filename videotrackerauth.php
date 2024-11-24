@@ -1,5 +1,5 @@
 <!--  Developed by julián González Bucheli -->
-<html lang="us"> <!-- Page language-->
+<html lang="us">
 	<?php /*include "nobackpage.php"; 
 	include "SessionTimeOut.php";*/	
 	?>
@@ -12,23 +12,21 @@
 		<script src="plugins/alertifyjs/alertify.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
-		<!--Agregar los estilos de Alertify correctamente--> 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
 	</head>
 	<header>
-			<HR id="HR"/>	<!-- Header title  --> <!-- -->
+			<HR id="HR"/>
 				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
 			<HR/>	
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br><br><br><br><br><br><br><br><br><br><br><br>
-		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> <!-- Form to login into application with authentication in database and valid username -->
+		<form id="login" action="access_success_Tasks_final.php" method="POST" autocomplete="off"> 
 			    <center>
 					<font color=lightblue id="form_title"><strong>Formulario de Autenticación</strong></font><br><br>
                 	<i class="fas fa-sign-in-alt fa-5x" style="color: lightblue;"></i><br><br>
 					<hr>
-					<!--<img id="img_login" center SRC="login.gif"></img></br> <!-- Login Icon  -->
 					<div class="inputdata1">
 						<font id= "form_title" color="white"><strong>Email</strong></font><br><br>
 						<input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
@@ -43,7 +41,7 @@
 					<br>
 				</center>
 		</form>	
-		<form id="login" action="requestaccessfinal.php" method="POST" autocomplete="off"> <!-- Form to request access-->
+		<form id="login" action="requestaccessfinal.php" method="POST" autocomplete="off"> 
 			<center>
 				<h6 id="access" align="center"><address><strong>Sin acceso?, Por favor solicitarlo acá</strong> </address></h6><br>
 				<input id="requestaccess" type="submit" value="Solicitar Acceso"><br>

@@ -5,6 +5,5 @@
 		  </script>
 	<?php
 	include("closetaskscon.php");
-	/*include("dailytaskstracker.php");*/
 	?>
 </html>

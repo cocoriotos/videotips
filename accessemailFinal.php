@@ -70,10 +70,8 @@ $mail = mail($to, $subject, $message,$header);
 	
 
 if ($result){
-    /*echo "Your request was sent, you can join with user name $email and password you type";    */
 	include("emailreqsuccess.php");
     } else {
-	/*echo "Request not send please try again";	*/
 	include("emailreqnosuccess.php");    }
 } 
 header("refresh:0;url=videotrackerauth.php");

@@ -3,18 +3,15 @@
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>
-<html lang="us"> <!-- Page language-->
-<header>
+<html lang="us"> 
+  <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
 	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Contenidos Útiles</a></center>
   </nav>
   <script src="copynumber.js"></script>
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 	        <div class="text-center">
-                <!--<center><input type="button" class="btn btn-success btn-block" value="Pago por Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"><i class="fas fa-dollar-sign"></i></i></input></center><br><br>
-                <a href=window.open('https://clientes.nequi.com.co/recargas', '_blank'); class="btn" style="background-color: blue; color: white; font-weight: bold;"><i class="fas fa-dollar-sign"></i> Pago por Nequi</a>-->
                 <a id="headerfonts" href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>
-                <!--<a href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold;" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank'); return false;"><i class="fas fa-dollar-sign"></i> Pago por Nequi</a>-->
                 <a id="headerfonts" href="suscriptionpayment.php" class="btn" style="background-color: #28A745; color: white; font-weight: bold;"><i class="fas fa-file-text"></i> Tarifas y pago por Nequi</a>
                 <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
                 <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
@@ -24,7 +21,6 @@ include "SessionTimeOut.php";*/
 
   <!-- BOOTSTRAP -->	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
-<!-- FONT AWESOME https://fontawesome.com/start and donwload the icons -->
     <script src="https://kit.fontawesome.com/60f0db780e.js" crossorigin="anonymous"></script>
 	</header>
     </html>

@@ -47,7 +47,6 @@ include "SessionTimeOut.php";
 		<br>
 		 <?php include("search.php") ?>
 		 <div class="card card-body">
-		 <!--<label for="maincategory" style="color: black;"><strong>Current Categories</strong></label><br>-->
 		  <table id="autosearch" class="display" font color="back">
 		  <center><label for="maincategory" style="color: black; font-size: 28px;"><strong>Tus Categorías</strong></label></center><br>
 				<thead id="tableswhite">

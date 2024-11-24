@@ -1,5 +1,4 @@
-<!--  Developed by julián González Bucheli -->
-<html lang="us"> <!-- Page language-->
+<html lang="us">
 	<head>
 		  <script>
 			alert("No hay conexión disponible a la aplicación");
