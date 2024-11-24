@@ -55,7 +55,7 @@ include "SessionTimeOut.php";
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
                     <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
                     <p> 3. Al realizar el pago dar click en el botón de abajo para enviar correo el archivo PDF o una imagen del pago realizado.</p>
-                    <p> 4. Si tiene alguna duda, enviar correo al adminitrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
+                    <p> 4. Si tiene alguna duda, enviar correo al administrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
 				        </div>
           </div>
           </center>
@@ -100,7 +100,7 @@ include "SessionTimeOut.php";
                   <tbody>
                 </table>
                 <br>
-                <center><a href="mailto:cocoriotos@hotmail.com?subject=Asunto%20del%20Correo&body=Hola,%20adjunto%20evidencia%20del%20pago%20de%20la%20suscripción%20a%20nombre%20de%20<?php echo urlencode($local_username); ?>.">        
+                <center><a href="mailto:cocoriotos@hotmail.com?subject=Evidencia%20Pagol%20Suscripción.&body=Hola,%20adjunto%20evidencia%20del%20pago%20de%20la%20suscripción%20a%20nombre%20de%20<?php echo urlencode($local_username); ?>.">        
                 <input type="button" class="btn btn-success btn-block" value="Enviar Constancia de Pago por Correo"></a></center>
 
                 <!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>-->
