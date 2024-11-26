@@ -85,7 +85,7 @@
 						<tr>
 							<th>ID</th>
 							<th>Enlace</th>
-							<th>Previsualización</th>
+							<!--<th>Previsualización</th>-->
 							<th>Categoría</th>
 							<th>Subcategoría</th>
 							<th>Descripción</th>
