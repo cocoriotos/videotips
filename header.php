@@ -12,7 +12,7 @@ include "SessionTimeOut.php";*/
 
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center">
     <div class="d-flex">
-        <a id="headerfonts" href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>
+        <a id="headerfonts" href="#" class="btn" style="background-color: #28A745; color: white; font-weight: bold; margin-right: 10px; margin-left: 30px;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>
         <a id="headerfonts" href="suscriptionpayment.php" class="btn" style="background-color: #28A745; color: white; font-weight: bold;"><i class="fa fa-usd"></i> Tarifas y pago por Nequi</a>
     </div>
     <div class="d-flex">
