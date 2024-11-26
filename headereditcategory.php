@@ -11,8 +11,8 @@ include "SessionTimeOut.php";*/
 
 <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
     <div class="text-center">
-      <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Cancelar</a>
-      <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Categorías</a>
+    <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Cancelar</a>  
+    <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-reply"></i> Adicionar Enlace</a>
       <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
     </div>
 </nav></center>
