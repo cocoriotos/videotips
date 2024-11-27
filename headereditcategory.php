@@ -12,9 +12,9 @@ include "SessionTimeOut.php";*/
 <<nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
 <div class="d-flex"></div>  
   <div class="d-flex">
-    <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-reply"></i> Adicionar Enlace</a>
-    <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #FFD6D6; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-times"></i> Cancelar</a>  
-      <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-rightt: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a>
+      <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-reply"></i> Adicionar Enlace</a>
+      <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #FFD6D6; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-times"></i> Cancelar</a>  
+      <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a>
     </div>
 </nav>
   <!-- BOOTSTRAP -->	
