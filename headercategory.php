@@ -8,8 +8,8 @@ include "SessionTimeOut.php";*/
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
   <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Contenidos Útiles</a></center>
   </nav>
-
-    <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center">
+  
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center">
     <div class="d-flex"></div>          
             <div class="d-flex">
                 <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
