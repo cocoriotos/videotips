@@ -344,11 +344,9 @@ ul.tab li a:focus,
 }
 /************************************/
 * {
-  width: 100%; /* El ancho se adapta al 100% del ancho de la ventana */
-  height: 100vh; /* El alto se ajusta al 100% del alto de la ventana */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 nav {
