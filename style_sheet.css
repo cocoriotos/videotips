@@ -245,6 +245,7 @@ div .card-body {
 #maincategory,
 #videolink,
 #category,
+#proforpers,
 #description,
 #save_link {
   font-size: 24px;
@@ -253,7 +254,8 @@ div .card-body {
 
 #tdlink,
 #tdmaincategory,
-#tdcategory {
+#tdcategory,
+#tdproforpers {
   text-align: left;
 }
 
