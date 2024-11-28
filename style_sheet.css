@@ -252,14 +252,14 @@ div .card-body {
   text-align: center;
 }
 
-#tdlink,
-#tdmaincategory,
-#tdcategory {
+#tdlink {
   text-align: left;
 }
 
-#tddescription,
-#tdproforpers {
+#tdmaincategory,
+#tdcategory,
+#tdproforpers,
+#tddescription {
   text-align: justify;
 }
 
