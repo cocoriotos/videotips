@@ -78,7 +78,7 @@
 										?></select>
 									</div>
 
-									<div class="form-group col-md-4">
+									<div class="form-group col-md-3">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label>
 										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido del Enlace" required></textarea>
 									</div>
