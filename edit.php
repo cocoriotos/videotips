@@ -52,6 +52,10 @@ include "SessionTimeOut.php";
 										<select id="category" class="form-control" name="category" required><?php $query_options = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
 									</div>
 									<div class="form-group col-md-2">
+										<label for="proforpers" class="col-form-label" style="color: black;"><strong>Tipo de Contenido</strong></label><br>
+										<select id="proforpers" class="form-control" name="proforpers" required><?php $query_options = "SELECT distinct(proforpers) FROM videotips_proforpers"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['proforpers'] == $link['proforpers']) ? "selected" : ""; echo "<option value=\"{$option['proforpers']}\" $selected>{$option['proforpers']}</option>"; } ?></select><br><br>
+									</div>
+									<div class="form-group col-md-2">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
 										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido" required><?php echo $link['description']?></textarea><br>
 									</div>						
@@ -72,6 +76,7 @@ include "SessionTimeOut.php";
 						<th>ID</th>
 						<th>Enlace o URL</th>
 						<th>Categoría</th>
+						<th>Tipo de Contenido</th>
 						<th>Subcategoría</th>
 						<th>Descripción</th>
 						<th>Fecha de Creación</th>
@@ -87,6 +92,7 @@ include "SessionTimeOut.php";
 							<td align="left"><?php echo $link['videolink'] ?></td>
 							<td align="center"><?php echo $link['maincategory'] ?></td>
 							<td align="center"><?php echo $link['category'] ?></td>
+							<td align="center"><?php echo $link['proforpers'] ?></td>
 							<td align="left"><?php echo $link['description'] ?></td>
 							<td align="center"><?php echo $link['creationdate'] ?></td>
 							</td>
