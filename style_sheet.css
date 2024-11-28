@@ -33,8 +33,8 @@ head /*where  title is*/ {
 }
 
 body {
-  width: 98%; /*largo*/
-  height: 70%; /*ancho*/
+  width: auto; /*largo*/
+  height: auto; /*ancho*/
   font-size: 80%;
   font-family: arial;
   /*background-image: url('img/background.jpg');
