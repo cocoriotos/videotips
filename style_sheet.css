@@ -260,7 +260,7 @@ div .card-body {
 #tdcategory,
 #tdproforpers,
 #tddescription {
-  text-align: justify;
+  text-align: center;
 }
 
 /* Style the list */
