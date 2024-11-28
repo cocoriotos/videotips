@@ -65,6 +65,19 @@
 											}
 										?></select>
 									</div>
+
+									<div class="form-group col-md-2">
+										<label for="category" class="col-form-label" style="color: black;"><strong>Tipo de Contenido</strong></label>
+										<select class="form-control" name="category" id="category"><?php 
+											$SQLSELECT = "SELECT proforpers FROM videotips_proforpers"; 
+											$result_set = mysqli_query($conn, $SQLSELECT); 
+											while ($rows = $result_set->fetch_assoc()) { 
+												$proforpers = $rows['proforpers']; 
+												echo "<option value='$proforpers'>$proforpers</option>";
+											}
+										?></select>
+									</div>
+
 									<div class="form-group col-md-4">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label>
 										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido del Enlace" required></textarea>
@@ -88,6 +101,7 @@
 							<!--<th>Previsualización</th>-->
 							<th>Categoría</th>
 							<th>Subcategoría</th>
+							<th>Tipo de Contenido</th>
 							<th>Descripción</th>
 							<th>Creación</th>
 							<th>Copiar Enlace</th>
@@ -106,6 +120,7 @@
 								<!--<td><iframe width="100%" height="0" src="<?php /* $click=1; include ("embedeedlinks.php");*/ ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
 								<td id="tdmaoncategory" align="center"><?php echo $links['maincategory'] ?></td>
 								<td id="tdcategory" align="center"><?php echo $links['category'] ?></td>
+								<td id="tdproforpers" align="left"><?php echo $links['proforpers'] ?></td>
 								<td id="tddescription" align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
 								<td align="center"><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>

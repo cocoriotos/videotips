@@ -8,6 +8,7 @@ $local_username = $_SESSION['email'];
 $videolink = $_POST['videolink'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
+$proforpers = $_POST["$proforpers"];
 $description = $_POST["description"];
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
@@ -32,8 +33,8 @@ if ($urlduplicated->num_rows > 0) {
 
 if ($is_active == 1) {
     
-    $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, active, username) 
-                VALUES ('$videolink', '$maincategory', '$category', '$description', 'Yes', '$local_username')";
+    $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, proforpers, active, username) 
+                VALUES ('$videolink', '$maincategory', '$category', '$proforpers', '$description', 'Yes', '$local_username')";
     
     if ($conn->query($query3) === TRUE) {
         $_SESSION['savedlink']=1;
