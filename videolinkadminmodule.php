@@ -118,9 +118,9 @@
 								<!--<td id="tdeye" align="center"><i class="fa fa-eye" aria-hidden="true"></i></td>-->
 								<!--<?php /* $videoUrl = $links['videolink'];*/ ?>-->
 								<!--<td><iframe width="100%" height="0" src="<?php /* $click=1; include ("embedeedlinks.php");*/ ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>-->
-								<td id="tdmaoncategory" align="center"><?php echo $links['maincategory'] ?></td>
+								<td id="tdmaincategory" align="center"><?php echo $links['maincategory'] ?></td>
 								<td id="tdcategory" align="center"><?php echo $links['category'] ?></td>
-								<td id="tdproforpers" align="left"><?php echo $links['proforpers'] ?></td>
+								<td id="tdproforpers" align="center"><?php echo $links['proforpers'] ?></td>
 								<td id="tddescription" align="left"><?php echo $links['description'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
 								<td align="center"><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
