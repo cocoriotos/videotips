@@ -16,7 +16,7 @@ HR /*head TOP*/ {
 header /* where  title is*/ {
   color: #0c316d;
   background-color: #032642;
-  width: 98%;
+  width: 100%;
   font-family: arial;
   border-radius: 15px;
   /*margin: 5px auto;*/
@@ -33,7 +33,7 @@ head /*where  title is*/ {
 }
 
 body {
-  width: 100%;
+  width: 90%;
   height: 100%;
   font-size: 80%;
   font-family: arial;
