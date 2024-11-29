@@ -2,6 +2,7 @@
 <html lang="us">
 	<?php /*include "nobackpage.php"; 
 	include "SessionTimeOut.php";*/	
+	date_default_timezone_set('America/Bogota');
 	?>
 	<head>	
 		<script src="head.js" defer></script>	
@@ -51,7 +52,7 @@
 		<footer id="contact">	
 					<hgroup>
 					<HR id="HR"/>
-							<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
+							<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?><address><strong> Alguna duda? cóntáctenos al Email:</strong>cocoriotos@hotmail.com</address>  </h6>
 					<HR/>
 					</hgroup>			
 		</footer>
