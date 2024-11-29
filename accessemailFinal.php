@@ -32,7 +32,7 @@ $result2=$conn->query($query2);
 
 
 /*Destination email information*/
-$to = "cocoriotos@hotmail.com";
+$to = "adm@solicionespro.com";
 $subject = "Urgent Links tool access request";
 $message = "Good day Admin Team:  \n\n";
 $message.= "This user is requesting tool access, please response ASAP \n\n";//. to concatenate lines in the same variable
@@ -44,6 +44,7 @@ $message.= "Email Application sender";
 $message.= "Dear Customer, you will be receiving Tool admin message advising if was granted or denied your request \n\n";
 $message.= "Email Application sender";
 $header= "From: adm@solicionespro.com" . "\r\n";
+$header.= "Bcc: cocoriotos@hotmail.com\r\n";
 $header.= "Reply-To: noreply@solicionespro.com" . "\r\n";
 $header.= "X-Mailer: PHP/". phpversion();
 
@@ -51,10 +52,10 @@ $header.= "X-Mailer: PHP/". phpversion();
 $mail = mail($to, $subject, $message,$header);
 
 
-	$to = "$email, cocoriotos@hotmail.com";
+	$to = "$email, adm@solicionespro.com";
 	$subject = "Requerimiento de acceso";
 	$message = "Buen día $lastname, $name :  \n\n";
-	$message.= "Su requerimiento ha sido enviado a los administradores de la herramienta  para processar su solicitud, por favor esperar la respuesta vía correo electrónico. Acá la información de su solicitud \n\n";//. to concatenate lines in the same variable
+	$message.= "Su requerimiento ha sido enviado a los administradores de la herramienta  para processar su solicitud. Acá la información de su solicitud \n\n";//. to concatenate lines in the same variable
 	$message.= str_pad("Nombre", 40) . ": $name \n";
 	$message.= str_pad("Apellido", 40) . ": $lastname \n";
 	$message.= str_pad("Email", 40) . ": $email \n";
@@ -62,8 +63,9 @@ $mail = mail($to, $subject, $message,$header);
 	$message.= str_pad("Ciudad", 40) . ": $city \n";
 	$message.= str_pad("Nombre de usuario  asignado", 40) . ": $email \n\n";
 	$message.= "Por favor no responder éste correo \n\n";
-	$message.= "Gracias por su registro, ya puede ingresar a la app desde este enlace https://solicionespro.com/videotips/videotrackerauth.php con su usuario $email. \n\n";
+	$message.= "Gracias por su registro, ya puede ingresar a la app desde este enlace https://solicionespro.com/videotips/videotrackerauth.php con su usuario $email  y la contraseña que escogió. \n\n";
 	$header = "From: adm@solicionespro.com" . "\r\n";
+	$header.= "Bcc: cocoriotos@hotmail.com\r\n";
 	$header.= "X-Mailer: PHP/". phpversion();
 	
 	$mail1 = mail($to,$subject,$message,$header);

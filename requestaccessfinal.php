@@ -13,6 +13,7 @@ include "SessionTimeOut.php";
 		<HR/>
 	</header>
 	<body id="bodyadminmodule">		
+	<br><br><br><br><br><br><br><br><br><br>
 	  		<form id="login" action="accessemailFinal.php" method="POST" autocomplete="off">
 			<center><font color=lightblue id="form_title"><strong>Formulario de Solicitud de Acceso</strong></center></font><br>	
 			  <div class="inputdata">
@@ -47,11 +48,11 @@ include "SessionTimeOut.php";
 		}
 		</script>
 
-		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
 		<footer id="contact">	
 					<hgroup>
 					<HR id="HR"/>
-							<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y'); ?> Hora: <?php echo date('H:i'); ?></h6>
+					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>  </h6>
 					<HR/>
 					</hgroup>			
 		</footer>

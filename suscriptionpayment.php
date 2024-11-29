@@ -54,7 +54,7 @@ include "SessionTimeOut.php";
                     <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
                     <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
                     <p> 3. Al realizar el pago dar click en el botón de abajo para enviar correo el archivo PDF o una imagen del pago realizado.</p>
-                    <p> 4. Si tiene alguna duda, enviar correo al administrador: cocoriotos@hotmail.com o WhatsApp: +57 3054293185</p>
+                    <p> 4. Si tiene alguna duda, enviar correo al administrador: adm@solicionespro.com o WhatsApp: +57 3054293185</p>
 				        </div>
           </div>
           </center>
