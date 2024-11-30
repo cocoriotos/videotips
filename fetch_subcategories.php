@@ -1,7 +1,8 @@
 <?php
+session_start();
 include 'db_connection1.php'; // Archivo para conectar a la base de datos
 
-$username = 'usuario_actual'; // Define el username dinámicamente si es necesario
+$username =  $_SESSION['email']; // Define el username dinámicamente si es necesario
 $maincategory = $_GET['maincategory'] ?? '';
 
 if ($maincategory) {
