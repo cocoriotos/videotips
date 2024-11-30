@@ -89,11 +89,11 @@
         });
 }
 
-function fetchCategory(subCategory) {
+function fetchCategory(category) {
     const mainCategorySelect = document.getElementById('maincategory');
     mainCategorySelect.innerHTML = '<option value="">Cargando...</option>';
 
-    fetch('fetch_category.php?subcategory=' + encodeURIComponent(subCategory))
+    fetch('fetch_category.php?subcategory=' + encodeURIComponent(category))
         .then(response => response.json())
         .then(data => {
             mainCategorySelect.innerHTML = '<option value="">Seleccione una categoría</option>';
@@ -108,7 +108,6 @@ function fetchCategory(subCategory) {
             console.error('Error al cargar categorías:', error);
         });
 }
-
 </script>
 
 

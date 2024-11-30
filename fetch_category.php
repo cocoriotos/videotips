@@ -3,14 +3,15 @@ session_start();
 include "db_connection1.php";
 $username = $_SESSION['email'];
 
-$subcategory = $_GET['subcategory'] ?? '';
+$category = $_GET['subcategory'] ?? '';
+ print("$category");
 
-if ($subcategory) {
+if ($category) {
     $sql = "SELECT DISTINCT maincategory 
             FROM videotips_viodetipscategory 
             WHERE category = ? AND username = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $subcategory, $username);
+    $stmt->bind_param("ss", $category, $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
