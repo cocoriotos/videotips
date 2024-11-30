@@ -3,7 +3,7 @@
 session_start();
 include ("db_connection1.php");
 
-$email = $_POST['Email'];
+$email = $_POST['email'];
 
 $query3="SELECT * from videotips_app_access_list where email = '$email'";
 $result3=$conn->query($query3);
