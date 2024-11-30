@@ -41,7 +41,7 @@
 					<br>
 					<hr>
 					<font id= "form_title" color="white"><strong>Olvidaste tu Contraseña?</strong></font><br>
-					<input type="submit" style="font-size: 150%; text-align: center;" class="btn btn-success btn-block" name="recover" value="Recuperar" formaction="recoverpassword.php"/>
+					<input id="loginbutton" type="submit" style="font-size: 150%; text-align: center;" class="btn btn-success btn-block" name="recover" value="Recuperar" formaction="recoverpassword.php"/>
 					<br>
 					<br>
 				</center>
