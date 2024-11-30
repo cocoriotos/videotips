@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "db_connection1.php";
-$local_username = $_SESSION['email'];
+$username = $_SESSION['email'];
 
 $subcategory = $_GET['subcategory'] ?? '';
 
@@ -10,7 +10,7 @@ if ($subcategory) {
             FROM videotips_viodetipscategory 
             WHERE category = ? AND username = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $subcategory, $local_username);
+    $stmt->bind_param("ss", $subcategory, $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
