@@ -1,8 +1,7 @@
 <?php
-session_start();
-include "db_connection1.php";
-$local_username = $_SESSION['email'];
+include 'db_connection1.php'; // Archivo para conectar a la base de datos
 
+$username = 'usuario_actual'; // Define el username dinámicamente si es necesario
 $maincategory = $_GET['maincategory'] ?? '';
 
 if ($maincategory) {
@@ -10,7 +9,7 @@ if ($maincategory) {
             FROM videotips_viodetipscategory 
             WHERE maincategory = ? AND username = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $maincategory, $local_username);
+    $stmt->bind_param("ss", $maincategory, $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -24,3 +23,4 @@ if ($maincategory) {
     echo json_encode([]);
 }
 ?>
+
