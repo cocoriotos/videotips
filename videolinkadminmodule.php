@@ -44,18 +44,18 @@
 										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
 									</div>
 									
-<!--NEW CODE-->
+<!--NEW CODE
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
 										<select class="form-control" name="maincategory" id="maincategory" onchange="fetchSubcategories(this.value)"><option value="">Seleccione una categoría</option>
 											<?php 
-											$SQLSELECT = "SELECT DISTINCT maincategory FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
+											/*$SQLSELECT = "SELECT DISTINCT maincategory FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
 												$maincategory = $rows['maincategory']; 
 												echo "<option value='$maincategory'>$maincategory</option>";
 											}
-											?>
+											*/?>
 										</select>
 									</div>
 
@@ -66,7 +66,7 @@
 										<select class="form-control" name="category" id="category">
 											<option value="">Seleccione una subcategoría</option>
 											<!-- Las subcategorías se cargarán dinámicamente -->
-										</select>
+										<!--</select>
 									</div>
 <script>
 	function fetchSubcategories(mainCategory) {
@@ -108,37 +108,35 @@ function fetchCategory(category) {
             console.error('Error al cargar categorías:', error);
         });
 }
-</script>
+</script>-->
 
+<!--END NEW CODE-->
 
-
-<!--NEW CODE-->
-
-<!-- Code OK
+<!-- Code OK -->
 									
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
 										<select class="form-control" name="maincategory" id="maincategory" ><?php 
-											/*$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
+											$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
 												$maincategory = $rows['maincategory']; 
 												echo "<option value='$maincategory'>$maincategory</option>";
 											}
-										*/?></select>
+										?></select>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
 										<select class="form-control" name="category" id="category"><?php 
-											/*$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
+											$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
 												$category = $rows['category']; 
 												echo "<option value='$category'>$category</option>";
 											}
-										*/?></select>
+										?></select>
 									</div>
-CODE OK -->
+
 
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Tipo de Contenido</strong></label>
