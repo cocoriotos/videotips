@@ -30,7 +30,7 @@
 					<hr>
 					<div class="inputdata1">
 						<font id= "form_title" color="white"><strong>Digitar su Email registrado</strong></font><br><br>
-						<input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
+						<input id="username1" type="text" name="email"  placeholder="Digite el email"  ><br> <!-- Login  --><br>
 					</div >
                     <br>
 					<input id="loginbutton" type="submit" value="Recuperar">
