@@ -39,7 +39,7 @@
 					<input id="loginbutton" type="submit" value="Ingresar">
 					<br>
 					<br>
-					<button class="fas fa-copy color-dark-icon" style="color: Black; font-size: 10px" onclick="<?php include ("recoverypassword.php"); ?>')"> Olvidaste tu Contraseña?</button>
+					<button class="fas fa-copy color-dark-icon" style="color: Black; font-size: 18px" onclick="<?php include ("recoverypassword.php"); ?>')"> Olvidaste tu Contraseña?</button>
 					<br>
 				</center>
 		</form>	
