@@ -39,6 +39,7 @@
 					<input id="loginbutton" type="submit" value="Ingresar">
 					<br>
 					<br>
+					<button class="fas fa-copy color-dark-icon" onclick="<?php include ("recoverypassword.php"); ?>')"></button>
 					<br>
 				</center>
 		</form>	
