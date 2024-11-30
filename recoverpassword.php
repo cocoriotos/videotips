@@ -33,7 +33,7 @@
 						<input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
 					</div >
 					<input id="loginbutton" type="submit" value="Recuperar">
-                    <input type="submit" style="font-size: 150%; text-align: center;" class="btn btn-success btn-block" name="recover" value="Cancelar" formaction="videotrackerauth.php"/>
+                    <input type="submit" id="cancelar" value="Cancelar" formaction="videotrackerauth.php"/>
 					<br>
 					<br>
 					<br>
