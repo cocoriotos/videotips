@@ -39,7 +39,7 @@
 					<br>
 				</center>
 		</form>	
-		<br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br>
 		<footer id="contact">	
 					<hgroup>
 					<HR id="HR"/>
