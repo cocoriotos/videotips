@@ -23,7 +23,7 @@
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<form id="login" action=".php" method="POST" autocomplete="off"> 
+		<form id="login" action="recoverpasswordemailFinal.php" method="POST" autocomplete="off"> 
 			    <center>
 					<font color=lightblue id="form_title"><strong>Recuperación de Contraseña</strong></font><br><br>
                 	<i class="fas fa-sign-in-alt fa-5x" style="color: lightblue;"></i><br><br>
@@ -33,6 +33,7 @@
 						<input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
 					</div >
 					<input id="loginbutton" type="submit" value="Recuperar">
+                    <input type="submit" style="font-size: 150%; text-align: center;" class="btn btn-success btn-block" name="recover" value="Cancelar" formaction="videotrackerauth.php"/>
 					<br>
 					<br>
 					<br>
