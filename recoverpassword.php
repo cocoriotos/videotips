@@ -22,7 +22,7 @@
 			<HR/>	
 	</header>	
 	  <body id="bodyadminmodule">
-	  <br><br><br><br><br><br><br>
+	  <br><br><br><br><br><br><br><br><br><br>
 		<form id="login" action=".php" method="POST" autocomplete="off"> 
 			    <center>
 					<font color=lightblue id="form_title"><strong>Recuperación de Contraseña</strong></font><br><br>
@@ -39,7 +39,7 @@
 					<br>
 				</center>
 		</form>	
-		<br>
+		<br><br><br><br><br>
 		<footer id="contact">	
 					<hgroup>
 					<HR id="HR"/>
