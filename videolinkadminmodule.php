@@ -140,7 +140,7 @@ function fetchCategory(category) {
 
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Tipo de Contenido</strong></label>
-										<select class="form-control" name="category" id="category"><?php 
+										<select class="form-control" name="proforpers" id="proforpers"><?php 
 											$SQLSELECT = "SELECT proforpers FROM videotips_proforpers"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
