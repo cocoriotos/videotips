@@ -33,8 +33,8 @@ if ($urlduplicated->num_rows > 0) {
 
 if ($is_active == 1) {
     
-    $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, description, proforpers, active, username) 
-                VALUES ('$videolink', '$maincategory', '$category', '$description', '$proforpers',  'Yes', '$local_username')";
+    $query3 = "INSERT INTO videotips_videotips (videolink, maincategory, category, content, proforpers, active, username) 
+                                       VALUES ('$videolink', '$maincategory', '$category', '$description', '$proforpers',  'Yes', '$local_username')";
     
     if ($conn->query($query3) === TRUE) {
         $_SESSION['savedlink']=1;
