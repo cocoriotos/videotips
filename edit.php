@@ -93,7 +93,7 @@ include "SessionTimeOut.php";
 							<td align="center"><?php echo $link['maincategory'] ?></td>
 							<td align="center"><?php echo $link['category'] ?></td>
 							<td align="center"><?php echo $link['proforpers'] ?></td>
-							<td align="left"><?php echo $link['description'] ?></td>
+							<td align="left"><?php echo $link['content'] ?></td>
 							<td align="center"><?php echo $link['creationdate'] ?></td>
 							</td>
 						</tr>
