@@ -173,7 +173,7 @@ function fetchCategory(category) {
 							<!--<th>Previsualización</th>-->
 							<th>Categoría</th>
 							<th>Subcategoría</th>
-							<th>Tipo de Contenido</th>
+							<th>Contenido</th>
 							<th>Descripción</th>
 							<th>Creación</th>
 							<th>Copiar Enlace</th>
