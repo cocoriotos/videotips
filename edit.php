@@ -45,7 +45,7 @@ include "SessionTimeOut.php";
 									</div>
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>
-										<select id="maincategory" class="form-control" name="maincategory" required><?php $query_options = "SELECT distinct(maincategory) FROM videotips_maincategory where username = '$local_username' order by maincategory asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
+										<select id="maincategory" class="form-control" name="maincategory" required><?php $query_options = "SELECT distinct(maincategory) FROM videotips_viodetipscategory where username = '$local_username' order by maincategory asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['maincategory'] == $link['maincategory']) ? "selected" : ""; echo "<option value=\"{$option['maincategory']}\" $selected>{$option['maincategory']}</option>"; } ?></select><br><br>
 									</div>
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>
