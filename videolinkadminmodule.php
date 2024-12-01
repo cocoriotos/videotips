@@ -193,7 +193,7 @@ function fetchCategory(category) {
 								<td id="tdmaincategory" align="center"><?php echo $links['maincategory'] ?></td>
 								<td id="tdcategory" align="center"><?php echo $links['category'] ?></td>
 								<td id="tdproforpers" align="center"><?php echo $links['proforpers'] ?></td>
-								<td id="tddescription" align="left"><?php echo $links['contenido'] ?></td>
+								<td id="tddescription" align="left"><?php echo $links['content'] ?></td>
 								<td align="center"><?php echo $links['creationdate'] ?></td>
 								<td align="center"><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
 								<!--<td align="center"><button class="fas fa-copy" onclick="window.location.href='copyToClipboard.php?videolink=<?php /*echo urlencode($links['videolink']);*/ ?>';"></button></td>-->
