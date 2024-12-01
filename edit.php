@@ -76,8 +76,8 @@ include "SessionTimeOut.php";
 						<th>ID</th>
 						<th>Enlace o URL</th>
 						<th>Categoría</th>
-						<th>Tipo de Contenido</th>
 						<th>Subcategoría</th>
+						<th>Contenido</th>
 						<th>Descripción</th>
 						<th>Fecha de Creación</th>
 					</tr>
