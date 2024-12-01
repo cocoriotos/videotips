@@ -57,7 +57,7 @@ include "SessionTimeOut.php";
 									</div>
 									<div class="form-group col-md-2">
 										<label for="description" class="col-form-label" style="color: black;"><strong>Descripción</strong></label><br>	
-										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido" required><?php echo $link['description']?></textarea><br>
+										<textarea id="description" name="description" rows="1" class="form-control" placeholder="Descripción del Contenido" required><?php echo $link['content']?></textarea><br>
 									</div>						
 					</div></center>
 							<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
