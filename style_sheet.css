@@ -39,20 +39,17 @@ body {
   padding: 0;
   font-size: 80%;
   font-family: arial;
-  /*background-image: url('img/background.jpg');
-		background-color: #032642;
-		background-color: #F5F5DC;*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-/*@media (max-width: 768px) {
-  /*body {
+@media (max-width: 500px) {
+  body {
     background-size: contain; /* Ajusta la imagen para que quepa completamente en la pantalla */
-/*background-position: center center; /* Asegura que se mantenga centrada */
-/*}
-}*/
+    background-position: center center; /* Asegura que se mantenga centrada */
+  }
+}
 
 #headerfonts {
   font-size: 24px;
