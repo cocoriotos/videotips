@@ -13,16 +13,16 @@ HR /*head TOP*/ {
   box-sizing: border-box;
 }
 
-header /* where  title is*/ {
-  color: #0c316d;
+/*header /* where  title is*/ /*{
+  /*color: #0c316d;
   background-color: #032642;
   width: 100%;
   /*margin: 40px auto;*/
-  font-family: arial;
+/*font-family: arial;
   border-radius: 15px;
   /*margin: 5px auto;*/
-  text-shadow: white 5px 5px 20px;
-}
+/*text-shadow: white 5px 5px 20px;
+}*/
 
 head /*where  title is*/ {
   /*float:bottom;*/
@@ -94,6 +94,7 @@ ul {
   font-family: arial;
 }
 
+header,
 footer {
   background-color: #0085c3; /* background color for footer  only*/
   width: 100%;
