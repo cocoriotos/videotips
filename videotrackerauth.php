@@ -4,7 +4,7 @@
 	include "SessionTimeOut.php";*/	
 	date_default_timezone_set('America/Bogota');
 	?>
-	<head>	
+	<head id="contact">	
 		<script src="head.js" defer></script>	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
 		<link rel="stylesheet" href="style_sheet.css"/>
@@ -16,10 +16,10 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
 	</head>
-	<header>
-			<HR id="HR"/>
+	<header id="contact">
+			
 				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
-			<HR/>	
+			
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br>
@@ -55,9 +55,9 @@
 		<br>
 		<footer id="contact">	
 					<hgroup>
-					<HR id="HR"/>
-					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>  </h6>
-					<HR/>
+					
+					<h1 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>  </h1>
+					
 					</hgroup>			
 		</footer>
 	</body>
