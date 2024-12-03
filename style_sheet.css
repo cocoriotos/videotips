@@ -33,6 +33,16 @@ head /*where  title is*/ {
   font-family: arial;
 }
 
+#contact {
+  background-color: #032642;
+  width: 100%;
+  font-family: arial;
+  border-radius: 15px;
+  margin: 5px auto;
+  text-shadow: white 5px 5px 20px;
+  font-size: 320%;
+}
+
 body {
   width: 100%; /*ancho*/
   height: 100%; /*alto*/
@@ -116,16 +126,6 @@ footer {
   background-color: white;
   /*text-color:black;*/
   font-family: arial;
-}
-
-#contact {
-  background-color: #032642;
-  width: 98%;
-  font-family: arial;
-  border-radius: 15px;
-  margin: 5px auto;
-  text-shadow: white 5px 5px 20px;
-  font-size: 320%;
 }
 
 #cancel {
