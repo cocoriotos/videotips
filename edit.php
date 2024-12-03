@@ -52,7 +52,7 @@ include "SessionTimeOut.php";
 										<select id="category" class="form-control" name="category" required><?php $query_options = "SELECT distinct(category) FROM videotips_viodetipscategory where username = '$local_username' order by category asc"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['category'] == $link['category']) ? "selected" : ""; echo "<option value=\"{$option['category']}\" $selected>{$option['category']}</option>"; } ?></select><br><br>
 									</div>
 									<div class="form-group col-md-2">
-										<label for="proforpers" class="col-form-label" style="color: black;"><strong>Tipo de Contenido</strong></label><br>
+										<label for="proforpers" class="col-form-label" style="color: black;"><strong>Contenido</strong></label><br>
 										<select id="proforpers" class="form-control" name="proforpers" required><?php $query_options = "SELECT distinct(proforpers) FROM videotips_proforpers"; $result_options = mysqli_query($conn, $query_options); while ($option = mysqli_fetch_assoc($result_options)) { $selected = ($option['proforpers'] == $link['proforpers']) ? "selected" : ""; echo "<option value=\"{$option['proforpers']}\" $selected>{$option['proforpers']}</option>"; } ?></select><br><br>
 									</div>
 									<div class="form-group col-md-2">
