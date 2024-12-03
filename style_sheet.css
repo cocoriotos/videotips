@@ -47,12 +47,12 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
-  body {
+/*@media (max-width: 768px) {
+  /*body {
     background-size: contain; /* Ajusta la imagen para que quepa completamente en la pantalla */
-    background-position: center center; /* Asegura que se mantenga centrada */
-  }
-}
+/*background-position: center center; /* Asegura que se mantenga centrada */
+/*}
+}*/
 
 #headerfonts {
   font-size: 24px;
