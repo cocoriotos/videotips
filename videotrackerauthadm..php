@@ -17,9 +17,9 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
 	</head>
 	<header>
-			<HR id="HR"/>
+			
 				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
-			<HR/>	
+				
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br>
@@ -50,9 +50,9 @@
 		<br>
 		<footer id="contact">	
 					<hgroup>
-					<HR id="HR"/>
+					
 					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>  </h6>
-					<HR/>
+					
 					</hgroup>			
 		</footer>
 	</body>
