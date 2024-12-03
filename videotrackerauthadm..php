@@ -47,7 +47,6 @@
 		</form>	
 		<br>
 		<br>
-		<br>
 		<footer id="contact">	
 					<hgroup>
 					
