@@ -347,7 +347,7 @@ ul.tab li a:focus,
 /************************************/
 
 nav {
-  width: 98%; /* El nav ocupa todo el ancho */
+  width: 100%; /* El nav ocupa todo el ancho */
   background-color: #333; /* Fondo oscuro */
 }
 
