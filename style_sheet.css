@@ -24,14 +24,14 @@ HR /*head TOP*/ {
 /*text-shadow: white 5px 5px 20px;
 }*/
 
-head /*where  title is*/ {
-  /*float:bottom;*/
-  /*height:100%;*/
-  color: #0c316d;
+/*head /*where  title is*/ /*{*/
+/*/*float:bottom;*/
+/*/*height:100%;*/
+/*color: #0c316d;
   background-color: #032642;
   width: 100%;
   font-family: arial;
-}
+}*/
 
 body {
   width: 100%; /*ancho*/
@@ -94,6 +94,7 @@ ul {
   font-family: arial;
 }
 
+head,
 header,
 footer {
   background-color: #0085c3; /* background color for footer  only*/
