@@ -328,7 +328,7 @@ ul.tab li a:focus,
   font-size: 250%;
   font-family: arial;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 #bodyadminmodule,
@@ -336,6 +336,7 @@ ul.tab li a:focus,
   background-color: #e0e0e0;
   margin: 0px;
   padding: 0%;
+  height: 80%;
 }
 
 #autosearch,
