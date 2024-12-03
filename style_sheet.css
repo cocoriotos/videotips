@@ -347,7 +347,7 @@ ul.tab li a:focus,
 /************************************/
 
 nav {
-  width: 100%; /* El nav ocupa todo el ancho */
+  width: 98%; /* El nav ocupa todo el ancho */
   background-color: #333; /* Fondo oscuro */
 }
 
@@ -366,7 +366,7 @@ nav ul li a {
   text-decoration: none; /* Quitamos el subrayado */
   font-size: 16px;
   padding: 15px 20px; /* Espaciado interno para los enlaces */
-  display: block;
+  /*display: block;*/
 }
 
 /* Efecto hover para los enlaces */
