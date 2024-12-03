@@ -105,14 +105,14 @@ ul {
   font-family: arial;
 }
 
-footer {
+/*footer {
   background-color: #0085c3; /* background color for footer  only*/
-  width: 100%;
+/*width: 100%;
   font-family: arial;
   margin: 40px auto;
   border-radius: 15px;
   text-shadow: white 5px 5px 20px;
-}
+}*/
 
 #notes {
   background-color: #0085c3; /* background color */
