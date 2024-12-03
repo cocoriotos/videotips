@@ -34,7 +34,7 @@ head /*where  title is*/ {
 
 body {
   width: 100%; /*ancho*/
-  height: 100vh; /*alto*/
+  height: 10%; /*alto*/
   margin: 0;
   padding: 0;
   font-size: 80%;
