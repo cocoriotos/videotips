@@ -16,7 +16,8 @@ HR /*head TOP*/ {
 header /* where  title is*/ {
   color: #0c316d;
   background-color: #032642;
-  width: 100%;
+  width: 98%;
+  margin: 40px auto;
   font-family: arial;
   border-radius: 15px;
   /*margin: 5px auto;*/
@@ -34,7 +35,7 @@ head /*where  title is*/ {
 
 body {
   width: 100%; /*ancho*/
-  height: 10%; /*alto*/
+  height: 100%; /*alto*/
   margin: 0;
   padding: 0;
   font-size: 80%;
@@ -342,11 +343,6 @@ ul.tab li a:focus,
   text-align: center;
 }
 /************************************/
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}*/
 
 nav {
   width: 100%; /* El nav ocupa todo el ancho */
@@ -440,10 +436,6 @@ form hr {
   width: 10px;
 }
 
-/*#autosearch td:nth-child(7), #autosearch th:nth-child(7) {
-    max-width: 20px;
-}*/
-
 #autosearch {
   width: 100%;
   table-layout: auto; /* Asegura que la tabla se ajuste al contenido */
@@ -455,14 +447,6 @@ form hr {
   word-wrap: break-word;
   max-width: 200px; /* Ajustar el valor a tus necesidades */
 }
-
-/* Si deseas un efecto de ocultar el contenido largo con '...':
-   .table td, .table th {
-       white-space: nowrap;
-       overflow: hidden;
-       text-overflow: ellipsis;
-   }
-*/
 
 .btn-short {
   width: 20px; /* Adjust the width as necessary */
