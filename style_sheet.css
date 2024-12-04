@@ -29,6 +29,7 @@ head /*where  title is*/ {
   /*height:100%;*/
   color: #0c316d;
   background-color: #032642;
+  max-width: 1200px;
   width: 100%;
   font-family: arial;
 }
