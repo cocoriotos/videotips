@@ -29,17 +29,20 @@ head /*where  title is*/ {
   /*height:100%;*/
   color: #0c316d;
   background-color: #032642;
-  max-width: 200px;
-
+  max-width: 1200px;
   width: 100%;
+  max-height: 1200px;
+  height: 100%;
   font-family: arial;
 }
 
 #contact {
   color: white;
   background-color: #032642;
-  max-width: 200px;
+  max-width: 1200px;
   width: 100%;
+  max-height: 1200px;
+  height: 100%;
   font-family: arial;
   /*border-radius: 15px;
   margin: 5px auto;*/
