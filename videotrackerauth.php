@@ -16,7 +16,6 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
 	</head>
-	<br>
 	<header id="contact">
 			
 				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
@@ -58,11 +57,11 @@
 		<br>
 		<br>
 		<footer id="contact">	
-					<hgroup>
+					
 					
 					<h1 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>  </h1>
 					
-					</hgroup>			
+							
 		</footer>
 	</body>
 </html>
