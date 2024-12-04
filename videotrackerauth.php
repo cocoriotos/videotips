@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
 	</head>
+	<br>
 	<header id="contact">
 			
 				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
@@ -52,7 +53,6 @@
 				<input id="requestaccess" type="submit" value="Solicitar Acceso"><br>
 			</center>
 		</form>
-		<br>
 		<br>
 		<br>
 		<br>
