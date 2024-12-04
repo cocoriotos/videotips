@@ -29,7 +29,7 @@ head /*where  title is*/ {
   /*height:100%;*/
   color: #0c316d;
   background-color: #032642;
-  max-width: 1200px;
+  max-width: 200px;
 
   width: 100%;
   font-family: arial;
@@ -38,6 +38,7 @@ head /*where  title is*/ {
 #contact {
   color: white;
   background-color: #032642;
+  max-width: 200px;
   width: 100%;
   font-family: arial;
   /*border-radius: 15px;
