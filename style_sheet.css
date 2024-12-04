@@ -16,6 +16,8 @@ font-face /*Fonts*/ {
 * {
   box-sizing: border-box;
   outline: 1px solid red; /* Resalta todos los elementos */
+  height: 900px;
+  width: 900px;
 }
 
 html {
