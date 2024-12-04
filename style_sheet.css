@@ -13,25 +13,6 @@ font-face /*Fonts*/ {
   box-sizing: border-box;
 }*/
 
-* {
-  box-sizing: border-box;
-  outline: 1px solid red; /* Resalta todos los elementos */
-  height: 900px;
-  width: 900px;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-  height: 900px;
-  width: 900px;
-}
-
-.full-screen {
-  height: 900px;
-  width: 900px;
-}
-
 header /* where  title is*/ {
   color: #0c316d;
   background-color: #032642;
@@ -55,23 +36,21 @@ head /*where  title is*/ {
 #contact {
   color: white;
   background-color: #032642;
+  width: 100%;
   font-family: arial;
   /*border-radius: 15px;
   margin: 5px auto;*/
   text-shadow: white 5px 5px 20px;
   font-size: 100%;
-  height: 900px;
-  width: 900px;
 }
 
 body {
-  height: 900px;
-  width: 900px;
+  width: 100%; /*ancho*/
+  height: 90%; /*alto*/
   margin: 0;
   padding: 0;
   font-size: 80%;
   font-family: arial;
-
   /*background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;*/
@@ -358,8 +337,6 @@ ul.tab li a:focus,
   margin: 0px;
   padding: 0%;
   height: 80%;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #autosearch,
