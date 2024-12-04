@@ -13,6 +13,17 @@ font-face /*Fonts*/ {
   box-sizing: border-box;
 }*/
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
 header /* where  title is*/ {
   color: #0c316d;
   background-color: #032642;
