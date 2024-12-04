@@ -53,7 +53,7 @@ include "SessionTimeOut.php";
           </div>
           </center>
           <hr>
-          <center><input type="button" action="requestaccessfinal.php">Salir</input></center>
+          <center><a id="headerfonts" href="requestaccessfinal.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a></center>
     </div>    
   </div>
     </body>
