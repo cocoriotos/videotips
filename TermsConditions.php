@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php
+<input?php
 /*include "nobackpage.php";*/
 include "SessionTimeOut.php";
 ?>
@@ -8,8 +8,9 @@ include "SessionTimeOut.php";
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">TERMINOS Y CONDICIONES</a></center>  
-    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
+    <center><a id="welcome" class="navbar-brand">TERMINOS Y CONDICIONES</a></center>  
+    <center><a id="welcome" class="navbar-brand">Consideraciones y cubrimientos de Servicios</a></center>
+
   </nav>
 	</header>
   
@@ -19,7 +20,7 @@ include "SessionTimeOut.php";
           <br><br>
      
   <div class="container">
-      <div class="column-wrap clearfix">
+      <class="column-wrap clearfix">
             <div class="col-xs-12">
                 <hr>
             </div>
@@ -44,7 +45,7 @@ include "SessionTimeOut.php";
                     <p> 4. El valor de la Suscripción es de $60.000 Pesos Colombianos COP Anuales</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
-                    <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
+                    <p> 1. Pago por Nequi al número +57 305 4293185 o Paypal al YSXRZMT2AAG4G.</p> 
                     <p> 2. Tomar una imagen del pago realizado y convertirla a formato PDF</p>
                     <p> 3. Enviar correo el archivo PDF o una imágen del pago realizado desde la cuenta de correo con la que se registró.</p>
                     <p> 4. Si tiene alguna duda, enviar correo al administrador: adm@solicionespro.com o WhatsApp: +57 3054293185</p>
@@ -52,6 +53,7 @@ include "SessionTimeOut.php";
           </div>
           </center>
           <hr>
+          <center><input type="button" action="requestaccessfinal.php">Salir</input></center>
     </div>    
   </div>
     </body>

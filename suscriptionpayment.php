@@ -51,7 +51,7 @@ include "SessionTimeOut.php";
                     <p> 4. El valor de la Suscripción es de $60.000 Pesos Colombianos COP Anuales</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
-                    <p> 1. Pago de los montos por Nequi al número +57 305 4293185.</p> 
+                    <p> 1. Pago por Nequi al número +57 305 4293185 o PayPal al YSXRZMT2AAG4G.</p> 
                     <p> 2. Tomar una imagen por cada uno de los pagos realizados y convertirlas a formato PDF</p>
                     <p> 3. Al realizar el pago dar click en el botón de abajo para enviar correo el archivo PDF o una imagen del pago realizado.</p>
                     <p> 4. Si tiene alguna duda, enviar correo al administrador: adm@solicionespro.com o WhatsApp: +57 3054293185</p>
