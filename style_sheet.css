@@ -1,4 +1,4 @@
-@charset "utf-8"; /* characters to be used*/
+/*@charset "utf-8"; /* characters to be used*/
 
 font-face /*Fonts*/ {
   font-family: arial; /*To charge text fonts and ensuring fonts, TTF fonts loaded in apache folder*/
