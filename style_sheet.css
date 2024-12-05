@@ -226,9 +226,8 @@ ul {
 }
 
 #div Display {
-  background-color: #0085c3;
-  /*background-color: red;
-  box-shadow: #999 5px 5px 10px;*/
+  background-color: red;
+  box-shadow: #999 5px 5px 10px;
 }
 
 div .column-custom-wrap {
@@ -270,7 +269,8 @@ ul.tab {
   padding: 0;
   overflow: hidden;
   border: 5px double #ccc;
-  background-color: #f1f1f1;
+  background-color: #0085c3;
+  /*background-color: #f1f1f1;*/
   font-family: arial;
 }
 
