@@ -65,7 +65,7 @@
 					
 					
 					<h1 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?></h1>
-                    <address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>					
+                    <h1 align="center"><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address></h1>
 							
 		</footer>
 	</body>
