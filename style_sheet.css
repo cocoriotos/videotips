@@ -300,8 +300,7 @@ ul.tab li a:hover {
 /* Create an active/current ink class */
 ul.tab li a:focus,
 .active {
-  background-color: #0085c3;
-  /*background-color: #ccc;*/
+  background-color: #ccc;
   font-family: arial;
 }
 
@@ -334,7 +333,8 @@ ul.tab li a:focus,
 
 #bodyadminmodule,
 #adminmodulecontainer {
-  background-color: #e0e0e0;
+  background-color: #0085c3;
+  /*background-color: #e0e0e0;*/
   margin: 0px;
   padding: 0%;
   height: 80%;
