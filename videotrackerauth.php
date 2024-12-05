@@ -44,6 +44,9 @@
 					<input id="loginbutton" type="submit" value="Recuperar" formaction="recoverpassword.php"/>
 					<br>
 					<br>
+					<br>
+					<br>
+					<br>
 				</center>
 		</form>	
 		<form id="login" action="requestaccessfinal.php" method="POST" autocomplete="off"> 
