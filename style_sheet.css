@@ -337,8 +337,8 @@ ul.tab li a:focus,
   /*background-color: #e0e0e0;*/
   margin: 0px;
   padding: 0%;
-  width: 800px;
-  height: 2140px;
+  width: 2140px;
+  height: 800px;
 }
 
 #autosearch,
