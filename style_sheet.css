@@ -404,6 +404,7 @@ nav ul li a:hover {
 /***********************************************/
 #welcome {
   font-size: 35px;
+  padding: 0%;
 }
 
 form hr {
