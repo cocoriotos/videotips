@@ -124,8 +124,7 @@ ul {
 }
 
 #resume {
-  background-color: #0085c3;
-  /*background-color: white;*/
+  background-color: white;
   /*text-color:black;*/
   font-family: arial;
 }
@@ -146,11 +145,12 @@ ul {
 #accessrequestform,
 #AddUser {
   font-size: 105%;
-  background-color: #5f9ea0;
+  background-color: #0085c3;
+  /*background-color: #5f9ea0;*/
   margin: 40px auto;
   padding: 5px;
-  background: gray;
-  box-shadow: #999 5px 5px 10px;
+  /*background: gray;
+  box-shadow: #999 5px 5px 10px;*/
   width: 600px;
   border-radius: 20px;
   font-family: arial;
