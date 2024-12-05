@@ -22,6 +22,7 @@ include "SessionTimeOut.php";
 
 <header>
     <script src="copynumber.js"></script>
+    <script src="copypaypal.js"></script>
 </header>  	
 <body id="bodyadminmodule">
           <br><br>
