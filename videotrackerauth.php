@@ -43,14 +43,7 @@
 					<font id= "form_title" color="white"><strong>Olvidaste tu Contraseña?</strong></font><br>
 					<input id="loginbutton" type="submit" value="Recuperar" formaction="recoverpassword.php"/>
 					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+					
 				</center>
 		</form>	
 		<form id="login" action="requestaccessfinal.php" method="POST" autocomplete="off"> 
@@ -59,6 +52,10 @@
 				<input id="requestaccess" type="submit" value="Solicitar Acceso"><br>
 			</center>
 		</form>
+		<br>
+		<br>
+		<br>
+		<br>
 		<br>
 		<br>
 		<br>
