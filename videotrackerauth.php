@@ -18,8 +18,8 @@
 	</head>
 	<header id="contact">
 			
-				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
-			
+				<center><h1><font color="#E1EAF7">Biblioteca de</font></h1></center>
+			    <center><h1><font color="#E1EAF7">Contenidos Útiles</font></h1></center>
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br><br><br><br><br><br><br><br><br><br>
