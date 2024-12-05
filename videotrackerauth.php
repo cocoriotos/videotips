@@ -65,7 +65,6 @@
 		<br>
 		<br>
 		<br>
-		<br>
 		<footer id="contact">	
 					
 					
