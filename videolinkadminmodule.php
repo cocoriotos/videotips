@@ -31,9 +31,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
 
-<body id="bodyadminmodule" style="padding: 0%; width: 100%;">
+<body id="bodyadminmodule" style="padding: 0%; ">
 		<div  class="container-fluid p-0" >
-			<div class="row justify-content-start" style="padding: 0%;>
+			<div class="row justify-content-start" style="padding: 0%; width: 100%;>
 				<div class="col-md-12"> 
 					<div class="card card-body" id="card-body">
 							<form action="savelinks.php" method="POST">
