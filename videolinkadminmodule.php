@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
 
-<body id="bodyadminmodule">
+<body id="bodyadminmodule" style="padding: 0%; width: 100%;">
 		<div  class="container-fluid p-0" >
 			<div class="row justify-content-start">
 				<div class="col-md-12"> 
