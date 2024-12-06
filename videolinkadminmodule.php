@@ -33,7 +33,7 @@
 
 <body id="bodyadminmodule" style="padding: 0%; width: 100%;">
 		<div  class="container-fluid p-0" >
-			<div class="row justify-content-start" style="padding: 0%; width: 100%; margin = 0%">
+			<div class="row justify-content-start" style="padding: 0%;>
 				<div class="col-md-12"> 
 					<div class="card card-body" id="card-body">
 							<form action="savelinks.php" method="POST">
