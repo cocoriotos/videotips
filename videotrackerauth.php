@@ -5,7 +5,7 @@
 	date_default_timezone_set('America/Bogota');
 	?>
 	<head id="contact">	
-		<link rel="icon" href="Logo2.ico" type="image/x-icon">
+		<link rel="icon" href="logo.ico" type="image/x-icon">
 		<script src="head.js" defer></script>	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
 		<link rel="stylesheet" href="style_sheet.css"/>
