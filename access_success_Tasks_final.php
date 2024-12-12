@@ -33,7 +33,7 @@ $_SESSION['updatedlink']=0;
 $_SESSION['deletedlink']=0;
 
 $_SESSION['savedcategory']=0;
-$_SESSION['duplicatedcategory'];
+$_SESSION['duplicatedcategory']=0;
 $_SESSION['updatedcategory']=0;
 $_SESSION['deletedcategory']=0;
 $_SESSION['suscriptiondue']=0;
@@ -101,7 +101,7 @@ $password=$_POST['password'];
 
 				}
 				
-				$query2="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate) where username ='$local_username'"; 
+				$query2="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
 				$result2=mysqli_query($conn, $query2);
 
 				$stmt = $conn->prepare("SELECT suscriptiondaysleft FROM videotips_app_access_list WHERE username = ?");
