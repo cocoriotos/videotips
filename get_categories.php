@@ -16,11 +16,11 @@ include('db_connection1.php'); // Asegúrate de incluir tu conexión a la base d
 
 if (isset($_GET['maincategory'])) {
     $maincategory = $_GET['maincategory'];
-    $username = $_SESSION['username']; // Asegúrate de obtener el username de la sesión.
+    /*$username = $_SESSION['username']; // Asegúrate de obtener el username de la sesión.*/
 
     $SQLSELECT = "SELECT DISTINCT(category) FROM videotips_viodetipscategory WHERE maincategory = ? AND username = ? ORDER BY category ASC";
     $stmt = $conn->prepare($SQLSELECT);
-    $stmt->bind_param("ss", $maincategory, $username);
+    $stmt->bind_param("ss", $maincategory, $local_username);
     $stmt->execute();
     $result = $stmt->get_result();
 
