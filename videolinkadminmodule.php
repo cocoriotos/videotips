@@ -44,98 +44,31 @@
 										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
 									</div>
 									
-<!--NEW CODE
-									<div class="form-group col-md-2">
-										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory" id="maincategory" onchange="fetchSubcategories(this.value)"><option value="">Seleccione una categoría</option>
-											<?php 
-											/*$SQLSELECT = "SELECT DISTINCT maincategory FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
-											$result_set = mysqli_query($conn, $SQLSELECT); 
-											while ($rows = $result_set->fetch_assoc()) { 
-												$maincategory = $rows['maincategory']; 
-												echo "<option value='$maincategory'>$maincategory</option>";
-											}
-											*/?>
-										</select>
-									</div>
-
-									<div class="form-group col-md-2">
-										<label for="category" class="col-form-label" style="color: black;">
-											<strong>Subcategoría</strong>
-										</label>
-										<select class="form-control" name="category" id="category">
-											<option value="">Seleccione una subcategoría</option>
-											<!-- Las subcategorías se cargarán dinámicamente -->
-										<!--</select>
-									</div>
-<script>
-	function fetchSubcategories(mainCategory) {
-    const subcategorySelect = document.getElementById('category');
-    subcategorySelect.innerHTML = '<option value="">Cargando...</option>';
-
-    fetch('fetch_subcategories.php?maincategory=' + encodeURIComponent(mainCategory))
-        .then(response => response.json())
-        .then(data => {
-            subcategorySelect.innerHTML = '<option value="">Seleccione una subcategoría</option>';
-            data.forEach(subcategory => {
-                const option = document.createElement('option');
-                option.value = subcategory.category;
-                option.textContent = subcategory.category;
-                subcategorySelect.appendChild(option);
-            });
-        })
-        .catch(error => {
-            console.error('Error al cargar subcategorías:', error);
-        });
-}
-
-function fetchCategory(category) {
-    const mainCategorySelect = document.getElementById('maincategory');
-    mainCategorySelect.innerHTML = '<option value="">Cargando...</option>';
-
-    fetch('fetch_category.php?subcategory=' + encodeURIComponent(category))
-        .then(response => response.json())
-        .then(data => {
-            mainCategorySelect.innerHTML = '<option value="">Seleccione una categoría</option>';
-            data.forEach(maincategory => {
-                const option = document.createElement('option');
-                option.value = maincategory.maincategory;
-                option.textContent = maincategory.maincategory;
-                mainCategorySelect.appendChild(option);
-            });
-        })
-        .catch(error => {
-            console.error('Error al cargar categorías:', error);
-        });
-}
-</script>-->
-
-<!--END NEW CODE-->
 
 <!-- Code OK -->
 									
 									<div class="form-group col-md-2">
 										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory" id="maincategory" onchange="updateCategories()">
-											<?php 
-											$SQLSELECT = "SELECT DISTINCT(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
+										<select class="form-control" name="maincategory" id="maincategory" ><?php 
+											$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
 												$maincategory = $rows['maincategory']; 
 												echo "<option value='$maincategory'>$maincategory</option>";
 											}
-											?>
-										</select>
+										?></select>
 									</div>
-
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
-										<select class="form-control" name="category" id="category">
-											<option value="">Seleccione una categoría primero</option>
-										</select>
+										<select class="form-control" name="category" id="category"><?php 
+											$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
+											$result_set = mysqli_query($conn, $SQLSELECT); 
+											while ($rows = $result_set->fetch_assoc()) { 
+												$category = $rows['category']; 
+												echo "<option value='$category'>$category</option>";
+											}
+										?></select>
 									</div>
-
-
 
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Contenido</strong></label>
@@ -383,33 +316,3 @@ $_SESSION['deletedlink'] = 0;
 }
 
 ?>
-
-<script>
-function updateCategories() {
-    const maincategory = document.getElementById("maincategory").value;
-    const categorySelect = document.getElementById("category");
-
-    // Limpia las opciones anteriores
-    categorySelect.innerHTML = '<option value="">Cargando...</option>';
-
-    // Realiza la solicitud AJAX
-    fetch("get_categories.php?maincategory=" + encodeURIComponent(maincategory))
-        .then(response => response.json())
-        .then(data => {
-            // Limpia las opciones y agrega las nuevas
-            categorySelect.innerHTML = '<option value="">Seleccione una subcategoría</option>';
-            data.forEach(category => {
-                const option = document.createElement("option");
-                option.value = category;
-                option.textContent = category;
-                categorySelect.appendChild(option);
-            });
-        })
-        .catch(error => {
-            console.error("Error al cargar las subcategorías:", error);
-            categorySelect.innerHTML = '<option value="">Error al cargar</option>';
-        });
-}
-</script>
-
- 
