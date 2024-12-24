@@ -13,8 +13,8 @@ include "SessionTimeOut.php";*/
 
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center" >
     <div class="d-flex">
-        <a id="headerfonts" href="#" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarPaypal();"><i class="fab fa-paypal"></i> Cuenta Paypal: YSXRZMT2AAG4G</a>
-        <a id="headerfonts" href="#" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>
+        <!--<a id="headerfonts" href="#" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarPaypal();"><i class="fab fa-paypal"></i> Cuenta Paypal: YSXRZMT2AAG4G</a>
+        <a id="headerfonts" href="#" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>-->
         <a id="headerfonts" href="suscriptionpayment.php" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold;"><i class="fa fa-usd"></i> Tarifa y vías de pago</a>
     </div>
     <div class="d-flex">
