@@ -15,8 +15,8 @@ include "SessionTimeOut.php";*/
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Ir a Paypal" onclick="window.open('https://www.paypal.com/', '_blank');"></input>
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Número Nequi: 3054293185" onclick="copiarNumero();">  
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Ir a Nequi" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
-               <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style=" background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fas fa-times"></i> Cancelar</a>
-               <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFF9CC ; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
+               <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style=" background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-times"></i> Volver a la aplicación</a>
+               <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6 ; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>	
   </nav></center>
   
