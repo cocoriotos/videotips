@@ -31,11 +31,11 @@
 					<hr>
 					<div class="inputdata1">
 						<font id= "form_title" color="white"><strong>Email</strong></font><br><br>
-						<input id="username1" type="text" name="email"  placeholder="Digite el email" required ><br> <!-- Login  --><br>
+						<input id="username1" type="text" name="email"  placeholder="Digite el email"  ><br> <!-- Login  --><br>
 					</div >
 					<div class="inputdata1">
 						<font id= "form_title" color="white"><strong>Contraseña</strong></font><br><br>
-						<input id="username1" type="password" name="password" placeholder="Digite su Constraseña" required ><br> <!-- Login PAM username  --><br>
+						<input id="username1" type="password" name="password" placeholder="Digite su Constraseña"  ><br> <!-- Login PAM username  --><br>
 					</div >
 					<input id="loginbutton" type="submit" value="Ingresar">
 					<br>
