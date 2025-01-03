@@ -212,7 +212,7 @@ if ($sessiontimeoutreached  == 1){
 				alertify.set("notifier", "position", "bottom-center");
 	
 				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Categoría Borrada. Al borrar una subcategoría esta queda registrada como usada dentro de subcategorías gratis", "warning", 7);
+				alertify.notify("Categoría Borrada.", "warning", 7);
 			});
 		</script>';
 		$_SESSION['deletedcategory'] = 0;
