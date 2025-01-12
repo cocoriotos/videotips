@@ -77,7 +77,7 @@ include "SessionTimeOut.php";
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
-                    <th>Servicio a Pagar</th>
+                    <th>Tipo Suscripcion</th>
                     <!--<th>Descargar Documento</th>-->
                   </tr>
                   </thead>
@@ -90,8 +90,8 @@ include "SessionTimeOut.php";
                       <td align="center"><?php echo $links['username']?></td>
                       <td align="center"><?php echo $links['currentdate'] ?></td>
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
-                      <td align="center"><?php echo $links['suscriptiondate'] ?></td>
-                      <td align="center"><?php echo $links['ServicePayed'] ?></td>
+                      <td align="center"><?php echo $links['freeregistrationdate'] ?></td>
+                      <td align="center"><?php echo $links['suscription_package'] ?></td>
                       <!--<td align="center"><?php /*echo $links['filepath']*/ ?></td>-->
                       </td>
                     </tr>
