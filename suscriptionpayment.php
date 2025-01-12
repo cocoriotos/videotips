@@ -72,12 +72,12 @@ include "SessionTimeOut.php";
               <table id="autosearch" class="display" font color="back">
                   <thead id="tableswhite">
                   <tr>
-                    <th>Usuario</th>
-                    <!--<th>Total SubCategorías</th> -->
+                  <th>Usuario</th>
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
-                    <th>Fecha de Solicitud de acceso a la plataforma </th>
+                    <th>Fecha de Solicitud de acceso </th>
                     <th>Tipo Suscripcion</th>
+                    <th>Días Restantes Suscripción</th>
                     <!--<th>Descargar Documento</th>-->
                   </tr>
                   </thead>
@@ -92,7 +92,7 @@ include "SessionTimeOut.php";
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
                       <td align="center"><?php echo $links['freeregistrationdate'] ?></td>
                       <td align="center"><?php echo $links['suscription_package'] ?></td>
-                      <!--<td align="center"><?php /*echo $links['filepath']*/ ?></td>-->
+                      <td align="center"><?php echo $links['suscriptiondaysleft'] ?></td>
                       </td>
                     </tr>
                     <?php }?>

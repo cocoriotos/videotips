@@ -101,8 +101,8 @@ $password=$_POST['password'];
 
 				}
 				
-				$query2="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
-				$result2=mysqli_query($conn, $query2);
+				$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
+				$result5=mysqli_query($conn, $query5);
 
 				$stmt = $conn->prepare("SELECT suscriptiondaysleft FROM videotips_app_access_list WHERE username = ?");
 				$stmt->bind_param("s", $local_username);
@@ -121,6 +121,10 @@ $password=$_POST['password'];
 
 				$query2="UPDATE videotips_suscription_payments SET currentdate = CURDATE() where username ='$local_username'"; 
 				$result2=mysqli_query($conn, $query2);
+
+				$query6="UPDATE videotips_suscription_payments SET suscriptiondaysleft = (365 - (DATEDIFF(CURDATE(), lastpaymentdate))) where username ='$local_username'"; 
+				$result6=mysqli_query($conn, $query6);
+
 
 				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 0) {
 					$_SESSION['suscriptiondue']=1;
