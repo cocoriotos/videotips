@@ -73,7 +73,7 @@ include "SessionTimeOut.php";
                   <thead id="tableswhite">
                   <tr>
                     <th>Usuario</th>
-                    <th>Total SubCategorías</th>
+                    <!--<th>Total SubCategorías</th> -->
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
                     <th>Fecha de Solicitud de acceso a la plataforma </th>
