@@ -88,7 +88,6 @@ include "SessionTimeOut.php";
                     while($links = mysqli_fetch_array($result_links)) { ?>
                     <tr>
                       <td align="center"><?php echo $links['username']?></td>
-                      <td align="center"><?php echo $links['categoriescounts'] ?></td>
                       <td align="center"><?php echo $links['currentdate'] ?></td>
                       <td align="center"><?php echo $links['lastpaymentdate'] ?></td>
                       <td align="center"><?php echo $links['suscriptiondate'] ?></td>
