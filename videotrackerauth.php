@@ -21,7 +21,7 @@
 			
 				<center><h1><font color="#E1EAF7">Biblioteca de</font></h1></center>
 			    <center><h1><font color="#E1EAF7">Contenidos Útiles</font></h1></center>
-				<a id="ayuda" href="/Manuals/UCLToolManualDelUsuario.pdf" target="_blank">Ayuda: Manual del Usuario</a>
+				<!--<a id="ayuda" href="/Manuals/UCLToolManualDelUsuario.pdf" target="_blank">Ayuda: Manual del Usuario</a>-->
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br><br><br><br>
