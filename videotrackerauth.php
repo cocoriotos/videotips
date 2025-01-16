@@ -18,10 +18,9 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
 	</head>
 	<header id="contact">
-			
 				<center><h1><font color="#E1EAF7">Biblioteca de</font></h1></center>
 			    <center><h1><font color="#E1EAF7">Contenidos Útiles</font></h1></center>
-				<a id="ayuda" href="https://youtu.be/A3oGHvwQq54" target="_blank">Video Tutoriales.</a>
+				<!--<a id="ayuda" href="https://youtu.be/A3oGHvwQq54" target="_blank">Video Tutoriales.</a>-->
 				<!--<a id="ayuda" href="/Manuals/UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>-->
 	</header>	
 	  <body id="bodyadminmodule">
