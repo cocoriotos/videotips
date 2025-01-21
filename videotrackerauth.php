@@ -21,7 +21,7 @@
 				<center><h1><font color="#E1EAF7">Biblioteca de</font></h1></center>
 			    <center><h1><font color="#E1EAF7">Contenidos Útiles</font></h1></center>
 				<a id="ayuda" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales.</a>
-				<a id="ayuda" href="/manuals/ucltoolmanualdelusuario.pdf" target="_blank">Manual del Usuario</a>
+				<a id="ayuda" href="ucltoolmanualdelusuario.pdf" target="_blank">Manual del Usuario</a>
 	</header>	
 	  <body id="bodyadminmodule">
 	  <br><br><br><br>
