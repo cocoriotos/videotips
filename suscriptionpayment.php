@@ -7,7 +7,7 @@ include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
 $suscriptiondue = $_SESSION['suscriptiondue'];
-include "SessionTimeOut.php";
+/*include "SessionTimeOut.php";*/
 ?>
 <head>
   <link rel="stylesheet" href="style_sheet.css"/>
