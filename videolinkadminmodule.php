@@ -15,7 +15,7 @@
 	$embedUrl = $_SESSION['embedUrl'];
 	$click = $_SESSION['click'];
 	
-	include "SessionTimeOut.php";
+	/*include "SessionTimeOut.php";*/
 ?>
 
 <head>	
