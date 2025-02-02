@@ -8,7 +8,7 @@
 		<link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
 		<script src="head.js" defer></script>	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
-		<link rel="stylesheet" href="style_sheet.css"/>
+		<link rel="stylesheet" href="style_sheet_auth.css"/>
 		<script src="Popper/popper.min.js"></script>
 		<script src="plugins/sweetalert/sweetalert.min.js"></script>
 		<script src="plugins/alertifyjs/alertify.min.js"></script>
