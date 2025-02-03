@@ -21,6 +21,7 @@
 <head>	
 	<script src="head.js" defer></script>	
 	<script src="Linktoclipboard.js" defer></script>
+	<link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style_sheet.css"/>
 	<script src="Popper/popper.min.js"></script>
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>
