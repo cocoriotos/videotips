@@ -152,13 +152,16 @@ $password=$_POST['password'];
 									content: 'custom-swal-content',
 									confirmButton: 'custom-swal-confirm-button'
 								}
-							})
+							}).then(() => {
+					window.location.href = 'closetaskscon.php';
+				});
 						});
 					</script>";	
-					include("closetaskscon.php");
+					//include("closetaskscon.php");
 					//*exit();
 							}
 						}		
  }
+
 ?>	
 </html>
