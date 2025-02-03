@@ -16,10 +16,27 @@ $result3=$conn->query($query3);
 
 if($result3->num_rows > 0){ 
 
-	/*echo ("Email duplicated, review and use another one");*/
-	include("emailduplicated.php");
-	header("refresh:0; url=videotrackerauth.php");
-	exit();
+// Mostrar mensaje de error con SweetAlert2
+echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+echo "<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Correo duplicado, por favor usar otro',
+			icon: 'error',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+				popup: 'custom-swal-popup',
+				title: 'custom-swal-title',
+				content: 'custom-swal-content',
+				confirmButton: 'custom-swal-confirm-button'
+			}
+		}).then(() => {
+			window.location.href = 'videotrackerauth.php';
+		});
+	});
+</script>";
+
 }else {
 $query="INSERT INTO videotips_accessrequests (name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
 $result=$conn->query($query);
@@ -72,9 +89,47 @@ $mail = mail($to, $subject, $message,$header);
 	
 
 if ($result){
-	include("emailreqsuccess.php");
+	// Mostrar mensaje con SweetAlert2
+    echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: 'Mensaje',
+                text: 'Su requerimiento fue enviado, puede ingresar con el usuario y contraseña que digitó. Un correo con esta información fué enviado',
+                icon: 'success',
+                confirmButtonText: 'Aceptar',
+                customClass: {
+                    popup: 'custom-swal-popup',
+                    title: 'custom-swal-title',
+                    content: 'custom-swal-content',
+                    confirmButton: 'custom-swal-confirm-button'
+                }
+            }).then(() => {
+                window.location.href = 'videotrackerauth.php';
+            });
+        });
+    </script>";
     } else {
-	include("emailreqnosuccess.php");    }
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				Swal.fire({
+					title: 'Mensaje',
+					text: 'Requerimiento no enviado, por favor trate nuevamente o más tarde.',
+					icon: 'error',
+					confirmButtonText: 'Aceptar',
+					customClass: {
+						popup: 'custom-swal-popup',
+						title: 'custom-swal-title',
+						content: 'custom-swal-content',
+						confirmButton: 'custom-swal-confirm-button'
+					}
+				}).then(() => {
+					window.location.href = 'videotrackerauth.php';
+				});
+			});
+		</script>";
+	  }
 } 
 header("refresh:0;url=videotrackerauth.php");
 ?>
