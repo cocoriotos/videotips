@@ -22,7 +22,7 @@ echo "<script>
 	document.addEventListener('DOMContentLoaded', function() {
 		Swal.fire({
 			title: 'Mensaje',
-			text: 'Correo duplicado, por favor usar otro',
+			text: 'Correo ya había sido registrado en la aplicación, Si olvidó la contraseña usar la opción de recuperación. Si no es su correo entonces  por favor usar otro',
 			icon: 'error',
 			confirmButtonText: 'Aceptar',
 			customClass: {
