@@ -23,6 +23,13 @@ body {
   font-size: 100%;
 }
 
+@media (max-width: 500px) {
+  body {
+    background-size: contain; /* Ajusta la imagen para que quepa completamente en la pantalla */
+    background-position: center center; /* Asegura que se mantenga centrada */
+  }
+}
+
 .container-fluid {
   padding: 20px;
 }
