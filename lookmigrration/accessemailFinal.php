@@ -131,5 +131,5 @@ if ($result){
 		</script>";
 	  }
 } 
-header("refresh:0;url=videotrackerauth.php");
+
 ?>
