@@ -19,14 +19,6 @@ body {
   font-size: 100%;
 }
 
-#ayuda {
-  display: block; /* Asegura que sea tratado como un bloque independiente */
-  text-align: right; /* Alinea el texto hacia la derecha */
-  margin-right: 10px; /* Espaciado opcional del borde derecho */
-  color: #e1eaf7; /* Mantiene el color del texto */
-  font-size: 250%;
-}
-
 .container-fluid {
   padding: 20px;
 }
