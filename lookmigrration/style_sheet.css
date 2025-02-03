@@ -9,6 +9,15 @@ body {
   padding: 0;
 }
 
+#contact {
+  color: white;
+  background-color: #032642;
+  width: 100%;
+  font-family: arial;
+  text-shadow: white 5px 5px 20px;
+  font-size: 100%;
+}
+
 .container-fluid {
   padding: 20px;
 }
