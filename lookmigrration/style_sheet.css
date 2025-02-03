@@ -136,6 +136,15 @@ header h1 {
   font-size: 24px;
 }
 
+head /*where  title is*/ {
+  /*float:bottom;*/
+  /*height:100%;*/
+  color: #0c316d;
+  background-color: #032642;
+  width: 100%;
+  font-family: arial;
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #333;
