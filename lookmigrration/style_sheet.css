@@ -119,12 +119,16 @@ table tr:hover {
 
 /* Estilos para el encabezado */
 header {
-  /*background-color: #007bff;*/
+  font-family: arial;
+  color: #0c316d;
   background-color: #032642;
+  width: 100%;
+  text-shadow: white 5px 5px 20px;
+  /*background-color: #032642;
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px;*/
 }
 
 header h1 {
