@@ -7,6 +7,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  padding-top: 60px; /* Ajusta este valor según la altura de tu encabezado */
 }
 
 #contact {
@@ -187,9 +188,4 @@ footer p {
 /* Estilos para el cuerpo */
 .container-fluid {
   padding-top: 20px; /* Espacio entre el encabezado y el cuerpo */
-}
-
-/* Asegúrate de que el cuerpo no se superponga con el encabezado */
-body {
-  padding-top: 60px; /* Ajusta este valor según la altura de tu encabezado */
 }
