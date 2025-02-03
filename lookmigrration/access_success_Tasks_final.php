@@ -153,8 +153,8 @@ $password=$_POST['password'];
 									confirmButton: 'custom-swal-confirm-button'
 								}
 							}).then(() => {
-					window.location.href = 'closetaskscon.php';
-				});
+							window.location.href = 'videotrackerauth.php';
+						});
 						});
 					</script>";	
 					//include("closetaskscon.php");
