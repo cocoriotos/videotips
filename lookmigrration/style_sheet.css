@@ -177,6 +177,10 @@ h1 {
   font-family: arial;
 }
 
+p {
+  font-size: 20px;
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #333;
