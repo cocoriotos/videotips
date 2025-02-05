@@ -214,7 +214,29 @@ $_SESSION['duplicatedlink'] = 0;
 }
 
 if ($suscriptioninactive == 1){
-	echo '
+	
+
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+					echo "<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							Swal.fire({
+								title: 'Mensaje',
+								text: 'Suscripción inactiva. Se sugiere renovarla',
+								icon: 'error',
+								confirmButtonText: 'Aceptar',
+								customClass: {
+									popup: 'custom-swal-popup',
+									title: 'custom-swal-title',
+									content: 'custom-swal-content',
+									confirmButton: 'custom-swal-confirm-button'
+								}
+							}).then(() => {
+							window.location.href = 'videotrackerauth.php';
+						});
+						});
+					</script>";	
+	
+	/*echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
@@ -226,7 +248,7 @@ if ($suscriptioninactive == 1){
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Suscripción inactiva. Se sugiere renovarla", "error", 7);
         });
-	</script>';   
+	</script>';*/   
 $_SESSION['suscriptioninactive'] = 0;
 }
 
