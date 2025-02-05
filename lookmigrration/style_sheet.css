@@ -313,6 +313,23 @@ header h1 {
   font-family: arial;
 }
 
+#username,
+#access {
+  font-size: 200%;
+  font-family: arial;
+}
+#username1 {
+  font-size: 24px;
+  margin-left: 2em;
+  font-family: arial;
+}
+
+#img_login,
+#img_fix {
+  size: 1200%;
+  font-family: arial;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
