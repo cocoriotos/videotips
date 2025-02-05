@@ -96,6 +96,11 @@ th {
   text-align: center;
 }
 
+ul {
+  font-size: 115%;
+  font-family: arial;
+}
+
 .container-fluid {
   padding: 20px;
 }
@@ -243,7 +248,7 @@ header h1 {
 }
 
 /* Estilos para el pie de página */
-footer {
+/*footer {
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -251,7 +256,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
+}*/
 
 footer p {
   margin: 0;
