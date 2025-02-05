@@ -284,6 +284,35 @@ header h1 {
   font-family: arial;
 }
 
+.inputdata input {
+  margin-left: 8em;
+  width: 56%;
+  font-size: 105%;
+  font-family: arial;
+}
+
+.inputdata label {
+  position: absolute;
+  font-family: arial;
+}
+
+.inputdata1 input {
+  /*margin-left: 0.5em;*/
+  width: 80%;
+  height: 2em;
+  font-size: 1500%;
+  font-family: arial;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.inputdata1 label {
+  position: absolute;
+  font-family: arial;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
