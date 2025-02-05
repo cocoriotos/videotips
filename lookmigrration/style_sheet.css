@@ -85,6 +85,17 @@ tab li {
   font-family: arial;
 }
 
+th,
+td {
+  color: black;
+  font-family: arial;
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
+
 .container-fluid {
   padding: 20px;
 }
