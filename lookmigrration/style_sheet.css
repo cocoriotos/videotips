@@ -728,16 +728,16 @@ footer p {
 /* styles.css */
 
 /* Estilos para el encabezado */
-/*.header {
+.header {
   width: 100%;
   background-color: #007bff; /* Color de fondo del encabezado */
-/*color: #fff; /* Color del texto */
-/*padding: 10px 0;
+  color: #fff; /* Color del texto */
+  padding: 10px 0;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-/*position: relative; /* Asegura que el encabezado esté en la parte superior */
-/*z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
-/*}*/
+  position: relative; /* Asegura que el encabezado esté en la parte superior */
+  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+}
 
 /* Estilos para el cuerpo */
 .container-fluid {
