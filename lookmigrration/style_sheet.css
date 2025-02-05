@@ -444,6 +444,17 @@ form hr {
   word-wrap: break-word; /* Ajuste de palabras largas */
 }
 
+iframe {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.color-dark-icon {
+  color: brown;
+  font-size: 30px;
+}
+
 header h1 {
   margin: 0;
   font-size: 24px;
