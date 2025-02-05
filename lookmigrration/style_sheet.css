@@ -384,6 +384,13 @@ div .card-body {
   text-align: left;
 }
 
+#tdmaincategory,
+#tdcategory,
+#tdproforpers,
+#tddescription {
+  text-align: center;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
