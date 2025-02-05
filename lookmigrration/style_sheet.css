@@ -267,6 +267,12 @@ header h1 {
   text-shadow: white 5px 5px 20px;
 }
 
+#resume {
+  background-color: white;
+  /*text-color:black;*/
+  font-family: arial;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
