@@ -51,6 +51,14 @@ head /*where  title is*/ {
   font-size: 100%;
 }
 
+#ayuda {
+  display: block; /* Asegura que sea tratado como un bloque independiente */
+  text-align: right; /* Alinea el texto hacia la derecha */
+  margin-right: 10px; /* Espaciado opcional del borde derecho */
+  color: #e1eaf7; /* Mantiene el color del texto */
+  font-size: 250%;
+}
+
 @media (max-width: 500px) {
   body {
     background-size: contain; /* Ajusta la imagen para que quepa completamente en la pantalla */
