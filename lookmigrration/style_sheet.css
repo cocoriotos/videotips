@@ -284,21 +284,6 @@ header h1 {
   font-family: arial;
 }
 
-#login,
-#accessrequestform,
-#accessrequestform,
-#AddUser {
-  font-size: 105%;
-  background-color: #5f9ea0;
-  margin: 40px auto;
-  padding: 5px;
-  background: gray;
-  box-shadow: #999 5px 5px 10px;
-  width: 600px;
-  border-radius: 20px;
-  font-family: arial;
-}
-
 footer p {
   margin: 0;
   font-size: 14px;
