@@ -258,6 +258,15 @@ header h1 {
   width: 100%;
 }*/
 
+#notes {
+  background-color: #0085c3; /* background color */
+  width: 98%;
+  font-family: arial;
+  margin: 40px auto;
+  border-radius: 15px;
+  text-shadow: white 5px 5px 20px;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
