@@ -6,6 +6,20 @@ font-face /*Fonts*/ {
   src: url(arial.ttf); /*Font file location, it must be in apache folder publication*/
 }
 
+/* Estilos para el encabezado */
+header {
+  font-family: arial;
+  color: #0c316d;
+  background-color: #032642;
+  width: 100%;
+  text-shadow: white 5px 5px 20px;
+  /*background-color: #032642;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;*/
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -17,6 +31,15 @@ body {
   width: 100%; /*ancho*/
   height: 90%; /*alto*/
   font-size: 80%;
+}
+
+head /*where  title is*/ {
+  /*float:bottom;*/
+  /*height:100%;*/
+  color: #0c316d;
+  background-color: #032642;
+  width: 100%;
+  font-family: arial;
 }
 
 #contact {
@@ -143,20 +166,6 @@ table tr:hover {
   color: #0056b3;
 }
 
-/* Estilos para el encabezado */
-header {
-  font-family: arial;
-  color: #0c316d;
-  background-color: #032642;
-  width: 100%;
-  text-shadow: white 5px 5px 20px;
-  /*background-color: #032642;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  margin-bottom: 20px;*/
-}
-
 #headerfonts {
   font-size: 24px;
 }
@@ -197,15 +206,6 @@ header {
 header h1 {
   margin: 0;
   font-size: 24px;
-}
-
-head /*where  title is*/ {
-  /*float:bottom;*/
-  /*height:100%;*/
-  color: #0c316d;
-  background-color: #032642;
-  width: 100%;
-  font-family: arial;
 }
 
 h1 {
