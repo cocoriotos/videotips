@@ -356,6 +356,94 @@ form hr {
   max-width: 200px; /* Ajustar el valor a tus necesidades */
 }
 
+.btn-short {
+  width: 20px; /* Adjust the width as necessary */
+  margin-right: 10px; /* Space between buttons */
+  display: inline-block; /* Allow buttons to be next to each other */
+}
+
+.btn {
+  /* Optional: Style the buttons consistently */
+  padding: 10px; /* Control padding */
+  text-align: center;
+}
+
+/* Personalización de las notificaciones de Alertify */
+
+/* Aumentar el tamaño de la fuente en las notificaciones */
+.ajs-message {
+  font-size: 18px !important; /* Cambia el tamaño de la fuente */
+  font-weight: bold !important; /* Cambiar a negrita si lo deseas */
+  white-space: normal; /* Permite el salto de línea */
+  word-wrap: break-word; /* Ajuste de palabras largas */
+  /*max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
+}
+
+/* Centrando las notificaciones*/
+.ajs-container {
+  font-size: 28px !important;
+  top: 50% !important; /* Centrado vertical */
+  left: 50% !important; /* Centrado horizontal */
+  transform: translate(-50%, -50%) !important; /* Ajuste exacto en el centro */
+  position: absolute;
+  z-index: 9999; /* Asegura que la notificación quede encima de otros elementos */
+  white-space: normal; /* Permite el salto de línea */
+  word-wrap: break-word; /* Ajuste de palabras largas */
+}
+
+/* Personalización para las notificaciones de éxito */
+.ajs-success {
+  text-align: center !important;
+  width: 700px !important;
+  height: 30px !important;
+  padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
+  font-size: 22px !important;
+  font-weight: bold !important; /* Pone el texto en negrita */
+  background-color: #4caf50 !important; /* Verde para éxito */
+  color: white !important;
+  display: inline-flex; /* Usamos inline flexbox */
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  white-space: normal; /* Permite el salto de línea */
+  word-wrap: break-word; /* Ajuste de palabras largas */
+  max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
+}
+
+/* Personalización para las notificaciones de error */
+.ajs-error {
+  text-align: center !important;
+  width: 700px !important;
+  height: 30px !important;
+  padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
+  font-size: 22px !important;
+  font-weight: bold !important; /* Pone el texto en negrita */
+  background-color: #f44336 !important; /* Rojo para error */
+  color: white !important;
+  display: inline-flex; /* Usamos inline flexbox */
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  white-space: normal; /* Permite el salto de línea */
+  word-wrap: break-word; /* Ajuste de palabras largas */
+  max-width: 1000px; /* Ajusta el ancho máximo de la notificación */
+}
+
+/* Personalización para las notificaciones de advertencia */
+.ajs-warning {
+  text-align: center !important;
+  width: 700px !important;
+  height: 200px !important;
+  padding: 5px 15px; /* Añade un poco de relleno para que el texto no toque los bordes */
+  font-size: 24px !important;
+  font-weight: bold !important; /* Pone el texto en negrita */
+  background-color: #ff9800 !important; /* Naranja para advertencia */
+  color: black !important;
+  display: inline-flex; /* Usamos inline flexbox */
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  white-space: normal; /* Permite el salto de línea */
+  word-wrap: break-word; /* Ajuste de palabras largas */
+}
+
 header h1 {
   margin: 0;
   font-size: 24px;
