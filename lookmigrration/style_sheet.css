@@ -310,6 +310,40 @@ form hr {
   box-sizing: border-box;
 }
 
+#autosearch th,
+#autoserach td {
+  white-space: nowrap; /* Evita el salto de línea dentro de las celdas */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  text-overflow: ellipsis; /* Agrega '...' si el contenido es demasiado largo */
+}
+
+#autosearch td:nth-child(2),
+#autosearch th:nth-child(2) {
+  /*max-width: 90px; /* Ajusta el valor según el ancho deseado*/
+  width: 70px; /* Ajusta el ancho fijo si es necesario */
+  word-wrap: break-word; /* Permite que los enlaces largos se ajusten al contenido */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Otros anchos opcionales para las otras columnas */
+#autosearch td:nth-child(3),
+#autosearch th:nth-child(3),
+#autosearch td:nth-child(4),
+#autosearch th:nth-child(4) {
+  width: 100px;
+}
+
+#autosearch td:nth-child(5),
+#autosearch th:nth-child(5) {
+  width: 30px;
+}
+#autosearch td:nth-child(6),
+#autosearch th:nth-child(6) {
+  width: 10px;
+}
+
 header h1 {
   margin: 0;
   font-size: 24px;
