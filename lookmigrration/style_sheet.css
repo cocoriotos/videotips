@@ -1,6 +1,11 @@
 /* styles.css */
 
 /* Estilos generales */
+font-face /*Fonts*/ {
+  font-family: arial; /*To charge text fonts and ensuring fonts, TTF fonts loaded in apache folder*/
+  src: url(arial.ttf); /*Font file location, it must be in apache folder publication*/
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
