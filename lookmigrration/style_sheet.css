@@ -370,6 +370,16 @@ div .card-body {
   text-align: center;
 }
 
+#maincategory,
+#videolink,
+#category,
+#proforpers,
+#description,
+#save_link {
+  font-size: 24px;
+  text-align: center;
+}
+
 footer p {
   margin: 0;
   font-size: 14px;
