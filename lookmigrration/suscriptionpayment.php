@@ -137,9 +137,7 @@ if ($suscriptiondue == 1) {
             content: 'custom-swal-content',
             confirmButton: 'custom-swal-confirm-button'
           }
-        }).then(() => {
-        window.location.href = 'videotrackerauth.php';
-      });
+        })
       });
     </script>";
 
