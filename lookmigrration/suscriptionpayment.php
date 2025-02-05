@@ -109,7 +109,7 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
 
 <?php
 if ($suscriptiondue == 1) {
-    echo '
+    /*echo '
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
@@ -121,7 +121,30 @@ if ($suscriptiondue == 1) {
             // Mostrar el mensaje de éxito en la parte superior central inmediatamente
             alertify.notify("Ha alcanzado el límite de 7 días de Suscripción gratis.Dar Click en Ir a Nequi para activarla", "warning", 10);
         });
-    </script>';
+    </script>';*/
+
+    echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+          title: 'Mensaje',
+          text: 'Suscripción inactiva. Se sugiere renovarla',
+          icon: 'error',
+          confirmButtonText: 'Aceptar',
+          customClass: {
+            popup: 'custom-swal-popup',
+            title: 'custom-swal-title',
+            content: 'custom-swal-content',
+            confirmButton: 'custom-swal-confirm-button'
+          }
+        }).then(() => {
+        window.location.href = 'videotrackerauth.php';
+      });
+      });
+    </script>";
+
+
+
     $_SESSION['suscriptiondue'] = 0;
 }
 ?>
