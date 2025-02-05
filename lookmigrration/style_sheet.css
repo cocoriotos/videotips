@@ -282,6 +282,26 @@ nav ul li a:hover {
   padding: 0%;
 }
 
+/* Estilos responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* En pantallas pequeñas, los enlaces se apilan verticalmente */
+    align-items: center; /* Alineación centrada */
+    padding: 0%;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espaciado entre elementos en vista vertical */
+    padding: 0%;
+  }
+
+  nav ul li a {
+    font-size: 18px; /* Aumentamos el tamaño de la fuente en pantallas pequeñas */
+    padding: 0%;
+    /*padding: 10px 15px;*/
+  }
+}
+
 header h1 {
   margin: 0;
   font-size: 24px;
