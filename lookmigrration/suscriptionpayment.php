@@ -143,8 +143,6 @@ if ($suscriptiondue == 1) {
       });
     </script>";
 
-
-
     $_SESSION['suscriptiondue'] = 0;
 }
 ?>
