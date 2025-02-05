@@ -2,7 +2,7 @@
 <html lang="en">
 <?php 
 session_start();
-/*include "nobackpage.php";*/
+include "nobackpage.php";
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
@@ -109,65 +109,32 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
 
 <?php
 if ($suscriptiondue == 1) {
-    /*echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Ha alcanzado el límite de 7 días de Suscripción gratis.Dar Click en Ir a Nequi para activarla", "warning", 10);
-        });
-    </script>';*/
-
-   /* echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-    echo "<script>
-      document.addEventListener('DOMContentLoaded', function() {
-        Swal.fire({
-          title: 'Mensaje',
-          text: 'Suscripción inactiva. Se sugiere renovarla',
-          icon: 'error',
-          confirmButtonText: 'Aceptar',
-          customClass: {
-            popup: 'custom-swal-popup',
-            title: 'custom-swal-title',
-            content: 'custom-swal-content',
-            confirmButton: 'custom-swal-confirm-button'
-          }
-        })
-      });
-    </script>";*/
-
-
     echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-  echo "<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    Swal.fire({
-      title: 'Mensaje',
-      text: 'Suscripción inactiva. Se sugiere renovarla',
-      icon: 'error',
-      confirmButtonText: 'Aceptar',
-      customClass: {
-        popup: 'custom-swal-popup',
-        title: 'custom-swal-title',
-        content: 'custom-swal-content',
-        confirmButton: 'custom-swal-confirm-button'
-      },
-      timer: 5000, // 5000 milisegundos = 5 segundos
-      timerProgressBar: true, // Muestra una barra de progreso
-      didOpen: () => {
-        Swal.showLoading(); // Muestra un indicador de carga
-      },
-      willClose: () => {
-        // Aquí puedes agregar cualquier acción que desees realizar cuando la alerta se cierre
-      }
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Suscripción inactiva. Se sugiere renovarla',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+          // Aquí puedes agregar cualquier acción que desees realizar cuando la alerta se cierre
+        }
+      });
     });
-  });
-</script>";
-
+  </script>";
     $_SESSION['suscriptiondue'] = 0;
 }
 ?>
