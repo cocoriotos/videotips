@@ -172,7 +172,7 @@ table td {
 table th {
   /*background-color: #007bff;*/
   background-color: white;
-  color: #fff;
+  color: black;
 }
 
 table tr:hover {
