@@ -344,6 +344,18 @@ form hr {
   width: 10px;
 }
 
+#autosearch {
+  width: 100%;
+  table-layout: auto; /* Asegura que la tabla se ajuste al contenido */
+  font-size: 24px;
+}
+
+#autosearch td,
+#autosearch th {
+  word-wrap: break-word;
+  max-width: 200px; /* Ajustar el valor a tus necesidades */
+}
+
 header h1 {
   margin: 0;
   font-size: 24px;
