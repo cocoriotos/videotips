@@ -58,6 +58,33 @@ head /*where  title is*/ {
   }
 }
 
+#headerfonts {
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;
+  /*font:strong 5.4em Arial;*/
+  font-size: 350%;
+  font-family: arial;
+}
+
+p {
+  font-size: 20px;
+}
+
+h6 {
+  color: white;
+  font-size: 115%;
+  margin: auto;
+  font-family: arial;
+}
+
+tab li {
+  font-size: 100%;
+  font-family: arial;
+}
+
 .container-fluid {
   padding: 20px;
 }
@@ -166,10 +193,6 @@ table tr:hover {
   color: #0056b3;
 }
 
-#headerfonts {
-  font-size: 24px;
-}
-
 #welcome {
   font-size: 35px;
   padding: 0%;
@@ -208,17 +231,6 @@ header h1 {
   font-size: 24px;
 }
 
-h1 {
-  text-align: center;
-  /*font:strong 5.4em Arial;*/
-  font-size: 350%;
-  font-family: arial;
-}
-
-p {
-  font-size: 20px;
-}
-
 /* Estilos para el pie de página */
 footer {
   background-color: #333;
@@ -233,13 +245,6 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
-}
-
-h6 {
-  color: white;
-  font-size: 115%;
-  margin: auto;
-  font-family: arial;
 }
 
 /* styles.css */
