@@ -225,6 +225,13 @@ table tr:hover {
   margin-left: 10px;
 }
 
+#main {
+  font-size: 250%;
+  font-family: arial;
+  display: inline-block;
+  margin-right: 0px;
+}
+
 #bodyadminmodule,
 #adminmodulecontainer {
   /*background-color: #0085c3;*/
@@ -235,11 +242,10 @@ table tr:hover {
   height: 100%;
 }
 
-#main {
-  font-size: 250%;
-  font-family: arial;
-  display: inline-block;
-  margin-right: 0px;
+#autosearch,
+#tableswhite {
+  background-color: white;
+  text-align: center;
 }
 
 header h1 {
