@@ -135,9 +135,21 @@ ul {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+/*----*/
+.btn-short {
+  width: 20px; /* Adjust the width as necessary */
+  margin-right: 10px; /* Space between buttons */
+  display: inline-block; /* Allow buttons to be next to each other */
+}
 
-/* Estilos para los botones */
 .btn {
+  /* Optional: Style the buttons consistently */
+  padding: 10px; /* Control padding */
+  text-align: center;
+}
+/*----*/
+/* Estilos para los botones */
+/*.btn {
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 16px;
@@ -153,7 +165,7 @@ ul {
 
 .btn-success:hover {
   background-color: #218838;
-}
+}*/
 
 /* Estilos para la tabla */
 table {
