@@ -21,7 +21,7 @@ include "SessionTimeOut.php";*/
 </head>
 
 <body id="bodyadminmodule">
-    <div class="login-container">
+    <div class="login-request">
         <!-- Enlaces de ayuda en la parte superior derecha -->
         <div class="help-links">
             <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
