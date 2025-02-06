@@ -9,7 +9,7 @@ $name = $_SESSION['name'];
   <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome" >
   <center>
-    <a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido <span class="username-style"><?php echo $name; ?></span> a tu Biblioteca de Contenidos Útiles</a>
+    <a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">De Regreso <span class="username-style"><?php echo $name; ?></span> a tu Biblioteca de Contenidos Útiles</a>
 </center>
   </nav>
   <script src="copynumber.js"></script>
