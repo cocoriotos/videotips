@@ -2,8 +2,6 @@
 <html>
 <?php 
 	session_start();
-	include "header.php";
-	include "db_connection1.php";
 	$local_username = $_SESSION['email'];
 	$savedlink = $_SESSION['savedlink'];
 	$duplicatedlink = $_SESSION['duplicatedlink'];
@@ -14,6 +12,11 @@
 	$videoUrl = $_SESSION['videoUrl'];
 	$embedUrl = $_SESSION['embedUrl'];
 	$click = $_SESSION['click'];
+  $name = $_SESSION['name'];
+ 
+  include "header.php";
+	include "db_connection1.php";
+	
 	
 	/*include "SessionTimeOut.php";*/
 ?>
@@ -21,6 +24,7 @@
 <head>	
 	<script src="head.js" defer></script>	
 	<script src="Linktoclipboard.js" defer></script>
+	<link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style_sheet.css"/>
 	<script src="Popper/popper.min.js"></script>
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>
@@ -144,174 +148,293 @@
 
 
 if ($copytoclipboard == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("¡Enlace copiado al portapapeles!", "success", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: '¡Enlace copiado al portapapeles!',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 2000, // 2000 milisegundos = 2 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+  </script>";
     $copytoclipboard = 0;
 }
 
 if ($savedlink == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace Adicionado Exitosamente", "success", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: '¡Enlace Adicionado Exitosamente!',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 2000, // 2000 milisegundos = 2 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+  </script>";
     $_SESSION['savedlink'] = 0;
 }
 
 if ($savedlink == 2){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Hubo un problema al adicionar el enlace, intente nuevamente", "error", 7);
-        });
-	</script>';   
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Hubo un problema al adicionar el enlace, intente nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+  </script>";
 $_SESSION['savedlink'] = 0;
 }
 
 
 if ($duplicatedlink == 1){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace duplicado, usar otro", "error", 7);
-        });
-	</script>';   
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Este enlace ya lo Tenías guardado en tu Biblioteca',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+  </script>"; 
 $_SESSION['duplicatedlink'] = 0;
 }
 
 if ($suscriptioninactive == 1){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Suscripción inactiva. Se sugiere renovarla", "error", 7);
-        });
-	</script>';   
+	
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Suscripción inactiva. Te invitamos a renovarla por medio de Nequi o Paypayl ',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+  </script>";
 $_SESSION['suscriptioninactive'] = 0;
 }
 
 if ($sessiontimeoutreached  == 1){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("La sesion no tiene actividad por 15 minutos, debe iniciar sesión nuevamente", "warning", 10);
-        });
-	</script>';   
 	
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'La sesion no tiene actividad por 15 minutos, debe iniciar sesión nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+  </script>";
 }
 
 if ($updatedlink == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace Actualizado Exitosamente", "success", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Enlace Actualizado Exitosamente',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";   
     $_SESSION['updatedlink'] = 0;
 }
 
 if ($updatedlink == 2){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Hubo un problema al actualizar el enlace, intente nuevamente", "error", 7);
-        });
-	</script>';   
+	
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Hubo un problema al actualizar el enlace, intente nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";   
 	$_SESSION['updatedlink'] = 0;
 }
 
 
 if ($deletedlink == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Enlace Borrado Exitosamente", "success", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Enlace Borrado Exitosamente',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 2000, // 2000 milisegundos = 2 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";   
     $_SESSION['deletedlink'] = 0;
 }
 
 if ($deletedlink == 2){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "bottom-right"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Hubo un problema al borrar el enlace, intente nuevamente", "error", 7);
-        });
-	</script>';   
+	
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Hubo un problema al borrar el enlace, intente nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";   
 $_SESSION['deletedlink'] = 0;
 }
 

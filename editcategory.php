@@ -82,19 +82,32 @@ include "SessionTimeOut.php";*/
 
 
 if ($sessiontimeoutreached  == 1){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
-
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
-        });
-	</script>';   
+	
+	
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 2000, // 2000 milisegundos = 2 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";  
 }
 ?>
 <?php include ("footer.php")?>

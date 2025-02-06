@@ -43,12 +43,47 @@ $mail = mail($to, $subject, $message,$header);
 	$header.= "X-Mailer: PHP/". phpversion();
 	
 	$mail1 = mail($to,$subject,$message,$header);
-    include("recoveryemailsuccess.php");
-    header("refresh:0; url=videotrackerauth.php");
-	exit();
-}else {
-    include("emailnotfound.php");
-    header("refresh:0; url=videotrackerauth.php");
-    exit();
-} 
+
+	// Mostrar mensaje con SweetAlert2
+    echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: 'Mensaje',
+                text: 'Contraseña enviada a su correo registrado',
+                icon: 'success',
+                confirmButtonText: 'Aceptar',
+                customClass: {
+                    popup: 'custom-swal-popup',
+                    title: 'custom-swal-title',
+                    content: 'custom-swal-content',
+                    confirmButton: 'custom-swal-confirm-button'
+                }
+            }).then(() => {
+                window.location.href = 'videotrackerauth.php';
+            });
+        });
+    </script>";
+	} else {
+		// Mostrar mensaje de error con SweetAlert2
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				Swal.fire({
+					title: 'Mensaje',
+					text: 'El correo no está registrado',
+					icon: 'error',
+					confirmButtonText: 'Aceptar',
+					customClass: {
+						popup: 'custom-swal-popup',
+						title: 'custom-swal-title',
+						content: 'custom-swal-content',
+						confirmButton: 'custom-swal-confirm-button'
+					}
+				}).then(() => {
+					window.location.href = 'videotrackerauth.php';
+				});
+			});
+		</script>";
+	}
 ?>

@@ -7,10 +7,23 @@
   $conn=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
   if(mysqli_connect_errno()) 
 			{
-			echo "<ha>Conexión a la aplicación no exitosa</ha>";
-			echo "<br>";
-			echo "<br>";
-			echo "<br>";
+				echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+				echo "<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						Swal.fire({
+							title: 'Mensaje',
+							text: 'Conexión a la aplicación no exitosa',
+							icon: 'error',
+							confirmButtonText: 'Aceptar',
+							customClass: {
+								popup: 'custom-swal-popup',
+								title: 'custom-swal-title',
+								content: 'custom-swal-content',
+								confirmButton: 'custom-swal-confirm-button'
+							}
+						})
+					});
+					</script>";	
 			exit();
 			}		
   mysqli_select_db($conn,$db_name) or die ("La aplicación no está disponible");/*database is not available*/			

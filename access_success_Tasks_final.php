@@ -14,6 +14,7 @@ GLOBAL $suscriptiondue;
 GLOBAL $suscriptioninactive;
 GLOBAL $FreeSubcateryReached;
 GLOBAL $sessiontimeoutreached;
+GLOBAL $global_name;
 
 GLOBAL $copytoclipboard;
 GLOBAL $categorytoclipboard;
@@ -49,12 +50,13 @@ $_SESSION['linktoclipboard']=0;
 $_SESSION['videoUrl']="";
 $_SESSION['embedUrl']="";
 $_SESSION['click']=0;
+$_SESSION['name']="";
 
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
 $updatedlink = $_SESSION['updatedlink'];
 $deletedlink = $_SESSION['deletedlink'];
-
+$name = $_SESSION['name'];
 
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
@@ -116,6 +118,12 @@ $password=$_POST['password'];
 				$result4 = $stmt->get_result();
 				$suscriptionpayed = $result4->fetch_assoc()['suscriptionpayed'];
 
+				$stmt = $conn->prepare("SELECT name FROM videotips_app_access_list WHERE username = ?");
+				$stmt->bind_param("s", $local_username);
+				$stmt->execute();
+				$result7 = $stmt->get_result();
+				$_SESSION['name'] = $result7->fetch_assoc()['name'];
+
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1); 
 
@@ -138,11 +146,30 @@ $password=$_POST['password'];
 							}
 							else 
 							{
-								include("access_not_successtasksfinal.php");	
-								header("refresh:0; url=videotrackerauth.php");
-								exit();
+					echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+					echo "<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							Swal.fire({
+								title: 'Mensaje',
+								text: 'Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opción de Solicitud de Acceso',
+								icon: 'error',
+								confirmButtonText: 'Aceptar',
+								customClass: {
+									popup: 'custom-swal-popup',
+									title: 'custom-swal-title',
+									content: 'custom-swal-content',
+									confirmButton: 'custom-swal-confirm-button'
+								}
+							}).then(() => {
+							window.location.href = 'videotrackerauth.php';
+						});
+						});
+					</script>";	
+					//include("closetaskscon.php");
+					//*exit();
 							}
 						}		
  }
+
 ?>	
 </html>

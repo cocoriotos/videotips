@@ -4,50 +4,52 @@
 	include "SessionTimeOut.php";*/	
 	date_default_timezone_set('America/Bogota');
 	?>
-	<head>	
-		<script src="head.js" defer></script>	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
-		<link rel="stylesheet" href="style_sheet.css"/>
-		<script src="Popper/popper.min.js"></script>
-		<script src="plugins/sweetalert/sweetalert.min.js"></script>
-		<script src="plugins/alertifyjs/alertify.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>	  
-	</head>
-	<header>
-			<HR id="HR"/>
-				<center><h1><font color="#E1EAF7">Biblioteca de Contenidos Útiles</font></h1></center>
-			<HR/>	
-	</header>	
-	  <body id="bodyadminmodule">
-	  <br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<form id="login" action="recoverpasswordemailFinal.php" method="POST" autocomplete="off"> 
-			    <center>
-					<font color=lightblue id="form_title"><strong>Recuperación de Contraseña</strong></font><br><br>
-                	<i class="fas fa-sign-in-alt fa-5x" style="color: lightblue;"></i><br><br>
-					<hr>
-					<div class="inputdata1">
-						<font id= "form_title" color="white"><strong>Digitar su Email registrado</strong></font><br><br>
-						<input id="username1" type="text" name="email"  placeholder="Digite el email" ><br> <!-- Login  --><br>
-					</div >
-                    <br>
-					<input id="loginbutton" type="submit" value="Recuperar">
-                    <input id="loginbutton" type="submit"  value="Cancelar" formaction="videotrackerauth.php"/>
-					<br>
-					<br>
-					<br>
-					<br>
-				</center>
-		</form>	
-		<br><br><br><br><br><br><br><br><br><br><br><br>
-		<footer id="contact">	
-					<hgroup>
-					<HR id="HR"/>
-					<h6 align="center" datetime="<?php echo date('Y-m-d H:i'); ?>" pubdate> Fecha: <?php echo date('m/d/Y');?><address><strong> Alguna duda? contáctenos al Email: <u>adm@solicionespro.com</u></strong></address>  </h6>
-					<HR/>
-					</hgroup>			
-		</footer>
-	</body>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recuperar Contraseña - SmartShelf</title>
+        <link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
+        <script src="head.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style_sheet_auth.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<!-- SweetAlert2 CSS added 1 31 2025-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+		<!-- SweetAlert2 JS added 1 31 2025-->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>	
+	<body id="bodyadminmodule">
+        <div class="login-container">
+            <!-- Enlaces de ayuda en la parte superior derecha -->
+            <div class="help-links">
+                <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
+                <a href="/Manuals/UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
+            </div>
+
+            <!-- Encabezado del formulario -->
+            <div class="login-header">
+                <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
+                <h1>Recuperación de Contraseña</h1>
+            </div>
+
+            <!-- Formulario de recuperación de contraseña -->
+            <form id="login" action="recoverpasswordemailFinal.php" method="POST" autocomplete="off">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <button type="submit" class="btn-login">Recuperar Contraseña</button>
+                <br>
+                <a href="videotrackerauth.php" class="forgot-password">Cancelar</a>
+            </form>
+
+            <!-- Información de contacto -->
+            <form id="request-access">
+                <p>¿Alguna duda? Contáctenos al Email: <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a></p>
+                <br>
+                <p>Fecha: <?php echo date('m/d/Y'); ?></p>
+            </form>
+        </div>
+    </body>
 </html>
