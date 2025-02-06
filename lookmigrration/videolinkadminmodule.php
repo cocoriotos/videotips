@@ -2,8 +2,6 @@
 <html>
 <?php 
 	session_start();
-	include "header.php";
-	include "db_connection1.php";
 	$local_username = $_SESSION['email'];
 	$savedlink = $_SESSION['savedlink'];
 	$duplicatedlink = $_SESSION['duplicatedlink'];
@@ -14,7 +12,11 @@
 	$videoUrl = $_SESSION['videoUrl'];
 	$embedUrl = $_SESSION['embedUrl'];
 	$click = $_SESSION['click'];
+  $name = $_SESSION['name'];
  
+  include "header.php";
+	include "db_connection1.php";
+	
 	
 	/*include "SessionTimeOut.php";*/
 ?>

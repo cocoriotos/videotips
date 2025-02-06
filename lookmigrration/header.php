@@ -2,6 +2,8 @@
 <?php
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
+$name = $_SESSION['name'];
+
 ?>
 <html lang="us"> 
   <header>
