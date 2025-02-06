@@ -25,7 +25,7 @@ include "SessionTimeOut.php";*/
         <!-- Enlaces de ayuda en la parte superior derecha -->
         <div class="help-links">
             <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
-            <a href="/Manuals/UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
+            <a href="UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
         </div>
 
         <!-- Encabezado del formulario -->
