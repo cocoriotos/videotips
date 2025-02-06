@@ -14,6 +14,7 @@
 	$videoUrl = $_SESSION['videoUrl'];
 	$embedUrl = $_SESSION['embedUrl'];
 	$click = $_SESSION['click'];
+ 
 	
 	/*include "SessionTimeOut.php";*/
 ?>

@@ -14,6 +14,7 @@ GLOBAL $suscriptiondue;
 GLOBAL $suscriptioninactive;
 GLOBAL $FreeSubcateryReached;
 GLOBAL $sessiontimeoutreached;
+GLOBAL $name;
 
 GLOBAL $copytoclipboard;
 GLOBAL $categorytoclipboard;
@@ -49,12 +50,13 @@ $_SESSION['linktoclipboard']=0;
 $_SESSION['videoUrl']="";
 $_SESSION['embedUrl']="";
 $_SESSION['click']=0;
+$_SESSION['name']="";
 
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
 $updatedlink = $_SESSION['updatedlink'];
 $deletedlink = $_SESSION['deletedlink'];
-
+$name = $_SESSION['name'];
 
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
@@ -115,6 +117,12 @@ $password=$_POST['password'];
 				$stmt->execute();
 				$result4 = $stmt->get_result();
 				$suscriptionpayed = $result4->fetch_assoc()['suscriptionpayed'];
+
+				$stmt = $conn->prepare("SELECT name FROM videotips_app_access_list WHERE username = ?");
+				$stmt->bind_param("s", $local_username);
+				$stmt->execute();
+				$result7 = $stmt->get_result();
+				$name = $result7->fetch_assoc()['name'];
 
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1); 

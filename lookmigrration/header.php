@@ -6,7 +6,7 @@ include "SessionTimeOut.php";*/
 <html lang="us"> 
   <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome" >
-	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Contenidos Útiles</a></center>
+	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido <?php echo $name?> a tu Biblioteca de Contenidos Útiles</a></center>
   </nav>
   <script src="copynumber.js"></script>
   <script src="copypaypal.js"></script>
