@@ -74,10 +74,6 @@ p {
   font-size: 20px;
 }
 
-a {
-  font-size: 20px;
-}
-
 h6 {
   color: white;
   font-size: 115%;
@@ -119,11 +115,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.forgot-password {
-  font-size: 20px;
-}
-
-.btn-request1 {
+.btn-request {
   font-size: 20px;
 }
 
