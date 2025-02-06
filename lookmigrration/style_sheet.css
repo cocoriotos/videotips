@@ -119,6 +119,14 @@ ul {
   margin-bottom: 20px;
 }
 
+.forgot-password {
+  font-size: 20px;
+}
+
+.btn-request1 {
+  font-size: 20px;
+}
+
 .card-body {
   padding: 20px;
 }
