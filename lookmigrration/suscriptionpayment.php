@@ -10,6 +10,7 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
 /*include "SessionTimeOut.php";*/
 ?>
 <head>
+  <link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
   <link rel="stylesheet" href="style_sheet.css"/>
 	<script src="Popper/popper.min.js"></script>
 	<script src="plugins/sweetalert/sweetalert.min.js"></script>

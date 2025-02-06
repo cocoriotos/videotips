@@ -2,11 +2,12 @@
 <?php
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
+$name = $_SESSION['name'];
 ?>
 <html lang="us">
 <header>
 <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido a tu Biblioteca de Contenidos Útiles</a></center>
+<center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand"><span class="username-style"><?php echo $name; ?></span>, éstas en tu Biblioteca de Contenidos Útiles</a></center>
 </nav>
 
 <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center">
