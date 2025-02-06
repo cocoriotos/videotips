@@ -7,7 +7,7 @@ $name = $_SESSION['name'];
 <htm lang="us"> 
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
-  <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand"><span class="username-style"><?php echo $name; ?></span>, Biblioteca de Contenidos Útiles | Suscripción</a></center>
+  <center><a id="welcome" class="navbar-brand"><span class="username-style"><?php echo $name; ?></span>, Biblioteca de Contenidos Útiles | Suscripción</a></center>
   </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
