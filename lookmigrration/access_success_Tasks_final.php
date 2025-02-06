@@ -14,7 +14,7 @@ GLOBAL $suscriptiondue;
 GLOBAL $suscriptioninactive;
 GLOBAL $FreeSubcateryReached;
 GLOBAL $sessiontimeoutreached;
-GLOBAL $name;
+GLOBAL $global_name;
 
 GLOBAL $copytoclipboard;
 GLOBAL $categorytoclipboard;
@@ -122,7 +122,7 @@ $password=$_POST['password'];
 				$stmt->bind_param("s", $local_username);
 				$stmt->execute();
 				$result7 = $stmt->get_result();
-				$name = $result7->fetch_assoc()['name'];
+				$_SESSION['name'] = $result7->fetch_assoc()['name'];
 
 				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 				$result1=mysqli_query($conn, $query1); 
