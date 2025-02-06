@@ -73,7 +73,7 @@ include "SessionTimeOut.php";*/
 
         <!-- Botón de cancelar -->
         <form id="login" action="videotrackerauth.php" method="POST">
-            <button type="submit" class="forgot-password">Cancelar</button>
+            <button type="submit" class="btn-cancel">Cancelar</button>
         </form>
 
         <!-- Información de contacto -->
