@@ -83,155 +83,263 @@ include "SessionTimeOut.php";
 
 <?php
 if ($savedcategory == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Subcategoría Adicionada Exitosamente", "success", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Subcategoría Adicionada Exitosamente',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 2000, // 2000 milisegundos = 2 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
     $_SESSION['savedcategory'] = 0;
 }
 
 if ($savedcategory == 2 ) {
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Hubo un problema al adicionar la subcategoría, intente nuevamente", "error", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Hubo un problema al adicionar la subcategoría, intente nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
 	$_SESSION['savedcategory'] = 0;
 }
 
 if ($duplicatedcategory == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Subcategoría duplicada, usar otra", "error", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Subcategoría duplicada, usar otra',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
     $_SESSION['duplicatedcategory'] = 0;
 }
 
 if ($FreeSubcateryReached == 1) {
-    echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones", "warning", 7);
-        });
-    </script>';
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
     $_SESSION['FreeSubcateryReached'] = 0;
 }
 
 if ($sessiontimeoutreached  == 1){
-	echo '
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    
-    <script>
-        $(document).ready(function() {
-            // Configurar la posición de las notificaciones a "top-center"
-            alertify.set("notifier", "position", "bottom-center");
 
-            // Mostrar el mensaje de éxito en la parte superior central inmediatamente
-            alertify.notify("Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente", "warning", 7);
-        });
-	</script>';   
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 5000, // 5000 milisegundos = 5 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";    
     }
 	
 	if ($updatedcategory == 1) {
-		echo '
-		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-		
-		<script>
-			$(document).ready(function() {
-				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "bottom-center");
-	
-				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Subcategoría Actualizada Exitosamente", "success", 7);
-			});
-		</script>';
+
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Subcategoría Actualizada Exitosamente',
+			icon: 'success',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 5000, // 5000 milisegundos = 5 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>"; 
 		$_SESSION['updatedcategory'] = 0;
 	}
 	
 	if ($updatedcategory == 2){
-		echo '
-		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-		
-		<script>
-			$(document).ready(function() {
-				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "bottom-center");
-	
-				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Hubo un problema al actualizar la subcategoría, intente nuevamente", "warning", 7);
-			});
-		</script>';   
+
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Hubo un problema al actualizar la subcategoría, intente nuevamente',
+			icon: 'error',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 5000, // 5000 milisegundos = 5 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>";  
 	$_SESSION['updatedcategory'] = 0;
 	}
 	
 	
 	if ($deletedcategory == 1) {
-		echo '
-		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-		
-		<script>
-			$(document).ready(function() {
-				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "bottom-center");
-	
-				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Categoría Borrada.", "warning", 7);
-			});
-		</script>';
+
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Categoría Borrada satisfactoriamente',
+			icon: 'Success',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 5000, // 5000 milisegundos = 5 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>"; 
 		$_SESSION['deletedcategory'] = 0;
 	}
 	
 	if ($deletedcategory == 2){
-		echo '
-		<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
 		
-		<script>
-			$(document).ready(function() {
-				// Configurar la posición de las notificaciones a "top-center"
-				alertify.set("notifier", "position", "bottom-center");
-	
-				// Mostrar el mensaje de éxito en la parte superior central inmediatamente
-				alertify.notify("Hubo un problema al borrar subcategoría, intente nuevamente", "warning", 7);
-			});
-		</script>';   
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Hubo un problema al borrar subcategoría, intente nuevamente',
+			icon: 'error',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 5000, // 5000 milisegundos = 5 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>"; 
 	$_SESSION['deletedcategory'] = 0;
 	}
 
