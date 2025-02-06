@@ -8,7 +8,9 @@ $name = $_SESSION['name'];
 <html lang="us"> 
   <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome" >
-	    <center><a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido  <span style="font-weight: bold; color: #FFA500;"><?php echo $name; ?></span> a tu Biblioteca de Contenidos Útiles</a></center>
+  <center>
+    <a id="welcome" href="videolinkadminmodule.php" class="navbar-brand">Bienvenido <span class="username-style"><?php echo $name; ?></span> a tu Biblioteca de Contenidos Útiles</a>
+</center>
   </nav>
   <script src="copynumber.js"></script>
   <script src="copypaypal.js"></script>
