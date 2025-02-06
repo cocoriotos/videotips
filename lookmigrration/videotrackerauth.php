@@ -36,7 +36,7 @@
                     <input type="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <button type="submit" class="btn-login">Ingresar</button>
-                <a href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <p>< href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</p>
             </form>
             <br>
             <form id="request-access" action="requestaccessfinal.php" method="POST" autocomplete="off">
