@@ -37,9 +37,9 @@
                 </div>
                 <button type="submit" class="btn-login">Ingresar</button>
                 <br>
+                <br>
                 <a href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
             </form>
-            <br>
             <form id="request-access" action="requestaccessfinal.php" method="POST" autocomplete="off">
                 <p>¿Sin acceso? <button type="submit" class="btn-request" style="font-size: 20px">Solicitarlo aquí</button></p>
                 <br>
