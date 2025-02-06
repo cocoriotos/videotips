@@ -40,7 +40,7 @@
             </form>
             <br>
             <form id="request-access" action="requestaccessfinal.php" method="POST" autocomplete="off">
-                <p>¿Sin acceso? <button type="submit" class="btn-request1">Solicitarlo aquí</button></p>
+                <p>¿Sin acceso? <button type="submit" class="btn-request">Solicitarlo aquí</button></p>
                 <br>
                 <p>¿Alguna duda? Contáctenos al Email: <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a></p>
                 <br>
