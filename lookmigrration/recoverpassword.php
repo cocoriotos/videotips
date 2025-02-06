@@ -40,7 +40,8 @@
                     <input type="text" name="email" placeholder="Email" required>
                 </div>
                 <button type="submit" class="btn-login">Recuperar Contraseña</button>
-                <a href="videotrackerauth.php" class="btn-cancel">Cancelar</a>
+                <br>
+                <a href="videotrackerauth.php" class="forgot-password">Cancelar</a>
             </form>
 
             <!-- Información de contacto -->
