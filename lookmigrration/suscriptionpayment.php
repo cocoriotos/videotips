@@ -76,9 +76,9 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
                   <th>Usuario</th>
                     <th>Fecha Actual</th>
                     <th>Fecha de último Pago</th>
-                    <th>Fecha de Solicitud de acceso </th>
+                    <th>Fecha inicial de acceso </th>
                     <th>Tipo Suscripcion</th>
-                    <th>Días Restantes Suscripción</th>
+                    <th>Días Restantes</th>
                     <!--<th>Descargar Documento</th>-->
                   </tr>
                   </thead>
