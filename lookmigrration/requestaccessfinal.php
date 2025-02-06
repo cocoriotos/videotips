@@ -79,6 +79,7 @@ include "SessionTimeOut.php";*/
         <!-- Información de contacto -->
         <form id="request-access">
             <p>¿Alguna duda? Contáctenos al Email: <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a></p>
+            <br>
             <p>Fecha: <?php echo date('m/d/Y'); ?></p>
         </form>
     </div>
