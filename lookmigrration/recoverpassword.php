@@ -15,8 +15,40 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 		<!-- SweetAlert2 CSS added 1 31 2025-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    </head>	
+	<body id="bodyadminmodule">
+        <div class="login-container">
+            <!-- Enlaces de ayuda en la parte superior derecha -->
+            <div class="help-links">
+                <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
+                <a href="UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
+            </div>
 
-		<!-- SweetAlert2 JS added 1 31 2025-->
+            <!-- Encabezado del formulario -->
+            <div class="login-header">
+                <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
+                <h1>Recuperación de Contraseña</h1>
+            </div>
+
+            <!-- Formulario de recuperación de contraseña -->
+            <form id="login" action="recoverpasswordemailFinal.php" method="POST" autocomplete="off">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <button type="submit" class="btn-login">Recuperar Contraseña</button>
+                <br>
+                <a href="videotrackerauth.php" class="forgot-password">Cancelar</a>
+            </form>
+
+            <!-- Información de contacto -->
+            <form id="request-access">
+                <p>¿Alguna duda? Contáctenos al Email: <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a></p>
+                <br>
+                <p>Fecha: <?php echo date('m/d/Y'); ?></p>
+            </form>
+        </div>
+        <!-- SweetAlert2 JS added 1 31 2025-->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             document.getElementById("login").addEventListener("submit", function(event) {
@@ -55,38 +87,5 @@
                 }
             });
     </script>
-    </head>	
-	<body id="bodyadminmodule">
-        <div class="login-container">
-            <!-- Enlaces de ayuda en la parte superior derecha -->
-            <div class="help-links">
-                <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
-                <a href="UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
-            </div>
-
-            <!-- Encabezado del formulario -->
-            <div class="login-header">
-                <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
-                <h1>Recuperación de Contraseña</h1>
-            </div>
-
-            <!-- Formulario de recuperación de contraseña -->
-            <form id="login" action="recoverpasswordemailFinal.php" method="POST" autocomplete="off">
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <button type="submit" class="btn-login">Recuperar Contraseña</button>
-                <br>
-                <a href="videotrackerauth.php" class="forgot-password">Cancelar</a>
-            </form>
-
-            <!-- Información de contacto -->
-            <form id="request-access">
-                <p>¿Alguna duda? Contáctenos al Email: <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a></p>
-                <br>
-                <p>Fecha: <?php echo date('m/d/Y'); ?></p>
-            </form>
-        </div>
     </body>
 </html>
