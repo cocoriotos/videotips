@@ -18,6 +18,43 @@
 
 		<!-- SweetAlert2 JS added 1 31 2025-->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            document.getElementById("login").addEventListener("submit", function(event) {
+                var emailInput = document.querySelector("input[name='email']");
+                var email = emailInput.value;
+
+                // Expresión regular para validar el formato de un correo electrónico
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!emailPattern.test(email)) {
+                    echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+                    echo "<script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    Swal.fire({
+                        title: 'Mensaje',
+                        text: 'Por favor, ingresa una dirección de correo electrónico válida.',
+                        icon: 'error',
+                        confirmButtonText: 'Aceptar',
+                        customClass: {
+                        popup: 'custom-swal-popup',
+                        title: 'custom-swal-title',
+                        content: 'custom-swal-content',
+                        confirmButton: 'custom-swal-confirm-button'
+                        },
+                        timer: 5000, // 5000 milisegundos = 5 segundos
+                        timerProgressBar: true, // Muestra una barra de progreso
+                        didOpen: () => {
+                        Swal.showLoading(); // Muestra un indicador de carga
+                        },
+                        willClose: () => {
+                        }
+                    });
+                    });
+                    </script>";
+                    event.preventDefault(); // Evita que el formulario se envíe
+                }
+            });
+    </script>
     </head>	
 	<body id="bodyadminmodule">
         <div class="login-container">
@@ -37,7 +74,7 @@
             <form id="login" action="recoverpasswordemailFinal.php" method="POST" autocomplete="off">
                 <div class="input-group">
                     <i class="fas fa-envelope"></i>
-                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <button type="submit" class="btn-login">Recuperar Contraseña</button>
                 <br>
