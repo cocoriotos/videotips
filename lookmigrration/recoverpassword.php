@@ -59,7 +59,17 @@
                 var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
                 if (!emailPattern.test(email)) {
-                    echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+                    
+                    
+                    event.preventDefault(); // Evita que el formulario se envíe
+                }
+            });
+        </script>
+    </body>
+
+  <?php  
+    if ($emailform == 1) {
+                echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
                     echo "<script>
                     document.addEventListener('DOMContentLoaded', function() {
                     Swal.fire({
@@ -83,9 +93,9 @@
                     });
                     });
                     </script>";
-                    event.preventDefault(); // Evita que el formulario se envíe
-                }
-            });
-        </script>
-    </body>
+                    include ("videotrackerauth.php");
+                    exit();
+            }
+?>
+
 </html>
