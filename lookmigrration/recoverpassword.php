@@ -68,6 +68,7 @@
 
   <?php  
     if ($emailform == 1) {
+        
         echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
         echo "<script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -86,9 +87,8 @@
                 window.location.href = 'videotrackerauth.php';
             });
             });
+            $emailform =0;
         </script>";	
-        $emailform =0;
-            }
-?>
-
+        }
+    ?>    
 </html>
