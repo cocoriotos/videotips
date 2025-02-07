@@ -86,6 +86,6 @@
                     event.preventDefault(); // Evita que el formulario se envíe
                 }
             });
-    </script>
+        </script>
     </body>
 </html>
