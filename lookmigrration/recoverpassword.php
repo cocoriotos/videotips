@@ -68,33 +68,26 @@
 
   <?php  
     if ($emailform == 1) {
-                echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-                    echo "<script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                    Swal.fire({
-                        title: 'Mensaje',
-                        text: 'Por favor, ingresa una dirección de correo electrónico válida.',
-                        icon: 'error',
-                        confirmButtonText: 'Aceptar',
-                        customClass: {
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+        echo "<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: 'Mensaje',
+                    text: 'Por favor, ingresa una dirección de correo electrónico válida.',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar',
+                    customClass: {
                         popup: 'custom-swal-popup',
                         title: 'custom-swal-title',
                         content: 'custom-swal-content',
                         confirmButton: 'custom-swal-confirm-button'
-                        },
-                        timer: 5000, // 5000 milisegundos = 5 segundos
-                        timerProgressBar: true, // Muestra una barra de progreso
-                        didOpen: () => {
-                        Swal.showLoading(); // Muestra un indicador de carga
-                        },
-                        willClose: () => {
-                        }
-                    });
-                    });
-                    </script>";
-                    $emailform =0;
-                    include ("videotrackerauth.php");
-                    exit();
+                    }
+                }).then(() => {
+                window.location.href = 'videotrackerauth.php';
+            });
+            });
+        </script>";	
+        $emailform =0;
             }
 ?>
 
