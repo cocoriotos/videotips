@@ -3,6 +3,7 @@
 	<?php /*include "nobackpage.php"; 
 	include "SessionTimeOut.php";*/	
 	date_default_timezone_set('America/Bogota');
+    $emailform = 0;
 	?>
 	<head>
         <meta charset="UTF-8">
@@ -59,10 +60,8 @@
                 var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
                 if (!emailPattern.test(email)) {
-                    
-                    
-                    event.preventDefault(); // Evita que el formulario se envíe
-                }
+                    emailform = 1;
+                    }
             });
         </script>
     </body>
@@ -93,6 +92,7 @@
                     });
                     });
                     </script>";
+                    $emailform =0;
                     include ("videotrackerauth.php");
                     exit();
             }
