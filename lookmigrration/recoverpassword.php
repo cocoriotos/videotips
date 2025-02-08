@@ -71,8 +71,8 @@
                         confirmButton: 'custom-swal-confirm-button'
                     }
                 }).then(() => {
-                    // Redirige a la página de autenticación
-                    window.location.href = 'videotrackerauth.php';
+                    // Redirige a la página de recovery
+                    window.location.href = 'recoverpassword.php';
                 });
             }
         });
