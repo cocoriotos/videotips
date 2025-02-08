@@ -134,7 +134,7 @@ $password=$_POST['password'];
 				$result6=mysqli_query($conn, $query6);
 
 
-				if ($suscriptiondaysleft > 8 && $suscriptionpayed == 0) {
+				if ($suscriptiondaysleft > 16 && $suscriptionpayed == 0) {
 					$_SESSION['suscriptiondue']=1;
 					header("refresh:0; url=suscriptionpayment.php");
 					exit();
