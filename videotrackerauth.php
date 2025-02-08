@@ -9,19 +9,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login - SmartShelf</title>
         <link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
-        <script src="head.js" defer></script>
+        <script src="head.js?v=<?php echo time(); ?>" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <<link rel="stylesheet" href="style_sheet_auth.css">
+        <link rel="stylesheet" href="style_sheet_auth.css?v=<?php echo time(); ?>">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <script>
+            window.onload = function() {
+                // Verificar si la página ya ha sido cargada
+                if (!sessionStorage.getItem('pageReloaded')) {
+                    if ('caches' in window) {
+                        caches.keys().then(function(names) {
+                            for (let name of names) caches.delete(name);
+                        });
+                    }
+                    // Marcar la página como recargada
+                    sessionStorage.setItem('pageReloaded', 'true');
+                    // Recargar la página sin modificar la URL
+                    location.replace(location.href);
+                }
+            };
+        </script>
     </head>
 	
 	<body id="bodyadminmodule">   
         <div class="login-container">
             <!-- New section for "Video Tutoriales" and "Manual del Usuario" links -->
-        <div class="help-links">
-        <a id="ayuda" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
-        <a id="ayuda" href="UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
-        </div>
+            <div class="help-links">
+                <a id="ayuda" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
+                <a id="ayuda" href="UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
+            </div>
             <div class="login-header">
                 <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
                 <h1>Biblioteca de Contenidos Útiles</h1>

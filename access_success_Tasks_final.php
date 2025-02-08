@@ -165,8 +165,6 @@ $password=$_POST['password'];
 						});
 						});
 					</script>";	
-					//include("closetaskscon.php");
-					//*exit();
 							}
 						}		
  }
