@@ -30,7 +30,7 @@ include "SessionTimeOut.php";*/
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Ventajas </p></center>
-                    <p> Gracias por haber usado la herramienta o la versión gratuita de 7 días de la biblioteca de Contenidos Útiles la cuál te ayuda a: </p><br>
+                    <p> Gracias por haber usado la herramienta o la versión gratuita de 15 días calendario de la biblioteca de Contenidos Útiles la cuál te ayuda a: </p><br>
                     <p> 1. Etiquetar con una breve descripción del contenido para que puedas hacer las búsquedas más facilmente</p>
                     <p> 2. Tener todos tus enlaces importantes, indistinto de cual plataforma sea, donde la búsqueda la haces en un solo sitio</p>
                     <p> 3. La búsqueda de un enlace en cualquier histórico o favoritos en las aplicaciones, que normalmente toma mucho tiempo encontrarla, la harás en segundos en tu bliblioteca porque las tendrás en un solo lugar y con un motor de búsqueda efectivo</p>
@@ -42,7 +42,11 @@ include "SessionTimeOut.php";*/
                     <p> 1. No incluir información sensitiva ni personal. No nos hacemos responsables del salvaguardar o uso de su información por terceros</p>
                     <p> 2. Tratamiento de los datos bajo la modalidad de Habeas Data</p>
                     <p> 3. No nos responsabilizamos por información que incite a la violencia física, psicológica, delitos informáticos o cualquier manifestación delictiva</p>
-                    <p> 4. El valor de la Suscripción es de $60.000 Pesos Colombianos COP Anuales</p>
+                    <p> 4. Opciones de valores por Suscripción: </p>
+                    <p>       * $20.000 Pesos Colombianos COP por Tres Meses</p>
+                    <p>       * $40.000 Pesos Colombianos COP por Seis Meses</p>
+                    <p>       * $60.000 Pesos Colombianos COP por un Año</p>
+                    <p> 5. Al momento de no renovación de suscripción y no querer continuar con el servicios, dispondrá de máximos 3 meses calendario para solicitar sean enviados sus enlaces e información asociados a ellos en archivo csV. Hacer la solicitud al correo al correo adm@solicionespro.com y recibirá la información al correo registrado del usuario en la página</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago por Nequi al número +57 305 4293185 o Paypal al YSXRZMT2AAG4G.</p> 
