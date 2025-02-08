@@ -120,7 +120,7 @@ if ($suscriptiondue == 1) {
     document.addEventListener('DOMContentLoaded', function() {
       Swal.fire({
         title: 'Mensaje',
-        text: 'Suscripción inactiva. Se sugiere renovarla',
+        text: 'Has alcanzado el límite de 15 días de uso gratuito y/o tu Suscripción está vencida. Te invitamos a renovarla por medio nuestros canales de Nequi  para Colombia o Paypayl para Internacional',
         icon: 'error',
         confirmButtonText: 'Aceptar',
         customClass: {
