@@ -27,8 +27,8 @@
                     }
                     // Marcar la página como recargada
                     sessionStorage.setItem('pageReloaded', 'true');
-                    // Añadir un parámetro único en la URL para evitar caché
-                    window.location.href = window.location.href + '?nocache=' + new Date().getTime();
+                    // Recargar la página sin modificar la URL
+                    location.replace(location.href);
                 }
             };
         </script>
