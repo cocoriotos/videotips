@@ -758,3 +758,7 @@ iframe {
   font-weight: bold;
   color: #ffa500; /* Cambia este valor por el color que desees */
 }
+
+.error {
+  border: 1px solid red !important;
+}

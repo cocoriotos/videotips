@@ -91,5 +91,40 @@ include "SessionTimeOut.php";*/
             submitButton.disabled = !termsCheckbox.checked;
         }
     </script>
+
+        <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("login").addEventListener("submit", function(event) {
+            var emailInput = document.querySelector("input[name='Email']");
+            var email = emailInput.value;
+
+            // Expresión regular para validar el formato de un correo electrónico
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(Email)) {
+                // Evita que el formulario se envíe
+                event.preventDefault();
+
+                // Muestra el SweetAlert
+                Swal.fire({
+                    title: 'Mensaje',
+                    text: 'Por favor, ingresa una dirección de correo electrónico válida.',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar',
+                    customClass: {
+                        popup: 'custom-swal-popup',
+                        title: 'custom-swal-title',
+                        content: 'custom-swal-content',
+                        confirmButton: 'custom-swal-confirm-button'
+                    }
+                }).then(() => {
+                    // Redirige a la página de recovery
+                    window.location.href = 'requestaccessfinal.php';
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
