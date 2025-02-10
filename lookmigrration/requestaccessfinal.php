@@ -1,9 +1,4 @@
 <html lang="us">
-<?php
-/*include "nobackpage.php";
-include "SessionTimeOut.php";*/
-?>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +8,10 @@ include "SessionTimeOut.php";*/
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style_sheet_auth.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<!-- SweetAlert2 CSS added 1 31 2025-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-
-<!-- SweetAlert2 JS added 1 31 2025-->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body id="bodyadminmodule">
@@ -35,7 +29,7 @@ include "SessionTimeOut.php";*/
         </div>
 
         <!-- Formulario de solicitud de acceso -->
-        <form id="login" action="accessemailFinal.php" method="POST" autocomplete="off">
+        <form id="login" action="accessemailFinal.php" method="POST" autocomplete="off" onsubmit="return validateForm()">
             <div class="input-group">
                 <i class="fas fa-user"></i>
                 <input type="text" name="Name" placeholder="Nombre" required>
@@ -90,9 +84,45 @@ include "SessionTimeOut.php";*/
             const termsCheckbox = document.getElementById("terms");
             submitButton.disabled = !termsCheckbox.checked;
         }
+
+        function validateForm() {
+            const inputs = document.querySelectorAll("input[required]");
+            let isValid = true;
+
+            inputs.forEach(input => {
+                // Elimina espacios en blanco al inicio y al final
+                input.value = input.value.trim();
+
+                // Verifica si el campo está vacío o solo contiene espacios en blanco
+                if (input.value === "") {
+                    isValid = false;
+                    input.classList.add("error"); // Agrega una clase de error para resaltar el campo
+                } else {
+                    input.classList.remove("error"); // Remueve la clase de error si el campo es válido
+                }
+            });
+
+            if (!isValid) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Por favor, completa todos los campos requeridos. No se permiten espacios en blanco.',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar',
+                    customClass: {
+                        popup: 'custom-swal-popup',
+                        title: 'custom-swal-title',
+                        content: 'custom-swal-content',
+                        confirmButton: 'custom-swal-confirm-button'
+                    }
+                });
+                return false; // Evita que el formulario se envíe
+            }
+
+            return true; // Permite que el formulario se envíe si todos los campos son válidos
+        }
     </script>
 
-        <!-- SweetAlert2 JS -->
+    <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.getElementById("login").addEventListener("submit", function(event) {
@@ -102,7 +132,7 @@ include "SessionTimeOut.php";*/
             // Expresión regular para validar el formato de un correo electrónico
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            if (!emailPattern.test(Email)) {
+            if (!emailPattern.test(email)) {
                 // Evita que el formulario se envíe
                 event.preventDefault();
 
@@ -120,11 +150,10 @@ include "SessionTimeOut.php";*/
                     }
                 }).then(() => {
                     // Redirige a la página de recovery
-                    window.location.href = 'requestaccessfinal.php';
+                    window.location.href = 'recoverpassword.php';
                 });
             }
         });
     </script>
-
 </body>
 </html>
