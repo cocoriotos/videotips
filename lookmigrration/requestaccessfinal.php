@@ -105,7 +105,7 @@
             if (!isValid) {
                 Swal.fire({
                     title: 'Error',
-                    text: 'Por favor, completa todos los campos requeridos. No se permiten espacios en blanco.',
+                    text: 'Por favor, completa todos los campos requeridos con Información.',
                     icon: 'error',
                     confirmButtonText: 'Aceptar',
                     customClass: {
@@ -114,6 +114,9 @@
                         content: 'custom-swal-content',
                         confirmButton: 'custom-swal-confirm-button'
                     }
+                }).then(() => {
+                    // Redirige a la página de recovery
+                    window.location.href = 'requestaccessfinal.php';
                 });
                 return false; // Evita que el formulario se envíe
             }
@@ -150,7 +153,7 @@
                     }
                 }).then(() => {
                     // Redirige a la página de recovery
-                    window.location.href = 'recoverpassword.php';
+                    window.location.href = 'requestaccessfinal.php';
                 });
             }
         });
