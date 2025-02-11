@@ -63,6 +63,11 @@ head /*where  title is*/ {
   color: #000;
 }
 
+#headerfonts1 {
+  font-size: 24px;
+  color: white;
+}
+
 h1 {
   text-align: center;
   /*font:strong 5.4em Arial;*/
