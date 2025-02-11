@@ -105,7 +105,7 @@
             if (!isValid) {
                 Swal.fire({
                     title: 'Error',
-                    text: 'Por favor, completa todos los campos requeridos con Información.',
+                    text: 'Por favor, completa todos los campos requeridos con información.',
                     icon: 'error',
                     confirmButtonText: 'Aceptar',
                     customClass: {
@@ -114,9 +114,6 @@
                         content: 'custom-swal-content',
                         confirmButton: 'custom-swal-confirm-button'
                     }
-                }).then(() => {
-                    // Redirige a la página de recovery
-                    window.location.href = 'requestaccessfinal.php';
                 });
                 return false; // Evita que el formulario se envíe
             }
@@ -151,9 +148,6 @@
                         content: 'custom-swal-content',
                         confirmButton: 'custom-swal-confirm-button'
                     }
-                }).then(() => {
-                    // Redirige a la página de recovery
-                    window.location.href = 'requestaccessfinal.php';
                 });
             }
         });
