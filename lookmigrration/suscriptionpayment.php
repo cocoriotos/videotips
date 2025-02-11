@@ -105,7 +105,7 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
                 </table>
                 <br>
                 <center><a href="mailto:adm@solicionespro.com?subject=Evidencia%20Pago%20Suscripción.&body=Hola,%20adjunto%20evidencia%20del%20pago%20de%20la%20suscripción%20a%20nombre%20de%20<?php echo urlencode($local_username); ?>.">        
-                <input type="button" class="btn btn-success btn-block" value="Enviar Constancia de Pago por Correo"></a></center>
+                <input type="button" class="btn btn-success btn-block" style="color: white; font-weight: bold; font-size: 24px;"  value="Enviar Constancia de Pago por Correo"></a></center>
 
                 <!--<center><input type="submit" class="btn btn-success btn-block" name="save_link" value="Agregar Constancia de Pago"></input></center>-->
         </div>
