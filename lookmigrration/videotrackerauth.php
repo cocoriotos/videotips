@@ -39,7 +39,7 @@
             <!-- New section for "Video Tutoriales" and "Manual del Usuario" links -->
             <div class="help-links">
                 <a id="ayuda" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>
-                <a id="ayuda" href="UCLToolManualDelUsuario.pdf" target="_blank">Manual del Usuario</a>
+                <a id="ayuda" href="UCLToolManualDelUsuario2025.pdf" target="_blank">Manual del Usuario</a>
             </div>
             <div class="login-header">
                 <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
