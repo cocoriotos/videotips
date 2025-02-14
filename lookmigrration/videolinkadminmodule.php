@@ -198,11 +198,17 @@ function validateForm(event) {
     // Mostrar mensaje de error si hay algún problema
     if (!isValid) {
         Swal.fire({
-            title: 'Error',
-            text: errorMessage,
-            icon: 'error',
-            confirmButtonText: 'Aceptar'
-        });
+                    title: 'Error',
+                    text: 'Por favor, completa todos los campos requeridos con información.',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar',
+                    customClass: {
+                        popup: 'custom-swal-popup',
+                        title: 'custom-swal-title',
+                        content: 'custom-swal-content',
+                        confirmButton: 'custom-swal-confirm-button'
+                    }
+                });
     } else {
         document.querySelector("form").submit(); // Enviar el formulario si todo está correcto
     }
