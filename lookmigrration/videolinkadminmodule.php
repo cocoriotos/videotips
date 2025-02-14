@@ -66,7 +66,6 @@
 <div class="form-group col-md-2">
     <label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
     <select class="form-control" name="category" id="category" required>
-    <option value="" disabled selected>Seleccione una subcategoría</option>
         <!-- Las subcategorías se cargarán aquí dinámicamente -->
     </select>
 </div>
