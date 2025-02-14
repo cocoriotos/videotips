@@ -48,7 +48,7 @@
 										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil" required></textarea>
 									</div>
 									
-    <!-- New code -->
+ 
     <div class="form-group col-md-2">
     <label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
     <select class="form-control" name="maincategory" id="maincategory" onchange="getSubcategories(this.value)" required>
@@ -70,33 +70,7 @@
         <!-- Las subcategorías se cargarán aquí dinámicamente -->
     </select>
 </div>
-<!-- End new Code-->
 
-<!-- Code OK -->
-									
-									<!--<div class="form-group col-md-2">
-										<label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-										<select class="form-control" name="maincategory" id="maincategory" ></*?php 
-											/*$SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
-											$result_set = mysqli_query($conn, $SQLSELECT); 
-											while ($rows = $result_set->fetch_assoc()) { 
-												$maincategory = $rows['maincategory']; 
-												echo "<option value='$maincategory'>$maincategory</option>";
-											}
-										?>*/
-                    </select>
-									</div>
-									<div class="form-group col-md-2">
-										<label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
-										<select class="form-control" name="category" id="category"></*?php 
-											$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC"; 
-											$result_set = mysqli_query($conn, $SQLSELECT); 
-											while ($rows = $result_set->fetch_assoc()) { 
-												$category = $rows['category']; 
-												echo "<option value='$category'>$category</option>";
-											}
-										?></select>*/
-									</div>-->
 
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Contenido</strong></label>
@@ -192,6 +166,45 @@
   };
   </script>
 
+
+<script>
+       
+        function validateForm() {
+            const inputs = document.querySelectorAll("textarea[required]");
+            let isValid = true;
+
+            inputs.forEach(input => {
+                // Elimina espacios en blanco al inicio y al final
+                input.value = input.value.trim();
+
+                // Verifica si el campo está vacío o solo contiene espacios en blanco
+                if (input.value === "") {
+                    isValid = false;
+                    input.classList.add("error"); // Agrega una clase de error para resaltar el campo
+                } else {
+                    input.classList.remove("error"); // Remueve la clase de error si el campo es válido
+                }
+            });
+
+            if (!isValid) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Por favor, completa todos los campos requeridos con información.',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar',
+                    customClass: {
+                        popup: 'custom-swal-popup',
+                        title: 'custom-swal-title',
+                        content: 'custom-swal-content',
+                        confirmButton: 'custom-swal-confirm-button'
+                    }
+                });
+                return false; // Evita que el formulario se envíe
+            }
+
+            return true; // Permite que el formulario se envíe si todos los campos son válidos
+        }
+    </script>
 <?php
 
 
