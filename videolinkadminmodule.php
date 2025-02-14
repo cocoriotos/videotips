@@ -45,13 +45,14 @@
 								<div class="row justify-content-center">
 									<div class="form-group col-md-3">
 										<label  for="videolink" class="col-form-label" style="color: black; text-align: center;"><strong>Enlace Útil</strong></label>
-										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil"></textarea>
+										<textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Enlace Útil" required></textarea>
 									</div>
 									
     <!-- New code -->
     <div class="form-group col-md-2">
     <label for="maincategory" class="col-form-label" style="color: black;"><strong>Categoría</strong></label>
-    <select class="form-control" name="maincategory" id="maincategory" onchange="getSubcategories(this.value)">
+    <select class="form-control" name="maincategory" id="maincategory" onchange="getSubcategories(this.value)" required>
+    <option value="" disabled selected>Seleccione una categoría</option>
         <?php 
         $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC"; 
         $result_set = mysqli_query($conn, $SQLSELECT); 
@@ -64,7 +65,8 @@
 </div>
 <div class="form-group col-md-2">
     <label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label>
-    <select class="form-control" name="category" id="category">
+    <select class="form-control" name="category" id="category" required>
+    <option value="" disabled selected>Seleccione una categoría</option>
         <!-- Las subcategorías se cargarán aquí dinámicamente -->
     </select>
 </div>
@@ -98,7 +100,7 @@
 
 									<div class="form-group col-md-2">
 										<label for="category" class="col-form-label" style="color: black;"><strong>Contenido</strong></label>
-										<select class="form-control" name="proforpers" id="proforpers"><?php 
+										<select class="form-control" name="proforpers" id="proforpers" required><?php 
 											$SQLSELECT = "SELECT proforpers FROM videotips_proforpers"; 
 											$result_set = mysqli_query($conn, $SQLSELECT); 
 											while ($rows = $result_set->fetch_assoc()) { 
