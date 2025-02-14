@@ -168,43 +168,50 @@
 
 
 <script>
-       
-        function validateForm() {
-            const inputs = document.querySelectorAll("textarea[required]");
-            let isValid = true;
+function validateForm(event) {
+    event.preventDefault(); // Prevenir el envío del formulario si hay errores
 
-            inputs.forEach(input => {
-                // Elimina espacios en blanco al inicio y al final
-                input.value = input.value.trim();
+    let isValid = true;
+    let errorMessage = "";
 
-                // Verifica si el campo está vacío o solo contiene espacios en blanco
-                if (input.value === "") {
-                    isValid = false;
-                    input.classList.add("error"); // Agrega una clase de error para resaltar el campo
-                } else {
-                    input.classList.remove("error"); // Remueve la clase de error si el campo es válido
-                }
-            });
+    // Obtener los campos del formulario
+    const videolink = document.getElementById("videolink");
+    const description = document.getElementById("description");
 
-            if (!isValid) {
-                Swal.fire({
-                    title: 'Error',
-                    text: 'Por favor, completa todos los campos requeridos con información.',
-                    icon: 'error',
-                    confirmButtonText: 'Aceptar',
-                    customClass: {
-                        popup: 'custom-swal-popup',
-                        title: 'custom-swal-title',
-                        content: 'custom-swal-content',
-                        confirmButton: 'custom-swal-confirm-button'
-                    }
-                });
-                return false; // Evita que el formulario se envíe
-            }
+    // Verificar si contienen solo comillas dobles (""), están vacíos o tienen solo espacios en blanco
+    if (!videolink.value.trim() || videolink.value.includes('""')) {
+        isValid = false;
+        videolink.classList.add("error"); // Agrega una clase de error para resaltar el campo
+        errorMessage = "El Enlace Útil no puede estar vacío ni contener comillas dobles.";
+    } else {
+        videolink.classList.remove("error");
+    }
 
-            return true; // Permite que el formulario se envíe si todos los campos son válidos
-        }
-    </script>
+    if (!description.value.trim() || description.value.includes('""')) {
+        isValid = false;
+        description.classList.add("error");
+        errorMessage = "La Descripción no puede estar vacía ni contener comillas dobles.";
+    } else {
+        description.classList.remove("error");
+    }
+
+    // Mostrar mensaje de error si hay algún problema
+    if (!isValid) {
+        Swal.fire({
+            title: 'Error',
+            text: errorMessage,
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        });
+    } else {
+        document.querySelector("form").submit(); // Enviar el formulario si todo está correcto
+    }
+}
+
+// Asociar la validación al botón de envío
+document.getElementById("save_link").addEventListener("click", validateForm);
+</script>
+
 <?php
 
 
