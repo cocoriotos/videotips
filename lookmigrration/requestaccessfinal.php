@@ -62,7 +62,7 @@
             </div>
 
             <!-- Botón de enviar -->
-            <button type="submit" class="btn-login" id="loginbutton" disabled>Enviarlo</button>
+            <button type="submit" class="btn-login" id="loginbutton" disabled>Enviar</button>
         </form>
 
         <!-- Botón de cancelar -->
