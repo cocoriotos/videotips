@@ -159,7 +159,8 @@ body {
 }
 
 /* Estilo para el botón "Cancelar" */
-.cancel-button {
+.cancel-button,
+.btn-login {
   background-color: #6c757d; /* Color gris para diferenciarlo */
   text-align: center;
   text-decoration: none; /* Elimina el subrayado del enlace */
@@ -183,7 +184,7 @@ body {
 }
 
 /* Estilos para el botón de enviar habilitado */
-.btn-login {
+/*.btn-login {
   width: 100%;
   padding: 10px;
   background-color: #032642;
@@ -193,7 +194,7 @@ body {
   font-size: 12px;
   cursor: pointer;
   margin-top: 10px;
-}
+}*/
 
 /* Botón de login */
 /*.btn-login {
