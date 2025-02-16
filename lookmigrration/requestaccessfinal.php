@@ -60,10 +60,7 @@
                 <input type="checkbox" id="terms" onclick="toggleSubmitButton()" required>
                 <label for="terms">Acepto los <a href="TermsConditions.php" target="_blank">términos y condiciones</a></label>
             </div>
-
-            <div class="button-container">
-                <button type="submit" class="btn-login" id="loginbutton" disabled>Enviar</button>
-            </div>
+            <button type="submit" class="btn-login" id="loginbutton" disabled>Enviar</button>
         </form>
 
         <!-- Botón de cancelar -->
