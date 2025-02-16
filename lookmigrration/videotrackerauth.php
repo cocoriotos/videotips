@@ -56,7 +56,7 @@
                 </div>
                 <button type="submit" class="btn-login">Ingresar</button>
                 <br>
-                <a href="index.php" class="btn">Cancelar</a>
+                <a href="index.php" class="btn-login">Cancelar</a>
                 <br>
                 <a href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
             </form>
