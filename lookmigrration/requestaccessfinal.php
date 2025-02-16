@@ -67,7 +67,7 @@
 
         <!-- Botón de cancelar -->
         <form id="login" action="index.php" method="POST">
-            <button type="submit" class="btn-cancel">Cancelar</button>
+            <button type="submit" class="btn-login">Cancelar</button>
         </form>
 
         <!-- Información de contacto -->
