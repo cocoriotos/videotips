@@ -55,10 +55,7 @@ a {
 
 .button-container {
   display: block; /* Cambia a bloque para que los botones estén uno encima del otro */
-}
-
-.button-container a {
-  color: white; /* Cambia a bloque para que los botones estén uno encima del otro */
+  color: white;
 }
 
 /* Header */
