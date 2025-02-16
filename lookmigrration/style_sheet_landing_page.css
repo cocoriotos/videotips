@@ -36,7 +36,7 @@ a {
 
 .btn1 {
   display: block; /* Hace que cada botón ocupe toda la línea */
-  width: 80%; /* Ocupa el ancho completo del contenedor */
+  width: 85%; /* Ocupa el ancho completo del contenedor */
   padding: 10px 15px; /* Espacio interno */
   background-color: #007bff; /* Color de fondo */
   color: white; /* Color del texto */
@@ -55,6 +55,10 @@ a {
 
 .button-container {
   display: block; /* Cambia a bloque para que los botones estén uno encima del otro */
+}
+
+.button-container a {
+  color: white; /* Cambia a bloque para que los botones estén uno encima del otro */
 }
 
 /* Header */
