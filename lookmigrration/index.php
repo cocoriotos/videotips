@@ -46,13 +46,14 @@
                     <p>Integra contenido de YouTube, LinkedIn, Google Drive y más.</p>
                 </div>
                 
-                    <div class="feature-item">
-                        <h3>Uso de la Aplicación</h3>
-                        <p>Videos cortos que te ayudan a saber cómo usar la aplicación paso a paso.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn" style="color: white" target="_blank">Videos     Tutoriales</a>
-                        <br>
-                        <a href="UCLToolManualDelUsuario2025.pdf" class="btn" style="color: white" target="_blank">Manual del Usuario</a>
+                <div class="feature-item">
+                    <h3>Uso de la Aplicación</h3>
+                    <p>Videos cortos que te ayudan a saber cómo usar la aplicación paso a paso.</p>
+                    <div class="button-container">
+                        <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn" target="_blank">Videos Tutoriales</a>
+                        <a href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank">Manual del Usuario</a>
                     </div>
+                </div>
             </div>
         </div>
     </section>
