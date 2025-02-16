@@ -61,13 +61,15 @@
                 <label for="terms">Acepto los <a href="TermsConditions.php" target="_blank">términos y condiciones</a></label>
             </div>
 
-            <!-- Botón de enviar -->
-            <button type="submit" class="btn-login" id="loginbutton" disabled>Enviar</button>
+            <div class="button-container">
+                <button type="submit" class="btn-login" id="loginbutton" disabled>Enviar</button>
+                <a href="index.php" class="btn-login cancel-button">Cancelar</a>
+            </div>
         </form>
 
         <!-- Botón de cancelar -->
         <form id="login" action="index.php" method="POST">
-            <button type="submit" class="btn-login">Cancelar</button>
+            
         </form>
 
         <!-- Información de contacto -->
