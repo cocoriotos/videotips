@@ -60,6 +60,13 @@
                 <br>
                 <a href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
             </form>
+
+            <form id="login" action="index.php" method="POST" autocomplete="off">
+                <button type="submit" class="btn-login">Cancelar</button>
+                <br>
+                <a href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </form>
+
             <form id="request-access" action="requestaccessfinal.php" method="POST" autocomplete="off">
                 <p>¿Sin acceso? <button type="submit" class="btn-request" style="font-size: 20px">Solicitarlo aquí</button></p>
                 <br>
