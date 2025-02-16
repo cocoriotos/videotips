@@ -105,7 +105,7 @@ header p {
 }
 
 .feature-item a {
-  color: inherit; /* Hereda el color del texto del elemento padre */
+  color: black; /* Hereda el color del texto del elemento padre */
   text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
