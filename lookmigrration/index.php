@@ -12,6 +12,7 @@
     <header>
         <div class="container">
             <h1>SmartShelf</h1>
+            <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
             <p>Tu Biblioteca Digital Inteligente</p>
         </div>
     </header>
