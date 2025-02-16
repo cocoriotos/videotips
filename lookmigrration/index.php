@@ -47,9 +47,9 @@
                 </div>
                 
                     <div class="feature-item">
-                        <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank"></a>
-                        <h3>Uso de la Aplicación | Videos Tutoriales</h3>
+                        <h3>Uso de la Aplicación</h3>
                         <p>Video cortos que te ayudan a usar la aplicación paso a paso.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Videos Tutoriales</a>
                     </div>
             </div>
         </div>
