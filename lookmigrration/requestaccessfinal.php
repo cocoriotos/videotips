@@ -18,13 +18,13 @@
     <div class="login-container">
         <!-- Enlaces de ayuda en la parte superior derecha -->
         <div class="help-links">
-            <!--<a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>while Adjustments-->
-            <a href="UCLToolManualDelUsuario2025.pdf" target="_blank">Manual del Usuario</a>
+            <!--<a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" target="_blank">Video Tutoriales</a>while Adjustments
+            <a href="UCLToolManualDelUsuario2025.pdf" target="_blank">Manual del Usuario</a>-->
         </div>
 
         <!-- Encabezado del formulario -->
         <div class="login-header">
-            <img src="SSCircleBackgroundBlackElegantwithLink.ico" alt="SmartShelf Logo" class="logo">
+            <img src="SmartShelfUsefulContentLibraryDarrkLightGreen.ico" alt="SmartShelf Logo" class="logo">
             <h1>Solicitud de Acceso</h1>
         </div>
 
@@ -66,7 +66,7 @@
         </form>
 
         <!-- Botón de cancelar -->
-        <form id="login" action="videotrackerauth.php" method="POST">
+        <form id="login" action="index.php" method="POST">
             <button type="submit" class="btn-cancel">Cancelar</button>
         </form>
 
