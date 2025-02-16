@@ -105,8 +105,13 @@ header p {
 }
 
 .feature-item a {
-  font-size: 1rem;
-  color: black;
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.feature-item a:hover {
+  color: inherit; /* Mantiene el color al pasar el mouse */
+  text-decoration: underline; /* Opcional: añade subrayado al pasar el mouse */
 }
 
 /* CTA Section */
