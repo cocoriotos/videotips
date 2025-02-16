@@ -55,11 +55,7 @@
                     <input type="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <button type="submit" class="btn-login">Ingresar</button>
-                <br>
-                <a href="index.php" class="btn-login">Cancelar</a>
-                <br>
-                <a href="recoverpassword.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
-            </form>
+                </form>
 
             <form id="login" action="index.php" method="POST" autocomplete="off">
                 <button type="submit" class="btn-login">Cancelar</button>
