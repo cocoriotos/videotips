@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style_sheet_landing_page.css">
     <link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 </head>
 <body>
     <header>
