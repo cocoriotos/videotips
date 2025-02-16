@@ -36,7 +36,7 @@ a {
 
 .btn1 {
   display: block; /* Hace que cada botón ocupe toda la línea */
-  width: 100%; /* Ocupa el ancho completo del contenedor */
+  width: 80%; /* Ocupa el ancho completo del contenedor */
   padding: 10px 15px; /* Espacio interno */
   background-color: #007bff; /* Color de fondo */
   color: white; /* Color del texto */
