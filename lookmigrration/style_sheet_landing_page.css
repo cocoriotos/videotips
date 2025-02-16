@@ -39,7 +39,7 @@ a {
   width: 85%; /* Ocupa el ancho completo del contenedor */
   padding: 10px 15px; /* Espacio interno */
   background-color: #007bff; /* Color de fondo */
-  color: white; /* Color del texto */
+  color: white; /* Color del texto en blanco */
   text-align: center; /* Centra el texto */
   text-decoration: none; /* Elimina el subrayado */
   border-radius: 5px; /* Bordes redondeados */
@@ -49,8 +49,9 @@ a {
   transition: background-color 0.3s ease; /* Transición suave */
 }
 
-.btn:hover {
-  background: #0056b3;
+.btn1:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+  color: white; /* Mantén el color del texto en blanco al pasar el mouse */
 }
 
 .button-container {
@@ -113,7 +114,6 @@ header p {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
   border: 1px solid #ccc;
 }
 
