@@ -26,29 +26,12 @@ a {
 }
 
 .btn {
-  /*display: inline-block;
+  display: inline-block;
   padding: 10px 20px;
   background: #007bff;
   color: #fff;
   border-radius: 5px;
-  transition: background 0.3s ease;*/
-
-  display: block; /* Hace que cada botón ocupe toda la línea */
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  padding: 10px 15px; /* Espacio interno */
-  background-color: #007bff; /* Color de fondo */
-  color: white; /* Color del texto */
-  text-align: center; /* Centra el texto */
-  text-decoration: none; /* Elimina el subrayado */
-  border-radius: 5px; /* Bordes redondeados */
-  border: none; /* Elimina el borde */
-  font-size: 16px; /* Tamaño de la fuente */
-  margin-bottom: 10px; /* Espacio entre botones */
-  transition: background-color 0.3s ease; /* Transición suave */
-}
-
-.btn:last-child {
-  margin-bottom: 0; /* Elimina el margen inferior del último botón */
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
