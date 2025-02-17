@@ -32,6 +32,7 @@ body {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .login-header h1 {
