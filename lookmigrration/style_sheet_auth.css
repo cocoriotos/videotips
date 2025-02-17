@@ -81,11 +81,11 @@ body {
 }
 
 /* Formulario de solicitud de acceso */
-/*#request-access {
+#request-access {
   margin-top: 20px;
   font-size: 14px;
   color: #555;
-}*/
+}
 
 #request-access p {
   margin: 5px 0;
