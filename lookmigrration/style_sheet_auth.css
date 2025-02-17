@@ -192,6 +192,7 @@ body {
   border-radius: 5px; /* Bordes redondeados */
   color: white; /* Color del texto */
   font-size: 8px; /* Tamaño de la fuente */
+  margin-bottom: 0px; /* Espacio entre botones */
 }
 
 .btn-login:hover {
