@@ -187,6 +187,8 @@ body {
 
   text-align: center;
   text-decoration: none;
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  padding: 10px; /* Espaciado interno */
 }
 
 .btn-login:hover {
