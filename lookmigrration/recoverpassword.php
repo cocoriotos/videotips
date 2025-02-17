@@ -34,8 +34,13 @@
             </div>
             <button type="submit" class="btn-login">Recuperar Contraseña</button>
             <br>
-            <a href="videotrackerauth.php" class="forgot-password">Cancelar</a>
         </form>
+        
+        <form id="login" action="index.php" method="POST" autocomplete="off">
+            <button type="submit" class="btn-login">Cancelar</button>
+            <br>
+        </form>
+
 
         <!-- Información de contacto -->
         <form id="request-access">
