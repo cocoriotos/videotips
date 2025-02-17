@@ -91,7 +91,7 @@ body {
   margin: 5px 0;
 }
 
-.btn-request {
+/*.btn-request {
   background: none;
   border: none;
   color: #032642;
@@ -102,7 +102,7 @@ body {
 
 .btn-request:hover {
   color: #0c316d;
-}
+}*/
 
 /* Enlaces de ayuda (Video Tutoriales y Manual del Usuario) */
 .help-links {
@@ -121,39 +121,6 @@ body {
 
 .help-links a:hover {
   text-decoration: underline;
-}
-
-/* Estilos personalizados para SweetAlert2 */
-.custom-swal-popup {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
-
-.custom-swal-title {
-  color: #032642;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.custom-swal-content {
-  color: #555;
-  font-size: 16px;
-}
-
-.custom-swal-confirm-button {
-  background-color: #032642 !important;
-  color: white !important;
-  border: none !important;
-  border-radius: 5px !important;
-  padding: 10px 20px !important;
-  font-size: 16px !important;
-  cursor: pointer !important;
-}
-
-.custom-swal-confirm-button:hover {
-  background-color: #0c316d !important;
 }
 
 .button-container {
@@ -191,6 +158,21 @@ body {
 }
 
 /* Estilos personalizados para SweetAlert2 */
+
+.custom-swal-confirm-button {
+  background-color: #032642 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+}
+
+.custom-swal-confirm-button:hover {
+  background-color: #0c316d !important;
+}
+
 .custom-swal-popup {
   background-color: #ffffff;
   border-radius: 10px;
