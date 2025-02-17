@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mail($to, $subject, $body, $headers)) {
         // Alerta de éxito y redirección
-        echo "El Mensaje fué enviado correctamente";
+        echo "";
         echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
         echo "<script>
                 Swal.fire({
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </script>";
     } else {
         // Alerta de error y redirección
-        echo "El Mensaje No fué enviado correctamente";
+        echo "";
         echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
         echo "<script>
                 Swal.fire({
