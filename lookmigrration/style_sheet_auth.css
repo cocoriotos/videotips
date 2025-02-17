@@ -91,7 +91,7 @@ body {
   margin: 5px 0;
 }
 
-/*.btn-request {
+.btn-request {
   background: none;
   border: none;
   color: #032642;
@@ -102,7 +102,7 @@ body {
 
 .btn-request:hover {
   color: #0c316d;
-}*/
+}
 
 /* Enlaces de ayuda (Video Tutoriales y Manual del Usuario) */
 .help-links {
