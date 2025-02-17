@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     window.location.href = 'index.php';
                 });
               </script>";
+              include("index.php");
     } else {
         // Alerta de error y redirección
         echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
@@ -37,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     window.location.href = 'index.php';
                 });
               </script>";
+              include("index.php");
     }
 }
 ?>
