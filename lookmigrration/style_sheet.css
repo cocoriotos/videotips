@@ -247,10 +247,10 @@ table tr:hover {
 #registerbutton,
 #cancelbutton,
 #submitbutton {
-  font-size: 250%;
+  /*font-size: 250%;*/
   font-family: arial;
   display: inline-block;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
 }
 
 #main {
