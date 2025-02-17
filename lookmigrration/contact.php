@@ -6,15 +6,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Aquí puedes agregar la lógica para enviar el correo o guardar en una base de datos
     // Ejemplo de envío de correo:
-    $to = "tucorreo@example.com";
+    $to = "adm@solicionespro.com";
     $subject = "Nuevo Mensaje de SmartShelf";
     $body = "Nombre: $name\nCorreo: $email\nMensaje: $message";
     $headers = "From: $email";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "<p>¡Gracias por contactarnos, $name! Te responderemos pronto.</p>";
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'>;
+                    Swal.fire({
+                        title: 'Mensaje',
+                        text: 'Gracias por contactarnos, Estamso revisando tu mensaje y te responderemos pronto.',
+                        icon: 'success',
+                        confirmButtonText: 'Aceptar',
+                        customClass: {
+                            popup: 'custom-swal-popup',
+                            title: 'custom-swal-title',
+                            content: 'custom-swal-content',
+                            confirmButton: 'custom-swal-confirm-button'
+                        }
+                    }).then(() => {
+						window.location.href = 'index.php';
+                    });
+        </script>";
     } else {
-        echo "<p>Hubo un error al enviar tu mensaje. Inténtalo de nuevo.</p>";
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'>;
+                    Swal.fire({
+                        title: 'Mensaje',
+                        text: 'Hubo un error al enviar tu mensaje. Inténtalo de nuevo.',
+                        icon: 'error',
+                        confirmButtonText: 'Aceptar',
+                        customClass: {
+                            popup: 'custom-swal-popup',
+                            title: 'custom-swal-title',
+                            content: 'custom-swal-content',
+                            confirmButton: 'custom-swal-confirm-button'
+                        }
+                    }).then(() => {
+						window.location.href = 'index.php';
+                    });
+        </script>";
     }
 }
 ?>

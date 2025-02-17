@@ -90,7 +90,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 SmartShelf. Todos los derechos reservados.</p>
+            <p>&copy; 2024 SmartShelf. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
