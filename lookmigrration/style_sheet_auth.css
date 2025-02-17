@@ -184,15 +184,6 @@ body {
   background-color: #cccccc; /* Color gris claro cuando está deshabilitado */
   cursor: not-allowed; /* Cambia el cursor a "no permitido" */
   opacity: 0.7; /* Reduce la opacidad */
-
-  text-align: center;
-  text-decoration: none;
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  color: white; /* Color del texto */
-  font-size: 8px; /* Tamaño de la fuente */
-  margin-bottom: 0px; /* Espacio entre botones */
 }
 
 .btn-login:hover {
