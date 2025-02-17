@@ -60,8 +60,8 @@
                 </div>
 
                 <div class="feature-item">
-                    <h3>Acceso gratis por 15 días Calendario</h3>
-                    <p>Primero pruébala para familizarizarte con ella, ve guardando tus enlaces más importantes y de uso recurrente. Nol olvides primero crear las Categorías. Si tienes dudas consutla los videos tutoriales o Manual del Ususario en PDF.</p>
+                <h3>¡Prueba Gratis por 15 Días!</h3>
+                <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas. Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
                 </div>
 
             </div>
