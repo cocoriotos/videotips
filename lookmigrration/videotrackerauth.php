@@ -55,7 +55,7 @@
                     <input type="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <button type="submit" class="btn-login">Ingresar</button>
-                </form>
+            </form>
 
             <form id="login" action="index.php" method="POST" autocomplete="off">
                 <button type="submit" class="btn-login">Cancelar</button>
