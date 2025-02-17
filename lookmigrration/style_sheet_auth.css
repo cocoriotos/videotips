@@ -165,7 +165,7 @@ body {
   background-color: #6c757d; /* Color gris para diferenciarlo */
   text-align: center;
   text-decoration: none; /* Elimina el subrayado del enlace */
-  display: block; /* Asegura que el enlace ocupe toda la línea */
+  /*display: block;*/ /* Asegura que el enlace ocupe toda la línea */
   width: 100%; /* Ocupa el ancho completo del contenedor */
   padding: 10px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
@@ -183,33 +183,6 @@ body {
   cursor: not-allowed; /* Cambia el cursor a "no permitido" */
   opacity: 0.7; /* Reduce la opacidad */
 }
-
-/* Estilos para el botón de enviar habilitado */
-/*.btn-login {
-  width: 100%;
-  padding: 10px;
-  background-color: #032642;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 10px;
-}*/
-
-/* Botón de login */
-/*.btn-login {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #032642;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 10px;
-}*/
 
 .btn-login:hover {
   background-color: #0c316d;
