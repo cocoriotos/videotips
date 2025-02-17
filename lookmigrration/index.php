@@ -19,7 +19,6 @@
             <p>Tu Biblioteca Digital Inteligente</p>
         </div>
     </header>
-
     <section class="hero">
         <div class="container">
             <h2>Centraliza, Organiza y Accede a Todo tu Conocimiento en un Solo Lugar</h2>
@@ -28,7 +27,7 @@
             <a href="requestaccessfinal.php" class="btn">Registrarse</a>
         </div>
     </section>
-
+    <br>
     <section id="features" class="features">
     <div class="container">
         <h2>¿Por qué Elegir SmartShelf?</h2>
