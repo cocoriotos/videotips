@@ -11,21 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body = "Nombre: $name\nCorreo: $email\nMensaje: $message";
     $headers = "From: $email";
 
-    if (mail($to, $subject, $body, $headers)) {
-        // Alerta de éxito y redirección
-        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-        echo "<script>
-                Swal.fire({
-                    title: 'Mensaje',
-                    text: 'Gracias por contactarnos, estamos revisando tu mensaje y te responderemos pronto.',
-                    icon: 'success',
-                    confirmButtonText: 'Aceptar'
-                }).then(() => {
-                    window.location.href = 'index.php';
-                });
-              </script>";
-              include("index.php");
-    } else {
+    if (!mail($to, $subject, $body, $headers)) {
         // Alerta de error y redirección
         echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
         echo "<script>
@@ -38,7 +24,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     window.location.href = 'index.php';
                 });
               </script>";
-              include("index.php");
+              /*include("index.php");*/
+    } else {
+        // Alerta de success y redirección
+        
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+        echo "<script>
+                Swal.fire({
+                    title: 'Mensaje',
+                    text: 'Gracias por contactarnos, estamos revisando tu mensaje y te responderemos pronto.',
+                    icon: 'success',
+                    confirmButtonText: 'Aceptar'
+                }).then(() => {
+                    window.location.href = 'index.php';
+                });
+              </script>";
+              /*include("index.php");*/
     }
 }
 ?>
