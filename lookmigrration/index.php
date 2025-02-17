@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="feature-item">
-                <h3>¡Prueba Gratis por 15 Días!</h3>
+                <h3 style="color: #003366; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días!</h3>
                 <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas. Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
                 </div>
 
