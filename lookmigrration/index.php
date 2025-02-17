@@ -58,6 +58,12 @@
                         <a href="UCLToolManualDelUsuario2025.pdf" class="btn1" target="_blank" style="color: white">Manual del Usuario</a>
                     </div>
                 </div>
+
+                <div class="feature-item">
+                    <h3>Acceso gratis por 15 días Calendario</h3>
+                    <p>Primero pruébala para familizarizarte con ella, ve guardando tus enlaces más importantes y de uso recurrente. Nol olvides primero crear las Categorías. Si tienes dudas consutla los videos tutoriales o Manual del Ususario en PDF.</p>
+                </div>
+
             </div>
         </div>
     </section>
