@@ -11,7 +11,8 @@
         <link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
         <script src="head.js?v=<?php echo time(); ?>" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="style_sheet_auth.css?v=<?php echo time(); ?>">
+        <!--<link rel="stylesheet" href="style_sheet_auth.css?v=<?php echo time(); ?>">-->
+        <link rel="stylesheet" href="style_sheet.css?v=<?php echo time(); ?>">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
         <meta http-equiv="Pragma" content="no-cache">
