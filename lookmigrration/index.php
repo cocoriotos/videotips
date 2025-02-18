@@ -62,7 +62,13 @@
                 </div>
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días!  Regístrate</h3>
-                    <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas. Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
+                    <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas.</p> 
+                    <p>Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
+                    <br>
+                    <p>Pasado el periodo de prueba podrás continuar disfrutando por medio de los diferentes tipos de Suscripciones así: </p>
+                    <p>Trimestral $20.000 Pesos Colombianos COP</p>
+                    <p>Semestral  $40.000 Pesos Colombianos COP</p>
+                    <p>Anual      $60.000 Pesos Colombianos COP</p>
                 </div>
             </div>
         </div>
