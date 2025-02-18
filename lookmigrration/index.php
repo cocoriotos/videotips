@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="feature-item">
-                    <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días! | Regístrate</h3>
+                    <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días!  Regístrate</h3>
                     <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas. Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
                 </div>
             </div>
