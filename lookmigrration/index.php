@@ -46,12 +46,12 @@
                     <h3>Acceso Rápido</h3>
                     <p>Accede directamente al contenido o comparte enlaces de manera instantánea.</p>
                 </div>
-            </div>
-            <div class="feature-grid">
                 <div class="feature-item">
                     <h3>Multiplataforma</h3>
                     <p>Integra contenido de YouTube, LinkedIn, Google Drive y más.</p>
                 </div>
+            </div>
+            <div class="feature-grid">
                 <div class="feature-item">
                     <h3>Uso de la Aplicación</h3>
                     <p>Videos cortos que te ayudan a saber cómo usar la aplicación paso a paso.</p>
@@ -64,11 +64,20 @@
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días!  Regístrate</h3>
                     <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas.</p> 
                     <p>Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
-                    <br>
+                </div>
+                <div class="feature-item">
+                    <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Sigue disfrutando al Suscribirte!</h3>
                     <p>Pasado el periodo de prueba podrás continuar disfrutando por medio de los diferentes tipos de Suscripciones así: </p>
                     <p>Trimestral $20.000 Pesos Colombianos COP</p>
                     <p>Semestral  $40.000 Pesos Colombianos COP</p>
                     <p>Anual      $60.000 Pesos Colombianos COP</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Términos y Condiciones</h3>
+                    <p>Los derechos y deberes deben estar claramente definidos, leerlos detenidadmente.</p>
+                    <div class="button-container">
+                        <a href="TermsConditions.php" class="btn1" target="_blank" style="color: white">Términos Y Condiciones</a>
+                    </div>
                 </div>
             </div>
         </div>
