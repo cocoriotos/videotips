@@ -68,9 +68,9 @@
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Sigue disfrutando al Suscribirte!</h3>
                     <p>Pasado el periodo de prueba podrás continuar disfrutando por medio de los diferentes tipos de Suscripciones así: </p>
-                    <p>Trimestral $20.000 Pesos Colombianos COP</p>
-                    <p>Semestral  $40.000 Pesos Colombianos COP</p>
-                    <p>Anual      $60.000 Pesos Colombianos COP</p>
+                    <p>Trimestral $20.000 COP</p>
+                    <p>Semestral  $40.000 COP</p>
+                    <p>Anual      $60.000 COP</p>
                 </div>
                 <div class="feature-item">
                     <h3>Términos y Condiciones</h3>
