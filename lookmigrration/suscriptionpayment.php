@@ -46,15 +46,15 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
                     <p> 5. Copiar los Enlaces guardados para compartirlos</p>
 					          <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Condiciones </p></center>
-                    <p> Para tener en cuenta: </p><br>
+                    <br>
                     <p> 1. No incluir información sensitiva ni personal. No nos hacemos responsables del salvaguardar o uso de su información por terceros</p>
                     <p> 2. Tratamiento de los datos bajo la modalidad de Habeas Data</p>
                     <p> 3. No nos responsabilizamos por información que incite a la violencia física, psicológica, delitos informáticos o cualquier manifestación delictiva</p>
                     <p> 4. Opciones de valores por Suscripción: </p>
-                    <p><span class="destacado">$20.000</span> Pesos Colombianos COP por Tres Meses</p>
-                    <p><span class="destacado">$40.000</span> Pesos Colombianos COP por Seis Meses</p>
-                    <p><span class="destacado">$60.000</span> Pesos Colombianos COP por un Año</p>
-                    <p> 5. Al momento de no renovación de suscripción y no querer continuar con el servicios, dispondrá de máximos 3 meses calendario para solicitar sean enviados sus enlaces e información asociados a ellos en archivo csV. Hacer la solicitud al correo al correo adm@solicionespro.com y recibirá la información al correo registrado del usuario en la página</p>
+                    <p><span class="destacado">       $20.000</span> Pesos Colombianos COP por Tres Meses</p>
+                    <p><span class="destacado">       $40.000</span> Pesos Colombianos COP por Seis Meses</p>
+                    <p><span class="destacado">       $60.000</span> Pesos Colombianos COP por un Año</p>
+                    <p> 5. Al momento de no renovación de suscripción y no querer continuar con el servicios, dispondrá de máximos 3 meses calendario para solicitar sean enviados sus enlaces e información asociados a ellos en archivo CSV. Hacer la solicitud al correo al correo <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a> y recibirá la información al correo registrado del usuario en la página</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago por Nequi al número +57 305 4293185 o PayPal al YSXRZMT2AAG4G.</p> 

@@ -61,6 +61,6 @@ a:hover {
 }
 
 .destacado {
-  color: #ff0000; /* Rojo, por ejemplo */
+  color: blue; /* Rojo, por ejemplo */
   font-weight: bold; /* Opcional: para hacer el texto más grueso */
 }
