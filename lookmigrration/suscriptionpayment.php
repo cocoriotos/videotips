@@ -27,7 +27,7 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
 </header>  	
 <body id="bodyadminmodule">
           <br><br>
-  <div class="container">
+  <div class="container1">
       <div class="column-wrap clearfix">
             <div class="col-xs-12">
                 <hr>
