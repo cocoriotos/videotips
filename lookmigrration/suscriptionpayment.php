@@ -10,11 +10,16 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
 /*include "SessionTimeOut.php";*/
 ?>
 <head>
-    <script src="Popper/popper.min.js"></script>
-    <script src="plugins/sweetalert/sweetalert.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style_sheet_TC.css"/>
+	<script src="Popper/popper.min.js"></script>
+	<script src="plugins/sweetalert/sweetalert.min.js"></script>
+	<script src="plugins/alertifyjs/alertify.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
-<body>
 
 <header>
     <script src="copynumber.js"></script>
