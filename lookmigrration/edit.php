@@ -140,27 +140,26 @@ include "SessionTimeOut.php";*/
 
 <script>
     function getSubcategories(maincategory) {
-    if (maincategory == "") {
-        document.getElementById("category").innerHTML = "<option value=''>Seleccione una subcategoría</option>";
-        return;
-    }
-
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("category").innerHTML = this.responseText;
+        if (maincategory == "") {
+            document.getElementById("category").innerHTML = "<option value=''>Seleccione una subcategoría</option>";
+            return;
         }
-    };
-    xhr.open("GET", "getSubcategories.php?maincategory=" + encodeURIComponent(maincategory), true);
-    xhr.send();
-}
 
-window.onload = function() {
-    var maincategory = document.getElementById("maincategory").value;
-    if (maincategory) {
-        getSubcategories(maincategory);
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("category").innerHTML = this.responseText;
+            }
+        };
+        xhr.open("GET", "getSubcategories.php?maincategory=" + maincategory, true);
+        xhr.send();
     }
-};
+
+    // Llamar a getSubcategories al cargar la página para cargar las subcategorías iniciales
+    window.onload = function() {
+        var maincategory = document.getElementById("maincategory").value;
+        getSubcategories(maincategory);
+    };
 </script>
 
 <?php 

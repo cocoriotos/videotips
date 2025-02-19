@@ -1,19 +1,17 @@
 <?php
-include "db_connection1.php";
-session_start();
+include "db_connection1.php"; // DB connection
+$local_username=$_SESSION['email'];
 
-$local_username = $_SESSION['email'];
-$maincategory = $_GET['maincategory'];
+if (isset($_POST['maincategory'])) {
+    $maincategory = $_POST['maincategory'];
+    $username = $local_username; // $local_username is correct
 
-if (!empty($maincategory)) {
-    $query = "SELECT DISTINCT category FROM videotips_viodetipscategory 
-              WHERE maincategory = '$maincategory' AND username = '$local_username' 
-              ORDER BY category ASC";
-    $result = mysqli_query($conn, $query);
-    
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "<option value='{$row['category']}'>{$row['category']}</option>";
+    $SQLSELECT = "SELECT DISTINCT(category) FROM videotips_viodetipscategory WHERE maincategory = '$maincategory' AND username = '$username' ORDER BY category ASC";
+    $result_set = mysqli_query($conn, $SQLSELECT);
+
+    while ($rows = $result_set->fetch_assoc()) {
+        $category = $rows['category'];
+        echo "<option value='$category'>$category</option>";
     }
 }
 ?>
-
