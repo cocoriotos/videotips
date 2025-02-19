@@ -50,7 +50,7 @@ $result2=$conn->query($query2);
 
 /*Destination email information*/
 $to = "adm@solicionespro.com";
-$subject = "Urgent Links tool access request";
+$subject = "Urgent SmartShelf access request";
 $message = "Good day Admin Team:  \n\n";
 $message.= "This user is requesting tool access, please response ASAP \n\n";//. to concatenate lines in the same variable
 $message.= str_pad("Member name", 40) . ": $name \n";
@@ -70,7 +70,7 @@ $mail = mail($to, $subject, $message,$header);
 
 
 	$to = "$email, adm@solicionespro.com";
-	$subject = "Requerimiento de acceso";
+	$subject = "Requerimiento de acceso a SmartShelf";
 	$message = "Buen día $lastname, $name :  \n\n";
 	$message.= "Su requerimiento ha sido enviado a los administradores de la herramienta  para processar su solicitud. Acá la información de su solicitud \n\n";//. to concatenate lines in the same variable
 	$message.= str_pad("Nombre", 40) . ": $name \n";
@@ -81,6 +81,7 @@ $mail = mail($to, $subject, $message,$header);
 	$message.= str_pad("Nombre de usuario  asignado", 40) . ": $email \n\n";
 	$message.= "Por favor no responder éste correo \n\n";
 	$message.= "Gracias por su registro, ya puede ingresar a la app desde este enlace https://solicionespro.com/videotips/videotrackerauth.php con su usuario $email  y la contraseña que escogió. \n\n";
+	$message.= "Puedes también ingresar por este enlace donde podrás obtener más información importante de la aplicación así como videos tutoriales y manual del usuario  https://solicionespro.com/videotips. \n\n";
 	$header = "From: adm@solicionespro.com" . "\r\n";
 	$header.= "Bcc: cocoriotos@hotmail.com\r\n";
 	$header.= "X-Mailer: PHP/". phpversion();
