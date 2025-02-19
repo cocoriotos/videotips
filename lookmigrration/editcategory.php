@@ -6,6 +6,7 @@ $local_username=$_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
+$name = $_SESSION['name'];
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>

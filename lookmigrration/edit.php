@@ -7,6 +7,7 @@ $local_username = $_SESSION['email'];
 $deletedlink = $_SESSION['deletedlink'];
 $updatedlink = $_SESSION['updatedlink'];
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
+$name = $_SESSION['name'];
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>
