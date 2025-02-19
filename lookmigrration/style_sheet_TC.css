@@ -59,3 +59,8 @@ a:hover {
 .conditions {
   text-align: center;
 }
+
+.destacado {
+  color: #ff0000; /* Rojo, por ejemplo */
+  font-weight: bold; /* Opcional: para hacer el texto más grueso */
+}
