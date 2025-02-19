@@ -1,5 +1,4 @@
-<?php include "headereditcategory.php";
-include "db_connection1.php";
+<?php 
 session_start();
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
@@ -7,6 +6,8 @@ $updatedcategory = $_SESSION['updatedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 $name = $_SESSION['name'];
+include "headereditcategory.php";
+include "db_connection1.php";
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>
