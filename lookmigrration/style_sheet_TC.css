@@ -55,3 +55,7 @@ a:hover {
 .container1 label {
   text-align: left !important; /* Alineación a la izquierda */
 }
+
+.conditions {
+  text-align: center;
+}

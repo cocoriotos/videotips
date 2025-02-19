@@ -34,7 +34,7 @@ $suscriptiondue = $_SESSION['suscriptiondue'];
             </div>
       <center><div class="col-xs-12 col-sm-12 column-custom-wrap">
                 <div class="column-custom">
-                    <h3 align="center" style="padding-bottom: 5px">Condiciones y Beneficios de Uso de la Aplicación</h3>
+                    <h3 id="conditions" align="center" style="padding-bottom: 5px">Condiciones y Beneficios de Uso de la Aplicación</h3>
                     <!--<p> Video paso a paso del uso de la aplicación. Click Aquí</p><br>-->
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Ventajas </p></center>
