@@ -42,3 +42,16 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.container1 {
+  background-color: white; /* Fondo blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.container1 p,
+.container1 h3,
+.container1 label {
+  text-align: left !important; /* Alineación a la izquierda */
+}
