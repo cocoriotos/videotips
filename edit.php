@@ -61,7 +61,8 @@ include "SessionTimeOut.php";*/
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>
-                                    <select id="category" class="form-control" name="category" required>
+                                    <select id="category" class="form-control" name="category" data-current-category="<?php echo $link['category']; ?>" required>
+                                        <option value="">Seleccione una subcategoría</option>
                                         <?php 
                                         $query_options = "SELECT DISTINCT(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC";
                                         $result_options = mysqli_query($conn, $query_options);
@@ -141,26 +142,30 @@ include "SessionTimeOut.php";*/
 
 <script>
     function getSubcategories(maincategory) {
-        if (maincategory == "") {
-            document.getElementById("category").innerHTML = "<option value=''>Seleccione una subcategoría</option>";
-            return;
-        }
+    var currentCategory = document.getElementById("category").getAttribute("data-current-category");
 
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("category").innerHTML = this.responseText;
-            }
-        };
-        xhr.open("GET", "getSubcategories.php?maincategory=" + maincategory, true);
-        xhr.send();
+    if (maincategory == "") {
+        document.getElementById("category").innerHTML = "<option value=''>Seleccione una subcategoría</option>";
+        return;
     }
 
-    // Llamar a getSubcategories al cargar la página para cargar las subcategorías iniciales
-    window.onload = function() {
-        var maincategory = document.getElementById("maincategory").value;
-        getSubcategories(maincategory);
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("category").innerHTML = this.responseText;
+        }
     };
+    xhr.open("GET", "getSubcategories.php?maincategory=" + encodeURIComponent(maincategory) + "&current_category=" + encodeURIComponent(currentCategory), true);
+    xhr.send();
+}
+
+// Ejecutar al cargar la página
+window.onload = function() {
+    var maincategory = document.getElementById("maincategory").value;
+    if (maincategory) {
+        getSubcategories(maincategory);
+    }
+};
 </script>
 
 <?php 
