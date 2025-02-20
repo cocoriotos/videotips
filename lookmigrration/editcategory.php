@@ -14,6 +14,7 @@ include "SessionTimeOut.php";*/
 
 <head>	
 	<script src="head.js" defer></script>	  
+	<link rel="stylesheet" href="style_sheet_ops.css"/>
 </head>
 <body id="bodyadminmodule">
 <div class="container-fluid p-0" >

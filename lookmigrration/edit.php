@@ -14,7 +14,7 @@ include "SessionTimeOut.php";*/
 
 <head>	
     <script src="head.js" defer></script>
-    <link rel="stylesheet" href="style_sheet.css"/>
+    <link rel="stylesheet" href="style_sheet_ops.css"/>
     <script src="Popper/popper.min.js"></script>
     <script src="plugins/sweetalert/sweetalert.min.js"></script>
     <script src="plugins/alertifyjs/alertify.min.js"></script>
