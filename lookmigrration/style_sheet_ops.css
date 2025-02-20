@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #032642;
+}
+
+/* Estilos para el contenedor principal */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos */
+label.col-form-label {
+  font-size: 28px;
+  font-weight: bold;
+  color: #032642;
+}
+
+/* Estilos para los campos de formulario */
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #032642;
+}
+
+.form-control:focus {
+  border-color: #032642;
+  box-shadow: 0 0 5px rgba(3, 38, 66, 0.1);
+}
+
+/* Estilos para los botones */
+.btn-success {
+  background-color: #032642;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #0c316d;
+}
+
+.btn-success:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #032642;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilos para los botones de acción */
+.fas.fa-copy {
+  color: #032642;
+  cursor: pointer;
+}
+
+.fas.fa-copy:hover {
+  color: #0c316d;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #032642 !important;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .btn {
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.navbar .btn:hover {
+  opacity: 0.9;
+}
+
+/* Estilos para los botones de la barra de navegación */
+.btn-primary {
+  background-color: #032642;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0c316d;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Estilos para los mensajes de SweetAlert2 */
+.custom-swal-popup {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.custom-swal-title {
+  color: #032642;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.custom-swal-content {
+  color: #555;
+  font-size: 16px;
+}
+
+.custom-swal-confirm-button {
+  background-color: #032642 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+}
+
+.custom-swal-confirm-button:hover {
+  background-color: #0c316d !important;
+}
