@@ -112,8 +112,8 @@ include "SessionTimeOut.php";*/
                                 <th>Categoría</th>
                                 <th>Subcategoría</th>
                                 <th>Contenido</th>
-                                <th>Descripción</th>
                                 <th>Fecha de Creación</th>
+                                <th>Descripción</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -127,8 +127,8 @@ include "SessionTimeOut.php";*/
                                     <td align="center"><?php echo $link['maincategory']; ?></td>
                                     <td align="center"><?php echo $link['category']; ?></td>
                                     <td align="center"><?php echo $link['proforpers']; ?></td>
-                                    <td align="left"><?php echo $link['content']; ?></td>
                                     <td align="center"><?php echo $link['creationdate']; ?></td>
+                                    <td align="left"><?php echo $link['content']; ?></td>
                                 </tr>
                             <?php } ?>
                         </tbody>
