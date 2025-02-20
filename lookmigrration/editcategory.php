@@ -51,8 +51,8 @@ include "SessionTimeOut.php";*/
 		<div class="col-md-12">
 			<br>
 			<div class="card card-body">
-					<table class="table table-bordered" id="autosearch">
-					<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
+					<table id="autosearch" class="display" font color="back">
+					<center><label for="maincategory" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
 						<thead id="tableswhite">
 							<tr>
 								<th>ID</th>
