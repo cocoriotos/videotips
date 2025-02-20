@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<input?php
+<?php
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>
 <html lang="us">
 <head>
+<link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
+<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
@@ -19,7 +21,7 @@ include "SessionTimeOut.php";*/
 <body id="bodyadminmodule">
           <br><br>
      
-  <div class="container">
+  <div class="container1">
       <class="column-wrap clearfix">
             <div class="col-xs-12">
                 <hr>
@@ -38,15 +40,15 @@ include "SessionTimeOut.php";*/
                     <p> 5. Copiar los Enlaces guardados para compartirlos</p>
 					          <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Condiciones </p></center>
-                    <p> Para tener en cuenta: </p><br>
+                    <br>
                     <p> 1. No incluir información sensitiva ni personal. No nos hacemos responsables del salvaguardar o uso de su información por terceros</p>
                     <p> 2. Tratamiento de los datos bajo la modalidad de Habeas Data</p>
                     <p> 3. No nos responsabilizamos por información que incite a la violencia física, psicológica, delitos informáticos o cualquier manifestación delictiva</p>
                     <p> 4. Opciones de valores por Suscripción: </p>
-                    <p>       * $20.000 Pesos Colombianos COP por Tres Meses</p>
-                    <p>       * $40.000 Pesos Colombianos COP por Seis Meses</p>
-                    <p>       * $60.000 Pesos Colombianos COP por un Año</p>
-                    <p> 5. Al momento de no renovación de suscripción y no querer continuar con el servicios, dispondrá de máximos 3 meses calendario para solicitar sean enviados sus enlaces e información asociados a ellos en archivo csV. Hacer la solicitud al correo al correo adm@solicionespro.com y recibirá la información al correo registrado del usuario en la página</p>
+                    <<p><span class="destacado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.000</span> Pesos Colombianos COP por Tres Meses</p>
+                    <p><span class="destacado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$40.000</span> Pesos Colombianos COP por Seis Meses</p>
+                    <p><span class="destacado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.000</span> Pesos Colombianos COP por un Año</p>
+                    <p> 5. Al momento de no renovación de suscripción y no querer continuar con el servicios, dispondrá de máximos 3 meses calendario para solicitar sean enviados sus enlaces e información asociados a ellos en archivo csV. Hacer la solicitud al correo al correo <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a> y recibirá la información al correo registrado del usuario en la página</p>
                     <br>
                     <center><p style="color: blue; font-weight: bold; font-size: 24px;"> Forma de Pago de Suscripción y Subcategorías</p></center>
                     <p> 1. Pago por Nequi al número +57 305 4293185 o Paypal al YSXRZMT2AAG4G.</p> 
@@ -57,7 +59,7 @@ include "SessionTimeOut.php";*/
           </div>
           </center>
           <hr>
-          <center><a id="headerfonts" href="requestaccessfinal.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a></center>
+          <center><a id="headerfonts" href="index.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fa fa-reply" aria-hidden="true"></i> Página Principal</a></center>
     </div>    
   </div>
     </body>
