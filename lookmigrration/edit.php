@@ -103,36 +103,36 @@ include "SessionTimeOut.php";*/
             <div class="col-md-12">
                 <br>
                 <div class="card card-body">
-                    <table id="autosearch" class="display" font color="back">
-                        <center><label for="maincategory" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
-                        <thead id="tableswhite">
-                            <tr>
-                                <th>ID</th>
-                                <th>Enlace o URL</th>
-                                <th>Categoría</th>
-                                <th>Subcategoría</th>
-                                <th>Contenido</th>
-                                <th>Fecha de Creación</th>
-                                <th>Descripción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php 
-                            $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND id = '$id' AND username = '$local_username'";
-                            $result_link1 = mysqli_query($conn, $query1);
-                            while ($link = mysqli_fetch_array($result_link1)) { ?>
+                        <table id="autosearch" class="display" font color="back">
+                            <center><label for="maincategory"  style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
+                            <thead id="tableswhite">
                                 <tr>
-                                    <td align="center"><?php echo $link['id']; ?></td>
-                                    <td align="left"><?php echo $link['videolink']; ?></td>
-                                    <td align="center"><?php echo $link['maincategory']; ?></td>
-                                    <td align="center"><?php echo $link['category']; ?></td>
-                                    <td align="center"><?php echo $link['proforpers']; ?></td>
-                                    <td align="center"><?php echo $link['creationdate']; ?></td>
-                                    <td align="left"><?php echo $link['content']; ?></td>
+                                    <th>ID</th>
+                                    <th>Enlace o URL</th>
+                                    <th>Categoría</th>
+                                    <th>Subcategoría</th>
+                                    <th>Contenido</th>
+                                    <th>Fecha Creación</th>
+                                    <th>Descripción</th>
                                 </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <?php 
+                                $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND id = '$id' AND username = '$local_username'";
+                                $result_link1 = mysqli_query($conn, $query1);
+                                while ($link = mysqli_fetch_array($result_link1)) { ?>
+                                    <tr>
+                                        <td align="center"><?php echo $link['id']; ?></td>
+                                        <td align="left"><?php echo $link['videolink']; ?></td>
+                                        <td align="center"><?php echo $link['maincategory']; ?></td>
+                                        <td align="center"><?php echo $link['category']; ?></td>
+                                        <td align="center"><?php echo $link['proforpers']; ?></td>
+                                        <td align="center"><?php echo $link['creationdate']; ?></td>
+                                        <td align="left"><?php echo $link['content']; ?></td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
                 </div>	
             </div>
         </div>
