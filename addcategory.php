@@ -2,15 +2,14 @@
 <html>
 <?php 
 session_start();
-include "headercategory.php";
-include "db_connection1.php";
 $local_username=$_SESSION['email'];
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 $updatedcategory = $_SESSION['updatedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
-
+include "headercategory.php";
+include "db_connection1.php";
 /*include "nobackpage.php"; */
 
 
@@ -19,6 +18,7 @@ include "SessionTimeOut.php";
 <head>	
 		<script src="head.js" defer></script>		
 		<script src="categorytoclipboard.js" defer></script>  
+	    <link rel="stylesheet" href="style_sheet_ops.css"/>
 </head>
 
 <body id="bodyadminmodule" style="padding: 0%;>

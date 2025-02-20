@@ -14,7 +14,7 @@ include "SessionTimeOut.php";*/
 
 <head>	
     <script src="head.js" defer></script>
-    <link rel="stylesheet" href="style_sheet.css"/>
+    <link rel="stylesheet" href="style_sheet_ops.css"/>
     <script src="Popper/popper.min.js"></script>
     <script src="plugins/sweetalert/sweetalert.min.js"></script>
     <script src="plugins/alertifyjs/alertify.min.js"></script>
@@ -103,36 +103,36 @@ include "SessionTimeOut.php";*/
             <div class="col-md-12">
                 <br>
                 <div class="card card-body">
-                    <table class="table table-bordered" id="tableswhite">
-                        <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Enlace o URL</th>
-                                <th>Categoría</th>
-                                <th>Subcategoría</th>
-                                <th>Contenido</th>
-                                <th>Descripción</th>
-                                <th>Fecha de Creación</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php 
-                            $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND id = '$id' AND username = '$local_username'";
-                            $result_link1 = mysqli_query($conn, $query1);
-                            while ($link = mysqli_fetch_array($result_link1)) { ?>
+                        <table id="autosearch" class="display" font color="back">
+                            <center><label for="maincategory"  style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
+                            <thead id="tableswhite">
                                 <tr>
-                                    <td align="center"><?php echo $link['id']; ?></td>
-                                    <td align="left"><?php echo $link['videolink']; ?></td>
-                                    <td align="center"><?php echo $link['maincategory']; ?></td>
-                                    <td align="center"><?php echo $link['category']; ?></td>
-                                    <td align="center"><?php echo $link['proforpers']; ?></td>
-                                    <td align="left"><?php echo $link['content']; ?></td>
-                                    <td align="center"><?php echo $link['creationdate']; ?></td>
+                                    <th>ID</th>
+                                    <th>Enlace o URL</th>
+                                    <th>Categoría</th>
+                                    <th>Subcategoría</th>
+                                    <th>Contenido</th>
+                                    <th>Fecha Creación</th>
+                                    <th>Descripción</th>
                                 </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <?php 
+                                $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND id = '$id' AND username = '$local_username'";
+                                $result_link1 = mysqli_query($conn, $query1);
+                                while ($link = mysqli_fetch_array($result_link1)) { ?>
+                                    <tr>
+                                        <td align="center"><?php echo $link['id']; ?></td>
+                                        <td align="left"><?php echo $link['videolink']; ?></td>
+                                        <td align="center"><?php echo $link['maincategory']; ?></td>
+                                        <td align="center"><?php echo $link['category']; ?></td>
+                                        <td align="center"><?php echo $link['proforpers']; ?></td>
+                                        <td align="center"><?php echo $link['creationdate']; ?></td>
+                                        <td align="left"><?php echo $link['content']; ?></td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
                 </div>	
             </div>
         </div>

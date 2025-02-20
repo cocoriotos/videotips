@@ -4,6 +4,9 @@
 include "SessionTimeOut.php";*/
 $name = $_SESSION['name'];
 ?>
+<head>    
+    <link rel="stylesheet" href="style_sheet_ops.css"/>
+</head>
 <html lang="us"> 
   <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome" >

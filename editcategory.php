@@ -14,6 +14,7 @@ include "SessionTimeOut.php";*/
 
 <head>	
 	<script src="head.js" defer></script>	  
+	<link rel="stylesheet" href="style_sheet_ops.css"/>
 </head>
 <body id="bodyadminmodule">
 <div class="container-fluid p-0" >
@@ -50,13 +51,13 @@ include "SessionTimeOut.php";*/
 		<div class="col-md-12">
 			<br>
 			<div class="card card-body">
-					<table class="table table-bordered" id="tableswhite">
-					<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
-						<thead>
+					<table id="autosearch" class="display" font color="back">
+					<center><label for="maincategory" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
+						<thead id="tableswhite">
 							<tr>
-								<th>ID</th>
-								<th>Categoría</th>
-								<th>Subcategoría</th>
+								<th style="width: 33.33%;">ID</th>
+								<th style="width: 33.33%;">Categoría</th>
+								<th style="width: 33.33%;">Subcategoría</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -65,9 +66,9 @@ include "SessionTimeOut.php";*/
 							$result_link1 = mysqli_query($conn,$query1);
 							while($link = mysqli_fetch_array($result_link1)) { ?>
 							<tr>
-								<td><?php echo $link['id'] ?></td>
-								<td><?php echo $link['maincategory'] ?></td>
-								<td><?php echo $link['category'] ?></td>
+								<td style="width: 33.33%;"><?php echo $link['id'] ?></td>
+								<td style="width: 33.33%;"><?php echo $link['maincategory'] ?></td>
+								<td style="width: 33.33%;"><?php echo $link['category'] ?></td>
 								</td>
 							</tr>
 							<?php }?>
