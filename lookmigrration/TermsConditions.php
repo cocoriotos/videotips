@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<input?php
+<?php
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>
 <html lang="us">
 <head>
+<link rel="icon" href="SSCircleBackgroundWhite.ico" type="image/x-icon">
+<link rel="stylesheet" href="style_sheet.css"/>
 </head>
 <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
@@ -19,7 +21,7 @@ include "SessionTimeOut.php";*/
 <body id="bodyadminmodule">
           <br><br>
      
-  <div class="container">
+  <div class="container1">
       <class="column-wrap clearfix">
             <div class="col-xs-12">
                 <hr>
@@ -57,7 +59,7 @@ include "SessionTimeOut.php";*/
           </div>
           </center>
           <hr>
-          <center><a id="headerfonts" href="requestaccessfinal.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a></center>
+          <center><a id="headerfonts" href="index.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a></center>
     </div>    
   </div>
     </body>
