@@ -51,9 +51,9 @@ include "SessionTimeOut.php";*/
 		<div class="col-md-12">
 			<br>
 			<div class="card card-body">
-					<table class="table table-bordered" id="tableswhite">
+					<table class="table table-bordered" id="autosearch">
 					<center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Información de Categoría a Modificar </strong></label></center>	
-						<thead>
+						<thead id="tableswhite">
 							<tr>
 								<th>ID</th>
 								<th>Categoría</th>
