@@ -61,7 +61,8 @@ include "SessionTimeOut.php";*/
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="category" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>
-                                    <select id="category" class="form-control" name="category" required>
+                                    <select id="category" class="form-control" name="category" data-current-category="<?php echo $link['category']; ?>" required>
+                                        <option value="">Seleccione una subcategoría</option>
                                         <?php 
                                         $query_options = "SELECT DISTINCT(category) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY category ASC";
                                         $result_options = mysqli_query($conn, $query_options);
@@ -141,6 +142,8 @@ include "SessionTimeOut.php";*/
 
 <script>
     function getSubcategories(maincategory) {
+    var currentCategory = document.getElementById("category").getAttribute("data-current-category");
+
     if (maincategory == "") {
         document.getElementById("category").innerHTML = "<option value=''>Seleccione una subcategoría</option>";
         return;
@@ -152,17 +155,17 @@ include "SessionTimeOut.php";*/
             document.getElementById("category").innerHTML = this.responseText;
         }
     };
-    xhr.open("GET", "getSubcategories.php?maincategory=" + encodeURIComponent(maincategory), true);
+    xhr.open("GET", "getSubcategories.php?maincategory=" + encodeURIComponent(maincategory) + "&current_category=" + encodeURIComponent(currentCategory), true);
     xhr.send();
 }
 
+// Ejecutar al cargar la página
 window.onload = function() {
     var maincategory = document.getElementById("maincategory").value;
     if (maincategory) {
         getSubcategories(maincategory);
     }
 };
-
 </script>
 
 <?php 
