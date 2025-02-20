@@ -1,18 +1,18 @@
 <?php
-session_start();
 include "db_connection1.php";
+session_start();
 
-$maincategory = $_GET['maincategory'];
 $local_username = $_SESSION['email'];
+$maincategory = $_GET['maincategory'];
 
-$SQLSELECT = "SELECT distinct(category) FROM videotips_viodetipscategory WHERE username = '$local_username' AND maincategory = '$maincategory' ORDER BY category ASC"; 
-$result_set = mysqli_query($conn, $SQLSELECT);
-
-$options = "<option value=''>Seleccione una subcategoría</option>";
-while ($rows = $result_set->fetch_assoc()) { 
-    $category = $rows['category']; 
-    $options .= "<option value='$category'>$category</option>";
+if (!empty($maincategory)) {
+    $query = "SELECT DISTINCT category FROM videotips_viodetipscategory 
+              WHERE maincategory = '$maincategory' AND username = '$local_username' 
+              ORDER BY category ASC";
+    $result = mysqli_query($conn, $query);
+    
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "<option value='{$row['category']}'>{$row['category']}</option>";
+    }
 }
-
-echo $options;
 ?>
