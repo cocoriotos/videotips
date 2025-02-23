@@ -101,6 +101,7 @@
                                 <th>Descripción</th>
                                 <th>Creación</th>
                                 <th>Copiar Enlace</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -117,6 +118,8 @@
                                 <td id="tddescription" align="left"><?php echo $links['content'] ?></td>
                                 <td align="center"><?php echo $links['creationdate'] ?></td>
                                 <td align="center"><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
+                                <td><a href="edit.php?id=<?php echo $row['id']?>"class="btn btn-secondary"><i class="fas fa-marker"></i></a>
+						                        <a href="delete.php?id=<?php echo $row['id']?>"class="btn btn-danger"><i class="far fa-trash-alt"></i></a></td>
                             </tr>
                             <?php }?>
                         </tbody>
