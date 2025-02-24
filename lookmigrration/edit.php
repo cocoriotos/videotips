@@ -31,7 +31,7 @@ include "SessionTimeOut.php";*/
             <div class="col-md-12">
                 <div class="card card-body">
                     <?php 
-                    $query = "SELECT * FROM videotips_videotips WHERE videolink = '$videolink' AND username = '$local_username'";
+                    $query = "SELECT * FROM videotips_videotips WHERE id  = '$i' AND username = '$local_username'";
                     $result_link = mysqli_query($conn, $query);
                     $link = mysqli_fetch_array($result_link);
                     ?>
