@@ -57,8 +57,8 @@ include "SessionTimeOut.php";*/
 						<thead id="tableswhite">
 							<tr>
 								<!--<th style="width: 33.33%;">ID</th>-->
-								<th>Categoría</th>
-								<th>Subcategoría</th>
+								<th style="width: 50%;">Categoría</th>
+								<th style="width: 50%;">Subcategoría</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -68,8 +68,8 @@ include "SessionTimeOut.php";*/
 							while($link = mysqli_fetch_array($result_link1)) { ?>
 							<tr>
 								<!--<td style="width: 33.33%;"><?php /*echo $link['id'] */?></td>-->
-								<td><?php echo $link['maincategory'] ?></td>
-								<td><?php echo $link['category'] ?></td>
+								<td style="width: 50%;"><?php echo $link['maincategory'] ?></td>
+								<td style="width: 50%;"><?php echo $link['category'] ?></td>
 								</td>
 							</tr>
 							<?php }?>
