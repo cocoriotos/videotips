@@ -21,7 +21,7 @@
             $result = $stmt->get_result();
             $extendcounterfeature = $result->fetch_assoc()['extendcounterfeature'];
             
-            $stmt = $conn->prepare("SELECT category FROM videotips_viodetipscategory WHERE category = ? AND username = ?");
+            $stmt = $conn->prepare("SELECT category FROM videotips_viodetipscategory1 WHERE category = ? AND username = ?");
             $stmt->bind_param("ss", $category, $local_username);
             $stmt->execute();
             $categoryresult = $stmt->get_result();
@@ -39,7 +39,7 @@
             }
             
             if ($categorycounter <= 999 || ($categorycounter > 999 && $extendcounterfeature == 1)) {
-                $stmt = $conn->prepare("INSERT INTO videotips_viodetipscategory (maincategory, category, username) VALUES (?, ?, ?)");
+                $stmt = $conn->prepare("INSERT INTO videotips_viodetipscategory1 (maincategory, category, username) VALUES (?, ?, ?)");
                 $stmt->bind_param("sss", $maincategory, $category, $local_username);
                 
                 if ($stmt->execute()) {
