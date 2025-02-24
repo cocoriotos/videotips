@@ -39,10 +39,10 @@ include "SessionTimeOut.php";*/
                         <center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
                         <center>
                             <div class="row justify-content-center">
-                                <div class="form-group col-md-2">
+                                <!--<div class="form-group col-md-2">
                                     <label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
                                     <input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value="<?php echo $link['id']; ?>" readonly></input><br>
-                                </div>
+                                </div>-->
                                 <div class="form-group col-md-2">
                                     <label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace o URL</strong></label><br>	
                                     <input id="videolink" type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value="<?php echo $link['videolink']; ?>"></input><br>
@@ -119,7 +119,7 @@ include "SessionTimeOut.php";*/
                             </thead>
                             <tbody>
                                 <?php 
-                                $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND id = '$id' AND username = '$local_username'";
+                                $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND videolink = '$videolink' AND username = '$local_username'";
                                 $result_link1 = mysqli_query($conn, $query1);
                                 while ($link = mysqli_fetch_array($result_link1)) { ?>
                                     <tr>
