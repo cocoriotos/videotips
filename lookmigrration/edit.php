@@ -42,7 +42,7 @@ include "SessionTimeOut.php";*/
                                 <input type="hidden" name="id" value="<?php echo $link['id']; ?>">
                                 <!--<div class="form-group col-md-2">
                                     <label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
-                                    <input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value="<?php echo $link['id']; ?>" readonly></input><br>
+                                    <input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value="<?php /*echo $link['id'];*/ ?>" readonly></input><br>
                                 </div>-->
                                 <div class="form-group col-md-2">
                                     <label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace o URL</strong></label><br>	
