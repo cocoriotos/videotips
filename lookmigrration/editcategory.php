@@ -44,7 +44,7 @@ include "SessionTimeOut.php";*/
 							</div>
 							</div></center>					
 								<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="update_category" value="Actualizar"></input>
-								<input id="save_link" type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="deletecategory.php"></input></center><br>
+								<!--<input id="save_link" type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="deletecategory.php"></input></center><br>-->
                  </form>
 		    </div>
         </div>	
