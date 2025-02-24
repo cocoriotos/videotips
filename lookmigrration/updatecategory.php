@@ -2,14 +2,15 @@
 session_start();
 include "db_connection1.php"; 
 
-$category = $_GET['category'];
-$maincategory = $_GET['maincategory'];
+$id = $_POST['id'];
+$maincategory=$_POST["maincategory"];
+$category=$_POST["category"];
 $local_username=$_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 
 
 
-$query="UPDATE videotips_viodetipscategory SET maincategory = '$maincategory', category = '$category' where  username = '$local_username'";
+$query="UPDATE videotips_viodetipscategory1 SET maincategory = '$maincategory', category = '$category' where  username = '$local_username'  fdsd";
 $resultado=$conn ->query($query);
 
 if ($resultado){

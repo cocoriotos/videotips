@@ -61,7 +61,7 @@ include "SessionTimeOut.php";
 			    </thead>
 				<tbody>
 					<?php 
-					$query1 = "select * from videotips_viodetipscategory where username ='$local_username' order by id, maincategory, category asc";
+					$query1 = "select * from videotips_viodetipscategory1 where username ='$local_username' order by id, maincategory, category asc";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
@@ -70,8 +70,8 @@ include "SessionTimeOut.php";
 						 <td align="center" onclick="Display"><?php echo $categories['category']?></td>
 						 <td align="center"></a><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $categories['maincategory']; ?>')"></button></td>
 						 <td align="center"></a><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $categories['category']; ?>')"></button></td>
-						 <td><a href="editcategory.php?category=<?php echo $categories['category']?>"class="btn btn-secondary" title="Modificar"><i class="fas fa-marker"></i></a>
-						     <a href="deletecategory.php?category=<?php echo $categories['category']?>"class="btn btn-danger" title="Borrar"><i class="far fa-trash-alt"></i></a></td>
+						 <td><a href="editcategory.php?category=<?php echo $categories['id']?>"class="btn btn-secondary" title="Modificar"><i class="fas fa-marker"></i></a>
+						     <a href="deletecategory.php?category=<?php echo $categories['id']?>"class="btn btn-danger" title="Borrar"><i class="far fa-trash-alt"></i></a></td>
 					 	 </td>
 					  </tr>
 					<?php }?>
