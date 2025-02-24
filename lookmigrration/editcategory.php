@@ -10,7 +10,6 @@ include "headereditcategory.php";
 include "db_connection1.php";
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
-print_r($id);
 ?>
 
 <head>	
@@ -31,6 +30,7 @@ print_r($id);
 				<form text-align="center" action="updatecategory.php" method="POST"> 
 					<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Categoría </strong></label></center>
 						<center><div class="row justify-content-center">	
+							<input type="hidden" name="id" value="<?php echo $link['id']; ?>">
 							<!--<div class="form-group col-md-4">
 								<label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
 								<input id="videolink" class="form-control" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
