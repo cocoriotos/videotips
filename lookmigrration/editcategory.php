@@ -17,9 +17,9 @@ include "SessionTimeOut.php";*/
 	<script src="head.js" defer></script>	  
 	<link rel="stylesheet" href="style_sheet_ops.css"/>
 </head>
-<body id="bodyadminmodule">
+<body id="bodyadminmodule"style="padding: 0%;>
 <div class="container-fluid p-0" >
-	<div class="row justify-content-start">
+	<div class="row justify-content-start" style="padding: 0%; width: 100%;>
 		<div class="col-md-12">
 			 <?php 
 					$query = "select * from videotips_viodetipscategory where category = '$category' and username='$local_username'";
@@ -29,7 +29,7 @@ include "SessionTimeOut.php";*/
 			<div class="card card-body">
 				<form text-align="center" action="updatecategory.php" method="POST"> 
 					<center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Categoría </strong></label></center>
-						<center><div class="row">	
+						<center><div class="row justify-content-center">	
 							<!--<div class="form-group col-md-4">
 								<label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
 								<input id="videolink" class="form-control" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
