@@ -2,7 +2,7 @@
 session_start();
 include "db_connection1.php"; 
 
-$maincategory = $_POST['maincategory'];
+$maincategory = $_GET['maincategory'];
 $category = $_GET['category'];
 $local_username=$_SESSION['email'];
 $maincategory=$_POST["maincategory"];
