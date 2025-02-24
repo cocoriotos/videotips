@@ -10,6 +10,7 @@ include "headereditcategory.php";
 include "db_connection1.php";
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
+print_r($id);
 ?>
 
 <head>	
