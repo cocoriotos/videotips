@@ -34,11 +34,11 @@ include "SessionTimeOut.php";*/
 								<label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
 								<input id="videolink" class="form-control" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value ="<?php echo $link['id'];?>"readonly></input><br>
 							</div>-->
-							<div class="form-group col-md-8">
+							<div class="form-group col-md-4">
 								<label for="id" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
 								<input id="maincategory" class="form-control" style="text-align: center;" type="text" name="maincategory" class="form-control" placeholder="Categoría" required autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
 							</div>
-							<div class="form-group col-md-8">
+							<div class="form-group col-md-4">
 								<label for="videolink" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
 								<input id="category" class="form-control" style="text-align: center;" type="text" name="category" class="form-control" placeholder="Subcategoría" required autofocus value ="<?php echo $link['category'];?>"></input><br>
 							</div>
