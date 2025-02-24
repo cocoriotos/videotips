@@ -1,8 +1,7 @@
 <?php 
 session_start();
 include "db_connection1.php";
-$id=$_POST['id'];
-$delconfirm = "0";
+/*$id=$_POST['id'];*/
 $videolink=$_POST['videolink'];
 $local_username=$_SESSION['username'];
 $deletedlink = $_SESSION['deletedlink'];
