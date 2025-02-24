@@ -1,11 +1,12 @@
 <?php 
 include "db_connection1.php";
 session_start();
-$id=$_POST['id'];
+$maincategory = $_GET['maincategory'];
+$category = $_GET['category'];
 $local_username=$_SESSION['email'];
 $deletedcategory = $_SESSION['deletedcategory'];
 
-$query = "delete from videotips_viodetipscategory where id='$id'";
+$query = "delete from videotips_viodetipscategory where category='$category' and maincategory='$maincategory' and username='$local_username'" ;
 $result = mysqli_query($conn,$query);
 
 
