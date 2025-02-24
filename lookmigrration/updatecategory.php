@@ -2,10 +2,11 @@
 session_start();
 include "db_connection1.php"; 
 
-/*$id = $_GET['id'];*/
-$id = "172";
-$maincategory=$_POST["maincategory1"];
-$category=$_POST["category1"];
+$id = $_GET['id'];
+/*$maincategory=$_POST["maincategory1"];
+$category=$_POST["category1"];*/
+$maincategory="mainCategorytest";
+$category="Categorytest";
 $local_username=$_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 
