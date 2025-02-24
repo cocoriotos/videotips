@@ -3,8 +3,8 @@ session_start();
 include "db_connection1.php"; 
 
 $id = $_GET['id'];
-$maincategory = $_POST['maincategory'];
-$category = $_POST['category'];
+$maincategory = $_POST["maincategory"];
+$category = $_POST["category"];
 /*$maincategory="mainCategorytest";
 $category="Categorytest";*/
 $local_username = $_SESSION['email'];

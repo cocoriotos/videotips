@@ -37,11 +37,11 @@ print_r($id);
 							</div>-->
 							<div class="form-group col-md-4">
 								<label for="id" class="col-form-label" style="color: black;"><strong>Categoría</strong></label><br>	
-								<input id="maincategory1" class="form-control" style="text-align: center;" type="text" name="maincategory" class="form-control" placeholder="Categoría" required autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
+								<input id="maincategory" class="form-control" style="text-align: center;" type="text" name="maincategory" class="form-control" placeholder="Categoría" required autofocus value ="<?php echo $link['maincategory'];?>"></input><br>
 							</div>
 							<div class="form-group col-md-4">
 								<label for="videolink" class="col-form-label" style="color: black;"><strong>Subcategoría</strong></label><br>	
-								<input id="category1" class="form-control" style="text-align: center;" type="text" name="category" class="form-control" placeholder="Subcategoría" required autofocus value ="<?php echo $link['category'];?>"></input><br>
+								<input id="category" class="form-control" style="text-align: center;" type="text" name="category" class="form-control" placeholder="Subcategoría" required autofocus value ="<?php echo $link['category'];?>"></input><br>
 							</div>
 							</div></center>					
 								<center><input id="save_link" type="submit" class="btn btn-success btn-block" name="update_category" value="Actualizar"></input>
