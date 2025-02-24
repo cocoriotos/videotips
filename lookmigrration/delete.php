@@ -2,7 +2,7 @@
 session_start();
 include "db_connection1.php";
 $id = $_POST['id'];
-$videolink = $_POST['videolink'];
+$videolink = $_POST['tdlink'];
 $local_username=$_SESSION['username'];
 $deletedlink = $_SESSION['deletedlink'];
 $query = "delete from videotips_videotips where videolink = '$videolink'";
@@ -13,7 +13,7 @@ if ($result) {
     exit();
   }else{
     $_SESSION['deletedlink'] = 2;
-header("refresh:0; url=videolinkadminmodule.php");  
-exit();
+    header("refresh:0; url=videolinkadminmodule.php");  
+    exit();
 }
 ?>
