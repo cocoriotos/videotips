@@ -49,7 +49,7 @@ include "SessionTimeOut.php";*/
 		    </div>
         </div>	
 		
-		<div class="col-md-12">
+		<div class="col-md-8">
 			<br>
 			<div class="card card-body">
 					<table id="autosearch" class="display" font color="back">
@@ -63,7 +63,7 @@ include "SessionTimeOut.php";*/
 						</thead>
 						<tbody>
 							<?php 
-							$query1 = "select * from videotips_viodetipscategory where maincategory = '$maincategory' and category = '$category' and username = '$local_username'";
+							$query1 = "select * from videotips_viodetipscategory where category = '$category' and username = '$local_username'";
 							$result_link1 = mysqli_query($conn,$query1);
 							while($link = mysqli_fetch_array($result_link1)) { ?>
 							<tr>
