@@ -1,9 +1,7 @@
 <?php 
 session_start();
 $id = $_GET['id'];
-$maincategory = $_GET['maincategory'];
 $category = $_GET['category'];
-$id = $_GET['id'];
 $local_username=$_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
@@ -24,7 +22,7 @@ include "SessionTimeOut.php";*/
 	<div class="row justify-content-start">
 		<div class="col-md-12">
 			 <?php 
-					$query = "select * from videotips_viodetipscategory where maincategory = '$maincategory' and category = '$category' and username='$local_username'";
+					$query = "select * from videotips_viodetipscategory where category = '$category' and username='$local_username'";
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
@@ -59,8 +57,8 @@ include "SessionTimeOut.php";*/
 						<thead id="tableswhite">
 							<tr>
 								<!--<th style="width: 33.33%;">ID</th>-->
-								<th style="width: 50%;">Categoría</th>
-								<th style="width: 50%;">Subcategoría</th>
+								<th>Categoría</th>
+								<th>Subcategoría</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -70,8 +68,8 @@ include "SessionTimeOut.php";*/
 							while($link = mysqli_fetch_array($result_link1)) { ?>
 							<tr>
 								<!--<td style="width: 33.33%;"><?php /*echo $link['id'] */?></td>-->
-								<td style="width: 50%;"><?php echo $link['maincategory'] ?></td>
-								<td style="width: 50%;"><?php echo $link['category'] ?></td>
+								<td><?php echo $link['maincategory'] ?></td>
+								<td><?php echo $link['category'] ?></td>
 								</td>
 							</tr>
 							<?php }?>
