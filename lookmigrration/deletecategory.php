@@ -7,7 +7,7 @@ $deletedcategory = $_SESSION['deletedcategory'];
 
 
 
-$query = "delete from videotips_viodetipscategory where id='$id'";
+$query = "delete from videotips_viodetipscategory where id = '$id'";
 $result = mysqli_query($conn,$query);
 
 
