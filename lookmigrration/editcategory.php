@@ -24,7 +24,7 @@ include "SessionTimeOut.php";*/
 		<div class="col-md-12">
 			 <?php 
 					/*$query = "select * from videotips_viodetipscategory1 where category = '$category' and username='$local_username'";*/
-					$query = "select * from videotips_viodetipscategory1 where category = '$category' and id ='$id'";
+					$query = "select * from videotips_viodetipscategory1 where id ='$id'";
 					$result_link = mysqli_query($conn,$query);
 					$link = mysqli_fetch_array($result_link);
 			 ?>
@@ -66,7 +66,7 @@ include "SessionTimeOut.php";*/
 						<tbody>
 							<?php 
 							/*$query1 = "select * from videotips_viodetipscategory1 where category = '$category' and username = '$local_username'";*/
-							$query1 = "select * from videotips_viodetipscategory1 where category = '$category' and id = '$id'";
+							$query1 = "select * from videotips_viodetipscategory1 where id = '$id'";
 							$result_link1 = mysqli_query($conn,$query1);
 							while($link = mysqli_fetch_array($result_link1)) { ?>
 							<tr>
