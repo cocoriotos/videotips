@@ -2,7 +2,7 @@
 session_start();
 include "db_connection1.php"; 
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 $videolink = $_POST['videolink'];
 $maincategory=$_POST["maincategory"];
 $category=$_POST["category"];

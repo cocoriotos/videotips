@@ -39,6 +39,7 @@ include "SessionTimeOut.php";*/
                         <center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
                         <center>
                             <div class="row justify-content-center">
+                                <input type="hidden" name="id" value="<?php echo $link['id']; ?>">
                                 <!--<div class="form-group col-md-2">
                                     <label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
                                     <input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value="<?php echo $link['id']; ?>" readonly></input><br>
