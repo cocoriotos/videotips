@@ -5,12 +5,10 @@ include "db_connection1.php";
 $id = $_POST['id'];
 $maincategory = $_POST["maincategory"];
 $category = $_POST["category"];
-/*$maincategory="mainCategorytest";
-$category="Categorytest";*/
 $local_username = $_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 
-$query = $conn->prepare("UPDATE videotips_viodetipscategory1 SET category = ?, maincategory = ? WHERE id = ?");
+$query = $conn->prepare("UPDATE videotips_viodetipscategory SET category = ?, maincategory = ? WHERE id = ?");
 $query->bind_param("ssi", $category, $maincategory, $id);
 $resultado = $query->execute();
 
