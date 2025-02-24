@@ -2,6 +2,7 @@
 session_start();
 $id = $_GET['id'];
 $category = $_GET['category'];
+$maincategory = $_GET['maincategory'];
 $local_username=$_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
