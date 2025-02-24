@@ -1,7 +1,7 @@
 <?php 
 include "db_connection1.php";
 session_start();
-$id = $_POST['id'];
+$id = $_GET['id'];
 $local_username=$_SESSION['email'];
 $deletedcategory = $_SESSION['deletedcategory'];
 
