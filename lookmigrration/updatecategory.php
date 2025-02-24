@@ -15,7 +15,7 @@ $resultado=$conn ->query($query);
 
 if ($resultado){
   $_SESSION['updatedcategory']=1;
-  header("refresh:0; url=addcategory.php");
+  header("refresh:0; url=editcategory.php");
   exit();
     }
   else{
