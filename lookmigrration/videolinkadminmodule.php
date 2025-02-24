@@ -93,7 +93,7 @@
                     <table id="autosearch" class="display">
                         <thead id="tableswhite">
                             <tr>
-                                <th>ID</th>
+                                <!--<th>ID</th>-->
                                 <th>Enlace</th>
                                 <th>Categoría</th>
                                 <th>Subcategoría</th>
@@ -110,7 +110,7 @@
                             $result_links = mysqli_query($conn,$query1);                            
                             while($links = mysqli_fetch_array($result_links)) { ?>
                             <tr>
-                                <td align="center"><?php echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"?></td>
+                                <!--<td align="center"><?php /*echo"<a href='edit.php?id={$links['id']}'>{$links['id']}"*/?></td>-->
                                 <td id="tdlink" align="left"><a href="<?php echo $links['videolink']; ?>" target="_blank"><?php echo $links['videolink']; ?></a></td>
                                 <td id="tdmaincategory" align="center"><?php echo $links['maincategory'] ?></td>
                                 <td id="tdcategory" align="center"><?php echo $links['category'] ?></td>
@@ -118,8 +118,8 @@
                                 <td id="tddescription" align="left"><?php echo $links['content'] ?></td>
                                 <td align="center"><?php echo $links['creationdate'] ?></td>
                                 <td align="center"><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button></td>
-                                <td><a href="edit.php?id=<?php echo $row['id']?>"class="btn btn-secondary"><i class="fas fa-marker"></i></a>
-						                        <a href="delete.php?id=<?php echo $row['id']?>"class="btn btn-danger"><i class="far fa-trash-alt"></i></a></td>
+                                <td><a href="edit.php?id=<?php echo $links['videolink']?>"class="btn btn-secondary"><i class="fas fa-marker"></i></a>
+						                        <a href="delete.php?id=<?php echo $links['videolink']?>"class="btn btn-danger"><i class="far fa-trash-alt"></i></a></td>
                             </tr>
                             <?php }?>
                         </tbody>

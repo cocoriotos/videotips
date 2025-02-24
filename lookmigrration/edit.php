@@ -1,6 +1,7 @@
 <?php 
 session_start();
-$id = $_GET['id'];
+/*$id = $_GET['id'];*/
+$videolink = $_GET['videolink'];
 $local_username = $_SESSION['email'];
 $deletedlink = $_SESSION['deletedlink'];
 $updatedlink = $_SESSION['updatedlink'];
@@ -30,7 +31,7 @@ include "SessionTimeOut.php";*/
             <div class="col-md-12">
                 <div class="card card-body">
                     <?php 
-                    $query = "SELECT * FROM videotips_videotips WHERE id = '$id' AND username = '$local_username'";
+                    $query = "SELECT * FROM videotips_videotips WHERE videolink = '$videolink' AND username = '$local_username'";
                     $result_link = mysqli_query($conn, $query);
                     $link = mysqli_fetch_array($result_link);
                     ?>
@@ -107,13 +108,13 @@ include "SessionTimeOut.php";*/
                             <center><label for="maincategory"  style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
                             <thead id="tableswhite">
                                 <tr>
-                                    <th>ID</th>
+                                    <!--<th>ID</th>-->
                                     <th>Enlace o URL</th>
                                     <th>Categoría</th>
                                     <th>Subcategoría</th>
                                     <th>Contenido</th>
                                     <th>Fecha Creación</th>
-                                    <th>Descripción</th>
+                                    <th>Descripción</th>             
                                 </tr>
                             </thead>
                             <tbody>
@@ -122,7 +123,7 @@ include "SessionTimeOut.php";*/
                                 $result_link1 = mysqli_query($conn, $query1);
                                 while ($link = mysqli_fetch_array($result_link1)) { ?>
                                     <tr>
-                                        <td align="center"><?php echo $link['id']; ?></td>
+                                        <!--<td align="center"><?php /*echo $link['id']; */?></td>-->
                                         <td align="left"><?php echo $link['videolink']; ?></td>
                                         <td align="center"><?php echo $link['maincategory']; ?></td>
                                         <td align="center"><?php echo $link['category']; ?></td>
