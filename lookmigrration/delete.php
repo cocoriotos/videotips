@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include "db_connection1.php";
-$id = $_POST['id'];
+$id = $_GET['id'];
 $videolink = $_GET['videolink'];
 $local_username=$_SESSION['username'];
 $deletedlink = $_SESSION['deletedlink'];
