@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$id = $_POST['id'];
+$id = $_GET['id'];
 $videolink = $_GET['videolink'];
 $local_username = $_SESSION['email'];
 $deletedlink = $_SESSION['deletedlink'];
