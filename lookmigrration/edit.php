@@ -120,7 +120,7 @@ include "SessionTimeOut.php";*/
                             </thead>
                             <tbody>
                                 <?php 
-                                $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND videolink = '$videolink' AND username = '$local_username'";
+                                $query1 = "SELECT * FROM videotips_videotips WHERE active = 'Yes' AND id = '$id' AND username = '$local_username'";
                                 $result_link1 = mysqli_query($conn, $query1);
                                 while ($link = mysqli_fetch_array($result_link1)) { ?>
                                     <tr>
