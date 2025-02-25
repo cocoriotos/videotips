@@ -71,7 +71,7 @@ include "SessionTimeOut.php";
 						 <td align="center"></a><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $categories['maincategory']; ?>')"></button></td>
 						 <td align="center"></a><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $categories['category']; ?>')"></button></td>
 						 <td><a href="editcategory.php?id=<?php echo $categories['id']?>"class="btn btn-secondary" title="Modificar"><i class="fas fa-marker"></i></a>
-						     <a href="deletecategory.php?id=<?php echo $categories['id']?>"class="btn btn-danger" title="Borrar"><i class="far fa-trash-alt"></i></a></td>
+						     <a href="addcategory.php?id=<?php echo $categories['id']?>"class="btn btn-danger" title="Borrar"><i class="far fa-trash-alt"></i></a></td>
 					 	 </td>
 					  </tr>
 					<?php }?>
