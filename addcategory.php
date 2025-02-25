@@ -51,11 +51,12 @@ include "SessionTimeOut.php";
 		  <center><label for="maincategory" style="color: black; font-size: 28px;"><strong>Tus Categorías</strong></label></center><br>
 				<thead id="tableswhite">
 				   <tr>
-					  <th>ID</th>
+					  <!--<th>ID</th>-->
 					  <th>Categoría</th>
 					  <th>SubCategoría</th>
 					  <th>Copiar Categoría</th>
 					  <th>Copiar Subcategoría</th>
+					  <th>Acción</th>
 				   </tr>
 			    </thead>
 				<tbody>
@@ -64,11 +65,13 @@ include "SessionTimeOut.php";
 					$result_categories = mysqli_query($conn,$query1);
 					while($categories = mysqli_fetch_array($result_categories)) { ?>
 					  <tr>
-					     <td align="center" onclick="Display"><?php echo"<a href='editcategory.php?id={$categories['id']}'>{$categories['id']}"?></td>
+					     <!--<td align="center" onclick="Display"><?php /*echo"<a href='editcategory.php?id={$categories['id']}'>{$categories['id']}"*/?></td>-->
 						 <td align="center" onclick="Display"><?php echo $categories['maincategory']?></td>
 						 <td align="center" onclick="Display"><?php echo $categories['category']?></td>
 						 <td align="center"></a><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $categories['maincategory']; ?>')"></button></td>
 						 <td align="center"></a><button class="fas fa-copy color-dark-icon" onclick="copyToClipboard('<?php echo $categories['category']; ?>')"></button></td>
+						 <td><a href="editcategory.php?id=<?php echo $categories['id']?>"class="btn btn-secondary" title="Modificar"><i class="fas fa-marker"></i></a>
+						     <a href="deletecategory.php?id=<?php echo $categories['id']?>"class="btn btn-danger" title="Borrar"><i class="far fa-trash-alt"></i></a></td>
 					 	 </td>
 					  </tr>
 					<?php }?>

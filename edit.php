@@ -1,6 +1,7 @@
 <?php 
 session_start();
 $id = $_GET['id'];
+$videolink = $_GET['videolink'];
 $local_username = $_SESSION['email'];
 $deletedlink = $_SESSION['deletedlink'];
 $updatedlink = $_SESSION['updatedlink'];
@@ -30,7 +31,7 @@ include "SessionTimeOut.php";*/
             <div class="col-md-12">
                 <div class="card card-body">
                     <?php 
-                    $query = "SELECT * FROM videotips_videotips WHERE id = '$id' AND username = '$local_username'";
+                    $query = "SELECT * FROM videotips_videotips WHERE id  = '$id' AND username = '$local_username'";
                     $result_link = mysqli_query($conn, $query);
                     $link = mysqli_fetch_array($result_link);
                     ?>
@@ -38,10 +39,11 @@ include "SessionTimeOut.php";*/
                         <center><label for="title" class="col-form-label" style="color: black; font-size: 28px;"><strong> Editar Enlace </strong></label></center>
                         <center>
                             <div class="row justify-content-center">
-                                <div class="form-group col-md-2">
+                                <input type="hidden" name="id" value="<?php echo $link['id']; ?>">
+                                <!--<div class="form-group col-md-2">
                                     <label for="id" class="col-form-label" style="color: black;"><strong>Id</strong></label><br>	
-                                    <input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value="<?php echo $link['id']; ?>" readonly></input><br>
-                                </div>
+                                    <input id="videolink" style="text-align: center;" type="text" name="id" class="form-control" placeholder="ID" autofocus value="<?php /*echo $link['id'];*/ ?>" readonly></input><br>
+                                </div>-->
                                 <div class="form-group col-md-2">
                                     <label for="videolink" class="col-form-label" style="color: black;"><strong>Enlace o URL</strong></label><br>	
                                     <input id="videolink" type="text" name="videolink" class="form-control" placeholder="Enlace" autofocus value="<?php echo $link['videolink']; ?>"></input><br>
@@ -94,7 +96,7 @@ include "SessionTimeOut.php";*/
                         </center>
                         <center>
                             <input id="save_link" type="submit" class="btn btn-success btn-block" name="update_link" value="Actualizar"></input>
-                            <input id="save_link" type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input>
+                            <!--<input id="save_link" type="submit" class="btn btn-success btn-block" name="logout" value="Borrar" formaction="delete.php"></input>-->
                         </center><br>
                     </form>
                 </div>
@@ -107,13 +109,13 @@ include "SessionTimeOut.php";*/
                             <center><label for="maincategory"  style="color: black; font-size: 28px;"><strong> Información de Enlace a Modificar </strong></label></center>
                             <thead id="tableswhite">
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Enlace o URL</th>
-                                    <th>Categoría</th>
-                                    <th>Subcategoría</th>
-                                    <th>Contenido</th>
-                                    <th>Fecha Creación</th>
-                                    <th>Descripción</th>
+                                    <!--<th>ID</th>-->
+                                    <th style="width: 16.66%;">Enlace o URL</th>
+                                    <th style="width: 16.66%;">Categoría</th>
+                                    <th style="width: 16.66%;">Subcategoría</th>
+                                    <th style="width: 16.66%;">Contenido</th>
+                                    <th style="width: 16.66%;">Fecha Creación</th>
+                                    <th style="width: 16.66%;">Descripción</th>             
                                 </tr>
                             </thead>
                             <tbody>
@@ -122,13 +124,13 @@ include "SessionTimeOut.php";*/
                                 $result_link1 = mysqli_query($conn, $query1);
                                 while ($link = mysqli_fetch_array($result_link1)) { ?>
                                     <tr>
-                                        <td align="center"><?php echo $link['id']; ?></td>
-                                        <td align="left"><?php echo $link['videolink']; ?></td>
-                                        <td align="center"><?php echo $link['maincategory']; ?></td>
-                                        <td align="center"><?php echo $link['category']; ?></td>
-                                        <td align="center"><?php echo $link['proforpers']; ?></td>
-                                        <td align="center"><?php echo $link['creationdate']; ?></td>
-                                        <td align="left"><?php echo $link['content']; ?></td>
+                                        <!--<td align="center"><?php /*echo $link['id']; */?></td>-->
+                                        <td align="left" style="width: 16.66%;"><?php echo $link['videolink']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['maincategory']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['category']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['proforpers']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['creationdate']; ?></td>
+                                        <td align="left" style="width: 16.66%;"><?php echo $link['content']; ?></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>

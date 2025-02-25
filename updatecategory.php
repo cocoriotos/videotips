@@ -3,14 +3,14 @@ session_start();
 include "db_connection1.php"; 
 
 $id = $_POST['id'];
-$maincategory=$_POST["maincategory"];
-$category=$_POST["category"];
+$maincategory = $_POST["maincategory"];
+$category = $_POST["category"];
+$local_username = $_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
 
-
-
-$query="UPDATE videotips_viodetipscategory SET id = '$id', maincategory = '$maincategory', category = '$category' where id = '$id'";
-$resultado=$conn ->query($query);
+$query = $conn->prepare("UPDATE videotips_viodetipscategory SET category = ?, maincategory = ? WHERE id = ?");
+$query->bind_param("ssi", $category, $maincategory, $id);
+$resultado = $query->execute();
 
 if ($resultado){
   $_SESSION['updatedcategory']=1;
