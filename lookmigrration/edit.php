@@ -110,12 +110,12 @@ include "SessionTimeOut.php";*/
                             <thead id="tableswhite">
                                 <tr>
                                     <!--<th>ID</th>-->
-                                    <th>Enlace o URL</th>
-                                    <th>Categoría</th>
-                                    <th>Subcategoría</th>
-                                    <th>Contenido</th>
-                                    <th>Fecha Creación</th>
-                                    <th>Descripción</th>             
+                                    <th style="width: 16.66%;">Enlace o URL</th>
+                                    <th style="width: 16.66%;">Categoría</th>
+                                    <th style="width: 16.66%;">Subcategoría</th>
+                                    <th style="width: 16.66%;">Contenido</th>
+                                    <th style="width: 16.66%;">Fecha Creación</th>
+                                    <th style="width: 16.66%;">Descripción</th>             
                                 </tr>
                             </thead>
                             <tbody>
@@ -125,12 +125,12 @@ include "SessionTimeOut.php";*/
                                 while ($link = mysqli_fetch_array($result_link1)) { ?>
                                     <tr>
                                         <!--<td align="center"><?php /*echo $link['id']; */?></td>-->
-                                        <td align="left"><?php echo $link['videolink']; ?></td>
-                                        <td align="center"><?php echo $link['maincategory']; ?></td>
-                                        <td align="center"><?php echo $link['category']; ?></td>
-                                        <td align="center"><?php echo $link['proforpers']; ?></td>
-                                        <td align="center"><?php echo $link['creationdate']; ?></td>
-                                        <td align="left"><?php echo $link['content']; ?></td>
+                                        <td align="left" style="width: 16.66%;"><?php echo $link['videolink']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['maincategory']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['category']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['proforpers']; ?></td>
+                                        <td align="center" style="width: 16.66%;"><?php echo $link['creationdate']; ?></td>
+                                        <td align="left" style="width: 16.66%;"><?php echo $link['content']; ?></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
