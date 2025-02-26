@@ -179,3 +179,11 @@ table tr:hover {
 .custom-swal-confirm-button:hover {
   background-color: #0c316d !important;
 }
+
+#tdlink a {
+  display: inline-block;
+  max-width: 300px; /* Ajusta este valor según tus necesidades */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
