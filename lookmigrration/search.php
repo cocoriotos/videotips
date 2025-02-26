@@ -1,4 +1,14 @@
 <script>
+
+<form action="" method="GET" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Buscar enlaces..." value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>">
+        <div class="input-group-append">
+            <button class="btn btn-success" type="submit">Buscar</button>
+        </div>
+    </div>
+</form>
+
 function openList(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
