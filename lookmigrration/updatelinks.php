@@ -10,7 +10,7 @@ $proforpers=$_POST["proforpers"];
 $description=$_POST["description"];
 $updatedlink = $_SESSION['updatedlink'];
 
-$query="UPDATE videotips_videotips SET videolink = '$videolink', maincategory = '$maincategory', category = '$category', proforpers = '$proforpers', content = '$description',  active = 'Yes' where videolink = '$videolink'";
+$query="UPDATE videotips_videotips SET videolink = '$videolink', maincategory = '$maincategory', category = '$category', proforpers = '$proforpers', content = '$description',  active = 'Yes' where id = '$id'";
 $resultado=$conn ->query($query);
 
 if ($resultado){

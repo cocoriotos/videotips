@@ -255,7 +255,7 @@ if ($savedlink == 2){
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
@@ -285,7 +285,7 @@ if ($duplicatedlink == 1){
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
@@ -314,7 +314,7 @@ if ($suscriptioninactive == 1){
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
@@ -343,7 +343,7 @@ if ($sessiontimeoutreached  == 1){
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
@@ -371,7 +371,7 @@ if ($updatedlink == 1) {
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
@@ -400,7 +400,7 @@ if ($updatedlink == 2){
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
@@ -459,7 +459,7 @@ if ($deletedlink == 2){
           content: 'custom-swal-content',
           confirmButton: 'custom-swal-confirm-button'
         },
-        timer: 5000, // 5000 milisegundos = 5 segundos
+        timer: 3000, // 3000 milisegundos = 3 segundos
         timerProgressBar: true, // Muestra una barra de progreso
         didOpen: () => {
           Swal.showLoading(); // Muestra un indicador de carga
