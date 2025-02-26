@@ -99,9 +99,9 @@
                           <div class="grid-item">
                               <div class="card">
                                   <div class="card-body">
-                                      <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
-                                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
+                                      <h5 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h5>
                                       <p class="card-text"><?php echo $links['content']; ?></p>
+                                      <h6 class="card-title"><?php echo $links['maincategory']; ?></h6>
                                       <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
                                       <button class="fas fa-copy color-dark-icon" title="Copiar" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button>
                                       <a href="edit.php?id=<?php echo $links['id'] ?>" class="btn btn-secondary" title="Modificar"><i class="fas fa-marker"></i></a>
