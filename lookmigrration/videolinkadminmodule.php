@@ -88,7 +88,7 @@
             
             <div class="col-md-12">
               <br>
-              <?php include("search.php") ?> <!-- Mantén la inclusión del archivo de búsqueda -->
+              <?php /*include("search.php")*/ ?> <!-- Mantén la inclusión del archivo de búsqueda -->
               <div class="card card-body" div="card-body">
                   <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
                   <div class="grid-container">
