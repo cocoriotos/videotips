@@ -111,17 +111,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                        </div>
-                    </div>
-                    
                             <!-- Contenido de la tarjeta -->
-                            <h6 class="card-text"><?php echo $links['content']; ?></h6>
-                            <h5 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
+                            <p class="card-text"><?php echo $links['content']; ?></p>
                             <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
                             <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
+                        </div>
+                    </div>
                 </div>
-
             <?php } ?>
         </div>
     </div>
