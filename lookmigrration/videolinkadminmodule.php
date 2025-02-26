@@ -86,7 +86,7 @@
                 </div>
             </div>
             
-      <div class="col-md-12">
+            <div class="col-md-12">
     <br>
     <?php include("search.php") ?>
     <div class="card card-body" div="card-body">
@@ -103,10 +103,10 @@
                             <div class="card-header">
                                 <div class="dropdown">
                                     <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-ellipsis-v"></i> <!-- Icono de tres puntos -->
+                                        <i class="fas fa-ellipsis-h"></i> <!-- Icono de tres puntos horizontal -->
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar enlace</a>
+                                        <a class="dropdown-item" href="#" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar Enlace</a>
                                         <a class="dropdown-item" href="edit.php?id=<?php echo $links['id']; ?>">Modificar</a>
                                     </div>
                                 </div>
@@ -122,7 +122,9 @@
             <?php } ?>
         </div>
     </div>
-</div>         
+</div>
+            
+
         </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
