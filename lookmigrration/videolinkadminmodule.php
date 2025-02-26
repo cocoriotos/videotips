@@ -86,7 +86,7 @@
                 </div>
             </div>
             
-            <div class="col-md-12">
+      <div class="col-md-12">
     <br>
     <?php include("search.php") ?>
     <div class="card card-body" div="card-body">
@@ -99,28 +99,30 @@
                 <div class="grid-item">
                     <div class="card">
                         <div class="card-body">
+                            <!-- Contenedor para el menú de tres puntos -->
+                            <div class="card-header">
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i> <!-- Icono de tres puntos -->
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar enlace</a>
+                                        <a class="dropdown-item" href="edit.php?id=<?php echo $links['id']; ?>">Modificar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Contenido de la tarjeta -->
                             <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
                             <p class="card-text"><?php echo $links['content']; ?></p>
                             <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
                             <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
-                            
-                            <!-- Menú de tres puntos -->
-                            <div class="dropdown">
-                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-v"></i> <!-- Icono de tres puntos -->
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar enlace</a>
-                                    <a class="dropdown-item" href="edit.php?id=<?php echo $links['id']; ?>">Modificar</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             <?php } ?>
         </div>
     </div>
-</div>           
+</div>         
         </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
