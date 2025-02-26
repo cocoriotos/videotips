@@ -116,9 +116,9 @@
                     </div>
                     
                             <!-- Contenido de la tarjeta -->
-                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
                             <p class="card-text"><?php echo $links['content']; ?></p>
-                            <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
+                            <h6 class="card-title"><?php echo $links['maincategory']; ?></h6>
                             <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
                 </div>
 
