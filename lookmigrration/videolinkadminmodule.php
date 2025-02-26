@@ -87,24 +87,40 @@
             </div>
             
             <div class="col-md-12">
-              <br>
-              <?php include("search.php") ?>
-              <div class="card card-body" div="card-body">
-                  <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
-                  <div class="grid-container">
-                      <?php 
-                      $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
-                      $result_links = mysqli_query($conn, $query1);
-                      while ($links = mysqli_fetch_array($result_links)) { ?>
-                          <div class="grid-item">
-                              <div class="card">
-                                  <div class="card-body">
-                                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h>
-                                      <p class="card-text"><?php echo $links['content']; ?></p>
-                                      <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
-                                      <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
-                                      <button class="fas fa-copy color-dark-icon" title="Copiar" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')"></button>
-                                      <a href="edit.php?id=<?php echo $links['id'] ?>" class="btn btn-secondary" title="Modificar"><i class="fas fa-marker"></i></a>
+    <br>
+    <?php include("search.php") ?>
+    <div class="card card-body" div="card-body">
+        <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
+        <div class="grid-container">
+            <?php 
+            $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
+            $result_links = mysqli_query($conn, $query1);
+            while ($links = mysqli_fetch_array($result_links)) { ?>
+                <div class="grid-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
+                            <p class="card-text"><?php echo $links['content']; ?></p>
+                            <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
+                            <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
+                            
+                            <!-- Menú de tres puntos -->
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i> <!-- Icono de tres puntos -->
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar enlace</a>
+                                    <a class="dropdown-item" href="edit.php?id=<?php echo $links['id']; ?>">Modificar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
                                   </div>
                               </div>
                           </div>
