@@ -1,5 +1,3 @@
-<script>
-
 <form action="" method="GET" class="mb-4">
     <div class="input-group">
         <input type="text" name="search" class="form-control" placeholder="Buscar enlaces..." value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>">
@@ -9,6 +7,7 @@
     </div>
 </form>
 
+<script>
 function openList(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
