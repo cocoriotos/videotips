@@ -1,6 +1,6 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
-<?php 
+<h6?php 
     session_start();
     $local_username = $_SESSION['email'];
     $savedlink = $_SESSION['savedlink'];
@@ -116,9 +116,9 @@
                     </div>
                     
                             <!-- Contenido de la tarjeta -->
-                            <p class="card-text"><?php echo $links['content']; ?></p>
-                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h6>
-                            <h6 class="card-title"><?php echo $links['maincategory']; ?></h6>
+                            <h6 class="card-text"><?php echo $links['content']; ?></h6>
+                            <h5 class="card-subtitle mb-2 text-muted"><?php echo $links['category']; ?></h5>
+                            <h5 class="card-title"><?php echo $links['maincategory']; ?></h5>
                             <a href="<?php echo $links['videolink']; ?>" target="_blank" class="card-link">Ver enlace</a>
                 </div>
 
