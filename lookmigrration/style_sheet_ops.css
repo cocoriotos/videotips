@@ -183,7 +183,7 @@ table tr:hover {
 /* Agrega esto a tu archivo CSS */
 #tdlink a {
   display: inline-block;
-  max-width: 250px; /* Ajusta este valor según tus necesidades */
+  max-width: 350px; /* Ajusta este valor según tus necesidades */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
