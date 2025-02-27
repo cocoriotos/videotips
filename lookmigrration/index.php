@@ -18,7 +18,7 @@
         <div class="container">
             <h1>SmartShelf</h1>
             <img src="SmartShelfUsefulContentLibraryDarrkLightGreen.ico" alt="SmartShelf Logo" class="logo">
-            <p>Tu Biblioteca Digital Inteligentisimos</p>
+            <p>Tu Biblioteca Digital Inteligente</p>
         </div>
     </header>
     <section class="hero">
