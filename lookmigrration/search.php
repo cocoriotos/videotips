@@ -1,4 +1,4 @@
-/*---------------New search --*/
+<!---------------New search ---->
 
 <!-- search.php -->
 <script>
@@ -57,7 +57,7 @@ function openList(evt, cityName) {
 
      } );</script>
 
-/*--------------End New search ------/
+<!---------------End New search ---->
 
 <!--<script>
 function openList(evt, cityName) {
