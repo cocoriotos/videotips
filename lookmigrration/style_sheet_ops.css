@@ -81,7 +81,7 @@ label.col-form-label {
   display: flex;
   flex-direction: column;
   /*width: 300px; /* Ancho fijo */
-  height: 400px; /* Altura fija */
+  height: 600px; /* Altura fija */
 }
 
 .grid-item-content {
