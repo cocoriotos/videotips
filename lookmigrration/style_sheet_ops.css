@@ -80,12 +80,16 @@ label.col-form-label {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 300px; /* Ancho fijo para cada grid-item */
-  height: 400px; /* Altura fija para cada grid-item */
+  width: 300px; /* Ancho fijo */
+  height: 400px; /* Altura fija */
 }
 
 .grid-item-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Alinea el contenido hacia la parte inferior */
+  height: 100%; /* Ocupa toda la altura del grid-item */
 }
 
 .grid-item-header {
@@ -139,15 +143,11 @@ label.col-form-label {
 
 .grid-item-body {
   flex-grow: 1; /* Ocupa todo el espacio disponible */
-  padding: 10px; /* Espaciado interno */
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Alinea el contenido en la parte superior */
+  justify-content: flex-end; /* Alinea el contenido hacia la parte inferior */
   overflow: auto; /* Habilita el desplazamiento si el contenido excede el espacio */
-  max-height: 200px; /* Altura fija para el cuerpo */
-  border: 1px solid #ddd; /* Borde para la cajita */
-  border-radius: 5px; /* Bordes redondeados */
-  margin-bottom: 10px; /* Espacio entre el cuerpo y el botón */
 }
 
 .grid-item-body p {
