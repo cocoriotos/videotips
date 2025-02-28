@@ -78,6 +78,8 @@ label.col-form-label {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
 }
 
 .grid-item-content {
@@ -134,7 +136,25 @@ label.col-form-label {
 }
 
 .grid-item-body p {
-  margin: 5px 0;
+  /*margin: 5px 0;*/
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item-body a.btn-primary {
+  margin-top: auto; /* Empuja el botón hacia la parte inferior */
+  text-align: center;
+  padding: 10px;
+  background-color: #032642;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+}
+
+.grid-item-body a.btn-primary:hover {
+  background-color: #0c316d;
 }
 
 .btn-primary {
