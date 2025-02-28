@@ -127,7 +127,8 @@ label.col-form-label {
   z-index: 1000;
 }
 
-.grid-item-action-menu button a {
+.grid-item-action-menu button,
+.grid-item-action-menu a {
   display: block;
   width: 100%;
   padding: 10px;
