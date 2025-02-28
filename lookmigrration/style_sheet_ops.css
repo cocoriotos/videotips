@@ -1,3 +1,143 @@
+/*---------------nuevas lineas --------------*/
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #032642;
+}
+
+/* Estilos para el contenedor principal */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos */
+label.col-form-label {
+  font-size: 28px;
+  font-weight: bold;
+  color: #032642;
+}
+
+/* Estilos para los campos de formulario */
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #032642;
+}
+
+.form-control:focus {
+  border-color: #032642;
+  box-shadow: 0 0 5px rgba(3, 38, 66, 0.1);
+}
+
+/* Estilos para los botones */
+.btn-success {
+  background-color: #032642;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #0c316d;
+}
+
+.btn-success:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Estilos para la cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.grid-item-content {
+  padding: 20px;
+}
+
+.grid-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.grid-item-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grid-item-actions {
+  position: relative;
+}
+
+.grid-item-action-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.grid-item-action-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.grid-item-action-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-item-action-menu button:hover {
+  background-color: #f1f1f1;
+}
+
+.grid-item-body p {
+  margin: 5px 0;
+}
+/*------------End Nuevas lineas -----------------------*/
+
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
