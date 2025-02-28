@@ -136,6 +136,20 @@ label.col-form-label {
 .grid-item-body p {
   margin: 5px 0;
 }
+
+.btn-primary {
+  background-color: #032642;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0c316d;
+}
 /*------------End Nuevas lineas -----------------------*/
 
 /* Estilos generales */
