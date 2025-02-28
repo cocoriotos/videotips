@@ -121,7 +121,7 @@
                                         </div>
                                         <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
                                     </div>
-                                </div>>
+                                </div>
                             
                             
                               </div>
