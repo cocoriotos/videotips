@@ -94,7 +94,8 @@
                         <?php 
                         $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
                         $result_links = mysqli_query($conn,$query1);                            
-                        while($links = mysqli_fetch_array($result_links)) { ?>
+                        while($links = mysqli_fetch_array($result_links)) { 
+                          $randomColor = getRandomLightColor(); ?>
                         <div class="grid-item">
                             <div class="grid-item-content">
                                 <div class="grid-item-header">
@@ -475,5 +476,15 @@ if ($deletedlink == 2){
     });
  	 </script>";   
 $_SESSION['deletedlink'] = 0;
+}
+?>
+
+<?php
+function getRandomLightColor() {
+    // Genera componentes de color claros (valores entre 200 y 255 para asegurar colores claros)
+    $red = rand(200, 255);
+    $green = rand(200, 255);
+    $blue = rand(200, 255);
+    return sprintf("#%02x%02x%02x", $red, $green, $blue); // Convierte a formato hexadecimal
 }
 ?>
