@@ -95,10 +95,8 @@
                         $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
                         $result_links = mysqli_query($conn,$query1);                            
                         while($links = mysqli_fetch_array($result_links)) { ?>
-                        <div class="grid-item">
 
-                        <div class="grid-item-header">
-                                    <span class="grid-item-title"><?php echo $links['content']; ?></span>
+<span class="grid-item-title"><?php echo $links['content']; ?></span>
                                     <div class="grid-item-actions">
                                         <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
                                         <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
@@ -107,6 +105,11 @@
                                         </div>
                                     </div>
                                 </div>
+
+                        <div class="grid-item">
+
+                        <div class="grid-item-header">
+                                    
 
                             <div class="grid-item-content">
                                 
