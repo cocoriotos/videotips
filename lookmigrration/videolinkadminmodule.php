@@ -113,6 +113,7 @@
                                     <p><strong>Contenido:</strong> <?php echo $links['proforpers']; ?></p>
                                     <p><strong>Descripción:</strong> <?php echo $links['content']; ?></p>
                                     <p><strong>Creación:</strong> <?php echo $links['creationdate']; ?></p>
+                                    <p><a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a></p>
                                 </div>
                             </div>
                         </div>
