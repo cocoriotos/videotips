@@ -152,7 +152,7 @@ label.col-form-label {
 
 .grid-item-body p {
   margin: 5px 0; /* Espaciado entre párrafos */
-  white-space: nowrap; /* Evita el salto de línea */
+  /*white-space: nowrap; /* Evita el salto de línea */
   overflow: hidden; /* Oculta el contenido que excede */
   text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
 }
