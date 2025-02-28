@@ -135,12 +135,21 @@ label.col-form-label {
   background-color: #f1f1f1;
 }
 
-.grid-item-body p {
-  /*margin: 5px 0;*/
+.grid-item-body {
   flex-grow: 1; /* Ocupa todo el espacio disponible */
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.grid-item-body p {
+  margin: 0;
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
+  /*padding: 20px;*/
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  /*flex-direction: column;*/
 }
 
 .grid-item-body a.btn-primary {
