@@ -96,7 +96,7 @@
                         $result_links = mysqli_query($conn,$query1);                            
                         while($links = mysqli_fetch_array($result_links)) { 
                           $randomColor = getRandomLightColor(); ?>
-                        <div class="grid-item">
+                        <div class="grid-item style="background-color: <?php echo $randomColor; ?>;">
                             <div class="grid-item-content">
                                 <div class="grid-item-header">
                                     <span class="grid-item-title"><?php echo $links['content']; ?></span>
