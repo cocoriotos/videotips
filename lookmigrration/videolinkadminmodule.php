@@ -113,16 +113,22 @@
                                 <div class="grid-item-body">
                                     <p><strong>Categoría:</strong> <?php echo $links['maincategory']; ?></p>
                                 </div>    
-                                    <div class="grid-item-body">    
-                                        <p><strong>Subcategoría:</strong> <?php echo $links['category']; ?></p>
+                                <div class="grid-item-body">    
+                                     <p><strong>Subcategoría:</strong> <?php echo $links['category']; ?></p>
+                                </div>   
+                                <div class="grid-item-body">
                                         <p><strong>Contenido:</strong> <?php echo $links['proforpers']; ?></p>
+                                </div>
+                                <div class="grid-item-body">
                                         <p><strong>Descripción:</strong> <?php echo $links['content']; ?></p>
+                                </div>        
+                                <div class="grid-item-body">        
                                         <p><strong>Creación:</strong> <?php echo $links['creationdate']; ?></p>
+                                </div>
+                                <div class="grid-item-body">
                                         <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
-                                    </div>
-                                
+                                </div>    
                             </div>
-
                         <?php }?>
                     </div>
                 </div>
