@@ -96,18 +96,20 @@
                         $result_links = mysqli_query($conn,$query1);                            
                         while($links = mysqli_fetch_array($result_links)) { ?>
                         <div class="grid-item">
-                            <div class="grid-item-content">
-                                <div class="grid-item-header">
+
+                        <div class="grid-item-header">
                                     <span class="grid-item-title"><?php echo $links['content']; ?></span>
                                     <div class="grid-item-actions">
                                         <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
-                                        <br>
                                         <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
                                             <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar Enlace</button>
                                             <a href="edit.php?id=<?php echo $links['id']?>" class="btn btn-secondary">Modificar</a>
                                         </div>
                                     </div>
                                 </div>
+
+                            <div class="grid-item-content">
+                                
                                 <div class="grid-item-body">
                                     <p><strong>Categoría:</strong> <?php echo $links['maincategory']; ?></p>
                                     <p><strong>Subcategoría:</strong> <?php echo $links['category']; ?></p>
