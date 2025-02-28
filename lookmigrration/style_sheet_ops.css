@@ -152,7 +152,17 @@ label.col-form-label {
 
 .grid-item-body p {
   margin: 5px 0; /* Espaciado entre párrafos */
-  /*white-space: nowrap; /* Evita el salto de línea */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+}
+
+.grid-item-body .p-title {
+  font-weight: bold; /* Texto en negrita para los títulos */
+  margin-bottom: 2px; /* Espacio entre el título y el contenido */
+}
+
+.grid-item-body .p-content {
+  white-space: nowrap; /* Evita el salto de línea */
   overflow: hidden; /* Oculta el contenido que excede */
   text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
 }
