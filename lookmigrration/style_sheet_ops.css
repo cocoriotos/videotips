@@ -127,8 +127,7 @@ label.col-form-label {
   z-index: 1000;
 }
 
-.grid-item-action-menu button,
-.grid-item-action-menu a {
+.grid-item-action-menu button {
   display: block;
   width: 100%;
   padding: 10px;
@@ -326,6 +325,19 @@ table tr:hover {
 }
 
 /* Estilos para los botones de la barra de navegación */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .btn-primary {
   background-color: #032642;
   border: none;
@@ -334,6 +346,16 @@ table tr:hover {
 
 .btn-primary:hover {
   background-color: #0c316d;
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Color de fondo para btn-secondary */
+  color: white; /* Color del texto */
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Color de fondo al pasar el mouse */
 }
 
 .btn-danger {

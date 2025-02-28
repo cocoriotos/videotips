@@ -105,10 +105,10 @@
                                     <span class="grid-item-title"><?php echo $links['content']; ?></span>
                                     <div class="grid-item-actions">
                                         
-                                        <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
-                                            <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')">Copiar Enlace</button>
-                                            <a href="edit.php?id=<?php echo $links['id']?>" class="btn btn-secondary">Modificar</a>
-                                        </div>
+                                      <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
+                                          <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
+                                          <a href="edit.php?id=<?php echo $links['id']?>" class="btn btn-secondary">Modificar</a>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
