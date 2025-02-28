@@ -79,7 +79,9 @@ label.col-form-label {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* Organiza los elementos en columna */
+  flex-direction: column;
+  width: 300px; /* Ancho fijo para cada grid-item */
+  height: 400px; /* Altura fija para cada grid-item */
 }
 
 .grid-item-content {
@@ -137,19 +139,22 @@ label.col-form-label {
 
 .grid-item-body {
   flex-grow: 1; /* Ocupa todo el espacio disponible */
-  padding: 20px;
+  padding: 10px; /* Espaciado interno */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  justify-content: flex-start; /* Alinea el contenido en la parte superior */
+  overflow: auto; /* Habilita el desplazamiento si el contenido excede el espacio */
+  max-height: 200px; /* Altura fija para el cuerpo */
+  border: 1px solid #ddd; /* Borde para la cajita */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 10px; /* Espacio entre el cuerpo y el botón */
 }
 
 .grid-item-body p {
-  margin: 0;
-  flex-grow: 1; /* Ocupa todo el espacio disponible */
-  /*padding: 20px;*/
-  display: flex;
-  align-items: center; /* Centra el contenido verticalmente */
-  /*flex-direction: column;*/
+  margin: 5px 0; /* Espaciado entre párrafos */
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el contenido que excede */
+  text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
 }
 
 .grid-item-body a.btn-primary {
@@ -159,7 +164,7 @@ label.col-form-label {
   background-color: #032642;
   color: white;
   text-decoration: none;
-  border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
 .grid-item-body a.btn-primary:hover {

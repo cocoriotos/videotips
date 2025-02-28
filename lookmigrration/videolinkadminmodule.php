@@ -110,7 +110,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-item-body">
+                                <<div class="grid-item-body">
                                     <p><strong>Categoría:</strong> <?php echo $links['maincategory']; ?></p>
                                     <p><strong>Subcategoría:</strong> <?php echo $links['category']; ?></p>
                                     <p><strong>Contenido:</strong> <?php echo $links['proforpers']; ?></p>
