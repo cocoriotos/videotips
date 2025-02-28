@@ -1,6 +1,6 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
-<div?php 
+<?php 
     session_start();
     $local_username = $_SESSION['email'];
     $savedlink = $_SESSION['savedlink'];
@@ -111,14 +111,18 @@
                                     </div>
                                 </div>
                                 <div class="grid-item-body">
-                                          <p><strong>Categoría:</strong> <?php echo $links['maincategory']; ?></p>
-                                          <p><strong>Subcategoría:</strong> <?php echo $links['category']; ?></p>
-                                          <p><strong>Contenido:</strong> <?php echo $links['proforpers']; ?></p>
-                                          <p><strong>Descripción:</strong> <?php echo $links['content']; ?></p>
-                                          <p><strong>Creación:</strong> <?php echo $links['creationdate']; ?></p>
-                                          <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
+                                
+                                    <p><strong>Categoría:</strong> <?php echo $links['maincategory']; ?></p>
+                                    <p><strong>Subcategoría:</strong> <?php echo $links['category']; ?></p>
+                                    <p><strong>Contenido:</strong> <?php echo $links['proforpers']; ?></p>
+                                    <p><strong>Descripción:</strong> <?php echo $links['content']; ?></p>
+                                    <p><strong>Creación:</strong> <?php echo $links['creationdate']; ?></p>
+                                    <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
+                                
+                                
                                   </div>
-
+                            
+                            
                               </div>
                         </div>
 
