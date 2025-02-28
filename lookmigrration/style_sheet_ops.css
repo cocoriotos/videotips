@@ -164,7 +164,7 @@ label.col-form-label {
 .grid-item-body .p-content {
   white-space: nowrap; /* Evita el salto de línea */
   overflow: hidden; /* Oculta el contenido que excede */
-  text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
+  /*text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
 }
 
 .grid-item-body a.btn-primary {
