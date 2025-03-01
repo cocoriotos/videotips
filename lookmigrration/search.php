@@ -27,57 +27,19 @@ function searchCards() {
         }
     });
 
-    // Actualizar la paginación después de la búsqueda
-    updatePagination(visibleCards);
+    // Actualizar el conteo de cards visibles
+    updateCardCount(visibleCards);
 }
 
-function updatePagination(visibleCards) {
-    const cards = document.querySelectorAll(".grid-item[style='display: block;']"); // Obtener solo las cards visibles
-    const itemsPerPage = 8; // Mostrar 2 filas de 4 cards (2 × 4 = 8 cards por página)
-    const totalPages = Math.ceil(visibleCards / itemsPerPage); // Calcular el número total de páginas
-
-    // Ocultar todas las cards
-    cards.forEach((card) => {
-        card.style.display = "none";
-    });
-
-    // Mostrar las cards de la página actual
-    const currentPage = parseInt(document.querySelector(".pagination .active")?.textContent) || 1;
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-
-    for (let i = startIndex; i < endIndex && i < cards.length; i++) {
-        cards[i].style.display = "block";
-    }
-
-    // Actualizar los botones de paginación
-    const paginationContainer = document.querySelector(".pagination");
-    paginationContainer.innerHTML = "";
-
-    for (let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement("button");
-        pageButton.textContent = i;
-        pageButton.classList.add("page-item");
-        if (i === currentPage) {
-            pageButton.classList.add("active");
-        }
-        pageButton.addEventListener("click", () => {
-            document.querySelectorAll(".pagination .page-item").forEach(btn => btn.classList.remove("active"));
-            pageButton.classList.add("active");
-            updatePagination(visibleCards);
-        });
-        paginationContainer.appendChild(pageButton);
-    }
-
-    // Mostrar el número total de cards
+function updateCardCount(visibleCards) {
     const totalCardsContainer = document.querySelector(".total-cards");
-    totalCardsContainer.textContent = `Total de cards: ${visibleCards}`;
+    totalCardsContainer.textContent = `Total de cards mostrados: ${visibleCards}`;
 }
 
-// Inicializar la paginación al cargar la página
+// Inicializar el conteo de cards al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
-    const visibleCards = document.querySelectorAll(".grid-item[style='display: block;']").length;
-    updatePagination(visibleCards);
+    const totalCards = document.querySelectorAll(".grid-item").length; // Obtener el total de cards
+    updateCardCount(totalCards); // Mostrar el conteo total de cards al cargar la página
 });
 </script>
 
@@ -85,5 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
     <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
 </div>
 
-<!--<div class="pagination"></div>-->  <!--Contenedor para los botones de paginación -->
 <div class="total-cards"></div> <!-- Contenedor para mostrar el total de cards -->
