@@ -1,12 +1,3 @@
-/*function copyToClipboard(text) {
-    const tempTextarea = document.createElement("textarea");
-    tempTextarea.value = text;
-    document.body.appendChild(tempTextarea);
-    tempTextarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempTextarea);
-}*/
-
 function copyToClipboard(text, menuId) {
   // Copiar el texto al portapapeles
   navigator.clipboard
@@ -21,6 +12,6 @@ function copyToClipboard(text, menuId) {
   // Ocultar el menú de acciones
   var actionMenu = document.getElementById(menuId);
   if (actionMenu) {
-    actionMenu.style.display = "none";
+    actionMenu.classList.remove("show"); // Ocultar el menú
   }
 }

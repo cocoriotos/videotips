@@ -182,20 +182,12 @@ window.onload = function() {
     getSubcategories(maincategory);
 };
 
-/*function toggleActions(id) {
-    var actionMenu = document.getElementById("action-menu-" + id);
-    if (actionMenu.style.display === "block") {
-        actionMenu.style.display = "none";
-    } else {
-        actionMenu.style.display = "block";
-    }
-}*/
-
 function toggleActions(id, event) {
-    event.stopPropagation();
+    event.stopPropagation(); // Evitar que el clic se propague
 
     var actionMenu = document.getElementById('action-menu-' + id);
     if (actionMenu) {
+        // Alternar la clase 'show' para mostrar/ocultar el menú
         actionMenu.classList.toggle('show');
     }
 }
@@ -212,10 +204,12 @@ document.addEventListener('click', function(event) {
 
     if (clickedOutside) {
         actionMenus.forEach(function(menu) {
-            menu.classList.remove('show');
+            menu.classList.remove('show'); // Ocultar todos los menús
         });
     }
 });
+
+
     // Si el clic fue fuera de todos los menús, ocultarlos
     if (clickedOutside) {
         actionMenus.forEach(function(menu) {
