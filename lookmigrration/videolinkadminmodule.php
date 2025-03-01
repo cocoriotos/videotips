@@ -111,6 +111,7 @@
                                     </div>
                                 </div>
                                 <div class="grid-item-body">
+                                  <hr>
                                     <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
                                     <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
                                     <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
