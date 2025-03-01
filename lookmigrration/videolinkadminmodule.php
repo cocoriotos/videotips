@@ -100,7 +100,7 @@
                         ?>
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
                             <div class="grid-item-content">
-                            <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
+                            <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>, event)">...</button>
 <div class="grid-item-actions">
     <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
         <button style="background: green; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>', 'action-menu-<?php echo $links['id']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
@@ -191,7 +191,9 @@ window.onload = function() {
     }
 }*/
 
-function toggleActions(id) {
+function toggleActions(id, event) {
+    event.stopPropagation(); // Evitar que el clic se propague
+
     var actionMenu = document.getElementById('action-menu-' + id);
     if (actionMenu) {
         if (actionMenu.style.display === 'none' || actionMenu.style.display === '') {
@@ -201,6 +203,26 @@ function toggleActions(id) {
         }
     }
 }
+
+document.addEventListener('click', function(event) {
+    // Obtener todos los menús de acciones
+    var actionMenus = document.querySelectorAll('.grid-item-action-menu');
+
+    // Verificar si el clic fue fuera de cualquier menú de acciones
+    var clickedOutside = true;
+    actionMenus.forEach(function(menu) {
+        if (menu.contains(event.target) {
+            clickedOutside = false; // El clic fue dentro del menú
+        }
+    });
+
+    // Si el clic fue fuera de todos los menús, ocultarlos
+    if (clickedOutside) {
+        actionMenus.forEach(function(menu) {
+            menu.style.display = 'none';
+        });
+    }
+});
 
 </script>
 

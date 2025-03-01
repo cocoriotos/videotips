@@ -123,6 +123,14 @@ label.col-form-label {
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+}
+
+.grid-item-action-menu.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .grid-item-action-menu button {
