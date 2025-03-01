@@ -192,30 +192,30 @@ window.onload = function() {
 }*/
 
 function toggleActions(id, event) {
-    event.stopPropagation(); // Evitar que el clic se propague
+    event.stopPropagation();
 
     var actionMenu = document.getElementById('action-menu-' + id);
     if (actionMenu) {
-        if (actionMenu.style.display === 'none' || actionMenu.style.display === '') {
-            actionMenu.style.display = 'block';
-        } else {
-            actionMenu.style.display = 'none';
-        }
+        actionMenu.classList.toggle('show');
     }
 }
 
 document.addEventListener('click', function(event) {
-    // Obtener todos los menús de acciones
     var actionMenus = document.querySelectorAll('.grid-item-action-menu');
-
-    // Verificar si el clic fue fuera de cualquier menú de acciones
     var clickedOutside = true;
+
     actionMenus.forEach(function(menu) {
-        if (menu.contains(event.target) {
-            clickedOutside = false; // El clic fue dentro del menú
+        if (menu.contains(event.target)) {
+            clickedOutside = false;
         }
     });
 
+    if (clickedOutside) {
+        actionMenus.forEach(function(menu) {
+            menu.classList.remove('show');
+        });
+    }
+});
     // Si el clic fue fuera de todos los menús, ocultarlos
     if (clickedOutside) {
         actionMenus.forEach(function(menu) {
