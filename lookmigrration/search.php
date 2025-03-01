@@ -1,4 +1,6 @@
 <!-- search.php -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome para íconos -->
+
 <script>
 function searchCards() {
     const searchTerm = document.getElementById("searchInput").value.toLowerCase().trim(); // Obtener y normalizar el término de búsqueda
@@ -31,11 +33,25 @@ function searchCards() {
 
     // Actualizar el conteo de cards visibles
     updateCardCount(visibleCards);
+
+    // Mostrar u ocultar el ícono de limpiar
+    const clearIcon = document.querySelector(".clear-icon");
+    if (searchTerm.length > 0) {
+        clearIcon.style.display = "block";
+    } else {
+        clearIcon.style.display = "none";
+    }
 }
 
 function updateCardCount(visibleCards) {
     const totalCardsContainer = document.querySelector(".total-cards");
     totalCardsContainer.textContent = `Total de cards mostrados: ${visibleCards}`;
+}
+
+function clearSearch() {
+    const searchInput = document.getElementById("searchInput");
+    searchInput.value = ""; // Limpiar el campo de búsqueda
+    searchCards(); // Actualizar la búsqueda
 }
 
 // Inicializar el conteo de cards al cargar la página
@@ -46,7 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
+    <div class="search-wrapper">
+        <i class="fas fa-search search-icon"></i> <!-- Ícono de búsqueda -->
+        <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
+        <i class="fas fa-times clear-icon" onclick="clearSearch()"></i> <!-- Ícono de limpiar -->
+    </div>
 </div>
 
 <div class="total-cards"></div> <!-- Contenedor para mostrar el total de cards -->

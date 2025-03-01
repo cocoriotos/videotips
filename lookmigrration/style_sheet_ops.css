@@ -395,6 +395,8 @@ table tr:hover {
   text-overflow: ellipsis;
 }
 
+/* Estilos para el buscador */
+
 .search-container {
   margin-bottom: 20px;
   text-align: center;
@@ -402,47 +404,44 @@ table tr:hover {
 
 #searchInput {
   width: 100%;
-  max-width: 500px;
-  padding: 10px;
+  padding: 10px 40px 10px 40px; /* Espacio para los íconos */
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin: 0 auto;
-  display: block;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #032642;
+  pointer-events: none; /* Evitar que el ícono interfiera con el input */
+}
+
+.clear-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #032642;
+  cursor: pointer;
+  display: none; /* Ocultar inicialmente */
+}
+
+.clear-icon:hover {
+  color: #0c316d;
 }
 
 /* Estilos para la paginación */
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination .page-item {
-  margin: 0 5px;
-  padding: 5px 10px;
-  background-color: #032642;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.pagination .page-item.active {
-  background-color: #0c316d;
-}
-
-.pagination .page-item.active {
-  background-color: #0c316d;
-}
-
-/* Estilos para el contador de cards */
-.total-cards {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #032642;
-}
 
 /* Estilos para las cards */
 .grid-container {
@@ -459,4 +458,12 @@ table tr:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+/* Estilos para el contador de cards */
+.total-cards {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #032642;
 }
