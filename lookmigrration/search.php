@@ -11,11 +11,13 @@ function searchCards() {
 
     cards.forEach((card) => {
         const content = card.textContent.toLowerCase(); // Obtener el contenido de la card
+        const videoLink = card.querySelector("a.btn-primary")?.getAttribute("href")?.toLowerCase() || ""; // Obtener el enlace de la card
+
         let match = true;
 
-        // Verificar si todas las palabras de búsqueda están presentes en el contenido de la card
+        // Verificar si todas las palabras de búsqueda están presentes en el contenido de la card o en el enlace
         if (searchWords.length > 0) {
-            match = searchWords.every(word => content.includes(word));
+            match = searchWords.every(word => content.includes(word) || videoLink.includes(word));
         }
 
         // Mostrar u ocultar la card según si coincide con la búsqueda
