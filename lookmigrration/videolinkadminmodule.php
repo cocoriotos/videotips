@@ -99,29 +99,27 @@
                             $randomColor = getRandomLightColor(); 
                         ?>
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
-                            <div class="grid-item-content">
-                                <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
-                                <div class="grid-item-actions">
-                                        <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
-                                            <button style="background: green; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
-                                            <a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
-                                            <a style="background: red; color: white; font-size: 12px;" href="delete.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Borrar</a>
-                                        </div>
-                                    </div>
-                                <div class="grid-item-header">
-                                    
-                                    
-                                </div>
-                                <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
-                                <div class="grid-item-body">
-                                    <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
-                                    <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
-                                    <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
-                                    <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
-                                </div>
-                                <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
-                            </div>
-                        </div>
+    <div class="grid-item-content">
+        <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
+        <div class="grid-item-actions">
+            <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
+                <button style="background: green; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>'); toggleActions(<?php echo $links['id']; ?>);" class="btn btn-secondary">Copiar Enlace</button>
+                <a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
+                <a style="background: red; color: white; font-size: 12px;" href="delete.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Borrar</a>
+            </div>
+        </div>
+        <div class="grid-item-header"></div>
+        <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
+        <div class="grid-item-body">
+            <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
+            <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
+            <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
+            <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
+        </div>
+        <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
+    </div>
+</div>
+
                         <?php } ?>
                     </div>
                 </div>
@@ -185,9 +183,32 @@ function toggleActions(id) {
     if (actionMenu.style.display === "block") {
         actionMenu.style.display = "none";
     } else {
+        // Cerrar todos los menús abiertos antes de abrir uno nuevo
+        var allMenus = document.querySelectorAll('.grid-item-action-menu');
+        allMenus.forEach(function(menu) {
+            menu.style.display = "none";
+        });
         actionMenu.style.display = "block";
     }
 }
+
+// Cerrar el menú al hacer clic fuera de él
+document.addEventListener('click', function(event) {
+    var allMenus = document.querySelectorAll('.grid-item-action-menu');
+    var isClickInside = false;
+
+    allMenus.forEach(function(menu) {
+        if (menu.contains(event.target) || menu.previousElementSibling.contains(event.target)) {
+            isClickInside = true;
+        }
+    });
+
+    if (!isClickInside) {
+        allMenus.forEach(function(menu) {
+            menu.style.display = "none";
+        });
+    }
+});
 </script>
 
 
