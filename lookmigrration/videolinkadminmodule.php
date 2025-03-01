@@ -182,14 +182,26 @@ window.onload = function() {
     getSubcategories(maincategory);
 };
 
-function toggleActions(id) {
+/*function toggleActions(id) {
     var actionMenu = document.getElementById("action-menu-" + id);
     if (actionMenu.style.display === "block") {
         actionMenu.style.display = "none";
     } else {
         actionMenu.style.display = "block";
     }
+}*/
+
+function toggleActions(id) {
+    var actionMenu = document.getElementById('action-menu-' + id);
+    if (actionMenu) {
+        if (actionMenu.style.display === 'none' || actionMenu.style.display === '') {
+            actionMenu.style.display = 'block';
+        } else {
+            actionMenu.style.display = 'none';
+        }
+    }
 }
+
 </script>
 
 
