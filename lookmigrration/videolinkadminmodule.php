@@ -100,7 +100,7 @@
                         ?>
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
                             <div class="grid-item-content">
-                                <button class="grid-item-action-btn" style="color: black" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
+                                <button class="grid-item-action-btn" style="color: black; font-size: 20px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
                                 <div class="grid-item-header">
                                     <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
                                     <div class="grid-item-actions">
