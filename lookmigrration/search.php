@@ -30,16 +30,16 @@ function searchCards() {
 
 function updatePagination() {
     const cards = document.querySelectorAll(".grid-item[style='display: block;']"); // Obtener solo las cards visibles
-    const itemsPerPage = 4; // Mostrar 2 filas de cards (2 cards por fila × 2 filas = 4 cards por página)
+    const itemsPerPage = 8; // Mostrar 2 filas de 4 cards (2 × 4 = 8 cards por página)
     const totalPages = Math.ceil(cards.length / itemsPerPage); // Calcular el número total de páginas
 
     // Ocultar todas las cards
-    cards.forEach((card, index) => {
+    cards.forEach((card) => {
         card.style.display = "none";
     });
 
     // Mostrar las cards de la página actual
-    const currentPage = parseInt(document.querySelector(".pagination .active").textContent) || 1;
+    const currentPage = parseInt(document.querySelector(".pagination .active")?.textContent) || 1;
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 
@@ -65,6 +65,10 @@ function updatePagination() {
         });
         paginationContainer.appendChild(pageButton);
     }
+
+    // Mostrar el número total de cards
+    const totalCardsContainer = document.querySelector(".total-cards");
+    totalCardsContainer.textContent = `Total de cards: ${cards.length}`;
 }
 
 // Inicializar la paginación al cargar la página
@@ -78,3 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 <div class="pagination"></div> <!-- Contenedor para los botones de paginación -->
+<div class="total-cards"></div> <!-- Contenedor para mostrar el total de cards -->
