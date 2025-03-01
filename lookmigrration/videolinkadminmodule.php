@@ -99,28 +99,27 @@
                             $randomColor = getRandomLightColor(); 
                         ?>
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
-    <div class="grid-item-content">
-        <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
-        <div class="grid-item-header">
-            <span class="grid-item-title"><?php echo $links['content']; ?></span>
-            <div class="grid-item-actions">
-                <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
-                    <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
-                    <a href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
-                </div>
-            </div>
-        </div>
-        <div class="grid-item-body">
-            <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
-            <hr> <!-- Línea horizontal añadida aquí -->
-            <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
-            <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
-            <p><span class="p-title">Descripción:</span><span class="p-content"><?php echo $links['content']; ?></span></p>
-            <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
-        </div>
-        <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
-    </div>
-</div>
+                            <div class="grid-item-content">
+                                <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
+                                <div class="grid-item-header">
+                                    <span class="grid-item-title"><?php echo $links['content']; ?></span>
+                                    <div class="grid-item-actions">
+                                        <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
+                                            <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
+                                            <a href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-body">
+                                    <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
+                                    <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
+                                    <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
+                                    <p><span class="p-title">Descripción:</span><span class="p-content"><?php echo $links['content']; ?></span></p>
+                                    <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
+                                </div>
+                                <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
+                            </div>
+                        </div>
                         <?php } ?>
                     </div>
                 </div>
