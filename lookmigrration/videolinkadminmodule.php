@@ -103,7 +103,7 @@
                                 <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
                                 <div class="grid-item-header">
                                     <span class="grid-item-title"><?php echo $links['content']; ?></span>
-                                    <hr
+                                    <hr>
                                     <div class="grid-item-actions">
                                         <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
                                             <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
