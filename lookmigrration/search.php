@@ -76,9 +76,8 @@ function updatePagination(visibleCards) {
 
 // Inicializar la paginación al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
-    const totalCards = document.querySelectorAll(".grid-item").length; // Obtener el total de cards
     const visibleCards = document.querySelectorAll(".grid-item[style='display: block;']").length;
-    updatePagination(totalCards); // Mostrar el conteo total de cards al cargar la página
+    updatePagination(visibleCards);
 });
 </script>
 
