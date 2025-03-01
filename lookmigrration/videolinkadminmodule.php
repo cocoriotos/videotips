@@ -105,8 +105,8 @@
                                     <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
                                     <div class="grid-item-actions">
                                         <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
-                                            <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
-                                            <a href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
+                                            <button style="background: gray; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
+                                            <a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
                                         </div>
                                     </div>
                                 </div>
