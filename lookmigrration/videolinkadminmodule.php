@@ -101,7 +101,9 @@
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
                             <div class="grid-item-content">
                                 <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
-                                <div class="grid-item-header">
+                                
+                                
+                                <!--<div class="grid-item-header">-->
                                     <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
                                     <div class="grid-item-actions">
                                         <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
@@ -110,7 +112,9 @@
                                             <a style="background: red; color: white; font-size: 12px;" href="delete.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Borrar</a>
                                         </div>
                                     </div>
-                                </div>
+                                <!--</div>-->
+                                
+                                
                                 <div class="grid-item-body">
                                     <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
                                     <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
