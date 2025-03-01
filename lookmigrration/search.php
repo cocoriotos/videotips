@@ -76,8 +76,9 @@ function updatePagination(visibleCards) {
 
 // Inicializar la paginación al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
+    const totalCards = document.querySelectorAll(".grid-item").length; // Obtener el total de cards
     const visibleCards = document.querySelectorAll(".grid-item[style='display: block;']").length;
-    updatePagination(visibleCards);
+    updatePagination(totalCards); // Mostrar el conteo total de cards al cargar la página
 });
 </script>
 
@@ -85,5 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
     <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
 </div>
 
-<div class="pagination"></div> <!-- Contenedor para los botones de paginación -->
+
 <div class="total-cards"></div> <!-- Contenedor para mostrar el total de cards -->
