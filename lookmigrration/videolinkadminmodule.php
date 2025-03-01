@@ -198,7 +198,12 @@ document.addEventListener('click', function(event) {
     var isClickInside = false;
 
     allMenus.forEach(function(menu) {
-        if (menu.contains(event.target) || menu.previousElementSibling.contains(event.target)) {
+        // Verificar si el clic fue dentro del menú o en el botón que lo abre
+        if (menu.contains(event.target) {
+            isClickInside = true;
+        }
+        var actionButton = menu.previousElementSibling;
+        if (actionButton && actionButton.contains(event.target)) {
             isClickInside = true;
         }
     });
