@@ -100,14 +100,14 @@
                         ?>
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
                             <div class="grid-item-content">
-                            <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>, event)">...</button>
-<div class="grid-item-actions">
-    <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
-        <button style="background: green; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>', 'action-menu-<?php echo $links['id']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
-        <a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
-        <a style="background: red; color: white; font-size: 12px;" href="delete.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Borrar</a>
-    </div>
-</div>
+                                <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
+                                <div class="grid-item-actions">
+                                        <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
+                                            <button style="background: green; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
+                                            <a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
+                                            <a style="background: red; color: white; font-size: 12px;" href="delete.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Borrar</a>
+                                        </div>
+                                </div>
                                 
                                 <!--<div class="grid-item-header">-->
                                     <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
@@ -182,41 +182,15 @@ window.onload = function() {
     getSubcategories(maincategory);
 };
 
-function toggleActions(id, event) {
-    event.stopPropagation(); // Evitar que el clic se propague
-
-    var actionMenu = document.getElementById('action-menu-' + id);
-    if (actionMenu) {
-        // Alternar la clase 'show' para mostrar/ocultar el menú
-        actionMenu.classList.toggle('show');
+function toggleActions(id) {
+    var actionMenu = document.getElementById("action-menu-" + id);
+    if (actionMenu.style.display === "block") {
+        actionMenu.style.display = "none";
+    } else {
+        actionMenu.style.display = "block";
     }
 }
 
-document.addEventListener('click', function(event) {
-    var actionMenus = document.querySelectorAll('.grid-item-action-menu');
-    var clickedOutside = true;
-
-    actionMenus.forEach(function(menu) {
-        if (menu.contains(event.target)) {
-            clickedOutside = false;
-        }
-    });
-
-    if (clickedOutside) {
-        actionMenus.forEach(function(menu) {
-            menu.classList.remove('show'); // Ocultar todos los menús
-        });
-    }
-});
-
-
-    // Si el clic fue fuera de todos los menús, ocultarlos
-    if (clickedOutside) {
-        actionMenus.forEach(function(menu) {
-            menu.style.display = 'none';
-        });
-    }
-});
 
 </script>
 
