@@ -85,5 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
     <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
 </div>
 
-<div class="pagination"></div> <!-- Contenedor para los botones de paginación -->
+<!--<div class="pagination"></div>-->  <!--Contenedor para los botones de paginación -->
 <div class="total-cards"></div> <!-- Contenedor para mostrar el total de cards -->
