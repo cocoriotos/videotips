@@ -394,3 +394,40 @@ table tr:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Estilos para la paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #032642;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination .page-item.active {
+  background-color: #0c316d;
+}

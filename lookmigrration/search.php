@@ -23,9 +23,58 @@ function searchCards() {
             card.style.display = "none";
         }
     });
+
+    // Actualizar la paginación después de la búsqueda
+    updatePagination();
 }
+
+function updatePagination() {
+    const cards = document.querySelectorAll(".grid-item[style='display: block;']"); // Obtener solo las cards visibles
+    const itemsPerPage = 4; // Mostrar 2 filas de cards (2 cards por fila × 2 filas = 4 cards por página)
+    const totalPages = Math.ceil(cards.length / itemsPerPage); // Calcular el número total de páginas
+
+    // Ocultar todas las cards
+    cards.forEach((card, index) => {
+        card.style.display = "none";
+    });
+
+    // Mostrar las cards de la página actual
+    const currentPage = parseInt(document.querySelector(".pagination .active").textContent) || 1;
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    for (let i = startIndex; i < endIndex && i < cards.length; i++) {
+        cards[i].style.display = "block";
+    }
+
+    // Actualizar los botones de paginación
+    const paginationContainer = document.querySelector(".pagination");
+    paginationContainer.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement("button");
+        pageButton.textContent = i;
+        pageButton.classList.add("page-item");
+        if (i === currentPage) {
+            pageButton.classList.add("active");
+        }
+        pageButton.addEventListener("click", () => {
+            document.querySelectorAll(".pagination .page-item").forEach(btn => btn.classList.remove("active"));
+            pageButton.classList.add("active");
+            updatePagination();
+        });
+        paginationContainer.appendChild(pageButton);
+    }
+}
+
+// Inicializar la paginación al cargar la página
+document.addEventListener("DOMContentLoaded", () => {
+    updatePagination();
+});
 </script>
 
 <div class="search-container">
     <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
 </div>
+
+<div class="pagination"></div> <!-- Contenedor para los botones de paginación -->
