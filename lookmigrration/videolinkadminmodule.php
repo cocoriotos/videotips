@@ -103,6 +103,7 @@
                                 <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
                                 <div class="grid-item-header">
                                     <span class="grid-item-title"><?php echo $links['content']; ?></span>
+                                    <hr
                                     <div class="grid-item-actions">
                                         <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
                                             <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
@@ -111,7 +112,6 @@
                                     </div>
                                 </div>
                                 <div class="grid-item-body">
-                                  <hr>
                                     <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
                                     <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
                                     <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
