@@ -90,7 +90,7 @@
                 <br>
                 <?php include("search.php") ?> <!-- Incluir el buscador -->
                 <div class="card card-body" div="card-body">
-                    <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
+                    <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Contenidos Útiles </strong></label></center>
                     <div class="grid-container">
                         <?php 
                         $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
@@ -114,7 +114,6 @@
                                     <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
                                     <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
                                     <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
-                                    <p><span class="p-title">Descripción:</span><span class="p-content"><?php echo $links['content']; ?></span></p>
                                     <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
                                 </div>
                                 <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
