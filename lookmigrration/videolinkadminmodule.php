@@ -88,7 +88,7 @@ include "db_connection1.php";
                             <!-- Campo: Tipo de Contenido -->
                             <div class="form-group col-md-2">
                                 <label for="proforpers" class="col-form-label" style="color: black;">
-                                    <strong>Tipo de Contenido</strong>
+                                    <strong>Contenido</strong>
                                 </label>
                                 <select class="form-control" name="proforpers" id="proforpers" required>
                                     <?php
