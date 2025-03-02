@@ -21,7 +21,7 @@ $name = $_SESSION['name'];
     </div>
     <div class="d-flex">
         <a id="headerfonts" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn" target="_blank" style="background-color: white; color: #c4302b; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutoriales</a>
-        <a id="headerfonts" href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank" style="background-color:  #000000; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Manual del Usuario</a>
+        <a id="headerfonts" href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank" style="background-color:  white; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Manual del Usuario</a>
     </div>
     <div class="d-flex">
         <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
