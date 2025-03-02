@@ -5,6 +5,7 @@ $id = $_GET['id'];
 $videolink = $_GET['videolink'];
 $local_username=$_SESSION['username'];
 $deletedlink = $_SESSION['deletedlink'];
+
 $query = "delete from videotips_videotips where id = '$id'";
 $result = mysqli_query($conn,$query);
 if ($result) {

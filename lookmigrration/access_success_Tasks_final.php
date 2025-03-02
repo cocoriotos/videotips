@@ -24,6 +24,8 @@ GLOBAL $linktoclipboard;
 GLOBAL $videoUrl;
 GLOBAL $embedUrl;
 GLOBAL $click;
+GLOBAL $delconfirm;
+
 
 
 session_start();
@@ -32,6 +34,7 @@ $_SESSION['savedlink']=0;
 $_SESSION['duplicatedlink']=0;
 $_SESSION['updatedlink']=0;
 $_SESSION['deletedlink']=0;
+$_SESSION['delconfirm']=0;
 
 $_SESSION['savedcategory']=0;
 $_SESSION['duplicatedcategory']=0;
@@ -57,6 +60,7 @@ $duplicatedlink = $_SESSION['duplicatedlink'];
 $updatedlink = $_SESSION['updatedlink'];
 $deletedlink = $_SESSION['deletedlink'];
 $name = $_SESSION['name'];
+$delconfirm = $_SESSION['delconfirm'];
 
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
