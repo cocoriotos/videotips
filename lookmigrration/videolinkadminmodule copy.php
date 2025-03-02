@@ -13,6 +13,7 @@
     $embedUrl = $_SESSION['embedUrl'];
     $click = $_SESSION['click'];
     $name = $_SESSION['name'];
+    $delconfirm = $_SESSION['delconfirm'];
  
     include "header.php";
     include "db_connection1.php";
@@ -28,11 +29,14 @@
     <script src="plugins/alertifyjs/alertify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
 
 <body id="bodyadminmodule" style="padding: 0%;">
+
+
     <div class="container-fluid p-0">
         <div class="row justify-content-start" style="padding: 0%; width: 100%;">
             <div class="col-md-12"> 
@@ -87,51 +91,47 @@
             </div>
             <div class="col-md-12">
                 <br>
-                <?php include("search.php") ?>
+                <center><?php include("search.php") ?></center> <!-- Incluir el buscador -->
                 <div class="card card-body" div="card-body">
-                    <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Enlaces Útiles </strong></label></center>
+                    <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Contenidos Útiles </strong></label></center>
                     <div class="grid-container">
                         <?php 
                         $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by maincategory, category asc";
-                        $result_links = mysqli_query($conn,$query1);                            
-                        while($links = mysqli_fetch_array($result_links)) { 
-                          $randomColor = getRandomLightColor(); ?>
-
-
+                        $result_links = mysqli_query($conn, $query1);                            
+                        while ($links = mysqli_fetch_array($result_links)) { 
+                            $randomColor = getRandomLightColor(); 
+                        ?>
                         <div class="grid-item" style="background-color: <?php echo $randomColor; ?>;">
-                            <div class="grid-item-content">
-                            <button class="grid-item-action-btn" onclick="toggleActions(<?php echo $links['id']; ?>)">...</button>
-                                <div class="grid-item-header">
-                                    <span class="grid-item-title"><?php echo $links['content']; ?></span>
-                                    <div class="grid-item-actions">
-                                        
-                                      <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
-                                          <button onclick="copyToClipboard('<?php echo $links['videolink']; ?>')" class="btn btn-secondary">Copiar Enlace</button>
-                                          <a href="edit.php?id=<?php echo $links['id']?>" class="btn btn-secondary">Modificar</a>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="grid-item-content">
-                                        <div class="grid-item-body">
-                                            <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
-                                            <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
-                                            <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
-                                            <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
-                                        </div>
-                                        <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
-                                    </div>
-                                </div>
-                            
-                            
-                              </div>
-                        </div>
+                          <div class="grid-item-content">
+                              <button class="grid-item-action-btn" style="color: black; font-size: 40px; font-weight: bold;" onclick="toggleActions(event, <?php echo $links['id']; ?>)">...</button>
+                              <div class="grid-item-actions">
 
-                        <?php }?>
+                              <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
+                                  <button style="background: white; color: green; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>'); toggleActions(event, <?php echo $links['id']; ?>);" class="btn btn-secondary">Copiar Enlace</button>
+                                  <button style="background: white; color: gray; font-size: 12px;" onclick="window.location.href = 'edit.php?id=<?php echo $links['id']; ?>'" class="btn btn-secondary">Modificar</button>
+
+                                  <!--<a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>-->
+                                  <button style="background: white; color: red; font-size: 12px;" onclick="confirmDelete(<?php echo $links['id']; ?>)" class="btn btn-secondary">Borrar</button>
+                              </div>
+
+
+                              </div>
+                              <div class="grid-item-header"></div>
+                              <span class="grid-item-title" style="color: blue"><?php echo $links['content']; ?></span>
+                              <div class="grid-item-body">
+                                  <p><span class="p-title">Categoría:</span><span class="p-content"><?php echo $links['maincategory']; ?></span></p>
+                                  <p><span class="p-title">Subcategoría:</span><span class="p-content"><?php echo $links['category']; ?></span></p>
+                                  <p><span class="p-title">Contenido:</span><span class="p-content"><?php echo $links['proforpers']; ?></span></p>
+                                  <p><span class="p-title">Creación:</span><span class="p-content"><?php echo $links['creationdate']; ?></span></p>
+                              </div>
+                              <a href="<?php echo $links['videolink']; ?>" target="_blank" class="btn btn-primary">Ir al Contenido</a>
+                          </div>
+                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
@@ -183,13 +183,77 @@ window.onload = function() {
     getSubcategories(maincategory);
 };
 
-function toggleActions(id) {
+function toggleActions(event, id) {
+    event.stopPropagation(); // Evita que el evento de clic se propague al documento
     var actionMenu = document.getElementById("action-menu-" + id);
     if (actionMenu.style.display === "block") {
         actionMenu.style.display = "none";
     } else {
+        // Cerrar todos los menús abiertos antes de abrir uno nuevo
+        var allMenus = document.querySelectorAll('.grid-item-action-menu');
+        allMenus.forEach(function(menu) {
+            menu.style.display = "none";
+        });
         actionMenu.style.display = "block";
     }
+}
+
+// Cerrar el menú al hacer clic fuera de él
+document.addEventListener('click', function(event) {
+    var allMenus = document.querySelectorAll('.grid-item-action-menu');
+    var isClickInside = false;
+
+    allMenus.forEach(function(menu) {
+        // Verificar si el clic fue dentro del menú
+        if (menu.contains(event.target)) {
+            isClickInside = true;
+        }
+    });
+
+    if (!isClickInside) {
+        allMenus.forEach(function(menu) {
+            menu.style.display = "none";
+        });
+    }
+});
+
+function confirmDelete(id) {
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: "¡No podrás revertir esta acción!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#032642',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, borrar',
+        cancelButtonText: 'Cancelar',
+        customClass: {
+            popup: 'custom-swal-popup',
+            title: 'custom-swal-title',
+            content: 'custom-swal-content',
+            confirmButton: 'custom-swal-confirm-button',
+            cancelButton: 'custom-swal-cancel-button'
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Si el usuario confirma, redirigir a delete.php con el ID
+            window.location.href = "delete.php?id=" + id;
+        } else {
+            // Si el usuario cancela, no hacer nada
+            Swal.fire({
+                title: 'Cancelado',
+                text: 'El elemento no fue borrado.',
+                icon: 'error',
+                confirmButtonText: 'Aceptar',
+                customClass: {
+                    popup: 'custom-swal-popup',
+                    title: 'custom-swal-title',
+                    content: 'custom-swal-content',
+                    confirmButton: 'custom-swal-confirm-button'
+                }
+            });
+        }
+    });
 }
 </script>
 
