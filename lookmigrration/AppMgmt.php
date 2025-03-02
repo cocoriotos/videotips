@@ -7,11 +7,18 @@ include "db_connection1.php";
 $query = "SELECT COUNT(*) as total_suscriptores FROM videotips_app_access_list WHERE suscriptionpayed = 1";
 $result = mysqli_query($conn, $query);
 
-if ($result) {
+$query1 = "SELECT COUNT(*) as usuarios_activos FROM videotips_app_access_list WHERE active = 1";
+$result1 = mysqli_query($conn, $query1);
+
+
+if (($result) && ($result1)) {
     $row = mysqli_fetch_assoc($result);
     $total_suscriptores = $row['total_suscriptores'];
+    $row1 = mysqli_fetch_assoc($result1);
+    $usuarios_activos = $row1['usuarios_activos'];
 } else {
     $total_suscriptores = 0; // En caso de error, mostrar 0
+    $usuarios_activos = 0;
 }
 ?>
 
@@ -64,7 +71,7 @@ if ($result) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Usuarios Activos:</p>
-                            <p class="p-content">300</p>
+                            <p class="p-content"><?php echo $usuarios_activos; ?></p>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
