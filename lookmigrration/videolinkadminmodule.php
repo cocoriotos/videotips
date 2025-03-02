@@ -85,8 +85,10 @@ include "db_connection1.php";
                                 </select>
                             </div>
 
-                            <!-- Campo: Tipo de Contenido -->
-                            <div class="form-group col-md-2">
+
+                            <!-- Campo: Descripción -->
+                            <div class="form-group col-md-4">
+
                                 <label for="proforpers" class="col-form-label" style="color: black;">
                                     <strong>Contenido</strong>
                                 </label>
@@ -100,10 +102,7 @@ include "db_connection1.php";
                                     }
                                     ?>
                                 </select>
-                            </div>
 
-                            <!-- Campo: Descripción -->
-                            <div class="form-group col-md-4">
                                 <label for="description" class="col-form-label" style="color: black;">
                                     <strong>Descripción</strong>
                                 </label>
