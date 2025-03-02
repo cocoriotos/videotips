@@ -1,7 +1,6 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
 <?php
-
 include "headermgmt.php";
 include "db_connection1.php";
 ?>
@@ -19,6 +18,42 @@ include "db_connection1.php";
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css" />
+    <style>
+        /* Estilos adicionales para las pestañas */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #032642;
+            color: white;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
 </head>
 
 <body id="bodyadminmodule" style="padding: 0%;">
@@ -26,15 +61,17 @@ include "db_connection1.php";
         <!-- Barra de navegación -->
         <nav class="navbar">
             <a class="navbar-brand" href="#">Administración de Usuarios y Suscripciones</a>
-            <div>
-                <button class="btn btn-primary" onclick="location.href='#'">Operaciones</button>
-                <button class="btn btn-primary" onclick="location.href='#'">Administración</button>
-                <button class="btn btn-primary" onclick="location.href='#'">Reportes y Estadísticas</button>
-            </div>
         </nav>
 
-        <!-- Módulo de Operaciones -->
-        <div class="card">
+        <!-- Pestañas -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Operaciones')" id="defaultOpen">Operaciones</button>
+            <button class="tablinks" onclick="openTab(event, 'Administracion')">Administración</button>
+            <button class="tablinks" onclick="openTab(event, 'Reportes')">Reportes y Estadísticas</button>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div id="Operaciones" class="tabcontent">
             <label class="col-form-label">Operaciones</label>
             <div class="grid-container">
                 <div class="grid-item">
@@ -88,8 +125,7 @@ include "db_connection1.php";
             </div>
         </div>
 
-        <!-- Módulo de Administración -->
-        <div class="card">
+        <div id="Administracion" class="tabcontent">
             <label class="col-form-label">Administración</label>
             <div class="grid-container">
                 <div class="grid-item">
@@ -119,8 +155,7 @@ include "db_connection1.php";
             </div>
         </div>
 
-        <!-- Módulo de Reportes y Estadísticas -->
-        <div class="card">
+        <div id="Reportes" class="tabcontent">
             <label class="col-form-label">Reportes y Estadísticas</label>
             <div class="grid-container">
                 <div class="grid-item">
@@ -150,5 +185,26 @@ include "db_connection1.php";
             </div>
         </div>
     </div>
+
+    <script>
+        // Función para abrir pestañas
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Abrir la pestaña por defecto al cargar la página
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
+
 </html>
