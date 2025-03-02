@@ -61,7 +61,7 @@ include "SessionTimeOut.php";*/
           </div>
           </center>
           <hr>
-          <center><a id="headerfonts" href="index.php" class="btn btn-danger" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fa fa-reply" aria-hidden="true"></i> Página Principal</a></center>
+          <center><a id="headerfonts" href="index.php" class="btn btn-danger" style="background-color: #9A97F5; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fa fa-reply" aria-hidden="true"></i> Página Principal</a></center>
     </div>    
   </div>
     </body>
