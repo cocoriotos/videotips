@@ -135,7 +135,7 @@ include "db_connection1.php";
                     </center>
                     <div class="grid-container">
                         <?php
-                        $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by creationdate desc";
+                        $query1 = "select * from videotips_videotips where active = 'Yes' and username ='$local_username' order by content asc";
                         $result_links = mysqli_query($conn, $query1);
                         while ($links = mysqli_fetch_array($result_links)) {
                             $randomColor = getRandomLightColor();
