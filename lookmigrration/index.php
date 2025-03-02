@@ -52,18 +52,27 @@
                 </div>
             </div>
             <div class="feature-grid">
-                <div class="feature-item">
+                <!--<div class="feature-item">
                     <h3>Uso de la Aplicación</h3>
                     <p>Videos cortos que te ayudan a saber cómo usar la aplicación paso a paso.</p>
                     <div class="button-container">
                         <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn1" target="_blank" style="color: white">Videos Tutoriales</a>
                         <a href="UCLToolManualDelUsuario2025.pdf" class="btn1" target="_blank" style="color: white">Manual del Usuario</a>
-                    </div>
-                </div>
+                    </div>-->
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días!  Regístrate</h3>
                     <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas.</p> 
                     <p>Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Primeros Pasos después de registrarte e ingresar</h3>
+                    <p>1. Debes crear al menos una Categoría con su subcategoría (una categoría puede tener multiples subcategorías) Ejemplos:</p>
+                    <p>a. Categoría: Peliculas Subcategoría: Español.</p>
+                    <p>b. Categoría: Peliculas Subcategoría: Inglés.</p>
+                    <p>c. Categoría: Soporte Subcategoría: Documentación Linux.</p>
+                    <p>d. Categoría: Soporte Subcategoría: Documentación Windows.</p>
+                    <p>2. Comenzar a guardar los links de los contenidos, categorizarlos y escribir cortas palabra de descripción del contenido del link</p>
+                    <p>3. Cuando necesites un contenido usar el buscador escribiendo palabras claves, en desorden e incompletas, de acuerdo a como recuerdas que lo guardaste</p>
                 </div>
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Sigue disfrutando al Suscribirte!</h3>
