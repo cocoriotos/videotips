@@ -89,7 +89,7 @@
             </div>
             <div class="col-md-12">
                 <br>
-                <?php include("search.php") ?> <!-- Incluir el buscador -->
+                <center><?php include("search.php") ?></center> <!-- Incluir el buscador -->
                 <div class="card card-body" div="card-body">
                     <center><label for="description" class="col-form-label" style="color: black; font-size: 28px;"><strong> Tus Contenidos Útiles </strong></label></center>
                     <div class="grid-container">
