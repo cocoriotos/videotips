@@ -48,7 +48,7 @@
                 </div>
                 <div class="feature-item">
                     <h3>Multiplataforma</h3>
-                    <p>Integra contenido de YouTube, LinkedIn, Google Drive y más.</p>
+                    <p>Integra contenido de YouTube, LinkedIn, Google Drive y de más links públicos.</p>
                 </div>
             </div>
             <div class="feature-grid">
