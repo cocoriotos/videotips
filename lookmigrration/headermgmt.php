@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+session_start();
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 $name = $_SESSION['name'];
