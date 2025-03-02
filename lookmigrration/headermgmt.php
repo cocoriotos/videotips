@@ -18,8 +18,7 @@ $name = $_SESSION['name'];
         </a>
 
         <!-- Botón Salir -->
-        <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold;">
-            <i class="fas fa-sign-out-alt"></i> Salir
+        <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #9A97F5; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir
         </a>
     </div>
   </nav>
