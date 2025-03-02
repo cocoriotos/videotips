@@ -23,10 +23,7 @@ include "db_connection1.php";
 <body id="bodyadminmodule" style="padding: 0%;">
     <div class="container-fluid">
         <!-- Barra de navegación -->
-        <nav class="navbar">
-            <a class="navbar-brand" href="#">Administración de Usuarios y Suscripciones</a>
-        </nav>
-
+        
         <!-- Pestañas -->
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Operaciones')" id="defaultOpen">Operaciones</button>
