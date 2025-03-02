@@ -3,6 +3,16 @@
 <?php
 include "headermgmt.php";
 include "db_connection1.php";
+/*Consulta para contar los usuarios suscritos*/
+$query = "SELECT COUNT(*) as total_suscriptores FROM videotips_app_access_list WHERE suscriptionpayed = 1";
+$result = mysqli_query($conn, $query);
+
+if ($result) {
+    $row = mysqli_fetch_assoc($result);
+    $total_suscriptores = $row['total_suscriptores'];
+} else {
+    $total_suscriptores = 0; // En caso de error, mostrar 0
+}
 ?>
 
 <head>
@@ -42,7 +52,7 @@ include "db_connection1.php";
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Total Suscripciones:</p>
-                            <p class="p-content">500</p>
+                            <p class="p-content"><?php echo $total_suscriptores; ?></p>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
