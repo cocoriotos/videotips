@@ -139,10 +139,14 @@ $password=$_POST['password'];
 				$query6="UPDATE videotips_suscription_payments SET suscriptiondaysleft = (365 - (DATEDIFF(CURDATE(), lastpaymentdate))) where username ='$local_username'"; 
 				$result6=mysqli_query($conn, $query6);
 
-				$query7="select adm_role from videotips_app_access_list where username ='$local_username'"; 
-				$result7=mysqli_query($conn, $query7);
+				$stmt = $conn->prepare("SELECT adm_role FROM videotips_app_access_list WHERE username = ?");
+				$stmt->bind_param("s", $local_username);
+				$stmt->execute();
+				$result8 = $stmt->get_result();
+				$result9 = $result8->fetch_assoc()['adm_role'];
+				$admrole=mysqli_query($conn, $query7);
 
-				if ($result7= true) {
+				if ($admrole == 1) {
 					header("refresh:0; url=AppMgmt.php");
 					exit();
 				} else {

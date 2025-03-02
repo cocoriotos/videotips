@@ -11,7 +11,7 @@ $name = $_SESSION['name'];
 <html lang="us"> 
   <header>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome" >
-    <center><a id="welcome"  class="navbar-brand"><span class="username-style"><?php echo $name; ?></span>. Administración de Operaciones, Usuarios y Suscripciones</a></center> 
+    <center><a id="welcome"  class="navbar-brand">Bienvenido <span class="username-style"><?php echo $name; ?></span>. Administración de Operaciones, Usuarios y Suscripciones</a></center> 
   </nav>
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome" ></nav>
   <div class="d-flex">
