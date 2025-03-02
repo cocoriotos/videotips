@@ -29,6 +29,7 @@
     <script src="plugins/alertifyjs/alertify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
 </head>
@@ -213,14 +214,42 @@ document.addEventListener('click', function(event) {
 });
 
 function confirmDelete(id) {
-    // Mostrar un cuadro de confirmación
-    if (confirm("¿Estás seguro de que quieres borrar este elemento?")) {
-        // Si el usuario confirma, redirigir a delete.php con el ID
-        window.location.href = "delete.php?id=" + id;
-    } else {
-        // Si el usuario cancela, no hacer nada
-        return false;
-    }
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: "¡No podrás revertir esta acción!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#032642',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, borrar',
+        cancelButtonText: 'Cancelar',
+        customClass: {
+            popup: 'custom-swal-popup',
+            title: 'custom-swal-title',
+            content: 'custom-swal-content',
+            confirmButton: 'custom-swal-confirm-button',
+            cancelButton: 'custom-swal-cancel-button'
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Si el usuario confirma, redirigir a delete.php con el ID
+            window.location.href = "delete.php?id=" + id;
+        } else {
+            // Si el usuario cancela, no hacer nada
+            Swal.fire({
+                title: 'Cancelado',
+                text: 'El elemento no fue borrado.',
+                icon: 'error',
+                confirmButtonText: 'Aceptar',
+                customClass: {
+                    popup: 'custom-swal-popup',
+                    title: 'custom-swal-title',
+                    content: 'custom-swal-content',
+                    confirmButton: 'custom-swal-confirm-button'
+                }
+            });
+        }
+    });
 }
 </script>
 
