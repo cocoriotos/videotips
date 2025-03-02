@@ -106,7 +106,9 @@
 
                               <div class="grid-item-action-menu" id="action-menu-<?php echo $links['id']; ?>">
                                   <button style="background: green; color: white; font-size: 12px;" onclick="copyToClipboard('<?php echo $links['videolink']; ?>'); toggleActions(event, <?php echo $links['id']; ?>);" class="btn btn-secondary">Copiar Enlace</button>
-                                  <a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>
+                                  <button style="gray: red; color: white; font-size: 12px;" onclick="edit.php?id=<?php echo $links['id']; ?>)" class="btn btn-secondary">Modificar</button>
+
+                                  <!--<a style="background: gray; color: white; font-size: 12px;" href="edit.php?id=<?php echo $links['id']; ?>" class="btn btn-secondary">Modificar</a>-->
                                   <button style="background: red; color: white; font-size: 12px;" onclick="confirmDelete(<?php echo $links['id']; ?>)" class="btn btn-secondary">Borrar</button>
                               </div>
 
