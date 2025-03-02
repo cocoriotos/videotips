@@ -143,8 +143,7 @@ $password=$_POST['password'];
 				$stmt->bind_param("s", $local_username);
 				$stmt->execute();
 				$result8 = $stmt->get_result();
-				$result9 = $result8->fetch_assoc()['adm_role'];
-				$admrole=mysqli_query($conn, $query7);
+				$admrole = $result8->fetch_assoc()['adm_role'];
 
 				if ($admrole == 1) {
 					header("refresh:0; url=AppMgmt.php");
