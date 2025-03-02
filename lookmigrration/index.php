@@ -80,9 +80,9 @@
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Sigue disfrutando al Suscribirte!</h3>
                     <p>Pasado el periodo de prueba podrás continuar disfrutando por medio de los diferentes tipos de suscripciones así: </p>
-                    <p>Trimestral $20.000 COP</p>
-                    <p>Semestral  $40.000 COP</p>
-                    <p>Anual      $60.000 COP</p>
+                    <p><strong style="color: blue">Trimestral $20.000 COP</strong></p>
+                    <p><strong style="color: blue">Semestral  $40.000 COP</strong></p>
+                    <p><strong style="color: blue">Anual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.000 COP</strong></p>
                 </div>
                 <div class="feature-item">
                     <h3>Términos y Condiciones</h3>
