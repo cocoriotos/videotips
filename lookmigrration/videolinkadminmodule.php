@@ -39,86 +39,89 @@ include "db_connection1.php";
         <div class="row justify-content-start" style="padding: 0%; width: 100%;">
             <!-- Formulario para Adicionar Enlaces -->
             <div class="col-md-12">
-                <div class="card card-body" id="card-body">
-                    <form action="savelinks.php" method="POST">
-                        <center>
-                            <label for="title" class="col-form-label" style="color: black; font-size: 28px;">
-                                <strong>Adicionar Enlace</strong>
-                            </label>
-                        </center>
+    <div class="card card-body" id="card-body">
+        <form action="savelinks.php" method="POST">
+            <center>
+                <label for="title" class="col-form-label" style="color: black; font-size: 28px;">
+                    <strong>Adicionar Enlace</strong>
+                </label>
+            </center>
 
-                        <!-- Campos del formulario en un grid -->
-                        <div class="row justify-content-center">
-                            <!-- Campo: Enlace Útil -->
-                            <div class="form-group col-md-4">
-                                <label for="videolink" class="col-form-label" style="color: black;">
-                                    <strong>Enlace Útil</strong>
-                                </label>
-                                <textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Pega aquí el enlace" required></textarea>
-                            </div>
+            <!-- Primera fila del formulario -->
+            <div class="row justify-content-center">
+                <!-- Campo: Enlace Útil -->
+                <div class="form-group col-md-4">
+                    <label for="videolink" class="col-form-label" style="color: black;">
+                        <strong>Enlace Útil</strong>
+                    </label>
+                    <textarea id="videolink" name="videolink" rows="1" class="form-control" placeholder="Pega aquí el enlace" required></textarea>
+                </div>
 
-                            <!-- Campo: Categoría -->
-                            <div class="form-group col-md-2">
-                                <label for="maincategory" class="col-form-label" style="color: black;">
-                                    <strong>Categoría</strong>
-                                </label>
-                                <select class="form-control" name="maincategory" id="maincategory" onchange="getSubcategories(this.value)" required>
-                                    <option value="" disabled selected>Seleccione una categoría</option>
-                                    <?php
-                                    $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC";
-                                    $result_set = mysqli_query($conn, $SQLSELECT);
-                                    while ($rows = $result_set->fetch_assoc()) {
-                                        $maincategory = $rows['maincategory'];
-                                        echo "<option value='$maincategory'>$maincategory</option>";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
+                <!-- Campo: Categoría -->
+                <div class="form-group col-md-2">
+                    <label for="maincategory" class="col-form-label" style="color: black;">
+                        <strong>Categoría</strong>
+                    </label>
+                    <select class="form-control" name="maincategory" id="maincategory" onchange="getSubcategories(this.value)" required>
+                        <option value="" disabled selected>Seleccione una categoría</option>
+                        <?php
+                        $SQLSELECT = "SELECT distinct(maincategory) FROM videotips_viodetipscategory WHERE username = '$local_username' ORDER BY maincategory ASC";
+                        $result_set = mysqli_query($conn, $SQLSELECT);
+                        while ($rows = $result_set->fetch_assoc()) {
+                            $maincategory = $rows['maincategory'];
+                            echo "<option value='$maincategory'>$maincategory</option>";
+                        }
+                        ?>
+                    </select>
+                </div>
 
-                            <!-- Campo: Subcategoría -->
-                            <div class="form-group col-md-2">
-                                <label for="category" class="col-form-label" style="color: black;">
-                                    <strong>Subcategoría</strong>
-                                </label>
-                                <select class="form-control" name="category" id="category" required>
-                                    <option value="" disabled selected>Seleccione una subcategoría</option>
-                                </select>
-                            </div>
-
-                            <!-- Campo: Tipo de Contenido -->
-                            <div class="form-group col-md-4">
-                                <label for="proforpers" class="col-form-label" style="color: black;">
-                                    <strong>Contenido</strong>
-                                </label>
-                                <select class="form-control" name="proforpers" id="proforpers" required>
-                                    <?php
-                                    $SQLSELECT = "SELECT proforpers FROM videotips_proforpers";
-                                    $result_set = mysqli_query($conn, $SQLSELECT);
-                                    while ($rows = $result_set->fetch_assoc()) {
-                                        $proforpers = $rows['proforpers'];
-                                        echo "<option value='$proforpers'>$proforpers</option>";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
-
-                            <!-- Campo: Descripción -->
-                            <div class="form-group col-md-4">
-                                <label for="description" class="col-form-label" style="color: black;">
-                                    <strong>Descripción</strong>
-                                </label>
-                                <textarea id="description" name="description" rows="1" class="form-control" placeholder="Describe el contenido del enlace" required></textarea>
-                            </div>
-                        </div>
-
-                        <!-- Botón de Guardar -->
-                        <br>
-                        <center>
-                            <input id="save_link" type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar" disabled>
-                        </center>
-                    </form>
+                <!-- Campo: Subcategoría -->
+                <div class="form-group col-md-2">
+                    <label for="category" class="col-form-label" style="color: black;">
+                        <strong>Subcategoría</strong>
+                    </label>
+                    <select class="form-control" name="category" id="category" required>
+                        <option value="" disabled selected>Seleccione una subcategoría</option>
+                    </select>
                 </div>
             </div>
+
+            <!-- Segunda fila del formulario -->
+            <div class="row justify-content-center">
+                <!-- Campo: Tipo de Contenido -->
+                <div class="form-group col-md-4">
+                    <label for="proforpers" class="col-form-label" style="color: black;">
+                        <strong>Contenido</strong>
+                    </label>
+                    <select class="form-control" name="proforpers" id="proforpers" required>
+                        <?php
+                        $SQLSELECT = "SELECT proforpers FROM videotips_proforpers";
+                        $result_set = mysqli_query($conn, $SQLSELECT);
+                        while ($rows = $result_set->fetch_assoc()) {
+                            $proforpers = $rows['proforpers'];
+                            echo "<option value='$proforpers'>$proforpers</option>";
+                        }
+                        ?>
+                    </select>
+                </div>
+
+                <!-- Campo: Descripción -->
+                <div class="form-group col-md-4">
+                    <label for="description" class="col-form-label" style="color: black;">
+                        <strong>Descripción</strong>
+                    </label>
+                    <textarea id="description" name="description" rows="1" class="form-control" placeholder="Describe el contenido del enlace" required></textarea>
+                </div>
+            </div>
+
+            <!-- Botón de Guardar -->
+            <br>
+            <center>
+                <input id="save_link" type="submit" class="btn btn-success btn-block" name="save_link" value="Guardar" disabled>
+            </center>
+        </form>
+    </div>
+</div>
 
             <!-- Sección de "Tus Contenidos Útiles" -->
             <div class="col-md-12">
