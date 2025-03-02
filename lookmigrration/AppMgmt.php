@@ -4,18 +4,24 @@
 include "headermgmt.php";
 include "db_connection1.php";
 /*Consulta para contar los usuarios suscritos*/
-$query = "SELECT COUNT(*) as total_suscriptores FROM videotips_app_access_list WHERE suscriptionpayed = 1";
+$query = "SELECT COUNT(suscriptionpayed) as total_suscriptions FROM videotips_app_access_list WHERE suscriptionpayed = 1";
 $result = mysqli_query($conn, $query);
 
-$query1 = "SELECT COUNT(*) as usuarios_activos FROM videotips_app_access_list WHERE active = 1";
+$query1 = "SELECT COUNT(active) as active_users FROM videotips_app_access_list WHERE active = 1";
 $result1 = mysqli_query($conn, $query1);
+
+$query2 = "SELECT COUNT(*) as suscriptionstodue FROM videotips_app_access_list WHERE (active = 1 and suscriptionpayed = 1 and suscriptiondaysleft > 335 and suscriptionkind = 'De Pago')";
+$result2 = mysqli_query($conn, $query2);
 
 
 if (($result) && ($result1)) {
     $row = mysqli_fetch_assoc($result);
-    $total_suscriptores = $row['total_suscriptores'];
+    $total_suscriptions = $row['total_suscriptions'];
     $row1 = mysqli_fetch_assoc($result1);
-    $usuarios_activos = $row1['usuarios_activos'];
+    $usuarios_activos = $row1['active_users'];
+    $row2 = mysqli_fetch_assoc($result2);
+    $suscriptionstodue = $row2['suscriptionstodue'];
+    
 } else {
     $total_suscriptores = 0; // En caso de error, mostrar 0
     $usuarios_activos = 0;
@@ -59,7 +65,7 @@ if (($result) && ($result1)) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Total Suscripciones:</p>
-                            <p class="p-content"><?php echo $total_suscriptores; ?></p>
+                            <p class="p-content"><?php echo $total_suscriptions; ?></p>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
@@ -71,7 +77,7 @@ if (($result) && ($result1)) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Usuarios Activos:</p>
-                            <p class="p-content"><?php echo $usuarios_activos; ?></p>
+                            <p class="p-content"><?php echo $active_users; ?></p>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
@@ -95,7 +101,7 @@ if (($result) && ($result1)) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Suscripciones:</p>
-                            <p class="p-content">20</p>
+                            <p class="p-content"><?php echo $suscriptionstodue; ?></p>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
