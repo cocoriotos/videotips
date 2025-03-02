@@ -38,7 +38,7 @@ include "db_connection1.php";
                 <div class="grid-item">
                     <div class="grid-item-content">
                         <div class="grid-item-header">
-                            <div class="grid-item-title">Listado de Suscripciones Totales</div>
+                            <div class="grid-item-title">Listado de Suscripciones</div>
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Total Suscripciones:</p>
