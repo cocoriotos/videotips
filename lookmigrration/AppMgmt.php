@@ -18,13 +18,14 @@ if (($result) && ($result1)) {
     $row = mysqli_fetch_assoc($result);
     $total_suscriptions = $row['total_suscriptions'];
     $row1 = mysqli_fetch_assoc($result1);
-    $usuarios_activos = $row1['active_users'];
+    $active_users = $row1['active_users'];
     $row2 = mysqli_fetch_assoc($result2);
     $suscriptionstodue = $row2['suscriptionstodue'];
     
 } else {
     $total_suscriptores = 0; // En caso de error, mostrar 0
     $usuarios_activos = 0;
+    $suscriptionstodue = 0;
 }
 ?>
 
