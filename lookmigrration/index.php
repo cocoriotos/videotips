@@ -66,13 +66,16 @@
                 </div>
                 <div class="feature-item">
                     <h3>Primeros pasos después de registrarte e ingresar</h3>
-                    <p><strong style="color: blue">1. Crea categorías y subcategorías:</strong> Define al menos una categoría con sus respectivas subcategorías. Ejemplos:</p>
-                    <p>a. <em>Categoría:</em> Películas → <em>Subcategoría:</em> Español.</p>
-                    <p>b. <em>Categoría:</em> Películas → <em>Subcategoría:</em> Inglés.</p>
-                    <p>c. <em>Categoría:</em> Soporte → <em>Subcategoría:</em> Documentación Linux.</p>
-                    <p>d. <em>Categoría:</em> Soporte → <em>Subcategoría:</em> Documentación Windows.</p>
-                    <p><strong style="color: blue">2. Organiza tus enlaces:</strong> Guarda los links de tus contenidos, asígnalos a una categoría y añade una breve descripción.</p>
-                    <p><strong style="color: blue">3. Encuentra contenido rápidamente:</strong> Utiliza el buscador ingresando palabras clave, incluso si están en desorden o incompletas, para recuperar lo que necesitas.</p>
+                    <p><strong style="color: blue">1. Crea categorías y subcategorías:</strong></p> 
+                    <p>Define al menos una categoría con sus respectivas subcategorías. Ejemplos:</p>
+                    <p><em>a. Categoría:</em> Películas → <em>Subcategoría:</em> Español.</p>
+                    <p><em>b. Categoría:</em> Películas → <em>Subcategoría:</em> Inglés.</p>
+                    <p><em>c. Categoría:</em> Soporte → <em>Subcategoría:</em> Documentación Linux.</p>
+                    <p><em>d. Categoría:</em> Soporte → <em>Subcategoría:</em> Documentación Windows.</p>
+                    <p><strong style="color: blue">2. Organiza tus enlaces:</strong> </p>
+                    <p>Guarda los links de tus contenidos, asígnalos a una categoría y añade una breve descripción.</p>
+                    <p><strong style="color: blue">3. Encuentra contenido rápidamente:</strong></p> 
+                    <p>Utiliza el buscador ingresando palabras clave, incluso si están en desorden o incompletas, para recuperar lo que necesitas.</p>
                 </div>
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Sigue disfrutando al Suscribirte!</h3>
