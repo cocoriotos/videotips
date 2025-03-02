@@ -142,7 +142,7 @@ $password=$_POST['password'];
 				$query7="select adm_role from videotips_app_access_list where username ='$local_username'"; 
 				$result7=mysqli_query($conn, $query7);
 
-				if ($result7==1) {
+				if ($result7= true) {
 					header("refresh:0; url=AppMgmt.php");
 					exit();
 				} else {
