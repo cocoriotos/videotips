@@ -107,6 +107,8 @@ $password=$_POST['password'];
 
 				}
 				
+				
+
 				$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
 				$result5=mysqli_query($conn, $query5);
 
@@ -137,41 +139,47 @@ $password=$_POST['password'];
 				$query6="UPDATE videotips_suscription_payments SET suscriptiondaysleft = (365 - (DATEDIFF(CURDATE(), lastpaymentdate))) where username ='$local_username'"; 
 				$result6=mysqli_query($conn, $query6);
 
+				$query7="select adm_role from videotips_app_access_list where username ='$local_username'"; 
+				$result7=mysqli_query($conn, $query7);
 
-				if ($suscriptiondaysleft > 16 && $suscriptionpayed == 0) {
-					$_SESSION['suscriptiondue']=1;
-					header("refresh:0; url=suscriptionpayment.php");
+				if ($result7==1) {
+					header("refresh:0; url=AppMgmt.php");
 					exit();
-				  }else{	
-						if(mysqli_num_rows($result1)==true)
-							{	
-								header("refresh:0; url=videolinkadminmodule.php");
-								exit();
-							}
-							else 
-							{
-					echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-					echo "<script>
-						document.addEventListener('DOMContentLoaded', function() {
-							Swal.fire({
-								title: 'Mensaje',
-								text: 'Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opción de Solicitud de Acceso',
-								icon: 'error',
-								confirmButtonText: 'Aceptar',
-								customClass: {
-									popup: 'custom-swal-popup',
-									title: 'custom-swal-title',
-									content: 'custom-swal-content',
-									confirmButton: 'custom-swal-confirm-button'
+				} else {
+												if ($suscriptiondaysleft > 16 && $suscriptionpayed == 0) {
+													$_SESSION['suscriptiondue']=1;
+													header("refresh:0; url=suscriptionpayment.php");
+													exit();
+												}else{	
+														if(mysqli_num_rows($result1)==true)
+															{	
+																header("refresh:0; url=videolinkadminmodule.php");
+																exit();
+															}
+															else 
+															{
+													echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+													echo "<script>
+														document.addEventListener('DOMContentLoaded', function() {
+															Swal.fire({
+																title: 'Mensaje',
+																text: 'Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opción de Solicitud de Acceso',
+																icon: 'error',
+																confirmButtonText: 'Aceptar',
+																customClass: {
+																	popup: 'custom-swal-popup',
+																	title: 'custom-swal-title',
+																	content: 'custom-swal-content',
+																	confirmButton: 'custom-swal-confirm-button'
+																}
+															}).then(() => {
+															window.location.href = 'videotrackerauth.php';
+														});
+														});
+													</script>";	
+															}
+														}		
 								}
-							}).then(() => {
-							window.location.href = 'videotrackerauth.php';
-						});
-						});
-					</script>";	
 							}
-						}		
- }
-
 ?>	
 </html>
