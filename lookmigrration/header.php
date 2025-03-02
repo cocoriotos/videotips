@@ -19,7 +19,7 @@ $name = $_SESSION['name'];
     <div class="d-flex">
         <a id="headerfonts" href="suscriptionpayment.php" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Suscribirse</a>
         <a id="headerfonts" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn" target="_blank" style="background-color: white; color: #c4302b; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutoriales</a>
-        <a id="headerfonts" href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank" style="background-color:  white; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Manual del Usuario</a>
+        <a id="headerfonts" href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank" style="background-color:  white; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Manual</a>
     </div>
     <!--<div class="d-flex">
         <a id="headerfonts" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn" target="_blank" style="background-color: white; color: #c4302b; font-weight: bold; margin-right: 10px; margin-left: 20px;"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutoriales</a>
