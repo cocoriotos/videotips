@@ -106,7 +106,7 @@ $password=$_POST['password'];
 					$admrole=mysqli_query($conn, $query10);
 					
 					if ($admrole == 1) {
-						header("refresh:0; url=AppMgmt.php");
+						/*header("refresh:0; url=AppMgmt.php");*/
 						echo "es admin";
 						/*exit();*/
 						} else {
