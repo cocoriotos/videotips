@@ -24,8 +24,6 @@ GLOBAL $linktoclipboard;
 GLOBAL $videoUrl;
 GLOBAL $embedUrl;
 GLOBAL $click;
-GLOBAL $delconfirm;
-
 
 
 session_start();
@@ -34,7 +32,6 @@ $_SESSION['savedlink']=0;
 $_SESSION['duplicatedlink']=0;
 $_SESSION['updatedlink']=0;
 $_SESSION['deletedlink']=0;
-$_SESSION['delconfirm']=0;
 
 $_SESSION['savedcategory']=0;
 $_SESSION['duplicatedcategory']=0;
@@ -60,7 +57,6 @@ $duplicatedlink = $_SESSION['duplicatedlink'];
 $updatedlink = $_SESSION['updatedlink'];
 $deletedlink = $_SESSION['deletedlink'];
 $name = $_SESSION['name'];
-$delconfirm = $_SESSION['delconfirm'];
 
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];
@@ -87,100 +83,91 @@ $_SESSION['email']=$global_username;
 $local_username=$_SESSION['email'];
 $password=$_POST['password'];
 
-	if($_POST) 	{
-	$db_host="127.0.0.1";
-	$db_user="u927778197_adm";
-	$db_pass="C0mp13t3501ut10n5*";
-	$db_name="u927778197_appsdb";
-	$conn=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
-		if(mysqli_connect_errno()) {	
+	if($_POST)
+ {
+  $db_host="127.0.0.1";
+  $db_user="u927778197_adm";
+  $db_pass="C0mp13t3501ut10n5*";
+  $db_name="u927778197_appsdb";
+  $conn=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
+		if(mysqli_connect_errno()) 
+					{	
 					include("No_DB_Connectionfinal.php");
 					include ("videotrackerauth.php");
 					exit();
 					}
 		mysqli_select_db($conn,$db_name) or die ("<center>No hay conexión disponible a la aplicación</center>");		
-				
+
 		if ($conn==true)
 				{
-					$query10="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password' and adm_role = '1'"; 
-					$admrole=mysqli_query($conn, $query10);
-					
-					if ($admrole == 1) {
-						/*header("refresh:0; url=AppMgmt.php");*/
-						echo "es admin";
-						/*exit();*/
-						} else {
-												if ($suscriptiondaysleft > 16 && $suscriptionpayed == 0) {
-													$_SESSION['suscriptiondue']=1;
-													header("refresh:0; url=suscriptionpayment.php");
-													exit();
-												}else{	
-														if(mysqli_num_rows($result1)==true)
-															{	
-																$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
-																$result5=mysqli_query($conn, $query5);
 
-																$stmt = $conn->prepare("SELECT suscriptiondaysleft FROM videotips_app_access_list WHERE username = ?");
-																$stmt->bind_param("s", $local_username);
-																$stmt->execute();
-																$result3 = $stmt->get_result();
-																$suscriptiondaysleft = $result3->fetch_assoc()['suscriptiondaysleft'];
-
-																$stmt = $conn->prepare("SELECT suscriptionpayed FROM videotips_app_access_list WHERE username = ?");
-																$stmt->bind_param("s", $local_username);
-																$stmt->execute();
-																$result4 = $stmt->get_result();
-																$suscriptionpayed = $result4->fetch_assoc()['suscriptionpayed'];
-
-																$stmt = $conn->prepare("SELECT name FROM videotips_app_access_list WHERE username = ?");
-																$stmt->bind_param("s", $local_username);
-																$stmt->execute();
-																$result7 = $stmt->get_result();
-																$_SESSION['name'] = $result7->fetch_assoc()['name'];
-
-																$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
-																$result1=mysqli_query($conn, $query1); 
-
-																$query2="UPDATE videotips_suscription_payments SET currentdate = CURDATE() where username ='$local_username'"; 
-																$result2=mysqli_query($conn, $query2);
-
-																$query6="UPDATE videotips_suscription_payments SET suscriptiondaysleft = (365 - (DATEDIFF(CURDATE(), lastpaymentdate))) where username ='$local_username'"; 
-																$result6=mysqli_query($conn, $query6);
-
-																$stmt = $conn->prepare("SELECT adm_role FROM videotips_app_access_list WHERE username = ?");
-																$stmt->bind_param("s", $local_username);
-																$stmt->execute();
-																$result8 = $stmt->get_result();
-																$admrole = $result8->fetch_assoc()['adm_role'];
-
-																header("refresh:0; url=videolinkadminmodule.php");
-																exit();
-															}
-															else 
-															{
-																echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-																echo "<script>
-																	document.addEventListener('DOMContentLoaded', function() {
-																		Swal.fire({
-																			title: 'Mensaje',
-																			text: 'Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opción de Solicitud de Acceso',
-																			icon: 'error',
-																			confirmButtonText: 'Aceptar',
-																			customClass: {
-																				popup: 'custom-swal-popup',
-																				title: 'custom-swal-title',
-																				content: 'custom-swal-content',
-																				confirmButton: 'custom-swal-confirm-button'
-																			}
-																		}).then(() => {
-																		window.location.href = 'videotrackerauth.php';
-																	});
-																	});
-																</script>";	
-															}
-														}		
-								}
-						}
 				}
+				
+				$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
+				$result5=mysqli_query($conn, $query5);
+
+				$stmt = $conn->prepare("SELECT suscriptiondaysleft FROM videotips_app_access_list WHERE username = ?");
+				$stmt->bind_param("s", $local_username);
+				$stmt->execute();
+				$result3 = $stmt->get_result();
+				$suscriptiondaysleft = $result3->fetch_assoc()['suscriptiondaysleft'];
+
+				$stmt = $conn->prepare("SELECT suscriptionpayed FROM videotips_app_access_list WHERE username = ?");
+				$stmt->bind_param("s", $local_username);
+				$stmt->execute();
+				$result4 = $stmt->get_result();
+				$suscriptionpayed = $result4->fetch_assoc()['suscriptionpayed'];
+
+				$stmt = $conn->prepare("SELECT name FROM videotips_app_access_list WHERE username = ?");
+				$stmt->bind_param("s", $local_username);
+				$stmt->execute();
+				$result7 = $stmt->get_result();
+				$_SESSION['name'] = $result7->fetch_assoc()['name'];
+
+				$query1="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
+				$result1=mysqli_query($conn, $query1); 
+
+				$query2="UPDATE videotips_suscription_payments SET currentdate = CURDATE() where username ='$local_username'"; 
+				$result2=mysqli_query($conn, $query2);
+
+				$query6="UPDATE videotips_suscription_payments SET suscriptiondaysleft = (365 - (DATEDIFF(CURDATE(), lastpaymentdate))) where username ='$local_username'"; 
+				$result6=mysqli_query($conn, $query6);
+
+
+				if ($suscriptiondaysleft > 16 && $suscriptionpayed == 0) {
+					$_SESSION['suscriptiondue']=1;
+					header("refresh:0; url=suscriptionpayment.php");
+					exit();
+				  }else{	
+						if(mysqli_num_rows($result1)==true)
+							{	
+								header("refresh:0; url=videolinkadminmodule.php");
+								exit();
+							}
+							else 
+							{
+					echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+					echo "<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							Swal.fire({
+								title: 'Mensaje',
+								text: 'Su usuario o contraseña son incorrectos, por favor intentar nuevamente si está registrado de lo contrario solicite la opción de Solicitud de Acceso',
+								icon: 'error',
+								confirmButtonText: 'Aceptar',
+								customClass: {
+									popup: 'custom-swal-popup',
+									title: 'custom-swal-title',
+									content: 'custom-swal-content',
+									confirmButton: 'custom-swal-confirm-button'
+								}
+							}).then(() => {
+							window.location.href = 'videotrackerauth.php';
+						});
+						});
+					</script>";	
+							}
+						}		
+ }
+
 ?>	
 </html>
