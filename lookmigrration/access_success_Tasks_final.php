@@ -104,10 +104,11 @@ $password=$_POST['password'];
 				{
 					$query10="select adm_role from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
 					$admrole=mysqli_query($conn, $query10);
-					echo "se conectó";
+					
 					if ($admrole == 1) {
 						header("refresh:0; url=AppMgmt.php");
-						exit();
+						echo "es admin";
+						/*exit();*/
 						} else {
 												if ($suscriptiondaysleft > 16 && $suscriptionpayed == 0) {
 													$_SESSION['suscriptiondue']=1;
