@@ -17,6 +17,16 @@ $delconfirm = $_SESSION['delconfirm'];
 
 include "header.php";
 include "db_connection1.php";
+
+// Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)
+if (!isset($_SESSION['email'])) {
+  // Si no hay sesión, redirigir a la página de autenticación
+  header('Location: closetaskcon.php');
+  exit(); // Detener la ejecución del script
+}
+
+// Si el usuario está autenticado, continuar con el resto del código
+$local_username = $_SESSION['email']; // Obtener el email del usuario desde la sesión
 ?>
 
 <head>

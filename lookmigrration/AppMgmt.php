@@ -1,6 +1,7 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
 <?php
+session_start();
 include "headermgmt.php";
 include "db_connection1.php";
 /*Consulta para contar los usuarios suscritos*/
@@ -27,6 +28,16 @@ if (($result) && ($result1)) {
     $usuarios_activos = 0;
     $suscriptionstodue = 0;
 }
+
+// Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)
+if (!isset($_SESSION['email'])) {
+  // Si no hay sesión, redirigir a la página de autenticación
+  header('Location: closetaskcon.php');
+  exit(); // Detener la ejecución del script
+}
+
+// Si el usuario está autenticado, continuar con el resto del código
+$local_username = $_SESSION['email']; // Obtener el email del usuario desde la sesión
 ?>
 
 <head>
