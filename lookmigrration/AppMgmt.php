@@ -4,7 +4,7 @@
 include "headermgmt.php";
 include "db_connection1.php";
 /*Consulta para contar los usuarios suscritos*/
-$query = "SELECT COUNT(suscriptionpayed) as total_suscriptions FROM videotips_app_access_list WHERE suscriptionpayed = 1";
+$query = "SELECT COUNT(suscriptionpayed) as total_suscriptions FROM videotips_app_access_list WHERE suscriptionpayed = 1 and suscriptionkind = 'De Pago'";
 $result = mysqli_query($conn, $query);
 
 $query1 = "SELECT COUNT(active) as active_users FROM videotips_app_access_list WHERE active = 1";
