@@ -41,7 +41,7 @@ echo "<script>
 $query="INSERT INTO videotips_accessrequests (name, lastname, email, country, city, password) VALUES ('$name', '$lastname', '$email', '$country', '$city','$password')";
 $result=$conn->query($query);
 
-$query1="INSERT INTO videotips_app_access_list (name,lastname, username, email, password, role, active, adm_role, suscriptionactive, categorycounter, extendcounterfeature, terms_conditions_awareness) VALUES ('$name', '$lastname', '$email', '$email', '$password', 'user', 1, 0, 0, 0, 0, 'Yes')"; 
+$query1="INSERT INTO videotips_app_access_list (name,lastname, username, email, password, role, active, adm_role, suscriptionactive, categorycounter, extendcounterfeature, terms_conditions_awareness, suscriptionactive) VALUES ('$name', '$lastname', '$email', '$email', '$password', 'user', 0, 0, 0, 0, 0, 'Yes',0)"; 
 $result1=$conn->query($query1);
 
 $query2="INSERT INTO videotips_suscription_payments (username, categoriescounts, active, freeregistrationdate) SELECT email, categorycounter, active, registrationdate from videotips_app_access_list where username = '$email'"; 
