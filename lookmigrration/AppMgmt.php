@@ -4,6 +4,18 @@
 session_start();
 include "headermgmt.php";
 include "db_connection1.php";
+include "nobackpage.php"; 
+include "SessionTimeOut.php";
+// Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)
+if (!isset($_SESSION['email'])) {
+  // Si no hay sesión, redirigir a la página de autenticación
+  header('Location: closetaskcon.php');
+  exit(); // Detener la ejecución del script
+}
+
+// Si el usuario está autenticado, continuar con el resto del código
+$local_username = $_SESSION['email']; // Obtener el email del usuario desde la sesión
+
 /*Consulta para contar los usuarios suscritos*/
 $query = "SELECT COUNT(suscriptionpayed) as total_suscriptions FROM videotips_app_access_list WHERE suscriptionpayed = 1 and suscriptionkind = 'De Pago'";
 $result = mysqli_query($conn, $query);

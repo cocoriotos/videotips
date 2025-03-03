@@ -7,6 +7,8 @@ include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
 $suscriptiondue = $_SESSION['suscriptiondue'];
+include "nobackpage.php"; 
+include "SessionTimeOut.php";
 /*include "SessionTimeOut.php";*/
 
 // Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)
