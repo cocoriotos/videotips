@@ -66,7 +66,7 @@ if (($result) && ($result1)) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Total Suscripciones:</p>
-                            <p class="p-content"><?php echo $total_suscriptions; ?></p>
+                            <center><p class="p-content"><?php echo $total_suscriptions; ?></p></center>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ if (($result) && ($result1)) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Usuarios Activos:</p>
-                            <p class="p-content"><?php echo $active_users; ?></p>
+                            <center><p class="p-content"><?php echo $active_users; ?></p></center>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ if (($result) && ($result1)) {
                         </div>
                         <div class="grid-item-body">
                             <p class="p-title">Suscripciones:</p>
-                            <p class="p-content"><?php echo $suscriptionstodue; ?></p>
+                            <center><p class="p-content"><?php echo $suscriptionstodue; ?></p></center>
                             <a href="#" class="btn-primary">Ver Detalles</a>
                         </div>
                     </div>
