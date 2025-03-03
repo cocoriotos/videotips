@@ -102,7 +102,7 @@ $password=$_POST['password'];
 				
 		if ($conn==true)
 				{
-					$query10="select adm_role from videotips_app_access_list where email='$local_username' and active='1' and password='$password'"; 
+					$query10="select * from videotips_app_access_list where email='$local_username' and active='1' and password='$password' and adm_role = '1'"; 
 					$admrole=mysqli_query($conn, $query10);
 					
 					if ($admrole == 1) {
