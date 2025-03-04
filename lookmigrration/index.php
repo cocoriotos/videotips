@@ -103,7 +103,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+   <!-- <section id="contact" class="contact">
         <div class="container">
             <h2>Contáctanos</h2>
             <form action="contact.php" method="POST">
@@ -113,7 +113,7 @@
                 <button type="submit" class="btn">Enviar Mensaje</button>
             </form>
         </div>
-    </section>
+    </section> 3 4 2025S-->
 
     <footer>
         <div class="container">
