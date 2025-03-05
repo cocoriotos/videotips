@@ -16,6 +16,7 @@ switch (session_status()) {
         break;
     case PHP_SESSION_NONE:
         echo "No hay una sesión activa.";
+		include "videotrackerauth.php";
         break;
     case PHP_SESSION_ACTIVE:
         echo "Hay una sesión activa.";
