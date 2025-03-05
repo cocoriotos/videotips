@@ -1,8 +1,8 @@
 <?php
 // Iniciar la sesión si no está iniciada
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+//if (session_status() == PHP_SESSION_NONE) {
+//    session_start();
+//}
 
 // Limpiar todas las variables de sesión
 $_SESSION = array();
