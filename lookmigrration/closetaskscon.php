@@ -8,5 +8,6 @@
 
     session_start();
 	session_unset();
-include "videotrackerauth.php";
+	include "nobackpage.php";
+	include "videotrackerauth.php";
 ?>
