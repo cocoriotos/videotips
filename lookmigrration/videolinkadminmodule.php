@@ -15,7 +15,6 @@ $click = $_SESSION['click'];
 $name = $_SESSION['name'];
 $delconfirm = $_SESSION['delconfirm'];
 
-
 include "db_connection1.php";
 include "header.php";
 include "nobackpage.php"; 
