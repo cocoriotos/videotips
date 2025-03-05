@@ -18,6 +18,6 @@ if (isset($conn)) {
 }
 
 // Redirigir al usuario a la página de autenticación
-header("Location: videotrackerauth.php");
+header("Location: videolinkadminmodule.php");
 exit();
 ?>
