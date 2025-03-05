@@ -21,9 +21,9 @@ switch (session_status()) {
         echo "Hay una sesión activa.";
         // Puedes imprimir las variables de sesión si lo deseas
         if (!empty($_SESSION)) {
-            echo "<pre>Variables de sesión: ";
+            /*echo "<pre>Variables de sesión: ";
             print_r($_SESSION);
-            echo "</pre>";
+            echo "</pre>";*/
 			session_destroy(); 
 			mysqli_close($conn);
 			include "videotrackerauth.php";
