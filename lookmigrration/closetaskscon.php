@@ -23,7 +23,6 @@ switch (session_status()) {
         // Puedes imprimir las variables de sesión si lo deseas
 		session_destroy(); 
 		mysqli_close($conn);
-		include "videotrackerauth.php";
         if (!empty($_SESSION)) {
             /*echo "<pre>Variables de sesión: ";
             print_r($_SESSION);
@@ -33,6 +32,8 @@ switch (session_status()) {
         } else {
             echo "No hay variables de sesión definidas.";
         }
-        /*break;*/
+        break;
+		
 }
+include "videotrackerauth.php";
 ?>
