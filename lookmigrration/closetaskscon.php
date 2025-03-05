@@ -5,9 +5,9 @@
         header("Location: videotrackerauth.php");
 		exit();*/
 		// Iniciar la sesión si no está iniciada
-/*if (session_status() == PHP_SESSION_NONE) {
+if (session_status() == PHP_SESSION_NONE) {
     session_start();
-}*/
+}
 
 // Verificar el estado de la sesión
 switch (session_status()) {
@@ -24,6 +24,10 @@ switch (session_status()) {
             echo "<pre>Variables de sesión: ";
             print_r($_SESSION);
             echo "</pre>";
+			session_destroy(); 
+			mysqli_close($conn);
+			include "videotrackerauth.php";
+			exit();
         } else {
             echo "No hay variables de sesión definidas.";
         }
