@@ -1,5 +1,5 @@
 <?php 
-        /*session_unset(); 
+        /* 
 		session_destroy(); 
 		mysqli_close($conn);
         header("Location: videotrackerauth.php");
@@ -7,6 +7,6 @@
 		// Iniciar la sesión si no está iniciada
 
     session_start();
-
+	session_unset();
 include "videotrackerauth.php";
 ?>
