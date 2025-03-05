@@ -27,10 +27,10 @@ switch (session_status()) {
 			session_destroy(); 
 			mysqli_close($conn);
 			include "videotrackerauth.php";
-			exit();
+			/*exit()*/;
         } else {
             echo "No hay variables de sesión definidas.";
         }
-        break;
+        /*break;*/
 }
 ?>
