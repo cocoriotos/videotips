@@ -6,8 +6,7 @@ include "nobackpage.php";
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
-$suscriptiondue = $_SESSION['suscriptiondue'];
-include "nobackpage.php"; 
+$suscriptiondue = $_SESSION['suscriptiondue']; 
 include "SessionTimeOut.php";
 /*include "SessionTimeOut.php";*/
 
