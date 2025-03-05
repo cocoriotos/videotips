@@ -88,7 +88,7 @@ $password=$_POST['password'];
   $db_host="127.0.0.1";
   $db_user="u927778197_adm";
   $db_pass="C0mp13t3501ut10n5*";
-  $db_name="u927778197_appsdb1";
+  $db_name="u927778197_appsdb";
   $conn=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
 		if(mysqli_connect_errno()) 
 					{	
@@ -98,31 +98,12 @@ $password=$_POST['password'];
 					}
 		mysqli_select_db($conn,$db_name) or die ("<center>No hay conexión disponible a la aplicación</center>");		
 
-		if ($conn==false)
+		if ($conn==true)
 				{
-					echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
-					echo "<script>
-						document.addEventListener('DOMContentLoaded', function() {
-							Swal.fire({
-								title: 'Mensaje',
-								text: 'Conexión no existosa, por favor intentar nuevamente',
-								icon: 'error',
-								confirmButtonText: 'Aceptar',
-								customClass: {
-									popup: 'custom-swal-popup',
-									title: 'custom-swal-title',
-									content: 'custom-swal-content',
-									confirmButton: 'custom-swal-confirm-button'
-								}
-							}).then(() => {
-							window.location.href = 'videotrackerauth.php';
-						});
-						});
-					</script>";
-				} else { 
+
+				} 
 				
-				$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
-				$result5=mysqli_query($conn, $query5);
+				
 
 				$stmt = $conn->prepare("SELECT suscriptiondaysleft FROM videotips_app_access_list WHERE username = ?");
 				$stmt->bind_param("s", $local_username);
@@ -159,6 +140,8 @@ $password=$_POST['password'];
 				  }else{	
 						if(mysqli_num_rows($result1)==true)
 							{	
+								$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
+								$result5=mysqli_query($conn, $query5);
 								header("refresh:0; url=videolinkadminmodule.php");
 								exit();
 							}
@@ -185,9 +168,6 @@ $password=$_POST['password'];
 					</script>";	
 							}
 						}		
- 	}
- 
-
 }
 ?>	
 </html>
