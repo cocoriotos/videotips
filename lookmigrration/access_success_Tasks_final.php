@@ -98,10 +98,28 @@ $password=$_POST['password'];
 					}
 		mysqli_select_db($conn,$db_name) or die ("<center>No hay conexión disponible a la aplicación</center>");		
 
-		if ($conn==true)
+		if ($conn==false)
 				{
-
-				}
+					echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+					echo "<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							Swal.fire({
+								title: 'Mensaje',
+								text: 'Conexión no existosa, por favor intentar nuevamente',
+								icon: 'error',
+								confirmButtonText: 'Aceptar',
+								customClass: {
+									popup: 'custom-swal-popup',
+									title: 'custom-swal-title',
+									content: 'custom-swal-content',
+									confirmButton: 'custom-swal-confirm-button'
+								}
+							}).then(() => {
+							window.location.href = 'videotrackerauth.php';
+						});
+						});
+					</script>";
+				} else { 
 				
 				$query5="update videotips_app_access_list SET suscriptiondaysleft = DATEDIFF(CURDATE(), registrationdate), visits = visits+1 where username ='$local_username'"; 
 				$result5=mysqli_query($conn, $query5);
@@ -167,7 +185,9 @@ $password=$_POST['password'];
 					</script>";	
 							}
 						}		
- }
+ 	}
+ 
 
+}
 ?>	
 </html>
