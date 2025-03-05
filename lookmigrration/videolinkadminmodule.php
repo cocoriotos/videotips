@@ -538,3 +538,4 @@ function getRandomLightColor() {
     return sprintf("#%02x%02x%02x", $red, $green, $blue); // Convierte a formato hexadecimal
 }
 ?>
+</html>
