@@ -2,6 +2,7 @@
 <html>
 <?php 
 include "sessions.php";
+include "sessionvalidation.php";
 $local_username=$_SESSION['email'];
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];

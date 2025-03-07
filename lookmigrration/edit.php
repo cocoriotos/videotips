@@ -1,5 +1,6 @@
 <?php 
 include "sessions.php";
+include "sessionvalidation.php";
 $id = $_GET['id'];
 $videolink = $_GET['videolink'];
 $local_username = $_SESSION['email'];

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include "sessions.php";
-include "nobackpage.php";
+include "sessionvalidation.php";
 /*include "SessionTimeOut.php";*/
 $name = $_SESSION['name'];
 ?>

@@ -2,7 +2,7 @@
 <html lang="en">
 <?php 
 include "sessions.php";
-//include "nobackpage.php";
+include "sessionvalidation.php";
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];

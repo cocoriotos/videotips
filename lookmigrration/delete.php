@@ -1,5 +1,6 @@
 <?php 
 include "sessions.php";
+include "sessionvalidation.php";
 include "db_connection1.php";
 $id = $_GET['id'];
 $videolink = $_GET['videolink'];

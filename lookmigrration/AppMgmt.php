@@ -2,6 +2,7 @@
 <html>
 <?php
 include "sessions.php";
+include "sessionvalidation.php";
 include "headermgmt.php";
 include "db_connection1.php";
 //include "nobackpage.php"; 
