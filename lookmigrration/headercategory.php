@@ -9,7 +9,7 @@ $name = $_SESSION['name'];
     <link rel="stylesheet" href="style_sheet_ops.css"/>
 </head>
 <header>
-  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center" id="welcome">
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center" id="welcome">
   <center><a id="welcome"  class="navbar-brand"><span class="username-style"><?php echo $name; ?></span>, éstas en tu Biblioteca de Contenidos Útiles</a></center>
   </nav>
   
