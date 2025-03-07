@@ -23,7 +23,7 @@ $name = $_SESSION['name'];
         <a id="headerfonts" href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank" style="background-color: white; color: black; font-weight: bold;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Manual</a>
       </div>
       <div class="d-flex flex-wrap flex-grow-1">
-        <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Form.</a>
+        <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
         <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
         <a id="headerfonts" href="closetaskscon.php" class="btn btn-danger" style="background-color: #9A97F5; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
       </div>
