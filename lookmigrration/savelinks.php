@@ -1,6 +1,5 @@
 <?php 
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 include "db_connection1.php";
 
 

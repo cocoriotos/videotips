@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+include "sessions.php";
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/
 ?>

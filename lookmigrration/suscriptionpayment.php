@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-session_cache_limiter('nocache');
-session_start();
-include "nobackpage.php";
+include "sessions.php";
+//include "nobackpage.php";
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];

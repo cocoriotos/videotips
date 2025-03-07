@@ -1,8 +1,7 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
 <?php
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 include "headermgmt.php";
 include "db_connection1.php";
 //include "nobackpage.php"; 

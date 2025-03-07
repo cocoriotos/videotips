@@ -1,8 +1,7 @@
 <!-- Developed by Julián González Bucheli -->
 <html lang="us">
 <?php 
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 ?>
 <head>
     <meta charset="UTF-8">

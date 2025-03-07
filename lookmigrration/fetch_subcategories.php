@@ -1,6 +1,5 @@
 <?php
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 include 'db_connection1.php'; // Archivo para conectar a la base de datos
 
 $username =  $_SESSION['email']; // Define el username dinámicamente si es necesario

@@ -1,6 +1,7 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us">
 	<?php
+    include "sessions.php";
 	date_default_timezone_set('America/Bogota');
 	?>
 	<head>

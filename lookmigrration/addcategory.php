@@ -1,8 +1,7 @@
 <!--  Developed by julián González Bucheli -->
 <html>
 <?php 
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 $local_username=$_SESSION['email'];
 $savedcategory = $_SESSION['savedcategory'];
 $duplicatedcategory = $_SESSION['duplicatedcategory'];

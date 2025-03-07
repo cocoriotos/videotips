@@ -1,6 +1,5 @@
 <?php 
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 $id = $_GET['id'];
 $videolink = $_GET['videolink'];
 $local_username = $_SESSION['email'];

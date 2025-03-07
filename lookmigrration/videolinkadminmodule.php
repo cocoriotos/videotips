@@ -1,8 +1,7 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
 <?php
-session_cache_limiter('nocache');
-session_start();
+include "sessions.php";
 $local_username = $_SESSION['email'];
 $savedlink = $_SESSION['savedlink'];
 $duplicatedlink = $_SESSION['duplicatedlink'];
@@ -18,7 +17,7 @@ $delconfirm = $_SESSION['delconfirm'];
 
 include "db_connection1.php";
 include "header.php";
-include "nobackpage.php"; 
+//nclude "nobackpage.php"; 
 ////include "SessionTimeOut.php";
 
 // Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)
