@@ -1,7 +1,6 @@
 <?php
-include "db_connection1.php";
 session_start();
-
+include "db_connection1.php";
 $local_username = $_SESSION['email'];
 $maincategory = $_GET['maincategory'];
 $current_category = isset($_GET['current_category']) ? $_GET['current_category'] : '';

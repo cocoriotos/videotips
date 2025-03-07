@@ -1,4 +1,5 @@
 <?php 
+session_cache_limiter('nocache');
 session_start();
 $id = $_GET['id'];
 $videolink = $_GET['videolink'];

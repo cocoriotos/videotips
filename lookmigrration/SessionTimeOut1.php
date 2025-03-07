@@ -1,4 +1,5 @@
 <?php
+session_cache_limiter('nocache');
 session_start();
 $timeout_duration = 900;
 $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];

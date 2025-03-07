@@ -1,4 +1,5 @@
 <?php
+session_cache_limiter('nocache');
 session_start();
 include 'db_connection1.php'; // Archivo para conectar a la base de datos
 

@@ -1,6 +1,7 @@
 <?php 
-include "db_connection1.php";
+session_cache_limiter('nocache');
 session_start();
+include "db_connection1.php";
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
 $deletedcategory = $_SESSION['deletedcategory'];

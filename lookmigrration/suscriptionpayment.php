@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
+session_cache_limiter('nocache');
 session_start();
 include "nobackpage.php";
 include "db_connection1.php";
 include "headersuscription.php";
 $local_username=$_SESSION['email'];
 $suscriptiondue = $_SESSION['suscriptiondue']; 
-include "SessionTimeOut.php";
+//include "SessionTimeOut.php";
 /*include "SessionTimeOut.php";*/
 
 // Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)

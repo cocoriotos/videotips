@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+session_cache_limiter('nocache');
 session_start();
 /*include "nobackpage.php";
 include "SessionTimeOut.php";*/

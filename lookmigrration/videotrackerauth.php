@@ -1,7 +1,6 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us">
-	<?php /*include "nobackpage.php"; 
-	include "SessionTimeOut.php";*/	
+	<?php
 	date_default_timezone_set('America/Bogota');
 	?>
 	<head>

@@ -5,9 +5,11 @@
         header("Location: videotrackerauth.php");
 		exit();*/
 		// Iniciar la sesión si no está iniciada
-
+	session_cache_limiter('nocache');
     session_start();
 	session_unset();
-	include "nobackpage.php";
-	include "videotrackerauth.php";
+	session_destroy();
+	$conn->close();
+	header("videotrackerauth.php");
+	exit();
 ?>

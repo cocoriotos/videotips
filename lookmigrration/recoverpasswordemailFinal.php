@@ -1,5 +1,6 @@
 <?php 
 // defining and loading  data fields
+session_cache_limiter('nocache');
 session_start();
 include ("db_connection1.php");
 

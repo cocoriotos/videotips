@@ -1,6 +1,7 @@
 <!--  Developed by julián González Bucheli -->
 <html>
 <?php 
+session_cache_limiter('nocache');
 session_start();
 $local_username=$_SESSION['email'];
 $savedcategory = $_SESSION['savedcategory'];
@@ -10,8 +11,8 @@ $updatedcategory = $_SESSION['updatedcategory'];
 $deletedcategory = $_SESSION['deletedcategory'];
 include "headercategory.php";
 include "db_connection1.php";
-include "nobackpage.php"; 
-include "SessionTimeOut.php";
+//include "nobackpage.php"; 
+//include "SessionTimeOut.php";
 
 // Verificar si el usuario está autenticado (si $_SESSION['email'] está definido)
 //if (!isset($_SESSION['email'])) {

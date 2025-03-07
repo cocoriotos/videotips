@@ -1,6 +1,7 @@
 <!-- Developed by Julián González Bucheli -->
 <html>
 <?php
+session_cache_limiter('nocache');
 session_start();
 $local_username = $_SESSION['email'];
 $savedlink = $_SESSION['savedlink'];
