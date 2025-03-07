@@ -311,8 +311,14 @@ table tr:hover {
 
 /* Estilos para la barra de navegación */
 .navbar {
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
   background-color: #032642 !important;
   padding: 10px 20px;
+}
+
+.navbar .d-flex {
+  flex-wrap: wrap; /* Asegura que los botones se envuelvan en varias líneas */
+  gap: 10px; /* Espacio entre los botones */
 }
 
 .navbar-brand {
@@ -322,15 +328,29 @@ table tr:hover {
 }
 
 .navbar .btn {
-  margin: 0 5px;
+  /*margin: 0 5px;*/
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
   padding: 8px 16px;
+  flex: 1 1 auto; /* Hace que los botones sean flexibles y se ajusten al espacio disponible */
+  margin: 5px; /* Espacio entre los botones */
+  white-space: nowrap; /* Evita que el texto de los botones se divida en varias líneas */
 }
 
 .navbar .btn:hover {
   opacity: 0.9;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  .navbar .d-flex {
+    justify-content: center; /* Centra los botones en móviles */
+  }
+  .navbar .btn {
+    flex: 1 1 100%; /* Hace que los botones ocupen todo el ancho en móviles */
+    margin: 5px 0; /* Espacio vertical entre los botones */
+  }
 }
 
 /* Estilos para los botones de la barra de navegación */
