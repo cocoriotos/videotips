@@ -1,13 +1,13 @@
 <?php 
 include "sessions.php";
-foreach ($_SESSION as $key => $value) {
-    if (empty($value)) {
-        // Cerrar la conexión antes de redirigir
-        if (isset($conn)) {
-            $conn->close();
-        }
-        header("Location: videotrackerauth.php");
-        exit;
+if (empty($_SESSION['email'])) {
+    // Cerrar la conexión antes de redirigir
+    if (isset($conn)) {
+        $conn->close();
     }
+    session_unset();
+    session_destroy();
+    header("Location: videotrackerauth.php");
+    exit;
 }
 ?>
