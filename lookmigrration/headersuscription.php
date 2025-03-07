@@ -14,7 +14,7 @@ $name = $_SESSION['name'];
   </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
-	        <div class="text-center">
+	        <div class="d-flex flex-wrap flex-grow-1">
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Cuenta Paypal: YSXRZMT2AAG4G"  style="color: white" onclick="copiarPaypal();">  
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Ir a Paypal"  style="color: white" onclick="window.open('https://www.paypal.com/', '_blank');"></input>
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Número Nequi: 3054293185" style="color: white" onclick="copiarNumero();">  
