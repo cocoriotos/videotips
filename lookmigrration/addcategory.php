@@ -137,7 +137,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 // Si el usuario confirma, redirigir a delete.php con el ID
-                window.location.href = "delete.php?id=" + id;
+                window.location.href = "deletecategory.php?id=" + id;
             } else {
                 // Si el usuario cancela, no hacer nada
                 Swal.fire({
