@@ -16,6 +16,14 @@
     <script src="head.js" defer></script>		
     <script src="categorytoclipboard.js" defer></script>  
     <link rel="stylesheet" href="style_sheet_ops.css"/>
+	<script src="Popper/popper.min.js"></script>
+    <script src="plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="plugins/alertifyjs/alertify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css" />
 </head>
 <body id="bodyadminmodule" style="padding: 0%;">
     <div class="container-fluid p-0">
