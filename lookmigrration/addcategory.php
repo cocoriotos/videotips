@@ -75,7 +75,79 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <script>
-    // Código JavaScript aquí
+    function toggleActions(event, id) {
+        event.stopPropagation(); // Evita que el evento de clic se propague al documento
+        var actionMenu = document.getElementById("action-menu-" + id);
+        if (actionMenu.style.display === "block") {
+            actionMenu.style.display = "none";
+        } else {
+            // Cerrar todos los menús abiertos antes de abrir uno nuevo
+            var allMenus = document.querySelectorAll('.grid-item-action-menu');
+            allMenus.forEach(function(menu) {
+                menu.style.display = "none";
+            });
+            actionMenu.style.display = "block";
+        }
+    }
+
+	// Cerrar el menú al hacer clic fuera de él
+    document.addEventListener('click', function(event) {
+        var allMenus = document.querySelectorAll('.grid-item-action-menu');
+        var isClickInside = false;
+
+        allMenus.forEach(function(menu) {
+            // Verificar si el clic fue dentro del menú
+            if (menu.contains(event.target)) {
+                isClickInside = true;
+            }
+        });
+
+        if (!isClickInside) {
+            allMenus.forEach(function(menu) {
+                menu.style.display = "none";
+            });
+        }
+    });
+
+	function confirmDelete(id) {
+        Swal.fire({
+            title: '¿Estás seguro?',
+            text: "¡No podrás revertir esta acción!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#032642',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, borrar',
+            cancelButtonText: 'Cancelar',
+            customClass: {
+                popup: 'custom-swal-popup',
+                title: 'custom-swal-title',
+                content: 'custom-swal-content',
+                confirmButton: 'custom-swal-confirm-button',
+                cancelButton: 'custom-swal-cancel-button'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Si el usuario confirma, redirigir a delete.php con el ID
+                window.location.href = "delete.php?id=" + id;
+            } else {
+                // Si el usuario cancela, no hacer nada
+                Swal.fire({
+                    title: 'Cancelado',
+                    text: 'El elemento no fue borrado.',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar',
+                    customClass: {
+                        popup: 'custom-swal-popup',
+                        title: 'custom-swal-title',
+                        content: 'custom-swal-content',
+                        confirmButton: 'custom-swal-confirm-button'
+                    }
+                });
+            }
+        });
+    }
+
 </script>
 <?php
     // Código PHP aquí
