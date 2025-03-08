@@ -158,7 +158,266 @@
 
 </script>
 <?php
-    // Código PHP aquí
+   if ($savedcategory == 1) {
+
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Subcategoría Adicionada Exitosamente',
+        icon: 'success',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 2000, // 2000 milisegundos = 2 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
+    $_SESSION['savedcategory'] = 0;
+}
+
+if ($savedcategory == 2 ) {
+
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Hubo un problema al adicionar la subcategoría, intente nuevamente',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 3000, // 3000 milisegundos = 3 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
+	$_SESSION['savedcategory'] = 0;
+}
+
+if ($duplicatedcategory == 1) {
+
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Subcategoría duplicada, usar otra',
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 3000, // 3000 milisegundos = 3 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
+    $_SESSION['duplicatedcategory'] = 0;
+}
+
+if ($FreeSubcateryReached == 1) {
+
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Ha alcanzado el límite de 5 subcategorías gratis. Para continuar subcategorizando puede usar el botón de Pago por Nequi para adquirir las subcategorías, leer muy bien los términos y condiciones',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 3000, // 3000 milisegundos = 3 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>"; 
+    $_SESSION['FreeSubcateryReached'] = 0;
+}
+
+if ($sessiontimeoutreached  == 1){
+
+	echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+    echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: 'Mensaje',
+        text: 'Detectada que la sesion no tiene actividad por más de 15 minutos, debe iniciar sesión nuevamente',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+          popup: 'custom-swal-popup',
+          title: 'custom-swal-title',
+          content: 'custom-swal-content',
+          confirmButton: 'custom-swal-confirm-button'
+        },
+        timer: 3000, // 3000 milisegundos = 3 segundos
+        timerProgressBar: true, // Muestra una barra de progreso
+        didOpen: () => {
+          Swal.showLoading(); // Muestra un indicador de carga
+        },
+        willClose: () => {
+        }
+      });
+    });
+ 	 </script>";    
+    }
+	
+	if ($updatedcategory == 1) {
+
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Subcategoría Actualizada Exitosamente',
+			icon: 'success',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 3000, // 3000 milisegundos = 3 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>"; 
+		$_SESSION['updatedcategory'] = 0;
+	}
+	
+	if ($updatedcategory == 2){
+
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Hubo un problema al actualizar la subcategoría, intente nuevamente',
+			icon: 'error',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 3000, // 3000 milisegundos = 3 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>";  
+	$_SESSION['updatedcategory'] = 0;
+	}
+	
+	
+	if ($deletedcategory == 1) {
+
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Categoría Borrada satisfactoriamente',
+			icon: 'Success',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 3000, // 3000 milisegundos = 3 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>"; 
+		$_SESSION['deletedcategory'] = 0;
+	}
+	
+	if ($deletedcategory == 2){
+		
+		echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+		echo "<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		Swal.fire({
+			title: 'Mensaje',
+			text: 'Hubo un problema al borrar subcategoría, intente nuevamente',
+			icon: 'error',
+			confirmButtonText: 'Aceptar',
+			customClass: {
+			popup: 'custom-swal-popup',
+			title: 'custom-swal-title',
+			content: 'custom-swal-content',
+			confirmButton: 'custom-swal-confirm-button'
+			},
+			timer: 3000, // 3000 milisegundos = 3 segundos
+			timerProgressBar: true, // Muestra una barra de progreso
+			didOpen: () => {
+			Swal.showLoading(); // Muestra un indicador de carga
+			},
+			willClose: () => {
+			}
+		});
+		});
+		</script>"; 
+	$_SESSION['deletedcategory'] = 0;
+	}
 ?>
 <?php 
     function getRandomLightColor() {
