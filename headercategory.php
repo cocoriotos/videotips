@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-/*include "nobackpage.php";
-include "SessionTimeOut.php";*/
+include "sessions.php";
+include "sessionvalidation.php";
 $name = $_SESSION['name'];
 ?>
 <html lang="us">
@@ -14,11 +14,11 @@ $name = $_SESSION['name'];
   </nav>
   
   <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center">
-    <div class="d-flex"></div>          
-            <div class="d-flex">
+             
+            <div class="d-flex flex-wrap flex-grow-1">
                 <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
                 <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color:rgb(214, 243, 255); color: black; font-weight: bold; margin-left: 10px;"><i class="fa fa-link"></i> Adicionar Enlace</a>
-                <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a>
+                <a id="headerfonts" href="closetaskscon.php" class="btn btn-danger" style="background-color: #9A97F5; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a>
             </div>   
     </nav>
   

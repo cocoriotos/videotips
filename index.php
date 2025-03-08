@@ -26,7 +26,7 @@
             <h2>Centraliza, Organiza y Accede a Todo tu Conocimiento en un Solo Lugar</h2>
             <p>¿Te has preguntado cuánto tiempo pierdes buscando enlaces, artículos, recursos o herramientas que guardaste pero no recuerdas dónde? Con <strong>SmartShelf</strong>, esa frustración se acabó.</p>
             <a href="videotrackerauth.php" class="btn">Ingresar</a>
-            <!--<a href="requestaccessfinal.php" class="btn">Registrarse</a> 3 4 2025 -->
+            <!--<a href="requestaccessfinal.php" class="btn">Registrarse</a> 3 4 2025-->
         </div>
     </section>
     <br>
@@ -48,29 +48,41 @@
                 </div>
                 <div class="feature-item">
                     <h3>Multiplataforma</h3>
-                    <p>Integra contenido de YouTube, LinkedIn, Google Drive y más.</p>
+                    <p>Integra contenido de YouTube, LinkedIn, Google Drive y de más links públicos.</p>
                 </div>
             </div>
             <div class="feature-grid">
-                <div class="feature-item">
+                <!--<div class="feature-item">
                     <h3>Uso de la Aplicación</h3>
                     <p>Videos cortos que te ayudan a saber cómo usar la aplicación paso a paso.</p>
                     <div class="button-container">
                         <a href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn1" target="_blank" style="color: white">Videos Tutoriales</a>
                         <a href="UCLToolManualDelUsuario2025.pdf" class="btn1" target="_blank" style="color: white">Manual del Usuario</a>
-                    </div>
-                </div>
+                    </div>-->
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Prueba Gratis por 15 Días!  Regístrate</h3>
                     <p>Explora todas las funciones, organiza tus enlaces importantes y crea categorías personalizadas.</p> 
-                    <p>Si necesitas ayuda, consulta los videos tutoriales o el Manual del Usuario en PDF.</p>
+                    <p>Si necesitas ayuda, ingresa y consulta los videos tutoriales y/o el Manual del Usuario en PDF.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Primeros pasos después de registrarte e ingresar</h3>
+                    <p><strong style="color: blue">1. Crea categorías y subcategorías:</strong></p> 
+                    <p>Define al menos una categoría con sus respectivas subcategorías. Ejemplos:</p>
+                    <p><em>a. Categoría:</em> Películas → <em>Subcategoría:</em> Español.</p>
+                    <p><em>b. Categoría:</em> Películas → <em>Subcategoría:</em> Inglés.</p>
+                    <p><em>c. Categoría:</em> Soporte → <em>Subcategoría:</em> Documentación Linux.</p>
+                    <p><em>d. Categoría:</em> Soporte → <em>Subcategoría:</em> Documentación Windows.</p>
+                    <p><strong style="color: blue">2. Organiza tus enlaces:</strong> </p>
+                    <p>Guarda los links de tus contenidos, asígnalos a una categoría y añade una breve descripción.</p>
+                    <p><strong style="color: blue">3. Encuentra contenido rápidamente:</strong></p> 
+                    <p>Utiliza el buscador ingresando palabras clave, incluso si están en desorden o incompletas, para recuperar lo que necesitas.</p>
                 </div>
                 <div class="feature-item">
                     <h3 style="color: #D2691E; font-weight: bold; text-transform: uppercase;">¡Sigue disfrutando al Suscribirte!</h3>
                     <p>Pasado el periodo de prueba podrás continuar disfrutando por medio de los diferentes tipos de suscripciones así: </p>
-                    <p>Trimestral $20.000 COP</p>
-                    <p>Semestral  $40.000 COP</p>
-                    <p>Anual      $60.000 COP</p>
+                    <p><strong style="color: blue">Trimestral $20.000 COP</strong></p>
+                    <p><strong style="color: blue">Semestral  $40.000 COP</strong></p>
+                    <p><strong style="color: blue">Anual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.000 COP</strong></p>
                 </div>
                 <div class="feature-item">
                     <h3>Términos y Condiciones</h3>
@@ -91,7 +103,7 @@
         </div>
     </section>
 
-    <!--<section id="contact" class="contact"> 
+   <!-- <section id="contact" class="contact">
         <div class="container">
             <h2>Contáctanos</h2>
             <form action="contact.php" method="POST">
@@ -101,7 +113,7 @@
                 <button type="submit" class="btn">Enviar Mensaje</button>
             </form>
         </div>
-    </section>3 4 2025-->
+    </section> 3 4 2025S-->
 
     <footer>
         <div class="container">

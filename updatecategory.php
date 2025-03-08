@@ -1,5 +1,6 @@
 <?php 
-session_start();
+include "sessions.php";
+include "sessionvalidation.php";
 include "db_connection1.php"; 
 
 $id = $_POST['id'];

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
-/*include "nobackpage.php";
-include "SessionTimeOut.php";*/
+include "sessions.php";
+include "sessionvalidation.php";
+/*include "SessionTimeOut.php";*/
 $name = $_SESSION['name'];
 ?>
 <head>    
@@ -15,18 +16,18 @@ $name = $_SESSION['name'];
   <script src="copynumber.js"></script>
   <script src="copypaypal.js"></script>
 
-  <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center" >
-    <div class="d-flex">
-        <!--<a id="headerfonts" href="#" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarPaypal();"><i class="fab fa-paypal"></i> Cuenta Paypal: YSXRZMT2AAG4G</a>
-        <a id="headerfonts" href="#" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold; margin-right: 10px; margin-left: 20px;" onclick="copiarNumero();"><i class="fas fa-mobile-alt"></i> Número Nequi: 3054293185</a>-->
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-wrap flex-grow-1">
         <a id="headerfonts" href="suscriptionpayment.php" class="btn" style="background-color: #d0fff8; color: black; font-weight: bold;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Suscribirse</a>
-    </div>
-    <div class="d-flex">
-        <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
-        <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold; margin-left: 10px;"><i class="fas fa-layer-group"></i> Categorías</a>
-        <a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6; color: black; font-weight: bold; margin-left: 10px; margin-right: 20px;"><i class="fas fa-sign-out-alt"></i> Salir</a>
+        <a id="headerfonts" href="https://www.youtube.com/playlist?list=PLRQ5KF9igtB2GRlHLSP6Uwx1lzy387Wz5" class="btn" target="_blank" style="background-color: white; color: #c4302b; font-weight: bold;"><i class="fa fa-youtube-play" aria-hidden="true"></i> Tutoriales</a>
+        <a id="headerfonts" href="UCLToolManualDelUsuario2025.pdf" class="btn" target="_blank" style="background-color: white; color: black; font-weight: bold;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Manual</a>
       </div>
-</nav>
+      <div class="d-flex flex-wrap flex-grow-1">
+        <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style="background-color: #FFF9CC; color: black; font-weight: bold;"><i class="fas fa-broom"></i> Limpiar Formulario</a>
+        <a id="headerfonts" href="addcategory.php" class="btn" style="background-color: #D6EEFF; color: black; font-weight: bold;"><i class="fas fa-layer-group"></i> Categorías</a>
+        <a id="headerfonts" href="closetaskscon.php" class="btn btn-danger" style="background-color: #9A97F5; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>
+      </div>
+  </nav>
 
 
   <!-- BOOTSTRAP -->	

@@ -1,55 +1,72 @@
+<!-- search.php -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome para íconos -->
+
 <script>
-function openList(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+function searchCards() {
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase().trim(); // Obtener y normalizar el término de búsqueda
+    const cards = document.querySelectorAll(".grid-item"); // Obtener todas las cards
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+    // Dividir el término de búsqueda en palabras individuales
+    const searchWords = searchTerm.split(/\s+/).filter(word => word.length > 0);
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+    let visibleCards = 0; // Contador de cards visibles
 
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+    cards.forEach((card) => {
+        const content = card.textContent.toLowerCase(); // Obtener el contenido de la card
+        const videoLink = card.querySelector("a.btn-primary")?.getAttribute("href")?.toLowerCase() || ""; // Obtener el enlace de la card
+
+        let match = true;
+
+        // Verificar si todas las palabras de búsqueda están presentes en el contenido de la card o en el enlace
+        if (searchWords.length > 0) {
+            match = searchWords.every(word => content.includes(word) || videoLink.includes(word));
+        }
+
+        // Mostrar u ocultar la card según si coincide con la búsqueda
+        if (match) {
+            card.style.display = "block";
+            visibleCards++; // Incrementar el contador de cards visibles
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    // Actualizar el conteo de cards visibles
+    updateCardCount(visibleCards);
+
+    // Mostrar u ocultar el ícono de limpiar
+    const clearIcon = document.querySelector(".clear-icon");
+    if (searchTerm.length > 0) {
+        clearIcon.style.display = "block";
+    } else {
+        clearIcon.style.display = "none";
+    }
 }
+
+function updateCardCount(visibleCards) {
+    const totalCardsContainer = document.querySelector(".total-cards");
+    totalCardsContainer.textContent = `Total de cards mostrados: ${visibleCards}`;
+}
+
+function clearSearch() {
+    const searchInput = document.getElementById("searchInput");
+    searchInput.value = ""; // Limpiar el campo de búsqueda
+    searchCards(); // Actualizar la búsqueda
+}
+
+// Inicializar el conteo de cards al cargar la página
+document.addEventListener("DOMContentLoaded", () => {
+    const totalCards = document.querySelectorAll(".grid-item").length; // Obtener el total de cards
+    updateCardCount(totalCards); // Mostrar el conteo total de cards al cargar la página
+});
 </script>
 
-<meta charset="iso-8559-1">
-<link rel="stylesheet" style="font-family: arial; background-color: white" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-  <script> $(document).ready( function () {
-      $('#autosearch').DataTable(
+<div class="search-container">
+    <div class="search-wrapper">
+        <i class="fas fa-search search-icon"></i> <!-- Ícono de búsqueda -->
+        <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchCards()">
+        <i class="fas fa-times clear-icon" onclick="clearSearch()"></i> <!-- Ícono de limpiar -->
+    </div>
+</div>
 
-        {
-      language: {
-              processing: "Procesando...",
-              search: "Buscar:",
-              lengthMenu: "Mostrar _MENU_ registros",
-              info: "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-              infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
-              infoFiltered: "(filtrado de un total de _MAX_ registros)",
-              loadingRecords: "Cargando...",
-              zeroRecords: "No se encontraron resultados",
-              emptyTable: "Ningún dato disponible en esta tabla",
-              paginate: {
-                first: "Primero",
-                previous: "Anterior",
-                next: "Siguiente",
-                last: "Último"
-              },
-        aria: {
-          sortAscending: ": Activar para ordenar la columna de manera ascendente",
-          sortDescending: ": Activar para ordenar la columna de manera descendente"
-              }
-      }
-    }); 
-
-     } );</script>
+<div class="total-cards"></div> <!-- Contenedor para mostrar el total de cards -->

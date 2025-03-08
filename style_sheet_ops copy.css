@@ -80,13 +80,15 @@ label.col-form-label {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  /*width: 300px; /* Ancho fijo */
+  height: 600px; /* Altura fija */
 }
 
 .grid-item-content {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /*justify-content: flex-end;*/ /* Alinea el contenido hacia la parte inferior */
+  justify-content: flex-end; /* Alinea el contenido hacia la parte inferior */
   height: 100%; /* Ocupa toda la altura del grid-item */
 }
 
@@ -148,16 +150,6 @@ label.col-form-label {
   overflow: auto; /* Habilita el desplazamiento si el contenido excede el espacio */
 }
 
-.grid-item-body {
-  flex-grow: 1;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /*justify-content: flex-end;*/ /* Alinea el contenido hacia la parte inferior */
-  overflow: auto; /* Habilita el desplazamiento si el contenido excede el espacio */
-}
-
 .grid-item-body p {
   margin: 5px 0; /* Espaciado entre párrafos */
   display: flex;
@@ -176,8 +168,7 @@ label.col-form-label {
 }
 
 .grid-item-body a.btn-primary {
-  /*margin-top: auto;*/ /* Empuja el botón hacia la parte inferior */
-  margin-top: 10px;
+  margin-top: auto; /* Empuja el botón hacia la parte inferior */
   text-align: center;
   padding: 10px;
   background-color: #032642;
@@ -311,15 +302,8 @@ table tr:hover {
 
 /* Estilos para la barra de navegación */
 .navbar {
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
   background-color: #032642 !important;
   padding: 10px 20px;
-}
-
-.navbar .d-flex {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas */
-  gap: 10px; /* Espacio entre los botones */
 }
 
 .navbar-brand {
@@ -329,25 +313,15 @@ table tr:hover {
 }
 
 .navbar .btn {
-  flex: 1; /* Hace que todos los botones tengan el mismo ancho */
-  white-space: nowrap; /* Evita que el texto de los botones se divida en varias líneas */
-  text-align: center; /* Centra el texto dentro del botón */
-  min-width: 0; /* Permite que el botón se ajuste al contenido */
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 16px;
 }
 
 .navbar .btn:hover {
   opacity: 0.9;
-}
-
-/* Ajustes específicos para móviles */
-@media (max-width: 768px) {
-  .navbar .d-flex {
-    flex-direction: column; /* Coloca los botones en una columna en móviles */
-  }
-
-  .navbar .btn {
-    width: 100%; /* Hace que los botones ocupen todo el ancho en móviles */
-  }
 }
 
 /* Estilos para los botones de la barra de navegación */
@@ -410,119 +384,4 @@ table tr:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-/* Estilos para el buscador */
-
-.search-container {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#searchInput {
-  width: 100%;
-  padding: 10px 40px 10px 40px; /* Espacio para los íconos */
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.search-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  max-width: 500px;
-}
-
-.search-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #032642;
-  pointer-events: none; /* Evitar que el ícono interfiera con el input */
-}
-
-.clear-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #032642;
-  cursor: pointer;
-  display: none; /* Ocultar inicialmente */
-}
-
-.clear-icon:hover {
-  color: #0c316d;
-}
-
-/* Estilos para la paginación */
-
-/* Estilos para las cards */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.grid-item {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Estilos para el contador de cards */
-.total-cards {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #032642;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-color: #ccc; /* Color de la línea */
-  margin: 10px 0; /* Espacio arriba y abajo de la línea */
-}
-
-/* Estilos adicionales para las pestañas */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  margin-bottom: 20px;
-}
-
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 16px;
-}
-
-.tab button:hover {
-  background-color: #ddd;
-}
-
-.tab button.active {
-  background-color: #032642;
-  color: white;
-}
-
-.tabcontent {
-  display: none;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-top: none;
 }

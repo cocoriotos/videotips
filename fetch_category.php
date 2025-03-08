@@ -1,5 +1,5 @@
 <?php
-session_start();
+include "sessions.php";
 include "db_connection1.php";
 $username = $_SESSION['email'];
 

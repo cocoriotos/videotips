@@ -1,6 +1,6 @@
 <?php 
 // defining and loading  data fields
-session_start();
+include "sessions.php";
 include ("db_connection1.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

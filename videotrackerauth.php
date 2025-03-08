@@ -1,7 +1,7 @@
 <!--  Developed by julián González Bucheli -->
 <html lang="us">
-	<?php /*include "nobackpage.php"; 
-	include "SessionTimeOut.php";*/	
+	<?php
+    include "sessions.php";
 	date_default_timezone_set('America/Bogota');
 	?>
 	<head>
@@ -68,7 +68,7 @@
                 <br>
                 <p>¿Alguna duda? Contáctenos al Email: <a href="mailto:adm@solicionespro.com">adm@solicionespro.com</a></p>
                 <br>
-                <!--<p>Fecha: <?php /*echo date('m/d/Y');*/ ?></p>--!
+                <!--<p>Fecha: <?php /*echo date('m/d/Y');*/ ?></p>-->
             </form>
         </div>
     </body>

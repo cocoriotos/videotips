@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-/*include "nobackpage.php";
-include "SessionTimeOut.php";*/
+include "sessions.php";
+include "sessionvalidation.php";
 $name = $_SESSION['name'];
 ?>
 <htm lang="us"> 
@@ -14,12 +14,12 @@ $name = $_SESSION['name'];
   </nav>
 
   <center><nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center">
-	        <div class="text-center">
+	        <div class="d-flex flex-wrap flex-grow-1">
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Cuenta Paypal: YSXRZMT2AAG4G"  style="color: white" onclick="copiarPaypal();">  
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Ir a Paypal"  style="color: white" onclick="window.open('https://www.paypal.com/', '_blank');"></input>
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Número Nequi: 3054293185" style="color: white" onclick="copiarNumero();">  
                <input id="headerfonts" type="button" class="btn btn-success btn-block" value="Ir a Nequi" style="color: white" onclick="window.open('https://clientes.nequi.com.co/recargas', '_blank');"></input>
-               <a id="headerfonts" href="videolinkadminmodule.php" class="btn" style=" background-color: #FFD6D6; color: black; font-weight: bold;"><i class="fa fa-reply" aria-hidden="true"></i> Volver a la aplicación</a>
+               <a id="headerfonts" href="closetaskscon.php" class="btn" style=" background-color: #9A97F5; color: black; font-weight: bold;"><i class="fa fa-reply" aria-hidden="true"></i> Volver a la aplicación</a>
                <!--<a id="headerfonts" href="videotrackerauth.php" class="btn btn-danger" style="background-color: #FFD6D6 ; color: black; font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Salir</a>-->
             </div>	
   </nav></center>

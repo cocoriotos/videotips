@@ -1,6 +1,7 @@
 <?php 
+include "sessions.php";
+include "sessionvalidation.php";
 include "db_connection1.php";
-session_start();
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
 $deletedcategory = $_SESSION['deletedcategory'];

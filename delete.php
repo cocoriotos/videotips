@@ -1,10 +1,12 @@
 <?php 
-session_start();
+include "sessions.php";
+include "sessionvalidation.php";
 include "db_connection1.php";
 $id = $_GET['id'];
 $videolink = $_GET['videolink'];
 $local_username=$_SESSION['username'];
 $deletedlink = $_SESSION['deletedlink'];
+
 $query = "delete from videotips_videotips where id = '$id'";
 $result = mysqli_query($conn,$query);
 if ($result) {

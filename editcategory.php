@@ -1,5 +1,6 @@
 <?php 
-session_start();
+include "sessions.php";
+include "sessionvalidation.php";
 $id = $_GET['id'];
 $local_username=$_SESSION['email'];
 $updatedcategory = $_SESSION['updatedcategory'];
@@ -8,8 +9,6 @@ $sessiontimeoutreached = $_SESSION['sessiontimeoutreached'];
 $name = $_SESSION['name'];
 include "headereditcategory.php";
 include "db_connection1.php";
-/*include "nobackpage.php";
-include "SessionTimeOut.php";*/
 ?>
 
 <head>	
